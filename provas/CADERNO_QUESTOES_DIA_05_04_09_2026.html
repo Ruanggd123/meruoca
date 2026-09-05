@@ -1,0 +1,2130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>CADERNO OFICIAL DE QUESTÕES — DIA 5 (04/09/2026) | INBRASP</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @page {
+      size: A4;
+      margin: 15mm 18mm;
+    }
+    :root {
+      --primary: #1e3a8a;
+      --primary-dark: #0f172a;
+      --accent: #dc2626;
+      --border: #cbd5e1;
+      --bg: #ffffff;
+      --text: #0f172a;
+      --text-muted: #475569;
+    }
+    body {
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+      color: var(--text);
+      background: #f8fafc;
+      margin: 0;
+      padding: 24px;
+      font-size: 10.5pt;
+      line-height: 1.45;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      padding: 36px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    }
+    .header-box {
+      border: 2px solid var(--primary);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f8fafc;
+    }
+    .header-titles h1 {
+      margin: 0 0 4px 0;
+      font-size: 1.35rem;
+      color: var(--primary);
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .header-titles h2 {
+      margin: 0 0 4px 0;
+      font-size: 1rem;
+      color: var(--text);
+      font-weight: 700;
+    }
+    .header-titles p {
+      margin: 0;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .badge-banca {
+      background: #fee2e2;
+      color: #991b1b;
+      font-weight: 800;
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      border: 1px solid #fecaca;
+    }
+    .no-print {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .btn-action {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+    }
+    .btn-action:hover {
+      background: #1d4ed8;
+    }
+    .section-title {
+      background: #1e3a8a;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-size: 1.05rem;
+      font-weight: 800;
+      margin: 28px 0 16px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .section-title.especifica {
+      background: #b91c1c;
+    }
+    .question-block {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px 18px;
+      margin-bottom: 16px;
+      background: #ffffff;
+      page-break-inside: avoid;
+    }
+    .question-meta {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      font-size: 0.8rem;
+    }
+    .q-badge {
+      font-weight: 800;
+      color: var(--primary);
+    }
+    .q-topic {
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+    .question-text {
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 12px;
+      line-height: 1.45;
+      white-space: pre-line;
+    }
+    .options-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .option-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 6px 8px;
+      margin-bottom: 4px;
+      border-radius: 4px;
+      font-size: 0.92rem;
+    }
+    .option-letter {
+      width: 24px;
+      height: 24px;
+      border: 1.5px solid #94a3b8;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.8rem;
+      color: #334155;
+      flex-shrink: 0;
+    }
+    .folha-respostas-box {
+      border: 2px dashed var(--primary);
+      border-radius: 8px;
+      padding: 20px;
+      margin: 30px 0;
+      background: #f8fafc;
+      page-break-before: always;
+    }
+    .folha-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      font-size: 0.82rem;
+      margin-top: 14px;
+    }
+    .folha-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 6px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+    }
+    .folha-num {
+      width: 28px;
+      font-weight: 800;
+      color: var(--primary);
+    }
+    .folha-circle {
+      width: 16px;
+      height: 16px;
+      border: 1px solid #64748b;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.65rem;
+      font-weight: 700;
+      color: #475569;
+    }
+    .gabarito-section {
+      page-break-before: always;
+      margin-top: 30px;
+    }
+    .gabarito-item {
+      background: #f1f5f9;
+      border-left: 4px solid var(--primary);
+      padding: 10px 14px;
+      margin-bottom: 10px;
+      border-radius: 0 6px 6px 0;
+      font-size: 0.88rem;
+    }
+    .gabarito-item strong {
+      color: var(--primary-dark);
+    }
+    .gabarito-letra {
+      background: #16a34a;
+      color: white;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-weight: 800;
+      margin-right: 6px;
+    }
+    @media print {
+      body { background: white; padding: 0; }
+      .container { padding: 0; box-shadow: none; max-width: 100%; }
+      .no-print { display: none !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="no-print">
+      <button class="btn-action" onclick="window.print()">
+        <i class="fas fa-print"></i> Imprimir Caderno (PDF)
+      </button>
+      <a href="../index.html" class="btn-action" style="background: #e2e8f0; color: #334155;">
+        <i class="fas fa-arrow-left"></i> Voltar ao Gerenciador de Estudos
+      </a>
+    </div>
+
+    <!-- CABEÇALHO DA PROVA -->
+    <div class="header-box">
+      <div class="header-titles">
+        <span style="font-size: 0.75rem; font-weight: 800; text-transform: uppercase; color: #dc2626;">Caderno de Treino Diário Oficial</span>
+        <h1>Câmara Municipal de Meruoca / CE</h1>
+        <h2>Concurso Público nº 001/2026 — Cargo: Técnico Legislativo</h2>
+        <p><strong>Dia 5 (04/09/2026):</strong> D. Administrativo (15Q) • Informática: Python & Algoritmos (15Q) • Lei Orgânica (10Q)</p>
+      </div>
+      <div style="text-align: right;">
+        <div class="badge-banca">Banca INBRASP</div>
+        <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 6px;">40 Questões (A, B, C, D)</div>
+      </div>
+    </div>
+
+    <!-- SEÇÃO 1: DIREITO ADMINISTRATIVO (15Q) -->
+    <div class="section-title">
+      <span><i class="fas fa-shield-alt"></i> PARTE 1: DIREITO ADMINISTRATIVO (QUESTÕES 101 A 115)</span>
+      <span style="font-size: 0.8rem; font-weight: normal;">Poderes Administrativos, Atributos do Ato (PATI) & Abuso de Poder</span>
+    </div>
+
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 101</span>
+        <span class="q-topic">D. Administrativo • Poder Vinculado vs Discricionário</span>
+      </div>
+      <div class="question-text">Quanto à margem de liberdade conferida ao administrador público na prática de seus atos, assinale a opção correta:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>No ato discricionário, a lei concede margem de escolha ao gestor quanto à oportunidade e conveniência (mérito administrativo), sempre nos limites da lei.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>No ato vinculado, o administrador pode avaliar livremente a conveniência de conceder ou não uma licença quando o particular preencher todos os requisitos.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>O mérito do ato discricionário pode ser revisto pelo Poder Judiciário sob o aspecto da conveniência e da oportunidade da autoridade administrativa.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Todo ato administrativo é discricionário, cabendo à autoridade decidir as sanções disciplinares independentemente de previsão legal.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 102</span>
+        <span class="q-topic">D. Administrativo • Abuso de Poder: Excesso vs Desvio de Poder</span>
+      </div>
+      <div class="question-text">O abuso de poder constitui conduta ilegítima do agente público e manifesta-se sob duas modalidades distintas: o excesso de poder e o desvio de poder (ou desvio de finalidade). Ocorre EXCESSO DE PODER quando o agente público:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Atua fora dos limites de sua competência legal ou excede os poderes que a lei lhe conferiu.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Atua dentro de sua competência, mas com objetivo alheio ao interesse público ou para beneficiar amigo.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Pratica um ato perfeitamente vinculado que cumpriu todas as formalidades do edital.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Revoga um ato legal de sua própria lavra com base em razões supervenientes de interesse público.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 103</span>
+        <span class="q-topic">D. Administrativo • Poder Disciplinar</span>
+      </div>
+      <div class="question-text">O Poder Disciplinar é a prerrogativa conferida à Administração Pública para:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Apurar infrações e aplicar penalidades aos servidores públicos e a particulares que possuam vínculo jurídico específico com o Estado.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Aplicar multas e penalidades indistintamente a qualquer cidadão que transite em logradouro municipal sem habilitação.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Fixar tarifas gerais de transporte urbano para toda a população da cidade.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Editar decretos normativos de caráter autônomo sem previsão em lei formal.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 104</span>
+        <span class="q-topic">D. Administrativo • Poder Regulamentar / Normativo</span>
+      </div>
+      <div class="question-text">A respeito do Poder Regulamentar conferido aos Chefes do Poder Executivo, é correto afirmar que os decretos regulamentares:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Destinam-se a dar fiel execução às leis, não podendo criar direitos, obrigações ou inovar originariamente na ordem jurídica.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Podem contrariar a lei em caso de emergência orçamentária do município.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Permitem a criação originária de novos tributos municipais sem passar pela Câmara de Vereadores.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Subordinam hierarquicamente as leis votadas pelo Poder Legislativo municipal.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 105</span>
+        <span class="q-topic">D. Administrativo • Poder de Polícia: Conceito e Atributos</span>
+      </div>
+      <div class="question-text">Conforme o Art. 78 do Código Tributário Nacional (CTN), o Poder de Polícia é a atividade da administração pública que condiciona ou restringe o uso de bens, atividades e direitos em prol do interesse público. São atributos clássicos do poder de polícia:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Discricionariedade, autoexecutoriedade e coercibilidade.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Irrevogabilidade, subordinação e imprescritibilidade.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Gratuidade obrigatória, oralidade e retroatividade.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Inalienabilidade, impenhorabilidade e imutabilidade.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 106</span>
+        <span class="q-topic">D. Administrativo • Poder Hierárquico</span>
+      </div>
+      <div class="question-text">São faculdades e prerrogativas típicas decorrentes do exercício do Poder Hierárquico na Administração Pública, EXCETO:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Aplicar sanções de interdição a estabelecimentos comerciais privados que violarem o código de posturas sanitárias.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Dar ordens aos subordinados, ressalvadas as ordens manifestamente ilegais.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Fiscalizar e controlar as atividades desempenhadas pelos órgãos inferiores.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Delegar e avocar competências, nos termos e limites previstos na legislação.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 107</span>
+        <span class="q-topic">D. Administrativo • Atributos do Ato Administrativo: PATI</span>
+      </div>
+      <div class="question-text">A doutrina de Direito Administrativo consagrada nas provas da banca INBRASP sintetiza os atributos do ato administrativo no mnemônico 'PATI'. Quais são esses atributos?</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Presunção de legitimidade, Autoexecutoriedade, Tipicidade e Imperatividade.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Publicidade, Autonomia, Temporalidade e Impessoalidade.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Previsibilidade, Anterioridade, Transparência e Intangibilidade.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Probidade, Acessibilidade, Tipicidade e Igualdade.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 108</span>
+        <span class="q-topic">D. Administrativo • Presunção de Legitimidade e Veracidade</span>
+      </div>
+      <div class="question-text">A presunção de legitimidade do ato administrativo produz como efeito prático processual a:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Inversão do ônus da prova, cabendo a quem contesta o ato provar a sua ilegalidade ou falsidade.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Impossibilidade definitiva de anulação do ato pelo Poder Judiciário.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Dispensabilidade total de publicação dos atos no diário oficial do município.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Transformação automática de atos discricionários em atos de império irrecorríveis.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 109</span>
+        <span class="q-topic">D. Administrativo • Autoexecutoriedade do Ato Administrativo</span>
+      </div>
+      <div class="question-text">O atributo da AUTOEXECUTORIEDADE autoriza a Administração Pública a executar diretamente as suas decisões materiais sem a necessidade de prévia autorização judicial. Esse atributo:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Não está presente em todos os atos administrativos, existindo quando expressamente previsto em lei ou em situações urgentes de defesa do interesse público.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Existe indistintamente em 100% dos atos da administração, inclusive na cobrança coercitiva imediata de multas pecuniárias não pagas.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Impede que o particular ingresse com mandado de segurança caso se sinta lesado em seu direito líquido e certo.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Aplica-se somente aos atos editados pelo Poder Judiciário em suas funções típicas.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 110</span>
+        <span class="q-topic">D. Administrativo • Imperatividade e Poder Extrínseco</span>
+      </div>
+      <div class="question-text">A IMPERATIVIDADE (ou poder extroverso) do ato administrativo caracteriza-se por:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Impor deveres e obrigações a terceiros unilateralmente, independentemente da concordância do destinatário.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Conceder vantagens que dependem do prévio requerimento e anuência do cidadão.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Garantir a imutabilidade dos atos municipais após decorridos 30 dias de sua publicação.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Permitir ao servidor público o descumprimento de ordens emanadas de seus superiores diretos.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 111</span>
+        <span class="q-topic">D. Administrativo • Tipicidade no Ato Administrativo</span>
+      </div>
+      <div class="question-text">O atributo da TIPICIDADE, formulado pela professora Maria Sylvia Zanella Di Pietro, preceitua que o ato administrativo deve:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Corresponder a figuras previamente delineadas na lei para produzir os efeitos desejados, impedindo a prática de atos totalmente inominados.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Ser redigido exclusivamente na língua portuguesa arcaica do período colonial.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Conter obrigatoriamente cláusula de sigilo prévio por até 5 anos.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Ser publicado em pelo menos três jornais impressos de circulação nacional.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 112</span>
+        <span class="q-topic">D. Administrativo • Ciclo do Poder de Polícia</span>
+      </div>
+      <div class="question-text">A doutrina divide o Poder de Polícia em quatro fases ou ciclos: I. Ordem de polícia (legislação); II. Consentimento de polícia (licença/autorização); III. Fiscalização de polícia (inspeção); IV. Sanção de polícia (multa/interdição). É passível de delegação a entidades estatais de direito privado integrantes da administração indireta (ex: empresas públicas e sociedades de economia mista):</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>As fases de consentimento, fiscalização e sanção, conforme entendimento fixado pelo STF no Tema 532 de repercussão geral.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Apenas a ordem de polícia, sendo vedada a fiscalização.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Todas as fases sem qualquer restrição, inclusive legislar privativamente sobre crimes.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Nenhuma das fases, pois o poder de polícia é indelegável a qualquer ente.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 113</span>
+        <span class="q-topic">D. Administrativo • Desvio de Finalidade (Art. 2º da Lei da Ação Popular)</span>
+      </div>
+      <div class="question-text">O prefeito de determinado município remove 'ex officio' um guarda municipal para posto de serviço remoto em área rural unicamente como forma de castigo pessoal por divergência política partidária. Essa conduta do administrador público caracteriza vício insanável de:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Desvio de finalidade (ou desvio de poder), tornando o ato de remoção nulo de pleno direito.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Excesso de forma meramente acidental com convalidação automática.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Exercício regular do poder disciplinar sem possibilidade de recurso ao Judiciário.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Incompetência absoluta por ausência de concurso público.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 114</span>
+        <span class="q-topic">D. Administrativo • Taxas de Polícia vs Preços Públicos</span>
+      </div>
+      <div class="question-text">Pela atividade regular do Poder de Polícia exercida pelo Município de Meruoca, a Constituição Federal autoriza a instituição de:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Taxas pelo exercício do poder de polícia.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Impostos progressivos de natureza punitiva.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Contribuições de melhoria extraordinárias sem obra pública.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Tarifas alfandegárias de fiscalização internacional.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 115</span>
+        <span class="q-topic">D. Administrativo • Distinção entre Atos Nulos e Anuláveis</span>
+      </div>
+      <div class="question-text">No regime jurídico administrativo, quando um ato apresenta defeito quanto aos elementos de COMPETÊNCIA (desde que não seja exclusiva) ou de FORMA (desde que a lei não a exija como requisito de validade), o ato é passível de:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Convalidação pela Administração Pública, aproveitando-se o ato com efeitos retroativos (ex tunc).</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Revogação obrigatória e irrecusável pelo Poder Judiciário.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Cassação automática por descumprimento de deveres pelo particular.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Prescrição imediata em 24 horas a contar da data de protocolo.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="section-title">
+      <span><i class="fas fa-code"></i> PARTE 2: NOÇÕES DE INFORMÁTICA (QUESTÕES 116 A 130)</span>
+      <span style="font-size: 0.8rem; font-weight: normal;">Algoritmos, Fluxogramas & Noções de Programação em Python (Edital pág. 21)</span>
+    </div>
+
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 116</span>
+        <span class="q-topic">Informática • Conceito de Algoritmo</span>
+      </div>
+      <div class="question-text">No contexto da ciência da computação e do edital da Câmara de Meruoca, um ALGORITMO pode ser conceituado como:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Uma sequência finita de passos lógicos, ordenados e bem definidos, que visa à resolução de um problema ou à execução de uma tarefa.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Um programa executável binário restrito a sistemas operacionais de grande porte.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Uma peça de hardware instalada na placa-mãe responsável por resfriar o processador.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Um protocolo de rede utilizado exclusivamente para tráfego seguro de e-mails corporativos.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 117</span>
+        <span class="q-topic">Informática • Fluxogramas: Símbolo de Decisão (Losango)</span>
+      </div>
+      <div class="question-text">Em um fluxograma que representa o fluxo de tramitação de um processo administrativo, o símbolo geométrico que representa uma tomada de DECISÃO ou desvio condicional (onde o fluxo pode seguir caminhos diferentes conforme a resposta Sim/Não) é o:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Losango.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Retângulo.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Círculo ou elipse.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Paralelogramo.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 118</span>
+        <span class="q-topic">Informática • Pseudocódigo e Estruturas Condicionais</span>
+      </div>
+      <div class="question-text">Considere o seguinte trecho de pseudocódigo:
+
+SE (idade >= 18) ENTÃO
+    ESCREVA('Apto ao concurso')
+SENÃO
+    ESCREVA('Inapto por idade')
+FIMSE
+
+Caso o valor atribuído à variável 'idade' seja exatamente 18, o programa exibirá:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Apto ao concurso</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Inapto por idade</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Erro de compilação por operador inexistente</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Nenhuma mensagem será exibida na tela</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 119</span>
+        <span class="q-topic">Informática • Estruturas de Repetição (Laços / Loops)</span>
+      </div>
+      <div class="question-text">Em lógica de programação, a estrutura que executa repetidamente um bloco de instruções ENQUANTO uma condição prévia permanecer verdadeira é chamada de:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Laço de repetição ou loop (while / enquanto).</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Função recursiva estática imutável.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Declaração de constante booleana.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Instrução de salto incondicional irrestrita.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 120</span>
+        <span class="q-topic">Informática • Linguagem Python: Indentação Obrigatória</span>
+      </div>
+      <div class="question-text">Diferentemente de linguagens como C ou Java que utilizam chaves `{ }` para delimitar blocos de comandos, a linguagem Python utiliza como delimitador obrigatório de blocos de código a:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Indentação (espaçamento consistente à esquerda com espaços ou tabs).</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Utilização de ponto e vírgula ';' ao final de cada instrução.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Inclusão da palavra reservada 'END' ao final de cada linha.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Abertura e fechamento de colchetes '[ ]' em cada função.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 121</span>
+        <span class="q-topic">Informática • Python: Tipos de Dados Básicos</span>
+      </div>
+      <div class="question-text">Em Python, considere a atribuição: `total = 100`, `preco = 45.50` e `cargo = 'Técnico'`. Os tipos de dados primitivos dessas variáveis são, respectivamente:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>int (inteiro), float (número de ponto flutuante) e str (string / texto).</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>number, decimal e char.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>integer, currency e varchar.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>long, double e text.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 122</span>
+        <span class="q-topic">Informática • Python: Operadores Aritméticos Divisão e Resto</span>
+      </div>
+      <div class="question-text">Na linguagem Python, o operador `//` realiza a divisão inteira e o operador `%` retorna o resto da divisão. Qual será o resultado das expressões `7 // 2` e `7 % 2`?</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>3 e 1</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>3.5 e 0.5</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>3 e 0</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>4 e 1</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 123</span>
+        <span class="q-topic">Informática • Python: Listas e Indexação</span>
+      </div>
+      <div class="question-text">Em Python, as listas são coleções ordenadas de elementos e possuem indexação baseada em zero. Dada a lista `bancas = ['CETREDE', 'CONSULPAM', 'INBRASP', 'IDECAN']`, a instrução `print(bancas[2])` exibirá na tela:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>INBRASP</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>CONSULPAM</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>CETREDE</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>IDECAN</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 124</span>
+        <span class="q-topic">Informática • Python: Comentários de Linha</span>
+      </div>
+      <div class="question-text">Na linguagem Python, qual caractere é utilizado para inserir comentários de linha única (instruções que são ignoradas pelo interpretador)?</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span># (cerquilha / hashtag)</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>// (duas barras inclinadas)</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>/* (barra e asterisco)</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>-- (dois traços)</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 125</span>
+        <span class="q-topic">Informática • Python: Estrutura Condicional (if / elif / else)</span>
+      </div>
+      <div class="question-text">Analise o seguinte código em Python:
+
+pontos = 85
+if pontos >= 90:
+    print('Aprovado em 1º Lugar')
+elif pontos >= 50:
+    print('Classificado')
+else:
+    print('Reprovado')
+
+Qual será a saída exibida no terminal?</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Classificado</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Aprovado em 1º Lugar</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Reprovado</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Aprovado em 1º Lugar e Classificado simultaneamente</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 126</span>
+        <span class="q-topic">Informática • Python: Operador de Exponenciação</span>
+      </div>
+      <div class="question-text">Qual operador matemático é utilizado na linguagem Python para calcular a exponenciação (potência), por exemplo, dois elevado à terceira potência (2³)?</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>** (dois asteriscos, ex: 2 ** 3)</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>^ (acento circunflexo, ex: 2 ^ 3)</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>pow$ (ex: 2 pow$ 3)</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>^^ (dois circunflexos, ex: 2 ^^ 3)</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 127</span>
+        <span class="q-topic">Informática • Python: Função len()</span>
+      </div>
+      <div class="question-text">A função nativa `len()` em Python tem como finalidade:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Retornar a quantidade de elementos de um objeto (como tamanho de uma lista ou comprimento de uma string).</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Converter um texto em letras maiúsculas.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Ler uma entrada de dados digitada pelo usuário no teclado.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Finalizar imediatamente a execução do programa em caso de erro.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 128</span>
+        <span class="q-topic">Informática • Python: Operadores Lógicos (and, or, not)</span>
+      </div>
+      <div class="question-text">Em Python, os operadores lógicos booleanos para conjunção, disjunção e negação são grafados por extenso como:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>and, or, not</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>&&, ||, !</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>.AND., .OR., .NOT.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>e, ou, nao</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 129</span>
+        <span class="q-topic">Informática • Python: Laço for e Função range()</span>
+      </div>
+      <div class="question-text">Considere o código Python:
+
+soma = 0
+for i in range(1, 4):
+    soma += i
+print(soma)
+
+Lembrando que `range(1, 4)` gera os números 1, 2 e 3 (o limite superior 4 é exclusivo), qual valor será impresso?</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>6</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>10</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>4</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>3</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 130</span>
+        <span class="q-topic">Informática • Python: Função print() e input()</span>
+      </div>
+      <div class="question-text">As funções nativas de entrada e saída padrão em um terminal na linguagem Python são, respectivamente:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>input() para entrada de dados do usuário e print() para saída em tela.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>read() para entrada e write() para saída.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>scanf() para entrada e printf() para saída.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>cin para entrada e cout para saída.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="section-title especifica">
+      <span><i class="fas fa-landmark"></i> PARTE 3: LEI ORGÂNICA DE MERUOCA (QUESTÕES 131 A 140)</span>
+      <span style="font-size: 0.8rem; font-weight: normal;">Arts. 16 ao 30 • Do Poder Legislativo Municipal, Vereadores & Quóruns</span>
+    </div>
+
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 131</span>
+        <span class="q-topic">Lei Orgânica de Meruoca • Poder Legislativo Municipal e Composição</span>
+      </div>
+      <div class="question-text">O Poder Legislativo do Município de Meruoca é exercido pela Câmara Municipal, composta por Vereadores eleitos pelo sistema proporcional para um mandato de:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>4 (quatro) anos, correspondendo a uma legislatura.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>2 (dois) anos, permitida uma recondução consecutiva.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>5 (cinco) anos, em consonância com o mandato dos senadores.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>3 (três) anos, renovando-se por terços anuais.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 132</span>
+        <span class="q-topic">Lei Orgânica de Meruoca • Posse dos Vereadores, Prefeito e Vice</span>
+      </div>
+      <div class="question-text">Nos termos da Lei Orgânica Municipal, a posse dos Vereadores, do Prefeito e do Vice-Prefeito de Meruoca realizar-se-á em sessão solene de instalação no dia:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>1º de janeiro do ano subsequente ao da eleição.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>1º de fevereiro do ano da posse legislativa federal.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>15 de novembro, data da proclamação da República.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>1º de março, após o encerramento do recesso carnavalesco.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 133</span>
+        <span class="q-topic">Lei Orgânica de Meruoca • Mesa Diretora da Câmara Municipal</span>
+      </div>
+      <div class="question-text">Imediatamente após a posse dos Vereadores de Meruoca, sob a presidência do vereador mais votado dentre os presentes, proceder-se-á à eleição dos membros da:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Mesa Diretora da Câmara Municipal.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Comissão Mista de Finanças e Tributação.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Bancada Governista de Apoio ao Poder Executivo.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Junta Comercial e Fiscalizatória dos Bairros.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 134</span>
+        <span class="q-topic">Lei Orgânica de Meruoca • Quórum Geral de Deliberação na Câmara</span>
+      </div>
+      <div class="question-text">Salvo disposição expressa em contrário da Lei Orgânica de Meruoca ou da Constituição Federal, as deliberações da Câmara Municipal e de suas Comissões serão tomadas por:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Maioria de votos, presente a maioria absoluta de seus membros.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Dois terços de votos, independentemente do número de presentes.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Unanimidade obrigatória dos parlamentares diplomados.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Voto exclusivo e soberano do Presidente da Mesa Diretora.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 135</span>
+        <span class="q-topic">Lei Orgânica de Meruoca • Imunidade Material dos Vereadores (Inviolabilidade)</span>
+      </div>
+      <div class="question-text">Conforme o Art. 29, VIII da Constituição Federal e a Lei Orgânica de Meruoca, os Vereadores gozam de inviolabilidade por suas opiniões, palavras e votos:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>No exercício do mandato e na circunscrição do Município.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Em qualquer lugar do território nacional, inclusive em viagens privadas de lazer.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Apenas durante as sessões plenárias dentro do edifício da Câmara Municipal.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Exclusivamente quando autorizados previamente pelo Presidente da Casa.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 136</span>
+        <span class="q-topic">Lei Orgânica de Meruoca • Perda do Mandato por Falta às Sessões</span>
+      </div>
+      <div class="question-text">Perderá o mandato o Vereador de Meruoca que deixar de comparecer, em cada sessão legislativa anual, sem justificativa legal ou licença concedida pela Casa, à:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Terça parte (1/3) das sessões ordinárias da Câmara Municipal.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Metade (1/2) das sessões extraordinárias convocadas pelo prefeito.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Duas sessões solenes comemorativas consecutivas.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Quinta parte (1/5) das reuniões das comissões temáticas.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 137</span>
+        <span class="q-topic">Lei Orgânica de Meruoca • Remuneração dos Vereadores (Subsídio)</span>
+      </div>
+      <div class="question-text">O subsídio dos Vereadores de Meruoca é fixado pela Câmara Municipal em cada legislatura para vigorar na subsequente, observados os limites constitucionais e o teto da receita municipal. O subsídio deve ser fixado sob a modalidade de:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Parcela única, vedado o acréscimo de qualquer gratificação, adicional, abono, prêmio ou verba de representação.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Salário base acrescido de 40% de gratificação de produtividade por projeto aprovado.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Diárias cumulativas por sessão ordinária comparecida no mês.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Comissão percentual sobre a arrecadação mensal do IPTU de Meruoca.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 138</span>
+        <span class="q-topic">Lei Orgânica de Meruoca • Fiscalização Financeira e Controle Externo</span>
+      </div>
+      <div class="question-text">A fiscalização contábil, financeira e orçamentária do Município de Meruoca será exercida pela Câmara Municipal, mediante controle externo, com o auxílio do:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Tribunal de Contas do Estado do Ceará (TCE/CE).</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Tribunal de Contas da União (TCU) em primeira e última instância.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Conselho Fiscal Popular eleito por voto secreto em cada bairro.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Ministério da Fazenda e Receita Federal do Brasil.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 139</span>
+        <span class="q-topic">Lei Orgânica de Meruoca • Rejeição do Parecer Prévio do TCE</span>
+      </div>
+      <div class="question-text">O parecer prévio emitido pelo Tribunal de Contas sobre as contas que o Prefeito de Meruoca deve prestar anualmente só deixará de prevalecer por decisão de:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Dois terços (2/3) dos membros da Câmara Municipal.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Maioria absoluta dos vereadores presentes.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Maioria simples mediante votação secreta.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Unanimidade dos integrantes da comissão de orçamento.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 140</span>
+        <span class="q-topic">Lei Orgânica de Meruoca • Comissões Parlamentares de Inquérito (CPIs)</span>
+      </div>
+      <div class="question-text">As Comissões Parlamentares de Inquérito (CPI) na Câmara Municipal de Meruoca, que terão poderes de investigação próprios das autoridades judiciais, serão criadas mediante requerimento de:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Um terço (1/3) dos membros da Câmara Municipal, para a apuração de fato determinado e por prazo certo.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Metade mais um dos vereadores, para investigar condutas genéricas sem prazo determinado.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Dois terços dos membros da Casa, exigindo-se aval prévio do juiz de direito da comarca.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Qualquer cidadão que apresente abaixo-assinado com 50 assinaturas.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <!-- FOLHA ÓPTICA DE RESPOSTAS -->
+    <div class="folha-respostas-box">
+      <div style="text-align: center; border-bottom: 1px solid #cbd5e1; padding-bottom: 8px; margin-bottom: 10px;">
+        <strong style="font-size: 1.1rem; text-transform: uppercase; color: var(--primary);">Folha de Respostas Óptica — Simulação Real (40 Questões)</strong>
+        <p style="margin: 4px 0 0 0; font-size: 0.8rem; color: #64748b;">Preencha a bolha correspondente à alternativa escolhida para treino de agilidade.</p>
+      </div>
+      <div class="folha-grid">
+
+        <div class="folha-row">
+          <span class="folha-num">101</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">102</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">103</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">104</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">105</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">106</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">107</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">108</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">109</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">110</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">111</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">112</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">113</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">114</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">115</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">116</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">117</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">118</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">119</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">120</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">121</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">122</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">123</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">124</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">125</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">126</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">127</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">128</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">129</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">130</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">131</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">132</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">133</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">134</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">135</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">136</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">137</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">138</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">139</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">140</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+      </div>
+    </div>
+
+    <!-- GABARITO OFICIAL COMENTADO -->
+    <div class="gabarito-section">
+      <div style="background: var(--primary); color: white; padding: 10px 16px; border-radius: 6px; font-weight: 800; font-size: 1.1rem; margin-bottom: 16px;">
+        <i class="fas fa-check-double"></i> GABARITO OFICIAL FUNDAMENTADO (QUESTÕES 101 A 140)
+      </div>
+
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 101 (D. Administrativo - Poder Vinculado vs Discricionário):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. A discricionariedade confere juízo de mérito (conveniência e oportunidade) estritamente dentro das balizas da lei. O Judiciário fiscaliza a legalidade/moralidade, mas não pode substituir o mérito administrativo da decisão discricionária.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 102 (D. Administrativo - Abuso de Poder: Excesso vs Desvio de Poder):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Mnemônico clássico: Excesso de Poder = vício de COMPETÊNCIA (o agente faz o que a lei não lhe permitiu). Desvio de Poder (ou Finalidade) = vício de FINALIDADE (o agente é competente, mas busca interesse privado ou perseguição).</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 103 (D. Administrativo - Poder Disciplinar):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. O poder disciplinar atinge quem tem vínculo especial/interno com o Estado (servidores públicos e contratados administrativos via licitação). A punição aos cidadãos em geral sem vínculo específico decorre do Poder de Polícia.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 104 (D. Administrativo - Poder Regulamentar / Normativo):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 84, IV da CF/88. O poder regulamentar é de caráter secundário (intra legem): serve apenas para explicitar e regulamentar a lei existente para sua fiel execução, sendo vedado criar obrigações novas ou inovar originariamente.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 105 (D. Administrativo - Poder de Polícia: Conceito e Atributos):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Mnemônico 'DAC': Discricionariedade (margem de escolha de atuação/sanção), Autoexecutoriedade (execução material direta sem prévia autorização judicial) e Coercibilidade (imposição imperativa de limites com força pública se necessário).</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 106 (D. Administrativo - Poder Hierárquico):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. A interdição de comércio privado decorre do Poder de Polícia (sobre particulares). O Poder Hierárquico atua estritamente na relação interna de subordinação e coordenação entre órgãos e agentes públicos (dar ordens, fiscalizar, delegar e avocar).</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 107 (D. Administrativo - Atributos do Ato Administrativo: PATI):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Mnemônico PATI: Presunção de legitimidade/veracidade (atos presumem-se válidos até prova em contrário); Autoexecutoriedade (execução direta pelo Estado); Tipicidade (deve corresponder a figura prevista em lei); Imperatividade (impõe obrigações a terceiros independentemente de concordância).</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 108 (D. Administrativo - Presunção de Legitimidade e Veracidade):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. A presunção de legitimidade é relativa (juris tantum): o ato nasce com aparência de legalidade e verdade fática, cabendo ao particular comprovar eventual defeito (inversão do ônus da prova).</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 109 (D. Administrativo - Autoexecutoriedade do Ato Administrativo):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Pegadinha clássica: a autoexecutoriedade NÃO está em todos os atos! Ela não existe, por exemplo, na cobrança de multa em dinheiro (se o cidadão não pagar, o Estado não pode tomar o dinheiro à força; deve ingressar com Execução Fiscal no Judiciário).</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 110 (D. Administrativo - Imperatividade e Poder Extrínseco):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. A imperatividade permite impor obrigações coercitivas ao administrado (ex: multa de trânsito, interdição de vigilância sanitária). Não está presente em atos enunciativos (certidões) ou negociais (autorização, licença).</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 111 (D. Administrativo - Tipicidade no Ato Administrativo):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Pela tipicidade, para cada finalidade pretendida a lei já define a espécie de ato cabível (ex: se quer punir, usa demissão/advertência; se quer autorizar, usa alvará). Isso impede que a autoridade crie atos extravagantes ou sem modelo na lei.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 112 (D. Administrativo - Ciclo do Poder de Polícia):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. O STF fixou a tese de que é constitucional a delegação do poder de polícia (consentimento, fiscalização e sanção) a pessoas jurídicas de direito privado integrantes da administração pública indireta de capital majoritariamente público que prestem serviços públicos em regime não concorrencial (ex: BHTrans, CET).</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 113 (D. Administrativo - Desvio de Finalidade (Art. 2º da Lei da Ação Popular)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. A remoção de servidor tem como finalidade atender à necessidade do serviço público. Usá-la para perseguir ou punir desvia a finalidade legal do ato (desvio de poder), gerando nulidade absoluta por violação direta ao princípio da impessoalidade.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 114 (D. Administrativo - Taxas de Polícia vs Preços Públicos):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 145, II da CF/88 e Art. 77 do CTN: as taxas são tributos cobrados em razão do exercício regular do poder de polícia (ex: taxa de fiscalização de funcionamento, taxa de vigilância sanitária) ou pela utilização efetiva/potencial de serviço público específico e divisível.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 115 (D. Administrativo - Distinção entre Atos Nulos e Anuláveis):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Mnemônico FO-CO: defeitos de Forma (não essencial) e Competência (não exclusiva) geram atos ANULÁVEIS que admitem convalidação pela própria Administração, desde que não acarretem lesão ao interesse público nem prejuízo a terceiros.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 116 (Informática - Conceito de Algoritmo):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Algoritmo é uma sequência lógica, finita, ordenada e não ambígua de instruções que, ao ser processada, transforma entradas em saídas para solucionar um problema.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 117 (Informática - Fluxogramas: Símbolo de Decisão (Losango)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Símbolos universais de fluxogramas: Losango = Decisão / Condição (teste lógico Se/Senão); Retângulo = Ação / Processamento / Atribuição; Oval/Elipse = Início ou Fim; Paralelogramo = Entrada ou Saída de dados.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 118 (Informática - Pseudocódigo e Estruturas Condicionais):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. O operador `>=` significa 'maior ou igual'. Como 18 é igual a 18, a condição é VERDADEIRA e o bloco do SE é executado, exibindo 'Apto ao concurso'.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 119 (Informática - Estruturas de Repetição (Laços / Loops)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. As estruturas de repetição (laços ou loops) permitem executar comandos várias vezes. No laço `enquanto` (`while`), o teste é feito no início e o bloco roda enquanto o teste for verdadeiro.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 120 (Informática - Linguagem Python: Indentação Obrigatória):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Em Python, a indentação não é apenas estética: ela define a hierarquia e o escopo dos blocos de código (corpo de funções, laços for/while, estruturas if/else).</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 121 (Informática - Python: Tipos de Dados Básicos):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Em Python, inteiros são do tipo `int`, números com casas decimais são do tipo `float` e cadeias de caracteres entre aspas são do tipo `str`.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 122 (Informática - Python: Operadores Aritméticos Divisão e Resto):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. 7 dividido por 2 dá quociente 3 e sobra resto 1. Logo, a divisão inteira `7 // 2` resulta em 3, e o módulo/resto `7 % 2` resulta em 1.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 123 (Informática - Python: Listas e Indexação):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. A indexação em Python inicia em zero: `bancas[0]` = 'CETREDE', `bancas[1]` = 'CONSULPAM', `bancas[2]` = 'INBRASP', `bancas[3]` = 'IDECAN'.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 124 (Informática - Python: Comentários de Linha):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Em Python, comentários de linha única começam com o caractere `#`. Em linguagens como C, Java e PHP usa-se `//`; em SQL usa-se `--`.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 125 (Informática - Python: Estrutura Condicional (if / elif / else)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. `pontos = 85`. A primeira condição (`85 >= 90`) é Falsa. O interpretador salta para o `elif`: `85 >= 50` é Verdadeira. Portanto, executa `print('Classificado')` e encerra a estrutura condicional.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 126 (Informática - Python: Operador de Exponenciação):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Em Python, a potência é calculada com `**` (ex: `2 ** 3 = 8`). O operador `^` em Python é o operador bit a bit XOR (ou exclusivo), uma pegadinha clássica de concurso!</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 127 (Informática - Python: Função len()):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. `len()` é a abreviação de 'length'. Exemplo: `len('Meruoca')` retorna 7; `len([10, 20, 30])` retorna 3.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 128 (Informática - Python: Operadores Lógicos (and, or, not)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Python preza pela legibilidade e usa palavras em inglês em minúsculas: `and` (conjunção), `or` (disjunção) e `not` (negação). `&&` e `||` são de C/Java/JS.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 129 (Informática - Python: Laço for e Função range()):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. `range(1, 4)` produz os valores 1, 2 e 3. Na 1ª iteração: soma = 0 + 1 = 1. Na 2ª iteração: soma = 1 + 2 = 3. Na 3ª iteração: soma = 3 + 3 = 6. Saída: 6.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 130 (Informática - Python: Função print() e input()):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Em Python padrão: `input('Digite algo:')` lê dados do teclado em formato string, e `print('Mensagem')` imprime dados na tela do console.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 131 (Lei Orgânica de Meruoca - Poder Legislativo Municipal e Composição):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Em conformidade com a CF/88 e a Lei Orgânica de Meruoca, o mandato dos Vereadores é de 4 anos. Cada período de 4 anos de mandato parlamentar corresponde a uma LEGISLATURA.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 132 (Lei Orgânica de Meruoca - Posse dos Vereadores, Prefeito e Vice):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. A instalação da legislatura e a posse dos Vereadores, Prefeito e Vice-Prefeito ocorre obrigatoriamente no dia 1º de JANEIRO do ano subsequente à eleição municipal.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 133 (Lei Orgânica de Meruoca - Mesa Diretora da Câmara Municipal):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Conforme a Lei Orgânica e o Regimento Interno, logo após o compromisso de posse no dia 1º de janeiro, os parlamentares elegem a Mesa Diretora da Câmara (Presidente, Vice-Presidente e Secretários).</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 134 (Lei Orgânica de Meruoca - Quórum Geral de Deliberação na Câmara):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. É a regra geral da maioria simples (ou relativa): maioria dos votos dos presentes na sessão, desde que esteja presente a maioria absoluta (metade mais um) dos membros da Casa (Art. 47 da CF e Lei Orgânica).</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 135 (Lei Orgânica de Meruoca - Imunidade Material dos Vereadores (Inviolabilidade)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. A imunidade material do Vereador é local: ele possui inviolabilidade civil e penal por palavras, votos e opiniões proferidas no exercício das funções parlamentares e restritas à CIRCUNSCRIÇÃO DO MUNICÍPIO de Meruoca.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 136 (Lei Orgânica de Meruoca - Perda do Mandato por Falta às Sessões):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 55, III da CF e Lei Orgânica: acarreta a perda do mandato parlamentar a ausência injustificada a 1/3 (uma terça parte) das sessões ordinárias do ano legislativo.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 137 (Lei Orgânica de Meruoca - Remuneração dos Vereadores (Subsídio)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 39, § 4º da CF/88 e Lei Orgânica: os agentes políticos remuneram-se exclusivamente por SUBSÍDIO fixado em parcela única, sendo expressamente proibido o pagamento de penduricalhos, adicionais ou gratificações de gabinete.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 138 (Lei Orgânica de Meruoca - Fiscalização Financeira e Controle Externo):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. O controle externo da Câmara Municipal sobre as contas do Município e do Prefeito é exercido com o auxílio do Tribunal de Contas do Estado (TCE/CE), que emite parecer prévio.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 139 (Lei Orgânica de Meruoca - Rejeição do Parecer Prévio do TCE):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 31, § 2º da CF/88 e Lei Orgânica de Meruoca: o parecer técnico do Tribunal de Contas tem peso qualificado e só pode ser derrubado pelo voto de 2/3 (dois terços) dos vereadores.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 140 (Lei Orgânica de Meruoca - Comissões Parlamentares de Inquérito (CPIs)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 58, § 3º da CF/88 e Lei Orgânica: a CPI é criada por requerimento de 1/3 (um terço) dos membros da Câmara, para apuração de FATO DETERMINADO e por PRAZO CERTO, sendo suas conclusões encaminhadas ao Ministério Público se for o caso.</p>
+      </div>
+    
+    </div>
+
+  </div>
+
+</body>
+</html>

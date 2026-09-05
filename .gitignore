@@ -11,8 +11,13 @@ check_provas.py
 inspect_cronograma.py
 validate_questions.py
 build_html_dia4.py
+build_html_dia5.py
+build_questoes_dia5.py
 gerar_questoes_dia4.py
 inject_dia4.py
+inject_semana1_complete.py
+extract_simulado1.py
+questoes_dia6_simulado1.json
 
 # System and editor files
 .DS_Store
