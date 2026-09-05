@@ -4444,6 +4444,9 @@ let appState = {
   dayQuestions: {},
   quizAnswers: {},
   quizCategoryFilter: 'dia6',
+  quizOrderMode: 'random', // 'random', 'interleaved', 'sequential'
+  quizFilterStatus: 'all', // 'all', 'pending', 'wrong'
+  quizShuffledOrder: {}, // armazena ordem embaralhada por chave de filtro para manter estabilidade
   currentFlashcardIndex: 0,
   flashcardFilter: 'dia4',
   masteredFlashcards: {},
@@ -4500,6 +4503,9 @@ function loadState() {
       const parsed = JSON.parse(saved);
       appState = { ...appState, ...parsed };
       if (!appState.quizAnswers) appState.quizAnswers = {};
+      if (!appState.quizOrderMode) appState.quizOrderMode = 'random';
+      if (!appState.quizFilterStatus) appState.quizFilterStatus = 'all';
+      if (!appState.quizShuffledOrder) appState.quizShuffledOrder = {};
       if (!appState.masteredFlashcards) appState.masteredFlashcards = {};
       if (!appState.cadernoErros || appState.cadernoErros.length === 0) {
         appState.cadernoErros = [...DEFAULT_ERRORS];
@@ -4730,62 +4736,264 @@ function filterFlashcards(cat) {
 }
 
 // =========================================================================
-// MÓDULO QUIZ INTERATIVO
+// MÓDULO QUIZ INTERATIVO (ALEATORIEDADE & ORDEM INTELIGENTE)
 // =========================================================================
+
+// Algoritmo Fisher-Yates para embaralhamento de alta qualidade
+function shuffleArray(arr) {
+  const copy = [...arr];
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy;
+}
+
+// Algoritmo para intercalar matérias balanceadamente (round-robin entre disciplinas)
+function interleaveQuestionsByDiscipline(questions) {
+  const groups = {};
+  questions.forEach(q => {
+    const disc = q.discipline || 'Geral';
+    if (!groups[disc]) groups[disc] = [];
+    groups[disc].push(q);
+  });
+
+  // Embaralhar internamente as questões de cada disciplina
+  const disciplines = Object.keys(groups);
+  disciplines.forEach(disc => {
+    groups[disc] = shuffleArray(groups[disc]);
+  });
+
+  // Embaralhar a ordem inicial das disciplinas para não começar sempre com a mesma
+  const shuffledDisciplines = shuffleArray(disciplines);
+
+  const result = [];
+  let remaining = questions.length;
+
+  while (remaining > 0) {
+    for (let i = 0; i < shuffledDisciplines.length; i++) {
+      const disc = shuffledDisciplines[i];
+      if (groups[disc] && groups[disc].length > 0) {
+        result.push(groups[disc].shift());
+        remaining--;
+      }
+    }
+  }
+
+  return result;
+}
+
+// Retorna as questões base do filtro ativo
+function getFilteredBaseQuestions(filterKey) {
+  let questions = QUIZ_QUESTIONS_DATA;
+  if (filterKey === 'dia6') {
+    questions = questions.filter(q => q.id >= 141 && q.id <= 180);
+  } else if (filterKey === 'dia5') {
+    questions = questions.filter(q => q.id >= 101 && q.id <= 140);
+  } else if (filterKey === 'dia4') {
+    questions = questions.filter(q => q.id >= 61 && q.id <= 100);
+  } else if (filterKey === 'dia2') {
+    questions = questions.filter(q => q.id >= 1 && q.id <= 30);
+  } else if (filterKey === 'dia3') {
+    questions = questions.filter(q => q.id >= 31 && q.id <= 60);
+  } else if (filterKey !== 'all') {
+    questions = questions.filter(q => q.category === filterKey);
+  }
+  return questions;
+}
+
+// Retorna as questões organizadas conforme o modo de ordenação e com persistência de ordem
+function getOrderedQuestions(filterKey) {
+  const baseQuestions = getFilteredBaseQuestions(filterKey);
+  const mode = appState.quizOrderMode || 'random';
+
+  if (mode === 'sequential') {
+    return [...baseQuestions].sort((a, b) => a.id - b.id);
+  }
+
+  const orderKey = `${filterKey}_${mode}`;
+  const baseIds = baseQuestions.map(q => q.id);
+
+  // Verificar se já temos uma ordem válida armazenada para este filtro e modo
+  const storedIds = appState.quizShuffledOrder ? appState.quizShuffledOrder[orderKey] : null;
+  const isOrderValid = Array.isArray(storedIds) && 
+    storedIds.length === baseIds.length && 
+    baseIds.every(id => storedIds.includes(id));
+
+  if (isOrderValid) {
+    const qMap = new Map(baseQuestions.map(q => [q.id, q]));
+    return storedIds.map(id => qMap.get(id)).filter(Boolean);
+  }
+
+  // Se não existir ou for inválida, gerar nova ordem
+  let orderedList = [];
+  if (mode === 'interleaved') {
+    orderedList = interleaveQuestionsByDiscipline(baseQuestions);
+  } else {
+    // modo 'random' padrão
+    orderedList = shuffleArray(baseQuestions);
+  }
+
+  // Armazenar os IDs ordenados para manter estabilidade enquanto o usuário responde
+  if (!appState.quizShuffledOrder) appState.quizShuffledOrder = {};
+  appState.quizShuffledOrder[orderKey] = orderedList.map(q => q.id);
+  saveState();
+
+  return orderedList;
+}
+
+// Forçar um novo embaralhamento das questões ativas
+function shuffleActiveQuiz() {
+  const filterKey = appState.quizCategoryFilter || 'dia6';
+  const mode = appState.quizOrderMode || 'random';
+
+  if (!appState.quizShuffledOrder) appState.quizShuffledOrder = {};
+  delete appState.quizShuffledOrder[`${filterKey}_random`];
+  delete appState.quizShuffledOrder[`${filterKey}_interleaved`];
+
+  saveState();
+  renderQuiz();
+
+  const modeLabel = mode === 'interleaved' ? 'intercaladas por disciplina' : 'embaralhadas aleatoriamente';
+  showToast(`🔀 Questões ${modeLabel}!`);
+}
+
+// Alterar o modo de ordenação (random, interleaved, sequential)
+function setQuizOrderMode(mode) {
+  appState.quizOrderMode = mode;
+  saveState();
+  renderQuiz();
+
+  if (mode === 'random') {
+    showToast("🔀 Modo Aleatório ativado: questões embaralhadas!");
+  } else if (mode === 'interleaved') {
+    showToast("⚖️ Modo Intercalado ativado: matérias alternadas como na prova!");
+  } else {
+    showToast("🔢 Modo Sequencial ativado: ordem numérica padrão.");
+  }
+}
+
+// Filtrar por status (todas, pendentes, erros)
+function setQuizStatusFilter(status) {
+  appState.quizFilterStatus = status;
+  saveState();
+  renderQuiz();
+}
+
 function renderQuiz() {
   const container = document.getElementById('quizQuestionsContainer');
   if (!container) return;
 
-  let questions = QUIZ_QUESTIONS_DATA;
-  if (appState.quizCategoryFilter === 'dia6') {
-    questions = questions.filter(q => q.id >= 141 && q.id <= 180);
-  } else if (appState.quizCategoryFilter === 'dia5') {
-    questions = questions.filter(q => q.id >= 101 && q.id <= 140);
-  } else if (appState.quizCategoryFilter === 'dia4') {
-    questions = questions.filter(q => q.id >= 61 && q.id <= 100);
-  } else if (appState.quizCategoryFilter === 'dia2') {
-    questions = questions.filter(q => q.id >= 1 && q.id <= 30);
-  } else if (appState.quizCategoryFilter === 'dia3') {
-    questions = questions.filter(q => q.id >= 31 && q.id <= 60);
-  } else if (appState.quizCategoryFilter !== 'all') {
-    questions = questions.filter(q => q.category === appState.quizCategoryFilter);
-  }
+  const filterKey = appState.quizCategoryFilter || 'dia6';
+  const allOrderedQuestions = getOrderedQuestions(filterKey);
 
-  const letters = ['A', 'B', 'C', 'D'];
-
+  // Contagens para o bloco
+  const totalInBlock = allOrderedQuestions.length;
   let totalAnswered = 0;
   let correctCount = 0;
   let wrongCount = 0;
+  let pendingCount = 0;
 
-  questions.forEach(q => {
+  allOrderedQuestions.forEach(q => {
     const ans = appState.quizAnswers[q.id];
     if (ans && ans.confirmed) {
       totalAnswered++;
       if (ans.isCorrect) correctCount++;
       else wrongCount++;
+    } else {
+      pendingCount++;
     }
   });
 
   const accuracyPct = totalAnswered > 0 ? Math.round((correctCount / totalAnswered) * 100) : 0;
 
+  // Atualizar placar de pontuação
   const totalEl = document.getElementById('quizTotalCount');
   const corEl = document.getElementById('quizCorrectCount');
   const wrgEl = document.getElementById('quizWrongCount');
   const accEl = document.getElementById('quizAccuracyPct');
 
-  if (totalEl) totalEl.innerText = `${questions.length}`;
+  if (totalEl) totalEl.innerText = `${totalInBlock}`;
   if (corEl) corEl.innerText = `${correctCount}`;
   if (wrgEl) wrgEl.innerText = `${wrongCount}`;
   if (accEl) accEl.innerText = `${accuracyPct}%`;
 
-  container.innerHTML = questions.map((q) => {
+  // Atualizar botões de modo de ordenação
+  const orderMode = appState.quizOrderMode || 'random';
+  const btnRandom = document.getElementById('btnOrderRandom');
+  const btnInterleaved = document.getElementById('btnOrderInterleaved');
+  const btnSequential = document.getElementById('btnOrderSequential');
+
+  if (btnRandom) btnRandom.classList.toggle('active', orderMode === 'random');
+  if (btnInterleaved) btnInterleaved.classList.toggle('active', orderMode === 'interleaved');
+  if (btnSequential) btnSequential.classList.toggle('active', orderMode === 'sequential');
+
+  // Atualizar filtros de status
+  const statusFilter = appState.quizFilterStatus || 'all';
+  const btnStatusAll = document.getElementById('btnStatusAll');
+  const btnStatusPending = document.getElementById('btnStatusPending');
+  const btnStatusWrong = document.getElementById('btnStatusWrong');
+
+  if (btnStatusAll) btnStatusAll.classList.toggle('active', statusFilter === 'all');
+  if (btnStatusPending) btnStatusPending.classList.toggle('active', statusFilter === 'pending');
+  if (btnStatusWrong) btnStatusWrong.classList.toggle('active', statusFilter === 'wrong');
+
+  const cntAll = document.getElementById('quizStatusAllCount');
+  const cntPending = document.getElementById('quizStatusPendingCount');
+  const cntWrong = document.getElementById('quizStatusWrongCount');
+
+  if (cntAll) cntAll.innerText = `${totalInBlock}`;
+  if (cntPending) cntPending.innerText = `${pendingCount}`;
+  if (cntWrong) cntWrong.innerText = `${wrongCount}`;
+
+  // Filtrar as questões exibidas de acordo com o status selecionado
+  let displayQuestions = allOrderedQuestions;
+  if (statusFilter === 'pending') {
+    displayQuestions = allOrderedQuestions.filter(q => !appState.quizAnswers[q.id]?.confirmed);
+  } else if (statusFilter === 'wrong') {
+    displayQuestions = allOrderedQuestions.filter(q => appState.quizAnswers[q.id]?.confirmed && !appState.quizAnswers[q.id]?.isCorrect);
+  }
+
+  // Estado vazio quando não houver questões no filtro
+  if (displayQuestions.length === 0) {
+    let emptyMsg = "Nenhuma questão encontrada para os filtros selecionados.";
+    let emptyIcon = "fas fa-info-circle";
+    let emptyAction = "";
+
+    if (statusFilter === 'pending') {
+      emptyMsg = "🎉 Parabéns! Você já respondeu todas as questões deste bloco!";
+      emptyIcon = "fas fa-check-circle";
+      emptyAction = `<button class="btn btn-secondary" onclick="setQuizStatusFilter('all')" style="margin-top: 12px;"><i class="fas fa-eye"></i> Ver Todas as Questões</button>`;
+    } else if (statusFilter === 'wrong') {
+      emptyMsg = "Excelente! Você não possui nenhum erro registrado neste bloco.";
+      emptyIcon = "fas fa-medal";
+      emptyAction = `<button class="btn btn-secondary" onclick="setQuizStatusFilter('all')" style="margin-top: 12px;"><i class="fas fa-eye"></i> Ver Todas as Questões</button>`;
+    }
+
+    container.innerHTML = `
+      <div class="quiz-card" style="text-align: center; padding: 40px 20px;">
+        <i class="${emptyIcon}" style="font-size: 2.5rem; color: var(--primary); margin-bottom: 14px;"></i>
+        <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 8px;">${emptyMsg}</h3>
+        <p style="font-size: 0.88rem; color: var(--text-muted); max-width: 500px; margin: 0 auto;">Alterne o filtro ou reembaralhe as questões para continuar praticando.</p>
+        ${emptyAction}
+      </div>
+    `;
+    return;
+  }
+
+  const letters = ['A', 'B', 'C', 'D'];
+
+  container.innerHTML = displayQuestions.map((q, displayIdx) => {
     const ans = appState.quizAnswers[q.id] || { selected: null, confirmed: false, isCorrect: false };
     const isConfirmed = ans.confirmed;
 
     return `
       <div class="quiz-card" id="quiz_card_${q.id}">
         <div class="quiz-card-header">
-          <span class="quiz-num-badge">Questão ${q.id}</span>
+          <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+            <span class="quiz-pos-badge">Questão ${displayIdx + 1} de ${displayQuestions.length}</span>
+            <span class="quiz-id-badge">ID ${q.id}</span>
+          </div>
           <span class="quiz-discipline-tag">${q.discipline} • ${q.topic}</span>
         </div>
 
@@ -4942,10 +5150,20 @@ function selectQuizDay(dayKey) {
 
 function resetQuizAnswers() {
   if (confirm("Deseja realmente limpar todas as respostas do simulado e recomeçar do zero?")) {
-    appState.quizAnswers = {};
+    const filterKey = appState.quizCategoryFilter || 'dia6';
+    if (appState.quizShuffledOrder) {
+      delete appState.quizShuffledOrder[`${filterKey}_random`];
+      delete appState.quizShuffledOrder[`${filterKey}_interleaved`];
+    }
+    
+    const baseQuestions = getFilteredBaseQuestions(filterKey);
+    baseQuestions.forEach(q => {
+      delete appState.quizAnswers[q.id];
+    });
+
     saveState();
     renderQuiz();
-    showToast("Simulado reiniciado com sucesso!");
+    showToast("Simulado reiniciado com nova ordem!");
   }
 }
 

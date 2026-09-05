@@ -268,6 +268,41 @@
             </div>
           </div>
 
+          <!-- Barra de Controle de Ordem e Aleatoriedade do Quiz -->
+          <div class="quiz-order-toolbar" id="quizOrderToolbar">
+            <div class="order-toolbar-left">
+              <span class="order-toolbar-title"><i class="fas fa-random"></i> Ordem:</span>
+              <div class="order-mode-group">
+                <button type="button" class="order-mode-btn active" id="btnOrderRandom" onclick="setQuizOrderMode('random')" title="Embaralha aleatoriamente todas as questões deste bloco">
+                  <i class="fas fa-shuffle"></i> Aleatório
+                </button>
+                <button type="button" class="order-mode-btn" id="btnOrderInterleaved" onclick="setQuizOrderMode('interleaved')" title="Intercala matérias para simular prova oficial variada">
+                  <i class="fas fa-balance-scale"></i> Intercalado
+                </button>
+                <button type="button" class="order-mode-btn" id="btnOrderSequential" onclick="setQuizOrderMode('sequential')" title="Ordem numérica padrão sequencial">
+                  <i class="fas fa-sort-numeric-down"></i> Sequencial
+                </button>
+              </div>
+            </div>
+
+            <div class="order-toolbar-right">
+              <button type="button" class="btn btn-secondary btn-shuffle-action" id="btnShuffleQuiz" onclick="shuffleActiveQuiz()" title="Gerar nova ordem aleatória agora">
+                <i class="fas fa-sync-alt"></i> Reembaralhar
+              </button>
+              <div class="status-filter-group">
+                <button type="button" class="status-filter-btn active" id="btnStatusAll" onclick="setQuizStatusFilter('all')">
+                  Todas (<span id="quizStatusAllCount">0</span>)
+                </button>
+                <button type="button" class="status-filter-btn" id="btnStatusPending" onclick="setQuizStatusFilter('pending')">
+                  Pendentes (<span id="quizStatusPendingCount">0</span>)
+                </button>
+                <button type="button" class="status-filter-btn" id="btnStatusWrong" onclick="setQuizStatusFilter('wrong')">
+                  Erros (<span id="quizStatusWrongCount">0</span>)
+                </button>
+              </div>
+            </div>
+          </div>
+
           <!-- Lista das Questões -->
           <div class="quiz-questions-list" id="quizQuestionsContainer"></div>
         </div>
@@ -717,60 +752,72 @@
           <div class="simulados-grid">
             <div class="chart-card">
               <h3 style="font-size: 1.1rem; font-weight: 800; margin-bottom: 12px;">Registro dos 6 Simulados de Sábado</h3>
-              <table class="simulados-table">
-                <thead>
-                  <tr>
-                    <th>Simulado</th>
-                    <th>Data Prevista</th>
-                    <th>Acertos</th>
-                    <th>Aproveitamento</th>
-                    <th>Tempo Gasto</th>
-                  </tr>
-                </thead>
-                <tbody id="simuladosTableBody"></tbody>
-              </table>
+              <div class="table-responsive">
+                <table class="simulados-table">
+                  <thead>
+                    <tr>
+                      <th>Simulado</th>
+                      <th>Data Prevista</th>
+                      <th>Acertos</th>
+                      <th>Aproveitamento</th>
+                      <th>Tempo Gasto</th>
+                    </tr>
+                  </thead>
+                  <tbody id="simuladosTableBody"></tbody>
+                </table>
+              </div>
             </div>
 
             <div class="chart-card">
-              <h3 style="font-size: 1.1rem; font-weight: 800; margin-bottom: 12px;">🎯 Metas de Desempenho</h3>
-              <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 0.9rem;">
-                <li style="display: flex; justify-content: space-between; padding: 8px 12px; background: var(--bg-main); border-radius: 6px;">
-                  <span>Semana 1 (05/09)</span><strong>60–70%</strong>
+              <h3 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
+                <i class="fas fa-bullseye" style="color: var(--warning);"></i> Metas de Desempenho
+              </h3>
+              <ul class="goals-list">
+                <li class="goal-item">
+                  <span class="goal-week"><i class="fas fa-flag" style="color: var(--text-muted); font-size: 0.8rem; margin-right: 6px;"></i> Semana 1 (05/09)</span>
+                  <strong class="goal-target">60–70%</strong>
                 </li>
-                <li style="display: flex; justify-content: space-between; padding: 8px 12px; background: var(--bg-main); border-radius: 6px;">
-                  <span>Semana 2 (12/09)</span><strong>70–75%</strong>
+                <li class="goal-item">
+                  <span class="goal-week"><i class="fas fa-flag" style="color: var(--text-muted); font-size: 0.8rem; margin-right: 6px;"></i> Semana 2 (12/09)</span>
+                  <strong class="goal-target">70–75%</strong>
                 </li>
-                <li style="display: flex; justify-content: space-between; padding: 8px 12px; background: var(--bg-main); border-radius: 6px;">
-                  <span>Semana 3 (19/09)</span><strong>75–80%</strong>
+                <li class="goal-item">
+                  <span class="goal-week"><i class="fas fa-flag" style="color: var(--text-muted); font-size: 0.8rem; margin-right: 6px;"></i> Semana 3 (19/09)</span>
+                  <strong class="goal-target">75–80%</strong>
                 </li>
-                <li style="display: flex; justify-content: space-between; padding: 8px 12px; background: var(--bg-main); border-radius: 6px;">
-                  <span>Semana 4 (26/09)</span><strong>80–85%</strong>
+                <li class="goal-item">
+                  <span class="goal-week"><i class="fas fa-flag" style="color: var(--text-muted); font-size: 0.8rem; margin-right: 6px;"></i> Semana 4 (26/09)</span>
+                  <strong class="goal-target">80–85%</strong>
                 </li>
-                <li style="display: flex; justify-content: space-between; padding: 8px 12px; background: var(--bg-main); border-radius: 6px;">
-                  <span>Semana 5 (03/10)</span><strong>85%+ (Velocidade)</strong>
+                <li class="goal-item">
+                  <span class="goal-week"><i class="fas fa-flag" style="color: var(--text-muted); font-size: 0.8rem; margin-right: 6px;"></i> Semana 5 (03/10)</span>
+                  <strong class="goal-target">85%+ (Velocidade)</strong>
                 </li>
-                <li style="display: flex; justify-content: space-between; padding: 8px 12px; background: var(--bg-main); border-radius: 6px;">
-                  <span>Semana 6 (10/10)</span><strong style="color: var(--success);">90%+ (Oficial)</strong>
+                <li class="goal-item goal-final">
+                  <span class="goal-week"><i class="fas fa-trophy" style="color: var(--warning); margin-right: 6px;"></i> Semana 6 (10/10)</span>
+                  <strong class="goal-target goal-target-final">90%+ (Aprovação)</strong>
                 </li>
               </ul>
             </div>
           </div>
 
           <div class="chart-card" style="margin-top: 24px;">
-            <h3 style="font-size: 1.1rem; font-weight: 800; margin-bottom: 8px;">Tabela de Diagnóstico Final (Semana 6 / Simulado 6)</h3>
+            <h3 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 8px;">Tabela de Diagnóstico Final (Semana 6 / Simulado 6)</h3>
             <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 16px;">Preencha com o número de acertos por disciplina para identificar seus pontos de atenção.</p>
-            <table class="simulados-table">
-              <thead>
-                <tr>
-                  <th>Disciplina</th>
-                  <th>Acertos</th>
-                  <th>Total de Questões</th>
-                  <th>% Aproveitamento</th>
-                  <th>Situação Estratégica</th>
-                </tr>
-              </thead>
-              <tbody id="diagnosticoTableBody"></tbody>
-            </table>
+            <div class="table-responsive">
+              <table class="simulados-table">
+                <thead>
+                  <tr>
+                    <th>Disciplina</th>
+                    <th>Acertos</th>
+                    <th>Total de Questões</th>
+                    <th>% Aproveitamento</th>
+                    <th>Situação Estratégica</th>
+                  </tr>
+                </thead>
+                <tbody id="diagnosticoTableBody"></tbody>
+              </table>
+            </div>
           </div>
         </div>
 
@@ -831,7 +878,7 @@
                 </li>
                 <li class="ficha-item">
                   <strong>Rito de Tramitação</strong>
-                  <p>Protocolo $\rightarrow$ Leitura no Expediente $\rightarrow$ Comissões (Pareceres) $\rightarrow$ Ordem do Dia (Discussão e Votação) $\rightarrow$ Redação Final $\rightarrow$ Autógrafo.</p>
+                  <p>Protocolo → Leitura no Expediente → Comissões (Pareceres) → Ordem do Dia (Discussão e Votação) → Redação Final → Autógrafo.</p>
                 </li>
               </ul>
             </div>
