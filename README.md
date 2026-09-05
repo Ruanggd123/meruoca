@@ -23,7 +23,9 @@ Acesse a aplicação completa pelo navegador do celular ou computador:
 * Contagem regressiva ao vivo para a data da prova oficial.
 
 ### 2. 📝 Banco de Questões Interativo (Padrão INBRASP — 4 Alternativas)
-* **100 questões ativas**, categorizadas por dia e matéria.
+* **180 questões ativas**, categorizadas por dia e matéria (Dias 2, 3, 4, 5 e Simulado 1 Oficial).
+* **Gerenciamento Inteligente de Ordem**: Modos Aleatório (Fisher-Yates), Intercalado por Disciplinas e Sequencial com botão de reembaralhar.
+* **Filtros por Status**: Exibição seletiva de todas as questões, apenas pendentes ou apenas erros.
 * Rigorosamente no padrão do edital: **4 alternativas (A, B, C, D)** com 1 única correta.
 * Gabarito fundamentado com transcrição de artigos da CF/88, Lei Orgânica de Meruoca e regras gramaticais oficiais.
 * Botão para adicionar questões erradas diretamente ao Caderno de Erros com um clique.
