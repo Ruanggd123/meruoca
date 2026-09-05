@@ -1,0 +1,20 @@
+# Python / Scratch files
+*.py
+*.pyc
+__pycache__/
+
+# Scratch & test scripts
+test_quiz_integrity.js
+check_ids.py
+check_links.py
+check_provas.py
+inspect_cronograma.py
+validate_questions.py
+build_html_dia4.py
+gerar_questoes_dia4.py
+inject_dia4.py
+
+# System and editor files
+.DS_Store
+Thumbs.db
+*.log

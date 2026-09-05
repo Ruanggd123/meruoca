@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>BANCO ESTRATÉGICO DE PROVAS REAIS — INBRASP / IBRASP (ANÁLISE DE INCIDÊNCIA)</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --primary: #1e3a8a;
+      --primary-light: #3b82f6;
+      --success: #16a34a;
+      --warning: #f59e0b;
+      --danger: #dc2626;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --radius: 12px;
+      --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 30px 20px;
+    }
+    .container {
+      max-width: 1150px;
+      margin: 0 auto;
+    }
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      background: #e2e8f0;
+      color: #334155;
+      text-decoration: none;
+      font-weight: 700;
+      border-radius: 8px;
+      margin-bottom: 24px;
+    }
+    .header-box {
+      background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+      color: white;
+      padding: 30px;
+      border-radius: var(--radius);
+      margin-bottom: 30px;
+      box-shadow: var(--shadow);
+    }
+    .header-box h1 {
+      margin: 0 0 10px 0;
+      font-size: 2rem;
+      font-weight: 800;
+    }
+    .header-box p {
+      margin: 0;
+      font-size: 1.05rem;
+      opacity: 0.9;
+      line-height: 1.5;
+    }
+    .raio-x-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+      margin-bottom: 36px;
+    }
+    .raio-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px;
+      box-shadow: var(--shadow);
+    }
+    .raio-title {
+      font-size: 1.15rem;
+      font-weight: 800;
+      margin: 0 0 12px 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .badge-peso {
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .peso-alto { background: #fee2e2; color: #dc2626; }
+    .peso-medio { background: #fef3c7; color: #b45309; }
+    .raio-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 0.9rem;
+    }
+    .raio-list li {
+      margin-bottom: 8px;
+      padding-left: 18px;
+      position: relative;
+      line-height: 1.4;
+    }
+    .raio-list li::before {
+      content: "•";
+      color: var(--primary-light);
+      font-weight: bold;
+      position: absolute;
+      left: 4px;
+      font-size: 1.2rem;
+    }
+    .table-container {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow);
+      margin-bottom: 36px;
+    }
+    .exam-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+    .exam-table th {
+      background: #f1f5f9;
+      padding: 12px 16px;
+      text-align: left;
+      font-weight: 700;
+      color: #334155;
+      border-bottom: 2px solid var(--border);
+    }
+    .exam-table td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .exam-table tr:hover td {
+      background: #f8fafc;
+    }
+    .btn-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 0.82rem;
+    }
+    .btn-link:hover {
+      background: #1d4ed8;
+    }
+    .btn-link-sec {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      background: #e2e8f0;
+      color: #334155;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 0.82rem;
+    }
+    .btn-link-sec:hover {
+      background: #cbd5e1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <a href="CENTRAL_DE_PROVAS.html" class="back-btn"><i class="fas fa-arrow-left"></i> Voltar à Central de Provas</a>
+
+    <div class="header-box">
+      <h1>🎯 Raio-X & Banco Estratégico de Provas Reais (INBRASP / IBRASP)</h1>
+      <p>Mapeamento de incidência temática real extraído de mais de 50 certames da banca com foco nas 10 provas prioritárias do seu plano de aprovação.</p>
+    </div>
+
+    <!-- SEÇÃO DE RAIO-X DOS ASSUNTOS MAIS COBRADOS PELA BANCA -->
+    <h2 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 18px; color: #1e3a8a;">
+      <i class="fas fa-chart-pie"></i> Raio-X da Banca: O que a INBRASP mais cobra por disciplina
+    </h2>
+
+    <div class="raio-x-grid">
+
+      <!-- PORTUGUÊS -->
+      <div class="raio-card">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+          <h3 class="raio-title" style="margin: 0; color: #1e3a8a;"><i class="fas fa-book"></i> Língua Portuguesa</h3>
+          <span class="badge-peso peso-alto">Incidência Altíssima</span>
+        </div>
+        <ul class="raio-list">
+          <li><strong>Sintaxe do Verbo Haver:</strong> Cobrança recorrente da impessoalidade e transitividade direta de <em>haver</em> no sentido de existir (ex: Prova Ipaporanga 2026 Q33).</li>
+          <li><strong>Conjunções Adverbiais:</strong> Identificação de valor semântico (condição com <em>"caso"</em>, causa com <em>"como/porque"</em>, concessão com <em>"embora"</em>).</li>
+          <li><strong>Regras de Acentuação Gráfica:</strong> Questões diretas pedindo a regra da proparoxítona (ex: <em>política</em> e <em>cômputo</em>) e hiatos.</li>
+          <li><strong>Sinônimos Contextuais:</strong> Vocabulário culto (ex: <em>ratificado = validado</em>; <em>assimetrias = discrepâncias</em>).</li>
+          <li><strong>Classes Gramaticais:</strong> Distinção entre preposição e artigo da palavra <em>"a"</em>.</li>
+        </ul>
+      </div>
+
+      <!-- DIREITO ADMINISTRATIVO & LICITAÇÕES -->
+      <div class="raio-card">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+          <h3 class="raio-title" style="margin: 0; color: #15803d;"><i class="fas fa-gavel"></i> Direito Administrativo</h3>
+          <span class="badge-peso peso-alto">Incidência Altíssima</span>
+        </div>
+        <ul class="raio-list">
+          <li><strong>Nova Lei de Licitações (14.133/2021):</strong> Inversão de fases (julgamento de propostas antes da habilitação - Art. 17).</li>
+          <li><strong>Atos Administrativos:</strong> Atributos do ato administrativo (Presunção de Legitimidade, Imperatividade, Autoexecutoriedade, Tipicidade - PIAT).</li>
+          <li><strong>Princípios da Administração (Art. 37 CF):</strong> Literalidade estrita do LIMPE (Legalidade, Impessoalidade, Moralidade, Publicidade, Eficiência).</li>
+          <li><strong>Processo Disciplinar & Prescrição:</strong> Prazos de prescrição de 5 anos para faltas puníveis com demissão.</li>
+        </ul>
+      </div>
+
+      <!-- DIREITO CONSTITUCIONAL & LEGISLAÇÃO MUNICIPAL -->
+      <div class="raio-card">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+          <h3 class="raio-title" style="margin: 0; color: #b45309;"><i class="fas fa-landmark"></i> Constitucional & Legislação</h3>
+          <span class="badge-peso peso-alto">Incidência Altíssima</span>
+        </div>
+        <ul class="raio-list">
+          <li><strong>Direitos Fundamentais (Art. 5º CF):</strong> Inviolabilidade do domicílio e suas exceções (flagrante delito, desastre, socorro).</li>
+          <li><strong>Objetivos da República (Art. 3º CF):</strong> Erradicar a pobreza e reduzir desigualdades regionais.</li>
+          <li><strong>Lei Orgânica Municipal:</strong> Função precípua como lei fundamental organizadora dos poderes Executivo e Legislativo locais.</li>
+          <li><strong>Inviolabilidade de Vereadores (Art. 29, VIII CF):</strong> Opiniões, palavras e votos na circunscrição do município.</li>
+        </ul>
+      </div>
+
+      <!-- ADMINISTRAÇÃO, ARQUIVOS & ROTINAS -->
+      <div class="raio-card">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+          <h3 class="raio-title" style="margin: 0; color: #6d28d9;"><i class="fas fa-folder"></i> Rotinas, Arquivo & Gestão</h3>
+          <span class="badge-peso peso-medio">Incidência Alta</span>
+        </div>
+        <ul class="raio-list">
+          <li><strong>Protocolo & Rastreabilidade:</strong> Registro de data, hora e origem de documentos oficiais.</li>
+          <li><strong>Métodos de Arquivamento:</strong> Método por assunto (ideográfico) para recuperação rápida.</li>
+          <li><strong>Funções Administrativas (PODC):</strong> Controle como monitoramento e correção de desvios.</li>
+          <li><strong>Redação Oficial:</strong> Uso de Ofício para correspondências externas.</li>
+        </ul>
+      </div>
+
+      <!-- INFORMÁTICA -->
+      <div class="raio-card">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+          <h3 class="raio-title" style="margin: 0; color: #0284c7;"><i class="fas fa-desktop"></i> Noções de Informática</h3>
+          <span class="badge-peso peso-medio">Incidência Média/Alta</span>
+        </div>
+        <ul class="raio-list">
+          <li><strong>Microsoft Word / Writer:</strong> Formatação de texto, fontes, parágrafos e tabelas.</li>
+          <li><strong>Microsoft Excel / Calc:</strong> Sintaxe de fórmulas (SOMA, MÉDIA, SE) e referências de células.</li>
+          <li><strong>Segurança da Informação:</strong> Ataques de Phishing, Ransomware e princípios de confidencialidade/integridade.</li>
+        </ul>
+      </div>
+
+      <!-- MATEMÁTICA & RLM -->
+      <div class="raio-card">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+          <h3 class="raio-title" style="margin: 0; color: #e11d48;"><i class="fas fa-calculator"></i> Matemática & RLM</h3>
+          <span class="badge-peso peso-medio">Incidência Média</span>
+        </div>
+        <ul class="raio-list">
+          <li><strong>Frações e Decimais:</strong> Comparação em ordem crescente e multiplicação de frações sucessivas.</li>
+          <li><strong>Aritmética e Divisibilidade:</strong> Cálculo de resto de divisão e propriedades de números primos.</li>
+          <li><strong>Unidades de Medida de Tempo:</strong> Conversão de minutos e dias (relógio adiantando).</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- SEÇÃO DAS 10 PROVAS NÚCLEO PRINCIPAL (FASE 1) -->
+    <div class="table-container">
+      <h2 style="font-size: 1.3rem; font-weight: 800; margin-top: 0; margin-bottom: 16px; color: #1e3a8a;">
+        <i class="fas fa-tasks"></i> As 10 Provas Prioritárias do Núcleo de Estudo (INBRASP / IBRASP)
+      </h2>
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">
+        Este é o núcleo mestre selecionado para calibrar a sua preparação com o histórico real da banca organizadora:
+      </p>
+
+      <table class="exam-table">
+        <thead>
+          <tr>
+            <th style="width: 50px;">#</th>
+            <th>Certame & Órgão</th>
+            <th>Ano</th>
+            <th>Cargo</th>
+            <th>Prioridade</th>
+            <th style="text-align: center;">Acesso ao Caderno</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="background: #fff5f5;">
+            <td><strong>01</strong></td>
+            <td><strong>Câmara de Ipaporanga / CE</strong></td>
+            <td><strong>2026</strong></td>
+            <td>Agente Administrativo</td>
+            <td><span class="badge-peso peso-alto">MUITO ALTA</span></td>
+            <td style="text-align: center;">
+              <a href="PROVA_REAL_INBRASP_2026_IPAPORANGA.html" target="_blank" class="btn-link" style="background: #dc2626;">
+                <i class="fas fa-file-pdf"></i> Abrir Prova Real
+              </a>
+            </td>
+          </tr>
+          <tr style="background: #fff5f5;">
+            <td><strong>02</strong></td>
+            <td><strong>Câmara de Ipaporanga / CE</strong></td>
+            <td><strong>2026</strong></td>
+            <td>Motorista</td>
+            <td><span class="badge-peso peso-alto">MUITO ALTA</span></td>
+            <td style="text-align: center;">
+              <a href="https://www.qconcursos.com/questoes-de-concursos/provas/inbrasp-2026-camara-de-ipaporanga-ce-motorista" target="_blank" class="btn-link-sec">
+                <i class="fas fa-external-link-alt"></i> Ver no QConcursos
+              </a>
+            </td>
+          </tr>
+          <tr style="background: #fff5f5;">
+            <td><strong>03</strong></td>
+            <td><strong>Câmara de Ipaporanga / CE</strong></td>
+            <td><strong>2026</strong></td>
+            <td>Auxiliar de Serviços Gerais</td>
+            <td><span class="badge-peso peso-alto">MUITO ALTA</span></td>
+            <td style="text-align: center;">
+              <a href="https://www.qconcursos.com/questoes-de-concursos/provas/inbrasp-2026-camara-de-ipaporanga-ce-auxiliar-de-servicos-gerais" target="_blank" class="btn-link-sec">
+                <i class="fas fa-external-link-alt"></i> Ver no QConcursos
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>04</strong></td>
+            <td><strong>Câmara de Brasilândia de Minas / MG</strong></td>
+            <td><strong>2026</strong></td>
+            <td>Câmara Municipal (Geral)</td>
+            <td><span class="badge-peso peso-alto">ALTA</span></td>
+            <td style="text-align: center;">
+              <a href="https://inbrasp.org/index.php?acao=ver&id=704&menu=concursos" target="_blank" class="btn-link-sec">
+                <i class="fas fa-globe"></i> Portal Oficial INBRASP
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>05</strong></td>
+            <td><strong>Prefeitura de Rianápolis / GO</strong></td>
+            <td><strong>2023</strong></td>
+            <td>Agente Administrativo</td>
+            <td><span class="badge-peso peso-alto">ALTA</span></td>
+            <td style="text-align: center;">
+              <a href="https://www.pciconcursos.com.br/provas/download/agente-administrativo-prefeitura-rianapolis-go-ibrasp-consultoria-e-concursos-2023" target="_blank" class="btn-link-sec">
+                <i class="fas fa-download"></i> Baixar no PCI
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>06</strong></td>
+            <td><strong>Prefeitura de Rianápolis / GO</strong></td>
+            <td><strong>2023</strong></td>
+            <td>Vigia</td>
+            <td><span class="badge-peso peso-alto">ALTA</span></td>
+            <td style="text-align: center;">
+              <a href="https://www.pciconcursos.com.br/provas/download/vigia-prefeitura-rianapolis-go-ibrasp-consultoria-e-concursos-2023" target="_blank" class="btn-link-sec">
+                <i class="fas fa-download"></i> Baixar no PCI
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>07</strong></td>
+            <td><strong>Prefeitura de Rianápolis / GO</strong></td>
+            <td><strong>2023</strong></td>
+            <td>Fiscal de Postura</td>
+            <td><span class="badge-peso peso-medio">MÉDIA</span></td>
+            <td style="text-align: center;">
+              <a href="https://www.pciconcursos.com.br/provas/download/fiscal-de-postura-prefeitura-rianapolis-go-ibrasp-consultoria-e-concursos-2023" target="_blank" class="btn-link-sec">
+                <i class="fas fa-download"></i> Baixar no PCI
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>08</strong></td>
+            <td><strong>Prefeitura de Itapaci / GO</strong></td>
+            <td><strong>2022</strong></td>
+            <td>Executor Administrativo</td>
+            <td><span class="badge-peso peso-medio">MÉDIA</span></td>
+            <td style="text-align: center;">
+              <a href="https://www.pciconcursos.com.br/provas/download/executor-administrativo-prefeitura-itapaci-go-ibrasp-consultoria-e-concursos-2022" target="_blank" class="btn-link-sec">
+                <i class="fas fa-download"></i> Baixar no PCI
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>09</strong></td>
+            <td><strong>Prefeitura de Ipameri / GO</strong></td>
+            <td><strong>2021</strong></td>
+            <td>Auxiliar de Administração</td>
+            <td><span class="badge-peso peso-medio">MÉDIA</span></td>
+            <td style="text-align: center;">
+              <a href="https://www.pciconcursos.com.br/provas/download/auxiliar-de-administracao-prefeitura-ipameri-go-ibrasp-consultoria-e-concursos-2021" target="_blank" class="btn-link-sec">
+                <i class="fas fa-download"></i> Baixar no PCI
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>10</strong></td>
+            <td><strong>Prefeitura de Ipameri / GO</strong></td>
+            <td><strong>2021</strong></td>
+            <td>Fiscal de Posturas</td>
+            <td><span class="badge-peso peso-medio">MÉDIA</span></td>
+            <td style="text-align: center;">
+              <a href="https://www.pciconcursos.com.br/provas/download/fiscal-de-posturas-prefeitura-ipameri-go-ibrasp-consultoria-e-concursos-2021" target="_blank" class="btn-link-sec">
+                <i class="fas fa-download"></i> Baixar no PCI
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+</body>
+</html>

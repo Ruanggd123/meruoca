@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#1e3a8a">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Meruoca 2026">
+  <title>Plano Mestre | Técnico Legislativo — Câmara de Meruoca</title>
+  
+  <!-- Google Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="app-container">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="logo-badge">
+          <i class="fas fa-landmark"></i> Meruoca 2026
+        </div>
+        <h1>Técnico Legislativo</h1>
+        <p>Câmara Municipal de Meruoca</p>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-section-title">Gerenciador</div>
+        <button class="nav-btn active" data-tab="tab-cronograma">
+          <i class="fas fa-calendar-alt"></i>
+          <span>Cronograma 7 Semanas</span>
+        </button>
+        <button class="nav-btn" data-tab="tab-questoes">
+          <i class="fas fa-tasks"></i>
+          <span>Banco de Questões</span>
+          <span class="nav-badge highlight" id="sidebarQuizBadge">100</span>
+        </button>
+        <button class="nav-btn" data-tab="tab-flashcards">
+          <i class="fas fa-clone"></i>
+          <span>Flashcards & Fichas</span>
+          <span class="nav-badge highlight">40</span>
+        </button>
+        <button class="nav-btn" data-tab="tab-simulados">
+          <i class="fas fa-chart-line"></i>
+          <span>Simulados & Diagnóstico</span>
+        </button>
+        <button class="nav-btn" data-tab="tab-caderno-erros">
+          <i class="fas fa-book-dead"></i>
+          <span>Caderno de Erros</span>
+          <span class="nav-badge" id="sidebarErrorBadge">0</span>
+        </button>
+
+        <div class="nav-section-title">Material & Apoio</div>
+        <a href="provas/CENTRAL_DE_PROVAS.html" target="_blank" class="nav-btn" style="text-decoration: none; color: inherit;">
+          <i class="fas fa-folder-open" style="color: #ef4444;"></i>
+          <span>Central de Provas (PDF)</span>
+          <span class="nav-badge highlight" style="background: rgba(239, 68, 68, 0.2); color: #ef4444;">5 Provas (200Q)</span>
+        </a>
+        <button class="nav-btn" data-tab="tab-fichas">
+          <i class="fas fa-gavel"></i>
+          <span>Fichas LO & Regimento</span>
+        </button>
+        <button class="nav-btn" data-tab="tab-edital">
+          <i class="fas fa-clipboard-list"></i>
+          <span>Edital & Assuntos</span>
+          <span class="nav-badge highlight" style="background: rgba(37, 99, 235, 0.2); color: var(--primary);">OFICIAL</span>
+        </button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <button class="btn btn-secondary btn-block" onclick="window.print()" style="font-size: 0.8rem; padding: 8px;">
+          <i class="fas fa-print"></i> Imprimir / PDF
+        </button>
+        <button class="btn btn-secondary btn-block" onclick="exportBackup()" style="font-size: 0.8rem; padding: 8px;">
+          <i class="fas fa-download"></i> Salvar Backup
+        </button>
+        <button class="btn btn-secondary btn-block" onclick="importBackup()" style="font-size: 0.8rem; padding: 8px;">
+          <i class="fas fa-upload"></i> Restaurar Dados
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+      
+      <!-- Top Navbar -->
+      <header class="top-navbar">
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <button class="menu-toggle-btn" id="menuToggle">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="exam-banner">
+            <div class="countdown-box">
+              <i class="fas fa-hourglass-half" style="color: var(--primary);"></i>
+              <div class="countdown-item">
+                <span class="countdown-val" id="cdDays">00</span>
+                <span class="countdown-lbl">d</span>
+              </div>
+              <div class="countdown-item">
+                <span class="countdown-val" id="cdHours">00</span>
+                <span class="countdown-lbl">h</span>
+              </div>
+              <div class="countdown-item">
+                <span class="countdown-val" id="cdMins">00</span>
+                <span class="countdown-lbl">m</span>
+              </div>
+              <span style="font-size: 0.75rem; color: var(--text-muted); margin-left: 4px;">até a prova (18/10/2026)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="top-actions">
+          <button class="btn-icon" id="themeToggle" title="Alternar Tema Claro/Escuro">
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
+      </header>
+
+      <!-- Page Content -->
+      <main class="page-content">
+        
+        <!-- Global Metrics Header -->
+        <section class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-header">
+              <span class="metric-title">Progresso Global do Edital</span>
+              <div class="metric-icon blue"><i class="fas fa-tasks"></i></div>
+            </div>
+            <div class="metric-value" id="metricGlobalProgress">0%</div>
+            <div class="metric-sub">Metas e blocos concluídos</div>
+            <div class="progress-bar-container">
+              <div class="progress-bar-fill" id="metricGlobalProgressBar" style="width: 0%;"></div>
+            </div>
+          </div>
+
+          <div class="metric-card success">
+            <div class="metric-header">
+              <span class="metric-title">Questões Resolvidas</span>
+              <div class="metric-icon green"><i class="fas fa-check-circle"></i></div>
+            </div>
+            <div class="metric-value" id="metricQuestionsDone">0</div>
+            <div class="metric-sub" id="metricQuestionsAccuracy">0% de acertos</div>
+          </div>
+
+          <div class="metric-card warning">
+            <div class="metric-header">
+              <span class="metric-title">Média nos Simulados</span>
+              <div class="metric-icon orange"><i class="fas fa-bullseye"></i></div>
+            </div>
+            <div class="metric-value" id="metricSimuladoAvg">0%</div>
+            <div class="metric-sub">Meta final: 90%+</div>
+          </div>
+
+          <div class="metric-card purple">
+            <div class="metric-header">
+              <span class="metric-title">Flashcards & Caderno</span>
+              <div class="metric-icon purple"><i class="fas fa-brain"></i></div>
+            </div>
+            <div class="metric-value" id="metricFlashcardsMastered">0 / 37</div>
+            <div class="metric-sub">Conceitos dominados</div>
+          </div>
+        </section>
+
+        <!-- Timer / Cronômetro de Estudo Rápido -->
+        <section class="timer-widget">
+          <div>
+            <span style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.05em;">Cronômetro de Foco Líquido</span>
+            <div class="timer-display" id="timerDisplay">70:00</div>
+          </div>
+          <div class="timer-controls">
+            <button class="btn btn-primary" onclick="startTimer()"><i class="fas fa-play"></i> Iniciar</button>
+            <button class="btn btn-secondary" onclick="pauseTimer()"><i class="fas fa-pause"></i> Pausar</button>
+            <button class="btn btn-secondary" onclick="resetTimer(70)" title="Bloco 1h10"><i class="fas fa-redo"></i> 1h10</button>
+            <button class="btn btn-secondary" onclick="resetTimer(30)" title="Revisão 30m"><i class="fas fa-clock"></i> 30m</button>
+          </div>
+        </section>
+
+        <!-- TAB 1: CRONOGRAMA 7 SEMANAS -->
+        <div class="tab-pane active" id="tab-cronograma">
+          <div class="section-header">
+            <div>
+              <h2 id="currentWeekTitle">Semana 1 (31/08 a 06/09)</h2>
+              <p id="currentWeekFocus">Constituição + Português + Fundamentos Administrativos</p>
+            </div>
+          </div>
+
+          <!-- Selector de Semanas -->
+          <div class="week-pills" id="weekPillsContainer"></div>
+
+          <!-- Lista de Dias da Semana -->
+          <div class="days-grid" id="daysContainer"></div>
+        </div>
+
+        <!-- TAB 2: BANCO DE QUESTÕES / SIMULADO INTERATIVO -->
+        <div class="tab-pane" id="tab-questoes">
+          <div class="section-header">
+            <div>
+              <h2>Banco de Questões — Padrão INBRASP (4 Alternativas)</h2>
+              <p>Questões baseadas em provas anteriores da banca INBRASP e bancas municipais do Ceará (CETREDE, Consulpam, Idecan).</p>
+            </div>
+          </div>
+
+          <!-- Seletor de Dias do Quiz -->
+          <div class="day-tabs-nav">
+            <button class="day-tab-btn active" id="btnDayTab4" onclick="selectQuizDay('dia4')">
+              <i class="fas fa-star" style="color: var(--warning);"></i>
+              <span>Dia 4 (03/09 - Hoje): Port, Const & LO (40)</span>
+            </button>
+            <button class="day-tab-btn" id="btnDayTab3" onclick="selectQuizDay('dia3')">
+              <i class="fas fa-calendar-check"></i>
+              <span>Dia 3 (02/09): D. Admin & Info (30)</span>
+            </button>
+            <button class="day-tab-btn" id="btnDayTab2" onclick="selectQuizDay('dia2')">
+              <i class="fas fa-calendar-check"></i>
+              <span>Dia 2 (01/09): Const & Port (30)</span>
+            </button>
+            <button class="day-tab-btn" id="btnDayTabAll" onclick="selectQuizDay('all')">
+              <i class="fas fa-layer-group"></i>
+              <span>Todas as Questões (100)</span>
+            </button>
+          </div>
+
+          <!-- Banner Informativo do Dia Selecionado -->
+          <div class="day-info-banner" id="quizDayBanner">
+            <div>
+              <h3 id="quizDayTitle">⭐ Dia 4 — Quinta-feira (03/09/2026): Português, Constitucional & Lei Orgânica de Meruoca (40 Questões)</h3>
+              <p id="quizDayDesc">15 questões de Português (Fonologia, Acentuação e Crase) + 15 de Constitucional (Direitos Sociais Arts. 6º ao 11) + 10 de Lei Orgânica de Meruoca (Arts. 1º ao 15).</p>
+            </div>
+            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+              <button class="btn btn-secondary" style="font-size: 0.8rem; padding: 6px 12px;" onclick="filterQuizCategory('portugues')">Só Português (15)</button>
+              <button class="btn btn-secondary" style="font-size: 0.8rem; padding: 6px 12px;" onclick="filterQuizCategory('constitucional')">Só Constitucional (15)</button>
+              <button class="btn btn-secondary" style="font-size: 0.8rem; padding: 6px 12px;" onclick="filterQuizCategory('legislacao')">Só L.O. Meruoca (10)</button>
+              <a href="provas/CADERNO_QUESTOES_DIA_04_03_09_2026.html" target="_blank" class="btn btn-primary" style="font-size: 0.8rem; padding: 6px 12px;">
+                <i class="fas fa-print"></i> Caderno em PDF (40Q)
+              </a>
+            </div>
+          </div>
+
+          <!-- Header / Placar do Quiz -->
+          <div class="quiz-header-card">
+            <div class="quiz-score-display">
+              <div class="score-pill total"><i class="fas fa-layer-group"></i> <span id="quizTotalCount">30</span> Questões</div>
+              <div class="score-pill correct"><i class="fas fa-check"></i> <span id="quizCorrectCount">0</span> Acertos</div>
+              <div class="score-pill wrong"><i class="fas fa-times"></i> <span id="quizWrongCount">0</span> Erros</div>
+              <div class="score-pill" style="background: var(--purple-light); color: var(--purple);"><i class="fas fa-percentage"></i> <span id="quizAccuracyPct">0%</span></div>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+              <button class="btn btn-danger" style="font-size: 0.8rem; padding: 6px 12px;" onclick="resetQuizAnswers()"><i class="fas fa-redo"></i> Refazer Este Bloco</button>
+            </div>
+          </div>
+
+          <!-- Lista das Questões -->
+          <div class="quiz-questions-list" id="quizQuestionsContainer"></div>
+        </div>
+
+        <!-- TAB 3: FLASHCARDS & FICHAS DE ESTUDO (DETALHADO) -->
+        <div class="tab-pane" id="tab-flashcards">
+          <div class="section-header">
+            <div>
+              <h2>Flashcards & Cards de Memorização Ativa</h2>
+              <p>Treine a recuperação ativa com os flashcards 3D e consulte as fichas esquematizadas dos assuntos de hoje!</p>
+            </div>
+          </div>
+
+          <div class="quiz-header-card">
+            <div class="quiz-score-display">
+              <div class="score-pill total"><i class="fas fa-clone"></i> Cartão <span id="fcCurrentIndex">1</span> de <span id="fcTotalCards">35</span></div>
+              <div class="score-pill correct"><i class="fas fa-thumbs-up"></i> <span id="fcMasteredCount">0</span> Dominados</div>
+            </div>
+
+            <div class="quiz-filter-group">
+              <button class="btn btn-secondary" style="font-size: 0.8rem; padding: 6px 12px;" onclick="filterFlashcards('all')">Todos</button>
+              <button class="btn btn-primary" style="font-size: 0.8rem; padding: 6px 12px;" onclick="filterFlashcards('dia4')">⭐ Dia 4: Port, Const & LO (Hoje)</button>
+              <button class="btn btn-secondary" style="font-size: 0.8rem; padding: 6px 12px;" onclick="filterFlashcards('dia3')">Dia 3: Admin & Info</button>
+              <button class="btn btn-secondary" style="font-size: 0.8rem; padding: 6px 12px;" onclick="filterFlashcards('legislacao')">Lei Orgânica & Regimento</button>
+              <button class="btn btn-secondary" style="font-size: 0.8rem; padding: 6px 12px;" onclick="filterFlashcards('constitucional')">Constitucional</button>
+              <button class="btn btn-secondary" style="font-size: 0.8rem; padding: 6px 12px;" onclick="filterFlashcards('administrativo')">D. Administrativo</button>
+              <button class="btn btn-secondary" style="font-size: 0.8rem; padding: 6px 12px;" onclick="filterFlashcards('informatica')">Informática</button>
+            </div>
+          </div>
+
+          <!-- Flashcard 3D Player -->
+          <div class="flashcards-wrapper">
+            <div class="flashcard-scene" onclick="flipFlashcard()">
+              <div class="flashcard" id="activeFlashcard">
+                <!-- Frente -->
+                <div class="flashcard-face flashcard-front">
+                  <div class="card-top">
+                    <span class="card-tag" id="fcTag">Direito Administrativo</span>
+                    <span style="font-size: 0.8rem; color: var(--text-muted);"><i class="fas fa-sync-alt"></i> Clique para virar</span>
+                  </div>
+                  <div class="card-content-box">
+                    <h3 class="card-question-text" id="fcQuestion">Carregando pergunta...</h3>
+                  </div>
+                  <div class="card-hint">
+                    <i class="far fa-lightbulb" style="color: var(--warning);"></i> <span>Tente responder mentalmente antes de girar o cartão</span>
+                  </div>
+                </div>
+
+                <!-- Verso -->
+                <div class="flashcard-face flashcard-back">
+                  <div class="card-top">
+                    <span class="card-tag" style="background: var(--success-light); color: var(--success);" id="fcBackTag">Resposta Correta</span>
+                    <span style="font-size: 0.8rem; color: var(--text-muted);"><i class="fas fa-check-circle"></i> Fundamentação</span>
+                  </div>
+                  <div class="card-content-box">
+                    <div class="card-answer-text" id="fcAnswer">Carregando resposta...</div>
+                    <p class="card-explanation-text" id="fcExplanation">Carregando explicação...</p>
+                  </div>
+                  <div class="card-hint">
+                    <i class="fas fa-bookmark" style="color: var(--primary);"></i> <span>Regra de Ouro da Banca INBRASP</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Controles dos Flashcards -->
+            <div class="flashcard-controls">
+              <div class="flashcard-nav-btns">
+                <button class="btn btn-secondary" onclick="prevFlashcard()"><i class="fas fa-arrow-left"></i> Anterior</button>
+                <button class="btn btn-secondary" onclick="nextFlashcard()">Próximo <i class="fas fa-arrow-right"></i></button>
+                <button class="btn btn-secondary" onclick="shuffleFlashcards()" title="Embaralhar"><i class="fas fa-random"></i></button>
+              </div>
+
+              <div style="display: flex; gap: 10px;">
+                <button class="btn btn-danger" onclick="markCardMastery(false)"><i class="fas fa-times"></i> Preciso Revisar</button>
+                <button class="btn btn-success" onclick="markCardMastery(true)"><i class="fas fa-check"></i> Já Dominei!</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- SEÇÃO ESPECIAL: CARDS DE ESTUDO ESQUEMATIZADOS DO DIA 3 (HOJE) -->
+          <div class="summary-cards-section">
+            <div class="section-header" style="margin-top: 20px;">
+              <div>
+                <h2>📖 Cards & Fichas Esquematizadas do Dia 3 (02/09 — Hoje)</h2>
+                <p>Resumos visuais profundos para fixar antes e depois de responder as questões.</p>
+              </div>
+            </div>
+
+            <div class="summary-cards-grid">
+              
+              <!-- CARD 1: PRINCÍPIOS LIMPE -->
+              <div class="summary-card">
+                <div class="summary-card-header">
+                  <div class="summary-card-icon blue"><i class="fas fa-gavel"></i></div>
+                  <div>
+                    <h4 class="summary-card-title">Princípios Expressos (L-I-M-P-E)</h4>
+                    <span class="summary-card-subtitle">D. Administrativo • Art. 37, caput CF/88</span>
+                  </div>
+                </div>
+                <div class="summary-card-body">
+                  <ul>
+                    <li><strong>Legalidade:</strong> Administração só faz o que a lei permite (administrado faz tudo o que a lei não proíbe).</li>
+                    <li><strong>Impessoalidade:</strong> Atuação voltada ao interesse público; proibida autopromoção de prefeitos/vereadores (Art. 37, §1º).</li>
+                    <li><strong>Moralidade:</strong> Honestidade, lealdade e boa-fé. Veda o Nepotismo (Súmula Vinculante 13 do STF).</li>
+                    <li><strong>Publicidade:</strong> Regra é a transparência oficial (sigilo é exceção para segurança nacional ou intimidade).</li>
+                    <li><strong>Eficiência:</strong> Rendimento funcional, celeridade, economicidade (acrescentado pela EC 19/98).</li>
+                  </ul>
+                  <div class="mnemonic-box">
+                    💡 <strong>Mnemônico:</strong> L - I - M - P - E
+                  </div>
+                  <div class="alert-gold-box">
+                    ⚠️ <strong>Pegadinha:</strong> "Supremacia do Interesse Público" e "Razoabilidade" são princípios IMPLÍCITOS, não estão no LIMPE!
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 2: ORGANIZAÇÃO ADMINISTRATIVA -->
+              <div class="summary-card">
+                <div class="summary-card-header">
+                  <div class="summary-card-icon purple"><i class="fas fa-sitemap"></i></div>
+                  <div>
+                    <h4 class="summary-card-title">Desconcentração vs. Descentralização</h4>
+                    <span class="summary-card-subtitle">D. Administrativo • Organização do Estado</span>
+                  </div>
+                </div>
+                <div class="summary-card-body">
+                  <ul>
+                    <li><strong>DescoNcentração (com O de Órgão):</strong> Distribuição INTERNA de competências dentro da MESMA pessoa jurídica. Há hierarquia e subordinação direta. Ex: Criação de secretarias municipais.</li>
+                    <li><strong>DesceNtralização (com E de Entidade):</strong> Distribuição de competências para OUTRA pessoa jurídica (autarquias, empresas públicas) ou para particulares (concessionárias). Não há subordinação, apenas controle finalístico (tutela).</li>
+                  </ul>
+                  <div class="mnemonic-box">
+                    💡 <strong>Mnemônico:</strong> Desco<strong>N</strong>centração = cria <strong>Ó</strong>rgãos | Desce<strong>N</strong>tralização = cria <strong>E</strong>ntidades
+                  </div>
+                  <div class="alert-gold-box">
+                    ⚠️ <strong>Pegadinha:</strong> Órgãos públicos NÃO possuem personalidade jurídica própria nem patrimônio separado!
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 3: ADMINISTRAÇÃO INDIRETA -->
+              <div class="summary-card">
+                <div class="summary-card-header">
+                  <div class="summary-card-icon green"><i class="fas fa-building"></i></div>
+                  <div>
+                    <h4 class="summary-card-title">Entidades da Administração Indireta</h4>
+                    <span class="summary-card-subtitle">D. Administrativo • Art. 37, XIX CF/88</span>
+                  </div>
+                </div>
+                <div class="summary-card-body">
+                  <ul>
+                    <li><strong>Autarquias:</strong> Criadas DIRETAMENTE por lei específica; direito público; serviço público típico (ex: INSS); imunidade tributária recíproca.</li>
+                    <li><strong>Fundações Públicas:</strong> Criação AUTORIZADA por lei; lei complementar define áreas de atuação (saúde, cultura, pesquisa).</li>
+                    <li><strong>Empresas Públicas (EP):</strong> Criação autorizada por lei; capital 100% público; qualquer forma societária (Ltda, S/A).</li>
+                    <li><strong>Sociedades de Economia Mista (SEM):</strong> Criação autorizada por lei; capital misto (maioria votante pública); OBRIGATORIAMENTE S/A (ex: Banco do Brasil).</li>
+                  </ul>
+                  <div class="alert-gold-box">
+                    ⚠️ <strong>Regra de Ouro:</strong> Apenas a AUTARQUIA é criada por lei específica. As demais têm sua criação apenas autorizada!
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 4: WINDOWS 11 -->
+              <div class="summary-card">
+                <div class="summary-card-header">
+                  <div class="summary-card-icon orange"><i class="fab fa-windows"></i></div>
+                  <div>
+                    <h4 class="summary-card-title">Windows 11: Atalhos & Caracteres</h4>
+                    <span class="summary-card-subtitle">Noções de Informática • Sistema Operacional</span>
+                  </div>
+                </div>
+                <div class="summary-card-body">
+                  <ul>
+                    <li><strong>Caracteres Proibidos em Nomes de Arquivos:</strong> Não aceita 9 caracteres: <code>\ / : * ? " &lt; &gt; |</code></li>
+                    <li><strong>Win + L:</strong> Bloqueia a tela do computador imediatamente.</li>
+                    <li><strong>Win + E:</strong> Abre o Explorador de Arquivos (File Explorer).</li>
+                    <li><strong>Shift + Delete:</strong> Exclui permanentemente o arquivo sem enviar para a Lixeira.</li>
+                    <li><strong>Ctrl + Shift + Esc:</strong> Abre o Gerenciador de Tarefas diretamente.</li>
+                  </ul>
+                  <div class="mnemonic-box">
+                    💡 <strong>Mnemônico dos Proibidos:</strong> "Dois pontos, duas barras, aspas, asterisco, interrogação, menor, maior e pipe".
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 5: LINUX UBUNTU -->
+              <div class="summary-card">
+                <div class="summary-card-header">
+                  <div class="summary-card-icon blue"><i class="fab fa-linux"></i></div>
+                  <div>
+                    <h4 class="summary-card-title">Ubuntu Linux: Diretórios & Comandos</h4>
+                    <span class="summary-card-subtitle">Noções de Informática • Software Livre</span>
+                  </div>
+                </div>
+                <div class="summary-card-body">
+                  <ul>
+                    <li><code>/etc</code>: Contém arquivos de configuração globais do sistema.</li>
+                    <li><code>/home</code>: Pasta pessoal dos usuários comuns (documentos, downloads).</li>
+                    <li><code>/root</code>: Diretório pessoal exclusivo do superusuário (administrador).</li>
+                    <li><code>/bin</code> e <code>/sbin</code>: Binários e comandos executáveis essenciais.</li>
+                    <li><strong>Comando <code>ls</code>:</strong> Lista arquivos e diretórios da pasta.</li>
+                    <li><strong>Comando <code>mkdir</code>:</strong> Cria um novo diretório (pasta).</li>
+                    <li><strong>Comando <code>pwd</code>:</strong> Exibe o caminho absoluto do diretório atual.</li>
+                  </ul>
+                  <div class="alert-gold-box">
+                    ⚠️ <strong>Atenção:</strong> O Linux diferencia maiúsculas de minúsculas (Case Sensitive: <code>Arquivo.txt</code> ≠ <code>arquivo.txt</code>).
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 6: HARDWARE & MEMÓRIAS -->
+              <div class="summary-card">
+                <div class="summary-card-header">
+                  <div class="summary-card-icon purple"><i class="fas fa-microchip"></i></div>
+                  <div>
+                    <h4 class="summary-card-title">Hardware: Memórias & CPU</h4>
+                    <span class="summary-card-subtitle">Noções de Informática • Arquitetura</span>
+                  </div>
+                </div>
+                <div class="summary-card-body">
+                  <ul>
+                    <li><strong>Memória RAM:</strong> Primária, ultrarrápida e VOLÁTIL (apaga tudo ao desligar o PC).</li>
+                    <li><strong>Memória ROM:</strong> Primária, NÃO-VOLÁTIL, gravada de fábrica com a BIOS/firmware.</li>
+                    <li><strong>SSD vs. HD:</strong> SSD usa memória flash (sem partes mecânicas móveis, resistente e muito veloz). HD é magnético e mecânico.</li>
+                    <li><strong>CPU (Processador):</strong> Composta por ULA (Unidade Lógica e Aritmética - cálculos), UC (Unidade de Controle - fluxo) e Registradores (memória interna mais rápida de todas).</li>
+                  </ul>
+                  <div class="alert-gold-box">
+                    ⚠️ <strong>Pegadinha:</strong> Memória RAM NÃO guarda arquivos permanentemente; para salvar usa-se memória secundária (SSD/HD).
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 7: SEGURANÇA & BACKUP -->
+              <div class="summary-card">
+                <div class="summary-card-header">
+                  <div class="summary-card-icon green"><i class="fas fa-shield-alt"></i></div>
+                  <div>
+                    <h4 class="summary-card-title">Backup: Tipos & Regra 3-2-1</h4>
+                    <span class="summary-card-subtitle">Noções de Informática • Segurança</span>
+                  </div>
+                </div>
+                <div class="summary-card-body">
+                  <ul>
+                    <li><strong>Backup Completo (Full):</strong> Copia todos os arquivos selecionados. Mais demorado, mas restauração é direta.</li>
+                    <li><strong>Backup Incremental:</strong> Copia apenas os arquivos criados ou modificados desde o ÚLTIMO backup (seja Full ou Incremental). Mais rápido de gravar.</li>
+                    <li><strong>Backup Diferencial:</strong> Copia todos os arquivos modificados desde o último backup COMPLETO (Full).</li>
+                    <li><strong>Regra Mundial 3-2-1:</strong>
+                      <br>• <strong>3</strong> cópias de segurança no total.
+                      <br>• <strong>2</strong> tipos de mídias diferentes (ex: SSD externo + Nuvem).
+                      <br>• <strong>1</strong> cópia mantida fora da empresa/offsite (nuvem/cofre).
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- CARD 8: FONOLOGIA, ACENTUAÇÃO & CRASE (DIA 4) -->
+              <div class="summary-card">
+                <div class="summary-card-header">
+                  <div class="summary-card-icon blue"><i class="fas fa-spell-check"></i></div>
+                  <div>
+                    <h4 class="summary-card-title">Português: Acentuação & Crase (INBRASP)</h4>
+                    <span class="summary-card-subtitle">Fonologia, Acentuação Gráfica & Crase • Dia 4</span>
+                  </div>
+                </div>
+                <div class="summary-card-body">
+                  <ul>
+                    <li><strong>Proparoxítonas:</strong> TODAS são acentuadas (ex: <em>po-LÍ-ti-co, CÔM-pu-to, TÉC-ni-co, CÂ-ma-ra</em>). É a questão favorita da banca!</li>
+                    <li><strong>Regra do Hiato:</strong> 'I' e 'U' tônicos em hiato, sozinhos na sílaba (ou com 's'): <em>sa-ú-de, sa-í-da, ba-ú</em>. Sem acento se seguidos de 'nh' (<em>rainha</em>) ou consoante (<em>juiz</em>).</li>
+                    <li><strong>Novo Acordo:</strong> Ditongos abertos 'EI' e 'OI' NÃO têm mais acento em paroxítonas (<em>ideia, assembleia, jiboia</em>). Mantêm nas oxítonas (<em>herói, troféu</em>).</li>
+                    <li><strong>Crase Proibida:</strong> Antes de masculino, verbo e pronomes indefinidos/tratamento (<em>a todos, a pé, a partir</em>).</li>
+                    <li><strong>Crase Facultativa:</strong> Diante de possessivo feminino singular (<em>à sua</em>), nome de mulher sem qualificativo (<em>à Maria</em>) e após <em>até</em> (<em>até à</em>).</li>
+                  </ul>
+                  <div class="alert-gold-box">
+                    ⭐ <strong>Regra de Ouro da Banca:</strong> Troque a palavra feminina por uma masculina. Se der <strong>AO</strong>, tem crase (ex: foi <strong>à</strong> Câmara / foi <strong>ao</strong> Senado). Se der apenas <strong>O</strong>, não tem crase.
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 9: DIREITOS SOCIAIS DOS TRABALHADORES (CF ART. 7º) -->
+              <div class="summary-card">
+                <div class="summary-card-header">
+                  <div class="summary-card-icon green"><i class="fas fa-user-shield"></i></div>
+                  <div>
+                    <h4 class="summary-card-title">CF/88: Direitos Sociais dos Trabalhadores</h4>
+                    <span class="summary-card-subtitle">Art. 6º e 7º da CF/88 • Números e Prazos • Dia 4</span>
+                  </div>
+                </div>
+                <div class="summary-card-body">
+                  <ul>
+                    <li><strong>Jornada Padrão:</strong> 8h diárias e 44h semanais (compensação via acordo/convenção coletiva).</li>
+                    <li><strong>Turnos Ininterruptos:</strong> 6 horas diárias (salvo negociação coletiva).</li>
+                    <li><strong>Hora Extra:</strong> No mínimo <strong>50%</strong> superior à hora normal.</li>
+                    <li><strong>Férias Anuais:</strong> Acréscimo constitucional de pelo menos <strong>1/3 (um terço)</strong>.</li>
+                    <li><strong>Licença-Maternidade:</strong> 120 dias constitucionais sem prejuízo do salário ou emprego.</li>
+                    <li><strong>Aviso Prévio:</strong> Proporcional ao tempo de serviço, no mínimo de <strong>30 dias</strong>.</li>
+                    <li><strong>Menores de Idade:</strong> Proibido noturno/perigoso/insalubre a menores de <strong>18</strong>; proibido qualquer trabalho a menores de <strong>16</strong> (salvo <strong>aprendiz a partir de 14 anos</strong>).</li>
+                  </ul>
+                  <div class="alert-gold-box">
+                    ⚠️ <strong>Pegadinha da INBRASP:</strong> A banca adora tentar colocar aprendiz com 12 anos ou licença-maternidade de 90 dias. Memorize: 14 anos aprendiz e 120 dias gestante!
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 10: LIBERDADE SINDICAL & ESTABILIDADE (CF ART. 8º) -->
+              <div class="summary-card">
+                <div class="summary-card-header">
+                  <div class="summary-card-icon purple"><i class="fas fa-handshake"></i></div>
+                  <div>
+                    <h4 class="summary-card-title">CF/88: Liberdade Sindical & Direito de Greve</h4>
+                    <span class="summary-card-subtitle">Arts. 8º ao 11 da CF/88 • Garantias Sindicais • Dia 4</span>
+                  </div>
+                </div>
+                <div class="summary-card-body">
+                  <ul>
+                    <li><strong>Autonomia:</strong> Vedadas ao Poder Público a interferência e intervenção na organização sindical (apenas registro no órgão competente).</li>
+                    <li><strong>Unicidade Sindical:</strong> Proibida mais de 1 organização sindical na mesma base territorial (mínimo = 1 Município).</li>
+                    <li><strong>Filiação:</strong> Ninguém será obrigado a filiar-se ou a manter-se filiado a sindicato.</li>
+                    <li><strong>Estabilidade do Dirigente Sindical:</strong> Desde o <strong>registro da candidatura</strong> e, se eleito (inclusive suplente), até <strong>1 ANO após o mandato</strong> (salvo falta grave na lei).</li>
+                    <li><strong>Direito de Greve (Art. 9º):</strong> Compete aos <strong>trabalhadores</strong> decidir sobre a oportunidade e interesses.</li>
+                    <li><strong>Representação de Empregados (Art. 11):</strong> Obrigatória em empresas com mais de <strong>200 empregados</strong>.</li>
+                  </ul>
+                  <div class="alert-gold-box">
+                    ⭐ <strong>Regra de Ouro:</strong> A estabilidade sindical começa no REGISTRO da candidatura, e não na eleição ou posse!
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 11: LEI ORGÂNICA DE MERUOCA (ARTS. 1º AO 15) -->
+              <div class="summary-card">
+                <div class="summary-card-header">
+                  <div class="summary-card-icon orange"><i class="fas fa-landmark"></i></div>
+                  <div>
+                    <h4 class="summary-card-title">Lei Orgânica de Meruoca: Princípios & Competências</h4>
+                    <span class="summary-card-subtitle">Arts. 1º ao 15 • Legislação Municipal • Dia 4</span>
+                  </div>
+                </div>
+                <div class="summary-card-body">
+                  <ul>
+                    <li><strong>Tríplice Autonomia:</strong> O Município de Meruoca tem autonomia <strong>Política</strong> (eleições locais), <strong>Administrativa</strong> (gestão própria) e <strong>Financeira</strong> (tributos municipais).</li>
+                    <li><strong>Poderes Municipais:</strong> Apenas <strong>Legislativo</strong> (Câmara) e <strong>Executivo</strong> (Prefeitura). Não há Judiciário nem MP municipal!</li>
+                    <li><strong>Símbolos Oficiais:</strong> A Bandeira, o Brasão e o Hino de Meruoca.</li>
+                    <li><strong>Soberania Popular Direta:</strong> Exercida mediante Plebiscito (prévio), Referendo (posterior) e Iniciativa Popular de projetos de lei.</li>
+                    <li><strong>Competência Privativa (Exclusiva):</strong> Tributos municipais (IPTU, ISS, ITBI, taxas), tarifas de transporte local, ordenamento e zoneamento do solo urbano (Plano Diretor).</li>
+                    <li><strong>Competência Comum (com Estado e União):</strong> Saúde, assistência social, proteção a PCDs, preservação ambiental e patrimônio histórico.</li>
+                  </ul>
+                  <div class="alert-gold-box">
+                    ⭐ <strong>Regra de Ouro:</strong> Assuntos de interesse predominantemente local = competência privativa de Meruoca; saúde e meio ambiente = comum aos 3 entes.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 4: CADERNO DE ERROS -->
+        <div class="tab-pane" id="tab-caderno-erros">
+          <div class="section-header">
+            <div>
+              <h2>Caderno de Erros Analítico</h2>
+              <p>Mapeie a causa exata de cada erro para revisão espaçada (R0, R1, R2, R3).</p>
+            </div>
+          </div>
+
+          <div class="errors-container">
+            <!-- Formulário -->
+            <div class="error-form-card">
+              <h3 style="font-size: 1.1rem; font-weight: 800; margin-bottom: 16px; color: var(--text-main);">
+                <i class="fas fa-plus-circle" style="color: var(--primary);"></i> Cadastrar Novo Erro
+              </h3>
+              <form id="errorForm">
+                <div class="form-group">
+                  <label>Disciplina</label>
+                  <select class="form-control" id="errDisciplina" required>
+                    <option value="D. Constitucional">D. Constitucional</option>
+                    <option value="D. Administrativo">D. Administrativo</option>
+                    <option value="Processo Legislativo">Processo Legislativo</option>
+                    <option value="Lei Orgânica de Meruoca">Lei Orgânica de Meruoca</option>
+                    <option value="Regimento Interno">Regimento Interno</option>
+                    <option value="Lei 14.133/2021">Lei 14.133/2021 (Licitações)</option>
+                    <option value="Língua Portuguesa">Língua Portuguesa</option>
+                    <option value="Informática">Informática</option>
+                    <option value="Matemática / RLM">Matemática / RLM</option>
+                    <option value="Orçamento / LRF">Orçamento / LRF</option>
+                    <option value="LGPD / LAI">LGPD / LAI</option>
+                    <option value="Políticas & Gestão">Políticas & Gestão</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label>Assunto / Artigo Específico</label>
+                  <input type="text" class="form-control" id="errAssunto" placeholder="Ex: Art. 5º CF / Atos Administrativos" required>
+                </div>
+
+                <div class="form-group">
+                  <label>Causa do Erro</label>
+                  <select class="form-control" id="errTipo" required>
+                    <option value="nao-sabia">🔴 Não sabia (Lacuna teórica)</option>
+                    <option value="esqueci">🟠 Esqueci (Falha de memória)</option>
+                    <option value="duvida">🟡 Dúvida (Fiquei entre duas)</option>
+                    <option value="interpretacao">🔵 Interpretação (Li mal)</option>
+                    <option value="distracao">⚫ Distração (Pegadinha/Desatenção)</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label>Conceito Correto / Resolução</label>
+                  <textarea class="form-control" id="errConceito" placeholder="Escreva com suas próprias palavras a regra correta..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label>Pegadinha da Banca / Regra de Ouro (Opcional)</label>
+                  <input type="text" class="form-control" id="errPegadinha" placeholder="Ex: A banca trocou competência privativa por exclusiva">
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">
+                  <i class="fas fa-save"></i> Salvar no Caderno
+                </button>
+              </form>
+            </div>
+
+            <!-- Lista e Filtros -->
+            <div class="error-list-card">
+              <div class="error-filters">
+                <button class="btn btn-secondary" style="font-size: 0.8rem; padding: 6px 12px;" onclick="filterErrors('all')">Todos</button>
+                <button class="btn btn-secondary" style="font-size: 0.8rem; padding: 6px 12px;" onclick="filterErrors('nao-sabia')">🔴 Não sabia</button>
+                <button class="btn btn-secondary" style="font-size: 0.8rem; padding: 6px 12px;" onclick="filterErrors('esqueci')">🟠 Esqueci</button>
+                <button class="btn btn-secondary" style="font-size: 0.8rem; padding: 6px 12px;" onclick="filterErrors('duvida')">🟡 Dúvida</button>
+                <button class="btn btn-secondary" style="font-size: 0.8rem; padding: 6px 12px;" onclick="filterErrors('interpretacao')">🔵 Interpretação</button>
+                <button class="btn btn-secondary" style="font-size: 0.8rem; padding: 6px 12px;" onclick="filterErrors('distracao')">⚫ Distração</button>
+              </div>
+
+              <div id="errorListContainer"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 5: SIMULADOS & DIAGNÓSTICO -->
+        <div class="tab-pane" id="tab-simulados">
+          <div class="section-header">
+            <div>
+              <h2>Evolução nos Simulados Oficiais (40 Questões)</h2>
+              <p>Monitore suas notas para garantir a curva ascendente de 60% até 90%+.</p>
+            </div>
+          </div>
+
+          <div class="simulados-grid">
+            <div class="chart-card">
+              <h3 style="font-size: 1.1rem; font-weight: 800; margin-bottom: 12px;">Registro dos 6 Simulados de Sábado</h3>
+              <table class="simulados-table">
+                <thead>
+                  <tr>
+                    <th>Simulado</th>
+                    <th>Data Prevista</th>
+                    <th>Acertos</th>
+                    <th>Aproveitamento</th>
+                    <th>Tempo Gasto</th>
+                  </tr>
+                </thead>
+                <tbody id="simuladosTableBody"></tbody>
+              </table>
+            </div>
+
+            <div class="chart-card">
+              <h3 style="font-size: 1.1rem; font-weight: 800; margin-bottom: 12px;">🎯 Metas de Desempenho</h3>
+              <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 0.9rem;">
+                <li style="display: flex; justify-content: space-between; padding: 8px 12px; background: var(--bg-main); border-radius: 6px;">
+                  <span>Semana 1 (05/09)</span><strong>60–70%</strong>
+                </li>
+                <li style="display: flex; justify-content: space-between; padding: 8px 12px; background: var(--bg-main); border-radius: 6px;">
+                  <span>Semana 2 (12/09)</span><strong>70–75%</strong>
+                </li>
+                <li style="display: flex; justify-content: space-between; padding: 8px 12px; background: var(--bg-main); border-radius: 6px;">
+                  <span>Semana 3 (19/09)</span><strong>75–80%</strong>
+                </li>
+                <li style="display: flex; justify-content: space-between; padding: 8px 12px; background: var(--bg-main); border-radius: 6px;">
+                  <span>Semana 4 (26/09)</span><strong>80–85%</strong>
+                </li>
+                <li style="display: flex; justify-content: space-between; padding: 8px 12px; background: var(--bg-main); border-radius: 6px;">
+                  <span>Semana 5 (03/10)</span><strong>85%+ (Velocidade)</strong>
+                </li>
+                <li style="display: flex; justify-content: space-between; padding: 8px 12px; background: var(--bg-main); border-radius: 6px;">
+                  <span>Semana 6 (10/10)</span><strong style="color: var(--success);">90%+ (Oficial)</strong>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="chart-card" style="margin-top: 24px;">
+            <h3 style="font-size: 1.1rem; font-weight: 800; margin-bottom: 8px;">Tabela de Diagnóstico Final (Semana 6 / Simulado 6)</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 16px;">Preencha com o número de acertos por disciplina para identificar seus pontos de atenção.</p>
+            <table class="simulados-table">
+              <thead>
+                <tr>
+                  <th>Disciplina</th>
+                  <th>Acertos</th>
+                  <th>Total de Questões</th>
+                  <th>% Aproveitamento</th>
+                  <th>Situação Estratégica</th>
+                </tr>
+              </thead>
+              <tbody id="diagnosticoTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- TAB 6: FICHAS TÁTICAS (LO & REGIMENTO) -->
+        <div class="tab-pane" id="tab-fichas">
+          <div class="section-header">
+            <div>
+              <h2>Fichas de Memorização Rápida</h2>
+              <p>Consulte os eixos estruturantes da Lei Orgânica e do Regimento Interno de Meruoca.</p>
+            </div>
+          </div>
+
+          <div class="fichas-grid">
+            <div class="ficha-card">
+              <h3><i class="fas fa-city"></i> FICHA A: Lei Orgânica de Meruoca</h3>
+              <ul class="ficha-list">
+                <li class="ficha-item">
+                  <strong>Quem são os atores?</strong>
+                  <p>Prefeito (Executivo), Vereadores e Mesa Diretora (Legislativo) e Cidadãos (Iniciativa popular).</p>
+                </li>
+                <li class="ficha-item">
+                  <strong>Competências Exclusivas vs Comuns</strong>
+                  <p>Exclusivas municipais: assuntos de interesse local, tributos municipais, transporte coletivo, guarda municipal. Comuns: saúde, educação, patrimônio.</p>
+                </li>
+                <li class="ficha-item">
+                  <strong>Quóruns Decisórios</strong>
+                  <p>Maioria simples (regra geral), Maioria Absoluta (Leis complementares, rejeição de veto) e 2/3 (alteração da L.O., julgamento de contas do Prefeito).</p>
+                </li>
+                <li class="ficha-item">
+                  <strong>Prazos Cruciais</strong>
+                  <p>Sanção/Veto pelo Prefeito: 15 dias úteis. Apreciação do veto pela Câmara: 30 dias. Promulgação em 48h caso o Prefeito silencie.</p>
+                </li>
+                <li class="ficha-item">
+                  <strong>Fiscalização e Contas</strong>
+                  <p>Controle externo a cargo da Câmara com auxílio do Tribunal de Contas (TCE). Parecer prévio só cai por decisão de 2/3 dos vereadores.</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="ficha-card">
+              <h3><i class="fas fa-users-cog"></i> FICHA B: Regimento Interno da Câmara</h3>
+              <ul class="ficha-list">
+                <li class="ficha-item">
+                  <strong>Mesa Diretora & Presidência</strong>
+                  <p>Órgão diretor dos trabalhos legislativos e administrativos. Presidente representa a Câmara, convoca sessões e preside votações.</p>
+                </li>
+                <li class="ficha-item">
+                  <strong>Sessões Legislativas</strong>
+                  <p>Ordinárias (dias e horários regimentais), Extraordinárias (convocação urgente), Solenes (homenagens) e Secretas (casos excepcionais).</p>
+                </li>
+                <li class="ficha-item">
+                  <strong>Comissões</strong>
+                  <p>Permanentes (analisam mérito e constitucionalidade antes do plenário: ex: CCJ, Finanças) e Temporárias (CPIs, especiais, representação).</p>
+                </li>
+                <li class="ficha-item">
+                  <strong>Espécies de Proposição</strong>
+                  <p>Projetos de Lei, Decretos Legislativos, Resoluções, Requerimentos, Indicações, Moções, Substitutivos e Emendas.</p>
+                </li>
+                <li class="ficha-item">
+                  <strong>Rito de Tramitação</strong>
+                  <p>Protocolo $\rightarrow$ Leitura no Expediente $\rightarrow$ Comissões (Pareceres) $\rightarrow$ Ordem do Dia (Discussão e Votação) $\rightarrow$ Redação Final $\rightarrow$ Autógrafo.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 7: RESUMO DO EDITAL & CONTEÚDO PROGRAMÁTICO COMPLETO -->
+        <div class="tab-pane" id="tab-edital">
+          
+          <!-- BANNER OFICIAL COM DADOS DO EDITAL -->
+          <div class="edital-header-banner">
+            <div class="edital-badge-tag">
+              <i class="fas fa-file-signature"></i> EDITAL OFICIAL Nº 001/2026 — CÂMARA MUNICIPAL DE MERUOCA / CE
+            </div>
+            <h1 style="font-size: 1.7rem; font-weight: 800; margin: 0 0 8px 0;">Conteúdo Programático & Edital Verticalizado</h1>
+            <p style="margin: 0; opacity: 0.95; font-size: 0.95rem; max-width: 850px;">
+              Todos os assuntos oficiais exigidos pela banca <strong>INBRASP</strong> para a Câmara de Meruoca, extraídos diretamente do Edital nº 001/2026. Acompanhe a teoria, resolução de questões e revisões de cada tópico.
+            </p>
+
+            <div class="edital-stats-grid">
+              <div class="edital-stat-pill">
+                <span class="edital-stat-val">18/10/2026</span>
+                <span class="edital-stat-lbl">Data da Prova (09h às 12h)</span>
+              </div>
+              <div class="edital-stat-pill">
+                <span class="edital-stat-val">40 Questões</span>
+                <span class="edital-stat-lbl">4 Alternativas (A, B, C, D)</span>
+              </div>
+              <div class="edital-stat-pill">
+                <span class="edital-stat-val">3 Horas</span>
+                <span class="edital-stat-lbl">Duração da Prova</span>
+              </div>
+              <div class="edital-stat-pill">
+                <span class="edital-stat-val">50 Pontos</span>
+                <span class="edital-stat-lbl">Mínimo para Aprovação</span>
+              </div>
+            </div>
+
+            <div style="margin-top: 18px; display: flex; gap: 10px; flex-wrap: wrap;">
+              <a href="provas/originais_pdf/ID_726_20260828_133904_EDITAL 001.2026 - CÂMARA DE MERUOCA - 28.08.pdf" target="_blank" class="btn" style="background: white; color: var(--primary); font-weight: 800; font-size: 0.85rem; padding: 8px 16px;">
+                <i class="fas fa-file-pdf" style="color: #dc2626;"></i> Abrir Edital Original Completo (PDF)
+              </a>
+              <a href="provas/EDITAL_VERTICALIZADO_MERUOCA_2026.html" target="_blank" class="btn" style="background: rgba(255,255,255,0.2); color: white; font-weight: 700; font-size: 0.85rem; padding: 8px 16px; border: 1px solid rgba(255,255,255,0.4);">
+                <i class="fas fa-print"></i> Versão Impressa / PDF Verticalizado
+              </a>
+            </div>
+          </div>
+
+          <!-- SELETOR DE CARGO -->
+          <div class="edital-role-switch">
+            <button class="role-tab-btn active" id="btnRoleTecnico" onclick="switchEditalRole('tecnico')">
+              <i class="fas fa-user-tie"></i> Técnico Legislativo (Nível Superior — Seu Cargo)
+            </button>
+            <button class="role-tab-btn" id="btnRoleAgente" onclick="switchEditalRole('agente')">
+              <i class="fas fa-id-badge"></i> Agente Administrativo (Nível Médio)
+            </button>
+          </div>
+
+          <!-- PROGRESSO GLOBAL DO EDITAL -->
+          <div class="edital-progress-card">
+            <div class="edital-progress-top">
+              <div>
+                <strong style="font-size: 1rem; color: var(--text-main);">Progresso de Cobertura do Edital</strong>
+                <span id="editalProgressCount" style="font-size: 0.85rem; color: var(--text-muted); margin-left: 8px;">0 de 54 tópicos dominados</span>
+              </div>
+              <div id="editalProgressPercent" style="font-size: 1.15rem; font-weight: 800; color: var(--primary);">0%</div>
+            </div>
+            <div class="edital-progress-track">
+              <div class="edital-progress-fill" id="editalProgressBar" style="width: 0%;"></div>
+            </div>
+          </div>
+
+          <!-- BARRA DE BUSCA E CONTROLES -->
+          <div class="edital-controls-bar">
+            <div class="edital-search-wrapper">
+              <i class="fas fa-search"></i>
+              <input type="text" id="editalSearchInput" class="edital-search-input" placeholder="🔍 Filtrar assunto ou lei (Ex: Lei 14.133, Python, LRF, Crase, Art. 5º, Regimento)..." oninput="filterEditalTopics()">
+            </div>
+            <button class="btn btn-secondary" onclick="expandAllDisciplines()" style="font-size: 0.85rem; padding: 8px 14px;">
+              <i class="fas fa-angle-double-down"></i> Expandir Todos
+            </button>
+            <button class="btn btn-secondary" onclick="collapseAllDisciplines()" style="font-size: 0.85rem; padding: 8px 14px;">
+              <i class="fas fa-angle-double-up"></i> Recolher
+            </button>
+          </div>
+
+          <!-- CONTAINER DAS DISCIPLINAS E TÓPICOS -->
+          <div id="editalDisciplinesContainer"></div>
+
+        </div>
+
+      </main>
+    </div>
+  </div>
+
+  <!-- Sidebar Backdrop (Mobile Drawer Overlay) -->
+  <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+  <!-- Mobile Bottom Navigation Bar (Estilo App Nativo) -->
+  <nav class="mobile-bottom-nav" id="mobileBottomNav">
+    <button class="mobile-nav-btn active" data-tab="tab-cronograma">
+      <i class="fas fa-calendar-alt"></i>
+      <span>Cronograma</span>
+    </button>
+    <button class="mobile-nav-btn" data-tab="tab-questoes">
+      <i class="fas fa-tasks"></i>
+      <span>Questões</span>
+      <span class="mobile-badge" id="mobileQuizBadge">100</span>
+    </button>
+    <button class="mobile-nav-btn" data-tab="tab-flashcards">
+      <i class="fas fa-clone"></i>
+      <span>Cards</span>
+    </button>
+    <button class="mobile-nav-btn" data-tab="tab-edital">
+      <i class="fas fa-clipboard-list"></i>
+      <span>Edital</span>
+    </button>
+    <button class="mobile-nav-btn" data-tab="tab-simulados">
+      <i class="fas fa-chart-line"></i>
+      <span>Simulados</span>
+    </button>
+    <button class="mobile-nav-btn" id="mobileMenuBtn">
+      <i class="fas fa-bars"></i>
+      <span>Mais</span>
+    </button>
+  </nav>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- JS Logic -->
+  <script src="app.js"></script>
+</body>
+</html>

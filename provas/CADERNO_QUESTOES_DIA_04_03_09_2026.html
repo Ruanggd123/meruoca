@@ -1,0 +1,2104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>CADERNO OFICIAL DE QUESTÕES — DIA 4 (03/09/2026) | INBRASP</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @page {
+      size: A4;
+      margin: 15mm 18mm;
+    }
+    :root {
+      --primary: #1e3a8a;
+      --primary-dark: #0f172a;
+      --accent: #dc2626;
+      --border: #cbd5e1;
+      --bg: #ffffff;
+      --text: #0f172a;
+      --text-muted: #475569;
+    }
+    body {
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+      color: var(--text);
+      background: #f8fafc;
+      margin: 0;
+      padding: 24px;
+      font-size: 10.5pt;
+      line-height: 1.45;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      padding: 36px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    }
+    .header-box {
+      border: 2px solid var(--primary);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f8fafc;
+    }
+    .header-titles h1 {
+      margin: 0 0 4px 0;
+      font-size: 1.35rem;
+      color: var(--primary);
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .header-titles h2 {
+      margin: 0 0 4px 0;
+      font-size: 1rem;
+      color: var(--text);
+      font-weight: 700;
+    }
+    .header-titles p {
+      margin: 0;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .badge-banca {
+      background: #fee2e2;
+      color: #991b1b;
+      font-weight: 800;
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      border: 1px solid #fecaca;
+    }
+    .no-print {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .btn-action {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+    }
+    .btn-action:hover {
+      background: #1d4ed8;
+    }
+    .section-title {
+      background: #1e3a8a;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-size: 1.05rem;
+      font-weight: 800;
+      margin: 28px 0 16px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .section-title.especifica {
+      background: #b91c1c;
+    }
+    .question-block {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px 18px;
+      margin-bottom: 16px;
+      background: #ffffff;
+      page-break-inside: avoid;
+    }
+    .question-meta {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      font-size: 0.8rem;
+    }
+    .q-badge {
+      font-weight: 800;
+      color: var(--primary);
+    }
+    .q-topic {
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+    .question-text {
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 12px;
+      line-height: 1.45;
+    }
+    .options-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .option-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 6px 8px;
+      margin-bottom: 4px;
+      border-radius: 4px;
+      font-size: 0.92rem;
+    }
+    .option-letter {
+      width: 24px;
+      height: 24px;
+      border: 1.5px solid #94a3b8;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.8rem;
+      color: #334155;
+      flex-shrink: 0;
+    }
+    .folha-respostas-box {
+      border: 2px dashed var(--primary);
+      border-radius: 8px;
+      padding: 20px;
+      margin: 30px 0;
+      background: #f8fafc;
+      page-break-before: always;
+    }
+    .folha-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      font-size: 0.82rem;
+      margin-top: 14px;
+    }
+    .folha-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 6px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+    }
+    .folha-num {
+      width: 22px;
+      font-weight: 800;
+      color: var(--primary);
+    }
+    .folha-circle {
+      width: 16px;
+      height: 16px;
+      border: 1px solid #64748b;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.65rem;
+      font-weight: 700;
+      color: #475569;
+    }
+    .gabarito-section {
+      page-break-before: always;
+      margin-top: 30px;
+    }
+    .gabarito-item {
+      background: #f1f5f9;
+      border-left: 4px solid var(--primary);
+      padding: 10px 14px;
+      margin-bottom: 10px;
+      border-radius: 0 6px 6px 0;
+      font-size: 0.88rem;
+    }
+    .gabarito-item strong {
+      color: var(--primary-dark);
+    }
+    .gabarito-letra {
+      background: #16a34a;
+      color: white;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-weight: 800;
+      margin-right: 6px;
+    }
+    @media print {
+      body { background: white; padding: 0; }
+      .container { padding: 0; box-shadow: none; max-width: 100%; }
+      .no-print { display: none !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="no-print">
+      <button class="btn-action" onclick="window.print()">
+        <i class="fas fa-print"></i> Imprimir Prova (PDF)
+      </button>
+      <a href="../index.html" class="btn-action" style="background: #e2e8f0; color: #334155;">
+        <i class="fas fa-arrow-left"></i> Voltar ao Gerenciador de Estudos
+      </a>
+    </div>
+
+    <!-- CABEÇALHO DA PROVA -->
+    <div class="header-box">
+      <div class="header-titles">
+        <span style="font-size: 0.75rem; font-weight: 800; text-transform: uppercase; color: #dc2626;">Caderno de Treino Diário Oficial</span>
+        <h1>Câmara Municipal de Meruoca / CE</h1>
+        <h2>Concurso Público nº 001/2026 — Cargo: Técnico Legislativo</h2>
+        <p><strong>Dia 4 (03/09/2026):</strong> Português (15Q) • D. Constitucional (15Q) • Lei Orgânica de Meruoca (10Q)</p>
+      </div>
+      <div style="text-align: right;">
+        <div class="badge-banca">Banca INBRASP</div>
+        <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 6px;">40 Questões (A, B, C, D)</div>
+      </div>
+    </div>
+
+    <!-- SEÇÃO 1: LÍNGUA PORTUGUESA (15Q) -->
+    <div class="section-title">
+      <span><i class="fas fa-book"></i> PARTE 1: LÍNGUA PORTUGUESA (QUESTÕES 61 A 75)</span>
+      <span style="font-size: 0.8rem; font-weight: normal;">Fonologia, Acentuação Gráfica & Emprego da Crase</span>
+    </div>
+
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 61</span>
+        <span class="q-topic">Língua Portuguesa • Acentuação Gráfica: Regra das Proparoxítonas</span>
+      </div>
+      <div class="question-text">No padrão da banca INBRASP, a regra de acentuação gráfica que justifica o acento na palavra 'LEGISLATIVO' não existe pois a palavra é paroxítona sem acento. Entretanto, assinale a alternativa em que TODAS as palavras são acentuadas rigorosamente pela regra das proparoxítonas:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Político, cômputo, câmara e déficit.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Técnico, caráter, público e relatório.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Orgânico, histórico, mérito e autarquia.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Público, relógio, secretária e país.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 62</span>
+        <span class="q-topic">Língua Portuguesa • Acentuação Gráfica: Regra dos Hiatos</span>
+      </div>
+      <div class="question-text">Assinale a alternativa em que a palavra destacada recebe acento gráfico pela MESMA regra que justifica o acento na palavra 'SAÚDE':</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>O servidor municipal goza de total autonomia no exercício da função pública.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>A saída de emergência da Câmara Municipal foi desobstruída pela fiscalização.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>O vereador realizou um discurso com alto teor patriótico perante a mesa.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>A assembleia legislativa deliberou favoravelmente à concessão do benefício.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 63</span>
+        <span class="q-topic">Língua Portuguesa • Ortografia: Novo Acordo Ortográfico (Ditongos Abertos)</span>
+      </div>
+      <div class="question-text">De acordo com o Acordo Ortográfico vigente da Língua Portuguesa, os ditongos abertos 'EI' e 'OI' perderam o acento gráfico quando se encontram na posição de:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Monossílabos tônicos (ex: dói, réis, méis).</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Oxítonas (ex: herói, troféu, constrói).</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Paroxítonas (ex: ideia, jiboia, assembleia, heroico).</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Proparoxítonas (ex: helicóptero, cômputo).</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 64</span>
+        <span class="q-topic">Língua Portuguesa • Fonologia: Contagem de Fonemas e Letras</span>
+      </div>
+      <div class="question-text">A palavra 'MUNICÍPIO' e a palavra 'TRABALHO' apresentam, respectivamente, o seguinte número de letras e fonemas:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>9 letras e 9 fonemas; 8 letras e 7 fonemas.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>9 letras e 8 fonemas; 8 letras e 8 fonemas.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>9 letras e 10 fonemas; 8 letras e 6 fonemas.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>8 letras e 8 fonemas; 7 letras e 6 fonemas.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 65</span>
+        <span class="q-topic">Língua Portuguesa • Fonologia: Encontros Vocálicos (Hiato vs Ditongo)</span>
+      </div>
+      <div class="question-text">Considere as palavras: I. História; II. Juízes; III. Rainha; IV. Coordenar. Classificam-se, respectivamente, quanto aos encontros vocálicos, como:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Ditongo crescente, Hiato, Hiato e Hiato.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Ditongo decrescente, Ditongo crescente, Tritongo e Hiato.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Hiato, Ditongo crescente, Ditongo decrescente e Tritongo.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Ditongo crescente, Hiato, Ditongo decrescente e Hiato.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 66</span>
+        <span class="q-topic">Língua Portuguesa • Emprego do Sinal Indicativo de Crase: Casos Proibidos</span>
+      </div>
+      <div class="question-text">O emprego do sinal indicativo de crase é rigorosamente PROIBIDO na seguinte frase:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>O projeto de lei foi remetido à Comissão de Constituição e Justiça.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>O presidente da Câmara dirigiu-se a todos os vereadores com respeito.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>A sessão solene teve início às nove horas da manhã em ponto.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>O servidor compareceu à reunião extraordinária do plenário.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 67</span>
+        <span class="q-topic">Língua Portuguesa • Emprego da Crase: Casos Facultativos</span>
+      </div>
+      <div class="question-text">A ocorrência do acento grave indicativo de crase é FACULTATIVA (opcional) em:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>O técnico legislativo entregou a ata à sua chefia imediata.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>A comissão parlamentar passou a investigar os fatos noticiados.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>O cidadão compareceu a pé até a portaria do prédio público.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Ele redigiu a ata a lápis para posterior digitação oficial.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 68</span>
+        <span class="q-topic">Língua Portuguesa • Emprego da Crase: Antes de Verbos</span>
+      </div>
+      <div class="question-text">Analise a frase: 'O relator começou ___ expor as razões do veto e colocou o parecer ___ disposição da bancada'. Assinale a alternativa que preenche correta e respectivamente as lacunas:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>a — à</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>à — à</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>a — a</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>à — a</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 69</span>
+        <span class="q-topic">Língua Portuguesa • Ortografia Oficial: Emprego de Mal vs Mau</span>
+      </div>
+      <div class="question-text">Assinale a alternativa em que o termo sublinhado foi empregado em estrita conformidade com o padrão culto da língua:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>O servidor desempenhou mau as atribuições do seu cargo comissionado.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Ele é um homem mal, incapaz de agir com empatia no atendimento ao público.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Mal o presidente declarou aberta a sessão, o plenário ficou em silêncio.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>O projeto de lei foi mau redigido pela assessoria parlamentar.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 70</span>
+        <span class="q-topic">Língua Portuguesa • Divisão Silábica e Separação de Dígrafos</span>
+      </div>
+      <div class="question-text">Assinale a alternativa em que a partição silábica de todas as palavras está inteiramente CORRETA:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Sub-lin-har, ex-ce-ção, car-ro e pneu-má-ti-co.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Su-bli-nhar, ex-ce-ção, car-ro e p-neu-má-ti-co.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Sub-li-nhar, e-xce-ção, ca-rro e pneu-má-ti-co.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Sub-lin-har, ex-ce-ç-ão, ca-rro e pne-u-má-ti-co.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 71</span>
+        <span class="q-topic">Língua Portuguesa • Emprego do Porquê / Por quê / Porque / Por que</span>
+      </div>
+      <div class="question-text">Identifique a frase em que o uso do porquê está rigorosamente CORRETO:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>O projeto foi rejeitado por que a comissão apontou inconstitucionalidade.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Não entendi o porquê de tanta discussão em torno de uma emenda simples.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Os vereadores protestaram porque? Não houve justificativa clara.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Por quê você não compareceu à audiência pública de Meruoca ontem?</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 72</span>
+        <span class="q-topic">Língua Portuguesa • Acentuação Gráfica: Oxítonas Terminadas em A, E, O, EM</span>
+      </div>
+      <div class="question-text">A palavra 'TAMBÉM' e a palavra 'PARABÉNS' recebem acento gráfico pela regra de acentuação das palavras:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Oxítonas terminadas em -em e -ens.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Paroxítonas terminadas em consoante nasal.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Monossílabos tônicos terminados em ditongo nasal.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Proparoxítonas aparentes ou eventuais.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 73</span>
+        <span class="q-topic">Língua Portuguesa • Crase diante de Pronomes Demonstrativos</span>
+      </div>
+      <div class="question-text">Assinale a frase em que a crase foi empregada CORRETAMENTE antes de pronome demonstrativo:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Refiro-me àquele vereador que presidiu a comissão de finanças.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Ele entregou o requerimento à esta servidora do protocolo.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>O parecer foi contrário à essa proposta orçamentária do prefeito.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>A moção de repúdio foi dirigida à quem faltou à sessão solene.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 74</span>
+        <span class="q-topic">Língua Portuguesa • Acentuação Diferencial e Novo Acordo</span>
+      </div>
+      <div class="question-text">O Novo Acordo Ortográfico manteve o acento gráfico diferencial em um número muito reduzido de pares de palavras. Assinale a alternativa que contém uma palavra com acento diferencial OBRIGATÓRIO mantido:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Pôde (pretérito perfeito do verbo poder, em oposição a pode, presente).</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Pára (verbo parar, em oposição à preposição para).</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Pêlo (substantivo, em oposição à contração pelo).</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Pólo (substantivo, em oposição à combinação polo).</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 75</span>
+        <span class="q-topic">Língua Portuguesa • Emprego do Hífen com Prefixos</span>
+      </div>
+      <div class="question-text">Com o Novo Acordo Ortográfico, usa-se o hífen quando o prefixo termina com a mesma vogal com que se inicia o segundo elemento. Assinale a grafia CORRETA:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Micro-ondas e anti-inflamatório.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Microondas e antiinflamatório.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Micro-ondas e antiinflamatório.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Microondas e anti-inflamatório.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="section-title">
+      <span><i class="fas fa-scale-balanced"></i> PARTE 2: DIREITO CONSTITUCIONAL (QUESTÕES 76 A 90)</span>
+      <span style="font-size: 0.8rem; font-weight: normal;">Arts. 6º ao 11 da CF/88 • Direitos Sociais & Liberdade Sindical</span>
+    </div>
+
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 76</span>
+        <span class="q-topic">D. Constitucional • Art. 6º da CF/88: Rol dos Direitos Sociais</span>
+      </div>
+      <div class="question-text">O Art. 6º da Constituição Federal de 1988 estabelece os direitos sociais fundamentais. Assinale a alternativa que contém APENAS direitos sociais expressamente elencados no caput desse dispositivo:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Educação, saúde, alimentação, trabalho, moradia e transporte.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Propriedade, liberdade de crença, previdência social e segurança.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Inviolabilidade de domicílio, direito de herança, lazer e trabalho.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Nacionalidade, direitos políticos, saúde e assistência aos desamparados.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 77</span>
+        <span class="q-topic">D. Constitucional • Art. 7º, XIII da CF/88: Duração do Trabalho</span>
+      </div>
+      <div class="question-text">Conforme o Art. 7º, XIII, da CF/88, a duração do trabalho normal dos trabalhadores urbanos e rurais não poderá ser superior a:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>8 horas diárias e 44 horas semanais, facultada a compensação de horários e a redução da jornada, mediante acordo ou convenção coletiva de trabalho.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>8 horas diárias e 40 horas semanais, vedada qualquer forma de compensação de horário.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>6 horas diárias e 36 horas semanais para todas as categorias profissionais urbanas.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>10 horas diárias e 48 horas semanais, desde que haja autorização do sindicato da categoria.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 78</span>
+        <span class="q-topic">D. Constitucional • Art. 7º, XIV da CF/88: Turnos Ininterruptos de Revezamento</span>
+      </div>
+      <div class="question-text">A jornada de trabalho fixada pela Constituição Federal para o trabalho realizado em turnos ininterruptos de revezamento é de:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>6 horas, salvo negociação coletiva.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>8 horas improrrogáveis em qualquer hipótese.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>4 horas diárias com intervalo de 30 minutos.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>12 horas seguidas de 36 horas de descanso.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 79</span>
+        <span class="q-topic">D. Constitucional • Art. 7º, XVI da CF/88: Remuneração da Hora Extra</span>
+      </div>
+      <div class="question-text">Nos termos da Constituição Federal de 1988, a remuneração do serviço extraordinário (horas extras) será superior, no mínimo, à do normal em:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>50% (cinquenta por cento).</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>20% (vinte por cento).</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>100% (cem por cento).</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>30% (trinta por cento).</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 80</span>
+        <span class="q-topic">D. Constitucional • Art. 7º, XVIII e XIX da CF/88: Licenças Gestante e Paternidade</span>
+      </div>
+      <div class="question-text">Quanto à proteção à maternidade e à paternidade, a CF/88 assegura licença à gestante, sem prejuízo do emprego e do salário, com a duração de:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>120 dias, e licença-paternidade nos termos fixados em lei.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>90 dias, e licença-paternidade de 30 dias improrrogáveis.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>180 dias obrigatórios em todas as empresas privadas do país.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>60 dias, renováveis por igual período mediante atestado médico.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 81</span>
+        <span class="q-topic">D. Constitucional • Art. 7º, XXXIII da CF/88: Trabalho do Menor</span>
+      </div>
+      <div class="question-text">Sobre a proibição de trabalho a menores de idade, a Constituição Federal estabelece expressamente a proibição de:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Trabalho noturno, perigoso ou insalubre a menores de dezoito e de qualquer trabalho a menores de dezesseis anos, salvo na condição de aprendiz, a partir de quatorze anos.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Qualquer trabalho a menores de dezoito anos, mesmo na condição de aprendiz em empresas familiares.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Trabalho noturno a menores de dezesseis anos e de qualquer trabalho a menores de catorze anos, sem exceções.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Trabalho insalubre a menores de vinte e um anos e aprendizagem a partir de doze anos.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 82</span>
+        <span class="q-topic">D. Constitucional • Art. 7º, XXI da CF/88: Aviso Prévio</span>
+      </div>
+      <div class="question-text">A Constituição Federal de 1988 assegura o aviso prévio proporcional ao tempo de serviço, sendo de no mínimo:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>30 (trinta) dias, nos termos da lei.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>15 (quinze) dias para contratos de até um ano.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>60 (sessenta) dias para todos os trabalhadores urbanos.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>45 (quarenta e cinco) dias incondicionalmente.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 83</span>
+        <span class="q-topic">D. Constitucional • Art. 7º, XVII da CF/88: Férias Remuneradas</span>
+      </div>
+      <div class="question-text">O gozo de férias anuais remuneradas assegurado pela Constituição Federal de 1988 prevê o pagamento de remuneração com acréscimo de:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Pelo menos, um terço a mais do que o salário normal.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Cinquenta por cento a mais do que a remuneração ordinária.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Metade do salário base calculado sobre o último mês de trabalho.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Vinte por cento a título de gratificação de descanso anual.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 84</span>
+        <span class="q-topic">D. Constitucional • Art. 7º, IX da CF/88: Remuneração do Trabalho Noturno</span>
+      </div>
+      <div class="question-text">Nos termos do Art. 7º, IX, da CF/88, em relação ao trabalho noturno, é direito constitucional do trabalhador:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Remuneração do trabalho noturno superior à do diurno.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Jornada máxima reduzida para 4 horas sem adicional monetário.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Folga semanal dobrada para quem cumpre jornada noturna.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Aposentadoria especial automática aos cinco anos de trabalho noturno.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 85</span>
+        <span class="q-topic">D. Constitucional • Art. 7º, VI da CF/88: Irredutibilidade Salarial</span>
+      </div>
+      <div class="question-text">A regra constitucional acerca do salário dos trabalhadores estabelece a sua irredutibilidade, SALVO:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>O disposto em convenção ou acordo coletivo de trabalho.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Decisão unilateral discricionária do empregador em época de crise.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Atraso no pagamento de tributos pelo estabelecimento comercial.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Determinação verbal do delegado regional do trabalho.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 86</span>
+        <span class="q-topic">D. Constitucional • Art. 8º, I da CF/88: Autonomia e Liberdade Sindical</span>
+      </div>
+      <div class="question-text">Conforme o Art. 8º, I, da CF/88, é livre a associação profissional ou sindical, sendo expressamente VEDADA:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Ao Poder Público a interferência e a intervenção na organização sindical, ressalvado o registro no órgão competente.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>A criação de sindicatos representativos de categorias diferenciadas.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>A filiação de servidores públicos a entidades de classe municipais.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>A cobrança de mensalidade associativa voluntária pelo sindicato.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 87</span>
+        <span class="q-topic">D. Constitucional • Art. 8º, II da CF/88: Princípio da Unicidade Sindical</span>
+      </div>
+      <div class="question-text">O princípio da unicidade sindical estabelecido no Art. 8º, II, da CF/88 veda a criação de mais de uma organização sindical, em qualquer grau, representativa da mesma categoria:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Na mesma base territorial, que será definida pelos trabalhadores interessados, não podendo ser inferior à área de um Município.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>No mesmo Estado da federação, devendo haver sindicato único estadual.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Em todo o território nacional para uma mesma profissão regulamentada.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Na mesma microrregião geográfica estabelecida pelo IBGE.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 88</span>
+        <span class="q-topic">D. Constitucional • Art. 8º, VIII da CF/88: Estabilidade do Dirigente Sindical</span>
+      </div>
+      <div class="question-text">A estabilidade provisória do empregado sindicalizado que se candidata a cargo de direção ou representação sindical compreende o período:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Desde o registro da candidatura e, se eleito, ainda que suplente, até um ano após o final do mandato, salvo se cometer falta grave nos termos da lei.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Apenas durante os meses de exercício efetivo do mandato sindical na sede.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>A partir da posse até o dia do término estrito do mandato parlamentar.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Desde a fundação do sindicato até a sua dissolução voluntária.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 89</span>
+        <span class="q-topic">D. Constitucional • Art. 9º da CF/88: Direito de Greve</span>
+      </div>
+      <div class="question-text">O direito de greve é expressamente garantido pelo Art. 9º da Constituição Federal de 1988, competindo aos:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Trabalhadores decidir sobre a oportunidade de exercê-lo e sobre os interesses que devam por meio dele defender.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Empregadores autorizar previamente a paralisação das atividades operacionais.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Magistrados do trabalho convocar a greve mediante portaria ministerial.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Prefeitos municipais decretar a legalidade do movimento paradista.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 90</span>
+        <span class="q-topic">D. Constitucional • Art. 11 da CF/88: Representação de Empregados</span>
+      </div>
+      <div class="question-text">Nas empresas com mais de quantos empregados é assegurada a eleição de um representante destes com a finalidade exclusiva de promover o entendimento direto com os empregadores (Art. 11 da CF)?</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Mais de 200 (duzentos) empregados.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Mais de 100 (cem) empregados.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Mais de 500 (quinhentos) empregados.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Mais de 50 (cinquenta) empregados.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="section-title especifica">
+      <span><i class="fas fa-landmark"></i> PARTE 3: LEI ORGÂNICA DE MERUOCA (QUESTÕES 91 A 100)</span>
+      <span style="font-size: 0.8rem; font-weight: normal;">Arts. 1º ao 15 • Princípios, Autonomia & Competências Privativas</span>
+    </div>
+
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 91</span>
+        <span class="q-topic">Lei Orgânica de Meruoca • Arts. 1º e 2º: Princípios e Autonomia Municipal</span>
+      </div>
+      <div class="question-text">De acordo com os princípios fundamentais da Lei Orgânica do Município de Meruoca/CE, o Município integra a República Federativa do Brasil e o Estado do Ceará, sendo dotado de autonomia:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Política, administrativa e financeira.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Soberana, judiciária e militar.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Legislativa apenas, dependendo administrativamente do Estado.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Econômica, porém subordinada hierarquicamente ao Governo Estadual.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 92</span>
+        <span class="q-topic">Lei Orgânica de Meruoca • Soberania Popular no Município de Meruoca</span>
+      </div>
+      <div class="question-text">Nos termos da Lei Orgânica Municipal, todo o poder emana do povo meruoquense, que o exerce por meio de representantes eleitos ou diretamente. São formas de exercício direto da soberania popular no Município:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Plebiscito, referendo e iniciativa popular de projetos de lei.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Ação popular, mandado de segurança e inquérito civil público.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Audiência prévia do Tribunal de Contas e veto do prefeito.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Votação nominal em comissões parlamentares de inquérito.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 93</span>
+        <span class="q-topic">Lei Orgânica de Meruoca • Símbolos Oficiais do Município de Meruoca</span>
+      </div>
+      <div class="question-text">São símbolos oficiais do Município de Meruoca expressamente consagrados em sua legislação fundamental:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>O Brasão, a Bandeira e o Hino do Município.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>O Selo Municipal, o Estandarte e o Brasão do Estado do Ceará.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>O Brasão e a Bandeira apenas, sendo o Hino de competência estadual.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>A Faixa do Prefeito e a Insígnia do Presidente da Câmara.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 94</span>
+        <span class="q-topic">Lei Orgânica de Meruoca • Poderes do Município de Meruoca</span>
+      </div>
+      <div class="question-text">São Poderes do Município de Meruoca, independentes e harmônicos entre si:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>O Legislativo e o Executivo.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>O Legislativo, o Executivo e o Judiciário.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>O Executivo, o Judiciário e o Ministério Público Municipal.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Apenas o Executivo, sendo o Legislativo um órgão consultivo auxiliar.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 95</span>
+        <span class="q-topic">Lei Orgânica de Meruoca • Competência Privativa do Município: Tributos e Orçamento</span>
+      </div>
+      <div class="question-text">Compete privativamente ao Município de Meruoca, no exercício de sua autonomia legislativa e administrativa:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Instituir e arrecadar os tributos de sua competência e aplicar suas rendas, bem como fixar tarifas de serviços públicos municipais.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Legislar privativamente sobre direito civil, penal e processual eleitoral.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Emitir moeda municipal e controlar as taxas de juros bancários locais.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Organizar e manter o Poder Judiciário e a Defensoria Pública da Comarca.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 96</span>
+        <span class="q-topic">Lei Orgânica de Meruoca • Competência Privativa: Uso e Ocupação do Solo Urbano</span>
+      </div>
+      <div class="question-text">É matéria de interesse local inserida na competência privativa do Município de Meruoca:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Promover o adequado ordenamento territorial, mediante planejamento e controle do uso, do parcelamento e da ocupação do solo urbano.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Explorar diretamente os serviços de telecomunicações e radiodifusão sonora.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Disciplinar a navegação aérea e a infraestrutura aeroespacial da Serra da Meruoca.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Autorizar a exploração de jazidas minerais e riquezas do subsolo na região.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 97</span>
+        <span class="q-topic">Lei Orgânica de Meruoca • Competência Comum do Município com a União e o Estado</span>
+      </div>
+      <div class="question-text">Assinale a alternativa que indica uma competência COMUM do Município de Meruoca em cooperação com o Estado do Ceará e a União:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Cuidar da saúde e assistência pública, da proteção e garantia das pessoas com deficiência.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Criar e extinguir cargos privativos da Mesa Diretora da Assembleia Legislativa.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Instituir o Imposto sobre Circulação de Mercadorias e Serviços (ICMS).</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Expedir passaportes e carteiras de identidade civil para estrangeiros.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 98</span>
+        <span class="q-topic">Lei Orgânica de Meruoca • Guarda Municipal e Segurança Patrimonial</span>
+      </div>
+      <div class="question-text">Nos termos da Lei Orgânica e do Art. 144, § 8º da CF/88, o Município de Meruoca poderá constituir guarda municipal destinada precipuamente à:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Proteção de seus bens, serviços e instalações.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Investigação de crimes eleitorais e tráfico interestadual de drogas.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Substituição das polícias militar e civil nas ações de policiamento ostensivo geral.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Fiscalização do recolhimento de impostos da União e execução fiscal federal.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 99</span>
+        <span class="q-topic">Lei Orgânica de Meruoca • Patrimônio e Bens Municipais</span>
+      </div>
+      <div class="question-text">Constituem bens do Município de Meruoca, conforme sua Lei Orgânica:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Todas as coisas móveis e imóveis, direitos e ações que a qualquer título lhe pertençam.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Exclusivamente os edifícios onde funcionam a Prefeitura e a Câmara Municipal.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Apenas as praças e ruas pavimentadas pelo poder público municipal.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Os rios navegáveis que banham mais de dois estados da federação.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 100</span>
+        <span class="q-topic">Lei Orgânica de Meruoca • Princípio da Publicidade e Publicação dos Atos Municipais</span>
+      </div>
+      <div class="question-text">A publicação das leis e dos atos administrativos normativos da Câmara Municipal e da Prefeitura de Meruoca é requisito essencial de:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Eficácia e validade perante os munícipes e a sociedade.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Revogação tácita de todas as normas jurídicas anteriores.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Descentralização administrativa forçada dos poderes públicos.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Conversão obrigatória de projeto de lei em medida provisória.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <!-- FOLHA ÓPTICA DE RESPOSTAS -->
+    <div class="folha-respostas-box">
+      <div style="text-align: center; border-bottom: 1px solid #cbd5e1; padding-bottom: 8px; margin-bottom: 10px;">
+        <strong style="font-size: 1.1rem; text-transform: uppercase; color: var(--primary);">Folha de Respostas Óptica — Simulação Real (40 Questões)</strong>
+        <p style="margin: 4px 0 0 0; font-size: 0.8rem; color: #64748b;">Preencha a bolha correspondente à alternativa escolhida para treino de agilidade.</p>
+      </div>
+      <div class="folha-grid">
+
+        <div class="folha-row">
+          <span class="folha-num">61</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">62</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">63</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">64</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">65</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">66</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">67</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">68</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">69</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">70</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">71</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">72</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">73</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">74</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">75</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">76</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">77</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">78</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">79</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">80</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">81</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">82</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">83</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">84</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">85</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">86</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">87</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">88</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">89</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">90</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">91</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">92</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">93</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">94</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">95</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">96</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">97</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">98</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">99</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">100</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+      </div>
+    </div>
+
+    <!-- GABARITO OFICIAL COMENTADO -->
+    <div class="gabarito-section">
+      <div style="background: var(--primary); color: white; padding: 10px 16px; border-radius: 6px; font-weight: 800; font-size: 1.1rem; margin-bottom: 16px;">
+        <i class="fas fa-check-double"></i> GABARITO OFICIAL FUNDAMENTADO (QUESTÕES 61 A 100)
+      </div>
+
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 61 (Língua Portuguesa - Acentuação Gráfica: Regra das Proparoxítonas):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Todas as palavras de (A) são proparoxítonas (po-LÍ-ti-co, CÔM-pu-to, CÂ-ma-ra, DÉ-fi-cit), que são 100% acentuadas. Em (B), 'caráter' e 'relatório' são paroxítonas; em (C), 'autarquia' é paroxítona terminada em ditongo; em (D), 'país' é hiato e 'relógio' é paroxítona terminada em ditongo.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">B</span>
+        <strong>Questão 62 (Língua Portuguesa - Acentuação Gráfica: Regra dos Hiatos):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. 'Sa-ú-de' e 'sa-í-da' são acentuadas pela REGRA DO HIATO: a vogal 'i' ou 'u' tônica, segunda vogal do hiato, sozinha na sílaba (ou com 's'), sem ser seguida de 'nh' e sem estar precedida de ditongo em paroxítona. 'Autonomia' e 'assembleia' não recebem acento; 'patriótico' é proparoxítona.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">C</span>
+        <strong>Questão 63 (Língua Portuguesa - Ortografia: Novo Acordo Ortográfico (Ditongos Abertos)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. O Acordo Ortográfico eliminou o acento dos ditongos abertos 'EI' e 'OI' exclusivamente nas palavras PAROXÍTONAS (i-dei-a, ji-boi-a, as-sem-blei-a, pla-tei-a). Nas oxítonas e monossílabos tônicos, o acento PERMANECE: he-rói, cons-trói, céu, réis.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 64 (Língua Portuguesa - Fonologia: Contagem de Fonemas e Letras):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Em 'MU-NI-CÍ-PIO': 9 letras e 9 fonemas (não há dígrafos). Em 'TRA-BA-LHO': 8 letras e 7 fonemas, pois o dígrafo 'lh' representa um único fonema consonantal [λ].</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 65 (Língua Portuguesa - Fonologia: Encontros Vocálicos (Hiato vs Ditongo)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. I. His-tó-ria: semivogal + vogal (ditongo crescente oral); II. Ju-í-zes: duas vogais em sílabas separadas (hiato acentuado); III. Ra-i-nha: duas vogais em sílabas separadas (hiato, não acentuado antes de 'nh'); IV. Co-or-de-nar: repetição de vogais em sílabas separadas (hiato).</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">B</span>
+        <strong>Questão 66 (Língua Portuguesa - Emprego do Sinal Indicativo de Crase: Casos Proibidos):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Em 'a todos os vereadores', o 'a' antecede pronome indefinido ('todos') e palavra masculina no plural ('vereadores'). Não há artigo definido feminino 'a', logo a crase é terminantemente proibida.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 67 (Língua Portuguesa - Emprego da Crase: Casos Facultativos):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. A crase é facultativa em três casos clássicos (Mnemônico 'NOME DE MULHER, ATÉ, MINHA'): 1. Antes de pronome possessivo feminino no singular ('à sua' ou 'a sua'); 2. Antes de nomes próprios femininos sem especificador ('à Maria' ou 'a Maria'); 3. Após a preposição 'até' ('até à' ou 'até a').</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 68 (Língua Portuguesa - Emprego da Crase: Antes de Verbos):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Antes de verbo ('expor'), não ocorre artigo feminino, logo usa-se apenas a preposição simples 'a' (sem crase). Na expressão 'à disposição', trata-se de locução adverbial/prepositiva com núcleo feminino, exigindo crase obrigatória.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">C</span>
+        <strong>Questão 69 (Língua Portuguesa - Ortografia Oficial: Emprego de Mal vs Mau):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. 'Mal' é conjunção temporal com sentido de 'assim que / logo que' ('Mal o presidente declarou aberta...'). Em (A), deveria ser 'desempenhou mal' (oposto de bem); em (B), 'homem mau' (oposto de bom); em (D), 'mal redigido' (oposto de bem redigido).</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 70 (Língua Portuguesa - Divisão Silábica e Separação de Dígrafos):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Os dígrafos 'rr', 'ss', 'sc', 'sç', 'xc' se SEPARAM na partição silábica (ex-ce-ção, car-ro). O prefixo 'sub' seguido de consoante mantém o 'b' na sílaba anterior: sub-lin-har. Encontros consonantais no início de palavra não se separam: pneu-má-ti-co.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">B</span>
+        <strong>Questão 71 (Língua Portuguesa - Emprego do Porquê / Por quê / Porque / Por que):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. 'O porquê' é substantivo (vem acompanhado de artigo ou determinante) e deve ser grafado junto e com acento circunflexo. Em (A), deveria ser 'porque' (conjunção explicativa/causal); em (C), 'por quê' (fim de frase interrogativa); em (D), 'Por que' (início de pergunta direta, separado e sem acento).</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 72 (Língua Portuguesa - Acentuação Gráfica: Oxítonas Terminadas em A, E, O, EM):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Acentuam-se as palavras oxítonas terminadas em -a(s), -e(s), -o(s), -em e -ens (ex: tam-bém, pa-ra-béns, ar-ma-zém, vinténs).</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 73 (Língua Portuguesa - Crase diante de Pronomes Demonstrativos):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Ocorre crase na junção da preposição 'a' (exigida pela regência de 'referir-se a') com a letra 'a' inicial dos pronomes aquele, aquela, aquilo: 'Refiro-me àquele'. Antes de 'esta', 'essa' ou 'quem', a crase é proibida.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 74 (Língua Portuguesa - Acentuação Diferencial e Novo Acordo):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. O Acordo Ortográfico aboliu o acento diferencial de pára/para, pêlo/pelo, pólo/polo. Foi MANTIDO obrigatoriamente em: PÔDE (passado) vs. PODE (presente) e PÔR (verbo) vs. POR (preposição). É facultativo em fôrma/forma.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 75 (Língua Portuguesa - Emprego do Hífen com Prefixos):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Regra geral do hífen com prefixos: vogais iguais se separam por hífen (mi-cro-on-das, an-ti-in-fla-ma-tó-rio, au-to-ob-ser-va-ção); vogais diferentes se unem sem hífen (au-toes-ti-ma, an-ti-a-é-re-o).</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 76 (D. Constitucional - Art. 6º da CF/88: Rol dos Direitos Sociais):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Mnemônico 'EDU MORA LÁ, SAÚ TRABALHA ALI EM TRANSPORTE, SEGURA ASSIS PROSSEGUE PRENDENDO': Educação, Saúde, Alimentação, Trabalho, Moradia, Transporte, Lazer, Segurança, Previdência Social, Proteção à Maternidade e à Infância, e Assistência aos Desamparados (Art. 6º da CF/88).</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 77 (D. Constitucional - Art. 7º, XIII da CF/88: Duração do Trabalho):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 7º, XIII da CF/88: 'duração do trabalho normal não superior a oito horas diárias e quarenta e quatro semanais, facultada a compensação de horários e a redução da jornada, mediante acordo ou convenção coletiva de trabalho'.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 78 (D. Constitucional - Art. 7º, XIV da CF/88: Turnos Ininterruptos de Revezamento):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 7º, XIV da CF/88: 'jornada de seis horas para o trabalho realizado em turnos ininterruptos de revezamento, salvo negociação coletiva'.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 79 (D. Constitucional - Art. 7º, XVI da CF/88: Remuneração da Hora Extra):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 7º, XVI da CF/88: 'remuneração do serviço extraordinário superior, no mínimo, em cinquenta por cento à do normal'.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 80 (D. Constitucional - Art. 7º, XVIII e XIX da CF/88: Licenças Gestante e Paternidade):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 7º, XVIII da CF/88: 'licença à gestante, sem prejuízo do emprego e do salário, com a duração de cento e vinte dias'. A prorrogação para 180 dias (Programa Empresa Cidadã / Estatutos de Servidores) decorre de lei, mas o texto constitucional expresso fixa 120 dias.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 81 (D. Constitucional - Art. 7º, XXXIII da CF/88: Trabalho do Menor):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 7º, XXXIII da CF/88 (redação da EC 20/98): 'proibição de trabalho noturno, perigoso ou insalubre a menores de dezoito e de qualquer trabalho a menores de dezesseis anos, salvo na condição de aprendiz, a partir de quatorze anos'. Regra de ouro da INBRASP: 18 (noturno/perigoso/insalubre), 16 (regra geral de vedação) e 14 (aprendiz).</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 82 (D. Constitucional - Art. 7º, XXI da CF/88: Aviso Prévio):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 7º, XXI da CF/88: 'aviso prévio proporcional ao tempo de serviço, sendo no mínimo de trinta dias, nos termos da lei'.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 83 (D. Constitucional - Art. 7º, XVII da CF/88: Férias Remuneradas):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 7º, XVII da CF/88: 'gozo de férias anuais remuneradas com, pelo menos, um terço a mais do que o salário normal'.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 84 (D. Constitucional - Art. 7º, IX da CF/88: Remuneração do Trabalho Noturno):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 7º, IX da CF/88: 'remuneração do trabalho noturno superior à do diurno'.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 85 (D. Constitucional - Art. 7º, VI da CF/88: Irredutibilidade Salarial):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 7º, VI da CF/88: 'irredutibilidade do salário, salvo o disposto em convenção ou acordo coletivo'.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 86 (D. Constitucional - Art. 8º, I da CF/88: Autonomia e Liberdade Sindical):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 8º, I da CF/88: 'a lei não poderá exigir autorização do Estado para a fundação de sindicato, ressalvado o registro no órgão competente, vedadas ao Poder Público a interferência e a intervenção na organização sindical'.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 87 (D. Constitucional - Art. 8º, II da CF/88: Princípio da Unicidade Sindical):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 8º, II da CF/88: 'é vedada a criação de mais de uma organização sindical, em qualquer grau, representativa de categoria profissional ou econômica, na mesma base territorial, que será definida pelos trabalhadores ou empregadores interessados, não podendo ser inferior à área de um Município'.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 88 (D. Constitucional - Art. 8º, VIII da CF/88: Estabilidade do Dirigente Sindical):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 8º, VIII da CF/88: 'é vedada a dispensa do empregado sindicalizado a partir do registro da candidatura a cargo de direção ou representação sindical e, se eleito, ainda que suplente, até um ano após o final do mandato, salvo se cometer falta grave nos termos da lei'.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 89 (D. Constitucional - Art. 9º da CF/88: Direito de Greve):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 9º, caput da CF/88: 'É assegurado o direito de greve, competindo aos trabalhadores decidir sobre a oportunidade de exercê-lo e sobre os interesses que devam por meio dele defender'.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 90 (D. Constitucional - Art. 11 da CF/88: Representação de Empregados):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 11 da CF/88: 'Nas empresas de mais de duzentos empregados, é assegurada a eleição de um representante destes com a finalidade exclusiva de promover-lhes o entendimento direto com os empregadores'.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 91 (Lei Orgânica de Meruoca - Arts. 1º e 2º: Princípios e Autonomia Municipal):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. A Lei Orgânica de Meruoca consagra a tríplice autonomia municipal conferida pelo Art. 18 e 29 da CF/88: Autonomia Política (eleição de prefeitos e vereadores), Administrativa (organização dos serviços locais) e Financeira (instituição e arrecadação de tributos próprios).</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 92 (Lei Orgânica de Meruoca - Soberania Popular no Município de Meruoca):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Em consonância com o Art. 14 da CF/88 e a Lei Orgânica de Meruoca, a soberania popular direta é exercida mediante: 1. Plebiscito (consulta prévia); 2. Referendo (consulta posterior à lei); 3. Iniciativa popular de leis perante a Câmara Municipal.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 93 (Lei Orgânica de Meruoca - Símbolos Oficiais do Município de Meruoca):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Conforme preceitua a Lei Orgânica Municipal (em harmonia com o Art. 13, § 2º da CF/88), os símbolos representativos do Município de Meruoca são a Bandeira, o Brasão e o Hino municipais.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 94 (Lei Orgânica de Meruoca - Poderes do Município de Meruoca):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. No âmbito municipal NÃO HÁ Poder Judiciário nem Ministério Público local (ambos são órgãos estaduais/federais). Os únicos poderes municipais são o Poder Legislativo (Câmara Municipal) e o Poder Executivo (Prefeitura Municipal).</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 95 (Lei Orgânica de Meruoca - Competência Privativa do Município: Tributos e Orçamento):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Compete ao Município instituir tributos municipais (IPTU, ISS, ITBI, taxas e contribuições de iluminação pública), aplicar rendas e fixar tarifas de transporte e serviços locais. Legislar sobre direito civil/penal e emitir moeda são competências privativas da União (Art. 22 da CF).</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 96 (Lei Orgânica de Meruoca - Competência Privativa: Uso e Ocupação do Solo Urbano):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 30, VIII da CF/88 e Lei Orgânica de Meruoca: o ordenamento territorial, zoneamento urbano e controle de parcelamento/ocupação do solo (Plano Diretor, código de obras) é competência eminentemente municipal.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 97 (Lei Orgânica de Meruoca - Competência Comum do Município com a União e o Estado):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 23 da CF/88 e Lei Orgânica de Meruoca: a prestação de serviços de saúde, proteção de vulneráveis e pessoas com deficiência, meio ambiente e educação básica é matéria de competência comum dos três entes federados.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 98 (Lei Orgânica de Meruoca - Guarda Municipal e Segurança Patrimonial):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 144, § 8º da CF/88 e legislação municipal: os municípios poderão constituir guardas municipais destinadas à proteção de seus bens, serviços e instalações, atuando também na segurança comunitária e patrimonial.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 99 (Lei Orgânica de Meruoca - Patrimônio e Bens Municipais):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Constituem patrimônio e bens do Município todos os bens móveis e imóveis, direitos, títulos da dívida pública, créditos e ações pertencentes à municipalidade a qualquer título.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 100 (Lei Orgânica de Meruoca - Princípio da Publicidade e Publicação dos Atos Municipais):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Nenhum ato normativo ou lei municipal produz efeitos externos sem a devida publicação no órgão oficial ou mural público da Câmara/Prefeitura. A publicação é condição de EFICÁCIA e vigência da norma jurídica.</p>
+      </div>
+    
+    </div>
+
+  </div>
+
+</body>
+</html>

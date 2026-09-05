@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>EDITAL VERTICALIZADO OFICIAL — CÂMARA DE MERUOCA / CE (EDITAL 001/2026)</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @page {
+      size: A4;
+      margin: 12mm 15mm;
+    }
+    :root {
+      --primary: #1e3a8a;
+      --primary-dark: #0f172a;
+      --accent: #dc2626;
+      --border: #cbd5e1;
+      --bg: #ffffff;
+      --text: #0f172a;
+      --text-muted: #475569;
+    }
+    body {
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+      color: var(--text);
+      background: #f8fafc;
+      margin: 0;
+      padding: 24px;
+      font-size: 11pt;
+      line-height: 1.4;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: white;
+      padding: 36px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    }
+    .header-bar {
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .header-info h1 {
+      margin: 0 0 6px 0;
+      font-size: 1.6rem;
+      color: var(--primary);
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .header-info h2 {
+      margin: 0 0 8px 0;
+      font-size: 1.15rem;
+      color: var(--primary-dark);
+      font-weight: 700;
+    }
+    .header-info p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+    .meta-box {
+      text-align: right;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .badge-oficial {
+      background: #fee2e2;
+      color: #991b1b;
+      font-weight: 800;
+      padding: 4px 10px;
+      border-radius: 6px;
+      display: inline-block;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      font-size: 0.78rem;
+    }
+    .quadro-provas {
+      background: #f1f5f9;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin-bottom: 28px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      text-align: center;
+    }
+    .quadro-item strong {
+      display: block;
+      font-size: 1.15rem;
+      color: var(--primary);
+    }
+    .quadro-item span {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--text-muted);
+    }
+    .discipline-section {
+      margin-bottom: 30px;
+      page-break-inside: avoid;
+    }
+    .discipline-title {
+      background: #1e3a8a;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 6px 6px 0 0;
+      font-size: 1.05rem;
+      font-weight: 800;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .discipline-title.especifica {
+      background: #b91c1c;
+    }
+    .topics-table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid var(--border);
+      border-top: none;
+      font-size: 0.88rem;
+    }
+    .topics-table th {
+      background: #f8fafc;
+      padding: 8px 12px;
+      font-weight: 700;
+      color: var(--primary-dark);
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+    }
+    .topics-table td {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    .topics-table tr:nth-child(even) td {
+      background: #fcfdfe;
+    }
+    .check-col {
+      width: 45px;
+      text-align: center;
+      vertical-align: middle !important;
+    }
+    .check-box-circle {
+      width: 18px;
+      height: 18px;
+      border: 1.5px solid #94a3b8;
+      border-radius: 50%;
+      margin: 0 auto;
+      display: block;
+    }
+    .topic-title-text {
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 2px;
+    }
+    .topic-desc-text {
+      color: var(--text-muted);
+      font-size: 0.82rem;
+      line-height: 1.35;
+    }
+    .tag-incidencia {
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: #fee2e2;
+      color: #991b1b;
+      margin-left: 6px;
+      display: inline-block;
+    }
+    .no-print {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .btn-action {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+    }
+    .btn-action:hover {
+      background: #1d4ed8;
+    }
+    @media print {
+      body {
+        background: white;
+        padding: 0;
+      }
+      .container {
+        padding: 0;
+        box-shadow: none;
+        max-width: 100%;
+      }
+      .no-print {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="no-print">
+      <button class="btn-action" onclick="window.print()">
+        <i class="fas fa-print"></i> Imprimir / Salvar em PDF
+      </button>
+      <a href="../index.html" class="btn-action" style="background: #e2e8f0; color: #334155;">
+        <i class="fas fa-arrow-left"></i> Voltar ao Gerenciador de Estudos
+      </a>
+    </div>
+
+    <!-- CABEÇALHO -->
+    <div class="header-bar">
+      <div class="header-info">
+        <span class="badge-oficial">Documento Oficial de Estudos</span>
+        <h1>Câmara Municipal de Meruoca / CE</h1>
+        <h2>Edital de Concurso Público nº 001/2026 — Edital Verticalizado</h2>
+        <p><strong>Cargo Alvo:</strong> Técnico Legislativo (Nível Superior — Código 2) | <strong>Banca:</strong> INBRASP</p>
+      </div>
+      <div class="meta-box">
+        <div><strong>Data da Prova:</strong> 18/10/2026</div>
+        <div><strong>Horário:</strong> 09h00 às 12h00</div>
+        <div><strong>Fechamento dos Portões:</strong> 08h40</div>
+        <div><strong>Duração:</strong> 3 horas</div>
+      </div>
+    </div>
+
+    <!-- QUADRO DE ESTRUTURA DA PROVA -->
+    <div class="quadro-provas">
+      <div class="quadro-item">
+        <strong>40</strong>
+        <span>Questões Objetivas (A-D)</span>
+      </div>
+      <div class="quadro-item">
+        <strong>2,5 pts</strong>
+        <span>Valor por Questão</span>
+      </div>
+      <div class="quadro-item">
+        <strong>50 / 100 pts</strong>
+        <span>Nota Mínima (50%)</span>
+      </div>
+      <div class="quadro-item">
+        <strong>20Q (50%)</strong>
+        <span>Específicas do Cargo</span>
+      </div>
+    </div>
+
+    <!-- 1. LÍNGUA PORTUGUESA -->
+    <div class="discipline-section">
+      <div class="discipline-title">
+        <span><i class="fas fa-book"></i> 1. LÍNGUA PORTUGUESA (NÍVEL SUPERIOR)</span>
+        <span style="font-size: 0.8rem; font-weight: normal;">10 Questões | Peso 2.5 (25 pontos)</span>
+      </div>
+      <table class="topics-table">
+        <thead>
+          <tr>
+            <th class="check-col">Teor.</th>
+            <th class="check-col">Quest.</th>
+            <th class="check-col">Rev.</th>
+            <th>Tópico Programático Extraído do Edital</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td>
+              <div class="topic-title-text">Compreensão e Interpretação de Textos <span class="tag-incidencia">Altíssima</span></div>
+              <div class="topic-desc-text">Situação comunicativa, pressuposição, inferência, ambiguidade, ironia, figurativização, polissemia, intertextualidade e linguagem não-verbal.</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td>
+              <div class="topic-title-text">Tipos e Gêneros Textuais</div>
+              <div class="topic-desc-text">Narrativo, descritivo, expositivo, argumentativo, instrucional, propaganda, editorial, cartaz, anúncio, artigo de opinião, divulgação científica, ofício e carta.</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td>
+              <div class="topic-title-text">Estrutura Textual & Coesão/Coerência</div>
+              <div class="topic-desc-text">Progressão temática, parágrafo, frase, oração, período, enunciado, pontuação e mecanismos de coesão referencial/sequencial.</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td>
+              <div class="topic-title-text">Variedade Linguística & Adequação Comunicativa</div>
+              <div class="topic-desc-text">Formalidade e informalidade, formas de tratamento, propriedade lexical e adequação à situação.</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td>
+              <div class="topic-title-text">Norma Culta: Ortografia, Acentuação & Crase <span class="tag-incidencia">Altíssima</span></div>
+              <div class="topic-desc-text">Regras do Acordo Ortográfico, regras de acentuação gráfica (proparoxítonas, paroxítonas, hiatos) e emprego do sinal indicativo de crase.</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td>
+              <div class="topic-title-text">Morfologia & Formação de Palavras</div>
+              <div class="topic-desc-text">Prefixos, sufixos, classes de palavras (reconhecimento, emprego e sentido), flexão verbal e nominal.</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td>
+              <div class="topic-title-text">Sintaxe da Oração e do Período</div>
+              <div class="topic-desc-text">Termos da oração essenciais, integrantes e acessórios; processos de coordenação e subordinação de orações.</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td>
+              <div class="topic-title-text">Regência & Concordância (Nominal e Verbal) <span class="tag-incidencia">Altíssima</span></div>
+              <div class="topic-desc-text">Regência de nomes e verbos; concordância verbal (especialmente verbo <em>haver</em> impessoal e transitivo direto).</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td>
+              <div class="topic-title-text">Colocação Pronominal</div>
+              <div class="topic-desc-text">Próclise, mesóclise e ênclise no português culto.</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td>
+              <div class="topic-title-text">Semântica, Estilística & Reescrita de Frases</div>
+              <div class="topic-desc-text">Sinônimos, campos semânticos, figuras de linguagem; substituição, deslocamento e paralelismo sintático.</div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 2. NOÇÕES DE INFORMÁTICA -->
+    <div class="discipline-section">
+      <div class="discipline-title">
+        <span><i class="fas fa-desktop"></i> 2. NOÇÕES DE INFORMÁTICA (NÍVEL SUPERIOR)</span>
+        <span style="font-size: 0.8rem; font-weight: normal;">Conhecimentos Gerais (Peso 2.5)</span>
+      </div>
+      <table class="topics-table">
+        <thead>
+          <tr>
+            <th class="check-col">Teor.</th>
+            <th class="check-col">Quest.</th>
+            <th class="check-col">Rev.</th>
+            <th>Tópico Programático Extraído do Edital</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td>
+              <div class="topic-title-text">Algoritmos e Programação de Computadores <span class="tag-incidencia">Edital N.S.</span></div>
+              <div class="topic-desc-text">Fundamentos, construção e análise de algoritmos, pseudocódigos, fluxogramas, conceitos de programação estruturada (Python, JavaScript, etc.).</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td>
+              <div class="topic-title-text">Sistemas Operacionais Modernos (Ubuntu Linux e Windows 11)</div>
+              <div class="topic-desc-text">Operação, gerenciamento de arquivos e pastas, arquitetura de computadores, backup e recuperação de desastres.</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td>
+              <div class="topic-title-text">Dispositivos de Entrada e Saída & Importação/Exportação</div>
+              <div class="topic-desc-text">Periféricos e instalação; formatos de documentos, conversões, exportação e importação de dados.</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td>
+              <div class="topic-title-text">Aplicativos para Escritório (Microsoft Office & Google Workspace)</div>
+              <div class="topic-desc-text">Edição de textos, planilhas eletrônicas (fórmulas e funções), apresentações e bancos de dados.</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td>
+              <div class="topic-title-text">Redes de Computadores, Internet & Navegadores</div>
+              <div class="topic-desc-text">Modelos LAN/WAN, protocolos TCP/IP, HTTP/HTTPS, DNS; Microsoft Edge, Mozilla Firefox e Google Chrome.</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td>
+              <div class="topic-title-text">Correio Eletrônico, Mensageria & Computação em Nuvem</div>
+              <div class="topic-desc-text">Email Windows/Thunderbird; WhatsApp, Telegram, Discord; nuvem: modelos IaaS, PaaS, SaaS (Google, AWS, Azure).</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td>
+              <div class="topic-title-text">Segurança da Informação, Malwares & Ambientes Corporativos <span class="tag-incidencia">Altíssima</span></div>
+              <div class="topic-desc-text">Princípios de segurança (CID), vírus, worms, trojans, ransomware, antivírus, firewall, domínio corporativo e autenticação.</div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 3. MATEMÁTICA E RACIOCÍNIO LÓGICO -->
+    <div class="discipline-section">
+      <div class="discipline-title">
+        <span><i class="fas fa-calculator"></i> 3. MATEMÁTICA E RACIOCÍNIO LÓGICO</span>
+        <span style="font-size: 0.8rem; font-weight: normal;">Conhecimentos Gerais (Peso 2.5)</span>
+      </div>
+      <table class="topics-table">
+        <thead>
+          <tr>
+            <th class="check-col">Teor.</th>
+            <th class="check-col">Quest.</th>
+            <th class="check-col">Rev.</th>
+            <th>Tópico Programático Extraído do Edital</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td>
+              <div class="topic-title-text">Raciocínio Lógico Proposicional & Sequências</div>
+              <div class="topic-desc-text">Proposições, conectivos, tabela-verdade, negações (Leis de De Morgan), equivalências e sequências lógicas.</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td>
+              <div class="topic-title-text">Conjuntos Numéricos & Teoria dos Conjuntos</div>
+              <div class="topic-desc-text">Relações de pertinência, inclusão, união, intersecção e problemas práticos com diagramas de Venn.</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td>
+              <div class="topic-title-text">Razão, Proporção, Regra de Três, Porcentagem & Juros Simples <span class="tag-incidencia">Altíssima</span></div>
+              <div class="topic-desc-text">Regra de três simples e composta, cálculo de aumentos e descontos percentuais e montante a juros simples.</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td>
+              <div class="topic-title-text">Geometria, Sistemas Lineares & Álgebra</div>
+              <div class="topic-desc-text">Perímetros, áreas de figuras planas e espaciais; equações e sistemas lineares de 1º e 2º graus.</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td>
+              <div class="topic-title-text">Progressões (PA e PG), Combinatória, Probabilidade & Estatística</div>
+              <div class="topic-desc-text">Termo geral de PA e PG, contagem, permutações, combinações, probabilidade e médias (aritmética, moda e mediana).</div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 4. NOÇÕES DE D. ADMINISTRATIVO E CONSTITUCIONAL (GERAIS) -->
+    <div class="discipline-section">
+      <div class="discipline-title">
+        <span><i class="fas fa-scale-balanced"></i> 4. NOÇÕES DE D. ADMINISTRATIVO E CONSTITUCIONAL</span>
+        <span style="font-size: 0.8rem; font-weight: normal;">Conhecimentos Gerais (Peso 2.5)</span>
+      </div>
+      <table class="topics-table">
+        <thead>
+          <tr>
+            <th class="check-col">Teor.</th>
+            <th class="check-col">Quest.</th>
+            <th class="check-col">Rev.</th>
+            <th>Tópico Programático Extraído do Edital</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td>
+              <div class="topic-title-text">Administração Pública & Princípios Constitucionais (Art. 37 CF) <span class="tag-incidencia">Altíssima</span></div>
+              <div class="topic-desc-text">Princípios do LIMPE (Legalidade, Impessoalidade, Moralidade, Publicidade e Eficiência) e poderes administrativos.</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td>
+              <div class="topic-title-text">Atos Administrativos & Licitações</div>
+              <div class="topic-desc-text">Requisitos (COMFIFOR), atributos (PATI), classificação e espécies; noções da Lei nº 14.133/2021.</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td>
+              <div class="topic-title-text">CF/88: Princípios & Direitos Fundamentais (Arts. 1º ao 5º) <span class="tag-incidencia">Altíssima</span></div>
+              <div class="topic-desc-text">Princípios fundamentais, inviolabilidade do domicílio, remédios constitucionais e garantias fundamentais.</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td>
+              <div class="topic-title-text">CF/88: Municípios & Servidores Públicos (Arts. 29-31 e 37-41)</div>
+              <div class="topic-desc-text">Regras constitucionais dos municípios, Poder Legislativo local, concurso público e estabilidade funcional.</div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 5. CONHECIMENTOS ESPECÍFICOS: TÉCNICO LEGISLATIVO -->
+    <div class="discipline-section">
+      <div class="discipline-title especifica">
+        <span><i class="fas fa-gavel"></i> 5. CONHECIMENTOS ESPECÍFICOS: TÉCNICO LEGISLATIVO</span>
+        <span style="font-size: 0.8rem; font-weight: normal;">20 Questões | Peso 2.5 (50 PONTOS — 50% DA PROVA)</span>
+      </div>
+      <table class="topics-table">
+        <thead>
+          <tr>
+            <th class="check-col">Teor.</th>
+            <th class="check-col">Quest.</th>
+            <th class="check-col">Rev.</th>
+            <th>Tópico Programático Extraído do Edital</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td>
+              <div class="topic-title-text">CF/88 & O Poder Legislativo Constitucional <span class="tag-incidencia">50% da Prova</span></div>
+              <div class="topic-desc-text">Funções típicas (legislar e fiscalizar) e atípicas (administrar e julgar); processo legislativo constitucional; espécies normativas (Art. 59 CF); competência legislativa municipal (Art. 30 CF); controle de constitucionalidade.</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td>
+              <div class="topic-title-text">Direito Administrativo Aplicado & Responsabilidade Civil</div>
+              <div class="topic-desc-text">Administração direta e indireta; atos administrativos (elementos, atributos, anulação, revogação e convalidação); poderes; responsabilidade civil objetiva do Estado (Art. 37, §6º CF); controle interno e externo da Administração.</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td>
+              <div class="topic-title-text">Nova Lei de Licitações (Lei nº 14.133/2021) <span class="tag-incidencia">Altíssima</span></div>
+              <div class="topic-desc-text">Princípios, modalidades (pregão, concorrência, concurso, leilão, diálogo competitivo), inversão de fases, contratação direta (dispensa e inexigibilidade), contratos e Sistema de Registro de Preços (SRP).</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td>
+              <div class="topic-title-text">Lei de Improbidade Administrativa (Lei nº 8.429/1992 - atualizada pela Lei 14.230/2021)</div>
+              <div class="topic-desc-text">Exigência de dolo específico; atos de enriquecimento ilícito, prejuízo ao erário e atentado aos princípios; prescrição unificada em 8 anos.</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td>
+              <div class="topic-title-text">Lei Orgânica do Município de Meruoca <span class="tag-incidencia">Obrigatório</span></div>
+              <div class="topic-desc-text">Organização dos poderes locais; competências privativas e comuns da Câmara e do Prefeito; prazos de sanção e veto (15 dias úteis) e derrubada de veto (30 dias); quóruns de aprovação e processo legislativo municipal.</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td>
+              <div class="topic-title-text">Regimento Interno da Câmara de Meruoca <span class="tag-incidencia">Obrigatório</span></div>
+              <div class="topic-desc-text">Mesa Diretora (eleição, competências do Presidente); sessões legislativas (ordinárias, extraordinárias, solenes e secretas); comissões permanentes e temporárias (CPIs); proposições legislativas e rito de tramitação.</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td>
+              <div class="topic-title-text">Técnica Legislativa & Lei Complementar nº 95/1998</div>
+              <div class="topic-desc-text">Elaboração, redação, alteração e consolidação de leis; estrutura padrão das normas (epígrafe, ementa, preâmbulo, artigos, parágrafos, incisos, alíneas e fecho).</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td>
+              <div class="topic-title-text">Redação Oficial & Atos Parlamentares</div>
+              <div class="topic-desc-text">Linguagem normativa; projetos de lei, decretos legislativos, resoluções, pareceres técnicos e jurídicos; ofícios, requerimentos e moções.</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td>
+              <div class="topic-title-text">Gestão Pública, Governança & Organização da Câmara</div>
+              <div class="topic-desc-text">Planejamento estratégico, organização administrativa da Câmara, gestão de processos legislativos, gestão de pessoas no setor público, governança e compliance.</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td>
+              <div class="topic-title-text">Gestão Documental, Arquivo & Protocolo</div>
+              <div class="topic-desc-text">Teoria das três idades (arquivo corrente, intermediário e permanente); métodos de arquivamento (alfabético, numérico, ideográfico); tabela de temporalidade, rastreabilidade e sistemas eletrônicos (GED).</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td>
+              <div class="topic-title-text">Orçamento Público (PPA, LDO e LOA)</div>
+              <div class="topic-desc-text">Princípios orçamentários, Plano Plurianual (PPA), Lei de Diretrizes Orçamentárias (LDO), Lei Orçamentária Anual (LOA) e créditos adicionais.</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td>
+              <div class="topic-title-text">Lei de Responsabilidade Fiscal (LC nº 101/2000)</div>
+              <div class="topic-desc-text">Limites de gastos com pessoal para a Câmara Municipal; vedações no final de mandato e Restos a Pagar (Art. 42); Relatório de Gestão Fiscal (RGF) e transparência.</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td>
+              <div class="topic-title-text">Ciência Política & Políticas Públicas</div>
+              <div class="topic-desc-text">Estado, governo e sociedade; democracia representativa e participativa; ciclo das políticas públicas (formulação, implementação e avaliação); controle social e conselhos municipais.</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td class="check-col"><span class="check-box-circle"></span></td>
+            <td>
+              <div class="topic-title-text">Transparência, Ética & Proteção de Dados (LAI & LGPD)</div>
+              <div class="topic-desc-text">Lei de Acesso à Informação (Lei 12.527/11: transparência ativa e passiva); Código de Ética do Servidor; Lei Geral de Proteção de Dados (Lei 13.709/18 - LGPD); segurança da informação.</div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+</body>
+</html>

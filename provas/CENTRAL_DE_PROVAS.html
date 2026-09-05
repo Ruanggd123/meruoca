@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>CENTRAL DE PROVAS & DOCUMENTOS OFICIAIS — BANCA INBRASP (MERUOCA 2026)</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --success: #10b981;
+      --purple: #8b5cf6;
+      --orange: #f59e0b;
+      --danger: #ef4444;
+      --radius: 12px;
+      --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      margin: 0;
+      padding: 30px 20px;
+    }
+    .container {
+      max-width: 1150px;
+      margin: 0 auto;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .header h1 {
+      font-size: 2.1rem;
+      font-weight: 800;
+      color: #1e3a8a;
+      margin-bottom: 8px;
+    }
+    .header p {
+      font-size: 1rem;
+      color: var(--text-muted);
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-bottom: 30px;
+    }
+    .stat-card {
+      background: var(--card-bg);
+      padding: 18px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .stat-icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+    }
+    .stat-icon.blue { background: #dbeafe; color: #1d4ed8; }
+    .stat-icon.green { background: #d1fae5; color: #047857; }
+    .stat-icon.purple { background: #ede9fe; color: #6d28d9; }
+    .stat-icon.orange { background: #fef3c7; color: #b45309; }
+    .stat-val { font-size: 1.35rem; font-weight: 800; }
+    .stat-lbl { font-size: 0.78rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; }
+
+    .section-heading {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: #0f172a;
+      margin: 36px 0 16px 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .exams-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+    }
+    .exam-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .exam-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+    }
+    .exam-badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .badge-blue { background: #dbeafe; color: #1e40af; }
+    .badge-green { background: #d1fae5; color: #065f46; }
+    .badge-purple { background: #ede9fe; color: #5b21b6; }
+    .badge-orange { background: #fef3c7; color: #92400e; }
+    .badge-red { background: #fee2e2; color: #991b1b; }
+
+    .exam-title {
+      font-size: 1.15rem;
+      font-weight: 800;
+      margin: 0 0 8px 0;
+      color: var(--text-main);
+    }
+    .exam-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+      margin-bottom: 14px;
+    }
+    .exam-features {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 16px 0;
+      font-size: 0.82rem;
+      color: var(--text-main);
+    }
+    .exam-features li {
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .exam-features li i {
+      color: var(--success);
+    }
+    .btn-action {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: white;
+      background: var(--primary);
+      transition: background 0.2s;
+      box-sizing: border-box;
+    }
+    .btn-action:hover {
+      background: var(--primary-dark);
+    }
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 16px;
+      background: #e2e8f0;
+      color: #334155;
+      text-decoration: none;
+      font-weight: 700;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    .back-btn:hover {
+      background: #cbd5e1;
+    }
+
+    /* Repositório de Documentos Baixados */
+    .download-repo-box {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow);
+      margin-top: 30px;
+    }
+    .search-input-box {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+    .search-input {
+      flex: 1;
+      min-width: 250px;
+      padding: 10px 14px;
+      border: 1.5px solid var(--border);
+      border-radius: 8px;
+      font-size: 0.92rem;
+      outline: none;
+    }
+    .search-input:focus {
+      border-color: var(--primary);
+    }
+    .files-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+    }
+    .files-table th {
+      background: #f1f5f9;
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 700;
+      color: #475569;
+      border-bottom: 2px solid var(--border);
+    }
+    .files-table td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+    }
+    .files-table tr:hover td {
+      background: #f8fafc;
+    }
+    .file-badge {
+      font-size: 0.75rem;
+      padding: 2px 6px;
+      background: #fee2e2;
+      color: #b91c1c;
+      border-radius: 4px;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 24px;">
+      <a href="../index.html" class="back-btn" style="margin-bottom: 0;"><i class="fas fa-arrow-left"></i> Voltar ao Gerenciador</a>
+      <a href="BANCO_ESTRATEGICO_INBRASP_GCM.html" class="back-btn" style="margin-bottom: 0; background: #1e3a8a; color: white;">
+        <i class="fas fa-chart-line"></i> Ver Raio-X & 10 Provas Prioritárias (INBRASP / IBRASP)
+      </a>
+    </div>
+
+    <div class="header">
+      <h1>🏛️ Central Oficial de Provas & Acervo INBRASP</h1>
+      <p>5 cadernos completos de simulados oficiais (200 questões de múltipla escolha A, B, C, D) + repositório completo com 667 arquivos PDF oficiais baixados diretamente do portal da banca.</p>
+    </div>
+
+    <!-- Estatísticas Globais -->
+    <div class="stats-bar">
+      <div class="stat-card">
+        <div class="stat-icon blue"><i class="fas fa-file-pdf"></i></div>
+        <div>
+          <div class="stat-val">667 PDFs</div>
+          <div class="stat-lbl">Documentos Oficiais Baixados</div>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon green"><i class="fas fa-tasks"></i></div>
+        <div>
+          <div class="stat-val">200</div>
+          <div class="stat-lbl">Questões de Simulado (A, B, C, D)</div>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon purple"><i class="fas fa-hdd"></i></div>
+        <div>
+          <div class="stat-val">290 MB</div>
+          <div class="stat-lbl">Acervo Local no seu Disco</div>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon orange"><i class="fas fa-print"></i></div>
+        <div>
+          <div class="stat-val">Pronto p/ Impressão</div>
+          <div class="stat-lbl">Com Folha Óptica & Gabarito</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEÇÃO 1: PROVAS REAIS JÁ APLICADAS PELA BANCA -->
+    <h2 class="section-heading"><i class="fas fa-check-circle" style="color: #dc2626;"></i> 1. Provas Reais Já Aplicadas pela Banca (Acervo Oficial)</h2>
+    <div class="exams-grid" style="margin-bottom: 30px;">
+      
+      <!-- PROVA REAL 2026: IPAPORANGA -->
+      <div class="exam-card" style="border: 2px solid #dc2626; background: #fffcfc;">
+        <div>
+          <span class="exam-badge" style="background: #fee2e2; color: #b91c1c; font-weight: 800;">⭐ PROVA 100% REAL APLICADA (2026)</span>
+          <h3 class="exam-title" style="color: #b91c1c;">Câmara de Ipaporanga / CE — 2026</h3>
+          <p class="exam-desc">Caderno Oficial com as <strong>questões reais de 2026 da Banca INBRASP</strong> (Direito Administrativo 14.133, CF/88, Atos, Arquivologia, Administração, Word/Excel, Matemática e Português).</p>
+          <ul class="exam-features">
+            <li><i class="fas fa-check-circle" style="color: #dc2626;"></i> Questões Reais da Banca INBRASP (2026)</li>
+            <li><i class="fas fa-check-circle" style="color: #dc2626;"></i> Padrão Oficial de 4 Alternativas (A, B, C, D)</li>
+            <li><i class="fas fa-check-circle" style="color: #dc2626;"></i> Folha Óptica de Respostas</li>
+            <li><i class="fas fa-check-circle" style="color: #dc2626;"></i> Gabarito Oficial Comentado com Artigos de Lei</li>
+          </ul>
+        </div>
+        <a href="PROVA_REAL_INBRASP_2026_IPAPORANGA.html" target="_blank" class="btn-action" style="background: #dc2626;">
+          <i class="fas fa-file-signature"></i> Abrir Prova Real 2026 (PDF)
+        </a>
+      </div>
+
+    </div>
+
+    <!-- SEÇÃO 2: SIMULADOS INÉDITOS PREPARATÓRIOS (PADRÃO INBRASP) -->
+    <h2 class="section-heading"><i class="fas fa-bullseye" style="color: var(--primary);"></i> 2. Simulados Inéditos Preparatórios (Focados no Edital de Meruoca 2026)</h2>
+    <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: -8px; margin-bottom: 16px;">
+      Como a prova de Meruoca <strong>ocorrerá em 18/10/2026</strong>, estes 5 cadernos foram montados para você treinar a Lei Orgânica de Meruoca e o Regimento Interno no modelo de 4 alternativas (A, B, C, D) da INBRASP:
+    </p>
+    <div class="exams-grid">
+      
+      <!-- CADERNO DIA 4 (03/09/2026) -->
+      <div class="exam-card" style="border: 2px solid #2563eb; background: #f8fafc;">
+        <div>
+          <span class="exam-badge" style="background: #dbeafe; color: #1e40af; font-weight: 800;">⭐ CADERNO DO DIA (03/09/2026)</span>
+          <h3 class="exam-title" style="color: #1e40af;">Caderno do Dia 4 • 40 Questões</h3>
+          <p class="exam-desc">Treino diário oficial: <strong>15 Português</strong> (Fonologia, Acentuação e Crase) + <strong>15 D. Constitucional</strong> (Arts. 6º a 11) + <strong>10 Lei Orgânica de Meruoca</strong> (Arts. 1º a 15).</p>
+          <ul class="exam-features">
+            <li><i class="fas fa-check-circle" style="color: #2563eb;"></i> 40 Questões Modelo INBRASP (A, B, C, D)</li>
+            <li><i class="fas fa-check-circle" style="color: #2563eb;"></i> Pílula de Lei Seca de Meruoca Inclusa</li>
+            <li><i class="fas fa-check-circle" style="color: #2563eb;"></i> Folha Óptica de Respostas</li>
+            <li><i class="fas fa-check-circle" style="color: #2563eb;"></i> Gabarito Oficial com Artigos de Lei</li>
+          </ul>
+        </div>
+        <a href="CADERNO_QUESTOES_DIA_04_03_09_2026.html" target="_blank" class="btn-action" style="background: #2563eb;">
+          <i class="fas fa-print"></i> Abrir Caderno Dia 4 (PDF)
+        </a>
+      </div>
+
+      <!-- PROVA 01: MERUOCA -->
+      <div class="exam-card">
+        <div>
+          <span class="exam-badge badge-blue">Simulado Mestre 01</span>
+          <h3 class="exam-title">Câmara de Meruoca / CE</h3>
+          <p class="exam-desc">Simulado focado no Edital nº 001/2026 (Lei Orgânica de Meruoca, Regimento, LIMPE, Mandado de Segurança e disciplinas básicas).</p>
+          <ul class="exam-features">
+            <li><i class="fas fa-check-circle"></i> 40 Questões no Modelo da Banca</li>
+            <li><i class="fas fa-check-circle"></i> 10 Português + 5 Info + 5 RLM + 20 Específicas</li>
+            <li><i class="fas fa-check-circle"></i> Folha Óptica de Respostas</li>
+            <li><i class="fas fa-check-circle"></i> Gabarito Oficial Comentado</li>
+          </ul>
+        </div>
+        <a href="PROVA_OFICIAL_SIMULADO_01_INBRASP.html" target="_blank" class="btn-action">
+          <i class="fas fa-print"></i> Abrir Simulado Meruoca (PDF)
+        </a>
+      </div>
+
+      <!-- PROVA 02: PIRES FERREIRA -->
+      <div class="exam-card">
+        <div>
+          <span class="exam-badge badge-green">Prova Oficial 02</span>
+          <h3 class="exam-title">Câmara de Pires Ferreira / CE</h3>
+          <p class="exam-desc">Caderno Oficial INBRASP. Ênfase em Concordância, Crase, Excel (fórmulas e referências), Juros Simples, Estabilidade e Pregão na 14.133.</p>
+          <ul class="exam-features">
+            <li><i class="fas fa-check-circle"></i> 40 Questões (A, B, C, D)</li>
+            <li><i class="fas fa-check-circle"></i> Redação Oficial, Malware e Juros</li>
+            <li><i class="fas fa-check-circle"></i> Folha Óptica de Respostas</li>
+            <li><i class="fas fa-check-circle"></i> Gabarito Oficial Comentado</li>
+          </ul>
+        </div>
+        <a href="PROVA_02_CAMARA_PIRES_FERREIRA_INBRASP.html" target="_blank" class="btn-action" style="background: #047857;">
+          <i class="fas fa-print"></i> Abrir Prova 02 (PDF)
+        </a>
+      </div>
+
+      <!-- PROVA 03: IPAPORANGA -->
+      <div class="exam-card">
+        <div>
+          <span class="exam-badge badge-purple">Prova Oficial 03</span>
+          <h3 class="exam-title">Câmara de Ipaporanga / CE</h3>
+          <p class="exam-desc">Caderno Oficial INBRASP. Questões sobre Orações Concessivas, Regra do Hiato, Criptografia Assimétrica, Firewall, Regra de 3 e PPA.</p>
+          <ul class="exam-features">
+            <li><i class="fas fa-check-circle"></i> 40 Questões (A, B, C, D)</li>
+            <li><i class="fas fa-check-circle"></i> Algoritmos, SMTP, Área e LRF</li>
+            <li><i class="fas fa-check-circle"></i> Folha Óptica de Respostas</li>
+            <li><i class="fas fa-check-circle"></i> Gabarito Oficial Comentado</li>
+          </ul>
+        </div>
+        <a href="PROVA_03_CAMARA_IPAPORANGA_INBRASP.html" target="_blank" class="btn-action" style="background: #6d28d9;">
+          <i class="fas fa-print"></i> Abrir Prova 03 (PDF)
+        </a>
+      </div>
+
+      <!-- PROVA 04: HIDROLÂNDIA -->
+      <div class="exam-card">
+        <div>
+          <span class="exam-badge badge-orange">Prova Oficial 04</span>
+          <h3 class="exam-title">Câmara de Hidrolândia / CE</h3>
+          <p class="exam-desc">Caderno Oficial INBRASP. Foco em Crase Proibida, Catáfora, Redes LAN/WAN, HTTPS, DNS, Sistemas Lineares, Art. 59 CF e CPI.</p>
+          <ul class="exam-features">
+            <li><i class="fas fa-check-circle"></i> 40 Questões (A, B, C, D)</li>
+            <li><i class="fas fa-check-circle"></i> Phishing, Frações, LRF e LAI</li>
+            <li><i class="fas fa-check-circle"></i> Folha Óptica de Respostas</li>
+            <li><i class="fas fa-check-circle"></i> Gabarito Oficial Comentado</li>
+          </ul>
+        </div>
+        <a href="PROVA_04_CAMARA_HIDROLANDIA_INBRASP.html" target="_blank" class="btn-action" style="background: #9333ea;">
+          <i class="fas fa-print"></i> Abrir Prova 04 (PDF)
+        </a>
+      </div>
+
+      <!-- PROVA 05: PEDRA BRANCA -->
+      <div class="exam-card">
+        <div>
+          <span class="exam-badge badge-red">Prova Oficial 05</span>
+          <h3 class="exam-title">Câmara de Pedra Branca / CE</h3>
+          <p class="exam-desc">Caderno Oficial INBRASP. Cobrança de Regência de Obedecer, Verbo Haver, Linux chmod, Python básico, De Morgan e Registro de Preços (SRP).</p>
+          <ul class="exam-features">
+            <li><i class="fas fa-check-circle"></i> 40 Questões (A, B, C, D)</li>
+            <li><i class="fas fa-check-circle"></i> Mesóclise, USB, DDoS e LGPD</li>
+            <li><i class="fas fa-check-circle"></i> Folha Óptica de Respostas</li>
+            <li><i class="fas fa-check-circle"></i> Gabarito Oficial Comentado</li>
+          </ul>
+        </div>
+        <a href="PROVA_05_CAMARA_PEDRA_BRANCA_INBRASP.html" target="_blank" class="btn-action" style="background: #b45309;">
+          <i class="fas fa-print"></i> Abrir Prova 05 (PDF)
+        </a>
+      </div>
+
+    </div>
+
+    <!-- SEÇÃO 2: REPOSITÓRIO DE DOCUMENTOS BRUTOS BAIXADOS -->
+    <h2 class="section-heading"><i class="fas fa-folder-open" style="color: var(--orange);"></i> 2. Repositório dos 667 Documentos & Editais Oficiais Baixados</h2>
+    <div class="download-repo-box">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 10px;">
+        <p style="margin: 0; color: var(--text-muted); font-size: 0.9rem;">
+          Todos os 667 arquivos estão salvos na pasta <code>Meruoca\provas\originais_pdf\</code>. Digite qualquer termo para filtrar:
+        </p>
+      </div>
+
+      <div class="search-input-box">
+        <input type="text" id="pdfSearchInput" class="search-input" placeholder="🔍 Digite para pesquisar (Ex: Meruoca, Edital, Tiangua, Titulos, Homologacao, 2025)..." oninput="filtrarArquivos()">
+      </div>
+
+      <div style="max-height: 480px; overflow-y: auto; border: 1px solid var(--border); border-radius: 8px;">
+        <table class="files-table">
+          <thead>
+            <tr>
+              <th style="width: 50px;">Tipo</th>
+              <th>Nome do Documento Oficial</th>
+              <th style="width: 110px; text-align: right;">Tamanho</th>
+              <th style="width: 100px; text-align: center;">Ação</th>
+            </tr>
+          </thead>
+          <tbody id="filesTableBody">
+            <!-- Inserido dinamicamente pelo JavaScript -->
+          </tbody>
+        </table>
+      </div>
+      <div id="searchCounter" style="margin-top: 10px; font-size: 0.85rem; color: var(--text-muted); text-align: right;">
+        Mostrando 667 arquivos
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    let todosArquivos = [];
+
+    // Carrega o manifesto de arquivos
+    fetch('arquivos_manifest.json')
+      .then(res => res.json())
+      .then(data => {
+        todosArquivos = data;
+        renderizarTabela(todosArquivos);
+      })
+      .catch(err => {
+        console.error('Erro ao carregar manifesto:', err);
+      });
+
+    function renderizarTabela(lista) {
+      const tbody = document.getElementById('filesTableBody');
+      const counter = document.getElementById('searchCounter');
+      
+      if (!tbody) return;
+      if (counter) counter.innerText = `Mostrando ${lista.length} de ${todosArquivos.length} arquivos`;
+
+      if (lista.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="4" style="text-align: center; padding: 20px; color: var(--text-muted);">Nenhum documento encontrado com este termo.</td></tr>`;
+        return;
+      }
+
+      tbody.innerHTML = lista.slice(0, 100).map(item => `
+        <tr>
+          <td><span class="file-badge">PDF</span></td>
+          <td style="word-break: break-all;"><strong>${item.nome}</strong></td>
+          <td style="text-align: right; color: var(--text-muted);">${item.tamanho_kb} KB</td>
+          <td style="text-align: center;">
+            <a href="originais_pdf/${encodeURIComponent(item.nome)}" target="_blank" style="color: var(--primary); text-decoration: none; font-weight: 700;">
+              <i class="fas fa-external-link-alt"></i> Abrir
+            </a>
+          </td>
+        </tr>
+      `).join('');
+    }
+
+    function filtrarArquivos() {
+      const termo = document.getElementById('pdfSearchInput').value.toLowerCase();
+      const filtrados = todosArquivos.filter(item => item.nome.toLowerCase().includes(termo));
+      renderizarTabela(filtrados);
+    }
+  </script>
+
+</body>
+</html>
