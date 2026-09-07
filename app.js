@@ -416,3550 +416,3536 @@ const FLASHCARDS_DATA = [
 // BANCO OFICIAL DE QUESTÕES INBRASP (30 Questões - 4 Alternativas)
 // =========================================================================
 const QUIZ_QUESTIONS_DATA = [
-  // BLOCO 1: DIREITO CONSTITUCIONAL (1 a 15)
   {
-    id: 1,
-    category: "constitucional",
-    discipline: "D. Constitucional",
-    topic: "Art. 5º, XI (Inviolabilidade do Domicílio)",
-    question: "Conforme o Art. 5º, XI, da CF/88, a casa é asilo inviolável do indivíduo. A entrada no domicílio sem o consentimento do morador por determinação judicial só pode ocorrer:",
-    options: [
+    "id": 1,
+    "category": "constitucional",
+    "discipline": "D. Constitucional",
+    "topic": "Art. 5º, XI (Inviolabilidade do Domicílio)",
+    "question": "Conforme o Art. 5º, XI, da CF/88, a casa é asilo inviolável do indivíduo. A entrada no domicílio sem o consentimento do morador por determinação judicial só pode ocorrer:",
+    "options": [
+      "Durante o dia.",
       "A qualquer hora do dia ou da noite.",
       "Apenas durante a noite, com a presença de testemunhas.",
-      "Durante o dia.",
       "Em dias úteis, no período das 6h às 22h."
     ],
-    correctAnswer: 2,
-    commentary: "Art. 5º, XI da CF/88: 'A casa é asilo inviolável do indivíduo, ninguém nela podendo penetrar sem consentimento do morador, salvo em caso de flagrante delito ou desastre, ou para prestar socorro, ou, durante o dia, por determinação judicial'."
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Art. 5º, XI da CF/88: 'A casa é asilo inviolável do indivíduo, ninguém nela podendo penetrar sem consentimento do morador, salvo em caso de flagrante delito ou desastre, ou para prestar socorro, ou, durante o dia, por determinação judicial'."
   },
   {
-    id: 2,
-    category: "constitucional",
-    discipline: "D. Constitucional",
-    topic: "Art. 5º, XLII e XLIV (Crimes Inafiançáveis e Imprescritíveis)",
-    question: "Segundo a Constituição Federal de 1988, constituem crimes inafiançáveis e imprescritíveis:",
-    options: [
+    "id": 2,
+    "category": "constitucional",
+    "discipline": "D. Constitucional",
+    "topic": "Art. 5º, XLII e XLIV (Crimes Inafiançáveis e Imprescritíveis)",
+    "question": "Segundo a Constituição Federal de 1988, constituem crimes inafiançáveis e imprescritíveis:",
+    "options": [
       "A prática da tortura e o tráfico ilícito de entorpecentes.",
       "Os crimes hediondos e o terrorismo.",
       "A prática do racismo e a ação de grupos armados contra a ordem constitucional.",
       "O roubo qualificado e a corrupção passiva."
     ],
-    correctAnswer: 2,
-    commentary: "Mnemônico 'RAÇÃO': Racismo (Art. 5º, XLII) e Ação de grupos armados, civis ou militares, contra a ordem constitucional e o Estado Democrático (Art. 5º, XLIV) são os dois únicos crimes inafiançáveis e imprescritíveis na CF/88."
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Mnemônico 'RAÇÃO': Racismo (Art. 5º, XLII) e Ação de grupos armados, civis ou militares, contra a ordem constitucional e o Estado Democrático (Art. 5º, XLIV) são os dois únicos crimes inafiançáveis e imprescritíveis na CF/88."
   },
   {
-    id: 3,
-    category: "constitucional",
-    discipline: "D. Constitucional",
-    topic: "Art. 5º, XLIII (Crimes Inafiançáveis e Insuscetíveis de Graça)",
-    question: "A Constituição Federal define o crime de tráfico ilícito de entorpecentes e drogas afins como:",
-    options: [
+    "id": 3,
+    "category": "constitucional",
+    "discipline": "D. Constitucional",
+    "topic": "Art. 5º, XLIII (Crimes Inafiançáveis e Insuscetíveis de Graça)",
+    "question": "A Constituição Federal define o crime de tráfico ilícito de entorpecentes e drogas afins como:",
+    "options": [
       "Imprescritível e afiançável mediante depósito judicial.",
       "Inafiançável e insuscetível de graça ou anistia.",
       "Suscetível de graça, desde que cumprido 1/3 da pena.",
       "Prescritível e passível de liberdade provisória com fiança."
     ],
-    correctAnswer: 1,
-    commentary: "Art. 5º, XLIII da CF/88: Os crimes '3T.H' (Tráfico de drogas, Tortura, Terrorismo e Hediondos) são inafiançáveis e insuscetíveis de graça ou anistia."
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Art. 5º, XLIII da CF/88: Os crimes '3T.H' (Tráfico de drogas, Tortura, Terrorismo e Hediondos) são inafiançáveis e insuscetíveis de graça ou anistia."
   },
   {
-    id: 4,
-    category: "constitucional",
-    discipline: "D. Constitucional",
-    topic: "Art. 5º, LXVIII (Habeas Corpus)",
-    question: "O remédio constitucional cabível para garantir a liberdade de locomoção, sempre que alguém sofrer ou se achar ameaçado de sofrer violência ou coação em sua liberdade de ir e vir, por ilegalidade ou abuso de poder, é o:",
-    options: [
+    "id": 4,
+    "category": "constitucional",
+    "discipline": "D. Constitucional",
+    "topic": "Art. 5º, LXVIII (Habeas Corpus)",
+    "question": "O remédio constitucional cabível para garantir a liberdade de locomoção, sempre que alguém sofrer ou se achar ameaçado de sofrer violência ou coação em sua liberdade de ir e vir, por ilegalidade ou abuso de poder, é o:",
+    "options": [
+      "Habeas Corpus.",
       "Mandado de Segurança.",
       "Habeas Data.",
-      "Habeas Corpus.",
       "Mandado de Injunção."
     ],
-    correctAnswer: 2,
-    commentary: "Art. 5º, LXVIII da CF/88: Conceder-se-á Habeas Corpus sempre que alguém sofrer ou se achar ameaçado de sofrer violência ou coação em sua liberdade de locomoção, por ilegalidade ou abuso de poder."
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Art. 5º, LXVIII da CF/88: Conceder-se-á Habeas Corpus sempre que alguém sofrer ou se achar ameaçado de sofrer violência ou coação em sua liberdade de locomoção, por ilegalidade ou abuso de poder."
   },
   {
-    id: 5,
-    category: "constitucional",
-    discipline: "D. Constitucional",
-    topic: "Art. 5º, LXXII (Habeas Data)",
-    question: "A respeito do Habeas Data (Art. 5º, LXXII), assinale a afirmativa correta:",
-    options: [
-      "Destina-se a assegurar o conhecimento de informações relativas à pessoa do impetrante, constantes de registros de entidades governamentais.",
+    "id": 5,
+    "category": "constitucional",
+    "discipline": "D. Constitucional",
+    "topic": "Art. 5º, LXXII (Habeas Data)",
+    "question": "A respeito do Habeas Data (Art. 5º, LXXII), assinale a afirmativa correta:",
+    "options": [
       "Pode ser impetrado para requerer certidões sobre atos e contratos de terceiros.",
+      "Destina-se a assegurar o conhecimento de informações relativas à pessoa do impetrante, constantes de registros de entidades governamentais.",
       "É uma ação judicial onerosa que exige o recolhimento prévio de taxas.",
       "Não exige a intervenção de advogado para a sua propositura em juízo."
     ],
-    correctAnswer: 0,
-    commentary: "Art. 5º, LXXII da CF/88: O Habeas Data é ação personalíssima para assegurar o conhecimento/retificação de informações relativas à pessoa do impetrante em bancos de dados governamentais. É gratuito (Art. 5º, LXXVII), mas exige advogado."
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Art. 5º, LXXII da CF/88: O Habeas Data é ação personalíssima para assegurar o conhecimento/retificação de informações relativas à pessoa do impetrante em bancos de dados governamentais. É gratuito (Art. 5º, LXXVII), mas exige advogado."
   },
   {
-    id: 6,
-    category: "constitucional",
-    discipline: "D. Constitucional",
-    topic: "Art. 5º, LXIX (Mandado de Segurança)",
-    question: "Para proteger direito líquido e certo, não amparado por Habeas Corpus ou Habeas Data, quando o responsável pela ilegalidade for autoridade pública, concede-se:",
-    options: [
-      "Ação Popular.",
+    "id": 6,
+    "category": "constitucional",
+    "discipline": "D. Constitucional",
+    "topic": "Art. 5º, LXIX (Mandado de Segurança)",
+    "question": "Para proteger direito líquido e certo, não amparado por Habeas Corpus ou Habeas Data, quando o responsável pela ilegalidade for autoridade pública, concede-se:",
+    "options": [
       "Mandado de Segurança.",
+      "Ação Popular.",
       "Mandado de Injunção.",
       "Arguição de Descumprimento de Preceito Fundamental."
     ],
-    correctAnswer: 1,
-    commentary: "Art. 5º, LXIX da CF/88: Conceder-se-á Mandado de Segurança para proteger direito líquido e certo, não amparado por Habeas Corpus ou Habeas Data, contra ilegalidade de autoridade pública."
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Art. 5º, LXIX da CF/88: Conceder-se-á Mandado de Segurança para proteger direito líquido e certo, não amparado por Habeas Corpus ou Habeas Data, contra ilegalidade de autoridade pública."
   },
   {
-    id: 7,
-    category: "constitucional",
-    discipline: "D. Constitucional",
-    topic: "Mandado de Segurança (Prazo Decadencial)",
-    question: "O prazo decadencial para a impetração de Mandado de Segurança é de:",
-    options: [
+    "id": 7,
+    "category": "constitucional",
+    "discipline": "D. Constitucional",
+    "topic": "Mandado de Segurança (Prazo Decadencial)",
+    "question": "O prazo decadencial para a impetração de Mandado de Segurança é de:",
+    "options": [
       "30 dias contados da publicação da portaria.",
       "60 dias contados da ocorrência do fato danoso.",
       "90 dias contados da notificação do ato coator.",
       "120 dias contados da ciência, pelo interessado, do ato impugnado."
     ],
-    correctAnswer: 3,
-    commentary: "Art. 23 da Lei nº 12.016/2009 e Súmula 632 do STF: Prazo decadencial de 120 dias contados da ciência do ato impugnado."
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Art. 23 da Lei nº 12.016/2009 e Súmula 632 do STF: Prazo decadencial de 120 dias contados da ciência do ato impugnado."
   },
   {
-    id: 8,
-    category: "constitucional",
-    discipline: "D. Constitucional",
-    topic: "Art. 5º, LXXI (Mandado de Injunção)",
-    question: "Sempre que a falta de norma regulamentadora tornar inviável o exercício dos direitos e liberdades constitucionais e das prerrogativas inerentes à nacionalidade, à soberania e à cidadania, conceder-se-á:",
-    options: [
+    "id": 8,
+    "category": "constitucional",
+    "discipline": "D. Constitucional",
+    "topic": "Art. 5º, LXXI (Mandado de Injunção)",
+    "question": "Sempre que a falta de norma regulamentadora tornar inviável o exercício dos direitos e liberdades constitucionais e das prerrogativas inerentes à nacionalidade, à soberania e à cidadania, conceder-se-á:",
+    "options": [
       "Habeas Corpus.",
-      "Mandado de Injunção.",
       "Mandado de Segurança Coletivo.",
+      "Mandado de Injunção.",
       "Ação Civil Pública."
     ],
-    correctAnswer: 1,
-    commentary: "Art. 5º, LXXI da CF/88: Conceder-se-á Mandado de Injunção diante da ausência de norma regulamentadora que inviabilize o exercício de direito constitucional."
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Art. 5º, LXXI da CF/88: Conceder-se-á Mandado de Injunção diante da ausência de norma regulamentadora que inviabilize o exercício de direito constitucional."
   },
   {
-    id: 9,
-    category: "constitucional",
-    discipline: "D. Constitucional",
-    topic: "Art. 5º, LXXIII (Ação Popular)",
-    question: "A legitimidade ativa para a propositura de Ação Popular (Art. 5º, LXXIII) pertence exclusivamente ao:",
-    options: [
+    "id": 9,
+    "category": "constitucional",
+    "discipline": "D. Constitucional",
+    "topic": "Art. 5º, LXXIII (Ação Popular)",
+    "question": "A legitimidade ativa para a propositura de Ação Popular (Art. 5º, LXXIII) pertence exclusivamente ao:",
+    "options": [
       "Membro do Ministério Público.",
-      "Cidadão no gozo de seus direitos políticos.",
       "Estrangeiro residente há mais de cinco anos no país.",
-      "Partido político com representação na Câmara Municipal."
+      "Partido político com representação na Câmara Municipal.",
+      "Cidadão no gozo de seus direitos políticos."
     ],
-    correctAnswer: 1,
-    commentary: "Art. 5º, LXXIII da CF/88: 'Qualquer cidadão é parte legítima para propor ação popular...'. A cidadania comprova-se pelo título de eleitor."
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Art. 5º, LXXIII da CF/88: 'Qualquer cidadão é parte legítima para propor ação popular...'. A cidadania comprova-se pelo título de eleitor."
   },
   {
-    id: 10,
-    category: "constitucional",
-    discipline: "D. Constitucional",
-    topic: "Art. 5º, IV (Manifestação do Pensamento)",
-    question: "A manifestação do pensamento é garantida a todos no Art. 5º, IV, da CF/88, sendo expressamente:",
-    options: [
+    "id": 10,
+    "category": "constitucional",
+    "discipline": "D. Constitucional",
+    "topic": "Art. 5º, IV (Manifestação do Pensamento)",
+    "question": "A manifestação do pensamento é garantida a todos no Art. 5º, IV, da CF/88, sendo expressamente:",
+    "options": [
       "Permitida sob a égide do anonimato.",
-      "Vedado o anonimato.",
       "Condicionada à aprovação prévia de órgão censor municipal.",
-      "Restrita a maiores de 21 anos em pleno gozo de direitos civis."
+      "Restrita a maiores de 21 anos em pleno gozo de direitos civis.",
+      "Vedado o anonimato."
     ],
-    correctAnswer: 1,
-    commentary: "Art. 5º, IV da CF/88: 'É livre a manifestação do pensamento, sendo vedado o anonimato'."
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Art. 5º, IV da CF/88: 'É livre a manifestação do pensamento, sendo vedado o anonimato'."
   },
   {
-    id: 11,
-    category: "constitucional",
-    discipline: "D. Constitucional",
-    topic: "Art. 5º, XII (Sigilo das Comunicações)",
-    question: "A inviolabilidade do sigilo da correspondência e das comunicações telegráficas e de dados é garantida pela CF/88. Já a interceptação de comunicações telefônicas:",
-    options: [
+    "id": 11,
+    "category": "constitucional",
+    "discipline": "D. Constitucional",
+    "topic": "Art. 5º, XII (Sigilo das Comunicações)",
+    "question": "A inviolabilidade do sigilo da correspondência e das comunicações telegráficas e de dados é garantida pela CF/88. Já a interceptação de comunicações telefônicas:",
+    "options": [
+      "Pode ser realizada por ordem judicial, para fins de investigação criminal ou instrução processual penal.",
       "É terminantemente proibida sob qualquer hipótese no território nacional.",
       "Pode ser determinada por autoridade policial durante o inquérito administrativo.",
-      "Pode ser realizada por ordem judicial, para fins de investigação criminal ou instrução processual penal.",
       "Depende de autorização do Presidente da Câmara Municipal quando envolver servidores públicos."
     ],
-    correctAnswer: 2,
-    commentary: "Art. 5º, XII da CF/88: A quebra de sigilo telefônico exige ordem judicial para fins de investigação criminal ou instrução processual penal."
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Art. 5º, XII da CF/88: A quebra de sigilo telefônico exige ordem judicial para fins de investigação criminal ou instrução processual penal."
   },
   {
-    id: 12,
-    category: "constitucional",
-    discipline: "D. Constitucional",
-    topic: "Art. 5º, XVI (Direito de Reunião)",
-    question: "No que diz respeito ao direito de reunião pacífica (Art. 5º, XVI), a Constituição Federal exige que:",
-    options: [
+    "id": 12,
+    "category": "constitucional",
+    "discipline": "D. Constitucional",
+    "topic": "Art. 5º, XVI (Direito de Reunião)",
+    "question": "No que diz respeito ao direito de reunião pacífica (Art. 5º, XVI), a Constituição Federal exige que:",
+    "options": [
       "Haja prévia autorização da autoridade policial competente.",
-      "Os participantes estejam armados para garantir a própria segurança.",
       "Não haja frustração de outra reunião anteriormente convocada para o mesmo local, sendo exigido prévio aviso.",
+      "Os participantes estejam armados para garantir a própria segurança.",
       "O número de participantes seja previamente aprovado pelo Poder Executivo local."
     ],
-    correctAnswer: 2,
-    commentary: "Art. 5º, XVI da CF/88: Reunião pacífica sem armas independe de autorização, exigindo-se apenas prévio aviso à autoridade."
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Art. 5º, XVI da CF/88: Reunião pacífica sem armas independe de autorização, exigindo-se apenas prévio aviso à autoridade."
   },
   {
-    id: 13,
-    category: "constitucional",
-    discipline: "D. Constitucional",
-    topic: "Art. 5º, XVII e XVIII (Liberdade de Associação)",
-    question: "Sobre a criação e funcionamento de associações (Art. 5º, XVII a XXI):",
-    options: [
-      "A criação independe de autorização e é vedada a interferência estatal em seu funcionamento.",
+    "id": 13,
+    "category": "constitucional",
+    "discipline": "D. Constitucional",
+    "topic": "Art. 5º, XVII e XVIII (Liberdade de Associação)",
+    "question": "Sobre a criação e funcionamento de associações (Art. 5º, XVII a XXI):",
+    "options": [
       "O Poder Executivo pode dissolver compulsoriamente uma associação por meio de decreto.",
       "As atividades de uma associação só podem ser suspensas por ato fundamentado do delegado de polícia.",
-      "Ninguém poderá ser compelido a associar-se, exceto se houver previsão em convenção coletiva."
+      "Ninguém poderá ser compelido a associar-se, exceto se houver previsão em convenção coletiva.",
+      "A criação independe de autorização e é vedada a interferência estatal em seu funcionamento."
     ],
-    correctAnswer: 0,
-    commentary: "Art. 5º, XVIII da CF/88: A criação de associações independe de autorização e é vedada a interferência estatal em seu funcionamento."
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Art. 5º, XVIII da CF/88: A criação de associações independe de autorização e é vedada a interferência estatal em seu funcionamento."
   },
   {
-    id: 14,
-    category: "constitucional",
-    discipline: "D. Constitucional",
-    topic: "Art. 5º, XXV (Requisição Administrativa)",
-    question: "Em caso de iminente perigo público, a autoridade competente poderá usar de propriedade particular, assegurada ao proprietário:",
-    options: [
+    "id": 14,
+    "category": "constitucional",
+    "discipline": "D. Constitucional",
+    "topic": "Art. 5º, XXV (Requisição Administrativa)",
+    "question": "Em caso de iminente perigo público, a autoridade competente poderá usar de propriedade particular, assegurada ao proprietário:",
+    "options": [
       "Indenização prévia, justa e em títulos da dívida pública.",
       "Indenização ulterior, se houver dano.",
       "Isenção permanente de tributos imobiliários sobre o imóvel.",
       "Nenhuma contraprestação financeira por se tratar de encargo cívico."
     ],
-    correctAnswer: 1,
-    commentary: "Art. 5º, XXV da CF/88: Na requisição administrativa por iminente perigo público, a indenização é ulterior (posterior) e condicionada ao dano."
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Art. 5º, XXV da CF/88: Na requisição administrativa por iminente perigo público, a indenização é ulterior (posterior) e condicionada ao dano."
   },
   {
-    id: 15,
-    category: "constitucional",
-    discipline: "D. Constitucional",
-    topic: "Art. 5º, XXXVIII (Tribunal do Júri)",
-    question: "É reconhecida a instituição do júri pela CF/88, com a organização que lhe der a lei, assegurada expressamente a competência para o julgamento dos:",
-    options: [
+    "id": 15,
+    "category": "constitucional",
+    "discipline": "D. Constitucional",
+    "topic": "Art. 5º, XXXVIII (Tribunal do Júri)",
+    "question": "É reconhecida a instituição do júri pela CF/88, com a organização que lhe der a lei, assegurada expressamente a competência para o julgamento dos:",
+    "options": [
       "Crimes praticados por servidores públicos contra a administração em geral.",
       "Crimes de responsabilidade praticados por prefeitos e vereadores.",
       "Crimes dolosos contra a vida.",
       "Crimes culposos de trânsito que resultem em morte."
     ],
-    correctAnswer: 2,
-    commentary: "Art. 5º, XXXVIII, alínea 'd' da CF/88: Competência do Tribunal do Júri para julgamento dos crimes dolosos contra a vida."
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Art. 5º, XXXVIII, alínea 'd' da CF/88: Competência do Tribunal do Júri para julgamento dos crimes dolosos contra a vida."
   },
-
-  // BLOCO 2: LÍNGUA PORTUGUESA (16 a 30)
   {
-    id: 16,
-    category: "portugues",
-    discipline: "Língua Portuguesa",
-    topic: "Tipologia Textual: Narração",
-    question: "O tipo textual que se caracteriza pela sucessão temporal de fatos e pela presença de personagens, narrador, tempo e espaço denomina-se:",
-    options: [
+    "id": 16,
+    "category": "portugues",
+    "discipline": "Língua Portuguesa",
+    "topic": "Tipologia Textual: Narração",
+    "question": "O tipo textual que se caracteriza pela sucessão temporal de fatos e pela presença de personagens, narrador, tempo e espaço denomina-se:",
+    "options": [
+      "Narrativo.",
       "Expositivo.",
       "Descritivo.",
-      "Narrativo.",
       "Injuntivo."
     ],
-    correctAnswer: 2,
-    commentary: "O tipo narrativo estrutura-se em torno de uma sequência de acontecimentos no tempo e no espaço vividos por personagens."
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. O tipo narrativo estrutura-se em torno de uma sequência de acontecimentos no tempo e no espaço vividos por personagens."
   },
   {
-    id: 17,
-    category: "portugues",
-    discipline: "Língua Portuguesa",
-    topic: "Tipologia Textual: Descrição",
-    question: "O excerto 'O casarão antigo possuía portas largas de madeira escura, paredes descascadas pelo tempo e um assoalho de tábuas corridas que rangia' classifica-se predominantemente como:",
-    options: [
+    "id": 17,
+    "category": "portugues",
+    "discipline": "Língua Portuguesa",
+    "topic": "Tipologia Textual: Descrição",
+    "question": "O excerto 'O casarão antigo possuía portas largas de madeira escura, paredes descascadas pelo tempo e um assoalho de tábuas corridas que rangia' classifica-se predominantemente como:",
+    "options": [
       "Argumentativo.",
       "Descritivo.",
       "Injuntivo.",
       "Expositivo."
     ],
-    correctAnswer: 1,
-    commentary: "A tipologia descritiva constrói um retrato estático de um ambiente ou objeto com adjetivos e qualificadores."
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. A tipologia descritiva constrói um retrato estático de um ambiente ou objeto com adjetivos e qualificadores."
   },
   {
-    id: 18,
-    category: "portugues",
-    discipline: "Língua Portuguesa",
-    topic: "Tipologia Textual: Dissertação Argumentativa",
-    question: "O texto que se estrutura com o objetivo principal de defender um ponto de vista (tese), recorrendo a argumentos, dados e raciocínio lógico para convencer o leitor, é do tipo:",
-    options: [
+    "id": 18,
+    "category": "portugues",
+    "discipline": "Língua Portuguesa",
+    "topic": "Tipologia Textual: Dissertação Argumentativa",
+    "question": "O texto que se estrutura com o objetivo principal de defender um ponto de vista (tese), recorrendo a argumentos, dados e raciocínio lógico para convencer o leitor, é do tipo:",
+    "options": [
       "Dissertativo-argumentativo.",
       "Narrativo.",
       "Dissertativo-expositivo.",
       "Instrucional."
     ],
-    correctAnswer: 0,
-    commentary: "O texto dissertativo-argumentativo visa persuadir o leitor por meio da defesa de uma tese com argumentos lógicos."
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. O texto dissertativo-argumentativo visa persuadir o leitor por meio da defesa de uma tese com argumentos lógicos."
   },
   {
-    id: 19,
-    category: "portugues",
-    discipline: "Língua Portuguesa",
-    topic: "Tipologia Textual: Injunção / Instrução",
-    question: "Os manuais de instalação de equipamentos, receitas culinárias e bulas de medicamentos (na seção posologia) têm em comum a presença de verbos no imperativo ou infinitivo com instruções ao leitor. Essa tipologia é a:",
-    options: [
+    "id": 19,
+    "category": "portugues",
+    "discipline": "Língua Portuguesa",
+    "topic": "Tipologia Textual: Injunção / Instrução",
+    "question": "Os manuais de instalação de equipamentos, receitas culinárias e bulas de medicamentos (na seção posologia) têm em comum a presença de verbos no imperativo ou infinitivo com instruções ao leitor. Essa tipologia é a:",
+    "options": [
       "Descritiva.",
       "Narrativa.",
-      "Injuntiva ou instrucional.",
-      "Dialógica."
+      "Dialógica.",
+      "Injuntiva ou instrucional."
     ],
-    correctAnswer: 2,
-    commentary: "O tipo textual injuntivo orienta ou instrui ações ao leitor com verbos no imperativo ou infinitivo."
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. O tipo textual injuntivo orienta ou instrui ações ao leitor com verbos no imperativo ou infinitivo."
   },
   {
-    id: 20,
-    category: "portugues",
-    discipline: "Língua Portuguesa",
-    topic: "Gênero Textual: Editorial",
-    question: "Assinale a alternativa que define corretamente o gênero textual Editorial:",
-    options: [
-      "Texto assinado por um colunista que expressa sua visão pessoal e subjetiva sobre um fato.",
+    "id": 20,
+    "category": "portugues",
+    "discipline": "Língua Portuguesa",
+    "topic": "Gênero Textual: Editorial",
+    "question": "Assinale a alternativa que define corretamente o gênero textual Editorial:",
+    "options": [
       "Texto jornalístico que expressa o posicionamento institucional da empresa/jornal e não leva assinatura individual.",
+      "Texto assinado por um colunista que expressa sua visão pessoal e subjetiva sobre um fato.",
       "Comunicação estritamente interna trocada entre departamentos de uma mesma empresa.",
       "Relatório técnico produzido por peritos judiciais para embasar decisões do tribunal."
     ],
-    correctAnswer: 1,
-    commentary: "O Editorial expressa a opinião do jornal/empresa de comunicação e não leva assinatura de um articulista individual."
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. O Editorial expressa a opinião do jornal/empresa de comunicação e não leva assinatura de um articulista individual."
   },
   {
-    id: 21,
-    category: "portugues",
-    discipline: "Língua Portuguesa",
-    topic: "Redação Oficial: Ofício",
-    question: "A comunicação formal e padronizada emitida por autoridades públicas para tratar de assuntos oficiais de serviço com outras autoridades ou cidadãos denomina-se:",
-    options: [
+    "id": 21,
+    "category": "portugues",
+    "discipline": "Língua Portuguesa",
+    "topic": "Redação Oficial: Ofício",
+    "question": "A comunicação formal e padronizada emitida por autoridades públicas para tratar de assuntos oficiais de serviço com outras autoridades ou cidadãos denomina-se:",
+    "options": [
+      "Ofício.",
       "Carta comercial.",
       "Abaixo-assinado.",
-      "Ofício.",
       "Artigo de opinião."
     ],
-    correctAnswer: 2,
-    commentary: "O Ofício é o documento padrão de comunicação da Administração Pública com outras entidades ou cidadãos."
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. O Ofício é o documento padrão de comunicação da Administração Pública com outras entidades ou cidadãos."
   },
   {
-    id: 22,
-    category: "portugues",
-    discipline: "Língua Portuguesa",
-    topic: "Funções da Linguagem: Conotativa / Apelativa",
-    question: "Em um cartaz institucional afixado em repartição pública constam os dizeres: 'Economize energia elétrica. Apague as lâmpadas ao sair da sala.' O texto emprega tipologia injuntiva com a função de linguagem predominantemente:",
-    options: [
+    "id": 22,
+    "category": "portugues",
+    "discipline": "Língua Portuguesa",
+    "topic": "Funções da Linguagem: Conotativa / Apelativa",
+    "question": "Em um cartaz institucional afixado em repartição pública constam os dizeres: 'Economize energia elétrica. Apague as lâmpadas ao sair da sala.' O texto emprega tipologia injuntiva com a função de linguagem predominantemente:",
+    "options": [
       "Fática.",
       "Emotiva.",
       "Conotativa (ou apelativa).",
       "Metalinguística."
     ],
-    correctAnswer: 2,
-    commentary: "A função conotativa/apelativa busca influenciar e orientar o comportamento do leitor ('economize', 'apague')."
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. A função conotativa/apelativa busca influenciar e orientar o comportamento do leitor ('economize', 'apague')."
   },
   {
-    id: 23,
-    category: "portugues",
-    discipline: "Língua Portuguesa",
-    topic: "Teoria Textual: Tipo vs. Gênero",
-    question: "Sobre a diferença entre Tipo Textual e Gênero Textual, é correto afirmar que:",
-    options: [
+    "id": 23,
+    "category": "portugues",
+    "discipline": "Língua Portuguesa",
+    "topic": "Teoria Textual: Tipo vs. Gênero",
+    "question": "Sobre a diferença entre Tipo Textual e Gênero Textual, é correto afirmar que:",
+    "options": [
       "Os tipos textuais são infinitos e adaptáveis às situações sociais do cotidiano.",
       "Os gêneros textuais constituem um conjunto fixo e fechado de apenas cinco modelos gramaticais.",
       "Os tipos textuais dizem respeito à estrutura formal interna do texto, enquanto os gêneros referem-se aos usos sociais da língua.",
       "Não há diferença técnica entre eles, sendo termos perfeitamente sinônimos em concursos públicos."
     ],
-    correctAnswer: 2,
-    commentary: "Tipos textuais são modelos teóricos finitos (5 estruturas); gêneros textuais são infinitos e práticos (usos sociais)."
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Tipos textuais são modelos teóricos finitos (5 estruturas); gêneros textuais são infinitos e práticos (usos sociais)."
   },
   {
-    id: 24,
-    category: "portugues",
-    discipline: "Língua Portuguesa",
-    topic: "Gênero Textual: Artigo de Divulgação Científica",
-    question: "Um texto de Artigo de Divulgação Científica tem como finalidade primordial:",
-    options: [
-      "Transmitir conhecimentos científicos ao público geral por meio de linguagem acessível e informativa.",
+    "id": 24,
+    "category": "portugues",
+    "discipline": "Língua Portuguesa",
+    "topic": "Gênero Textual: Artigo de Divulgação Científica",
+    "question": "Um texto de Artigo de Divulgação Científica tem como finalidade primordial:",
+    "options": [
       "Contar uma narrativa fictícia com elementos mágicos e fabulosos.",
+      "Transmitir conhecimentos científicos ao público geral por meio de linguagem acessível e informativa.",
       "Vender produtos cosméticos por meio de apelos emocionais e imagens publicitárias.",
       "Estabelecer normas jurídicas imperativas para cumprimento obrigatório de pesquisadores."
     ],
-    correctAnswer: 0,
-    commentary: "O artigo de divulgação científica adapta a linguagem acadêmica para informar o público leigo."
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. O artigo de divulgação científica adapta a linguagem acadêmica para informar o público leigo."
   },
   {
-    id: 25,
-    category: "portugues",
-    discipline: "Língua Portuguesa",
-    topic: "Gênero Textual: Artigo de Opinião",
-    question: "O gênero textual Artigo de Opinião caracteriza-se formalmente por:",
-    options: [
+    "id": 25,
+    "category": "portugues",
+    "discipline": "Língua Portuguesa",
+    "topic": "Gênero Textual: Artigo de Opinião",
+    "question": "O gênero textual Artigo de Opinião caracteriza-se formalmente por:",
+    "options": [
       "Apresentar a visão neutra do veículo de comunicação sem a identificação do autor.",
-      "Ser um texto argumentativo assinado pelo próprio autor, que assume a responsabilidade pela tese defendida.",
       "Conter exclusivamente tabelas numéricas e dados matemáticos sem texto explicativo.",
-      "Limitar-se a narrar uma sequência cronológica de eventos policiais sem emitir juízo de valor."
+      "Limitar-se a narrar uma sequência cronológica de eventos policiais sem emitir juízo de valor.",
+      "Ser um texto argumentativo assinado pelo próprio autor, que assume a responsabilidade pela tese defendida."
     ],
-    correctAnswer: 1,
-    commentary: "O Artigo de Opinião é assinado pelo articulista e defende uma tese com argumentação subjetiva."
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. O Artigo de Opinião é assinado pelo articulista e defende uma tese com argumentação subjetiva."
   },
   {
-    id: 26,
-    category: "portugues",
-    discipline: "Língua Portuguesa",
-    topic: "Gênero Textual: Carta Comercial",
-    question: "A correspondência escrita formal utilizada especificamente no meio corporativo e privado para transações mercantis, pedidos de cotação ou cobranças é a:",
-    options: [
-      "Carta comercial.",
+    "id": 26,
+    "category": "portugues",
+    "discipline": "Língua Portuguesa",
+    "topic": "Gênero Textual: Carta Comercial",
+    "question": "A correspondência escrita formal utilizada especificamente no meio corporativo e privado para transações mercantis, pedidos de cotação ou cobranças é a:",
+    "options": [
       "Petição inicial.",
       "Portaria ministerial.",
+      "Carta comercial.",
       "Notícia de jornal."
     ],
-    correctAnswer: 0,
-    commentary: "A Carta Comercial é o gênero formal para comunicação de negócios entre empresas privadas."
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. A Carta Comercial é o gênero formal para comunicação de negócios entre empresas privadas."
   },
   {
-    id: 27,
-    category: "portugues",
-    discipline: "Língua Portuguesa",
-    topic: "Tipologia Textual: Dissertação Expositiva",
-    question: "O trecho 'A inflação é o aumento persistente e generalizado dos preços em uma economia. Ocorre quando a demanda por bens supera a capacidade produtiva' exemplifica a tipologia:",
-    options: [
-      "Dissertativa-expositiva.",
+    "id": 27,
+    "category": "portugues",
+    "discipline": "Língua Portuguesa",
+    "topic": "Tipologia Textual: Dissertação Expositiva",
+    "question": "O trecho 'A inflação é o aumento persistente e generalizado dos preços em uma economia. Ocorre quando a demanda por bens supera a capacidade produtiva' exemplifica a tipologia:",
+    "options": [
       "Narrativa.",
+      "Dissertativa-expositiva.",
       "Injuntiva.",
       "Prescritiva."
     ],
-    correctAnswer: 0,
-    commentary: "A dissertação expositiva define e explica um conceito com neutralidade e impessoalidade."
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. A dissertação expositiva define e explica um conceito com neutralidade e impessoalidade."
   },
   {
-    id: 28,
-    category: "portugues",
-    discipline: "Língua Portuguesa",
-    topic: "Semiótica: Texto Multimodal / Misto",
-    question: "Um anúncio publicitário que mescla ilustrações, cores contrastantes, slogan curto e texto explicativo é considerado um texto:",
-    options: [
+    "id": 28,
+    "category": "portugues",
+    "discipline": "Língua Portuguesa",
+    "topic": "Semiótica: Texto Multimodal / Misto",
+    "question": "Um anúncio publicitário que mescla ilustrações, cores contrastantes, slogan curto e texto explicativo é considerado um texto:",
+    "options": [
       "Exclusivamente não-verbal.",
       "Puramente descritivo sem intenção persuasiva.",
-      "Multimodal (ou misto), por conjugar recursos verbais e visuais.",
-      "Científico rigoroso."
+      "Científico rigoroso.",
+      "Multimodal (ou misto), por conjugar recursos verbais e visuais."
     ],
-    correctAnswer: 2,
-    commentary: "Textos multimodais conjugam linguagem verbal e não-verbal (imagens, cores, diagramação)."
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Textos multimodais conjugam linguagem verbal e não-verbal (imagens, cores, diagramação)."
   },
   {
-    id: 29,
-    category: "portugues",
-    discipline: "Língua Portuguesa",
-    topic: "Gênero Textual: Crônica",
-    question: "O gênero Crônica destaca-se na imprensa e na literatura por:",
-    options: [
+    "id": 29,
+    "category": "portugues",
+    "discipline": "Língua Portuguesa",
+    "topic": "Gênero Textual: Crônica",
+    "question": "O gênero Crônica destaca-se na imprensa e na literatura por:",
+    "options": [
       "Registrar normas regimentais e decretos administrativos com rigor técnico.",
-      "Abordar situações cotidianas e corriqueiras com estilo leve, reflexivo e por vezes poético.",
       "Exigir obrigatoriamente a assinatura de um colegiado de juristas para ser publicado.",
+      "Abordar situações cotidianas e corriqueiras com estilo leve, reflexivo e por vezes poético.",
       "Apresentar fórmulas matemáticas aplicadas a cálculos orçamentários."
     ],
-    correctAnswer: 1,
-    commentary: "A crônica parte de fatos cotidianos para desenvolver reflexões leves, críticas ou bem-humoradas."
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. A crônica parte de fatos cotidianos para desenvolver reflexões leves, críticas ou bem-humoradas."
   },
   {
-    id: 30,
-    category: "portugues",
-    discipline: "Língua Portuguesa",
-    topic: "Tipologia Textual: Prescrição / Sinalização",
-    question: "A placa indicativa que estampa 'Velocidade máxima permitida: 60 km/h' possui caráter essencialmente:",
-    options: [
+    "id": 30,
+    "category": "portugues",
+    "discipline": "Língua Portuguesa",
+    "topic": "Tipologia Textual: Prescrição / Sinalização",
+    "question": "A placa indicativa que estampa 'Velocidade máxima permitida: 60 km/h' possui caráter essencialmente:",
+    "options": [
       "Narrativo ficcional.",
-      "Descritivo poético.",
       "Prescritivo / Injuntivo.",
+      "Descritivo poético.",
       "Argumentativo subjetivo."
     ],
-    correctAnswer: 2,
-    commentary: "Placas com regras e ordens obrigatórias possuem caráter prescritivo/injuntivo."
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Placas com regras e ordens obrigatórias possuem caráter prescritivo/injuntivo."
   },
-
-  // =========================================================================
-  // BLOCO 3: DIREITO ADMINISTRATIVO (Questões 31 a 45 - Provas Reais INBRASP/Bancas CE)
-  // =========================================================================
   {
-    id: 31,
-    category: "administrativo",
-    day: "dia3",
-    discipline: "D. Administrativo",
-    topic: "Princípios Expressos (Art. 37, caput CF/88)",
-    question: "Conforme o Art. 37, caput, da Constituição Federal de 1988, a administração pública direta e indireta de qualquer dos Poderes da União, dos Estados, do Distrito Federal e dos Municípios obedecerá aos seguintes princípios expressos:",
-    options: [
-      "Legalidade, Impessoalidade, Moralidade, Publicidade e Eficiência.",
+    "id": 31,
+    "category": "administrativo",
+    "day": "dia3",
+    "discipline": "D. Administrativo",
+    "topic": "Princípios Expressos (Art. 37, caput CF/88)",
+    "question": "Conforme o Art. 37, caput, da Constituição Federal de 1988, a administração pública direta e indireta de qualquer dos Poderes da União, dos Estados, do Distrito Federal e dos Municípios obedecerá aos seguintes princípios expressos:",
+    "options": [
       "Legalidade, Supremacia do interesse público, Moralidade, Finalidade e Eficiência.",
+      "Legalidade, Impessoalidade, Moralidade, Publicidade e Eficiência.",
       "Proporcionalidade, Impessoalidade, Razoabilidade, Publicidade e Celeridade.",
       "Legalidade, Isonomia, Moralidade, Transparência e Motivação."
     ],
-    correctAnswer: 0,
-    commentary: "Art. 37, caput da CF/88 (Mnemônico LIMPE): Legalidade, Impessoalidade, Moralidade, Publicidade e Eficiência (incluído pela EC 19/98)."
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Art. 37, caput da CF/88 (Mnemônico LIMPE): Legalidade, Impessoalidade, Moralidade, Publicidade e Eficiência (incluído pela EC 19/98)."
   },
   {
-    id: 32,
-    category: "administrativo",
-    day: "dia3",
-    discipline: "D. Administrativo",
-    topic: "Princípio da Impessoalidade (Vedação de Promoção Pessoal)",
-    question: "De acordo com o Art. 37, § 1º, da CF/88, a publicidade dos atos, programas, obras, serviços e campanhas dos órgãos públicos deverá ter caráter educativo, informativo ou de orientação social, dela não podendo constar nomes, símbolos ou imagens que caracterizem promoção pessoal de autoridades ou servidores públicos. Tal comando decorre diretamente do princípio da:",
-    options: [
+    "id": 32,
+    "category": "administrativo",
+    "day": "dia3",
+    "discipline": "D. Administrativo",
+    "topic": "Princípio da Impessoalidade (Vedação de Promoção Pessoal)",
+    "question": "De acordo com o Art. 37, § 1º, da CF/88, a publicidade dos atos, programas, obras, serviços e campanhas dos órgãos públicos deverá ter caráter educativo, informativo ou de orientação social, dela não podendo constar nomes, símbolos ou imagens que caracterizem promoção pessoal de autoridades ou servidores públicos. Tal comando decorre diretamente do princípio da:",
+    "options": [
       "Continuidade do serviço público.",
-      "Impessoalidade.",
       "Autotutela.",
-      "Especialidade."
+      "Especialidade.",
+      "Impessoalidade."
     ],
-    correctAnswer: 1,
-    commentary: "A vedação de nomes, símbolos e imagens para autopromoção de prefeitos/vereadores é aplicação direta do princípio da IMPESSOALIDADE."
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. A vedação de nomes, símbolos e imagens para autopromoção de prefeitos/vereadores é aplicação direta do princípio da IMPESSOALIDADE."
   },
   {
-    id: 33,
-    category: "administrativo",
-    day: "dia3",
-    discipline: "D. Administrativo",
-    topic: "Princípio da Moralidade & Súmula Vinculante 13 (Nepotismo)",
-    question: "A nomeação de cônjuge, companheiro ou parente em linha reta, colateral ou por afinidade, até o terceiro grau, da autoridade nomeante para o exercício de cargo em comissão ou de confiança viola a Constituição Federal (Súmula Vinculante nº 13 do STF). Essa proibição fundamenta-se principalmente no princípio da:",
-    options: [
+    "id": 33,
+    "category": "administrativo",
+    "day": "dia3",
+    "discipline": "D. Administrativo",
+    "topic": "Princípio da Moralidade & Súmula Vinculante 13 (Nepotismo)",
+    "question": "A nomeação de cônjuge, companheiro ou parente em linha reta, colateral ou por afinidade, até o terceiro grau, da autoridade nomeante para o exercício de cargo em comissão ou de confiança viola a Constituição Federal (Súmula Vinculante nº 13 do STF). Essa proibição fundamenta-se principalmente no princípio da:",
+    "options": [
       "Moralidade administrativa.",
       "Eficiência econômica.",
       "Subsidiariedade.",
       "Segurança jurídica."
     ],
-    correctAnswer: 0,
-    commentary: "A vedação ao nepotismo (Súmula Vinculante 13) tem como pilar maior a MORALIDADE e a Impessoalidade administrativa."
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. A vedação ao nepotismo (Súmula Vinculante 13) tem como pilar maior a MORALIDADE e a Impessoalidade administrativa."
   },
   {
-    id: 34,
-    category: "administrativo",
-    day: "dia3",
-    discipline: "D. Administrativo",
-    topic: "Princípio da Autotutela (Súmulas 346 e 473 do STF)",
-    question: "A prerrogativa conferida à Administração Pública de rever seus próprios atos, anulando os ilegais e revogando os inoportunos ou inconvenientes, sem a necessidade de intervenção judicial prévia, decorre do princípio da:",
-    options: [
+    "id": 34,
+    "category": "administrativo",
+    "day": "dia3",
+    "discipline": "D. Administrativo",
+    "topic": "Princípio da Autotutela (Súmulas 346 e 473 do STF)",
+    "question": "A prerrogativa conferida à Administração Pública de rever seus próprios atos, anulando os ilegais e revogando os inoportunos ou inconvenientes, sem a necessidade de intervenção judicial prévia, decorre do princípio da:",
+    "options": [
+      "Autotutela.",
       "Legalidade estrita.",
       "Continuidade.",
-      "Autotutela.",
       "Razoabilidade."
     ],
-    correctAnswer: 2,
-    commentary: "Princípio da Autotutela (Súmulas 346 e 473 do STF): a Administração anula atos ilegais (efeito ex tunc) e revoga atos inoportunos (efeito ex nunc)."
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Princípio da Autotutela (Súmulas 346 e 473 do STF): a Administração anula atos ilegais (efeito ex tunc) e revoga atos inoportunos (efeito ex nunc)."
   },
   {
-    id: 35,
-    category: "administrativo",
-    day: "dia3",
-    discipline: "D. Administrativo",
-    topic: "Organização Administrativa: Desconcentração vs. Descentralização",
-    question: "A distribuição interna de competências e atribuições dentro de uma mesma pessoa jurídica, criando uma relação de subordinação hierárquica e dando origem a órgãos públicos despersonalizados, denomina-se:",
-    options: [
+    "id": 35,
+    "category": "administrativo",
+    "day": "dia3",
+    "discipline": "D. Administrativo",
+    "topic": "Organização Administrativa: Desconcentração vs. Descentralização",
+    "question": "A distribuição interna de competências e atribuições dentro de uma mesma pessoa jurídica, criando uma relação de subordinação hierárquica e dando origem a órgãos públicos despersonalizados, denomina-se:",
+    "options": [
       "Descentralização por serviços.",
-      "Desconcentração.",
       "Delegação por colaboração.",
-      "Terceirização administrativa."
+      "Terceirização administrativa.",
+      "Desconcentração."
     ],
-    correctAnswer: 1,
-    commentary: "DescoNcentração (com 'O' de Órgão): distribuição interna de atribuições na mesma pessoa. DesceNtralização (com 'E' de Entidade): criação de nova pessoa jurídica."
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. DescoNcentração (com 'O' de Órgão): distribuição interna de atribuições na mesma pessoa. DesceNtralização (com 'E' de Entidade): criação de nova pessoa jurídica."
   },
   {
-    id: 36,
-    category: "administrativo",
-    day: "dia3",
-    discipline: "D. Administrativo",
-    topic: "Administração Indireta: Criação de Autarquias",
-    question: "Sobre as entidades que integram a Administração Pública Indireta, assinale a entidade que é criada DIRETAMENTE por lei específica e possui personalidade jurídica de direito público:",
-    options: [
+    "id": 36,
+    "category": "administrativo",
+    "day": "dia3",
+    "discipline": "D. Administrativo",
+    "topic": "Administração Indireta: Criação de Autarquias",
+    "question": "Sobre as entidades que integram a Administração Pública Indireta, assinale a entidade que é criada DIRETAMENTE por lei específica e possui personalidade jurídica de direito público:",
+    "options": [
       "Autarquia.",
       "Empresa Pública.",
       "Sociedade de Economia Mista.",
       "Fundação Pública de direito privado."
     ],
-    correctAnswer: 0,
-    commentary: "Art. 37, XIX da CF/88: Somente a AUTARQUIA é criada diretamente por lei específica. As demais entidades têm sua criação autorizada por lei."
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Art. 37, XIX da CF/88: Somente a AUTARQUIA é criada diretamente por lei específica. As demais entidades têm sua criação autorizada por lei."
   },
   {
-    id: 37,
-    category: "administrativo",
-    day: "dia3",
-    discipline: "D. Administrativo",
-    topic: "Sociedade de Economia Mista (Forma Societária)",
-    question: "A respeito das Sociedades de Economia Mista, assinale a afirmativa correta segundo o regime jurídico-constitucional brasileiro:",
-    options: [
-      "Devem ser constituídas obrigatoriamente sob a forma de Sociedade Anônima (S/A).",
+    "id": 37,
+    "category": "administrativo",
+    "day": "dia3",
+    "discipline": "D. Administrativo",
+    "topic": "Sociedade de Economia Mista (Forma Societária)",
+    "question": "A respeito das Sociedades de Economia Mista, assinale a afirmativa correta segundo o regime jurídico-constitucional brasileiro:",
+    "options": [
       "Seu capital social é integralmente pertencente ao Poder Público.",
       "Possuem personalidade jurídica de direito público e seus bens são inpenhoráveis.",
-      "Podem adotar qualquer formato societário, como Sociedade Limitada (Ltda)."
+      "Podem adotar qualquer formato societário, como Sociedade Limitada (Ltda).",
+      "Devem ser constituídas obrigatoriamente sob a forma de Sociedade Anônima (S/A)."
     ],
-    correctAnswer: 0,
-    commentary: "Sociedades de Economia Mista adotam OBRIGATORIAMENTE a forma de S/A (Art. 235 da Lei 6.404/76 e Art. 4º da Lei 13.303/16). Já a Empresa Pública pode adotar qualquer formato."
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Sociedades de Economia Mista adotam OBRIGATORIAMENTE a forma de S/A (Art. 235 da Lei 6.404/76 e Art. 4º da Lei 13.303/16). Já a Empresa Pública pode adotar qualquer formato."
   },
   {
-    id: 38,
-    category: "administrativo",
-    day: "dia3",
-    discipline: "D. Administrativo",
-    topic: "Empresa Pública vs. Sociedade de Economia Mista (Capital)",
-    question: "Uma Empresa Pública distingue-se de uma Sociedade de Economia Mista quanto à composição de seu capital porque a Empresa Pública:",
-    options: [
+    "id": 38,
+    "category": "administrativo",
+    "day": "dia3",
+    "discipline": "D. Administrativo",
+    "topic": "Empresa Pública vs. Sociedade de Economia Mista (Capital)",
+    "question": "Uma Empresa Pública distingue-se de uma Sociedade de Economia Mista quanto à composição de seu capital porque a Empresa Pública:",
+    "options": [
       "Admite a participação de capital privado minoritário na sua constituição.",
-      "Possui seu capital social formado 100% (exclusivamente) por recursos públicos.",
       "É criada obrigatoriamente sob a forma de cooperativa sem fins lucrativos.",
+      "Possui seu capital social formado 100% (exclusivamente) por recursos públicos.",
       "Não se submete à fiscalização do Tribunal de Contas respectivo."
     ],
-    correctAnswer: 1,
-    commentary: "O capital social da Empresa Pública é 100% público (da União, Estados ou Municípios). Na SEM, o capital é misto (maioria com direito a voto pública)."
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. O capital social da Empresa Pública é 100% público (da União, Estados ou Municípios). Na SEM, o capital é misto (maioria com direito a voto pública)."
   },
   {
-    id: 39,
-    category: "administrativo",
-    day: "dia3",
-    discipline: "D. Administrativo",
-    topic: "Teoria do Órgão / Imputação Volitiva",
-    question: "A teoria adotada no Brasil segundo a qual a manifestação de vontade dos agentes públicos é diretamente atribuída (imputada) à pessoa jurídica a qual pertencem denomina-se:",
-    options: [
+    "id": 39,
+    "category": "administrativo",
+    "day": "dia3",
+    "discipline": "D. Administrativo",
+    "topic": "Teoria do Órgão / Imputação Volitiva",
+    "question": "A teoria adotada no Brasil segundo a qual a manifestação de vontade dos agentes públicos é diretamente atribuída (imputada) à pessoa jurídica a qual pertencem denomina-se:",
+    "options": [
+      "Teoria do Órgão (ou da Imputação Volitiva).",
       "Teoria do Mandato.",
       "Teoria da Representação.",
-      "Teoria do Órgão (ou da Imputação Volitiva).",
       "Teoria do Risco Integral."
     ],
-    correctAnswer: 2,
-    commentary: "A Teoria do Órgão (criada por Otto Gierke) estabelece que a atuação do servidor/agente é imputada diretamente à pessoa jurídica (ente estatal)."
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. A Teoria do Órgão (criada por Otto Gierke) estabelece que a atuação do servidor/agente é imputada diretamente à pessoa jurídica (ente estatal)."
   },
   {
-    id: 40,
-    category: "administrativo",
-    day: "dia3",
-    discipline: "D. Administrativo",
-    topic: "Órgãos Públicos (Personalidade e Capacidade)",
-    question: "Os órgãos públicos são centros de competência desprovidos de personalidade jurídica própria. Como regra geral em juízo, os órgãos públicos:",
-    options: [
+    "id": 40,
+    "category": "administrativo",
+    "day": "dia3",
+    "discipline": "D. Administrativo",
+    "topic": "Órgãos Públicos (Personalidade e Capacidade)",
+    "question": "Os órgãos públicos são centros de competência desprovidos de personalidade jurídica própria. Como regra geral em juízo, os órgãos públicos:",
+    "options": [
       "Podem ser réus diretos em qualquer ação de cobrança sem representação do Município.",
-      "Não possuem capacidade processual, cabendo ao ente federativo figurar no polo da ação.",
       "Têm patrimônio próprio separado das contas gerais da Prefeitura ou Câmara.",
-      "Podem emitir notas fiscais comerciais em nome próprio para prestar serviços a terceiros."
+      "Podem emitir notas fiscais comerciais em nome próprio para prestar serviços a terceiros.",
+      "Não possuem capacidade processual, cabendo ao ente federativo figurar no polo da ação."
     ],
-    correctAnswer: 1,
-    commentary: "Como regra geral, órgãos não possuem capacidade processual nem patrimônio próprio; quem responde em juízo é a pessoa jurídica (ex: Município de Meruoca)."
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Como regra geral, órgãos não possuem capacidade processual nem patrimônio próprio; quem responde em juízo é a pessoa jurídica (ex: Município de Meruoca)."
   },
   {
-    id: 41,
-    category: "administrativo",
-    day: "dia3",
-    discipline: "D. Administrativo",
-    topic: "Princípio da Proporcionalidade e Razoabilidade",
-    question: "O princípio que impõe à Administração Pública e aos seus agentes a adequação entre os meios empregados e os fins a serem alcançados, vedando a imposição de restrições ou sanções em medida superior à estritamente necessária, é o princípio da:",
-    options: [
-      "Proporcionalidade e Razoabilidade.",
+    "id": 41,
+    "category": "administrativo",
+    "day": "dia3",
+    "discipline": "D. Administrativo",
+    "topic": "Princípio da Proporcionalidade e Razoabilidade",
+    "question": "O princípio que impõe à Administração Pública e aos seus agentes a adequação entre os meios empregados e os fins a serem alcançados, vedando a imposição de restrições ou sanções em medida superior à estritamente necessária, é o princípio da:",
+    "options": [
       "Continuidade do serviço.",
       "Publicidade.",
-      "Hierarquia funcional."
+      "Hierarquia funcional.",
+      "Proporcionalidade e Razoabilidade."
     ],
-    correctAnswer: 0,
-    commentary: "A Razoabilidade e a Proporcionalidade proíbem o excesso de poder e exigem a justa medida entre meios e fins na atuação administrativa."
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. A Razoabilidade e a Proporcionalidade proíbem o excesso de poder e exigem a justa medida entre meios e fins na atuação administrativa."
   },
   {
-    id: 42,
-    category: "administrativo",
-    day: "dia3",
-    discipline: "D. Administrativo",
-    topic: "Autarquias (Imunidade Tributária Recíproca)",
-    question: "As Autarquias gozam de prerrogativas próprias de entidades de direito público. Entre elas destaca-se expressamente na CF/88:",
-    options: [
+    "id": 42,
+    "category": "administrativo",
+    "day": "dia3",
+    "discipline": "D. Administrativo",
+    "topic": "Autarquias (Imunidade Tributária Recíproca)",
+    "question": "As Autarquias gozam de prerrogativas próprias de entidades de direito público. Entre elas destaca-se expressamente na CF/88:",
+    "options": [
       "Isenção absoluta de prestar concurso público para admissão de seus servidores.",
       "Imunidade tributária recíproca sobre seu patrimônio, renda e serviços vinculados às suas finalidades essenciais.",
       "Livre contratação de serviços e compras sem necessidade de licitação.",
       "Possibilidade de decretação de falência por credores privados."
     ],
-    correctAnswer: 1,
-    commentary: "Art. 150, § 2º da CF/88: A imunidade tributária recíproca é expressamente extensiva às autarquias e fundações mantidas pelo Poder Público."
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Art. 150, § 2º da CF/88: A imunidade tributária recíproca é expressamente extensiva às autarquias e fundações mantidas pelo Poder Público."
   },
   {
-    id: 43,
-    category: "administrativo",
-    day: "dia3",
-    discipline: "D. Administrativo",
-    topic: "Princípio da Continuidade do Serviço Público",
-    question: "O princípio da Continuidade do Serviço Público fundamenta diversas regras na administração, EXCETO:",
-    options: [
+    "id": 43,
+    "category": "administrativo",
+    "day": "dia3",
+    "discipline": "D. Administrativo",
+    "topic": "Princípio da Continuidade do Serviço Público",
+    "question": "O princípio da Continuidade do Serviço Público fundamenta diversas regras na administração, EXCETO:",
+    "options": [
       "A exigência de regras rígidas para manutenção de serviços essenciais em caso de greve.",
-      "A prerrogativa da administração de utilizar equipamentos do contratado para evitar paralisação de serviço essencial.",
       "A autorização para que o servidor público abandone suas funções a qualquer momento sem responder por processo disciplinar.",
+      "A prerrogativa da administração de utilizar equipamentos do contratado para evitar paralisação de serviço essencial.",
       "A restrição temporária à rescisão unilateral imediata por parte de concessionárias privadas."
     ],
-    correctAnswer: 2,
-    commentary: "O abandono de cargo é falta funcional gravíssima que gera demissão, decorrendo justamente do dever de continuidade dos serviços públicos."
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. O abandono de cargo é falta funcional gravíssima que gera demissão, decorrendo justamente do dever de continuidade dos serviços públicos."
   },
   {
-    id: 44,
-    category: "administrativo",
-    day: "dia3",
-    discipline: "D. Administrativo",
-    topic: "Fundações Públicas (Art. 37, XIX CF/88)",
-    question: "Segundo o Art. 37, XIX, da CF/88, as Fundações Públicas:",
-    options: [
+    "id": 44,
+    "category": "administrativo",
+    "day": "dia3",
+    "discipline": "D. Administrativo",
+    "topic": "Fundações Públicas (Art. 37, XIX CF/88)",
+    "question": "Segundo o Art. 37, XIX, da CF/88, as Fundações Públicas:",
+    "options": [
       "São criadas diretamente por decreto do Chefe do Poder Executivo.",
-      "Têm sua criação autorizada por lei específica, cabendo a lei complementar definir as áreas de sua atuação.",
       "Não necessitam de autorização em lei, bastando registro em cartório civil.",
+      "Têm sua criação autorizada por lei específica, cabendo a lei complementar definir as áreas de sua atuação.",
       "Devem atuar exclusivamente na exploração comercial com fins lucrativos."
     ],
-    correctAnswer: 1,
-    commentary: "Art. 37, XIX da CF/88: Somente por lei específica é autorizada a instituição de fundação pública, cabendo a lei complementar definir as áreas de sua atuação."
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Art. 37, XIX da CF/88: Somente por lei específica é autorizada a instituição de fundação pública, cabendo a lei complementar definir as áreas de sua atuação."
   },
   {
-    id: 45,
-    category: "administrativo",
-    day: "dia3",
-    discipline: "D. Administrativo",
-    topic: "Princípio da Segurança Jurídica & Confiança Legítima",
-    question: "O princípio da Segurança Jurídica, em sua vertente de Proteção à Confiança Legítima, visa precipuamente a:",
-    options: [
-      "Proteger a boa-fé do administrado contra alterações retroativas e abruptas de interpretação normativa pela administração.",
+    "id": 45,
+    "category": "administrativo",
+    "day": "dia3",
+    "discipline": "D. Administrativo",
+    "topic": "Princípio da Segurança Jurídica & Confiança Legítima",
+    "question": "O princípio da Segurança Jurídica, em sua vertente de Proteção à Confiança Legítima, visa precipuamente a:",
+    "options": [
       "Garantir que qualquer servidor possa alterar regras de editais após a homologação do concurso.",
       "Permitir a anulação de atos favoráveis ao administrado a qualquer tempo, mesmo após decorridos 40 anos.",
+      "Proteger a boa-fé do administrado contra alterações retroativas e abruptas de interpretação normativa pela administração.",
       "Impedir que o Poder Legislativo crie ou altere leis municipais."
     ],
-    correctAnswer: 0,
-    commentary: "A proteção à confiança legítima (vertente subjetiva da segurança jurídica) impede que novas interpretações retroajam para prejudicar situações consolidadas de boa-fé."
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. A proteção à confiança legítima (vertente subjetiva da segurança jurídica) impede que novas interpretações retroajam para prejudicar situações consolidadas de boa-fé."
   },
-
-  // =========================================================================
-  // BLOCO 4: NOÇÕES DE INFORMÁTICA (Questões 46 a 60 - Provas Reais INBRASP/Bancas CE)
-  // =========================================================================
   {
-    id: 46,
-    category: "informatica",
-    day: "dia3",
-    discipline: "Informática",
-    topic: "Windows 11: Caracteres Proibidos em Nomes de Arquivos",
-    question: "No sistema operacional Microsoft Windows 11, ao tentar renomear um arquivo ou pasta, o usuário é impedido de utilizar determinados caracteres reservados pelo sistema. Assinale a alternativa que contém apenas caracteres PROIBIDOS em nomes de arquivos no Windows:",
-    options: [
-      "\\ / : * ? \" < > |",
+    "id": 46,
+    "category": "informatica",
+    "day": "dia3",
+    "discipline": "Informática",
+    "topic": "Windows 11: Caracteres Proibidos em Nomes de Arquivos",
+    "question": "No sistema operacional Microsoft Windows 11, ao tentar renomear um arquivo ou pasta, o usuário é impedido de utilizar determinados caracteres reservados pelo sistema. Assinale a alternativa que contém apenas caracteres PROIBIDOS em nomes de arquivos no Windows:",
+    "options": [
       "@ # $ % _ - +",
+      "\\ / : * ? \" < > |",
       "( ) [ ] { } .",
       "! & = ~ ^ ;"
     ],
-    correctAnswer: 0,
-    commentary: "Os 9 caracteres proibidos no Windows são: barras (\\ /), dois pontos (:), asterisco (*), interrogação (?), aspas (\"), menor (<), maior (>) e pipe (|)."
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Os 9 caracteres proibidos no Windows são: barras (\\ /), dois pontos (:), asterisco (*), interrogação (?), aspas (\"), menor (<), maior (>) e pipe (|)."
   },
   {
-    id: 47,
-    category: "informatica",
-    day: "dia3",
-    discipline: "Informática",
-    topic: "Windows 11: Atalho de Bloqueio de Tela",
-    question: "No Windows 11, o atalho de teclado padrão utilizado para BLOQUEAR rapidamente o computador ao se ausentar da mesa de trabalho é:",
-    options: [
+    "id": 47,
+    "category": "informatica",
+    "day": "dia3",
+    "discipline": "Informática",
+    "topic": "Windows 11: Atalho de Bloqueio de Tela",
+    "question": "No Windows 11, o atalho de teclado padrão utilizado para BLOQUEAR rapidamente o computador ao se ausentar da mesa de trabalho é:",
+    "options": [
       "Ctrl + Alt + B",
       "Alt + F4",
       "Logotipo do Windows + L",
       "Ctrl + Shift + Esc"
     ],
-    correctAnswer: 2,
-    commentary: "Win + L (Lock) bloqueia a sessão imediatamente sem fechar os programas abertos, exigindo senha para desbloqueio."
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Win + L (Lock) bloqueia a sessão imediatamente sem fechar os programas abertos, exigindo senha para desbloqueio."
   },
   {
-    id: 48,
-    category: "informatica",
-    day: "dia3",
-    discipline: "Informática",
-    topic: "Windows 11: Exclusão Permanente (Shift + Delete)",
-    question: "No Windows 11, ao selecionar um arquivo e pressionar a combinação de teclas Shift + Delete, o sistema:",
-    options: [
+    "id": 48,
+    "category": "informatica",
+    "day": "dia3",
+    "discipline": "Informática",
+    "topic": "Windows 11: Exclusão Permanente (Shift + Delete)",
+    "question": "No Windows 11, ao selecionar um arquivo e pressionar a combinação de teclas Shift + Delete, o sistema:",
+    "options": [
       "Move o arquivo para a Lixeira do sistema para posterior restauração.",
-      "Exclui permanentemente o arquivo sem enviá-lo para a Lixeira.",
       "Cria um atalho na área de trabalho e oculta o arquivo original.",
+      "Exclui permanentemente o arquivo sem enviá-lo para a Lixeira.",
       "Envia o arquivo automaticamente por e-mail para a nuvem."
     ],
-    correctAnswer: 1,
-    commentary: "Shift + Delete executa exclusão permanente direta sem passar pela Lixeira do Windows."
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Shift + Delete executa exclusão permanente direta sem passar pela Lixeira do Windows."
   },
   {
-    id: 49,
-    category: "informatica",
-    day: "dia3",
-    discipline: "Informática",
-    topic: "Windows 11: Atalho do Explorador de Arquivos",
-    question: "O atalho de teclado padrão para abrir instantaneamente o Explorador de Arquivos (File Explorer) no Windows 11 é:",
-    options: [
-      "Logotipo do Windows + E",
+    "id": 49,
+    "category": "informatica",
+    "day": "dia3",
+    "discipline": "Informática",
+    "topic": "Windows 11: Atalho do Explorador de Arquivos",
+    "question": "O atalho de teclado padrão para abrir instantaneamente o Explorador de Arquivos (File Explorer) no Windows 11 é:",
+    "options": [
       "Logotipo do Windows + R",
+      "Logotipo do Windows + E",
       "Ctrl + E",
       "Alt + Tab"
     ],
-    correctAnswer: 0,
-    commentary: "Win + E (Explorer) abre o Explorador de Arquivos. Win + R abre o diálogo Executar."
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Win + E (Explorer) abre o Explorador de Arquivos. Win + R abre o diálogo Executar."
   },
   {
-    id: 50,
-    category: "informatica",
-    day: "dia3",
-    discipline: "Informática",
-    topic: "Linux Ubuntu: Diretório de Configurações (/etc)",
-    question: "Na estrutura de diretórios do sistema operacional Linux (como o Ubuntu), o diretório responsável por armazenar os arquivos de configuração globais do sistema e dos serviços instalados é o:",
-    options: [
+    "id": 50,
+    "category": "informatica",
+    "day": "dia3",
+    "discipline": "Informática",
+    "topic": "Linux Ubuntu: Diretório de Configurações (/etc)",
+    "question": "Na estrutura de diretórios do sistema operacional Linux (como o Ubuntu), o diretório responsável por armazenar os arquivos de configuração globais do sistema e dos serviços instalados é o:",
+    "options": [
       "/bin",
-      "/etc",
       "/home",
-      "/dev"
+      "/dev",
+      "/etc"
     ],
-    correctAnswer: 1,
-    commentary: "O diretório /etc armazena arquivos de configuração essenciais de programas e do sistema no Linux."
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. O diretório /etc armazena arquivos de configuração essenciais de programas e do sistema no Linux."
   },
   {
-    id: 51,
-    category: "informatica",
-    day: "dia3",
-    discipline: "Informática",
-    topic: "Linux Ubuntu: Diretório dos Usuários (/home)",
-    question: "No Linux Ubuntu, o diretório onde são armazenados os arquivos pessoais, pastas e documentos de cada usuário comum do sistema é o:",
-    options: [
+    "id": 51,
+    "category": "informatica",
+    "day": "dia3",
+    "discipline": "Informática",
+    "topic": "Linux Ubuntu: Diretório dos Usuários (/home)",
+    "question": "No Linux Ubuntu, o diretório onde são armazenados os arquivos pessoais, pastas e documentos de cada usuário comum do sistema é o:",
+    "options": [
       "/root",
       "/var",
-      "/home",
-      "/usr"
+      "/usr",
+      "/home"
     ],
-    correctAnswer: 2,
-    commentary: "O diretório /home contém as pastas de cada usuário comum (ex: /home/ruan). O diretório /root é a pasta pessoal do superusuário."
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. O diretório /home contém as pastas de cada usuário comum (ex: /home/ruan). O diretório /root é a pasta pessoal do superusuário."
   },
   {
-    id: 52,
-    category: "informatica",
-    day: "dia3",
-    discipline: "Informática",
-    topic: "Linux: Comando para Listar Arquivos (ls)",
-    question: "No terminal de comandos do Linux, o comando utilizado para LISTAR os arquivos e subdiretórios contidos no diretório atual é:",
-    options: [
-      "cd",
+    "id": 52,
+    "category": "informatica",
+    "day": "dia3",
+    "discipline": "Informática",
+    "topic": "Linux: Comando para Listar Arquivos (ls)",
+    "question": "No terminal de comandos do Linux, o comando utilizado para LISTAR os arquivos e subdiretórios contidos no diretório atual é:",
+    "options": [
       "ls",
+      "cd",
       "pwd",
       "mkdir"
     ],
-    correctAnswer: 1,
-    commentary: "O comando 'ls' (list) lista arquivos e pastas. 'cd' navega, 'pwd' mostra o caminho atual e 'mkdir' cria diretório."
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. O comando 'ls' (list) lista arquivos e pastas. 'cd' navega, 'pwd' mostra o caminho atual e 'mkdir' cria diretório."
   },
   {
-    id: 53,
-    category: "informatica",
-    day: "dia3",
-    discipline: "Informática",
-    topic: "Linux: Comando para Criar Diretório (mkdir)",
-    question: "No Linux, para CRIAR um novo diretório chamado 'documentos_camara' via linha de comando no terminal, deve-se utilizar:",
-    options: [
+    "id": 53,
+    "category": "informatica",
+    "day": "dia3",
+    "discipline": "Informática",
+    "topic": "Linux: Comando para Criar Diretório (mkdir)",
+    "question": "No Linux, para CRIAR um novo diretório chamado 'documentos_camara' via linha de comando no terminal, deve-se utilizar:",
+    "options": [
       "rmdir documentos_camara",
-      "mkdir documentos_camara",
       "touch documentos_camara",
+      "mkdir documentos_camara",
       "cat documentos_camara"
     ],
-    correctAnswer: 1,
-    commentary: "'mkdir' (make directory) cria novas pastas. 'touch' cria arquivos vazios."
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. 'mkdir' (make directory) cria novas pastas. 'touch' cria arquivos vazios."
   },
   {
-    id: 54,
-    category: "informatica",
-    day: "dia3",
-    discipline: "Informática",
-    topic: "Hardware: Memória RAM (Volatilidade)",
-    question: "A respeito da memória RAM (Random Access Memory) de um computador, assinale a afirmativa correta:",
-    options: [
+    "id": 54,
+    "category": "informatica",
+    "day": "dia3",
+    "discipline": "Informática",
+    "topic": "Hardware: Memória RAM (Volatilidade)",
+    "question": "A respeito da memória RAM (Random Access Memory) de um computador, assinale a afirmativa correta:",
+    "options": [
       "É uma memória secundária de armazenamento permanente de fotos e vídeos.",
       "É uma memória volátil, cujo conteúdo é totalmente apagado quando o computador é desligado.",
       "Armazena a BIOS e não pode ser gravada nem alterada pelo usuário.",
       "Possui velocidade de leitura e gravação muito inferior à de um disco rígido tradicional (HD)."
     ],
-    correctAnswer: 1,
-    commentary: "A memória RAM é memória primária e VOLÁTIL: necessita de energia elétrica contínua para reter suas informações."
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. A memória RAM é memória primária e VOLÁTIL: necessita de energia elétrica contínua para reter suas informações."
   },
   {
-    id: 55,
-    category: "informatica",
-    day: "dia3",
-    discipline: "Informática",
-    topic: "Hardware: Memória ROM / BIOS (Não-volatilidade)",
-    question: "A memória do tipo ROM (Read Only Memory), presente na placa-mãe de computadores, caracteriza-se por:",
-    options: [
+    "id": 55,
+    "category": "informatica",
+    "day": "dia3",
+    "discipline": "Informática",
+    "topic": "Hardware: Memória ROM / BIOS (Não-volatilidade)",
+    "question": "A memória do tipo ROM (Read Only Memory), presente na placa-mãe de computadores, caracteriza-se por:",
+    "options": [
       "Ser não-volátil, retendo instruções essenciais de inicialização (firmware/BIOS) mesmo com o computador desligado.",
       "Permitir que o usuário instale programas e salve arquivos pessoais diretamente nela no dia a dia.",
       "Perder todos os dados gravados a cada reinicialização do sistema operacional.",
       "Ter capacidade de armazenamento na ordem de dezenas de Terabytes (TB)."
     ],
-    correctAnswer: 0,
-    commentary: "A ROM é NÃO-VOLÁTIL (mantém dados sem energia) e é de somente leitura na operação normal, gravada de fábrica com a BIOS/firmware."
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. A ROM é NÃO-VOLÁTIL (mantém dados sem energia) e é de somente leitura na operação normal, gravada de fábrica com a BIOS/firmware."
   },
   {
-    id: 56,
-    category: "informatica",
-    day: "dia3",
-    discipline: "Informática",
-    topic: "Hardware: Comparativo SSD vs. Disco Rígido (HD)",
-    question: "Em comparação aos discos rígidos magnéticos convencionais (HDs), as unidades de estado sólido (SSDs):",
-    options: [
+    "id": 56,
+    "category": "informatica",
+    "day": "dia3",
+    "discipline": "Informática",
+    "topic": "Hardware: Comparativo SSD vs. Disco Rígido (HD)",
+    "question": "Em comparação aos discos rígidos magnéticos convencionais (HDs), as unidades de estado sólido (SSDs):",
+    "options": [
       "Utilizam discos metálicos giratórios que produzem mais ruído e aquecimento.",
       "Utilizam chips de memória flash sem peças móveis mecânicas, oferecendo taxas de transferência muito mais rápidas e maior resistência a impactos.",
       "São muito mais lentas na inicialização do sistema operacional Windows.",
       "Só podem ser conectadas a computadores via rede sem fio (Wi-Fi)."
     ],
-    correctAnswer: 1,
-    commentary: "SSDs gravam dados em circuitos integrados de memória flash (sem peças mecânicas), sendo muito mais rápidos, silenciosos e resistentes."
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. SSDs gravam dados em circuitos integrados de memória flash (sem peças mecânicas), sendo muito mais rápidos, silenciosos e resistentes."
   },
   {
-    id: 57,
-    category: "informatica",
-    day: "dia3",
-    discipline: "Informática",
-    topic: "Hardware: Componentes da CPU (ULA, UC e Registradores)",
-    question: "A Unidade Central de Processamento (CPU) é o cérebro do computador. Ela é composta internamente por três blocos principais fundamentais:",
-    options: [
+    "id": 57,
+    "category": "informatica",
+    "day": "dia3",
+    "discipline": "Informática",
+    "topic": "Hardware: Componentes da CPU (ULA, UC e Registradores)",
+    "question": "A Unidade Central de Processamento (CPU) é o cérebro do computador. Ela é composta internamente por três blocos principais fundamentais:",
+    "options": [
       "Fonte de alimentação, cooler e placa de som.",
       "Unidade Lógica e Aritmética (ULA), Unidade de Controle (UC) e Registradores.",
       "Teclado, mouse e monitor de vídeo.",
       "Memória Cache, porta USB e leitor óptico de DVD."
     ],
-    correctAnswer: 1,
-    commentary: "A arquitetura clássica da CPU divide-se em: ULA (cálculos matemáticos e lógicos), UC (orquestração das instruções) e Registradores (memória interna)."
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. A arquitetura clássica da CPU divide-se em: ULA (cálculos matemáticos e lógicos), UC (orquestração das instruções) e Registradores (memória interna)."
   },
   {
-    id: 58,
-    category: "informatica",
-    day: "dia3",
-    discipline: "Informática",
-    topic: "Backup: Backup Incremental",
-    question: "O tipo de cópia de segurança (backup) que grava APENAS os arquivos que foram criados ou modificados desde o último backup (seja ele um backup completo ou outro incremental) é o:",
-    options: [
+    "id": 58,
+    "category": "informatica",
+    "day": "dia3",
+    "discipline": "Informática",
+    "topic": "Backup: Backup Incremental",
+    "question": "O tipo de cópia de segurança (backup) que grava APENAS os arquivos que foram criados ou modificados desde o último backup (seja ele um backup completo ou outro incremental) é o:",
+    "options": [
       "Backup Completo (Full).",
-      "Backup Incremental.",
       "Backup Espelho (Mirror).",
+      "Backup Incremental.",
       "Backup Residual."
     ],
-    correctAnswer: 1,
-    commentary: "O Backup Incremental salva apenas as alterações ocorridas desde o último backup realizado, sendo o mais rápido de executar."
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. O Backup Incremental salva apenas as alterações ocorridas desde o último backup realizado, sendo o mais rápido de executar."
   },
   {
-    id: 59,
-    category: "informatica",
-    day: "dia3",
-    discipline: "Informática",
-    topic: "Backup: Backup Diferencial",
-    question: "A diferença básica entre o Backup DIFERENCIAL e o Backup INCREMENTAL é que o Backup Diferencial:",
-    options: [
+    "id": 59,
+    "category": "informatica",
+    "day": "dia3",
+    "discipline": "Informática",
+    "topic": "Backup: Backup Diferencial",
+    "question": "A diferença básica entre o Backup DIFERENCIAL e o Backup INCREMENTAL é que o Backup Diferencial:",
+    "options": [
       "Copia sempre todos os arquivos criados ou modificados desde o último backup COMPLETO (Full).",
       "Apaga todos os arquivos originais do computador após a conclusão da cópia.",
       "Só pode ser executado em disquetes ou fitas magnéticas antigas.",
       "Não armazena nenhum arquivo com tamanho superior a 1 Megabyte (MB)."
     ],
-    correctAnswer: 0,
-    commentary: "O Backup Diferencial copia todas as alterações feitas a partir do último backup FULL (acumulando os dados modificados até novo Full)."
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. O Backup Diferencial copia todas as alterações feitas a partir do último backup FULL (acumulando os dados modificados até novo Full)."
   },
   {
-    id: 60,
-    category: "informatica",
-    day: "dia3",
-    discipline: "Informática",
-    topic: "Segurança de Dados: Regra 3-2-1 de Backup",
-    question: "A consagrada regra de segurança de dados '3-2-1 para Backup' recomenda manter:",
-    options: [
+    "id": 60,
+    "category": "informatica",
+    "day": "dia3",
+    "discipline": "Informática",
+    "topic": "Segurança de Dados: Regra 3-2-1 de Backup",
+    "question": "A consagrada regra de segurança de dados '3-2-1 para Backup' recomenda manter:",
+    "options": [
       "3 cópias dos dados, em 2 tipos de mídia diferentes, com pelo menos 1 cópia armazenada fora do local de trabalho (offsite/nuvem).",
       "3 computadores ligados ao mesmo tempo, durante 2 horas por dia, com 1 funcionário supervisionando.",
       "3 senhas iguais em 2 sistemas diferentes para 1 único usuário.",
       "3 antivírus instalados simultaneamente na mesma máquina durante 2 dias."
     ],
-    correctAnswer: 0,
-    commentary: "Regra 3-2-1: 3 cópias no total (1 primária + 2 backups), em pelo menos 2 tipos de mídia diferentes, e 1 cópia mantida fora da empresa/offsite (nuvem)."
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Regra 3-2-1: 3 cópias no total (1 primária + 2 backups), em pelo menos 2 tipos de mídia diferentes, e 1 cópia mantida fora da empresa/offsite (nuvem)."
+  },
+  {
+    "id": 61,
+    "category": "portugues",
+    "day": "dia4",
+    "discipline": "Língua Portuguesa",
+    "topic": "Acentuação Gráfica: Regra das Proparoxítonas",
+    "question": "No padrão da banca INBRASP, a regra de acentuação gráfica que justifica o acento na palavra 'LEGISLATIVO' não existe pois a palavra é paroxítona sem acento. Entretanto, assinale a alternativa em que TODAS as palavras são acentuadas rigorosamente pela regra das proparoxítonas:",
+    "options": [
+      "Técnico, caráter, público e relatório.",
+      "Orgânico, histórico, mérito e autarquia.",
+      "Político, cômputo, câmara e déficit.",
+      "Público, relógio, secretária e país."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Todas as palavras de (A) são proparoxítonas (po-LÍ-ti-co, CÔM-pu-to, CÂ-ma-ra, DÉ-fi-cit), que são 100% acentuadas. Em (B), 'caráter' e 'relatório' são paroxítonas; em (C), 'autarquia' é paroxítona terminada em ditongo; em (D), 'país' é hiato e 'relógio' é paroxítona terminada em ditongo."
+  },
+  {
+    "id": 62,
+    "category": "portugues",
+    "day": "dia4",
+    "discipline": "Língua Portuguesa",
+    "topic": "Acentuação Gráfica: Regra dos Hiatos",
+    "question": "Assinale a alternativa em que a palavra destacada recebe acento gráfico pela MESMA regra que justifica o acento na palavra 'SAÚDE':",
+    "options": [
+      "A saída de emergência da Câmara Municipal foi desobstruída pela fiscalização.",
+      "O servidor municipal goza de total autonomia no exercício da função pública.",
+      "O vereador realizou um discurso com alto teor patriótico perante a mesa.",
+      "A assembleia legislativa deliberou favoravelmente à concessão do benefício."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. 'Sa-ú-de' e 'sa-í-da' são acentuadas pela REGRA DO HIATO: a vogal 'i' ou 'u' tônica, segunda vogal do hiato, sozinha na sílaba (ou com 's'), sem ser seguida de 'nh' e sem estar precedida de ditongo em paroxítona. 'Autonomia' e 'assembleia' não recebem acento; 'patriótico' é proparoxítona."
+  },
+  {
+    "id": 63,
+    "category": "portugues",
+    "day": "dia4",
+    "discipline": "Língua Portuguesa",
+    "topic": "Ortografia: Novo Acordo Ortográfico (Ditongos Abertos)",
+    "question": "De acordo com o Acordo Ortográfico vigente da Língua Portuguesa, os ditongos abertos 'EI' e 'OI' perderam o acento gráfico quando se encontram na posição de:",
+    "options": [
+      "Monossílabos tônicos (ex: dói, réis, méis).",
+      "Oxítonas (ex: herói, troféu, constrói).",
+      "Paroxítonas (ex: ideia, jiboia, assembleia, heroico).",
+      "Proparoxítonas (ex: helicóptero, cômputo)."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. O Acordo Ortográfico eliminou o acento dos ditongos abertos 'EI' e 'OI' exclusivamente nas palavras PAROXÍTONAS (i-dei-a, ji-boi-a, as-sem-blei-a, pla-tei-a). Nas oxítonas e monossílabos tônicos, o acento PERMANECE: he-rói, cons-trói, céu, réis."
+  },
+  {
+    "id": 64,
+    "category": "portugues",
+    "day": "dia4",
+    "discipline": "Língua Portuguesa",
+    "topic": "Fonologia: Contagem de Fonemas e Letras",
+    "question": "A palavra 'MUNICÍPIO' e a palavra 'TRABALHO' apresentam, respectivamente, o seguinte número de letras e fonemas:",
+    "options": [
+      "9 letras e 8 fonemas; 8 letras e 8 fonemas.",
+      "9 letras e 10 fonemas; 8 letras e 6 fonemas.",
+      "9 letras e 9 fonemas; 8 letras e 7 fonemas.",
+      "8 letras e 8 fonemas; 7 letras e 6 fonemas."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Em 'MU-NI-CÍ-PIO': 9 letras e 9 fonemas (não há dígrafos). Em 'TRA-BA-LHO': 8 letras e 7 fonemas, pois o dígrafo 'lh' representa um único fonema consonantal [λ]."
+  },
+  {
+    "id": 65,
+    "category": "portugues",
+    "day": "dia4",
+    "discipline": "Língua Portuguesa",
+    "topic": "Fonologia: Encontros Vocálicos (Hiato vs Ditongo)",
+    "question": "Considere as palavras: I. História; II. Juízes; III. Rainha; IV. Coordenar. Classificam-se, respectivamente, quanto aos encontros vocálicos, como:",
+    "options": [
+      "Ditongo decrescente, Ditongo crescente, Tritongo e Hiato.",
+      "Ditongo crescente, Hiato, Hiato e Hiato.",
+      "Hiato, Ditongo crescente, Ditongo decrescente e Tritongo.",
+      "Ditongo crescente, Hiato, Ditongo decrescente e Hiato."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. I. His-tó-ria: semivogal + vogal (ditongo crescente oral); II. Ju-í-zes: duas vogais em sílabas separadas (hiato acentuado); III. Ra-i-nha: duas vogais em sílabas separadas (hiato, não acentuado antes de 'nh'); IV. Co-or-de-nar: repetição de vogais em sílabas separadas (hiato)."
+  },
+  {
+    "id": 66,
+    "category": "portugues",
+    "day": "dia4",
+    "discipline": "Língua Portuguesa",
+    "topic": "Emprego do Sinal Indicativo de Crase: Casos Proibidos",
+    "question": "O emprego do sinal indicativo de crase é rigorosamente PROIBIDO na seguinte frase:",
+    "options": [
+      "O presidente da Câmara dirigiu-se a todos os vereadores com respeito.",
+      "O projeto de lei foi remetido à Comissão de Constituição e Justiça.",
+      "A sessão solene teve início às nove horas da manhã em ponto.",
+      "O servidor compareceu à reunião extraordinária do plenário."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Em 'a todos os vereadores', o 'a' antecede pronome indefinido ('todos') e palavra masculina no plural ('vereadores'). Não há artigo definido feminino 'a', logo a crase é terminantemente proibida."
+  },
+  {
+    "id": 67,
+    "category": "portugues",
+    "day": "dia4",
+    "discipline": "Língua Portuguesa",
+    "topic": "Emprego da Crase: Casos Facultativos",
+    "question": "A ocorrência do acento grave indicativo de crase é FACULTATIVA (opcional) em:",
+    "options": [
+      "O técnico legislativo entregou a ata à sua chefia imediata.",
+      "A comissão parlamentar passou a investigar os fatos noticiados.",
+      "O cidadão compareceu a pé até a portaria do prédio público.",
+      "Ele redigiu a ata a lápis para posterior digitação oficial."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. A crase é facultativa em três casos clássicos (Mnemônico 'NOME DE MULHER, ATÉ, MINHA'): 1. Antes de pronome possessivo feminino no singular ('à sua' ou 'a sua'); 2. Antes de nomes próprios femininos sem especificador ('à Maria' ou 'a Maria'); 3. Após a preposição 'até' ('até à' ou 'até a')."
+  },
+  {
+    "id": 68,
+    "category": "portugues",
+    "day": "dia4",
+    "discipline": "Língua Portuguesa",
+    "topic": "Emprego da Crase: Antes de Verbos",
+    "question": "Analise a frase: 'O relator começou ___ expor as razões do veto e colocou o parecer ___ disposição da bancada'. Assinale a alternativa que preenche correta e respectivamente as lacunas:",
+    "options": [
+      "à — à",
+      "a — à",
+      "a — a",
+      "à — a"
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Antes de verbo ('expor'), não ocorre artigo feminino, logo usa-se apenas a preposição simples 'a' (sem crase). Na expressão 'à disposição', trata-se de locução adverbial/prepositiva com núcleo feminino, exigindo crase obrigatória."
+  },
+  {
+    "id": 69,
+    "category": "portugues",
+    "day": "dia4",
+    "discipline": "Língua Portuguesa",
+    "topic": "Ortografia Oficial: Emprego de Mal vs Mau",
+    "question": "Assinale a alternativa em que o termo sublinhado foi empregado em estrita conformidade com o padrão culto da língua:",
+    "options": [
+      "O servidor desempenhou mau as atribuições do seu cargo comissionado.",
+      "Ele é um homem mal, incapaz de agir com empatia no atendimento ao público.",
+      "O projeto de lei foi mau redigido pela assessoria parlamentar.",
+      "Mal o presidente declarou aberta a sessão, o plenário ficou em silêncio."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. 'Mal' é conjunção temporal com sentido de 'assim que / logo que' ('Mal o presidente declarou aberta...'). Em (A), deveria ser 'desempenhou mal' (oposto de bem); em (B), 'homem mau' (oposto de bom); em (D), 'mal redigido' (oposto de bem redigido)."
+  },
+  {
+    "id": 70,
+    "category": "portugues",
+    "day": "dia4",
+    "discipline": "Língua Portuguesa",
+    "topic": "Divisão Silábica e Separação de Dígrafos",
+    "question": "Assinale a alternativa em que a partição silábica de todas as palavras está inteiramente CORRETA:",
+    "options": [
+      "Su-bli-nhar, ex-ce-ção, car-ro e p-neu-má-ti-co.",
+      "Sub-li-nhar, e-xce-ção, ca-rro e pneu-má-ti-co.",
+      "Sub-lin-har, ex-ce-ção, car-ro e pneu-má-ti-co.",
+      "Sub-lin-har, ex-ce-ç-ão, ca-rro e pne-u-má-ti-co."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Os dígrafos 'rr', 'ss', 'sc', 'sç', 'xc' se SEPARAM na partição silábica (ex-ce-ção, car-ro). O prefixo 'sub' seguido de consoante mantém o 'b' na sílaba anterior: sub-lin-har. Encontros consonantais no início de palavra não se separam: pneu-má-ti-co."
+  },
+  {
+    "id": 71,
+    "category": "portugues",
+    "day": "dia4",
+    "discipline": "Língua Portuguesa",
+    "topic": "Emprego do Porquê / Por quê / Porque / Por que",
+    "question": "Identifique a frase em que o uso do porquê está rigorosamente CORRETO:",
+    "options": [
+      "O projeto foi rejeitado por que a comissão apontou inconstitucionalidade.",
+      "Os vereadores protestaram porque? Não houve justificativa clara.",
+      "Por quê você não compareceu à audiência pública de Meruoca ontem?",
+      "Não entendi o porquê de tanta discussão em torno de uma emenda simples."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. 'O porquê' é substantivo (vem acompanhado de artigo ou determinante) e deve ser grafado junto e com acento circunflexo. Em (A), deveria ser 'porque' (conjunção explicativa/causal); em (C), 'por quê' (fim de frase interrogativa); em (D), 'Por que' (início de pergunta direta, separado e sem acento)."
+  },
+  {
+    "id": 72,
+    "category": "portugues",
+    "day": "dia4",
+    "discipline": "Língua Portuguesa",
+    "topic": "Acentuação Gráfica: Oxítonas Terminadas em A, E, O, EM",
+    "question": "A palavra 'TAMBÉM' e a palavra 'PARABÉNS' recebem acento gráfico pela regra de acentuação das palavras:",
+    "options": [
+      "Paroxítonas terminadas em consoante nasal.",
+      "Monossílabos tônicos terminados em ditongo nasal.",
+      "Oxítonas terminadas em -em e -ens.",
+      "Proparoxítonas aparentes ou eventuais."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Acentuam-se as palavras oxítonas terminadas em -a(s), -e(s), -o(s), -em e -ens (ex: tam-bém, pa-ra-béns, ar-ma-zém, vinténs)."
+  },
+  {
+    "id": 73,
+    "category": "portugues",
+    "day": "dia4",
+    "discipline": "Língua Portuguesa",
+    "topic": "Crase diante de Pronomes Demonstrativos",
+    "question": "Assinale a frase em que a crase foi empregada CORRETAMENTE antes de pronome demonstrativo:",
+    "options": [
+      "Ele entregou o requerimento à esta servidora do protocolo.",
+      "O parecer foi contrário à essa proposta orçamentária do prefeito.",
+      "A moção de repúdio foi dirigida à quem faltou à sessão solene.",
+      "Refiro-me àquele vereador que presidiu a comissão de finanças."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Ocorre crase na junção da preposição 'a' (exigida pela regência de 'referir-se a') com a letra 'a' inicial dos pronomes aquele, aquela, aquilo: 'Refiro-me àquele'. Antes de 'esta', 'essa' ou 'quem', a crase é proibida."
+  },
+  {
+    "id": 74,
+    "category": "portugues",
+    "day": "dia4",
+    "discipline": "Língua Portuguesa",
+    "topic": "Acentuação Diferencial e Novo Acordo",
+    "question": "O Novo Acordo Ortográfico manteve o acento gráfico diferencial em um número muito reduzido de pares de palavras. Assinale a alternativa que contém uma palavra com acento diferencial OBRIGATÓRIO mantido:",
+    "options": [
+      "Pára (verbo parar, em oposição à preposição para).",
+      "Pêlo (substantivo, em oposição à contração pelo).",
+      "Pôde (pretérito perfeito do verbo poder, em oposição a pode, presente).",
+      "Pólo (substantivo, em oposição à combinação polo)."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. O Acordo Ortográfico aboliu o acento diferencial de pára/para, pêlo/pelo, pólo/polo. Foi MANTIDO obrigatoriamente em: PÔDE (passado) vs. PODE (presente) e PÔR (verbo) vs. POR (preposição). É facultativo em fôrma/forma."
+  },
+  {
+    "id": 75,
+    "category": "portugues",
+    "day": "dia4",
+    "discipline": "Língua Portuguesa",
+    "topic": "Emprego do Hífen com Prefixos",
+    "question": "Com o Novo Acordo Ortográfico, usa-se o hífen quando o prefixo termina com a mesma vogal com que se inicia o segundo elemento. Assinale a grafia CORRETA:",
+    "options": [
+      "Micro-ondas e anti-inflamatório.",
+      "Microondas e antiinflamatório.",
+      "Micro-ondas e antiinflamatório.",
+      "Microondas e anti-inflamatório."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Regra geral do hífen com prefixos: vogais iguais se separam por hífen (mi-cro-on-das, an-ti-in-fla-ma-tó-rio, au-to-ob-ser-va-ção); vogais diferentes se unem sem hífen (au-toes-ti-ma, an-ti-a-é-re-o)."
+  },
+  {
+    "id": 76,
+    "category": "constitucional",
+    "day": "dia4",
+    "discipline": "D. Constitucional",
+    "topic": "Art. 6º da CF/88: Rol dos Direitos Sociais",
+    "question": "O Art. 6º da Constituição Federal de 1988 estabelece os direitos sociais fundamentais. Assinale a alternativa que contém APENAS direitos sociais expressamente elencados no caput desse dispositivo:",
+    "options": [
+      "Propriedade, liberdade de crença, previdência social e segurança.",
+      "Inviolabilidade de domicílio, direito de herança, lazer e trabalho.",
+      "Nacionalidade, direitos políticos, saúde e assistência aos desamparados.",
+      "Educação, saúde, alimentação, trabalho, moradia e transporte."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Mnemônico 'EDU MORA LÁ, SAÚ TRABALHA ALI EM TRANSPORTE, SEGURA ASSIS PROSSEGUE PRENDENDO': Educação, Saúde, Alimentação, Trabalho, Moradia, Transporte, Lazer, Segurança, Previdência Social, Proteção à Maternidade e à Infância, e Assistência aos Desamparados (Art. 6º da CF/88)."
+  },
+  {
+    "id": 77,
+    "category": "constitucional",
+    "day": "dia4",
+    "discipline": "D. Constitucional",
+    "topic": "Art. 7º, XIII da CF/88: Duração do Trabalho",
+    "question": "Conforme o Art. 7º, XIII, da CF/88, a duração do trabalho normal dos trabalhadores urbanos e rurais não poderá ser superior a:",
+    "options": [
+      "8 horas diárias e 44 horas semanais, facultada a compensação de horários e a redução da jornada, mediante acordo ou convenção coletiva de trabalho.",
+      "8 horas diárias e 40 horas semanais, vedada qualquer forma de compensação de horário.",
+      "6 horas diárias e 36 horas semanais para todas as categorias profissionais urbanas.",
+      "10 horas diárias e 48 horas semanais, desde que haja autorização do sindicato da categoria."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Art. 7º, XIII da CF/88: 'duração do trabalho normal não superior a oito horas diárias e quarenta e quatro semanais, facultada a compensação de horários e a redução da jornada, mediante acordo ou convenção coletiva de trabalho'."
+  },
+  {
+    "id": 78,
+    "category": "constitucional",
+    "day": "dia4",
+    "discipline": "D. Constitucional",
+    "topic": "Art. 7º, XIV da CF/88: Turnos Ininterruptos de Revezamento",
+    "question": "A jornada de trabalho fixada pela Constituição Federal para o trabalho realizado em turnos ininterruptos de revezamento é de:",
+    "options": [
+      "8 horas improrrogáveis em qualquer hipótese.",
+      "4 horas diárias com intervalo de 30 minutos.",
+      "6 horas, salvo negociação coletiva.",
+      "12 horas seguidas de 36 horas de descanso."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Art. 7º, XIV da CF/88: 'jornada de seis horas para o trabalho realizado em turnos ininterruptos de revezamento, salvo negociação coletiva'."
+  },
+  {
+    "id": 79,
+    "category": "constitucional",
+    "day": "dia4",
+    "discipline": "D. Constitucional",
+    "topic": "Art. 7º, XVI da CF/88: Remuneração da Hora Extra",
+    "question": "Nos termos da Constituição Federal de 1988, a remuneração do serviço extraordinário (horas extras) será superior, no mínimo, à do normal em:",
+    "options": [
+      "20% (vinte por cento).",
+      "100% (cem por cento).",
+      "30% (trinta por cento).",
+      "50% (cinquenta por cento)."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Art. 7º, XVI da CF/88: 'remuneração do serviço extraordinário superior, no mínimo, em cinquenta por cento à do normal'."
+  },
+  {
+    "id": 80,
+    "category": "constitucional",
+    "day": "dia4",
+    "discipline": "D. Constitucional",
+    "topic": "Art. 7º, XVIII e XIX da CF/88: Licenças Gestante e Paternidade",
+    "question": "Quanto à proteção à maternidade e à paternidade, a CF/88 assegura licença à gestante, sem prejuízo do emprego e do salário, com a duração de:",
+    "options": [
+      "120 dias, e licença-paternidade nos termos fixados em lei.",
+      "90 dias, e licença-paternidade de 30 dias improrrogáveis.",
+      "180 dias obrigatórios em todas as empresas privadas do país.",
+      "60 dias, renováveis por igual período mediante atestado médico."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Art. 7º, XVIII da CF/88: 'licença à gestante, sem prejuízo do emprego e do salário, com a duração de cento e vinte dias'. A prorrogação para 180 dias (Programa Empresa Cidadã / Estatutos de Servidores) decorre de lei, mas o texto constitucional expresso fixa 120 dias."
+  },
+  {
+    "id": 81,
+    "category": "constitucional",
+    "day": "dia4",
+    "discipline": "D. Constitucional",
+    "topic": "Art. 7º, XXXIII da CF/88: Trabalho do Menor",
+    "question": "Sobre a proibição de trabalho a menores de idade, a Constituição Federal estabelece expressamente a proibição de:",
+    "options": [
+      "Qualquer trabalho a menores de dezoito anos, mesmo na condição de aprendiz em empresas familiares.",
+      "Trabalho noturno, perigoso ou insalubre a menores de dezoito e de qualquer trabalho a menores de dezesseis anos, salvo na condição de aprendiz, a partir de quatorze anos.",
+      "Trabalho noturno a menores de dezesseis anos e de qualquer trabalho a menores de catorze anos, sem exceções.",
+      "Trabalho insalubre a menores de vinte e um anos e aprendizagem a partir de doze anos."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Art. 7º, XXXIII da CF/88 (redação da EC 20/98): 'proibição de trabalho noturno, perigoso ou insalubre a menores de dezoito e de qualquer trabalho a menores de dezesseis anos, salvo na condição de aprendiz, a partir de quatorze anos'. Regra de ouro da INBRASP: 18 (noturno/perigoso/insalubre), 16 (regra geral de vedação) e 14 (aprendiz)."
+  },
+  {
+    "id": 82,
+    "category": "constitucional",
+    "day": "dia4",
+    "discipline": "D. Constitucional",
+    "topic": "Art. 7º, XXI da CF/88: Aviso Prévio",
+    "question": "A Constituição Federal de 1988 assegura o aviso prévio proporcional ao tempo de serviço, sendo de no mínimo:",
+    "options": [
+      "15 (quinze) dias para contratos de até um ano.",
+      "30 (trinta) dias, nos termos da lei.",
+      "60 (sessenta) dias para todos os trabalhadores urbanos.",
+      "45 (quarenta e cinco) dias incondicionalmente."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Art. 7º, XXI da CF/88: 'aviso prévio proporcional ao tempo de serviço, sendo no mínimo de trinta dias, nos termos da lei'."
+  },
+  {
+    "id": 83,
+    "category": "constitucional",
+    "day": "dia4",
+    "discipline": "D. Constitucional",
+    "topic": "Art. 7º, XVII da CF/88: Férias Remuneradas",
+    "question": "O gozo de férias anuais remuneradas assegurado pela Constituição Federal de 1988 prevê o pagamento de remuneração com acréscimo de:",
+    "options": [
+      "Pelo menos, um terço a mais do que o salário normal.",
+      "Cinquenta por cento a mais do que a remuneração ordinária.",
+      "Metade do salário base calculado sobre o último mês de trabalho.",
+      "Vinte por cento a título de gratificação de descanso anual."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Art. 7º, XVII da CF/88: 'gozo de férias anuais remuneradas com, pelo menos, um terço a mais do que o salário normal'."
+  },
+  {
+    "id": 84,
+    "category": "constitucional",
+    "day": "dia4",
+    "discipline": "D. Constitucional",
+    "topic": "Art. 7º, IX da CF/88: Remuneração do Trabalho Noturno",
+    "question": "Nos termos do Art. 7º, IX, da CF/88, em relação ao trabalho noturno, é direito constitucional do trabalhador:",
+    "options": [
+      "Jornada máxima reduzida para 4 horas sem adicional monetário.",
+      "Remuneração do trabalho noturno superior à do diurno.",
+      "Folga semanal dobrada para quem cumpre jornada noturna.",
+      "Aposentadoria especial automática aos cinco anos de trabalho noturno."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Art. 7º, IX da CF/88: 'remuneração do trabalho noturno superior à do diurno'."
+  },
+  {
+    "id": 85,
+    "category": "constitucional",
+    "day": "dia4",
+    "discipline": "D. Constitucional",
+    "topic": "Art. 7º, VI da CF/88: Irredutibilidade Salarial",
+    "question": "A regra constitucional acerca do salário dos trabalhadores estabelece a sua irredutibilidade, SALVO:",
+    "options": [
+      "Decisão unilateral discricionária do empregador em época de crise.",
+      "Atraso no pagamento de tributos pelo estabelecimento comercial.",
+      "O disposto em convenção ou acordo coletivo de trabalho.",
+      "Determinação verbal do delegado regional do trabalho."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Art. 7º, VI da CF/88: 'irredutibilidade do salário, salvo o disposto em convenção ou acordo coletivo'."
+  },
+  {
+    "id": 86,
+    "category": "constitucional",
+    "day": "dia4",
+    "discipline": "D. Constitucional",
+    "topic": "Art. 8º, I da CF/88: Autonomia e Liberdade Sindical",
+    "question": "Conforme o Art. 8º, I, da CF/88, é livre a associação profissional ou sindical, sendo expressamente VEDADA:",
+    "options": [
+      "Ao Poder Público a interferência e a intervenção na organização sindical, ressalvado o registro no órgão competente.",
+      "A criação de sindicatos representativos de categorias diferenciadas.",
+      "A filiação de servidores públicos a entidades de classe municipais.",
+      "A cobrança de mensalidade associativa voluntária pelo sindicato."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Art. 8º, I da CF/88: 'a lei não poderá exigir autorização do Estado para a fundação de sindicato, ressalvado o registro no órgão competente, vedadas ao Poder Público a interferência e a intervenção na organização sindical'."
+  },
+  {
+    "id": 87,
+    "category": "constitucional",
+    "day": "dia4",
+    "discipline": "D. Constitucional",
+    "topic": "Art. 8º, II da CF/88: Princípio da Unicidade Sindical",
+    "question": "O princípio da unicidade sindical estabelecido no Art. 8º, II, da CF/88 veda a criação de mais de uma organização sindical, em qualquer grau, representativa da mesma categoria:",
+    "options": [
+      "No mesmo Estado da federação, devendo haver sindicato único estadual.",
+      "Em todo o território nacional para uma mesma profissão regulamentada.",
+      "Na mesma base territorial, que será definida pelos trabalhadores interessados, não podendo ser inferior à área de um Município.",
+      "Na mesma microrregião geográfica estabelecida pelo IBGE."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Art. 8º, II da CF/88: 'é vedada a criação de mais de uma organização sindical, em qualquer grau, representativa de categoria profissional ou econômica, na mesma base territorial, que será definida pelos trabalhadores ou empregadores interessados, não podendo ser inferior à área de um Município'."
+  },
+  {
+    "id": 88,
+    "category": "constitucional",
+    "day": "dia4",
+    "discipline": "D. Constitucional",
+    "topic": "Art. 8º, VIII da CF/88: Estabilidade do Dirigente Sindical",
+    "question": "A estabilidade provisória do empregado sindicalizado que se candidata a cargo de direção ou representação sindical compreende o período:",
+    "options": [
+      "Apenas durante os meses de exercício efetivo do mandato sindical na sede.",
+      "A partir da posse até o dia do término estrito do mandato parlamentar.",
+      "Desde o registro da candidatura e, se eleito, ainda que suplente, até um ano após o final do mandato, salvo se cometer falta grave nos termos da lei.",
+      "Desde a fundação do sindicato até a sua dissolução voluntária."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Art. 8º, VIII da CF/88: 'é vedada a dispensa do empregado sindicalizado a partir do registro da candidatura a cargo de direção ou representação sindical e, se eleito, ainda que suplente, até um ano após o final do mandato, salvo se cometer falta grave nos termos da lei'."
+  },
+  {
+    "id": 89,
+    "category": "constitucional",
+    "day": "dia4",
+    "discipline": "D. Constitucional",
+    "topic": "Art. 9º da CF/88: Direito de Greve",
+    "question": "O direito de greve é expressamente garantido pelo Art. 9º da Constituição Federal de 1988, competindo aos:",
+    "options": [
+      "Empregadores autorizar previamente a paralisação das atividades operacionais.",
+      "Magistrados do trabalho convocar a greve mediante portaria ministerial.",
+      "Prefeitos municipais decretar a legalidade do movimento paradista.",
+      "Trabalhadores decidir sobre a oportunidade de exercê-lo e sobre os interesses que devam por meio dele defender."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Art. 9º, caput da CF/88: 'É assegurado o direito de greve, competindo aos trabalhadores decidir sobre a oportunidade de exercê-lo e sobre os interesses que devam por meio dele defender'."
+  },
+  {
+    "id": 90,
+    "category": "constitucional",
+    "day": "dia4",
+    "discipline": "D. Constitucional",
+    "topic": "Art. 11 da CF/88: Representação de Empregados",
+    "question": "Nas empresas com mais de quantos empregados é assegurada a eleição de um representante destes com a finalidade exclusiva de promover o entendimento direto com os empregadores (Art. 11 da CF)?",
+    "options": [
+      "Mais de 200 (duzentos) empregados.",
+      "Mais de 100 (cem) empregados.",
+      "Mais de 500 (quinhentos) empregados.",
+      "Mais de 50 (cinquenta) empregados."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Art. 11 da CF/88: 'Nas empresas de mais de duzentos empregados, é assegurada a eleição de um representante destes com a finalidade exclusiva de promover-lhes o entendimento direto com os empregadores'."
+  },
+  {
+    "id": 91,
+    "category": "legislacao",
+    "day": "dia4",
+    "discipline": "Lei Orgânica de Meruoca",
+    "topic": "Arts. 1º e 2º: Princípios e Autonomia Municipal",
+    "question": "De acordo com os princípios fundamentais da Lei Orgânica do Município de Meruoca/CE, o Município integra a República Federativa do Brasil e o Estado do Ceará, sendo dotado de autonomia:",
+    "options": [
+      "Política, administrativa e financeira.",
+      "Soberana, judiciária e militar.",
+      "Legislativa apenas, dependendo administrativamente do Estado.",
+      "Econômica, porém subordinada hierarquicamente ao Governo Estadual."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. A Lei Orgânica de Meruoca consagra a tríplice autonomia municipal conferida pelo Art. 18 e 29 da CF/88: Autonomia Política (eleição de prefeitos e vereadores), Administrativa (organização dos serviços locais) e Financeira (instituição e arrecadação de tributos próprios)."
+  },
+  {
+    "id": 92,
+    "category": "legislacao",
+    "day": "dia4",
+    "discipline": "Lei Orgânica de Meruoca",
+    "topic": "Soberania Popular no Município de Meruoca",
+    "question": "Nos termos da Lei Orgânica Municipal, todo o poder emana do povo meruoquense, que o exerce por meio de representantes eleitos ou diretamente. São formas de exercício direto da soberania popular no Município:",
+    "options": [
+      "Ação popular, mandado de segurança e inquérito civil público.",
+      "Plebiscito, referendo e iniciativa popular de projetos de lei.",
+      "Audiência prévia do Tribunal de Contas e veto do prefeito.",
+      "Votação nominal em comissões parlamentares de inquérito."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Em consonância com o Art. 14 da CF/88 e a Lei Orgânica de Meruoca, a soberania popular direta é exercida mediante: 1. Plebiscito (consulta prévia); 2. Referendo (consulta posterior à lei); 3. Iniciativa popular de leis perante a Câmara Municipal."
+  },
+  {
+    "id": 93,
+    "category": "legislacao",
+    "day": "dia4",
+    "discipline": "Lei Orgânica de Meruoca",
+    "topic": "Símbolos Oficiais do Município de Meruoca",
+    "question": "São símbolos oficiais do Município de Meruoca expressamente consagrados em sua legislação fundamental:",
+    "options": [
+      "O Selo Municipal, o Estandarte e o Brasão do Estado do Ceará.",
+      "O Brasão e a Bandeira apenas, sendo o Hino de competência estadual.",
+      "A Faixa do Prefeito e a Insígnia do Presidente da Câmara.",
+      "O Brasão, a Bandeira e o Hino do Município."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Conforme preceitua a Lei Orgânica Municipal (em harmonia com o Art. 13, § 2º da CF/88), os símbolos representativos do Município de Meruoca são a Bandeira, o Brasão e o Hino municipais."
+  },
+  {
+    "id": 94,
+    "category": "legislacao",
+    "day": "dia4",
+    "discipline": "Lei Orgânica de Meruoca",
+    "topic": "Poderes do Município de Meruoca",
+    "question": "São Poderes do Município de Meruoca, independentes e harmônicos entre si:",
+    "options": [
+      "O Legislativo, o Executivo e o Judiciário.",
+      "O Executivo, o Judiciário e o Ministério Público Municipal.",
+      "Apenas o Executivo, sendo o Legislativo um órgão consultivo auxiliar.",
+      "O Legislativo e o Executivo."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. No âmbito municipal NÃO HÁ Poder Judiciário nem Ministério Público local (ambos são órgãos estaduais/federais). Os únicos poderes municipais são o Poder Legislativo (Câmara Municipal) e o Poder Executivo (Prefeitura Municipal)."
+  },
+  {
+    "id": 95,
+    "category": "legislacao",
+    "day": "dia4",
+    "discipline": "Lei Orgânica de Meruoca",
+    "topic": "Competência Privativa do Município: Tributos e Orçamento",
+    "question": "Compete privativamente ao Município de Meruoca, no exercício de sua autonomia legislativa e administrativa:",
+    "options": [
+      "Legislar privativamente sobre direito civil, penal e processual eleitoral.",
+      "Instituir e arrecadar os tributos de sua competência e aplicar suas rendas, bem como fixar tarifas de serviços públicos municipais.",
+      "Emitir moeda municipal e controlar as taxas de juros bancários locais.",
+      "Organizar e manter o Poder Judiciário e a Defensoria Pública da Comarca."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Compete ao Município instituir tributos municipais (IPTU, ISS, ITBI, taxas e contribuições de iluminação pública), aplicar rendas e fixar tarifas de transporte e serviços locais. Legislar sobre direito civil/penal e emitir moeda são competências privativas da União (Art. 22 da CF)."
+  },
+  {
+    "id": 96,
+    "category": "legislacao",
+    "day": "dia4",
+    "discipline": "Lei Orgânica de Meruoca",
+    "topic": "Competência Privativa: Uso e Ocupação do Solo Urbano",
+    "question": "É matéria de interesse local inserida na competência privativa do Município de Meruoca:",
+    "options": [
+      "Explorar diretamente os serviços de telecomunicações e radiodifusão sonora.",
+      "Promover o adequado ordenamento territorial, mediante planejamento e controle do uso, do parcelamento e da ocupação do solo urbano.",
+      "Disciplinar a navegação aérea e a infraestrutura aeroespacial da Serra da Meruoca.",
+      "Autorizar a exploração de jazidas minerais e riquezas do subsolo na região."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Art. 30, VIII da CF/88 e Lei Orgânica de Meruoca: o ordenamento territorial, zoneamento urbano e controle de parcelamento/ocupação do solo (Plano Diretor, código de obras) é competência eminentemente municipal."
+  },
+  {
+    "id": 97,
+    "category": "legislacao",
+    "day": "dia4",
+    "discipline": "Lei Orgânica de Meruoca",
+    "topic": "Competência Comum do Município com a União e o Estado",
+    "question": "Assinale a alternativa que indica uma competência COMUM do Município de Meruoca em cooperação com o Estado do Ceará e a União:",
+    "options": [
+      "Criar e extinguir cargos privativos da Mesa Diretora da Assembleia Legislativa.",
+      "Instituir o Imposto sobre Circulação de Mercadorias e Serviços (ICMS).",
+      "Expedir passaportes e carteiras de identidade civil para estrangeiros.",
+      "Cuidar da saúde e assistência pública, da proteção e garantia das pessoas com deficiência."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Art. 23 da CF/88 e Lei Orgânica de Meruoca: a prestação de serviços de saúde, proteção de vulneráveis e pessoas com deficiência, meio ambiente e educação básica é matéria de competência comum dos três entes federados."
+  },
+  {
+    "id": 98,
+    "category": "legislacao",
+    "day": "dia4",
+    "discipline": "Lei Orgânica de Meruoca",
+    "topic": "Guarda Municipal e Segurança Patrimonial",
+    "question": "Nos termos da Lei Orgânica e do Art. 144, § 8º da CF/88, o Município de Meruoca poderá constituir guarda municipal destinada precipuamente à:",
+    "options": [
+      "Investigação de crimes eleitorais e tráfico interestadual de drogas.",
+      "Proteção de seus bens, serviços e instalações.",
+      "Substituição das polícias militar e civil nas ações de policiamento ostensivo geral.",
+      "Fiscalização do recolhimento de impostos da União e execução fiscal federal."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Art. 144, § 8º da CF/88 e legislação municipal: os municípios poderão constituir guardas municipais destinadas à proteção de seus bens, serviços e instalações, atuando também na segurança comunitária e patrimonial."
+  },
+  {
+    "id": 99,
+    "category": "legislacao",
+    "day": "dia4",
+    "discipline": "Lei Orgânica de Meruoca",
+    "topic": "Patrimônio e Bens Municipais",
+    "question": "Constituem bens do Município de Meruoca, conforme sua Lei Orgânica:",
+    "options": [
+      "Exclusivamente os edifícios onde funcionam a Prefeitura e a Câmara Municipal.",
+      "Todas as coisas móveis e imóveis, direitos e ações que a qualquer título lhe pertençam.",
+      "Apenas as praças e ruas pavimentadas pelo poder público municipal.",
+      "Os rios navegáveis que banham mais de dois estados da federação."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Constituem patrimônio e bens do Município todos os bens móveis e imóveis, direitos, títulos da dívida pública, créditos e ações pertencentes à municipalidade a qualquer título."
+  },
+  {
+    "id": 100,
+    "category": "legislacao",
+    "day": "dia4",
+    "discipline": "Lei Orgânica de Meruoca",
+    "topic": "Princípio da Publicidade e Publicação dos Atos Municipais",
+    "question": "A publicação das leis e dos atos administrativos normativos da Câmara Municipal e da Prefeitura de Meruoca é requisito essencial de:",
+    "options": [
+      "Revogação tácita de todas as normas jurídicas anteriores.",
+      "Descentralização administrativa forçada dos poderes públicos.",
+      "Conversão obrigatória de projeto de lei em medida provisória.",
+      "Eficácia e validade perante os munícipes e a sociedade."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Nenhum ato normativo ou lei municipal produz efeitos externos sem a devida publicação no órgão oficial ou mural público da Câmara/Prefeitura. A publicação é condição de EFICÁCIA e vigência da norma jurídica."
+  },
+  {
+    "id": 101,
+    "category": "administrativo",
+    "day": "dia5",
+    "discipline": "D. Administrativo",
+    "topic": "Poder Vinculado vs Discricionário",
+    "question": "Quanto à margem de liberdade conferida ao administrador público na prática de seus atos, assinale a opção correta:",
+    "options": [
+      "No ato vinculado, o administrador pode avaliar livremente a conveniência de conceder ou não uma licença quando o particular preencher todos os requisitos.",
+      "No ato discricionário, a lei concede margem de escolha ao gestor quanto à oportunidade e conveniência (mérito administrativo), sempre nos limites da lei.",
+      "O mérito do ato discricionário pode ser revisto pelo Poder Judiciário sob o aspecto da conveniência e da oportunidade da autoridade administrativa.",
+      "Todo ato administrativo é discricionário, cabendo à autoridade decidir as sanções disciplinares independentemente de previsão legal."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. A discricionariedade confere juízo de mérito (conveniência e oportunidade) estritamente dentro das balizas da lei. O Judiciário fiscaliza a legalidade/moralidade, mas não pode substituir o mérito administrativo da decisão discricionária."
+  },
+  {
+    "id": 102,
+    "category": "administrativo",
+    "day": "dia5",
+    "discipline": "D. Administrativo",
+    "topic": "Abuso de Poder: Excesso vs Desvio de Poder",
+    "question": "O abuso de poder constitui conduta ilegítima do agente público e manifesta-se sob duas modalidades distintas: o excesso de poder e o desvio de poder (ou desvio de finalidade). Ocorre EXCESSO DE PODER quando o agente público:",
+    "options": [
+      "Atua fora dos limites de sua competência legal ou excede os poderes que a lei lhe conferiu.",
+      "Atua dentro de sua competência, mas com objetivo alheio ao interesse público ou para beneficiar amigo.",
+      "Pratica um ato perfeitamente vinculado que cumpriu todas as formalidades do edital.",
+      "Revoga um ato legal de sua própria lavra com base em razões supervenientes de interesse público."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Mnemônico clássico: Excesso de Poder = vício de COMPETÊNCIA (o agente faz o que a lei não lhe permitiu). Desvio de Poder (ou Finalidade) = vício de FINALIDADE (o agente é competente, mas busca interesse privado ou perseguição)."
+  },
+  {
+    "id": 103,
+    "category": "administrativo",
+    "day": "dia5",
+    "discipline": "D. Administrativo",
+    "topic": "Poder Disciplinar",
+    "question": "O Poder Disciplinar é a prerrogativa conferida à Administração Pública para:",
+    "options": [
+      "Aplicar multas e penalidades indistintamente a qualquer cidadão que transite em logradouro municipal sem habilitação.",
+      "Fixar tarifas gerais de transporte urbano para toda a população da cidade.",
+      "Apurar infrações e aplicar penalidades aos servidores públicos e a particulares que possuam vínculo jurídico específico com o Estado.",
+      "Editar decretos normativos de caráter autônomo sem previsão em lei formal."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. O poder disciplinar atinge quem tem vínculo especial/interno com o Estado (servidores públicos e contratados administrativos via licitação). A punição aos cidadãos em geral sem vínculo específico decorre do Poder de Polícia."
+  },
+  {
+    "id": 104,
+    "category": "administrativo",
+    "day": "dia5",
+    "discipline": "D. Administrativo",
+    "topic": "Poder Regulamentar / Normativo",
+    "question": "A respeito do Poder Regulamentar conferido aos Chefes do Poder Executivo, é correto afirmar que os decretos regulamentares:",
+    "options": [
+      "Destinam-se a dar fiel execução às leis, não podendo criar direitos, obrigações ou inovar originariamente na ordem jurídica.",
+      "Podem contrariar a lei em caso de emergência orçamentária do município.",
+      "Permitem a criação originária de novos tributos municipais sem passar pela Câmara de Vereadores.",
+      "Subordinam hierarquicamente as leis votadas pelo Poder Legislativo municipal."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Art. 84, IV da CF/88. O poder regulamentar é de caráter secundário (intra legem): serve apenas para explicitar e regulamentar a lei existente para sua fiel execução, sendo vedado criar obrigações novas ou inovar originariamente."
+  },
+  {
+    "id": 105,
+    "category": "administrativo",
+    "day": "dia5",
+    "discipline": "D. Administrativo",
+    "topic": "Poder de Polícia: Conceito e Atributos",
+    "question": "Conforme o Art. 78 do Código Tributário Nacional (CTN), o Poder de Polícia é a atividade da administração pública que condiciona ou restringe o uso de bens, atividades e direitos em prol do interesse público. São atributos clássicos do poder de polícia:",
+    "options": [
+      "Irrevogabilidade, subordinação e imprescritibilidade.",
+      "Gratuidade obrigatória, oralidade e retroatividade.",
+      "Inalienabilidade, impenhorabilidade e imutabilidade.",
+      "Discricionariedade, autoexecutoriedade e coercibilidade."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Mnemônico 'DAC': Discricionariedade (margem de escolha de atuação/sanção), Autoexecutoriedade (execução material direta sem prévia autorização judicial) e Coercibilidade (imposição imperativa de limites com força pública se necessário)."
+  },
+  {
+    "id": 106,
+    "category": "administrativo",
+    "day": "dia5",
+    "discipline": "D. Administrativo",
+    "topic": "Poder Hierárquico",
+    "question": "São faculdades e prerrogativas típicas decorrentes do exercício do Poder Hierárquico na Administração Pública, EXCETO:",
+    "options": [
+      "Dar ordens aos subordinados, ressalvadas as ordens manifestamente ilegais.",
+      "Aplicar sanções de interdição a estabelecimentos comerciais privados que violarem o código de posturas sanitárias.",
+      "Fiscalizar e controlar as atividades desempenhadas pelos órgãos inferiores.",
+      "Delegar e avocar competências, nos termos e limites previstos na legislação."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. A interdição de comércio privado decorre do Poder de Polícia (sobre particulares). O Poder Hierárquico atua estritamente na relação interna de subordinação e coordenação entre órgãos e agentes públicos (dar ordens, fiscalizar, delegar e avocar)."
+  },
+  {
+    "id": 107,
+    "category": "administrativo",
+    "day": "dia5",
+    "discipline": "D. Administrativo",
+    "topic": "Atributos do Ato Administrativo: PATI",
+    "question": "A doutrina de Direito Administrativo consagrada nas provas da banca INBRASP sintetiza os atributos do ato administrativo no mnemônico 'PATI'. Quais são esses atributos?",
+    "options": [
+      "Publicidade, Autonomia, Temporalidade e Impessoalidade.",
+      "Previsibilidade, Anterioridade, Transparência e Intangibilidade.",
+      "Probidade, Acessibilidade, Tipicidade e Igualdade.",
+      "Presunção de legitimidade, Autoexecutoriedade, Tipicidade e Imperatividade."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Mnemônico PATI: Presunção de legitimidade/veracidade (atos presumem-se válidos até prova em contrário); Autoexecutoriedade (execução direta pelo Estado); Tipicidade (deve corresponder a figura prevista em lei); Imperatividade (impõe obrigações a terceiros independentemente de concordância)."
+  },
+  {
+    "id": 108,
+    "category": "administrativo",
+    "day": "dia5",
+    "discipline": "D. Administrativo",
+    "topic": "Presunção de Legitimidade e Veracidade",
+    "question": "A presunção de legitimidade do ato administrativo produz como efeito prático processual a:",
+    "options": [
+      "Inversão do ônus da prova, cabendo a quem contesta o ato provar a sua ilegalidade ou falsidade.",
+      "Impossibilidade definitiva de anulação do ato pelo Poder Judiciário.",
+      "Dispensabilidade total de publicação dos atos no diário oficial do município.",
+      "Transformação automática de atos discricionários em atos de império irrecorríveis."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. A presunção de legitimidade é relativa (juris tantum): o ato nasce com aparência de legalidade e verdade fática, cabendo ao particular comprovar eventual defeito (inversão do ônus da prova)."
+  },
+  {
+    "id": 109,
+    "category": "administrativo",
+    "day": "dia5",
+    "discipline": "D. Administrativo",
+    "topic": "Autoexecutoriedade do Ato Administrativo",
+    "question": "O atributo da AUTOEXECUTORIEDADE autoriza a Administração Pública a executar diretamente as suas decisões materiais sem a necessidade de prévia autorização judicial. Esse atributo:",
+    "options": [
+      "Existe indistintamente em 100% dos atos da administração, inclusive na cobrança coercitiva imediata de multas pecuniárias não pagas.",
+      "Impede que o particular ingresse com mandado de segurança caso se sinta lesado em seu direito líquido e certo.",
+      "Aplica-se somente aos atos editados pelo Poder Judiciário em suas funções típicas.",
+      "Não está presente em todos os atos administrativos, existindo quando expressamente previsto em lei ou em situações urgentes de defesa do interesse público."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Pegadinha clássica: a autoexecutoriedade NÃO está em todos os atos! Ela não existe, por exemplo, na cobrança de multa em dinheiro (se o cidadão não pagar, o Estado não pode tomar o dinheiro à força; deve ingressar com Execução Fiscal no Judiciário)."
+  },
+  {
+    "id": 110,
+    "category": "administrativo",
+    "day": "dia5",
+    "discipline": "D. Administrativo",
+    "topic": "Imperatividade e Poder Extrínseco",
+    "question": "A IMPERATIVIDADE (ou poder extroverso) do ato administrativo caracteriza-se por:",
+    "options": [
+      "Conceder vantagens que dependem do prévio requerimento e anuência do cidadão.",
+      "Garantir a imutabilidade dos atos municipais após decorridos 30 dias de sua publicação.",
+      "Permitir ao servidor público o descumprimento de ordens emanadas de seus superiores diretos.",
+      "Impor deveres e obrigações a terceiros unilateralmente, independentemente da concordância do destinatário."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. A imperatividade permite impor obrigações coercitivas ao administrado (ex: multa de trânsito, interdição de vigilância sanitária). Não está presente em atos enunciativos (certidões) ou negociais (autorização, licença)."
+  },
+  {
+    "id": 111,
+    "category": "administrativo",
+    "day": "dia5",
+    "discipline": "D. Administrativo",
+    "topic": "Tipicidade no Ato Administrativo",
+    "question": "O atributo da TIPICIDADE, formulado pela professora Maria Sylvia Zanella Di Pietro, preceitua que o ato administrativo deve:",
+    "options": [
+      "Ser redigido exclusivamente na língua portuguesa arcaica do período colonial.",
+      "Conter obrigatoriamente cláusula de sigilo prévio por até 5 anos.",
+      "Corresponder a figuras previamente delineadas na lei para produzir os efeitos desejados, impedindo a prática de atos totalmente inominados.",
+      "Ser publicado em pelo menos três jornais impressos de circulação nacional."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Pela tipicidade, para cada finalidade pretendida a lei já define a espécie de ato cabível (ex: se quer punir, usa demissão/advertência; se quer autorizar, usa alvará). Isso impede que a autoridade crie atos extravagantes ou sem modelo na lei."
+  },
+  {
+    "id": 112,
+    "category": "administrativo",
+    "day": "dia5",
+    "discipline": "D. Administrativo",
+    "topic": "Ciclo do Poder de Polícia",
+    "question": "A doutrina divide o Poder de Polícia em quatro fases ou ciclos: I. Ordem de polícia (legislação); II. Consentimento de polícia (licença/autorização); III. Fiscalização de polícia (inspeção); IV. Sanção de polícia (multa/interdição). É passível de delegação a entidades estatais de direito privado integrantes da administração indireta (ex: empresas públicas e sociedades de economia mista):",
+    "options": [
+      "Apenas a ordem de polícia, sendo vedada a fiscalização.",
+      "Todas as fases sem qualquer restrição, inclusive legislar privativamente sobre crimes.",
+      "Nenhuma das fases, pois o poder de polícia é indelegável a qualquer ente.",
+      "As fases de consentimento, fiscalização e sanção, conforme entendimento fixado pelo STF no Tema 532 de repercussão geral."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. O STF fixou a tese de que é constitucional a delegação do poder de polícia (consentimento, fiscalização e sanção) a pessoas jurídicas de direito privado integrantes da administração pública indireta de capital majoritariamente público que prestem serviços públicos em regime não concorrencial (ex: BHTrans, CET)."
+  },
+  {
+    "id": 113,
+    "category": "administrativo",
+    "day": "dia5",
+    "discipline": "D. Administrativo",
+    "topic": "Desvio de Finalidade (Art. 2º da Lei da Ação Popular)",
+    "question": "O prefeito de determinado município remove 'ex officio' um guarda municipal para posto de serviço remoto em área rural unicamente como forma de castigo pessoal por divergência política partidária. Essa conduta do administrador público caracteriza vício insanável de:",
+    "options": [
+      "Excesso de forma meramente acidental com convalidação automática.",
+      "Exercício regular do poder disciplinar sem possibilidade de recurso ao Judiciário.",
+      "Desvio de finalidade (ou desvio de poder), tornando o ato de remoção nulo de pleno direito.",
+      "Incompetência absoluta por ausência de concurso público."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. A remoção de servidor tem como finalidade atender à necessidade do serviço público. Usá-la para perseguir ou punir desvia a finalidade legal do ato (desvio de poder), gerando nulidade absoluta por violação direta ao princípio da impessoalidade."
+  },
+  {
+    "id": 114,
+    "category": "administrativo",
+    "day": "dia5",
+    "discipline": "D. Administrativo",
+    "topic": "Taxas de Polícia vs Preços Públicos",
+    "question": "Pela atividade regular do Poder de Polícia exercida pelo Município de Meruoca, a Constituição Federal autoriza a instituição de:",
+    "options": [
+      "Taxas pelo exercício do poder de polícia.",
+      "Impostos progressivos de natureza punitiva.",
+      "Contribuições de melhoria extraordinárias sem obra pública.",
+      "Tarifas alfandegárias de fiscalização internacional."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Art. 145, II da CF/88 e Art. 77 do CTN: as taxas são tributos cobrados em razão do exercício regular do poder de polícia (ex: taxa de fiscalização de funcionamento, taxa de vigilância sanitária) ou pela utilização efetiva/potencial de serviço público específico e divisível."
+  },
+  {
+    "id": 115,
+    "category": "administrativo",
+    "day": "dia5",
+    "discipline": "D. Administrativo",
+    "topic": "Distinção entre Atos Nulos e Anuláveis",
+    "question": "No regime jurídico administrativo, quando um ato apresenta defeito quanto aos elementos de COMPETÊNCIA (desde que não seja exclusiva) ou de FORMA (desde que a lei não a exija como requisito de validade), o ato é passível de:",
+    "options": [
+      "Revogação obrigatória e irrecusável pelo Poder Judiciário.",
+      "Cassação automática por descumprimento de deveres pelo particular.",
+      "Prescrição imediata em 24 horas a contar da data de protocolo.",
+      "Convalidação pela Administração Pública, aproveitando-se o ato com efeitos retroativos (ex tunc)."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Mnemônico FO-CO: defeitos de Forma (não essencial) e Competência (não exclusiva) geram atos ANULÁVEIS que admitem convalidação pela própria Administração, desde que não acarretem lesão ao interesse público nem prejuízo a terceiros."
+  },
+  {
+    "id": 116,
+    "category": "informatica",
+    "day": "dia5",
+    "discipline": "Informática",
+    "topic": "Conceito de Algoritmo",
+    "question": "No contexto da ciência da computação e do edital da Câmara de Meruoca, um ALGORITMO pode ser conceituado como:",
+    "options": [
+      "Uma sequência finita de passos lógicos, ordenados e bem definidos, que visa à resolução de um problema ou à execução de uma tarefa.",
+      "Um programa executável binário restrito a sistemas operacionais de grande porte.",
+      "Uma peça de hardware instalada na placa-mãe responsável por resfriar o processador.",
+      "Um protocolo de rede utilizado exclusivamente para tráfego seguro de e-mails corporativos."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Algoritmo é uma sequência lógica, finita, ordenada e não ambígua de instruções que, ao ser processada, transforma entradas em saídas para solucionar um problema."
+  },
+  {
+    "id": 117,
+    "category": "informatica",
+    "day": "dia5",
+    "discipline": "Informática",
+    "topic": "Fluxogramas: Símbolo de Decisão (Losango)",
+    "question": "Em um fluxograma que representa o fluxo de tramitação de um processo administrativo, o símbolo geométrico que representa uma tomada de DECISÃO ou desvio condicional (onde o fluxo pode seguir caminhos diferentes conforme a resposta Sim/Não) é o:",
+    "options": [
+      "Retângulo.",
+      "Círculo ou elipse.",
+      "Paralelogramo.",
+      "Losango."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Símbolos universais de fluxogramas: Losango = Decisão / Condição (teste lógico Se/Senão); Retângulo = Ação / Processamento / Atribuição; Oval/Elipse = Início ou Fim; Paralelogramo = Entrada ou Saída de dados."
+  },
+  {
+    "id": 118,
+    "category": "informatica",
+    "day": "dia5",
+    "discipline": "Informática",
+    "topic": "Pseudocódigo e Estruturas Condicionais",
+    "question": "Considere o seguinte trecho de pseudocódigo:\n\nSE (idade >= 18) ENTÃO\n    ESCREVA('Apto ao concurso')\nSENÃO\n    ESCREVA('Inapto por idade')\nFIMSE\n\nCaso o valor atribuído à variável 'idade' seja exatamente 18, o programa exibirá:",
+    "options": [
+      "Apto ao concurso",
+      "Inapto por idade",
+      "Erro de compilação por operador inexistente",
+      "Nenhuma mensagem será exibida na tela"
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. O operador `>=` significa 'maior ou igual'. Como 18 é igual a 18, a condição é VERDADEIRA e o bloco do SE é executado, exibindo 'Apto ao concurso'."
+  },
+  {
+    "id": 119,
+    "category": "informatica",
+    "day": "dia5",
+    "discipline": "Informática",
+    "topic": "Estruturas de Repetição (Laços / Loops)",
+    "question": "Em lógica de programação, a estrutura que executa repetidamente um bloco de instruções ENQUANTO uma condição prévia permanecer verdadeira é chamada de:",
+    "options": [
+      "Função recursiva estática imutável.",
+      "Laço de repetição ou loop (while / enquanto).",
+      "Declaração de constante booleana.",
+      "Instrução de salto incondicional irrestrita."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. As estruturas de repetição (laços ou loops) permitem executar comandos várias vezes. No laço `enquanto` (`while`), o teste é feito no início e o bloco roda enquanto o teste for verdadeiro."
+  },
+  {
+    "id": 120,
+    "category": "informatica",
+    "day": "dia5",
+    "discipline": "Informática",
+    "topic": "Linguagem Python: Indentação Obrigatória",
+    "question": "Diferentemente de linguagens como C ou Java que utilizam chaves `{ }` para delimitar blocos de comandos, a linguagem Python utiliza como delimitador obrigatório de blocos de código a:",
+    "options": [
+      "Indentação (espaçamento consistente à esquerda com espaços ou tabs).",
+      "Utilização de ponto e vírgula ';' ao final de cada instrução.",
+      "Inclusão da palavra reservada 'END' ao final de cada linha.",
+      "Abertura e fechamento de colchetes '[ ]' em cada função."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Em Python, a indentação não é apenas estética: ela define a hierarquia e o escopo dos blocos de código (corpo de funções, laços for/while, estruturas if/else)."
+  },
+  {
+    "id": 121,
+    "category": "informatica",
+    "day": "dia5",
+    "discipline": "Informática",
+    "topic": "Python: Tipos de Dados Básicos",
+    "question": "Em Python, considere a atribuição: `total = 100`, `preco = 45.50` e `cargo = 'Técnico'`. Os tipos de dados primitivos dessas variáveis são, respectivamente:",
+    "options": [
+      "number, decimal e char.",
+      "integer, currency e varchar.",
+      "int (inteiro), float (número de ponto flutuante) e str (string / texto).",
+      "long, double e text."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Em Python, inteiros são do tipo `int`, números com casas decimais são do tipo `float` e cadeias de caracteres entre aspas são do tipo `str`."
+  },
+  {
+    "id": 122,
+    "category": "informatica",
+    "day": "dia5",
+    "discipline": "Informática",
+    "topic": "Python: Operadores Aritméticos Divisão e Resto",
+    "question": "Na linguagem Python, o operador `//` realiza a divisão inteira e o operador `%` retorna o resto da divisão. Qual será o resultado das expressões `7 // 2` e `7 % 2`?",
+    "options": [
+      "3.5 e 0.5",
+      "3 e 0",
+      "4 e 1",
+      "3 e 1"
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. 7 dividido por 2 dá quociente 3 e sobra resto 1. Logo, a divisão inteira `7 // 2` resulta em 3, e o módulo/resto `7 % 2` resulta em 1."
+  },
+  {
+    "id": 123,
+    "category": "informatica",
+    "day": "dia5",
+    "discipline": "Informática",
+    "topic": "Python: Listas e Indexação",
+    "question": "Em Python, as listas são coleções ordenadas de elementos e possuem indexação baseada em zero. Dada a lista `bancas = ['CETREDE', 'CONSULPAM', 'INBRASP', 'IDECAN']`, a instrução `print(bancas[2])` exibirá na tela:",
+    "options": [
+      "CONSULPAM",
+      "INBRASP",
+      "CETREDE",
+      "IDECAN"
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. A indexação em Python inicia em zero: `bancas[0]` = 'CETREDE', `bancas[1]` = 'CONSULPAM', `bancas[2]` = 'INBRASP', `bancas[3]` = 'IDECAN'."
+  },
+  {
+    "id": 124,
+    "category": "informatica",
+    "day": "dia5",
+    "discipline": "Informática",
+    "topic": "Python: Comentários de Linha",
+    "question": "Na linguagem Python, qual caractere é utilizado para inserir comentários de linha única (instruções que são ignoradas pelo interpretador)?",
+    "options": [
+      "// (duas barras inclinadas)",
+      "/* (barra e asterisco)",
+      "# (cerquilha / hashtag)",
+      "-- (dois traços)"
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Em Python, comentários de linha única começam com o caractere `#`. Em linguagens como C, Java e PHP usa-se `//`; em SQL usa-se `--`."
+  },
+  {
+    "id": 125,
+    "category": "informatica",
+    "day": "dia5",
+    "discipline": "Informática",
+    "topic": "Python: Estrutura Condicional (if / elif / else)",
+    "question": "Analise o seguinte código em Python:\n\npontos = 85\nif pontos >= 90:\n    print('Aprovado em 1º Lugar')\nelif pontos >= 50:\n    print('Classificado')\nelse:\n    print('Reprovado')\n\nQual será a saída exibida no terminal?",
+    "options": [
+      "Aprovado em 1º Lugar",
+      "Classificado",
+      "Reprovado",
+      "Aprovado em 1º Lugar e Classificado simultaneamente"
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. `pontos = 85`. A primeira condição (`85 >= 90`) é Falsa. O interpretador salta para o `elif`: `85 >= 50` é Verdadeira. Portanto, executa `print('Classificado')` e encerra a estrutura condicional."
+  },
+  {
+    "id": 126,
+    "category": "informatica",
+    "day": "dia5",
+    "discipline": "Informática",
+    "topic": "Python: Operador de Exponenciação",
+    "question": "Qual operador matemático é utilizado na linguagem Python para calcular a exponenciação (potência), por exemplo, dois elevado à terceira potência (2³)?",
+    "options": [
+      "^ (acento circunflexo, ex: 2 ^ 3)",
+      "** (dois asteriscos, ex: 2 ** 3)",
+      "pow$ (ex: 2 pow$ 3)",
+      "^^ (dois circunflexos, ex: 2 ^^ 3)"
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Em Python, a potência é calculada com `**` (ex: `2 ** 3 = 8`). O operador `^` em Python é o operador bit a bit XOR (ou exclusivo), uma pegadinha clássica de concurso!"
+  },
+  {
+    "id": 127,
+    "category": "informatica",
+    "day": "dia5",
+    "discipline": "Informática",
+    "topic": "Python: Função len()",
+    "question": "A função nativa `len()` em Python tem como finalidade:",
+    "options": [
+      "Converter um texto em letras maiúsculas.",
+      "Ler uma entrada de dados digitada pelo usuário no teclado.",
+      "Retornar a quantidade de elementos de um objeto (como tamanho de uma lista ou comprimento de uma string).",
+      "Finalizar imediatamente a execução do programa em caso de erro."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. `len()` é a abreviação de 'length'. Exemplo: `len('Meruoca')` retorna 7; `len([10, 20, 30])` retorna 3."
+  },
+  {
+    "id": 128,
+    "category": "informatica",
+    "day": "dia5",
+    "discipline": "Informática",
+    "topic": "Python: Operadores Lógicos (and, or, not)",
+    "question": "Em Python, os operadores lógicos booleanos para conjunção, disjunção e negação são grafados por extenso como:",
+    "options": [
+      "&&, ||, !",
+      "and, or, not",
+      ".AND., .OR., .NOT.",
+      "e, ou, nao"
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Python preza pela legibilidade e usa palavras em inglês em minúsculas: `and` (conjunção), `or` (disjunção) e `not` (negação). `&&` e `||` são de C/Java/JS."
+  },
+  {
+    "id": 129,
+    "category": "informatica",
+    "day": "dia5",
+    "discipline": "Informática",
+    "topic": "Python: Laço for e Função range()",
+    "question": "Considere o código Python:\n\nsoma = 0\nfor i in range(1, 4):\n    soma += i\nprint(soma)\n\nLembrando que `range(1, 4)` gera os números 1, 2 e 3 (o limite superior 4 é exclusivo), qual valor será impresso?",
+    "options": [
+      "10",
+      "4",
+      "6",
+      "3"
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. `range(1, 4)` produz os valores 1, 2 e 3. Na 1ª iteração: soma = 0 + 1 = 1. Na 2ª iteração: soma = 1 + 2 = 3. Na 3ª iteração: soma = 3 + 3 = 6. Saída: 6."
+  },
+  {
+    "id": 130,
+    "category": "informatica",
+    "day": "dia5",
+    "discipline": "Informática",
+    "topic": "Python: Função print() e input()",
+    "question": "As funções nativas de entrada e saída padrão em um terminal na linguagem Python são, respectivamente:",
+    "options": [
+      "input() para entrada de dados do usuário e print() para saída em tela.",
+      "read() para entrada e write() para saída.",
+      "scanf() para entrada e printf() para saída.",
+      "cin para entrada e cout para saída."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Em Python padrão: `input('Digite algo:')` lê dados do teclado em formato string, e `print('Mensagem')` imprime dados na tela do console."
+  },
+  {
+    "id": 131,
+    "category": "legislacao",
+    "day": "dia5",
+    "discipline": "Lei Orgânica de Meruoca",
+    "topic": "Poder Legislativo Municipal e Composição",
+    "question": "O Poder Legislativo do Município de Meruoca é exercido pela Câmara Municipal, composta por Vereadores eleitos pelo sistema proporcional para um mandato de:",
+    "options": [
+      "4 (quatro) anos, correspondendo a uma legislatura.",
+      "2 (dois) anos, permitida uma recondução consecutiva.",
+      "5 (cinco) anos, em consonância com o mandato dos senadores.",
+      "3 (três) anos, renovando-se por terços anuais."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Em conformidade com a CF/88 e a Lei Orgânica de Meruoca, o mandato dos Vereadores é de 4 anos. Cada período de 4 anos de mandato parlamentar corresponde a uma LEGISLATURA."
+  },
+  {
+    "id": 132,
+    "category": "legislacao",
+    "day": "dia5",
+    "discipline": "Lei Orgânica de Meruoca",
+    "topic": "Posse dos Vereadores, Prefeito e Vice",
+    "question": "Nos termos da Lei Orgânica Municipal, a posse dos Vereadores, do Prefeito e do Vice-Prefeito de Meruoca realizar-se-á em sessão solene de instalação no dia:",
+    "options": [
+      "1º de fevereiro do ano da posse legislativa federal.",
+      "15 de novembro, data da proclamação da República.",
+      "1º de março, após o encerramento do recesso carnavalesco.",
+      "1º de janeiro do ano subsequente ao da eleição."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. A instalação da legislatura e a posse dos Vereadores, Prefeito e Vice-Prefeito ocorre obrigatoriamente no dia 1º de JANEIRO do ano subsequente à eleição municipal."
+  },
+  {
+    "id": 133,
+    "category": "legislacao",
+    "day": "dia5",
+    "discipline": "Lei Orgânica de Meruoca",
+    "topic": "Mesa Diretora da Câmara Municipal",
+    "question": "Imediatamente após a posse dos Vereadores de Meruoca, sob a presidência do vereador mais votado dentre os presentes, proceder-se-á à eleição dos membros da:",
+    "options": [
+      "Comissão Mista de Finanças e Tributação.",
+      "Mesa Diretora da Câmara Municipal.",
+      "Bancada Governista de Apoio ao Poder Executivo.",
+      "Junta Comercial e Fiscalizatória dos Bairros."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Conforme a Lei Orgânica e o Regimento Interno, logo após o compromisso de posse no dia 1º de janeiro, os parlamentares elegem a Mesa Diretora da Câmara (Presidente, Vice-Presidente e Secretários)."
+  },
+  {
+    "id": 134,
+    "category": "legislacao",
+    "day": "dia5",
+    "discipline": "Lei Orgânica de Meruoca",
+    "topic": "Quórum Geral de Deliberação na Câmara",
+    "question": "Salvo disposição expressa em contrário da Lei Orgânica de Meruoca ou da Constituição Federal, as deliberações da Câmara Municipal e de suas Comissões serão tomadas por:",
+    "options": [
+      "Dois terços de votos, independentemente do número de presentes.",
+      "Unanimidade obrigatória dos parlamentares diplomados.",
+      "Maioria de votos, presente a maioria absoluta de seus membros.",
+      "Voto exclusivo e soberano do Presidente da Mesa Diretora."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. É a regra geral da maioria simples (ou relativa): maioria dos votos dos presentes na sessão, desde que esteja presente a maioria absoluta (metade mais um) dos membros da Casa (Art. 47 da CF e Lei Orgânica)."
+  },
+  {
+    "id": 135,
+    "category": "legislacao",
+    "day": "dia5",
+    "discipline": "Lei Orgânica de Meruoca",
+    "topic": "Imunidade Material dos Vereadores (Inviolabilidade)",
+    "question": "Conforme o Art. 29, VIII da Constituição Federal e a Lei Orgânica de Meruoca, os Vereadores gozam de inviolabilidade por suas opiniões, palavras e votos:",
+    "options": [
+      "Em qualquer lugar do território nacional, inclusive em viagens privadas de lazer.",
+      "No exercício do mandato e na circunscrição do Município.",
+      "Apenas durante as sessões plenárias dentro do edifício da Câmara Municipal.",
+      "Exclusivamente quando autorizados previamente pelo Presidente da Casa."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. A imunidade material do Vereador é local: ele possui inviolabilidade civil e penal por palavras, votos e opiniões proferidas no exercício das funções parlamentares e restritas à CIRCUNSCRIÇÃO DO MUNICÍPIO de Meruoca."
+  },
+  {
+    "id": 136,
+    "category": "legislacao",
+    "day": "dia5",
+    "discipline": "Lei Orgânica de Meruoca",
+    "topic": "Perda do Mandato por Falta às Sessões",
+    "question": "Perderá o mandato o Vereador de Meruoca que deixar de comparecer, em cada sessão legislativa anual, sem justificativa legal ou licença concedida pela Casa, à:",
+    "options": [
+      "Metade (1/2) das sessões extraordinárias convocadas pelo prefeito.",
+      "Duas sessões solenes comemorativas consecutivas.",
+      "Quinta parte (1/5) das reuniões das comissões temáticas.",
+      "Terça parte (1/3) das sessões ordinárias da Câmara Municipal."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Art. 55, III da CF e Lei Orgânica: acarreta a perda do mandato parlamentar a ausência injustificada a 1/3 (uma terça parte) das sessões ordinárias do ano legislativo."
+  },
+  {
+    "id": 137,
+    "category": "legislacao",
+    "day": "dia5",
+    "discipline": "Lei Orgânica de Meruoca",
+    "topic": "Remuneração dos Vereadores (Subsídio)",
+    "question": "O subsídio dos Vereadores de Meruoca é fixado pela Câmara Municipal em cada legislatura para vigorar na subsequente, observados os limites constitucionais e o teto da receita municipal. O subsídio deve ser fixado sob a modalidade de:",
+    "options": [
+      "Parcela única, vedado o acréscimo de qualquer gratificação, adicional, abono, prêmio ou verba de representação.",
+      "Salário base acrescido de 40% de gratificação de produtividade por projeto aprovado.",
+      "Diárias cumulativas por sessão ordinária comparecida no mês.",
+      "Comissão percentual sobre a arrecadação mensal do IPTU de Meruoca."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Art. 39, § 4º da CF/88 e Lei Orgânica: os agentes políticos remuneram-se exclusivamente por SUBSÍDIO fixado em parcela única, sendo expressamente proibido o pagamento de penduricalhos, adicionais ou gratificações de gabinete."
+  },
+  {
+    "id": 138,
+    "category": "legislacao",
+    "day": "dia5",
+    "discipline": "Lei Orgânica de Meruoca",
+    "topic": "Fiscalização Financeira e Controle Externo",
+    "question": "A fiscalização contábil, financeira e orçamentária do Município de Meruoca será exercida pela Câmara Municipal, mediante controle externo, com o auxílio do:",
+    "options": [
+      "Tribunal de Contas da União (TCU) em primeira e última instância.",
+      "Conselho Fiscal Popular eleito por voto secreto em cada bairro.",
+      "Tribunal de Contas do Estado do Ceará (TCE/CE).",
+      "Ministério da Fazenda e Receita Federal do Brasil."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. O controle externo da Câmara Municipal sobre as contas do Município e do Prefeito é exercido com o auxílio do Tribunal de Contas do Estado (TCE/CE), que emite parecer prévio."
+  },
+  {
+    "id": 139,
+    "category": "legislacao",
+    "day": "dia5",
+    "discipline": "Lei Orgânica de Meruoca",
+    "topic": "Rejeição do Parecer Prévio do TCE",
+    "question": "O parecer prévio emitido pelo Tribunal de Contas sobre as contas que o Prefeito de Meruoca deve prestar anualmente só deixará de prevalecer por decisão de:",
+    "options": [
+      "Maioria absoluta dos vereadores presentes.",
+      "Dois terços (2/3) dos membros da Câmara Municipal.",
+      "Maioria simples mediante votação secreta.",
+      "Unanimidade dos integrantes da comissão de orçamento."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Art. 31, § 2º da CF/88 e Lei Orgânica de Meruoca: o parecer técnico do Tribunal de Contas tem peso qualificado e só pode ser derrubado pelo voto de 2/3 (dois terços) dos vereadores."
+  },
+  {
+    "id": 140,
+    "category": "legislacao",
+    "day": "dia5",
+    "discipline": "Lei Orgânica de Meruoca",
+    "topic": "Comissões Parlamentares de Inquérito (CPIs)",
+    "question": "As Comissões Parlamentares de Inquérito (CPI) na Câmara Municipal de Meruoca, que terão poderes de investigação próprios das autoridades judiciais, serão criadas mediante requerimento de:",
+    "options": [
+      "Metade mais um dos vereadores, para investigar condutas genéricas sem prazo determinado.",
+      "Dois terços dos membros da Casa, exigindo-se aval prévio do juiz de direito da comarca.",
+      "Um terço (1/3) dos membros da Câmara Municipal, para a apuração de fato determinado e por prazo certo.",
+      "Qualquer cidadão que apresente abaixo-assinado com 50 assinaturas."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Art. 58, § 3º da CF/88 e Lei Orgânica: a CPI é criada por requerimento de 1/3 (um terço) dos membros da Câmara, para apuração de FATO DETERMINADO e por PRAZO CERTO, sendo suas conclusões encaminhadas ao Ministério Público se for o caso."
+  },
+  {
+    "id": 141,
+    "simuladoQNum": 1,
+    "category": "portugues",
+    "day": "dia6",
+    "discipline": "Tipologia Textual: Narração",
+    "topic": "Simulado Oficial 01 • Questão 1",
+    "question": "[Simulado 01 - Q01] O tipo textual que se caracteriza pela sucessão temporal de fatos e pela presença de personagens, narrador, tempo e espaço denomina-se:",
+    "options": [
+      "Expositivo.",
+      "Descritivo.",
+      "Narrativo.",
+      "Injuntivo."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Morfossintaxe - Oração subordinada adverbial temporal."
+  },
+  {
+    "id": 142,
+    "simuladoQNum": 2,
+    "category": "portugues",
+    "day": "dia6",
+    "discipline": "Tipologia Textual: Descrição",
+    "topic": "Simulado Oficial 01 • Questão 2",
+    "question": "[Simulado 01 - Q02] O excerto \"O casarão antigo possuía portas largas de madeira escura, paredes descascadas pelo tempo e um assoalho de tábuas corridas que rangia\" classifica-se predominantemente como:",
+    "options": [
+      "Argumentativo.",
+      "Descritivo.",
+      "Injuntivo.",
+      "Expositivo."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Crase antes de palavra feminina sem artigo definido."
+  },
+  {
+    "id": 143,
+    "simuladoQNum": 3,
+    "category": "portugues",
+    "day": "dia6",
+    "discipline": "Tipologia Textual: Dissertação Argumentativa",
+    "topic": "Simulado Oficial 01 • Questão 3",
+    "question": "[Simulado 01 - Q03] O texto que se estrutura com o objetivo principal de defender um ponto de vista (tese), recorrendo a argumentos, dados e raciocínio lógico para convencer o leitor, é do tipo:",
+    "options": [
+      "Narrativo.",
+      "Dissertativo-argumentativo.",
+      "Dissertativo-expositivo.",
+      "Instrucional."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Concordância verbal com partícula apassivadora \"se\"."
+  },
+  {
+    "id": 144,
+    "simuladoQNum": 4,
+    "category": "portugues",
+    "day": "dia6",
+    "discipline": "Tipologia Textual: Injunção",
+    "topic": "Simulado Oficial 01 • Questão 4",
+    "question": "[Simulado 01 - Q04] Os manuais de instalação de equipamentos, receitas culinárias e bulas de medicamentos (na seção posologia) têm em comum a presença de verbos no imperativo ou infinitivo com instruções ao leitor. Essa tipologia é a:",
+    "options": [
+      "Descritiva.",
+      "Dialógica.",
+      "Narrativa.",
+      "Injuntiva ou instrucional."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Regência verbal do verbo assistir no sentido de ver/presenciar."
+  },
+  {
+    "id": 145,
+    "simuladoQNum": 5,
+    "category": "portugues",
+    "day": "dia6",
+    "discipline": "Gênero Textual: Editorial",
+    "topic": "Simulado Oficial 01 • Questão 5",
+    "question": "[Simulado 01 - Q05] Assinale a alternativa que define corretamente o gênero textual Editorial:",
+    "options": [
+      "Texto assinado por um colunista que expressa sua visão pessoal e subjetiva sobre um fato.",
+      "Comunicação estritamente interna trocada entre departamentos de uma mesma empresa.",
+      "Relatório técnico produzido por peritos judiciais para embasar decisões do tribunal.",
+      "Texto jornalístico que expressa o posicionamento institucional da empresa/jornal e não leva assinatura individual."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Gênero textual Editorial - institucional do jornal, sem assinatura."
+  },
+  {
+    "id": 146,
+    "simuladoQNum": 6,
+    "category": "portugues",
+    "day": "dia6",
+    "discipline": "Redação Oficial: Ofício",
+    "topic": "Simulado Oficial 01 • Questão 6",
+    "question": "[Simulado 01 - Q06] A comunicação formal e padronizada emitida por autoridades públicas para tratar de assuntos oficiais de serviço com outras autoridades ou cidadãos denomina-se:",
+    "options": [
+      "Carta comercial.",
+      "Abaixo-assinado.",
+      "Ofício.",
+      "Artigo de opinião."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Ofício - comunicação formal da administração pública."
+  },
+  {
+    "id": 147,
+    "simuladoQNum": 7,
+    "category": "portugues",
+    "day": "dia6",
+    "discipline": "Funções da Linguagem",
+    "topic": "Simulado Oficial 01 • Questão 7",
+    "question": "[Simulado 01 - Q07] Em um cartaz institucional afixado em repartição pública constam os dizeres: \"Economize energia elétrica. Apague as lâmpadas ao sair da sala.\" O texto emprega tipologia injuntiva com a função de linguagem predominantemente:",
+    "options": [
+      "Conotativa (ou apelativa).",
+      "Fática.",
+      "Emotiva.",
+      "Metalinguística."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Função Conotativa/Apelativa - foco no leitor, verbos no imperativo."
+  },
+  {
+    "id": 148,
+    "simuladoQNum": 8,
+    "category": "portugues",
+    "day": "dia6",
+    "discipline": "Gênero: Divulgação Científica",
+    "topic": "Simulado Oficial 01 • Questão 8",
+    "question": "[Simulado 01 - Q08] Um texto de Artigo de Divulgação Científica tem como finalidade primordial:",
+    "options": [
+      "Transmitir conhecimentos científicos ao público geral por meio de linguagem acessível e informativa.",
+      "Contar uma narrativa fictícia com elementos mágicos e fabulosos.",
+      "Vender produtos cosméticos por meio de apelos emocionais e imagens publicitárias.",
+      "Estabelecer normas jurídicas imperativas para cumprimento obrigatório de pesquisadores."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Divulgação científica - transmitir conhecimento ao leigo."
+  },
+  {
+    "id": 149,
+    "simuladoQNum": 9,
+    "category": "portugues",
+    "day": "dia6",
+    "discipline": "Gênero: Artigo de Opinião",
+    "topic": "Simulado Oficial 01 • Questão 9",
+    "question": "[Simulado 01 - Q09] O gênero textual Artigo de Opinião caracteriza-se formalmente por:",
+    "options": [
+      "Apresentar a visão neutra do veículo de comunicação sem a identificação do autor.",
+      "Ser um texto argumentativo assinado pelo próprio autor, que assume a responsabilidade pela tese defendida.",
+      "Conter exclusivamente tabelas numéricas e dados matemáticos sem texto explicativo.",
+      "Limitar-se a narrar uma sequência cronológica de eventos policiais sem emitir juízo de valor."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Artigo de opinião - texto argumentativo e assinado."
+  },
+  {
+    "id": 150,
+    "simuladoQNum": 10,
+    "category": "portugues",
+    "day": "dia6",
+    "discipline": "Gênero: Crônica",
+    "topic": "Simulado Oficial 01 • Questão 10",
+    "question": "[Simulado 01 - Q10] O gênero Crônica destaca-se na imprensa e na literatura por:",
+    "options": [
+      "Registrar normas regimentais e decretos administrativos com rigor técnico.",
+      "Abordar situações cotidianas e corriqueiras com estilo leve, reflexivo e por vezes poético.",
+      "Exigir obrigatoriamente a assinatura de um colegiado de juristas para ser publicado.",
+      "Apresentar fórmulas matemáticas aplicadas a cálculos orçamentários."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Crônica - cotidiano em tom leve e reflexivo."
+  },
+  {
+    "id": 151,
+    "simuladoQNum": 11,
+    "category": "portugues",
+    "day": "dia6",
+    "discipline": "Windows 11: Nomenclatura de Arquivos",
+    "topic": "Simulado Oficial 01 • Questão 11",
+    "question": "[Simulado 01 - Q11] No sistema operacional Microsoft Windows 11, ao tentar renomear um arquivo ou pasta, o usuário é impedido de utilizar determinados caracteres reservados pelo sistema. Assinale a alternativa que contém apenas caracteres PROIBIDOS em nomes de arquivos no Windows:",
+    "options": [
+      "\\ / : * ? \" &lt; &gt; |",
+      "@ # $ % _ - +",
+      "( ) [ ] { } .",
+      "! &amp; = ~ ^ ;"
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Caracteres proibidos no Windows: \\ / : * ? \" < > |."
+  },
+  {
+    "id": 152,
+    "simuladoQNum": 12,
+    "category": "portugues",
+    "day": "dia6",
+    "discipline": "Windows 11: Atalhos",
+    "topic": "Simulado Oficial 01 • Questão 12",
+    "question": "[Simulado 01 - Q12] No Windows 11, o atalho de teclado padrão utilizado para BLOQUEAR rapidamente o computador ao se ausentar da mesa de trabalho é:",
+    "options": [
+      "Ctrl + Alt + B",
+      "Logotipo do Windows + L",
+      "Alt + F4",
+      "Ctrl + Shift + Esc"
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Win + L - atalho de bloqueio rápido da sessão do Windows."
+  },
+  {
+    "id": 153,
+    "simuladoQNum": 13,
+    "category": "portugues",
+    "day": "dia6",
+    "discipline": "Linux Ubuntu: Diretórios",
+    "topic": "Simulado Oficial 01 • Questão 13",
+    "question": "[Simulado 01 - Q13] Na estrutura de diretórios do sistema operacional Linux (como o Ubuntu), o diretório responsável por armazenar os arquivos de configuração globais do sistema e dos serviços instalados é o:",
+    "options": [
+      "/bin",
+      "/home",
+      "/etc",
+      "/dev"
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. /etc - pasta de arquivos de configuração globais do Linux."
+  },
+  {
+    "id": 154,
+    "simuladoQNum": 14,
+    "category": "portugues",
+    "day": "dia6",
+    "discipline": "Hardware: Memórias",
+    "topic": "Simulado Oficial 01 • Questão 14",
+    "question": "[Simulado 01 - Q14] A respeito da memória RAM (Random Access Memory) de um computador, assinale a afirmativa correta:",
+    "options": [
+      "É uma memória secundária de armazenamento permanente de fotos e vídeos.",
+      "É uma memória volátil, cujo conteúdo é totalmente apagado quando o computador é desligado.",
+      "Armazena a BIOS e não pode ser gravada nem alterada pelo usuário.",
+      "Possui velocidade de leitura e gravação muito inferior à de um disco rígido tradicional (HD)."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Memória RAM é primária e volátil."
+  },
+  {
+    "id": 155,
+    "simuladoQNum": 15,
+    "category": "portugues",
+    "day": "dia6",
+    "discipline": "Segurança: Backup 3-2-1",
+    "topic": "Simulado Oficial 01 • Questão 15",
+    "question": "[Simulado 01 - Q15] A consagrada regra de segurança de dados \"3-2-1 para Backup\" recomenda manter:",
+    "options": [
+      "3 computadores ligados ao mesmo tempo, durante 2 horas por dia, com 1 funcionário supervisionando.",
+      "3 senhas iguais em 2 sistemas diferentes para 1 único usuário.",
+      "3 cópias dos dados, em 2 tipos de mídia diferentes, com pelo menos 1 cópia armazenada fora do local de trabalho (offsite/nuvem).",
+      "3 antivírus instalados simultaneamente na mesma máquina durante 2 dias."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Regra 3-2-1 de Backup (3 cópias, 2 mídias, 1 fora/nuvem)."
+  },
+  {
+    "id": 156,
+    "simuladoQNum": 16,
+    "category": "portugues",
+    "day": "dia6",
+    "discipline": "Conjuntos Numéricos",
+    "topic": "Simulado Oficial 01 • Questão 16",
+    "question": "[Simulado 01 - Q16] Em uma pesquisa com 100 servidores da Câmara Municipal, 60 utilizam o sistema de processo eletrônico no Windows e 50 utilizam o sistema no Linux. Sabendo que 20 servidores utilizam ambos os sistemas, o número de servidores que não utilizam nenhum dos dois sistemas é:",
+    "options": [
+      "5 servidores.",
+      "15 servidores.",
+      "20 servidores.",
+      "10 servidores."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Conjuntos: 60 + 50 - 20 = 90 servidores. 100 - 90 = 10 servidores."
+  },
+  {
+    "id": 157,
+    "simuladoQNum": 17,
+    "category": "portugues",
+    "day": "dia6",
+    "discipline": "Razão e Proporção",
+    "topic": "Simulado Oficial 01 • Questão 17",
+    "question": "[Simulado 01 - Q17] A razão entre o número de processos analisados pela manhã e à tarde por um Técnico Legislativo é de 3 para 5. Se em determinado dia ele analisou 40 processos no total, quantos foram analisados no período da manhã?",
+    "options": [
+      "12 processos.",
+      "15 processos.",
+      "18 processos.",
+      "25 processos."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Razão e proporção: 3x + 5x = 40 -> 8x = 40 -> x = 5. Manhã: 3 * 5 = 15."
+  },
+  {
+    "id": 158,
+    "simuladoQNum": 18,
+    "category": "portugues",
+    "day": "dia6",
+    "discipline": "Porcentagem",
+    "topic": "Simulado Oficial 01 • Questão 18",
+    "question": "[Simulado 01 - Q18] O orçamento anual de custeio de um setor legislativo era de R$ 50.000,00 e sofreu um acréscimo de 15%. Qual passou a ser o novo valor orçamentário?",
+    "options": [
+      "R$ 55.000,00.",
+      "R$ 57.500,00.",
+      "R$ 58.000,00.",
+      "R$ 60.000,00."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Porcentagem: 50.000 + 15% = R$ 57.500,00."
+  },
+  {
+    "id": 159,
+    "simuladoQNum": 19,
+    "category": "portugues",
+    "day": "dia6",
+    "discipline": "Regra de Três Simples",
+    "topic": "Simulado Oficial 01 • Questão 19",
+    "question": "[Simulado 01 - Q19] Três técnicos legislativos realizam a digitalização de 120 atas em 4 horas. Mantendo o mesmo ritmo de trabalho, quantos técnicos seriam necessários para digitalizar as mesmas 120 atas em apenas 2 horas?",
+    "options": [
+      "6 técnicos.",
+      "4 técnicos.",
+      "5 técnicos.",
+      "8 técnicos."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Regra de três inversa: 3 téc * 4h = X * 2h -> X = 6 técnicos."
+  },
+  {
+    "id": 160,
+    "simuladoQNum": 20,
+    "category": "matematica",
+    "day": "dia6",
+    "discipline": "Lógica Proposicional",
+    "topic": "Simulado Oficial 01 • Questão 20",
+    "question": "[Simulado 01 - Q20] Dada a proposição \"Se o Projeto de Lei for aprovado pela Câmara, então o Prefeito o sancionará\", sua negação lógica equivalente é:",
+    "options": [
+      "O Projeto de Lei é aprovado pela Câmara e o Prefeito não o sanciona.",
+      "Se o Projeto de Lei não for aprovado, o Prefeito não o sancionará.",
+      "O Projeto de Lei não é aprovado ou o Prefeito o sanciona.",
+      "O Prefeito sanciona o Projeto de Lei se e somente se for aprovado."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Negação do condicional (P -> Q): P ^ ~Q (Mané)."
+  },
+  {
+    "id": 161,
+    "simuladoQNum": 21,
+    "category": "portugues",
+    "day": "dia6",
+    "discipline": "CF/88: Inviolabilidade de Domicílio",
+    "topic": "Simulado Oficial 01 • Questão 21",
+    "question": "[Simulado 01 - Q21] Conforme o Art. 5º, XI, da CF/88, a casa é asilo inviolável do indivíduo. A entrada no domicílio sem o consentimento do morador por determinação judicial só pode ocorrer:",
+    "options": [
+      "A qualquer hora do dia ou da noite.",
+      "Apenas durante a noite, com a presença de testemunhas.",
+      "Durante o dia.",
+      "Em dias úteis, no período das 6h às 22h."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Art. 5º, XI CF/88 - Casa como asilo inviolável durante o dia."
+  },
+  {
+    "id": 162,
+    "simuladoQNum": 22,
+    "category": "portugues",
+    "day": "dia6",
+    "discipline": "CF/88: Crimes Inafiançáveis e Imprescritíveis",
+    "topic": "Simulado Oficial 01 • Questão 22",
+    "question": "[Simulado 01 - Q22] Segundo a Constituição Federal de 1988, constituem crimes inafiançáveis e imprescritíveis:",
+    "options": [
+      "A prática da tortura e o tráfico ilícito de entorpecentes.",
+      "Os crimes hediondos e o terrorismo.",
+      "A prática do racismo e a ação de grupos armados contra a ordem constitucional.",
+      "O roubo qualificado e a corrupção passiva."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Crimes inafiançáveis e imprescritíveis: Racismo e Ação de grupos armados."
+  },
+  {
+    "id": 163,
+    "simuladoQNum": 23,
+    "category": "portugues",
+    "day": "dia6",
+    "discipline": "Remédios Constitucionais: Mandado de Segurança",
+    "topic": "Simulado Oficial 01 • Questão 23",
+    "question": "[Simulado 01 - Q23] Para proteger direito líquido e certo, não amparado por Habeas Corpus ou Habeas Data, quando o responsável pela ilegalidade for autoridade pública, concede-se:",
+    "options": [
+      "Mandado de Segurança.",
+      "Ação Popular.",
+      "Mandado de Injunção.",
+      "Arguição de Descumprimento de Preceito Fundamental."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Tráfico de drogas é inafiançável e insuscetível de graça ou anistia."
+  },
+  {
+    "id": 164,
+    "simuladoQNum": 24,
+    "category": "portugues",
+    "day": "dia6",
+    "discipline": "Mandado de Segurança: Prazo Decadencial",
+    "topic": "Simulado Oficial 01 • Questão 24",
+    "question": "[Simulado 01 - Q24] O prazo decadencial para a impetração de Mandado de Segurança é de:",
+    "options": [
+      "120 dias contados da ciência, pelo interessado, do ato impugnado.",
+      "30 dias contados da publicação da portaria.",
+      "60 dias contados da ocorrência do fato danoso.",
+      "90 dias contados da notificação do ato coator."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Lei 12.016/09, Art. 23 - Prazo decadencial de 120 dias para Mandado de Segurança."
+  },
+  {
+    "id": 165,
+    "simuladoQNum": 25,
+    "category": "portugues",
+    "day": "dia6",
+    "discipline": "Remédios: Tribunal do Júri",
+    "topic": "Simulado Oficial 01 • Questão 25",
+    "question": "[Simulado 01 - Q25] É reconhecida a instituição do júri pela CF/88, com a organização que lhe der a lei, assegurada expressamente a competência para o julgamento dos:",
+    "options": [
+      "Crimes praticados por servidores públicos contra a administração em geral.",
+      "Crimes de responsabilidade praticados por prefeitos e vereadores.",
+      "Crimes culposos de trânsito que resultem em morte.",
+      "Crimes dolosos contra a vida."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Art. 5º, XXXVIII, \"d\" - Competência do Tribunal do Júri para crimes dolosos contra a vida."
+  },
+  {
+    "id": 166,
+    "simuladoQNum": 26,
+    "category": "administrativo",
+    "day": "dia6",
+    "discipline": "D. Administrativo: Princípios LIMPE",
+    "topic": "Simulado Oficial 01 • Questão 26",
+    "question": "[Simulado 01 - Q26] Conforme o Art. 37, caput, da Constituição Federal de 1988, a administração pública direta e indireta de qualquer dos Poderes obedecerá aos seguintes princípios expressos:",
+    "options": [
+      "Legalidade, Impessoalidade, Moralidade, Publicidade e Eficiência.",
+      "Legalidade, Supremacia do interesse público, Moralidade, Finalidade e Eficiência.",
+      "Proporcionalidade, Impessoalidade, Razoabilidade, Publicidade e Celeridade.",
+      "Legalidade, Isonomia, Moralidade, Transparência e Motivação."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Mnemônico LIMPE - Art. 37, caput da CF/88."
+  },
+  {
+    "id": 167,
+    "simuladoQNum": 27,
+    "category": "administrativo",
+    "day": "dia6",
+    "discipline": "D. Administrativo: Impessoalidade",
+    "topic": "Simulado Oficial 01 • Questão 27",
+    "question": "[Simulado 01 - Q27] De acordo com o Art. 37, § 1º, da CF/88, a publicidade dos atos dos órgãos públicos não pode conter nomes, símbolos ou imagens que caracterizem promoção pessoal de autoridades. Tal regra decorre do princípio da:",
+    "options": [
+      "Continuidade do serviço público.",
+      "Autotutela.",
+      "Especialidade.",
+      "Impessoalidade."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Art. 37, § 1º CF/88 - Princípio da impessoalidade na publicidade institucional."
+  },
+  {
+    "id": 168,
+    "simuladoQNum": 28,
+    "category": "administrativo",
+    "day": "dia6",
+    "discipline": "D. Administrativo: Autotutela",
+    "topic": "Simulado Oficial 01 • Questão 28",
+    "question": "[Simulado 01 - Q28] A prerrogativa conferida à Administração Pública de rever seus próprios atos, anulando os ilegais e revogando os inoportunos, decorre do princípio da:",
+    "options": [
+      "Legalidade estrita.",
+      "Autotutela.",
+      "Continuidade.",
+      "Razoabilidade."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Autotutela - Súmulas 346 e 473 do STF."
+  },
+  {
+    "id": 169,
+    "simuladoQNum": 29,
+    "category": "portugues",
+    "day": "dia6",
+    "discipline": "Organização: Desconcentração vs. Descentralização",
+    "topic": "Simulado Oficial 01 • Questão 29",
+    "question": "[Simulado 01 - Q29] A distribuição interna de competências e atribuições dentro de uma mesma pessoa jurídica, dando origem a órgãos públicos despersonalizados com subordinação hierárquica, denomina-se:",
+    "options": [
+      "Descentralização por serviços.",
+      "Delegação por colaboração.",
+      "Desconcentração.",
+      "Terceirização administrativa."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Desconcentração - distribuição interna de competências criando órgãos."
+  },
+  {
+    "id": 170,
+    "simuladoQNum": 30,
+    "category": "portugues",
+    "day": "dia6",
+    "discipline": "Administração Indireta: Autarquias",
+    "topic": "Simulado Oficial 01 • Questão 30",
+    "question": "[Simulado 01 - Q30] Sobre as entidades que integram a Administração Pública Indireta, assinale a entidade que é criada DIRETAMENTE por lei específica e possui personalidade jurídica de direito público:",
+    "options": [
+      "Empresa Pública.",
+      "Sociedade de Economia Mista.",
+      "Fundação Pública de direito privado.",
+      "Autarquia."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Art. 37, XIX - Autarquia criada diretamente por lei específica."
+  },
+  {
+    "id": 171,
+    "simuladoQNum": 31,
+    "category": "portugues",
+    "day": "dia6",
+    "discipline": "Sociedades de Economia Mista: Formato",
+    "topic": "Simulado Oficial 01 • Questão 31",
+    "question": "[Simulado 01 - Q31] A respeito das Sociedades de Economia Mista, assinale a afirmativa correta:",
+    "options": [
+      "Seu capital social é integralmente pertencente ao Poder Público.",
+      "Possuem personalidade jurídica de direito público e bens inpenhoráveis.",
+      "Devem ser constituídas obrigatoriamente sob a forma de Sociedade Anônima (S/A).",
+      "Podem adotar qualquer formato societário, como Sociedade Limitada (Ltda)."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Sociedade de Economia Mista sob forma obrigatória de S/A."
+  },
+  {
+    "id": 172,
+    "simuladoQNum": 32,
+    "category": "portugues",
+    "day": "dia6",
+    "discipline": "Nova Lei de Licitações: Modalidades",
+    "topic": "Simulado Oficial 01 • Questão 32",
+    "question": "[Simulado 01 - Q32] Segundo a Lei nº 14.133/2021 (Nova Lei de Licitações), são modalidades de licitação expressamente previstas, EXCETO:",
+    "options": [
+      "Pregão e Concorrência.",
+      "Concurso e Leilão.",
+      "Tomada de Preços e Convite.",
+      "Diálogo Competitivo."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Lei 14.133/2021 extinguiu as modalidades Convite e Tomada de Preços."
+  },
+  {
+    "id": 173,
+    "simuladoQNum": 33,
+    "category": "portugues",
+    "day": "dia6",
+    "discipline": "Licitações: Inexigibilidade vs. Dispensa",
+    "topic": "Simulado Oficial 01 • Questão 33",
+    "question": "[Simulado 01 - Q33] A contratação direta com fundamento na inviabilidade de competição (como na contratação de profissional do setor artístico consagrado pela crítica especializada) caracteriza hipótese de:",
+    "options": [
+      "Dispensa de licitação em razão do valor.",
+      "Inexigibilidade de licitação.",
+      "Concorrência internacional.",
+      "Alienação fiduciária."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Inexigibilidade de licitação por inviabilidade de competição (Art. 74)."
+  },
+  {
+    "id": 174,
+    "simuladoQNum": 34,
+    "category": "portugues",
+    "day": "dia6",
+    "discipline": "Lei Orgânica de Meruoca: Prazos de Veto",
+    "topic": "Simulado Oficial 01 • Questão 34",
+    "question": "[Simulado 01 - Q34] Conforme a Lei Orgânica do Município de Meruoca, o Prefeito Municipal, considerando o Projeto de Lei aprovado pela Câmara inconstitucional ou contrário ao interesse público, terá qual prazo para vetá-lo?",
+    "options": [
+      "10 dias corridos.",
+      "20 dias úteis.",
+      "30 dias corridos.",
+      "15 dias úteis."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Lei Orgânica de Meruoca - Prazo de veto do prefeito: 15 dias úteis."
+  },
+  {
+    "id": 175,
+    "simuladoQNum": 35,
+    "category": "portugues",
+    "day": "dia6",
+    "discipline": "Lei Orgânica de Meruoca: Contas do Prefeito",
+    "topic": "Simulado Oficial 01 • Questão 35",
+    "question": "[Simulado 01 - Q35] O parecer prévio emitido pelo Tribunal de Contas (TCE) sobre as contas anuais prestadas pelo Prefeito de Meruoca só deixará de prevalecer por decisão de:",
+    "options": [
+      "Maioria simples dos vereadores presentes.",
+      "Maioria absoluta dos membros da Câmara.",
+      "Unanimidade dos membros da Mesa Diretora.",
+      "2/3 (dois terços) dos membros da Câmara Municipal."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Quórum qualificado de 2/3 da Câmara de Meruoca para rejeitar parecer do TCE."
+  },
+  {
+    "id": 176,
+    "simuladoQNum": 36,
+    "category": "portugues",
+    "day": "dia6",
+    "discipline": "Regimento Interno da Câmara: Funções",
+    "topic": "Simulado Oficial 01 • Questão 36",
+    "question": "[Simulado 01 - Q36] No âmbito do Poder Legislativo Municipal de Meruoca, constituem funções TÍPICAS da Câmara de Vereadores:",
+    "options": [
+      "Legislar sobre assuntos de interesse local e fiscalizar a administração pública municipal.",
+      "Executar obras públicas e administrar receitas tributárias municipais.",
+      "Julgar ações penais condenatórias e expedir mandados de prisão.",
+      "Promover o controle concentrado de constitucionalidade perante o STF."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Funções típicas do Poder Legislativo: legislar e fiscalizar."
+  },
+  {
+    "id": 177,
+    "simuladoQNum": 37,
+    "category": "portugues",
+    "day": "dia6",
+    "discipline": "Técnica Legislativa: LC nº 95/1998",
+    "topic": "Simulado Oficial 01 • Questão 37",
+    "question": "[Simulado 01 - Q37] Segundo a Lei Complementar nº 95/1998, a articulação e numeração dos artigos de uma lei devem ser expressas por numerais ordinais até o artigo:",
+    "options": [
+      "Art. 5º.",
+      "Art. 10.",
+      "Art. 12.",
+      "Art. 9º."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. LC 95/98 - Artigos são numerados com ordinais até o 9º e cardinais a partir do 10."
+  },
+  {
+    "id": 178,
+    "simuladoQNum": 38,
+    "category": "portugues",
+    "day": "dia6",
+    "discipline": "Orçamento / LRF: Limite de Pessoal",
+    "topic": "Simulado Oficial 01 • Questão 38",
+    "question": "[Simulado 01 - Q38] Nos termos da Lei de Responsabilidade Fiscal (LC nº 101/2000), a despesa total com pessoal do Poder Legislativo Municipal (Câmara de Vereadores) não poderá exceder qual percentual da Receita Corrente Líquida (RCL)?",
+    "options": [
+      "2% da RCL.",
+      "54% da RCL.",
+      "60% da RCL.",
+      "6% da RCL."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. LRF - LC 101/00 - Limite total de despesa com pessoal da Câmara: 6% da RCL."
+  },
+  {
+    "id": 179,
+    "simuladoQNum": 39,
+    "category": "portugues",
+    "day": "dia6",
+    "discipline": "Improbidade Administrativa: Lei 8.429/92",
+    "topic": "Simulado Oficial 01 • Questão 39",
+    "question": "[Simulado 01 - Q39] Com as alterações promovidas pela Lei nº 14.230/2021 na Lei de Improbidade Administrativa, a configuração de ato de improbidade exige:",
+    "options": [
+      "Apenas a modalidade culposa em caso de negligência comprovada.",
+      "O dano material ao erário, sendo dispensada a comprovação de dolo ou culpa.",
+      "A presença de Dolo Específico (intenção consciente de alcançar o resultado ilícito).",
+      "A condenação prévia na esfera penal com trânsito em julgado."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Lei 14.230/2021 - Exigência de dolo específico para configuração de improbidade."
+  },
+  {
+    "id": 180,
+    "simuladoQNum": 40,
+    "category": "portugues",
+    "day": "dia6",
+    "discipline": "Transparência: LAI - Lei 12.527/2011",
+    "topic": "Simulado Oficial 01 • Questão 40",
+    "question": "[Simulado 01 - Q40] Conforme a Lei de Acesso à Informação (LAI), caso o órgão público não possa fornecer o acesso imediato à informação solicitada, deverá responder ao pedido no prazo de até:",
+    "options": [
+      "5 dias úteis, improrrogáveis.",
+      "10 dias corridos, prorrogáveis por 5 dias.",
+      "30 dias úteis, sem necessidade de justificativa.",
+      "20 dias corridos, prorrogáveis por mais 10 dias mediante justificativa expressa."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. LAI - Lei 12.527/11 - Prazo padrão de resposta: até 20 dias, prorrogável por 10 dias."
+  },
+  {
+    "id": 181,
+    "category": "constitucional",
+    "day": "w2_d1",
+    "discipline": "D. Constitucional",
+    "topic": "Forma de Estado & Autonomia Federativa (Art. 18)",
+    "question": "Conforme o Art. 18 da Constituição Federal de 1988, a organização político-administrativa da República Federativa do Brasil compreende a União, os Estados, o Distrito Federal e os Municípios. A respeito dessa estrutura, é correto afirmar que:",
+    "options": [
+      "A União é soberana e os demais entes federativos não possuem autonomia administrativa ou orçamentária.",
+      "Todos são entes autônomos, nos termos da Constituição, sendo vedada qualquer tentativa de secessão ou dissolução do pacto federativo.",
+      "Os Municípios subordinam-se administrativamente aos Estados-membros, dependendo de autorização da Assembleia Legislativa para criar seus órgãos.",
+      "O Distrito Federal pode ser dividido em Municípios autônomos por lei distrital aprovada por maioria simples."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Art. 18, caput da CF/88: 'A organização político-administrativa da República Federativa do Brasil compreende a União, os Estados, o Distrito Federal e os Municípios, todos autônomos, nos termos desta Constituição'. A República Federativa do Brasil possui SOBERANIA (no plano internacional); os entes federados (União, Estados, DF e Municípios) possuem AUTONOMIA (política, administrativa e financeira). É vedada a secessão (pacto federativo indissolúvel)."
+  },
+  {
+    "id": 182,
+    "category": "constitucional",
+    "day": "w2_d1",
+    "discipline": "D. Constitucional",
+    "topic": "Criação, Incorporação e Fusão de Municípios (Art. 18, § 4º)",
+    "question": "A criação, a incorporação, a fusão e o desmembramento de Municípios, consoante o Art. 18, § 4º da CF/88 (redação da EC nº 15/96), far-se-ão por:",
+    "options": [
+      "Lei estadual, dentro do período determinado por lei complementar federal, e dependerão de consulta prévia, mediante plebiscito, às populações dos Municípios envolvidos, após divulgação dos Estudos de Viabilidade Municipal.",
+      "Decreto legislativo da Câmara Municipal, homologado pelo Prefeito e pelo Governador do Estado.",
+      "Lei complementar municipal, independentemente de plebiscito, desde que aprovada por dois terços dos vereadores.",
+      "Portaria do Ministério da Justiça, mediante referendo das populações dos distritos afetados."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Art. 18, § 4º da CF/88: Quatro requisitos cumulativos: 1. Lei Complementar Federal (fixando o período); 2. Estudos de Viabilidade Municipal (apresentados e publicados); 3. Plebiscito prévio às populações de TODOS os municípios envolvidos; 4. Lei Estadual ordinária criando/desmembrando o município."
+  },
+  {
+    "id": 183,
+    "category": "constitucional",
+    "day": "w2_d1",
+    "discipline": "D. Constitucional",
+    "topic": "Vedações Federativas (Art. 19)",
+    "question": "O Art. 19 da Constituição Federal estabelece proibições expressas impostas à União, aos Estados, ao Distrito Federal e aos Municípios. Assinale a conduta expressamente VEDADA a todos esses entes:",
+    "options": [
+      "Manter relações de colaboração de interesse público com cultos religiosos ou igrejas na forma da lei.",
+      "Criar distinções entre brasileiros ou preferências entre si.",
+      "Instituir tributos municipais para a manutenção dos serviços de interesse local.",
+      "Celebrar convênios de assistência mútua com órgãos de segurança pública."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Art. 19 da CF/88 estabelece 3 vedações absolutas a todos os entes: I - Estabelecer cultos religiosos ou igrejas, subvencioná-los ou embaraçar-lhes o funcionamento (ressalvada colaboração de interesse público); II - Recusar fé aos documentos públicos; III - Criar distinções entre brasileiros ou preferências entre si."
+  },
+  {
+    "id": 184,
+    "category": "constitucional",
+    "day": "w2_d1",
+    "discipline": "D. Constitucional",
+    "topic": "Competência Privativa da União (Art. 22)",
+    "question": "No padrão recorrente da banca INBRASP, assinale a matéria cuja competência legislativa é PRIVATIVA DA UNIÃO, conforme o Art. 22 da CF/88:",
+    "options": [
+      "Direito civil, comercial, penal, processual, eleitoral, marítimo, aeronáutico, espacial e do trabalho.",
+      "Direito tributário, financeiro, penitenciário, econômico e urbanístico.",
+      "Proteção ao meio ambiente e controle da poluição em âmbito local.",
+      "Fomento da produção agropecuária e organização do abastecimento alimentar municipal."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Art. 22, I da CF/88 (Mnemônico 'CAPACETE DE PIMENTA': Civil, Agrário, Penal, Aeronáutico, Comercial, Eleitoral, Trabalho, Espacial, Desapropriação, Processual, Marítimo). A opção (B) é competência concorrente da União/Estados/DF (Art. 24). A opção (C) e (D) são competências comuns (Art. 23)."
+  },
+  {
+    "id": 185,
+    "category": "constitucional",
+    "day": "w2_d1",
+    "discipline": "D. Constitucional",
+    "topic": "Delegação de Matéria Privativa da União (Art. 22, Parágrafo Único)",
+    "question": "Embora as matérias do Art. 22 sejam privativas da União, a própria Constituição Federal prevê que os Estados e o DF poderão ser autorizados a legislar sobre questões específicas dessas matérias mediante:",
+    "options": [
+      "Medida provisória do Presidente da República.",
+      "Resolução conjunta do Senado Federal e da Câmara dos Deputados.",
+      "Lei complementar federal.",
+      "Decreto regulamentar do Ministério da Justiça."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Art. 22, Parágrafo único da CF/88: 'Lei complementar poderá autorizar os Estados a legislar sobre questões específicas das matérias relacionadas neste artigo'. Atenção: somente por Lei Complementar Federal (não por lei ordinária), apenas para questões específicas (não genéricas) e para todos os Estados indistintamente."
+  },
+  {
+    "id": 186,
+    "category": "constitucional",
+    "day": "w2_d1",
+    "discipline": "D. Constitucional",
+    "topic": "Competência Comum (Art. 23 da CF/88)",
+    "question": "O Art. 23 da CF/88 disciplina a competência comum (material/administrativa) da União, dos Estados, do Distrito Federal e dos Municípios. Constitui exemplo de competência comum de TODOS os entes federados:",
+    "options": [
+      "Legislar privativamente sobre trânsito e transporte rodoviário interestadual.",
+      "Cuidar da saúde e assistência pública, da proteção e garantia das pessoas com deficiência.",
+      "Emitir moeda de circulação nacional e fixar taxas de câmbio cambial.",
+      "Decretar o estado de sítio e o estado de defesa em todo o território nacional."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Art. 23, II da CF/88: 'cuidar da saúde e assistência pública, da proteção e garantia das pessoas com deficiência'. É competência material compartilhada por todos os entes (União, Estados, DF e Municípios)."
+  },
+  {
+    "id": 187,
+    "category": "constitucional",
+    "day": "w2_d1",
+    "discipline": "D. Constitucional",
+    "topic": "Competência Concorrente e Exclusão do Município (Art. 24)",
+    "question": "A competência legislativa CONCORRENTE prevista no Art. 24 da CF/88 (para legislar sobre direito tributário, financeiro, penitenciário, econômico e urbanístico) foi atribuída pela Constituição expressamente a:",
+    "options": [
+      "União, aos Estados, ao Distrito Federal e a todos os Municípios com mais de cem mil habitantes.",
+      "União, aos Estados e ao Distrito Federal, não figurando os Municípios no rol desse artigo.",
+      "Exclusivamente aos Municípios e ao Distrito Federal.",
+      "Apenas à União e aos Municípios que possuam câmara municipal instalada."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Art. 24, caput da CF/88: 'Compete à União, aos Estados e ao Distrito Federal legislar concorrentemente sobre...'. Os MUNICÍPIOS NÃO figuram no Art. 24! A competência dos Municípios em matéria concorrente é apenas SUPLEMENTAR à legislação federal e estadual no que couber, por força do Art. 30, II."
+  },
+  {
+    "id": 188,
+    "category": "constitucional",
+    "day": "w2_d1",
+    "discipline": "D. Constitucional",
+    "topic": "Normas Gerais vs Suplementares no Art. 24",
+    "question": "No âmbito da legislação concorrente (Art. 24), a competência da União limitar-se-á a estabelecer normas gerais (§ 1º). Sobre essa dinâmica, assinale a opção correta:",
+    "options": [
+      "A superveniência de lei federal sobre normas gerais suspende a eficácia da lei estadual, no que lhe for contrário.",
+      "A superveniência de lei federal revoga expressamente e extingue a lei estadual anterior por completo.",
+      "Inexistindo lei federal sobre normas gerais, os Estados ficam impedidos de legislar sobre a matéria.",
+      "A competência da União para normas gerais exclui a competência suplementar dos Estados-membros."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Art. 24, § 4º da CF/88: 'A superveniência de lei federal sobre normas gerais suspende a eficácia da lei estadual, no que lhe for contrário'. Pegadinha favorita de concurso: a lei federal NÃO revoga a lei estadual, apenas SUSPENDE SUA EFICÁCIA naquilo que for incompatível."
+  },
+  {
+    "id": 189,
+    "category": "constitucional",
+    "day": "w2_d1",
+    "discipline": "D. Constitucional",
+    "topic": "Competência Legislativa do Município (Art. 30, I e II)",
+    "question": "De acordo com o Art. 30, I e II da CF/88, compete aos Municípios:",
+    "options": [
+      "Legislar privativamente sobre direito processual civil e normas penais de menor potencial ofensivo.",
+      "Fixar normas gerais de direito financeiro nacional com eficácia perante os Estados vizinhos.",
+      "Instituir imposto sobre operações relativas à circulação de mercadorias e serviços (ICMS).",
+      "Legislar sobre assuntos de interesse local e suplementar a legislação federal e a estadual no que couber."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Art. 30 da CF/88: 'Compete aos Municípios: I - legislar sobre assuntos de interesse local; II - suplementar a legislação federal e a estadual no que couber'. É o núcleo da autonomia legislativa do Município de Meruoca."
+  },
+  {
+    "id": 190,
+    "category": "constitucional",
+    "day": "w2_d1",
+    "discipline": "D. Constitucional",
+    "topic": "Competência Municipal: Serviços Públicos e Transporte (Art. 30, V)",
+    "question": "Nos termos do Art. 30, V da CF/88, compete ao Município organizar e prestar, diretamente ou sob regime de concessão ou permissão, os serviços públicos de interesse local, incluído o de:",
+    "options": [
+      "Energia nuclear e exploração de jazidas de petróleo na plataforma continental.",
+      "Correios e telégrafos em âmbito interestadual.",
+      "Transporte coletivo, que tem caráter essencial.",
+      "Radiodifusão sonora e televisiva educativa regional."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Art. 30, V da CF/88: 'organizar e prestar, diretamente ou sob regime de concessão ou permissão, os serviços públicos de interesse local, incluído o de transporte coletivo, que tem caráter essencial'."
+  },
+  {
+    "id": 191,
+    "category": "constitucional",
+    "day": "w2_d1",
+    "discipline": "D. Constitucional",
+    "topic": "Competência Municipal: Solo Urbano e Plano Diretor (Art. 30, VIII)",
+    "question": "Compete aos Municípios promover, no que couber, adequado ordenamento territorial, mediante planejamento e controle do uso, do parcelamento e da ocupação do:",
+    "options": [
+      "Espaço aéreo nacional e rotas de aviação civil.",
+      "Leito dos rios que banham mais de um Estado da Federação.",
+      "Subsolo mineral e reservas de minérios estratégicos da União.",
+      "Solo urbano."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Art. 30, VIII da CF/88: 'promover, no que couber, adequado ordenamento territorial, mediante planejamento e controle do uso, do parcelamento e da ocupação do solo urbano'. É a base para a criação do Plano Diretor e do Código de Obras Municipal."
+  },
+  {
+    "id": 192,
+    "category": "constitucional",
+    "day": "w2_d1",
+    "discipline": "D. Constitucional",
+    "topic": "Lei Orgânica Municipal e Quórum de Aprovação (Art. 29)",
+    "question": "O Município reger-se-á por lei orgânica, votada em dois turnos, com o interstício mínimo de dez dias, e aprovada por:",
+    "options": [
+      "Maioria simples dos vereadores presentes, sendo sancionada pelo Prefeito.",
+      "Maioria absoluta da Câmara, com homologação obrigatória pelo Governador.",
+      "Dois terços dos membros da Câmara Municipal, que a promulgará.",
+      "Três quintos dos votos dos parlamentares em sessão conjunta com o Judiciário."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Art. 29, caput da CF/88: 'O Município reger-se-á por lei orgânica, votada em dois turnos, com o interstício mínimo de dez dias, e aprovada por dois terços dos membros da Câmara Municipal, que a promulgará'. O Prefeito NÃO sanciona nem veta a Lei Orgânica; ela é PROMULGADA diretamente pela Mesa da Câmara!"
+  },
+  {
+    "id": 193,
+    "category": "constitucional",
+    "day": "w2_d1",
+    "discipline": "D. Constitucional",
+    "topic": "Limites de Subsídio dos Vereadores (Art. 29, VI)",
+    "question": "O subsídio dos Vereadores será fixado pelas respectivas Câmaras Municipais em cada legislatura para a subsequente, observados os limites da CF. Em municípios de até dez mil habitantes (faixa base), o subsídio máximo do Vereador corresponderá a qual percentual do subsídio dos Deputados Estaduais?",
+    "options": [
+      "50% (cinquenta por cento).",
+      "75% (setenta e cinco por cento).",
+      "10% (dez por cento).",
+      "20% (vinte por cento)."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Art. 29, VI, 'a' da CF/88: em municípios de até 10.000 habitantes, o subsídio máximo do vereador é 20% do subsídio do Deputado Estadual. A escala sobe: 20%, 30%, 40%, 50%, 60% até 75% em municípios com mais de 500.000 habitantes."
+  },
+  {
+    "id": 194,
+    "category": "constitucional",
+    "day": "w2_d1",
+    "discipline": "D. Constitucional",
+    "topic": "Limite de Gasto com Folha de Pagamento da Câmara (Art. 29-A, § 1º)",
+    "question": "A Câmara Municipal não gastará mais de qual percentual de sua receita total com folha de pagamento, incluído o gasto com o subsídio de seus Vereadores (Art. 29-A, § 1º da CF)?",
+    "options": [
+      "50% (cinquenta por cento).",
+      "60% (sessenta por cento).",
+      "80% (oitenta por cento).",
+      "70% (setenta por cento)."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Art. 29-A, § 1º da CF/88: 'A Câmara Municipal não gastará mais de setenta por cento de sua receita com folha de pagamento, incluído o gasto com o subsídio de seus Vereadores'. O descumprimento desse limite constitui crime de responsabilidade do Presidente da Câmara (Art. 29-A, § 3º)."
+  },
+  {
+    "id": 195,
+    "category": "constitucional",
+    "day": "w2_d1",
+    "discipline": "D. Constitucional",
+    "topic": "Fiscalização Contábil e Tribunal de Contas (Art. 31)",
+    "question": "A fiscalização do Município será exercida pelo Poder Legislativo Municipal, mediante controle externo, e pelos sistemas de controle interno do Executivo. O controle externo da Câmara Municipal é exercido com o auxílio do:",
+    "options": [
+      "Tribunal de Justiça do Estado, mediante sentença transitada em julgado proferida anualmente.",
+      "Tribunal de Contas do Estado (ou do Município onde houver), cujo parecer prévio só deixa de prevalecer por decisão de dois terços dos vereadores.",
+      "Ministério Público Estadual, através de inquérito civil conclusivo homologado pela Mesa.",
+      "Conselho Fiscal de Contabilidade Comunitária eleito pelos contribuintes locais."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Art. 31, §§ 1º e 2º da CF/88: O controle externo é auxiliado pelo TCE. O parecer prévio do TCE sobre as contas anuais do Prefeito só pode ser rejeitado por decisão qualificada de DOIS TERÇOS (2/3) dos membros da Câmara Municipal."
+  },
+  {
+    "id": 196,
+    "category": "constitucional",
+    "day": "w2_d1",
+    "discipline": "D. Constitucional",
+    "topic": "Vedação de Novos Tribunais de Contas Municipais (Art. 31, § 4º)",
+    "question": "Sobre a estrutura de controle externo das contas municipais, o Art. 31, § 4º da Constituição Federal expressamente estabelece que:",
+    "options": [
+      "É vedada a criação de Tribunais, Conselhos ou órgãos de Contas Municipais.",
+      "Todos os municípios com mais de cinquenta mil eleitores devem instituir seu próprio Tribunal de Contas.",
+      "Os Municípios podem criar órgãos de contas municipais mediante autorização prévia do Senado Federal.",
+      "A fiscalização externa dos municípios dispensa a atuação de Tribunais de Contas estaduais."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Art. 31, § 4º da CF/88: 'É vedada a criação de Tribunais, Conselhos ou órgãos de Contas Municipais'. Apenas os tribunais municipais já existentes antes de 1988 (como os dos municípios de São Paulo e Rio de Janeiro) foram mantidos; é proibido criar novos."
+  },
+  {
+    "id": 197,
+    "category": "constitucional",
+    "day": "w2_d1",
+    "discipline": "D. Constitucional",
+    "topic": "Contas Municipais à Disposição dos Contribuintes (Art. 31, § 3º)",
+    "question": "Conforme o Art. 31, § 3º da CF/88, as contas dos Municípios ficarão, anualmente, durante quantos dias, à disposição de qualquer contribuinte, para exame e apreciação, o qual poderá questionar-lhes a legitimidade, nos termos da lei?",
+    "options": [
+      "30 (trinta) dias.",
+      "60 (sessenta) dias.",
+      "90 (noventa) dias.",
+      "15 (quinze) dias."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Art. 31, § 3º da CF/88: 'As contas dos Municípios ficarão, no decorrer de sessenta dias, anualmente, à disposição de qualquer contribuinte, para exame e apreciação, o qual poderá questionar-lhes a legitimidade, nos termos da lei'."
+  },
+  {
+    "id": 198,
+    "category": "constitucional",
+    "day": "w2_d1",
+    "discipline": "D. Constitucional",
+    "topic": "Bens da União vs Bens dos Estados (Arts. 20 e 26)",
+    "question": "A Constituição Federal define expressamente os bens pertencentes à União e aos Estados. Incluem-se entre os BENS DOS ESTADOS-MEMBROS (Art. 26 da CF/88):",
+    "options": [
+      "Os rios que banhem mais de um Estado da Federação ou sirvam de limite com países vizinhos.",
+      "Os potenciais de energia hidráulica e os recursos minerais, inclusive os do subsolo.",
+      "As águas superficiais ou subterrâneas, fluentes, emergentes e em depósito, ressalvadas, neste caso, na forma da lei, as decorrentes de obras da União.",
+      "As terras devolutas indispensáveis à defesa das fronteiras e fortificações militares."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Art. 26, I da CF/88. As águas que nascem e correm exclusivamente dentro do território de um único estado são bens do Estado. Rios que atravessam mais de um estado ou fazem fronteira com outro país (Art. 20, III), potenciais de energia hidráulica (Art. 20, VIII) e terras de fronteira (Art. 20, II) pertencem à UNIÃO."
+  },
+  {
+    "id": 199,
+    "category": "constitucional",
+    "day": "w2_d1",
+    "discipline": "D. Constitucional",
+    "topic": "Intervenção do Estado no Município (Art. 35 da CF/88)",
+    "question": "O Estado-membro NÃO intervirá em seus Municípios, SALVO quando (Art. 35 da CF):",
+    "options": [
+      "O prefeito pertencer a partido político de oposição ao governador do Estado.",
+      "A câmara municipal aprovar moção de desconfiança contra a diretoria do hospital municipal.",
+      "O município apresentar índice de desemprego superior à média estadual no semestre.",
+      "Deixar de ser paga, sem motivo de força maior, por dois anos consecutivos, a dívida fundada."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Art. 35 da CF/88: O Estado só pode intervir no Município se: I - deixar de pagar dívida fundada por 2 anos consecutivos; II - não prestar contas devidas na lei; III - não aplicar o mínimo constitucional em saúde e educação; IV - o TJ prover representação para assegurar princípios ou prover execução de lei/ordem judicial."
+  },
+  {
+    "id": 200,
+    "category": "constitucional",
+    "day": "w2_d1",
+    "discipline": "D. Constitucional",
+    "topic": "Intervenção Federal em Municípios localizados em Estado",
+    "question": "A respeito da intervenção federal em Municípios localizados dentro de um Estado-membro (como o Município de Meruoca no Estado do Ceará), é correto afirmar que:",
+    "options": [
+      "A União não intervém diretamente em Municípios localizados em Estados, cabendo ao próprio Estado a intervenção municipal (a intervenção federal direta em município só cabe em Território Federal).",
+      "O Presidente da República pode decretar intervenção federal direta em qualquer município sem consultar o Governador do Estado.",
+      "A intervenção no município é sempre realizada pelo Ministério Público Federal mediante portaria ministerial.",
+      "O Governador do Estado pode intervir na União caso haja atraso no repasse do Fundo de Participação dos Estados."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Regra do Art. 35 e Art. 36 da CF: O Estado é quem intervém em seus Municípios. A União só intervém diretamente em Municípios localizados em TERRITÓRIOS FEDERAIS (Art. 35, caput)."
+  },
+  {
+    "id": 201,
+    "category": "portugues",
+    "day": "w2_d1",
+    "discipline": "Língua Portuguesa",
+    "topic": "Derivação Parassintética vs Prefixal e Sufixal",
+    "question": "A DERIVAÇÃO PARASSINTÉTICA ocorre quando prefixo e sufixo são agregados simultaneamente ao radical, de modo que a palavra não existe sem um deles. Assinale a alternativa que apresenta um vocábulo formado por derivação parassintética:",
+    "options": [
+      "Anoitecer (a + noit + ecer)",
+      "Infelizmente (in + feliz + mente)",
+      "Deslealdade (des + leal + dade)",
+      "Reorganização (re + organiza + ção)"
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Em 'a-noit-ecer', o prefixo 'a-' e o sufixo '-ecer' foram anexados simultaneamente ao radical 'noit-'. Se retirarmos o prefixo, não existe a palavra 'noitecer'; se retirarmos o sufixo, não existe 'anoite'. Já em 'infelizmente' (B) e 'deslealdade' (C), os afixos são independentes ('infeliz' e 'felizmente' existem no idioma, configurando derivação prefixal e sufixal)."
+  },
+  {
+    "id": 202,
+    "category": "portugues",
+    "day": "w2_d1",
+    "discipline": "Língua Portuguesa",
+    "topic": "Derivação Regressiva (Deverbal)",
+    "question": "A derivação regressiva (ou deverbal) consiste na formação de substantivos abstratos a partir de verbos, geralmente com a redução da terminação verbal para as vogais temáticas -a, -o, -e. Assinale o vocábulo formado por DERIVAÇÃO REGRESSIVA:",
+    "options": [
+      "O pescador (derivado do verbo pescar)",
+      "A lealdade (derivado do adjetivo leal)",
+      "O antebraço (derivado do substantivo braço)",
+      "O debate (derivado do verbo debater)"
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. 'O debate' é substantivo abstrato que indica ação, formado pela regressão do verbo 'debater' (perda da desinência infinitiva -r e fixação da vogal -e). Em (B), 'pescador' é derivação sufixal (-dor); em (C), 'lealdade' é derivação sufixal (-dade); em (D), 'antebraço' é derivação prefixal (ante-)."
+  },
+  {
+    "id": 203,
+    "category": "portugues",
+    "day": "w2_d1",
+    "discipline": "Língua Portuguesa",
+    "topic": "Derivação Imprópria (Conversão)",
+    "question": "A DERIVAÇÃO IMPRÓPRIA ocorre quando uma palavra muda de classe gramatical no contexto da oração sem que haja qualquer alteração em sua estrutura morfológica. Assinale a frase em que se constata a ocorrência de derivação imprópria:",
+    "options": [
+      "O servidor realizou um trabalho rápido e eficiente durante a sessão.",
+      "Eles discordaram profundamente das propostas apresentadas em plenário.",
+      "A comissão permanente elaborou um parecer extremamente detalhado.",
+      "O 'sim' dos parlamentares foi decisivo para a promulgação da lei."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. O vocábulo 'sim' é originalmente um advérbio de afirmação. Precedido pelo artigo definido 'o' ('O sim dos parlamentares'), foi substantivado (passou a funcionar como substantivo comum), configurando típico caso de derivação imprópria ou conversão."
+  },
+  {
+    "id": 204,
+    "category": "portugues",
+    "day": "w2_d1",
+    "discipline": "Língua Portuguesa",
+    "topic": "Composição por Justaposição vs Aglutinação",
+    "question": "Na formação de palavras por COMPOSIÇÃO, unem-se dois ou mais radicais. Quando os elementos componentes se unem mantendo a integridade fonética e gráfica de cada um, ocorre:",
+    "options": [
+      "Aglutinação (ex: planalto, vinagre, pernilongo).",
+      "Hibridismo morfológico greco-latino.",
+      "Justaposição (ex: passatempo, pé-de-galinha, girassol).",
+      "Reduplicação silábica imitativa onomatopeica."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Justaposição une palavras sem perda fonética de seus elementos (passa + tempo = passatempo; gira + sol = girassol; embora dobre o 's' para manter o som, não há supressão fonética). Na aglutinação, há perda/fusão fonética (plano + alto = planalto; vinho + acre = vinagre)."
+  },
+  {
+    "id": 205,
+    "category": "portugues",
+    "day": "w2_d1",
+    "discipline": "Língua Portuguesa",
+    "topic": "Composição por Aglutinação",
+    "question": "Assinale a alternativa em que AMBAS as palavras foram formadas pelo processo de COMPOSIÇÃO POR AGLUTINAÇÃO:",
+    "options": [
+      "Guarda-roupa e couve-flor.",
+      "Beija-flor e pontapé.",
+      "Planalto (plano + alto) e vinagre (vinho + acre).",
+      "Segunda-feira e micro-ondas."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Em 'planalto' (plano + alto) e 'vinagre' (vinho + acre), houve alteração fonética e perda de elementos mórficos originais, caracterizando aglutinação. Todas as outras opções trazem termos compostos por justaposição."
+  },
+  {
+    "id": 206,
+    "category": "portugues",
+    "day": "w2_d1",
+    "discipline": "Língua Portuguesa",
+    "topic": "Identificação do Radical",
+    "question": "O RADICAL é o elemento mórfico fundamental e indivisível que contém o significado básico da palavra e é comum às palavras de uma mesma família (cognatas). Identifique a palavra que NÃO pertence à mesma família cognata das demais:",
+    "options": [
+      "Cabelo, cabeceira, cabeçalho e cabeçudo.",
+      "Pedreiro, pedregulho, apedrejar e pedra.",
+      "Livraria, livreiro, livrinho e livro.",
+      "Terráqueo, terrestre, aterrar e terra."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. 'Cabelo' tem raiz etimológica ligada a pelos capilares (latim 'capillus'). Já 'cabeceira', 'cabeçalho' e 'cabeçudo' derivam do radical de 'cabeça' (latim 'capitia'). As opções A, B e C reúnem palavras legitimamente cognatas com o mesmo radical compartilhado."
+  },
+  {
+    "id": 207,
+    "category": "portugues",
+    "day": "w2_d1",
+    "discipline": "Língua Portuguesa",
+    "topic": "Desinências Nominais de Gênero e Número",
+    "question": "Na morfologia da Língua Portuguesa, as desinências nominais indicam gênero (masculino/feminino) e número (singular/plural). Na palavra 'MENINAS', os morfemas '-A-' e '-S' classificam-se, respectivamente, como:",
+    "options": [
+      "Vogal temática e sufixo aumentativo.",
+      "Desinência nominal de gênero feminino e desinência nominal de número plural.",
+      "Radical flexionado e consoante eufônica de ligação.",
+      "Afixo derivacional e desinência verbal de pessoa."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Na estrutura 'MENIN-A-S': 'menin-' é o radical; '-a-' é a desinência nominal de gênero feminino; '-s' é a desinência nominal de número plural."
+  },
+  {
+    "id": 208,
+    "category": "portugues",
+    "day": "w2_d1",
+    "discipline": "Língua Portuguesa",
+    "topic": "Vogal Temática Verbal e Tema",
+    "question": "A VOGAL TEMÁTICA liga o radical às desinências e indica a conjugação verbal (1ª -a, 2ª -e, 3ª -i). O radical somado à vogal temática constitui o:",
+    "options": [
+      "Afixo composto.",
+      "Cognato absoluto.",
+      "Morfema zero.",
+      "Tema."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Na morfologia verbal: Radical + Vogal Temática = TEMA. Exemplo: no verbo 'cantar', 'cant-' é o radical e '-a-' é a vogal temática da 1ª conjugação. O tema é 'canta-'."
+  },
+  {
+    "id": 209,
+    "category": "portugues",
+    "day": "w2_d1",
+    "discipline": "Língua Portuguesa",
+    "topic": "Vogais e Consoantes de Ligação",
+    "question": "Vogais e consoantes de ligação são elementos fonéticos eufônicos inseridos entre morfemas unicamente para facilitar a pronúncia, desprovidos de significado gramatical próprio. Há uma CONSOANTE DE LIGAÇÃO na palavra:",
+    "options": [
+      "Infelizmente (in + feliz + mente)",
+      "Desleal (des + leal)",
+      "Cafeteira (café + -t- + eira)",
+      "Pedrada (pedra + ada)"
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Em 'café' + '-eira', a junção direta geraria o cacófato 'cafeeira'. Inseriu-se a consoante eufônica '-t-' (cafeteira) exclusivamente para fluidez fonética. Outros exemplos: pau-l-ada, cha-l-eira."
+  },
+  {
+    "id": 210,
+    "category": "portugues",
+    "day": "w2_d1",
+    "discipline": "Língua Portuguesa",
+    "topic": "Hibridismo",
+    "question": "O processo de formação de palavras em que ocorre a junção de elementos mórficos originários de IDIOMAS DIFERENTES é denominado:",
+    "options": [
+      "Neologismo fonético espontâneo.",
+      "Hibridismo (ex: televisão: tele grego + visão latim; burocracia: bureau francês + cracia grego).",
+      "Siglonimização e acrônimo.",
+      "Onomatopeia imitativa de ruídos."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Hibridismo é a formação de uma palavra com radicais ou afixos de línguas distintas. Exemplos clássicos: Televisão (tele = grego, visão = latim), Burocracia (bureau = francês, cracia = grego), Automóvel (auto = grego, móvel = latim)."
+  },
+  {
+    "id": 211,
+    "category": "portugues",
+    "day": "w2_d1",
+    "discipline": "Língua Portuguesa",
+    "topic": "Onomatopeia",
+    "question": "Assinale a alternativa que apresenta vocábulos formados por ONOMATOPEIA (reprodução aproximada de sons ou ruídos da natureza e de objetos):",
+    "options": [
+      "Amanhecer, entardecer e anoitecer.",
+      "Fidalgo, aguardente e pernalta.",
+      "Couve-flor, guarda-chuva e girassol.",
+      "Tic-tac, zunzum, miau e coaxar."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. A onomatopeia consiste na criação de vocábulos que buscam imitar sons ou ruídos reais: tic-tac (relógio), zunzum (zumbido), miau (gato), coaxar (sapo), pingue-pongue."
+  },
+  {
+    "id": 212,
+    "category": "portugues",
+    "day": "w2_d1",
+    "discipline": "Língua Portuguesa",
+    "topic": "Derivação Prefixal com Prefixo Negativo",
+    "question": "Os prefixos 'in-' (latim) e 'a-' (grego) denotam privação ou negação. Assinale a opção em que AMBAS as palavras apresentam prefixos com valor semântico de NEGAÇÃO:",
+    "options": [
+      "Importar e adjunto.",
+      "Inativo e atípico.",
+      "Progresso e antebraço.",
+      "Submarino e supersensível."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. 'Inativo' = não ativo (in- negativo latino); 'Atípico' = não típico (a- de privação grego). Em (B), 'importar' traz o 'in-' com sentido de movimento para dentro; em (C), 'pro-' denota para a frente; em (D), 'sub-' significa debaixo."
+  },
+  {
+    "id": 213,
+    "category": "portugues",
+    "day": "w2_d1",
+    "discipline": "Língua Portuguesa",
+    "topic": "Sufixos Formadores de Substantivos Abstratos",
+    "question": "Os sufixos nominalizadores transformam verbos ou adjetivos em substantivos. O sufixo presente em 'ORGANIZAÇÃO' (-ção) indica precipuamente a noção de:",
+    "options": [
+      "Ação ou resultado de uma ação.",
+      "Lugar ou estabelecimento comercial.",
+      "Profissão ou agente executor.",
+      "Grau diminutivo pejorativo."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. O sufixo '-ção' (organiza + ção, promulga + ção, delibera + ção) é um sufixo nominalizador deverbal que exprime o ato, ação ou o resultado da ação do verbo."
+  },
+  {
+    "id": 214,
+    "category": "portugues",
+    "day": "w2_d1",
+    "discipline": "Língua Portuguesa",
+    "topic": "Siglas e Acrônimos",
+    "question": "No vocabulário administrativo e legislativo, as palavras formadas pela combinação das letras ou sílabas iniciais de uma denominação composta (ex: MERCOSUL, UNESCO, EMBRAPA) que podem ser pronunciadas como uma palavra comum denominam-se:",
+    "options": [
+      "Estrangeirismos arcaicos.",
+      "Derivações parassintéticas truncadas.",
+      "Acrônimos.",
+      "Arcaísmos de composição por justaposição."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Acrônimo é a sigla que se pronuncia como uma palavra contínua e natural da língua (ex: Embrapa, Mercosul, Petrobras, Unesco). Diferencia-se das siglas puras que exigem soletração letra a letra (ex: CPF, OAB, IPTU)."
+  },
+  {
+    "id": 215,
+    "category": "portugues",
+    "day": "w2_d1",
+    "discipline": "Língua Portuguesa",
+    "topic": "Neologismo",
+    "question": "O processo linguístico pelo qual novos termos são criados ou importados para suprir a necessidade de nomear novos conceitos científicos, tecnológicos ou socioculturais (ex: 'deletar', 'tuitar', 'printar') é chamado de:",
+    "options": [
+      "Solecismo de regência.",
+      "Pleonasmo de reforço.",
+      "Neologismo.",
+      "Ambiguidade estilística."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Neologismo é a criação de palavras novas ou a atribuição de novos significados a termos preexistentes na língua, refletindo inovações da sociedade e tecnologia."
+  },
+  {
+    "id": 216,
+    "category": "portugues",
+    "day": "w2_d1",
+    "discipline": "Língua Portuguesa",
+    "topic": "Palavra Primitiva vs Derivada",
+    "question": "Em relação à relação morfológica entre primitivo e derivado, assinale o par em que a segunda palavra é DERIVADA da primeira:",
+    "options": [
+      "Lei -> Legalizar.",
+      "História -> Histórico (ambas são primitivas).",
+      "Vento -> Ventania (ambas são formadas por composição).",
+      "Flor -> Floricultura (formada unicamente por hibridismo)."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. 'Lei' é vocábulo primitivo (não se origina de outra palavra na língua portuguesa). 'Legalizar' é derivada de 'legal' (sua vez derivada de lei) por sufixação (-izar)."
+  },
+  {
+    "id": 217,
+    "category": "portugues",
+    "day": "w2_d1",
+    "discipline": "Língua Portuguesa",
+    "topic": "Abreviatura vs Sigla vs Redução (Abreviação Vocabular)",
+    "question": "O processo de ABREVIAÇÃO VOCABULAR (ou redução) consiste na eliminação de uma parte da palavra a fim de economizar tempo e esforço na comunicação falada ou escrita. Assinale o exemplo de abreviação vocabular:",
+    "options": [
+      "OAB (Ordem dos Advogados do Brasil).",
+      "Passatempo (de passa + tempo).",
+      "Amanhecer (de a + manhã + ecer).",
+      "Foto (de fotografia), moto (de motocicleta) e fone (de telefone)."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Abreviação vocabular (ou redução) é a redução de uma palavra longa mantendo o significado original: foto (fotografia), moto (motocicleta), fone (telefone), quilo (quilograma), cine (cinema)."
+  },
+  {
+    "id": 218,
+    "category": "portugues",
+    "day": "w2_d1",
+    "discipline": "Língua Portuguesa",
+    "topic": "Desinência Modo-Temporal Verbal",
+    "question": "Na forma verbal 'ESTUDÁVAMOS', o segmento mórfico '-VA-' classifica-se como:",
+    "options": [
+      "Desinência número-pessoal (indica primeira pessoa do plural).",
+      "Desinência modo-temporal (indica pretérito imperfeito do modo indicativo).",
+      "Vogal de ligação eufônica.",
+      "Sufixo adverbializatório de intensidade."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Em 'estud-á-va-mos': 'estud-' é o radical; '-a-' é a vogal temática; 'estuda-' é o tema; '-va-' é a desinência modo-temporal (DMT) do pretérito imperfeito do indicativo; '-mos' é a desinência número-pessoal (DNP) de 1ª pessoa do plural."
+  },
+  {
+    "id": 219,
+    "category": "portugues",
+    "day": "w2_d1",
+    "discipline": "Língua Portuguesa",
+    "topic": "Análise Estrutural Completa de Vocábulo",
+    "question": "Assinale a alternativa em que a divisão mórfica do vocábulo 'DESALINHAMENTO' e a identificação de seus elementos estão inteiramente corretas:",
+    "options": [
+      "Desalinha- (radical único) + -mento (desinência de número).",
+      "Des- (afixo flexional) + alinhamento (palavra composta por aglutinação).",
+      "Des- (prefixo) + alinh- (radical) + -a- (vogal temática) + -mento (sufixo derivacional formador de substantivo).",
+      "De- (prefixo) + salinha (radical) + -mento (sufixo aumentativo)."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. 'Desalinhamento' estrutura-se por: Prefixo 'des-' (sentido de negação/inversão) + Radical 'alinh-' (de linha) + Vogal temática '-a-' + Sufixo nominalizador '-mento' (formador de substantivo abstrato que indica ação ou resultado)."
+  },
+  {
+    "id": 220,
+    "category": "portugues",
+    "day": "w2_d1",
+    "discipline": "Língua Portuguesa",
+    "topic": "Identificação Geral dos Processos em Concurso",
+    "question": "Relacione as colunas quanto ao processo de formação de palavras:\n(1) Justaposição\n(2) Aglutinação\n(3) Parassíntese\n(4) Derivação Imprópria\n\n( ) Envergonhar\n( ) Guarda-noturno\n( ) O olhar triste da testemunha\n( ) Pernalta\n\nA sequência correta de preenchimento, de cima para baixo, é:",
+    "options": [
+      "3 — 1 — 4 — 2",
+      "1 — 3 — 2 — 4",
+      "3 — 2 — 1 — 4",
+      "4 — 1 — 3 — 2"
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Envergonhar: en- + vergonh- + -ar (parassíntese: 3); Guarda-noturno: guarda + noturno sem perda (justaposição: 1); O olhar triste: 'olhar' substantivado pelo artigo 'o' (derivação imprópria: 4); Pernalta: perna + alta com perda da vogal 'a' (aglutinação: 2). Sequência: 3, 1, 4, 2."
   }
-,
-{
-  "id": 61,
-  "category": "portugues",
-  "day": "dia4",
-  "discipline": "Língua Portuguesa",
-  "topic": "Acentuação Gráfica: Regra das Proparoxítonas",
-  "question": "No padrão da banca INBRASP, a regra de acentuação gráfica que justifica o acento na palavra 'LEGISLATIVO' não existe pois a palavra é paroxítona sem acento. Entretanto, assinale a alternativa em que TODAS as palavras são acentuadas rigorosamente pela regra das proparoxítonas:",
-  "options": [
-    "Político, cômputo, câmara e déficit.",
-    "Técnico, caráter, público e relatório.",
-    "Orgânico, histórico, mérito e autarquia.",
-    "Público, relógio, secretária e país."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Todas as palavras de (A) são proparoxítonas (po-LÍ-ti-co, CÔM-pu-to, CÂ-ma-ra, DÉ-fi-cit), que são 100% acentuadas. Em (B), 'caráter' e 'relatório' são paroxítonas; em (C), 'autarquia' é paroxítona terminada em ditongo; em (D), 'país' é hiato e 'relógio' é paroxítona terminada em ditongo."
-},
-{
-  "id": 62,
-  "category": "portugues",
-  "day": "dia4",
-  "discipline": "Língua Portuguesa",
-  "topic": "Acentuação Gráfica: Regra dos Hiatos",
-  "question": "Assinale a alternativa em que a palavra destacada recebe acento gráfico pela MESMA regra que justifica o acento na palavra 'SAÚDE':",
-  "options": [
-    "O servidor municipal goza de total autonomia no exercício da função pública.",
-    "A saída de emergência da Câmara Municipal foi desobstruída pela fiscalização.",
-    "O vereador realizou um discurso com alto teor patriótico perante a mesa.",
-    "A assembleia legislativa deliberou favoravelmente à concessão do benefício."
-  ],
-  "correctAnswer": 1,
-  "commentary": "Gabarito: B. 'Sa-ú-de' e 'sa-í-da' são acentuadas pela REGRA DO HIATO: a vogal 'i' ou 'u' tônica, segunda vogal do hiato, sozinha na sílaba (ou com 's'), sem ser seguida de 'nh' e sem estar precedida de ditongo em paroxítona. 'Autonomia' e 'assembleia' não recebem acento; 'patriótico' é proparoxítona."
-},
-{
-  "id": 63,
-  "category": "portugues",
-  "day": "dia4",
-  "discipline": "Língua Portuguesa",
-  "topic": "Ortografia: Novo Acordo Ortográfico (Ditongos Abertos)",
-  "question": "De acordo com o Acordo Ortográfico vigente da Língua Portuguesa, os ditongos abertos 'EI' e 'OI' perderam o acento gráfico quando se encontram na posição de:",
-  "options": [
-    "Monossílabos tônicos (ex: dói, réis, méis).",
-    "Oxítonas (ex: herói, troféu, constrói).",
-    "Paroxítonas (ex: ideia, jiboia, assembleia, heroico).",
-    "Proparoxítonas (ex: helicóptero, cômputo)."
-  ],
-  "correctAnswer": 2,
-  "commentary": "Gabarito: C. O Acordo Ortográfico eliminou o acento dos ditongos abertos 'EI' e 'OI' exclusivamente nas palavras PAROXÍTONAS (i-dei-a, ji-boi-a, as-sem-blei-a, pla-tei-a). Nas oxítonas e monossílabos tônicos, o acento PERMANECE: he-rói, cons-trói, céu, réis."
-},
-{
-  "id": 64,
-  "category": "portugues",
-  "day": "dia4",
-  "discipline": "Língua Portuguesa",
-  "topic": "Fonologia: Contagem de Fonemas e Letras",
-  "question": "A palavra 'MUNICÍPIO' e a palavra 'TRABALHO' apresentam, respectivamente, o seguinte número de letras e fonemas:",
-  "options": [
-    "9 letras e 9 fonemas; 8 letras e 7 fonemas.",
-    "9 letras e 8 fonemas; 8 letras e 8 fonemas.",
-    "9 letras e 10 fonemas; 8 letras e 6 fonemas.",
-    "8 letras e 8 fonemas; 7 letras e 6 fonemas."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Em 'MU-NI-CÍ-PIO': 9 letras e 9 fonemas (não há dígrafos). Em 'TRA-BA-LHO': 8 letras e 7 fonemas, pois o dígrafo 'lh' representa um único fonema consonantal [λ]."
-},
-{
-  "id": 65,
-  "category": "portugues",
-  "day": "dia4",
-  "discipline": "Língua Portuguesa",
-  "topic": "Fonologia: Encontros Vocálicos (Hiato vs Ditongo)",
-  "question": "Considere as palavras: I. História; II. Juízes; III. Rainha; IV. Coordenar. Classificam-se, respectivamente, quanto aos encontros vocálicos, como:",
-  "options": [
-    "Ditongo crescente, Hiato, Hiato e Hiato.",
-    "Ditongo decrescente, Ditongo crescente, Tritongo e Hiato.",
-    "Hiato, Ditongo crescente, Ditongo decrescente e Tritongo.",
-    "Ditongo crescente, Hiato, Ditongo decrescente e Hiato."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. I. His-tó-ria: semivogal + vogal (ditongo crescente oral); II. Ju-í-zes: duas vogais em sílabas separadas (hiato acentuado); III. Ra-i-nha: duas vogais em sílabas separadas (hiato, não acentuado antes de 'nh'); IV. Co-or-de-nar: repetição de vogais em sílabas separadas (hiato)."
-},
-{
-  "id": 66,
-  "category": "portugues",
-  "day": "dia4",
-  "discipline": "Língua Portuguesa",
-  "topic": "Emprego do Sinal Indicativo de Crase: Casos Proibidos",
-  "question": "O emprego do sinal indicativo de crase é rigorosamente PROIBIDO na seguinte frase:",
-  "options": [
-    "O projeto de lei foi remetido à Comissão de Constituição e Justiça.",
-    "O presidente da Câmara dirigiu-se a todos os vereadores com respeito.",
-    "A sessão solene teve início às nove horas da manhã em ponto.",
-    "O servidor compareceu à reunião extraordinária do plenário."
-  ],
-  "correctAnswer": 1,
-  "commentary": "Gabarito: B. Em 'a todos os vereadores', o 'a' antecede pronome indefinido ('todos') e palavra masculina no plural ('vereadores'). Não há artigo definido feminino 'a', logo a crase é terminantemente proibida."
-},
-{
-  "id": 67,
-  "category": "portugues",
-  "day": "dia4",
-  "discipline": "Língua Portuguesa",
-  "topic": "Emprego da Crase: Casos Facultativos",
-  "question": "A ocorrência do acento grave indicativo de crase é FACULTATIVA (opcional) em:",
-  "options": [
-    "O técnico legislativo entregou a ata à sua chefia imediata.",
-    "A comissão parlamentar passou a investigar os fatos noticiados.",
-    "O cidadão compareceu a pé até a portaria do prédio público.",
-    "Ele redigiu a ata a lápis para posterior digitação oficial."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. A crase é facultativa em três casos clássicos (Mnemônico 'NOME DE MULHER, ATÉ, MINHA'): 1. Antes de pronome possessivo feminino no singular ('à sua' ou 'a sua'); 2. Antes de nomes próprios femininos sem especificador ('à Maria' ou 'a Maria'); 3. Após a preposição 'até' ('até à' ou 'até a')."
-},
-{
-  "id": 68,
-  "category": "portugues",
-  "day": "dia4",
-  "discipline": "Língua Portuguesa",
-  "topic": "Emprego da Crase: Antes de Verbos",
-  "question": "Analise a frase: 'O relator começou ___ expor as razões do veto e colocou o parecer ___ disposição da bancada'. Assinale a alternativa que preenche correta e respectivamente as lacunas:",
-  "options": [
-    "a — à",
-    "à — à",
-    "a — a",
-    "à — a"
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Antes de verbo ('expor'), não ocorre artigo feminino, logo usa-se apenas a preposição simples 'a' (sem crase). Na expressão 'à disposição', trata-se de locução adverbial/prepositiva com núcleo feminino, exigindo crase obrigatória."
-},
-{
-  "id": 69,
-  "category": "portugues",
-  "day": "dia4",
-  "discipline": "Língua Portuguesa",
-  "topic": "Ortografia Oficial: Emprego de Mal vs Mau",
-  "question": "Assinale a alternativa em que o termo sublinhado foi empregado em estrita conformidade com o padrão culto da língua:",
-  "options": [
-    "O servidor desempenhou mau as atribuições do seu cargo comissionado.",
-    "Ele é um homem mal, incapaz de agir com empatia no atendimento ao público.",
-    "Mal o presidente declarou aberta a sessão, o plenário ficou em silêncio.",
-    "O projeto de lei foi mau redigido pela assessoria parlamentar."
-  ],
-  "correctAnswer": 2,
-  "commentary": "Gabarito: C. 'Mal' é conjunção temporal com sentido de 'assim que / logo que' ('Mal o presidente declarou aberta...'). Em (A), deveria ser 'desempenhou mal' (oposto de bem); em (B), 'homem mau' (oposto de bom); em (D), 'mal redigido' (oposto de bem redigido)."
-},
-{
-  "id": 70,
-  "category": "portugues",
-  "day": "dia4",
-  "discipline": "Língua Portuguesa",
-  "topic": "Divisão Silábica e Separação de Dígrafos",
-  "question": "Assinale a alternativa em que a partição silábica de todas as palavras está inteiramente CORRETA:",
-  "options": [
-    "Sub-lin-har, ex-ce-ção, car-ro e pneu-má-ti-co.",
-    "Su-bli-nhar, ex-ce-ção, car-ro e p-neu-má-ti-co.",
-    "Sub-li-nhar, e-xce-ção, ca-rro e pneu-má-ti-co.",
-    "Sub-lin-har, ex-ce-ç-ão, ca-rro e pne-u-má-ti-co."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Os dígrafos 'rr', 'ss', 'sc', 'sç', 'xc' se SEPARAM na partição silábica (ex-ce-ção, car-ro). O prefixo 'sub' seguido de consoante mantém o 'b' na sílaba anterior: sub-lin-har. Encontros consonantais no início de palavra não se separam: pneu-má-ti-co."
-},
-{
-  "id": 71,
-  "category": "portugues",
-  "day": "dia4",
-  "discipline": "Língua Portuguesa",
-  "topic": "Emprego do Porquê / Por quê / Porque / Por que",
-  "question": "Identifique a frase em que o uso do porquê está rigorosamente CORRETO:",
-  "options": [
-    "O projeto foi rejeitado por que a comissão apontou inconstitucionalidade.",
-    "Não entendi o porquê de tanta discussão em torno de uma emenda simples.",
-    "Os vereadores protestaram porque? Não houve justificativa clara.",
-    "Por quê você não compareceu à audiência pública de Meruoca ontem?"
-  ],
-  "correctAnswer": 1,
-  "commentary": "Gabarito: B. 'O porquê' é substantivo (vem acompanhado de artigo ou determinante) e deve ser grafado junto e com acento circunflexo. Em (A), deveria ser 'porque' (conjunção explicativa/causal); em (C), 'por quê' (fim de frase interrogativa); em (D), 'Por que' (início de pergunta direta, separado e sem acento)."
-},
-{
-  "id": 72,
-  "category": "portugues",
-  "day": "dia4",
-  "discipline": "Língua Portuguesa",
-  "topic": "Acentuação Gráfica: Oxítonas Terminadas em A, E, O, EM",
-  "question": "A palavra 'TAMBÉM' e a palavra 'PARABÉNS' recebem acento gráfico pela regra de acentuação das palavras:",
-  "options": [
-    "Oxítonas terminadas em -em e -ens.",
-    "Paroxítonas terminadas em consoante nasal.",
-    "Monossílabos tônicos terminados em ditongo nasal.",
-    "Proparoxítonas aparentes ou eventuais."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Acentuam-se as palavras oxítonas terminadas em -a(s), -e(s), -o(s), -em e -ens (ex: tam-bém, pa-ra-béns, ar-ma-zém, vinténs)."
-},
-{
-  "id": 73,
-  "category": "portugues",
-  "day": "dia4",
-  "discipline": "Língua Portuguesa",
-  "topic": "Crase diante de Pronomes Demonstrativos",
-  "question": "Assinale a frase em que a crase foi empregada CORRETAMENTE antes de pronome demonstrativo:",
-  "options": [
-    "Refiro-me àquele vereador que presidiu a comissão de finanças.",
-    "Ele entregou o requerimento à esta servidora do protocolo.",
-    "O parecer foi contrário à essa proposta orçamentária do prefeito.",
-    "A moção de repúdio foi dirigida à quem faltou à sessão solene."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Ocorre crase na junção da preposição 'a' (exigida pela regência de 'referir-se a') com a letra 'a' inicial dos pronomes aquele, aquela, aquilo: 'Refiro-me àquele'. Antes de 'esta', 'essa' ou 'quem', a crase é proibida."
-},
-{
-  "id": 74,
-  "category": "portugues",
-  "day": "dia4",
-  "discipline": "Língua Portuguesa",
-  "topic": "Acentuação Diferencial e Novo Acordo",
-  "question": "O Novo Acordo Ortográfico manteve o acento gráfico diferencial em um número muito reduzido de pares de palavras. Assinale a alternativa que contém uma palavra com acento diferencial OBRIGATÓRIO mantido:",
-  "options": [
-    "Pôde (pretérito perfeito do verbo poder, em oposição a pode, presente).",
-    "Pára (verbo parar, em oposição à preposição para).",
-    "Pêlo (substantivo, em oposição à contração pelo).",
-    "Pólo (substantivo, em oposição à combinação polo)."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. O Acordo Ortográfico aboliu o acento diferencial de pára/para, pêlo/pelo, pólo/polo. Foi MANTIDO obrigatoriamente em: PÔDE (passado) vs. PODE (presente) e PÔR (verbo) vs. POR (preposição). É facultativo em fôrma/forma."
-},
-{
-  "id": 75,
-  "category": "portugues",
-  "day": "dia4",
-  "discipline": "Língua Portuguesa",
-  "topic": "Emprego do Hífen com Prefixos",
-  "question": "Com o Novo Acordo Ortográfico, usa-se o hífen quando o prefixo termina com a mesma vogal com que se inicia o segundo elemento. Assinale a grafia CORRETA:",
-  "options": [
-    "Micro-ondas e anti-inflamatório.",
-    "Microondas e antiinflamatório.",
-    "Micro-ondas e antiinflamatório.",
-    "Microondas e anti-inflamatório."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Regra geral do hífen com prefixos: vogais iguais se separam por hífen (mi-cro-on-das, an-ti-in-fla-ma-tó-rio, au-to-ob-ser-va-ção); vogais diferentes se unem sem hífen (au-toes-ti-ma, an-ti-a-é-re-o)."
-},
-{
-  "id": 76,
-  "category": "constitucional",
-  "day": "dia4",
-  "discipline": "D. Constitucional",
-  "topic": "Art. 6º da CF/88: Rol dos Direitos Sociais",
-  "question": "O Art. 6º da Constituição Federal de 1988 estabelece os direitos sociais fundamentais. Assinale a alternativa que contém APENAS direitos sociais expressamente elencados no caput desse dispositivo:",
-  "options": [
-    "Educação, saúde, alimentação, trabalho, moradia e transporte.",
-    "Propriedade, liberdade de crença, previdência social e segurança.",
-    "Inviolabilidade de domicílio, direito de herança, lazer e trabalho.",
-    "Nacionalidade, direitos políticos, saúde e assistência aos desamparados."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Mnemônico 'EDU MORA LÁ, SAÚ TRABALHA ALI EM TRANSPORTE, SEGURA ASSIS PROSSEGUE PRENDENDO': Educação, Saúde, Alimentação, Trabalho, Moradia, Transporte, Lazer, Segurança, Previdência Social, Proteção à Maternidade e à Infância, e Assistência aos Desamparados (Art. 6º da CF/88)."
-},
-{
-  "id": 77,
-  "category": "constitucional",
-  "day": "dia4",
-  "discipline": "D. Constitucional",
-  "topic": "Art. 7º, XIII da CF/88: Duração do Trabalho",
-  "question": "Conforme o Art. 7º, XIII, da CF/88, a duração do trabalho normal dos trabalhadores urbanos e rurais não poderá ser superior a:",
-  "options": [
-    "8 horas diárias e 44 horas semanais, facultada a compensação de horários e a redução da jornada, mediante acordo ou convenção coletiva de trabalho.",
-    "8 horas diárias e 40 horas semanais, vedada qualquer forma de compensação de horário.",
-    "6 horas diárias e 36 horas semanais para todas as categorias profissionais urbanas.",
-    "10 horas diárias e 48 horas semanais, desde que haja autorização do sindicato da categoria."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 7º, XIII da CF/88: 'duração do trabalho normal não superior a oito horas diárias e quarenta e quatro semanais, facultada a compensação de horários e a redução da jornada, mediante acordo ou convenção coletiva de trabalho'."
-},
-{
-  "id": 78,
-  "category": "constitucional",
-  "day": "dia4",
-  "discipline": "D. Constitucional",
-  "topic": "Art. 7º, XIV da CF/88: Turnos Ininterruptos de Revezamento",
-  "question": "A jornada de trabalho fixada pela Constituição Federal para o trabalho realizado em turnos ininterruptos de revezamento é de:",
-  "options": [
-    "6 horas, salvo negociação coletiva.",
-    "8 horas improrrogáveis em qualquer hipótese.",
-    "4 horas diárias com intervalo de 30 minutos.",
-    "12 horas seguidas de 36 horas de descanso."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 7º, XIV da CF/88: 'jornada de seis horas para o trabalho realizado em turnos ininterruptos de revezamento, salvo negociação coletiva'."
-},
-{
-  "id": 79,
-  "category": "constitucional",
-  "day": "dia4",
-  "discipline": "D. Constitucional",
-  "topic": "Art. 7º, XVI da CF/88: Remuneração da Hora Extra",
-  "question": "Nos termos da Constituição Federal de 1988, a remuneração do serviço extraordinário (horas extras) será superior, no mínimo, à do normal em:",
-  "options": [
-    "50% (cinquenta por cento).",
-    "20% (vinte por cento).",
-    "100% (cem por cento).",
-    "30% (trinta por cento)."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 7º, XVI da CF/88: 'remuneração do serviço extraordinário superior, no mínimo, em cinquenta por cento à do normal'."
-},
-{
-  "id": 80,
-  "category": "constitucional",
-  "day": "dia4",
-  "discipline": "D. Constitucional",
-  "topic": "Art. 7º, XVIII e XIX da CF/88: Licenças Gestante e Paternidade",
-  "question": "Quanto à proteção à maternidade e à paternidade, a CF/88 assegura licença à gestante, sem prejuízo do emprego e do salário, com a duração de:",
-  "options": [
-    "120 dias, e licença-paternidade nos termos fixados em lei.",
-    "90 dias, e licença-paternidade de 30 dias improrrogáveis.",
-    "180 dias obrigatórios em todas as empresas privadas do país.",
-    "60 dias, renováveis por igual período mediante atestado médico."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 7º, XVIII da CF/88: 'licença à gestante, sem prejuízo do emprego e do salário, com a duração de cento e vinte dias'. A prorrogação para 180 dias (Programa Empresa Cidadã / Estatutos de Servidores) decorre de lei, mas o texto constitucional expresso fixa 120 dias."
-},
-{
-  "id": 81,
-  "category": "constitucional",
-  "day": "dia4",
-  "discipline": "D. Constitucional",
-  "topic": "Art. 7º, XXXIII da CF/88: Trabalho do Menor",
-  "question": "Sobre a proibição de trabalho a menores de idade, a Constituição Federal estabelece expressamente a proibição de:",
-  "options": [
-    "Trabalho noturno, perigoso ou insalubre a menores de dezoito e de qualquer trabalho a menores de dezesseis anos, salvo na condição de aprendiz, a partir de quatorze anos.",
-    "Qualquer trabalho a menores de dezoito anos, mesmo na condição de aprendiz em empresas familiares.",
-    "Trabalho noturno a menores de dezesseis anos e de qualquer trabalho a menores de catorze anos, sem exceções.",
-    "Trabalho insalubre a menores de vinte e um anos e aprendizagem a partir de doze anos."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 7º, XXXIII da CF/88 (redação da EC 20/98): 'proibição de trabalho noturno, perigoso ou insalubre a menores de dezoito e de qualquer trabalho a menores de dezesseis anos, salvo na condição de aprendiz, a partir de quatorze anos'. Regra de ouro da INBRASP: 18 (noturno/perigoso/insalubre), 16 (regra geral de vedação) e 14 (aprendiz)."
-},
-{
-  "id": 82,
-  "category": "constitucional",
-  "day": "dia4",
-  "discipline": "D. Constitucional",
-  "topic": "Art. 7º, XXI da CF/88: Aviso Prévio",
-  "question": "A Constituição Federal de 1988 assegura o aviso prévio proporcional ao tempo de serviço, sendo de no mínimo:",
-  "options": [
-    "30 (trinta) dias, nos termos da lei.",
-    "15 (quinze) dias para contratos de até um ano.",
-    "60 (sessenta) dias para todos os trabalhadores urbanos.",
-    "45 (quarenta e cinco) dias incondicionalmente."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 7º, XXI da CF/88: 'aviso prévio proporcional ao tempo de serviço, sendo no mínimo de trinta dias, nos termos da lei'."
-},
-{
-  "id": 83,
-  "category": "constitucional",
-  "day": "dia4",
-  "discipline": "D. Constitucional",
-  "topic": "Art. 7º, XVII da CF/88: Férias Remuneradas",
-  "question": "O gozo de férias anuais remuneradas assegurado pela Constituição Federal de 1988 prevê o pagamento de remuneração com acréscimo de:",
-  "options": [
-    "Pelo menos, um terço a mais do que o salário normal.",
-    "Cinquenta por cento a mais do que a remuneração ordinária.",
-    "Metade do salário base calculado sobre o último mês de trabalho.",
-    "Vinte por cento a título de gratificação de descanso anual."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 7º, XVII da CF/88: 'gozo de férias anuais remuneradas com, pelo menos, um terço a mais do que o salário normal'."
-},
-{
-  "id": 84,
-  "category": "constitucional",
-  "day": "dia4",
-  "discipline": "D. Constitucional",
-  "topic": "Art. 7º, IX da CF/88: Remuneração do Trabalho Noturno",
-  "question": "Nos termos do Art. 7º, IX, da CF/88, em relação ao trabalho noturno, é direito constitucional do trabalhador:",
-  "options": [
-    "Remuneração do trabalho noturno superior à do diurno.",
-    "Jornada máxima reduzida para 4 horas sem adicional monetário.",
-    "Folga semanal dobrada para quem cumpre jornada noturna.",
-    "Aposentadoria especial automática aos cinco anos de trabalho noturno."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 7º, IX da CF/88: 'remuneração do trabalho noturno superior à do diurno'."
-},
-{
-  "id": 85,
-  "category": "constitucional",
-  "day": "dia4",
-  "discipline": "D. Constitucional",
-  "topic": "Art. 7º, VI da CF/88: Irredutibilidade Salarial",
-  "question": "A regra constitucional acerca do salário dos trabalhadores estabelece a sua irredutibilidade, SALVO:",
-  "options": [
-    "O disposto em convenção ou acordo coletivo de trabalho.",
-    "Decisão unilateral discricionária do empregador em época de crise.",
-    "Atraso no pagamento de tributos pelo estabelecimento comercial.",
-    "Determinação verbal do delegado regional do trabalho."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 7º, VI da CF/88: 'irredutibilidade do salário, salvo o disposto em convenção ou acordo coletivo'."
-},
-{
-  "id": 86,
-  "category": "constitucional",
-  "day": "dia4",
-  "discipline": "D. Constitucional",
-  "topic": "Art. 8º, I da CF/88: Autonomia e Liberdade Sindical",
-  "question": "Conforme o Art. 8º, I, da CF/88, é livre a associação profissional ou sindical, sendo expressamente VEDADA:",
-  "options": [
-    "Ao Poder Público a interferência e a intervenção na organização sindical, ressalvado o registro no órgão competente.",
-    "A criação de sindicatos representativos de categorias diferenciadas.",
-    "A filiação de servidores públicos a entidades de classe municipais.",
-    "A cobrança de mensalidade associativa voluntária pelo sindicato."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 8º, I da CF/88: 'a lei não poderá exigir autorização do Estado para a fundação de sindicato, ressalvado o registro no órgão competente, vedadas ao Poder Público a interferência e a intervenção na organização sindical'."
-},
-{
-  "id": 87,
-  "category": "constitucional",
-  "day": "dia4",
-  "discipline": "D. Constitucional",
-  "topic": "Art. 8º, II da CF/88: Princípio da Unicidade Sindical",
-  "question": "O princípio da unicidade sindical estabelecido no Art. 8º, II, da CF/88 veda a criação de mais de uma organização sindical, em qualquer grau, representativa da mesma categoria:",
-  "options": [
-    "Na mesma base territorial, que será definida pelos trabalhadores interessados, não podendo ser inferior à área de um Município.",
-    "No mesmo Estado da federação, devendo haver sindicato único estadual.",
-    "Em todo o território nacional para uma mesma profissão regulamentada.",
-    "Na mesma microrregião geográfica estabelecida pelo IBGE."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 8º, II da CF/88: 'é vedada a criação de mais de uma organização sindical, em qualquer grau, representativa de categoria profissional ou econômica, na mesma base territorial, que será definida pelos trabalhadores ou empregadores interessados, não podendo ser inferior à área de um Município'."
-},
-{
-  "id": 88,
-  "category": "constitucional",
-  "day": "dia4",
-  "discipline": "D. Constitucional",
-  "topic": "Art. 8º, VIII da CF/88: Estabilidade do Dirigente Sindical",
-  "question": "A estabilidade provisória do empregado sindicalizado que se candidata a cargo de direção ou representação sindical compreende o período:",
-  "options": [
-    "Desde o registro da candidatura e, se eleito, ainda que suplente, até um ano após o final do mandato, salvo se cometer falta grave nos termos da lei.",
-    "Apenas durante os meses de exercício efetivo do mandato sindical na sede.",
-    "A partir da posse até o dia do término estrito do mandato parlamentar.",
-    "Desde a fundação do sindicato até a sua dissolução voluntária."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 8º, VIII da CF/88: 'é vedada a dispensa do empregado sindicalizado a partir do registro da candidatura a cargo de direção ou representação sindical e, se eleito, ainda que suplente, até um ano após o final do mandato, salvo se cometer falta grave nos termos da lei'."
-},
-{
-  "id": 89,
-  "category": "constitucional",
-  "day": "dia4",
-  "discipline": "D. Constitucional",
-  "topic": "Art. 9º da CF/88: Direito de Greve",
-  "question": "O direito de greve é expressamente garantido pelo Art. 9º da Constituição Federal de 1988, competindo aos:",
-  "options": [
-    "Trabalhadores decidir sobre a oportunidade de exercê-lo e sobre os interesses que devam por meio dele defender.",
-    "Empregadores autorizar previamente a paralisação das atividades operacionais.",
-    "Magistrados do trabalho convocar a greve mediante portaria ministerial.",
-    "Prefeitos municipais decretar a legalidade do movimento paradista."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 9º, caput da CF/88: 'É assegurado o direito de greve, competindo aos trabalhadores decidir sobre a oportunidade de exercê-lo e sobre os interesses que devam por meio dele defender'."
-},
-{
-  "id": 90,
-  "category": "constitucional",
-  "day": "dia4",
-  "discipline": "D. Constitucional",
-  "topic": "Art. 11 da CF/88: Representação de Empregados",
-  "question": "Nas empresas com mais de quantos empregados é assegurada a eleição de um representante destes com a finalidade exclusiva de promover o entendimento direto com os empregadores (Art. 11 da CF)?",
-  "options": [
-    "Mais de 200 (duzentos) empregados.",
-    "Mais de 100 (cem) empregados.",
-    "Mais de 500 (quinhentos) empregados.",
-    "Mais de 50 (cinquenta) empregados."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 11 da CF/88: 'Nas empresas de mais de duzentos empregados, é assegurada a eleição de um representante destes com a finalidade exclusiva de promover-lhes o entendimento direto com os empregadores'."
-},
-{
-  "id": 91,
-  "category": "legislacao",
-  "day": "dia4",
-  "discipline": "Lei Orgânica de Meruoca",
-  "topic": "Arts. 1º e 2º: Princípios e Autonomia Municipal",
-  "question": "De acordo com os princípios fundamentais da Lei Orgânica do Município de Meruoca/CE, o Município integra a República Federativa do Brasil e o Estado do Ceará, sendo dotado de autonomia:",
-  "options": [
-    "Política, administrativa e financeira.",
-    "Soberana, judiciária e militar.",
-    "Legislativa apenas, dependendo administrativamente do Estado.",
-    "Econômica, porém subordinada hierarquicamente ao Governo Estadual."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. A Lei Orgânica de Meruoca consagra a tríplice autonomia municipal conferida pelo Art. 18 e 29 da CF/88: Autonomia Política (eleição de prefeitos e vereadores), Administrativa (organização dos serviços locais) e Financeira (instituição e arrecadação de tributos próprios)."
-},
-{
-  "id": 92,
-  "category": "legislacao",
-  "day": "dia4",
-  "discipline": "Lei Orgânica de Meruoca",
-  "topic": "Soberania Popular no Município de Meruoca",
-  "question": "Nos termos da Lei Orgânica Municipal, todo o poder emana do povo meruoquense, que o exerce por meio de representantes eleitos ou diretamente. São formas de exercício direto da soberania popular no Município:",
-  "options": [
-    "Plebiscito, referendo e iniciativa popular de projetos de lei.",
-    "Ação popular, mandado de segurança e inquérito civil público.",
-    "Audiência prévia do Tribunal de Contas e veto do prefeito.",
-    "Votação nominal em comissões parlamentares de inquérito."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Em consonância com o Art. 14 da CF/88 e a Lei Orgânica de Meruoca, a soberania popular direta é exercida mediante: 1. Plebiscito (consulta prévia); 2. Referendo (consulta posterior à lei); 3. Iniciativa popular de leis perante a Câmara Municipal."
-},
-{
-  "id": 93,
-  "category": "legislacao",
-  "day": "dia4",
-  "discipline": "Lei Orgânica de Meruoca",
-  "topic": "Símbolos Oficiais do Município de Meruoca",
-  "question": "São símbolos oficiais do Município de Meruoca expressamente consagrados em sua legislação fundamental:",
-  "options": [
-    "O Brasão, a Bandeira e o Hino do Município.",
-    "O Selo Municipal, o Estandarte e o Brasão do Estado do Ceará.",
-    "O Brasão e a Bandeira apenas, sendo o Hino de competência estadual.",
-    "A Faixa do Prefeito e a Insígnia do Presidente da Câmara."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Conforme preceitua a Lei Orgânica Municipal (em harmonia com o Art. 13, § 2º da CF/88), os símbolos representativos do Município de Meruoca são a Bandeira, o Brasão e o Hino municipais."
-},
-{
-  "id": 94,
-  "category": "legislacao",
-  "day": "dia4",
-  "discipline": "Lei Orgânica de Meruoca",
-  "topic": "Poderes do Município de Meruoca",
-  "question": "São Poderes do Município de Meruoca, independentes e harmônicos entre si:",
-  "options": [
-    "O Legislativo e o Executivo.",
-    "O Legislativo, o Executivo e o Judiciário.",
-    "O Executivo, o Judiciário e o Ministério Público Municipal.",
-    "Apenas o Executivo, sendo o Legislativo um órgão consultivo auxiliar."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. No âmbito municipal NÃO HÁ Poder Judiciário nem Ministério Público local (ambos são órgãos estaduais/federais). Os únicos poderes municipais são o Poder Legislativo (Câmara Municipal) e o Poder Executivo (Prefeitura Municipal)."
-},
-{
-  "id": 95,
-  "category": "legislacao",
-  "day": "dia4",
-  "discipline": "Lei Orgânica de Meruoca",
-  "topic": "Competência Privativa do Município: Tributos e Orçamento",
-  "question": "Compete privativamente ao Município de Meruoca, no exercício de sua autonomia legislativa e administrativa:",
-  "options": [
-    "Instituir e arrecadar os tributos de sua competência e aplicar suas rendas, bem como fixar tarifas de serviços públicos municipais.",
-    "Legislar privativamente sobre direito civil, penal e processual eleitoral.",
-    "Emitir moeda municipal e controlar as taxas de juros bancários locais.",
-    "Organizar e manter o Poder Judiciário e a Defensoria Pública da Comarca."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Compete ao Município instituir tributos municipais (IPTU, ISS, ITBI, taxas e contribuições de iluminação pública), aplicar rendas e fixar tarifas de transporte e serviços locais. Legislar sobre direito civil/penal e emitir moeda são competências privativas da União (Art. 22 da CF)."
-},
-{
-  "id": 96,
-  "category": "legislacao",
-  "day": "dia4",
-  "discipline": "Lei Orgânica de Meruoca",
-  "topic": "Competência Privativa: Uso e Ocupação do Solo Urbano",
-  "question": "É matéria de interesse local inserida na competência privativa do Município de Meruoca:",
-  "options": [
-    "Promover o adequado ordenamento territorial, mediante planejamento e controle do uso, do parcelamento e da ocupação do solo urbano.",
-    "Explorar diretamente os serviços de telecomunicações e radiodifusão sonora.",
-    "Disciplinar a navegação aérea e a infraestrutura aeroespacial da Serra da Meruoca.",
-    "Autorizar a exploração de jazidas minerais e riquezas do subsolo na região."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 30, VIII da CF/88 e Lei Orgânica de Meruoca: o ordenamento territorial, zoneamento urbano e controle de parcelamento/ocupação do solo (Plano Diretor, código de obras) é competência eminentemente municipal."
-},
-{
-  "id": 97,
-  "category": "legislacao",
-  "day": "dia4",
-  "discipline": "Lei Orgânica de Meruoca",
-  "topic": "Competência Comum do Município com a União e o Estado",
-  "question": "Assinale a alternativa que indica uma competência COMUM do Município de Meruoca em cooperação com o Estado do Ceará e a União:",
-  "options": [
-    "Cuidar da saúde e assistência pública, da proteção e garantia das pessoas com deficiência.",
-    "Criar e extinguir cargos privativos da Mesa Diretora da Assembleia Legislativa.",
-    "Instituir o Imposto sobre Circulação de Mercadorias e Serviços (ICMS).",
-    "Expedir passaportes e carteiras de identidade civil para estrangeiros."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 23 da CF/88 e Lei Orgânica de Meruoca: a prestação de serviços de saúde, proteção de vulneráveis e pessoas com deficiência, meio ambiente e educação básica é matéria de competência comum dos três entes federados."
-},
-{
-  "id": 98,
-  "category": "legislacao",
-  "day": "dia4",
-  "discipline": "Lei Orgânica de Meruoca",
-  "topic": "Guarda Municipal e Segurança Patrimonial",
-  "question": "Nos termos da Lei Orgânica e do Art. 144, § 8º da CF/88, o Município de Meruoca poderá constituir guarda municipal destinada precipuamente à:",
-  "options": [
-    "Proteção de seus bens, serviços e instalações.",
-    "Investigação de crimes eleitorais e tráfico interestadual de drogas.",
-    "Substituição das polícias militar e civil nas ações de policiamento ostensivo geral.",
-    "Fiscalização do recolhimento de impostos da União e execução fiscal federal."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 144, § 8º da CF/88 e legislação municipal: os municípios poderão constituir guardas municipais destinadas à proteção de seus bens, serviços e instalações, atuando também na segurança comunitária e patrimonial."
-},
-{
-  "id": 99,
-  "category": "legislacao",
-  "day": "dia4",
-  "discipline": "Lei Orgânica de Meruoca",
-  "topic": "Patrimônio e Bens Municipais",
-  "question": "Constituem bens do Município de Meruoca, conforme sua Lei Orgânica:",
-  "options": [
-    "Todas as coisas móveis e imóveis, direitos e ações que a qualquer título lhe pertençam.",
-    "Exclusivamente os edifícios onde funcionam a Prefeitura e a Câmara Municipal.",
-    "Apenas as praças e ruas pavimentadas pelo poder público municipal.",
-    "Os rios navegáveis que banham mais de dois estados da federação."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Constituem patrimônio e bens do Município todos os bens móveis e imóveis, direitos, títulos da dívida pública, créditos e ações pertencentes à municipalidade a qualquer título."
-},
-{
-  "id": 100,
-  "category": "legislacao",
-  "day": "dia4",
-  "discipline": "Lei Orgânica de Meruoca",
-  "topic": "Princípio da Publicidade e Publicação dos Atos Municipais",
-  "question": "A publicação das leis e dos atos administrativos normativos da Câmara Municipal e da Prefeitura de Meruoca é requisito essencial de:",
-  "options": [
-    "Eficácia e validade perante os munícipes e a sociedade.",
-    "Revogação tácita de todas as normas jurídicas anteriores.",
-    "Descentralização administrativa forçada dos poderes públicos.",
-    "Conversão obrigatória de projeto de lei em medida provisória."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Nenhum ato normativo ou lei municipal produz efeitos externos sem a devida publicação no órgão oficial ou mural público da Câmara/Prefeitura. A publicação é condição de EFICÁCIA e vigência da norma jurídica."
-}
-,
-{
-  "id": 101,
-  "category": "administrativo",
-  "day": "dia5",
-  "discipline": "D. Administrativo",
-  "topic": "Poder Vinculado vs Discricionário",
-  "question": "Quanto à margem de liberdade conferida ao administrador público na prática de seus atos, assinale a opção correta:",
-  "options": [
-    "No ato discricionário, a lei concede margem de escolha ao gestor quanto à oportunidade e conveniência (mérito administrativo), sempre nos limites da lei.",
-    "No ato vinculado, o administrador pode avaliar livremente a conveniência de conceder ou não uma licença quando o particular preencher todos os requisitos.",
-    "O mérito do ato discricionário pode ser revisto pelo Poder Judiciário sob o aspecto da conveniência e da oportunidade da autoridade administrativa.",
-    "Todo ato administrativo é discricionário, cabendo à autoridade decidir as sanções disciplinares independentemente de previsão legal."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. A discricionariedade confere juízo de mérito (conveniência e oportunidade) estritamente dentro das balizas da lei. O Judiciário fiscaliza a legalidade/moralidade, mas não pode substituir o mérito administrativo da decisão discricionária."
-},
-{
-  "id": 102,
-  "category": "administrativo",
-  "day": "dia5",
-  "discipline": "D. Administrativo",
-  "topic": "Abuso de Poder: Excesso vs Desvio de Poder",
-  "question": "O abuso de poder constitui conduta ilegítima do agente público e manifesta-se sob duas modalidades distintas: o excesso de poder e o desvio de poder (ou desvio de finalidade). Ocorre EXCESSO DE PODER quando o agente público:",
-  "options": [
-    "Atua fora dos limites de sua competência legal ou excede os poderes que a lei lhe conferiu.",
-    "Atua dentro de sua competência, mas com objetivo alheio ao interesse público ou para beneficiar amigo.",
-    "Pratica um ato perfeitamente vinculado que cumpriu todas as formalidades do edital.",
-    "Revoga um ato legal de sua própria lavra com base em razões supervenientes de interesse público."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Mnemônico clássico: Excesso de Poder = vício de COMPETÊNCIA (o agente faz o que a lei não lhe permitiu). Desvio de Poder (ou Finalidade) = vício de FINALIDADE (o agente é competente, mas busca interesse privado ou perseguição)."
-},
-{
-  "id": 103,
-  "category": "administrativo",
-  "day": "dia5",
-  "discipline": "D. Administrativo",
-  "topic": "Poder Disciplinar",
-  "question": "O Poder Disciplinar é a prerrogativa conferida à Administração Pública para:",
-  "options": [
-    "Apurar infrações e aplicar penalidades aos servidores públicos e a particulares que possuam vínculo jurídico específico com o Estado.",
-    "Aplicar multas e penalidades indistintamente a qualquer cidadão que transite em logradouro municipal sem habilitação.",
-    "Fixar tarifas gerais de transporte urbano para toda a população da cidade.",
-    "Editar decretos normativos de caráter autônomo sem previsão em lei formal."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. O poder disciplinar atinge quem tem vínculo especial/interno com o Estado (servidores públicos e contratados administrativos via licitação). A punição aos cidadãos em geral sem vínculo específico decorre do Poder de Polícia."
-},
-{
-  "id": 104,
-  "category": "administrativo",
-  "day": "dia5",
-  "discipline": "D. Administrativo",
-  "topic": "Poder Regulamentar / Normativo",
-  "question": "A respeito do Poder Regulamentar conferido aos Chefes do Poder Executivo, é correto afirmar que os decretos regulamentares:",
-  "options": [
-    "Destinam-se a dar fiel execução às leis, não podendo criar direitos, obrigações ou inovar originariamente na ordem jurídica.",
-    "Podem contrariar a lei em caso de emergência orçamentária do município.",
-    "Permitem a criação originária de novos tributos municipais sem passar pela Câmara de Vereadores.",
-    "Subordinam hierarquicamente as leis votadas pelo Poder Legislativo municipal."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 84, IV da CF/88. O poder regulamentar é de caráter secundário (intra legem): serve apenas para explicitar e regulamentar a lei existente para sua fiel execução, sendo vedado criar obrigações novas ou inovar originariamente."
-},
-{
-  "id": 105,
-  "category": "administrativo",
-  "day": "dia5",
-  "discipline": "D. Administrativo",
-  "topic": "Poder de Polícia: Conceito e Atributos",
-  "question": "Conforme o Art. 78 do Código Tributário Nacional (CTN), o Poder de Polícia é a atividade da administração pública que condiciona ou restringe o uso de bens, atividades e direitos em prol do interesse público. São atributos clássicos do poder de polícia:",
-  "options": [
-    "Discricionariedade, autoexecutoriedade e coercibilidade.",
-    "Irrevogabilidade, subordinação e imprescritibilidade.",
-    "Gratuidade obrigatória, oralidade e retroatividade.",
-    "Inalienabilidade, impenhorabilidade e imutabilidade."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Mnemônico 'DAC': Discricionariedade (margem de escolha de atuação/sanção), Autoexecutoriedade (execução material direta sem prévia autorização judicial) e Coercibilidade (imposição imperativa de limites com força pública se necessário)."
-},
-{
-  "id": 106,
-  "category": "administrativo",
-  "day": "dia5",
-  "discipline": "D. Administrativo",
-  "topic": "Poder Hierárquico",
-  "question": "São faculdades e prerrogativas típicas decorrentes do exercício do Poder Hierárquico na Administração Pública, EXCETO:",
-  "options": [
-    "Aplicar sanções de interdição a estabelecimentos comerciais privados que violarem o código de posturas sanitárias.",
-    "Dar ordens aos subordinados, ressalvadas as ordens manifestamente ilegais.",
-    "Fiscalizar e controlar as atividades desempenhadas pelos órgãos inferiores.",
-    "Delegar e avocar competências, nos termos e limites previstos na legislação."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. A interdição de comércio privado decorre do Poder de Polícia (sobre particulares). O Poder Hierárquico atua estritamente na relação interna de subordinação e coordenação entre órgãos e agentes públicos (dar ordens, fiscalizar, delegar e avocar)."
-},
-{
-  "id": 107,
-  "category": "administrativo",
-  "day": "dia5",
-  "discipline": "D. Administrativo",
-  "topic": "Atributos do Ato Administrativo: PATI",
-  "question": "A doutrina de Direito Administrativo consagrada nas provas da banca INBRASP sintetiza os atributos do ato administrativo no mnemônico 'PATI'. Quais são esses atributos?",
-  "options": [
-    "Presunção de legitimidade, Autoexecutoriedade, Tipicidade e Imperatividade.",
-    "Publicidade, Autonomia, Temporalidade e Impessoalidade.",
-    "Previsibilidade, Anterioridade, Transparência e Intangibilidade.",
-    "Probidade, Acessibilidade, Tipicidade e Igualdade."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Mnemônico PATI: Presunção de legitimidade/veracidade (atos presumem-se válidos até prova em contrário); Autoexecutoriedade (execução direta pelo Estado); Tipicidade (deve corresponder a figura prevista em lei); Imperatividade (impõe obrigações a terceiros independentemente de concordância)."
-},
-{
-  "id": 108,
-  "category": "administrativo",
-  "day": "dia5",
-  "discipline": "D. Administrativo",
-  "topic": "Presunção de Legitimidade e Veracidade",
-  "question": "A presunção de legitimidade do ato administrativo produz como efeito prático processual a:",
-  "options": [
-    "Inversão do ônus da prova, cabendo a quem contesta o ato provar a sua ilegalidade ou falsidade.",
-    "Impossibilidade definitiva de anulação do ato pelo Poder Judiciário.",
-    "Dispensabilidade total de publicação dos atos no diário oficial do município.",
-    "Transformação automática de atos discricionários em atos de império irrecorríveis."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. A presunção de legitimidade é relativa (juris tantum): o ato nasce com aparência de legalidade e verdade fática, cabendo ao particular comprovar eventual defeito (inversão do ônus da prova)."
-},
-{
-  "id": 109,
-  "category": "administrativo",
-  "day": "dia5",
-  "discipline": "D. Administrativo",
-  "topic": "Autoexecutoriedade do Ato Administrativo",
-  "question": "O atributo da AUTOEXECUTORIEDADE autoriza a Administração Pública a executar diretamente as suas decisões materiais sem a necessidade de prévia autorização judicial. Esse atributo:",
-  "options": [
-    "Não está presente em todos os atos administrativos, existindo quando expressamente previsto em lei ou em situações urgentes de defesa do interesse público.",
-    "Existe indistintamente em 100% dos atos da administração, inclusive na cobrança coercitiva imediata de multas pecuniárias não pagas.",
-    "Impede que o particular ingresse com mandado de segurança caso se sinta lesado em seu direito líquido e certo.",
-    "Aplica-se somente aos atos editados pelo Poder Judiciário em suas funções típicas."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Pegadinha clássica: a autoexecutoriedade NÃO está em todos os atos! Ela não existe, por exemplo, na cobrança de multa em dinheiro (se o cidadão não pagar, o Estado não pode tomar o dinheiro à força; deve ingressar com Execução Fiscal no Judiciário)."
-},
-{
-  "id": 110,
-  "category": "administrativo",
-  "day": "dia5",
-  "discipline": "D. Administrativo",
-  "topic": "Imperatividade e Poder Extrínseco",
-  "question": "A IMPERATIVIDADE (ou poder extroverso) do ato administrativo caracteriza-se por:",
-  "options": [
-    "Impor deveres e obrigações a terceiros unilateralmente, independentemente da concordância do destinatário.",
-    "Conceder vantagens que dependem do prévio requerimento e anuência do cidadão.",
-    "Garantir a imutabilidade dos atos municipais após decorridos 30 dias de sua publicação.",
-    "Permitir ao servidor público o descumprimento de ordens emanadas de seus superiores diretos."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. A imperatividade permite impor obrigações coercitivas ao administrado (ex: multa de trânsito, interdição de vigilância sanitária). Não está presente em atos enunciativos (certidões) ou negociais (autorização, licença)."
-},
-{
-  "id": 111,
-  "category": "administrativo",
-  "day": "dia5",
-  "discipline": "D. Administrativo",
-  "topic": "Tipicidade no Ato Administrativo",
-  "question": "O atributo da TIPICIDADE, formulado pela professora Maria Sylvia Zanella Di Pietro, preceitua que o ato administrativo deve:",
-  "options": [
-    "Corresponder a figuras previamente delineadas na lei para produzir os efeitos desejados, impedindo a prática de atos totalmente inominados.",
-    "Ser redigido exclusivamente na língua portuguesa arcaica do período colonial.",
-    "Conter obrigatoriamente cláusula de sigilo prévio por até 5 anos.",
-    "Ser publicado em pelo menos três jornais impressos de circulação nacional."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Pela tipicidade, para cada finalidade pretendida a lei já define a espécie de ato cabível (ex: se quer punir, usa demissão/advertência; se quer autorizar, usa alvará). Isso impede que a autoridade crie atos extravagantes ou sem modelo na lei."
-},
-{
-  "id": 112,
-  "category": "administrativo",
-  "day": "dia5",
-  "discipline": "D. Administrativo",
-  "topic": "Ciclo do Poder de Polícia",
-  "question": "A doutrina divide o Poder de Polícia em quatro fases ou ciclos: I. Ordem de polícia (legislação); II. Consentimento de polícia (licença/autorização); III. Fiscalização de polícia (inspeção); IV. Sanção de polícia (multa/interdição). É passível de delegação a entidades estatais de direito privado integrantes da administração indireta (ex: empresas públicas e sociedades de economia mista):",
-  "options": [
-    "As fases de consentimento, fiscalização e sanção, conforme entendimento fixado pelo STF no Tema 532 de repercussão geral.",
-    "Apenas a ordem de polícia, sendo vedada a fiscalização.",
-    "Todas as fases sem qualquer restrição, inclusive legislar privativamente sobre crimes.",
-    "Nenhuma das fases, pois o poder de polícia é indelegável a qualquer ente."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. O STF fixou a tese de que é constitucional a delegação do poder de polícia (consentimento, fiscalização e sanção) a pessoas jurídicas de direito privado integrantes da administração pública indireta de capital majoritariamente público que prestem serviços públicos em regime não concorrencial (ex: BHTrans, CET)."
-},
-{
-  "id": 113,
-  "category": "administrativo",
-  "day": "dia5",
-  "discipline": "D. Administrativo",
-  "topic": "Desvio de Finalidade (Art. 2º da Lei da Ação Popular)",
-  "question": "O prefeito de determinado município remove 'ex officio' um guarda municipal para posto de serviço remoto em área rural unicamente como forma de castigo pessoal por divergência política partidária. Essa conduta do administrador público caracteriza vício insanável de:",
-  "options": [
-    "Desvio de finalidade (ou desvio de poder), tornando o ato de remoção nulo de pleno direito.",
-    "Excesso de forma meramente acidental com convalidação automática.",
-    "Exercício regular do poder disciplinar sem possibilidade de recurso ao Judiciário.",
-    "Incompetência absoluta por ausência de concurso público."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. A remoção de servidor tem como finalidade atender à necessidade do serviço público. Usá-la para perseguir ou punir desvia a finalidade legal do ato (desvio de poder), gerando nulidade absoluta por violação direta ao princípio da impessoalidade."
-},
-{
-  "id": 114,
-  "category": "administrativo",
-  "day": "dia5",
-  "discipline": "D. Administrativo",
-  "topic": "Taxas de Polícia vs Preços Públicos",
-  "question": "Pela atividade regular do Poder de Polícia exercida pelo Município de Meruoca, a Constituição Federal autoriza a instituição de:",
-  "options": [
-    "Taxas pelo exercício do poder de polícia.",
-    "Impostos progressivos de natureza punitiva.",
-    "Contribuições de melhoria extraordinárias sem obra pública.",
-    "Tarifas alfandegárias de fiscalização internacional."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 145, II da CF/88 e Art. 77 do CTN: as taxas são tributos cobrados em razão do exercício regular do poder de polícia (ex: taxa de fiscalização de funcionamento, taxa de vigilância sanitária) ou pela utilização efetiva/potencial de serviço público específico e divisível."
-},
-{
-  "id": 115,
-  "category": "administrativo",
-  "day": "dia5",
-  "discipline": "D. Administrativo",
-  "topic": "Distinção entre Atos Nulos e Anuláveis",
-  "question": "No regime jurídico administrativo, quando um ato apresenta defeito quanto aos elementos de COMPETÊNCIA (desde que não seja exclusiva) ou de FORMA (desde que a lei não a exija como requisito de validade), o ato é passível de:",
-  "options": [
-    "Convalidação pela Administração Pública, aproveitando-se o ato com efeitos retroativos (ex tunc).",
-    "Revogação obrigatória e irrecusável pelo Poder Judiciário.",
-    "Cassação automática por descumprimento de deveres pelo particular.",
-    "Prescrição imediata em 24 horas a contar da data de protocolo."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Mnemônico FO-CO: defeitos de Forma (não essencial) e Competência (não exclusiva) geram atos ANULÁVEIS que admitem convalidação pela própria Administração, desde que não acarretem lesão ao interesse público nem prejuízo a terceiros."
-},
-{
-  "id": 116,
-  "category": "informatica",
-  "day": "dia5",
-  "discipline": "Informática",
-  "topic": "Conceito de Algoritmo",
-  "question": "No contexto da ciência da computação e do edital da Câmara de Meruoca, um ALGORITMO pode ser conceituado como:",
-  "options": [
-    "Uma sequência finita de passos lógicos, ordenados e bem definidos, que visa à resolução de um problema ou à execução de uma tarefa.",
-    "Um programa executável binário restrito a sistemas operacionais de grande porte.",
-    "Uma peça de hardware instalada na placa-mãe responsável por resfriar o processador.",
-    "Um protocolo de rede utilizado exclusivamente para tráfego seguro de e-mails corporativos."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Algoritmo é uma sequência lógica, finita, ordenada e não ambígua de instruções que, ao ser processada, transforma entradas em saídas para solucionar um problema."
-},
-{
-  "id": 117,
-  "category": "informatica",
-  "day": "dia5",
-  "discipline": "Informática",
-  "topic": "Fluxogramas: Símbolo de Decisão (Losango)",
-  "question": "Em um fluxograma que representa o fluxo de tramitação de um processo administrativo, o símbolo geométrico que representa uma tomada de DECISÃO ou desvio condicional (onde o fluxo pode seguir caminhos diferentes conforme a resposta Sim/Não) é o:",
-  "options": [
-    "Losango.",
-    "Retângulo.",
-    "Círculo ou elipse.",
-    "Paralelogramo."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Símbolos universais de fluxogramas: Losango = Decisão / Condição (teste lógico Se/Senão); Retângulo = Ação / Processamento / Atribuição; Oval/Elipse = Início ou Fim; Paralelogramo = Entrada ou Saída de dados."
-},
-{
-  "id": 118,
-  "category": "informatica",
-  "day": "dia5",
-  "discipline": "Informática",
-  "topic": "Pseudocódigo e Estruturas Condicionais",
-  "question": "Considere o seguinte trecho de pseudocódigo:\n\nSE (idade >= 18) ENTÃO\n    ESCREVA('Apto ao concurso')\nSENÃO\n    ESCREVA('Inapto por idade')\nFIMSE\n\nCaso o valor atribuído à variável 'idade' seja exatamente 18, o programa exibirá:",
-  "options": [
-    "Apto ao concurso",
-    "Inapto por idade",
-    "Erro de compilação por operador inexistente",
-    "Nenhuma mensagem será exibida na tela"
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. O operador `>=` significa 'maior ou igual'. Como 18 é igual a 18, a condição é VERDADEIRA e o bloco do SE é executado, exibindo 'Apto ao concurso'."
-},
-{
-  "id": 119,
-  "category": "informatica",
-  "day": "dia5",
-  "discipline": "Informática",
-  "topic": "Estruturas de Repetição (Laços / Loops)",
-  "question": "Em lógica de programação, a estrutura que executa repetidamente um bloco de instruções ENQUANTO uma condição prévia permanecer verdadeira é chamada de:",
-  "options": [
-    "Laço de repetição ou loop (while / enquanto).",
-    "Função recursiva estática imutável.",
-    "Declaração de constante booleana.",
-    "Instrução de salto incondicional irrestrita."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. As estruturas de repetição (laços ou loops) permitem executar comandos várias vezes. No laço `enquanto` (`while`), o teste é feito no início e o bloco roda enquanto o teste for verdadeiro."
-},
-{
-  "id": 120,
-  "category": "informatica",
-  "day": "dia5",
-  "discipline": "Informática",
-  "topic": "Linguagem Python: Indentação Obrigatória",
-  "question": "Diferentemente de linguagens como C ou Java que utilizam chaves `{ }` para delimitar blocos de comandos, a linguagem Python utiliza como delimitador obrigatório de blocos de código a:",
-  "options": [
-    "Indentação (espaçamento consistente à esquerda com espaços ou tabs).",
-    "Utilização de ponto e vírgula ';' ao final de cada instrução.",
-    "Inclusão da palavra reservada 'END' ao final de cada linha.",
-    "Abertura e fechamento de colchetes '[ ]' em cada função."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Em Python, a indentação não é apenas estética: ela define a hierarquia e o escopo dos blocos de código (corpo de funções, laços for/while, estruturas if/else)."
-},
-{
-  "id": 121,
-  "category": "informatica",
-  "day": "dia5",
-  "discipline": "Informática",
-  "topic": "Python: Tipos de Dados Básicos",
-  "question": "Em Python, considere a atribuição: `total = 100`, `preco = 45.50` e `cargo = 'Técnico'`. Os tipos de dados primitivos dessas variáveis são, respectivamente:",
-  "options": [
-    "int (inteiro), float (número de ponto flutuante) e str (string / texto).",
-    "number, decimal e char.",
-    "integer, currency e varchar.",
-    "long, double e text."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Em Python, inteiros são do tipo `int`, números com casas decimais são do tipo `float` e cadeias de caracteres entre aspas são do tipo `str`."
-},
-{
-  "id": 122,
-  "category": "informatica",
-  "day": "dia5",
-  "discipline": "Informática",
-  "topic": "Python: Operadores Aritméticos Divisão e Resto",
-  "question": "Na linguagem Python, o operador `//` realiza a divisão inteira e o operador `%` retorna o resto da divisão. Qual será o resultado das expressões `7 // 2` e `7 % 2`?",
-  "options": [
-    "3 e 1",
-    "3.5 e 0.5",
-    "3 e 0",
-    "4 e 1"
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. 7 dividido por 2 dá quociente 3 e sobra resto 1. Logo, a divisão inteira `7 // 2` resulta em 3, e o módulo/resto `7 % 2` resulta em 1."
-},
-{
-  "id": 123,
-  "category": "informatica",
-  "day": "dia5",
-  "discipline": "Informática",
-  "topic": "Python: Listas e Indexação",
-  "question": "Em Python, as listas são coleções ordenadas de elementos e possuem indexação baseada em zero. Dada a lista `bancas = ['CETREDE', 'CONSULPAM', 'INBRASP', 'IDECAN']`, a instrução `print(bancas[2])` exibirá na tela:",
-  "options": [
-    "INBRASP",
-    "CONSULPAM",
-    "CETREDE",
-    "IDECAN"
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. A indexação em Python inicia em zero: `bancas[0]` = 'CETREDE', `bancas[1]` = 'CONSULPAM', `bancas[2]` = 'INBRASP', `bancas[3]` = 'IDECAN'."
-},
-{
-  "id": 124,
-  "category": "informatica",
-  "day": "dia5",
-  "discipline": "Informática",
-  "topic": "Python: Comentários de Linha",
-  "question": "Na linguagem Python, qual caractere é utilizado para inserir comentários de linha única (instruções que são ignoradas pelo interpretador)?",
-  "options": [
-    "# (cerquilha / hashtag)",
-    "// (duas barras inclinadas)",
-    "/* (barra e asterisco)",
-    "-- (dois traços)"
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Em Python, comentários de linha única começam com o caractere `#`. Em linguagens como C, Java e PHP usa-se `//`; em SQL usa-se `--`."
-},
-{
-  "id": 125,
-  "category": "informatica",
-  "day": "dia5",
-  "discipline": "Informática",
-  "topic": "Python: Estrutura Condicional (if / elif / else)",
-  "question": "Analise o seguinte código em Python:\n\npontos = 85\nif pontos >= 90:\n    print('Aprovado em 1º Lugar')\nelif pontos >= 50:\n    print('Classificado')\nelse:\n    print('Reprovado')\n\nQual será a saída exibida no terminal?",
-  "options": [
-    "Classificado",
-    "Aprovado em 1º Lugar",
-    "Reprovado",
-    "Aprovado em 1º Lugar e Classificado simultaneamente"
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. `pontos = 85`. A primeira condição (`85 >= 90`) é Falsa. O interpretador salta para o `elif`: `85 >= 50` é Verdadeira. Portanto, executa `print('Classificado')` e encerra a estrutura condicional."
-},
-{
-  "id": 126,
-  "category": "informatica",
-  "day": "dia5",
-  "discipline": "Informática",
-  "topic": "Python: Operador de Exponenciação",
-  "question": "Qual operador matemático é utilizado na linguagem Python para calcular a exponenciação (potência), por exemplo, dois elevado à terceira potência (2³)?",
-  "options": [
-    "** (dois asteriscos, ex: 2 ** 3)",
-    "^ (acento circunflexo, ex: 2 ^ 3)",
-    "pow$ (ex: 2 pow$ 3)",
-    "^^ (dois circunflexos, ex: 2 ^^ 3)"
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Em Python, a potência é calculada com `**` (ex: `2 ** 3 = 8`). O operador `^` em Python é o operador bit a bit XOR (ou exclusivo), uma pegadinha clássica de concurso!"
-},
-{
-  "id": 127,
-  "category": "informatica",
-  "day": "dia5",
-  "discipline": "Informática",
-  "topic": "Python: Função len()",
-  "question": "A função nativa `len()` em Python tem como finalidade:",
-  "options": [
-    "Retornar a quantidade de elementos de um objeto (como tamanho de uma lista ou comprimento de uma string).",
-    "Converter um texto em letras maiúsculas.",
-    "Ler uma entrada de dados digitada pelo usuário no teclado.",
-    "Finalizar imediatamente a execução do programa em caso de erro."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. `len()` é a abreviação de 'length'. Exemplo: `len('Meruoca')` retorna 7; `len([10, 20, 30])` retorna 3."
-},
-{
-  "id": 128,
-  "category": "informatica",
-  "day": "dia5",
-  "discipline": "Informática",
-  "topic": "Python: Operadores Lógicos (and, or, not)",
-  "question": "Em Python, os operadores lógicos booleanos para conjunção, disjunção e negação são grafados por extenso como:",
-  "options": [
-    "and, or, not",
-    "&&, ||, !",
-    ".AND., .OR., .NOT.",
-    "e, ou, nao"
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Python preza pela legibilidade e usa palavras em inglês em minúsculas: `and` (conjunção), `or` (disjunção) e `not` (negação). `&&` e `||` são de C/Java/JS."
-},
-{
-  "id": 129,
-  "category": "informatica",
-  "day": "dia5",
-  "discipline": "Informática",
-  "topic": "Python: Laço for e Função range()",
-  "question": "Considere o código Python:\n\nsoma = 0\nfor i in range(1, 4):\n    soma += i\nprint(soma)\n\nLembrando que `range(1, 4)` gera os números 1, 2 e 3 (o limite superior 4 é exclusivo), qual valor será impresso?",
-  "options": [
-    "6",
-    "10",
-    "4",
-    "3"
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. `range(1, 4)` produz os valores 1, 2 e 3. Na 1ª iteração: soma = 0 + 1 = 1. Na 2ª iteração: soma = 1 + 2 = 3. Na 3ª iteração: soma = 3 + 3 = 6. Saída: 6."
-},
-{
-  "id": 130,
-  "category": "informatica",
-  "day": "dia5",
-  "discipline": "Informática",
-  "topic": "Python: Função print() e input()",
-  "question": "As funções nativas de entrada e saída padrão em um terminal na linguagem Python são, respectivamente:",
-  "options": [
-    "input() para entrada de dados do usuário e print() para saída em tela.",
-    "read() para entrada e write() para saída.",
-    "scanf() para entrada e printf() para saída.",
-    "cin para entrada e cout para saída."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Em Python padrão: `input('Digite algo:')` lê dados do teclado em formato string, e `print('Mensagem')` imprime dados na tela do console."
-},
-{
-  "id": 131,
-  "category": "legislacao",
-  "day": "dia5",
-  "discipline": "Lei Orgânica de Meruoca",
-  "topic": "Poder Legislativo Municipal e Composição",
-  "question": "O Poder Legislativo do Município de Meruoca é exercido pela Câmara Municipal, composta por Vereadores eleitos pelo sistema proporcional para um mandato de:",
-  "options": [
-    "4 (quatro) anos, correspondendo a uma legislatura.",
-    "2 (dois) anos, permitida uma recondução consecutiva.",
-    "5 (cinco) anos, em consonância com o mandato dos senadores.",
-    "3 (três) anos, renovando-se por terços anuais."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Em conformidade com a CF/88 e a Lei Orgânica de Meruoca, o mandato dos Vereadores é de 4 anos. Cada período de 4 anos de mandato parlamentar corresponde a uma LEGISLATURA."
-},
-{
-  "id": 132,
-  "category": "legislacao",
-  "day": "dia5",
-  "discipline": "Lei Orgânica de Meruoca",
-  "topic": "Posse dos Vereadores, Prefeito e Vice",
-  "question": "Nos termos da Lei Orgânica Municipal, a posse dos Vereadores, do Prefeito e do Vice-Prefeito de Meruoca realizar-se-á em sessão solene de instalação no dia:",
-  "options": [
-    "1º de janeiro do ano subsequente ao da eleição.",
-    "1º de fevereiro do ano da posse legislativa federal.",
-    "15 de novembro, data da proclamação da República.",
-    "1º de março, após o encerramento do recesso carnavalesco."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. A instalação da legislatura e a posse dos Vereadores, Prefeito e Vice-Prefeito ocorre obrigatoriamente no dia 1º de JANEIRO do ano subsequente à eleição municipal."
-},
-{
-  "id": 133,
-  "category": "legislacao",
-  "day": "dia5",
-  "discipline": "Lei Orgânica de Meruoca",
-  "topic": "Mesa Diretora da Câmara Municipal",
-  "question": "Imediatamente após a posse dos Vereadores de Meruoca, sob a presidência do vereador mais votado dentre os presentes, proceder-se-á à eleição dos membros da:",
-  "options": [
-    "Mesa Diretora da Câmara Municipal.",
-    "Comissão Mista de Finanças e Tributação.",
-    "Bancada Governista de Apoio ao Poder Executivo.",
-    "Junta Comercial e Fiscalizatória dos Bairros."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Conforme a Lei Orgânica e o Regimento Interno, logo após o compromisso de posse no dia 1º de janeiro, os parlamentares elegem a Mesa Diretora da Câmara (Presidente, Vice-Presidente e Secretários)."
-},
-{
-  "id": 134,
-  "category": "legislacao",
-  "day": "dia5",
-  "discipline": "Lei Orgânica de Meruoca",
-  "topic": "Quórum Geral de Deliberação na Câmara",
-  "question": "Salvo disposição expressa em contrário da Lei Orgânica de Meruoca ou da Constituição Federal, as deliberações da Câmara Municipal e de suas Comissões serão tomadas por:",
-  "options": [
-    "Maioria de votos, presente a maioria absoluta de seus membros.",
-    "Dois terços de votos, independentemente do número de presentes.",
-    "Unanimidade obrigatória dos parlamentares diplomados.",
-    "Voto exclusivo e soberano do Presidente da Mesa Diretora."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. É a regra geral da maioria simples (ou relativa): maioria dos votos dos presentes na sessão, desde que esteja presente a maioria absoluta (metade mais um) dos membros da Casa (Art. 47 da CF e Lei Orgânica)."
-},
-{
-  "id": 135,
-  "category": "legislacao",
-  "day": "dia5",
-  "discipline": "Lei Orgânica de Meruoca",
-  "topic": "Imunidade Material dos Vereadores (Inviolabilidade)",
-  "question": "Conforme o Art. 29, VIII da Constituição Federal e a Lei Orgânica de Meruoca, os Vereadores gozam de inviolabilidade por suas opiniões, palavras e votos:",
-  "options": [
-    "No exercício do mandato e na circunscrição do Município.",
-    "Em qualquer lugar do território nacional, inclusive em viagens privadas de lazer.",
-    "Apenas durante as sessões plenárias dentro do edifício da Câmara Municipal.",
-    "Exclusivamente quando autorizados previamente pelo Presidente da Casa."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. A imunidade material do Vereador é local: ele possui inviolabilidade civil e penal por palavras, votos e opiniões proferidas no exercício das funções parlamentares e restritas à CIRCUNSCRIÇÃO DO MUNICÍPIO de Meruoca."
-},
-{
-  "id": 136,
-  "category": "legislacao",
-  "day": "dia5",
-  "discipline": "Lei Orgânica de Meruoca",
-  "topic": "Perda do Mandato por Falta às Sessões",
-  "question": "Perderá o mandato o Vereador de Meruoca que deixar de comparecer, em cada sessão legislativa anual, sem justificativa legal ou licença concedida pela Casa, à:",
-  "options": [
-    "Terça parte (1/3) das sessões ordinárias da Câmara Municipal.",
-    "Metade (1/2) das sessões extraordinárias convocadas pelo prefeito.",
-    "Duas sessões solenes comemorativas consecutivas.",
-    "Quinta parte (1/5) das reuniões das comissões temáticas."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 55, III da CF e Lei Orgânica: acarreta a perda do mandato parlamentar a ausência injustificada a 1/3 (uma terça parte) das sessões ordinárias do ano legislativo."
-},
-{
-  "id": 137,
-  "category": "legislacao",
-  "day": "dia5",
-  "discipline": "Lei Orgânica de Meruoca",
-  "topic": "Remuneração dos Vereadores (Subsídio)",
-  "question": "O subsídio dos Vereadores de Meruoca é fixado pela Câmara Municipal em cada legislatura para vigorar na subsequente, observados os limites constitucionais e o teto da receita municipal. O subsídio deve ser fixado sob a modalidade de:",
-  "options": [
-    "Parcela única, vedado o acréscimo de qualquer gratificação, adicional, abono, prêmio ou verba de representação.",
-    "Salário base acrescido de 40% de gratificação de produtividade por projeto aprovado.",
-    "Diárias cumulativas por sessão ordinária comparecida no mês.",
-    "Comissão percentual sobre a arrecadação mensal do IPTU de Meruoca."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 39, § 4º da CF/88 e Lei Orgânica: os agentes políticos remuneram-se exclusivamente por SUBSÍDIO fixado em parcela única, sendo expressamente proibido o pagamento de penduricalhos, adicionais ou gratificações de gabinete."
-},
-{
-  "id": 138,
-  "category": "legislacao",
-  "day": "dia5",
-  "discipline": "Lei Orgânica de Meruoca",
-  "topic": "Fiscalização Financeira e Controle Externo",
-  "question": "A fiscalização contábil, financeira e orçamentária do Município de Meruoca será exercida pela Câmara Municipal, mediante controle externo, com o auxílio do:",
-  "options": [
-    "Tribunal de Contas do Estado do Ceará (TCE/CE).",
-    "Tribunal de Contas da União (TCU) em primeira e última instância.",
-    "Conselho Fiscal Popular eleito por voto secreto em cada bairro.",
-    "Ministério da Fazenda e Receita Federal do Brasil."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. O controle externo da Câmara Municipal sobre as contas do Município e do Prefeito é exercido com o auxílio do Tribunal de Contas do Estado (TCE/CE), que emite parecer prévio."
-},
-{
-  "id": 139,
-  "category": "legislacao",
-  "day": "dia5",
-  "discipline": "Lei Orgânica de Meruoca",
-  "topic": "Rejeição do Parecer Prévio do TCE",
-  "question": "O parecer prévio emitido pelo Tribunal de Contas sobre as contas que o Prefeito de Meruoca deve prestar anualmente só deixará de prevalecer por decisão de:",
-  "options": [
-    "Dois terços (2/3) dos membros da Câmara Municipal.",
-    "Maioria absoluta dos vereadores presentes.",
-    "Maioria simples mediante votação secreta.",
-    "Unanimidade dos integrantes da comissão de orçamento."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 31, § 2º da CF/88 e Lei Orgânica de Meruoca: o parecer técnico do Tribunal de Contas tem peso qualificado e só pode ser derrubado pelo voto de 2/3 (dois terços) dos vereadores."
-},
-{
-  "id": 140,
-  "category": "legislacao",
-  "day": "dia5",
-  "discipline": "Lei Orgânica de Meruoca",
-  "topic": "Comissões Parlamentares de Inquérito (CPIs)",
-  "question": "As Comissões Parlamentares de Inquérito (CPI) na Câmara Municipal de Meruoca, que terão poderes de investigação próprios das autoridades judiciais, serão criadas mediante requerimento de:",
-  "options": [
-    "Um terço (1/3) dos membros da Câmara Municipal, para a apuração de fato determinado e por prazo certo.",
-    "Metade mais um dos vereadores, para investigar condutas genéricas sem prazo determinado.",
-    "Dois terços dos membros da Casa, exigindo-se aval prévio do juiz de direito da comarca.",
-    "Qualquer cidadão que apresente abaixo-assinado com 50 assinaturas."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 58, § 3º da CF/88 e Lei Orgânica: a CPI é criada por requerimento de 1/3 (um terço) dos membros da Câmara, para apuração de FATO DETERMINADO e por PRAZO CERTO, sendo suas conclusões encaminhadas ao Ministério Público se for o caso."
-},
-{
-  "id": 141,
-  "simuladoQNum": 1,
-  "category": "portugues",
-  "day": "dia6",
-  "discipline": "Tipologia Textual: Narração",
-  "topic": "Simulado Oficial 01 • Questão 1",
-  "question": "[Simulado 01 - Q01] O tipo textual que se caracteriza pela sucessão temporal de fatos e pela presença de personagens, narrador, tempo e espaço denomina-se:",
-  "options": [
-    "Expositivo.",
-    "Descritivo.",
-    "Narrativo.",
-    "Injuntivo."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito Oficial: A. Morfossintaxe - Oração subordinada adverbial temporal."
-},
-{
-  "id": 142,
-  "simuladoQNum": 2,
-  "category": "portugues",
-  "day": "dia6",
-  "discipline": "Tipologia Textual: Descrição",
-  "topic": "Simulado Oficial 01 • Questão 2",
-  "question": "[Simulado 01 - Q02] O excerto \"O casarão antigo possuía portas largas de madeira escura, paredes descascadas pelo tempo e um assoalho de tábuas corridas que rangia\" classifica-se predominantemente como:",
-  "options": [
-    "Argumentativo.",
-    "Descritivo.",
-    "Injuntivo.",
-    "Expositivo."
-  ],
-  "correctAnswer": 2,
-  "commentary": "Gabarito Oficial: C. Crase antes de palavra feminina sem artigo definido."
-},
-{
-  "id": 143,
-  "simuladoQNum": 3,
-  "category": "portugues",
-  "day": "dia6",
-  "discipline": "Tipologia Textual: Dissertação Argumentativa",
-  "topic": "Simulado Oficial 01 • Questão 3",
-  "question": "[Simulado 01 - Q03] O texto que se estrutura com o objetivo principal de defender um ponto de vista (tese), recorrendo a argumentos, dados e raciocínio lógico para convencer o leitor, é do tipo:",
-  "options": [
-    "Dissertativo-argumentativo.",
-    "Narrativo.",
-    "Dissertativo-expositivo.",
-    "Instrucional."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito Oficial: A. Concordância verbal com partícula apassivadora \"se\"."
-},
-{
-  "id": 144,
-  "simuladoQNum": 4,
-  "category": "portugues",
-  "day": "dia6",
-  "discipline": "Tipologia Textual: Injunção",
-  "topic": "Simulado Oficial 01 • Questão 4",
-  "question": "[Simulado 01 - Q04] Os manuais de instalação de equipamentos, receitas culinárias e bulas de medicamentos (na seção posologia) têm em comum a presença de verbos no imperativo ou infinitivo com instruções ao leitor. Essa tipologia é a:",
-  "options": [
-    "Descritiva.",
-    "Narrativa.",
-    "Injuntiva ou instrucional.",
-    "Dialógica."
-  ],
-  "correctAnswer": 3,
-  "commentary": "Gabarito Oficial: D. Regência verbal do verbo assistir no sentido de ver/presenciar."
-},
-{
-  "id": 145,
-  "simuladoQNum": 5,
-  "category": "portugues",
-  "day": "dia6",
-  "discipline": "Gênero Textual: Editorial",
-  "topic": "Simulado Oficial 01 • Questão 5",
-  "question": "[Simulado 01 - Q05] Assinale a alternativa que define corretamente o gênero textual Editorial:",
-  "options": [
-    "Texto assinado por um colunista que expressa sua visão pessoal e subjetiva sobre um fato.",
-    "Texto jornalístico que expressa o posicionamento institucional da empresa/jornal e não leva assinatura individual.",
-    "Comunicação estritamente interna trocada entre departamentos de uma mesma empresa.",
-    "Relatório técnico produzido por peritos judiciais para embasar decisões do tribunal."
-  ],
-  "correctAnswer": 1,
-  "commentary": "Gabarito Oficial: B. Gênero textual Editorial - institucional do jornal, sem assinatura."
-},
-{
-  "id": 146,
-  "simuladoQNum": 6,
-  "category": "portugues",
-  "day": "dia6",
-  "discipline": "Redação Oficial: Ofício",
-  "topic": "Simulado Oficial 01 • Questão 6",
-  "question": "[Simulado 01 - Q06] A comunicação formal e padronizada emitida por autoridades públicas para tratar de assuntos oficiais de serviço com outras autoridades ou cidadãos denomina-se:",
-  "options": [
-    "Carta comercial.",
-    "Abaixo-assinado.",
-    "Ofício.",
-    "Artigo de opinião."
-  ],
-  "correctAnswer": 2,
-  "commentary": "Gabarito Oficial: C. Ofício - comunicação formal da administração pública."
-},
-{
-  "id": 147,
-  "simuladoQNum": 7,
-  "category": "portugues",
-  "day": "dia6",
-  "discipline": "Funções da Linguagem",
-  "topic": "Simulado Oficial 01 • Questão 7",
-  "question": "[Simulado 01 - Q07] Em um cartaz institucional afixado em repartição pública constam os dizeres: \"Economize energia elétrica. Apague as lâmpadas ao sair da sala.\" O texto emprega tipologia injuntiva com a função de linguagem predominantemente:",
-  "options": [
-    "Fática.",
-    "Emotiva.",
-    "Conotativa (ou apelativa).",
-    "Metalinguística."
-  ],
-  "correctAnswer": 2,
-  "commentary": "Gabarito Oficial: C. Função Conotativa/Apelativa - foco no leitor, verbos no imperativo."
-},
-{
-  "id": 148,
-  "simuladoQNum": 8,
-  "category": "portugues",
-  "day": "dia6",
-  "discipline": "Gênero: Divulgação Científica",
-  "topic": "Simulado Oficial 01 • Questão 8",
-  "question": "[Simulado 01 - Q08] Um texto de Artigo de Divulgação Científica tem como finalidade primordial:",
-  "options": [
-    "Transmitir conhecimentos científicos ao público geral por meio de linguagem acessível e informativa.",
-    "Contar uma narrativa fictícia com elementos mágicos e fabulosos.",
-    "Vender produtos cosméticos por meio de apelos emocionais e imagens publicitárias.",
-    "Estabelecer normas jurídicas imperativas para cumprimento obrigatório de pesquisadores."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito Oficial: A. Divulgação científica - transmitir conhecimento ao leigo."
-},
-{
-  "id": 149,
-  "simuladoQNum": 9,
-  "category": "portugues",
-  "day": "dia6",
-  "discipline": "Gênero: Artigo de Opinião",
-  "topic": "Simulado Oficial 01 • Questão 9",
-  "question": "[Simulado 01 - Q09] O gênero textual Artigo de Opinião caracteriza-se formalmente por:",
-  "options": [
-    "Apresentar a visão neutra do veículo de comunicação sem a identificação do autor.",
-    "Ser um texto argumentativo assinado pelo próprio autor, que assume a responsabilidade pela tese defendida.",
-    "Conter exclusivamente tabelas numéricas e dados matemáticos sem texto explicativo.",
-    "Limitar-se a narrar uma sequência cronológica de eventos policiais sem emitir juízo de valor."
-  ],
-  "correctAnswer": 1,
-  "commentary": "Gabarito Oficial: B. Artigo de opinião - texto argumentativo e assinado."
-},
-{
-  "id": 150,
-  "simuladoQNum": 10,
-  "category": "portugues",
-  "day": "dia6",
-  "discipline": "Gênero: Crônica",
-  "topic": "Simulado Oficial 01 • Questão 10",
-  "question": "[Simulado 01 - Q10] O gênero Crônica destaca-se na imprensa e na literatura por:",
-  "options": [
-    "Registrar normas regimentais e decretos administrativos com rigor técnico.",
-    "Abordar situações cotidianas e corriqueiras com estilo leve, reflexivo e por vezes poético.",
-    "Exigir obrigatoriamente a assinatura de um colegiado de juristas para ser publicado.",
-    "Apresentar fórmulas matemáticas aplicadas a cálculos orçamentários."
-  ],
-  "correctAnswer": 1,
-  "commentary": "Gabarito Oficial: B. Crônica - cotidiano em tom leve e reflexivo."
-},
-{
-  "id": 151,
-  "simuladoQNum": 11,
-  "category": "portugues",
-  "day": "dia6",
-  "discipline": "Windows 11: Nomenclatura de Arquivos",
-  "topic": "Simulado Oficial 01 • Questão 11",
-  "question": "[Simulado 01 - Q11] No sistema operacional Microsoft Windows 11, ao tentar renomear um arquivo ou pasta, o usuário é impedido de utilizar determinados caracteres reservados pelo sistema. Assinale a alternativa que contém apenas caracteres PROIBIDOS em nomes de arquivos no Windows:",
-  "options": [
-    "\\ / : * ? \" &lt; &gt; |",
-    "@ # $ % _ - +",
-    "( ) [ ] { } .",
-    "! &amp; = ~ ^ ;"
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito Oficial: A. Caracteres proibidos no Windows: \\ / : * ? \" < > |."
-},
-{
-  "id": 152,
-  "simuladoQNum": 12,
-  "category": "portugues",
-  "day": "dia6",
-  "discipline": "Windows 11: Atalhos",
-  "topic": "Simulado Oficial 01 • Questão 12",
-  "question": "[Simulado 01 - Q12] No Windows 11, o atalho de teclado padrão utilizado para BLOQUEAR rapidamente o computador ao se ausentar da mesa de trabalho é:",
-  "options": [
-    "Ctrl + Alt + B",
-    "Alt + F4",
-    "Logotipo do Windows + L",
-    "Ctrl + Shift + Esc"
-  ],
-  "correctAnswer": 2,
-  "commentary": "Gabarito Oficial: C. Win + L - atalho de bloqueio rápido da sessão do Windows."
-},
-{
-  "id": 153,
-  "simuladoQNum": 13,
-  "category": "portugues",
-  "day": "dia6",
-  "discipline": "Linux Ubuntu: Diretórios",
-  "topic": "Simulado Oficial 01 • Questão 13",
-  "question": "[Simulado 01 - Q13] Na estrutura de diretórios do sistema operacional Linux (como o Ubuntu), o diretório responsável por armazenar os arquivos de configuração globais do sistema e dos serviços instalados é o:",
-  "options": [
-    "/bin",
-    "/etc",
-    "/home",
-    "/dev"
-  ],
-  "correctAnswer": 1,
-  "commentary": "Gabarito Oficial: B. /etc - pasta de arquivos de configuração globais do Linux."
-},
-{
-  "id": 154,
-  "simuladoQNum": 14,
-  "category": "portugues",
-  "day": "dia6",
-  "discipline": "Hardware: Memórias",
-  "topic": "Simulado Oficial 01 • Questão 14",
-  "question": "[Simulado 01 - Q14] A respeito da memória RAM (Random Access Memory) de um computador, assinale a afirmativa correta:",
-  "options": [
-    "É uma memória secundária de armazenamento permanente de fotos e vídeos.",
-    "É uma memória volátil, cujo conteúdo é totalmente apagado quando o computador é desligado.",
-    "Armazena a BIOS e não pode ser gravada nem alterada pelo usuário.",
-    "Possui velocidade de leitura e gravação muito inferior à de um disco rígido tradicional (HD)."
-  ],
-  "correctAnswer": 1,
-  "commentary": "Gabarito Oficial: B. Memória RAM é primária e volátil."
-},
-{
-  "id": 155,
-  "simuladoQNum": 15,
-  "category": "portugues",
-  "day": "dia6",
-  "discipline": "Segurança: Backup 3-2-1",
-  "topic": "Simulado Oficial 01 • Questão 15",
-  "question": "[Simulado 01 - Q15] A consagrada regra de segurança de dados \"3-2-1 para Backup\" recomenda manter:",
-  "options": [
-    "3 cópias dos dados, em 2 tipos de mídia diferentes, com pelo menos 1 cópia armazenada fora do local de trabalho (offsite/nuvem).",
-    "3 computadores ligados ao mesmo tempo, durante 2 horas por dia, com 1 funcionário supervisionando.",
-    "3 senhas iguais em 2 sistemas diferentes para 1 único usuário.",
-    "3 antivírus instalados simultaneamente na mesma máquina durante 2 dias."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito Oficial: A. Regra 3-2-1 de Backup (3 cópias, 2 mídias, 1 fora/nuvem)."
-},
-{
-  "id": 156,
-  "simuladoQNum": 16,
-  "category": "portugues",
-  "day": "dia6",
-  "discipline": "Conjuntos Numéricos",
-  "topic": "Simulado Oficial 01 • Questão 16",
-  "question": "[Simulado 01 - Q16] Em uma pesquisa com 100 servidores da Câmara Municipal, 60 utilizam o sistema de processo eletrônico no Windows e 50 utilizam o sistema no Linux. Sabendo que 20 servidores utilizam ambos os sistemas, o número de servidores que não utilizam nenhum dos dois sistemas é:",
-  "options": [
-    "5 servidores.",
-    "10 servidores.",
-    "15 servidores.",
-    "20 servidores."
-  ],
-  "correctAnswer": 1,
-  "commentary": "Gabarito Oficial: B. Conjuntos: 60 + 50 - 20 = 90 servidores. 100 - 90 = 10 servidores."
-},
-{
-  "id": 157,
-  "simuladoQNum": 17,
-  "category": "portugues",
-  "day": "dia6",
-  "discipline": "Razão e Proporção",
-  "topic": "Simulado Oficial 01 • Questão 17",
-  "question": "[Simulado 01 - Q17] A razão entre o número de processos analisados pela manhã e à tarde por um Técnico Legislativo é de 3 para 5. Se em determinado dia ele analisou 40 processos no total, quantos foram analisados no período da manhã?",
-  "options": [
-    "12 processos.",
-    "15 processos.",
-    "18 processos.",
-    "25 processos."
-  ],
-  "correctAnswer": 1,
-  "commentary": "Gabarito Oficial: B. Razão e proporção: 3x + 5x = 40 -> 8x = 40 -> x = 5. Manhã: 3 * 5 = 15."
-},
-{
-  "id": 158,
-  "simuladoQNum": 18,
-  "category": "portugues",
-  "day": "dia6",
-  "discipline": "Porcentagem",
-  "topic": "Simulado Oficial 01 • Questão 18",
-  "question": "[Simulado 01 - Q18] O orçamento anual de custeio de um setor legislativo era de R$ 50.000,00 e sofreu um acréscimo de 15%. Qual passou a ser o novo valor orçamentário?",
-  "options": [
-    "R$ 55.000,00.",
-    "R$ 57.500,00.",
-    "R$ 58.000,00.",
-    "R$ 60.000,00."
-  ],
-  "correctAnswer": 1,
-  "commentary": "Gabarito Oficial: B. Porcentagem: 50.000 + 15% = R$ 57.500,00."
-},
-{
-  "id": 159,
-  "simuladoQNum": 19,
-  "category": "portugues",
-  "day": "dia6",
-  "discipline": "Regra de Três Simples",
-  "topic": "Simulado Oficial 01 • Questão 19",
-  "question": "[Simulado 01 - Q19] Três técnicos legislativos realizam a digitalização de 120 atas em 4 horas. Mantendo o mesmo ritmo de trabalho, quantos técnicos seriam necessários para digitalizar as mesmas 120 atas em apenas 2 horas?",
-  "options": [
-    "4 técnicos.",
-    "5 técnicos.",
-    "6 técnicos.",
-    "8 técnicos."
-  ],
-  "correctAnswer": 2,
-  "commentary": "Gabarito Oficial: C. Regra de três inversa: 3 téc * 4h = X * 2h -> X = 6 técnicos."
-},
-{
-  "id": 160,
-  "simuladoQNum": 20,
-  "category": "matematica",
-  "day": "dia6",
-  "discipline": "Lógica Proposicional",
-  "topic": "Simulado Oficial 01 • Questão 20",
-  "question": "[Simulado 01 - Q20] Dada a proposição \"Se o Projeto de Lei for aprovado pela Câmara, então o Prefeito o sancionará\", sua negação lógica equivalente é:",
-  "options": [
-    "O Projeto de Lei é aprovado pela Câmara e o Prefeito não o sanciona.",
-    "Se o Projeto de Lei não for aprovado, o Prefeito não o sancionará.",
-    "O Projeto de Lei não é aprovado ou o Prefeito o sanciona.",
-    "O Prefeito sanciona o Projeto de Lei se e somente se for aprovado."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito Oficial: A. Negação do condicional (P -> Q): P ^ ~Q (Mané)."
-},
-{
-  "id": 161,
-  "simuladoQNum": 21,
-  "category": "portugues",
-  "day": "dia6",
-  "discipline": "CF/88: Inviolabilidade de Domicílio",
-  "topic": "Simulado Oficial 01 • Questão 21",
-  "question": "[Simulado 01 - Q21] Conforme o Art. 5º, XI, da CF/88, a casa é asilo inviolável do indivíduo. A entrada no domicílio sem o consentimento do morador por determinação judicial só pode ocorrer:",
-  "options": [
-    "A qualquer hora do dia ou da noite.",
-    "Apenas durante a noite, com a presença de testemunhas.",
-    "Durante o dia.",
-    "Em dias úteis, no período das 6h às 22h."
-  ],
-  "correctAnswer": 2,
-  "commentary": "Gabarito Oficial: C. Art. 5º, XI CF/88 - Casa como asilo inviolável durante o dia."
-},
-{
-  "id": 162,
-  "simuladoQNum": 22,
-  "category": "portugues",
-  "day": "dia6",
-  "discipline": "CF/88: Crimes Inafiançáveis e Imprescritíveis",
-  "topic": "Simulado Oficial 01 • Questão 22",
-  "question": "[Simulado 01 - Q22] Segundo a Constituição Federal de 1988, constituem crimes inafiançáveis e imprescritíveis:",
-  "options": [
-    "A prática da tortura e o tráfico ilícito de entorpecentes.",
-    "Os crimes hediondos e o terrorismo.",
-    "A prática do racismo e a ação de grupos armados contra a ordem constitucional.",
-    "O roubo qualificado e a corrupção passiva."
-  ],
-  "correctAnswer": 2,
-  "commentary": "Gabarito Oficial: C. Crimes inafiançáveis e imprescritíveis: Racismo e Ação de grupos armados."
-},
-{
-  "id": 163,
-  "simuladoQNum": 23,
-  "category": "portugues",
-  "day": "dia6",
-  "discipline": "Remédios Constitucionais: Mandado de Segurança",
-  "topic": "Simulado Oficial 01 • Questão 23",
-  "question": "[Simulado 01 - Q23] Para proteger direito líquido e certo, não amparado por Habeas Corpus ou Habeas Data, quando o responsável pela ilegalidade for autoridade pública, concede-se:",
-  "options": [
-    "Ação Popular.",
-    "Mandado de Segurança.",
-    "Mandado de Injunção.",
-    "Arguição de Descumprimento de Preceito Fundamental."
-  ],
-  "correctAnswer": 1,
-  "commentary": "Gabarito Oficial: B. Tráfico de drogas é inafiançável e insuscetível de graça ou anistia."
-},
-{
-  "id": 164,
-  "simuladoQNum": 24,
-  "category": "portugues",
-  "day": "dia6",
-  "discipline": "Mandado de Segurança: Prazo Decadencial",
-  "topic": "Simulado Oficial 01 • Questão 24",
-  "question": "[Simulado 01 - Q24] O prazo decadencial para a impetração de Mandado de Segurança é de:",
-  "options": [
-    "30 dias contados da publicação da portaria.",
-    "60 dias contados da ocorrência do fato danoso.",
-    "90 dias contados da notificação do ato coator.",
-    "120 dias contados da ciência, pelo interessado, do ato impugnado."
-  ],
-  "correctAnswer": 3,
-  "commentary": "Gabarito Oficial: D. Lei 12.016/09, Art. 23 - Prazo decadencial de 120 dias para Mandado de Segurança."
-},
-{
-  "id": 165,
-  "simuladoQNum": 25,
-  "category": "portugues",
-  "day": "dia6",
-  "discipline": "Remédios: Tribunal do Júri",
-  "topic": "Simulado Oficial 01 • Questão 25",
-  "question": "[Simulado 01 - Q25] É reconhecida a instituição do júri pela CF/88, com a organização que lhe der a lei, assegurada expressamente a competência para o julgamento dos:",
-  "options": [
-    "Crimes praticados por servidores públicos contra a administração em geral.",
-    "Crimes de responsabilidade praticados por prefeitos e vereadores.",
-    "Crimes dolosos contra a vida.",
-    "Crimes culposos de trânsito que resultem em morte."
-  ],
-  "correctAnswer": 2,
-  "commentary": "Gabarito Oficial: C. Art. 5º, XXXVIII, \"d\" - Competência do Tribunal do Júri para crimes dolosos contra a vida."
-},
-{
-  "id": 166,
-  "simuladoQNum": 26,
-  "category": "administrativo",
-  "day": "dia6",
-  "discipline": "D. Administrativo: Princípios LIMPE",
-  "topic": "Simulado Oficial 01 • Questão 26",
-  "question": "[Simulado 01 - Q26] Conforme o Art. 37, caput, da Constituição Federal de 1988, a administração pública direta e indireta de qualquer dos Poderes obedecerá aos seguintes princípios expressos:",
-  "options": [
-    "Legalidade, Impessoalidade, Moralidade, Publicidade e Eficiência.",
-    "Legalidade, Supremacia do interesse público, Moralidade, Finalidade e Eficiência.",
-    "Proporcionalidade, Impessoalidade, Razoabilidade, Publicidade e Celeridade.",
-    "Legalidade, Isonomia, Moralidade, Transparência e Motivação."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito Oficial: A. Mnemônico LIMPE - Art. 37, caput da CF/88."
-},
-{
-  "id": 167,
-  "simuladoQNum": 27,
-  "category": "administrativo",
-  "day": "dia6",
-  "discipline": "D. Administrativo: Impessoalidade",
-  "topic": "Simulado Oficial 01 • Questão 27",
-  "question": "[Simulado 01 - Q27] De acordo com o Art. 37, § 1º, da CF/88, a publicidade dos atos dos órgãos públicos não pode conter nomes, símbolos ou imagens que caracterizem promoção pessoal de autoridades. Tal regra decorre do princípio da:",
-  "options": [
-    "Continuidade do serviço público.",
-    "Impessoalidade.",
-    "Autotutela.",
-    "Especialidade."
-  ],
-  "correctAnswer": 1,
-  "commentary": "Gabarito Oficial: B. Art. 37, § 1º CF/88 - Princípio da impessoalidade na publicidade institucional."
-},
-{
-  "id": 168,
-  "simuladoQNum": 28,
-  "category": "administrativo",
-  "day": "dia6",
-  "discipline": "D. Administrativo: Autotutela",
-  "topic": "Simulado Oficial 01 • Questão 28",
-  "question": "[Simulado 01 - Q28] A prerrogativa conferida à Administração Pública de rever seus próprios atos, anulando os ilegais e revogando os inoportunos, decorre do princípio da:",
-  "options": [
-    "Legalidade estrita.",
-    "Continuidade.",
-    "Autotutela.",
-    "Razoabilidade."
-  ],
-  "correctAnswer": 2,
-  "commentary": "Gabarito Oficial: C. Autotutela - Súmulas 346 e 473 do STF."
-},
-{
-  "id": 169,
-  "simuladoQNum": 29,
-  "category": "portugues",
-  "day": "dia6",
-  "discipline": "Organização: Desconcentração vs. Descentralização",
-  "topic": "Simulado Oficial 01 • Questão 29",
-  "question": "[Simulado 01 - Q29] A distribuição interna de competências e atribuições dentro de uma mesma pessoa jurídica, dando origem a órgãos públicos despersonalizados com subordinação hierárquica, denomina-se:",
-  "options": [
-    "Descentralização por serviços.",
-    "Desconcentração.",
-    "Delegação por colaboração.",
-    "Terceirização administrativa."
-  ],
-  "correctAnswer": 1,
-  "commentary": "Gabarito Oficial: B. Desconcentração - distribuição interna de competências criando órgãos."
-},
-{
-  "id": 170,
-  "simuladoQNum": 30,
-  "category": "portugues",
-  "day": "dia6",
-  "discipline": "Administração Indireta: Autarquias",
-  "topic": "Simulado Oficial 01 • Questão 30",
-  "question": "[Simulado 01 - Q30] Sobre as entidades que integram a Administração Pública Indireta, assinale a entidade que é criada DIRETAMENTE por lei específica e possui personalidade jurídica de direito público:",
-  "options": [
-    "Autarquia.",
-    "Empresa Pública.",
-    "Sociedade de Economia Mista.",
-    "Fundação Pública de direito privado."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito Oficial: A. Art. 37, XIX - Autarquia criada diretamente por lei específica."
-},
-{
-  "id": 171,
-  "simuladoQNum": 31,
-  "category": "portugues",
-  "day": "dia6",
-  "discipline": "Sociedades de Economia Mista: Formato",
-  "topic": "Simulado Oficial 01 • Questão 31",
-  "question": "[Simulado 01 - Q31] A respeito das Sociedades de Economia Mista, assinale a afirmativa correta:",
-  "options": [
-    "Devem ser constituídas obrigatoriamente sob a forma de Sociedade Anônima (S/A).",
-    "Seu capital social é integralmente pertencente ao Poder Público.",
-    "Possuem personalidade jurídica de direito público e bens inpenhoráveis.",
-    "Podem adotar qualquer formato societário, como Sociedade Limitada (Ltda)."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito Oficial: A. Sociedade de Economia Mista sob forma obrigatória de S/A."
-},
-{
-  "id": 172,
-  "simuladoQNum": 32,
-  "category": "portugues",
-  "day": "dia6",
-  "discipline": "Nova Lei de Licitações: Modalidades",
-  "topic": "Simulado Oficial 01 • Questão 32",
-  "question": "[Simulado 01 - Q32] Segundo a Lei nº 14.133/2021 (Nova Lei de Licitações), são modalidades de licitação expressamente previstas, EXCETO:",
-  "options": [
-    "Pregão e Concorrência.",
-    "Concurso e Leilão.",
-    "Diálogo Competitivo.",
-    "Tomada de Preços e Convite."
-  ],
-  "correctAnswer": 3,
-  "commentary": "Gabarito Oficial: D. Lei 14.133/2021 extinguiu as modalidades Convite e Tomada de Preços."
-},
-{
-  "id": 173,
-  "simuladoQNum": 33,
-  "category": "portugues",
-  "day": "dia6",
-  "discipline": "Licitações: Inexigibilidade vs. Dispensa",
-  "topic": "Simulado Oficial 01 • Questão 33",
-  "question": "[Simulado 01 - Q33] A contratação direta com fundamento na inviabilidade de competição (como na contratação de profissional do setor artístico consagrado pela crítica especializada) caracteriza hipótese de:",
-  "options": [
-    "Dispensa de licitação em razão do valor.",
-    "Inexigibilidade de licitação.",
-    "Concorrência internacional.",
-    "Alienação fiduciária."
-  ],
-  "correctAnswer": 1,
-  "commentary": "Gabarito Oficial: B. Inexigibilidade de licitação por inviabilidade de competição (Art. 74)."
-},
-{
-  "id": 174,
-  "simuladoQNum": 34,
-  "category": "portugues",
-  "day": "dia6",
-  "discipline": "Lei Orgânica de Meruoca: Prazos de Veto",
-  "topic": "Simulado Oficial 01 • Questão 34",
-  "question": "[Simulado 01 - Q34] Conforme a Lei Orgânica do Município de Meruoca, o Prefeito Municipal, considerando o Projeto de Lei aprovado pela Câmara inconstitucional ou contrário ao interesse público, terá qual prazo para vetá-lo?",
-  "options": [
-    "10 dias corridos.",
-    "15 dias úteis.",
-    "20 dias úteis.",
-    "30 dias corridos."
-  ],
-  "correctAnswer": 1,
-  "commentary": "Gabarito Oficial: B. Lei Orgânica de Meruoca - Prazo de veto do prefeito: 15 dias úteis."
-},
-{
-  "id": 175,
-  "simuladoQNum": 35,
-  "category": "portugues",
-  "day": "dia6",
-  "discipline": "Lei Orgânica de Meruoca: Contas do Prefeito",
-  "topic": "Simulado Oficial 01 • Questão 35",
-  "question": "[Simulado 01 - Q35] O parecer prévio emitido pelo Tribunal de Contas (TCE) sobre as contas anuais prestadas pelo Prefeito de Meruoca só deixará de prevalecer por decisão de:",
-  "options": [
-    "Maioria simples dos vereadores presentes.",
-    "Maioria absoluta dos membros da Câmara.",
-    "2/3 (dois terços) dos membros da Câmara Municipal.",
-    "Unanimidade dos membros da Mesa Diretora."
-  ],
-  "correctAnswer": 2,
-  "commentary": "Gabarito Oficial: C. Quórum qualificado de 2/3 da Câmara de Meruoca para rejeitar parecer do TCE."
-},
-{
-  "id": 176,
-  "simuladoQNum": 36,
-  "category": "portugues",
-  "day": "dia6",
-  "discipline": "Regimento Interno da Câmara: Funções",
-  "topic": "Simulado Oficial 01 • Questão 36",
-  "question": "[Simulado 01 - Q36] No âmbito do Poder Legislativo Municipal de Meruoca, constituem funções TÍPICAS da Câmara de Vereadores:",
-  "options": [
-    "Executar obras públicas e administrar receitas tributárias municipais.",
-    "Legislar sobre assuntos de interesse local e fiscalizar a administração pública municipal.",
-    "Julgar ações penais condenatórias e expedir mandados de prisão.",
-    "Promover o controle concentrado de constitucionalidade perante o STF."
-  ],
-  "correctAnswer": 1,
-  "commentary": "Gabarito Oficial: B. Funções típicas do Poder Legislativo: legislar e fiscalizar."
-},
-{
-  "id": 177,
-  "simuladoQNum": 37,
-  "category": "portugues",
-  "day": "dia6",
-  "discipline": "Técnica Legislativa: LC nº 95/1998",
-  "topic": "Simulado Oficial 01 • Questão 37",
-  "question": "[Simulado 01 - Q37] Segundo a Lei Complementar nº 95/1998, a articulação e numeração dos artigos de uma lei devem ser expressas por numerais ordinais até o artigo:",
-  "options": [
-    "Art. 5º.",
-    "Art. 9º.",
-    "Art. 10.",
-    "Art. 12."
-  ],
-  "correctAnswer": 1,
-  "commentary": "Gabarito Oficial: B. LC 95/98 - Artigos são numerados com ordinais até o 9º e cardinais a partir do 10."
-},
-{
-  "id": 178,
-  "simuladoQNum": 38,
-  "category": "portugues",
-  "day": "dia6",
-  "discipline": "Orçamento / LRF: Limite de Pessoal",
-  "topic": "Simulado Oficial 01 • Questão 38",
-  "question": "[Simulado 01 - Q38] Nos termos da Lei de Responsabilidade Fiscal (LC nº 101/2000), a despesa total com pessoal do Poder Legislativo Municipal (Câmara de Vereadores) não poderá exceder qual percentual da Receita Corrente Líquida (RCL)?",
-  "options": [
-    "2% da RCL.",
-    "6% da RCL.",
-    "54% da RCL.",
-    "60% da RCL."
-  ],
-  "correctAnswer": 1,
-  "commentary": "Gabarito Oficial: B. LRF - LC 101/00 - Limite total de despesa com pessoal da Câmara: 6% da RCL."
-},
-{
-  "id": 179,
-  "simuladoQNum": 39,
-  "category": "portugues",
-  "day": "dia6",
-  "discipline": "Improbidade Administrativa: Lei 8.429/92",
-  "topic": "Simulado Oficial 01 • Questão 39",
-  "question": "[Simulado 01 - Q39] Com as alterações promovidas pela Lei nº 14.230/2021 na Lei de Improbidade Administrativa, a configuração de ato de improbidade exige:",
-  "options": [
-    "Apenas a modalidade culposa em caso de negligência comprovada.",
-    "A presença de Dolo Específico (intenção consciente de alcançar o resultado ilícito).",
-    "O dano material ao erário, sendo dispensada a comprovação de dolo ou culpa.",
-    "A condenação prévia na esfera penal com trânsito em julgado."
-  ],
-  "correctAnswer": 1,
-  "commentary": "Gabarito Oficial: B. Lei 14.230/2021 - Exigência de dolo específico para configuração de improbidade."
-},
-{
-  "id": 180,
-  "simuladoQNum": 40,
-  "category": "portugues",
-  "day": "dia6",
-  "discipline": "Transparência: LAI - Lei 12.527/2011",
-  "topic": "Simulado Oficial 01 • Questão 40",
-  "question": "[Simulado 01 - Q40] Conforme a Lei de Acesso à Informação (LAI), caso o órgão público não possa fornecer o acesso imediato à informação solicitada, deverá responder ao pedido no prazo de até:",
-  "options": [
-    "5 dias úteis, improrrogáveis.",
-    "10 dias corridos, prorrogáveis por 5 dias.",
-    "20 dias corridos, prorrogáveis por mais 10 dias mediante justificativa expressa.",
-    "30 dias úteis, sem necessidade de justificativa."
-  ],
-  "correctAnswer": 2,
-  "commentary": "Gabarito Oficial: C. LAI - Lei 12.527/11 - Prazo padrão de resposta: até 20 dias, prorrogável por 10 dias."
-}
-,
-{
-  "id": 181,
-  "category": "constitucional",
-  "day": "w2_d1",
-  "discipline": "D. Constitucional",
-  "topic": "Forma de Estado & Autonomia Federativa (Art. 18)",
-  "question": "Conforme o Art. 18 da Constituição Federal de 1988, a organização político-administrativa da República Federativa do Brasil compreende a União, os Estados, o Distrito Federal e os Municípios. A respeito dessa estrutura, é correto afirmar que:",
-  "options": [
-    "Todos são entes autônomos, nos termos da Constituição, sendo vedada qualquer tentativa de secessão ou dissolução do pacto federativo.",
-    "A União é soberana e os demais entes federativos não possuem autonomia administrativa ou orçamentária.",
-    "Os Municípios subordinam-se administrativamente aos Estados-membros, dependendo de autorização da Assembleia Legislativa para criar seus órgãos.",
-    "O Distrito Federal pode ser dividido em Municípios autônomos por lei distrital aprovada por maioria simples."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 18, caput da CF/88: 'A organização político-administrativa da República Federativa do Brasil compreende a União, os Estados, o Distrito Federal e os Municípios, todos autônomos, nos termos desta Constituição'. A República Federativa do Brasil possui SOBERANIA (no plano internacional); os entes federados (União, Estados, DF e Municípios) possuem AUTONOMIA (política, administrativa e financeira). É vedada a secessão (pacto federativo indissolúvel)."
-},
-{
-  "id": 182,
-  "category": "constitucional",
-  "day": "w2_d1",
-  "discipline": "D. Constitucional",
-  "topic": "Criação, Incorporação e Fusão de Municípios (Art. 18, § 4º)",
-  "question": "A criação, a incorporação, a fusão e o desmembramento de Municípios, consoante o Art. 18, § 4º da CF/88 (redação da EC nº 15/96), far-se-ão por:",
-  "options": [
-    "Lei estadual, dentro do período determinado por lei complementar federal, e dependerão de consulta prévia, mediante plebiscito, às populações dos Municípios envolvidos, após divulgação dos Estudos de Viabilidade Municipal.",
-    "Decreto legislativo da Câmara Municipal, homologado pelo Prefeito e pelo Governador do Estado.",
-    "Lei complementar municipal, independentemente de plebiscito, desde que aprovada por dois terços dos vereadores.",
-    "Portaria do Ministério da Justiça, mediante referendo das populações dos distritos afetados."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 18, § 4º da CF/88: Quatro requisitos cumulativos: 1. Lei Complementar Federal (fixando o período); 2. Estudos de Viabilidade Municipal (apresentados e publicados); 3. Plebiscito prévio às populações de TODOS os municípios envolvidos; 4. Lei Estadual ordinária criando/desmembrando o município."
-},
-{
-  "id": 183,
-  "category": "constitucional",
-  "day": "w2_d1",
-  "discipline": "D. Constitucional",
-  "topic": "Vedações Federativas (Art. 19)",
-  "question": "O Art. 19 da Constituição Federal estabelece proibições expressas impostas à União, aos Estados, ao Distrito Federal e aos Municípios. Assinale a conduta expressamente VEDADA a todos esses entes:",
-  "options": [
-    "Criar distinções entre brasileiros ou preferências entre si.",
-    "Manter relações de colaboração de interesse público com cultos religiosos ou igrejas na forma da lei.",
-    "Instituir tributos municipais para a manutenção dos serviços de interesse local.",
-    "Celebrar convênios de assistência mútua com órgãos de segurança pública."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 19 da CF/88 estabelece 3 vedações absolutas a todos os entes: I - Estabelecer cultos religiosos ou igrejas, subvencioná-los ou embaraçar-lhes o funcionamento (ressalvada colaboração de interesse público); II - Recusar fé aos documentos públicos; III - Criar distinções entre brasileiros ou preferências entre si."
-},
-{
-  "id": 184,
-  "category": "constitucional",
-  "day": "w2_d1",
-  "discipline": "D. Constitucional",
-  "topic": "Competência Privativa da União (Art. 22)",
-  "question": "No padrão recorrente da banca INBRASP, assinale a matéria cuja competência legislativa é PRIVATIVA DA UNIÃO, conforme o Art. 22 da CF/88:",
-  "options": [
-    "Direito civil, comercial, penal, processual, eleitoral, marítimo, aeronáutico, espacial e do trabalho.",
-    "Direito tributário, financeiro, penitenciário, econômico e urbanístico.",
-    "Proteção ao meio ambiente e controle da poluição em âmbito local.",
-    "Fomento da produção agropecuária e organização do abastecimento alimentar municipal."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 22, I da CF/88 (Mnemônico 'CAPACETE DE PIMENTA': Civil, Agrário, Penal, Aeronáutico, Comercial, Eleitoral, Trabalho, Espacial, Desapropriação, Processual, Marítimo). A opção (B) é competência concorrente da União/Estados/DF (Art. 24). A opção (C) e (D) são competências comuns (Art. 23)."
-},
-{
-  "id": 185,
-  "category": "constitucional",
-  "day": "w2_d1",
-  "discipline": "D. Constitucional",
-  "topic": "Delegação de Matéria Privativa da União (Art. 22, Parágrafo Único)",
-  "question": "Embora as matérias do Art. 22 sejam privativas da União, a própria Constituição Federal prevê que os Estados e o DF poderão ser autorizados a legislar sobre questões específicas dessas matérias mediante:",
-  "options": [
-    "Lei complementar federal.",
-    "Medida provisória do Presidente da República.",
-    "Resolução conjunta do Senado Federal e da Câmara dos Deputados.",
-    "Decreto regulamentar do Ministério da Justiça."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 22, Parágrafo único da CF/88: 'Lei complementar poderá autorizar os Estados a legislar sobre questões específicas das matérias relacionadas neste artigo'. Atenção: somente por Lei Complementar Federal (não por lei ordinária), apenas para questões específicas (não genéricas) e para todos os Estados indistintamente."
-},
-{
-  "id": 186,
-  "category": "constitucional",
-  "day": "w2_d1",
-  "discipline": "D. Constitucional",
-  "topic": "Competência Comum (Art. 23 da CF/88)",
-  "question": "O Art. 23 da CF/88 disciplina a competência comum (material/administrativa) da União, dos Estados, do Distrito Federal e dos Municípios. Constitui exemplo de competência comum de TODOS os entes federados:",
-  "options": [
-    "Cuidar da saúde e assistência pública, da proteção e garantia das pessoas com deficiência.",
-    "Legislar privativamente sobre trânsito e transporte rodoviário interestadual.",
-    "Emitir moeda de circulação nacional e fixar taxas de câmbio cambial.",
-    "Decretar o estado de sítio e o estado de defesa em todo o território nacional."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 23, II da CF/88: 'cuidar da saúde e assistência pública, da proteção e garantia das pessoas com deficiência'. É competência material compartilhada por todos os entes (União, Estados, DF e Municípios)."
-},
-{
-  "id": 187,
-  "category": "constitucional",
-  "day": "w2_d1",
-  "discipline": "D. Constitucional",
-  "topic": "Competência Concorrente e Exclusão do Município (Art. 24)",
-  "question": "A competência legislativa CONCORRENTE prevista no Art. 24 da CF/88 (para legislar sobre direito tributário, financeiro, penitenciário, econômico e urbanístico) foi atribuída pela Constituição expressamente a:",
-  "options": [
-    "União, aos Estados e ao Distrito Federal, não figurando os Municípios no rol desse artigo.",
-    "União, aos Estados, ao Distrito Federal e a todos os Municípios com mais de cem mil habitantes.",
-    "Exclusivamente aos Municípios e ao Distrito Federal.",
-    "Apenas à União e aos Municípios que possuam câmara municipal instalada."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 24, caput da CF/88: 'Compete à União, aos Estados e ao Distrito Federal legislar concorrentemente sobre...'. Os MUNICÍPIOS NÃO figuram no Art. 24! A competência dos Municípios em matéria concorrente é apenas SUPLEMENTAR à legislação federal e estadual no que couber, por força do Art. 30, II."
-},
-{
-  "id": 188,
-  "category": "constitucional",
-  "day": "w2_d1",
-  "discipline": "D. Constitucional",
-  "topic": "Normas Gerais vs Suplementares no Art. 24",
-  "question": "No âmbito da legislação concorrente (Art. 24), a competência da União limitar-se-á a estabelecer normas gerais (§ 1º). Sobre essa dinâmica, assinale a opção correta:",
-  "options": [
-    "A superveniência de lei federal sobre normas gerais suspende a eficácia da lei estadual, no que lhe for contrário.",
-    "A superveniência de lei federal revoga expressamente e extingue a lei estadual anterior por completo.",
-    "Inexistindo lei federal sobre normas gerais, os Estados ficam impedidos de legislar sobre a matéria.",
-    "A competência da União para normas gerais exclui a competência suplementar dos Estados-membros."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 24, § 4º da CF/88: 'A superveniência de lei federal sobre normas gerais suspende a eficácia da lei estadual, no que lhe for contrário'. Pegadinha favorita de concurso: a lei federal NÃO revoga a lei estadual, apenas SUSPENDE SUA EFICÁCIA naquilo que for incompatível."
-},
-{
-  "id": 189,
-  "category": "constitucional",
-  "day": "w2_d1",
-  "discipline": "D. Constitucional",
-  "topic": "Competência Legislativa do Município (Art. 30, I e II)",
-  "question": "De acordo com o Art. 30, I e II da CF/88, compete aos Municípios:",
-  "options": [
-    "Legislar sobre assuntos de interesse local e suplementar a legislação federal e a estadual no que couber.",
-    "Legislar privativamente sobre direito processual civil e normas penais de menor potencial ofensivo.",
-    "Fixar normas gerais de direito financeiro nacional com eficácia perante os Estados vizinhos.",
-    "Instituir imposto sobre operações relativas à circulação de mercadorias e serviços (ICMS)."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 30 da CF/88: 'Compete aos Municípios: I - legislar sobre assuntos de interesse local; II - suplementar a legislação federal e a estadual no que couber'. É o núcleo da autonomia legislativa do Município de Meruoca."
-},
-{
-  "id": 190,
-  "category": "constitucional",
-  "day": "w2_d1",
-  "discipline": "D. Constitucional",
-  "topic": "Competência Municipal: Serviços Públicos e Transporte (Art. 30, V)",
-  "question": "Nos termos do Art. 30, V da CF/88, compete ao Município organizar e prestar, diretamente ou sob regime de concessão ou permissão, os serviços públicos de interesse local, incluído o de:",
-  "options": [
-    "Transporte coletivo, que tem caráter essencial.",
-    "Energia nuclear e exploração de jazidas de petróleo na plataforma continental.",
-    "Correios e telégrafos em âmbito interestadual.",
-    "Radiodifusão sonora e televisiva educativa regional."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 30, V da CF/88: 'organizar e prestar, diretamente ou sob regime de concessão ou permissão, os serviços públicos de interesse local, incluído o de transporte coletivo, que tem caráter essencial'."
-},
-{
-  "id": 191,
-  "category": "constitucional",
-  "day": "w2_d1",
-  "discipline": "D. Constitucional",
-  "topic": "Competência Municipal: Solo Urbano e Plano Diretor (Art. 30, VIII)",
-  "question": "Compete aos Municípios promover, no que couber, adequado ordenamento territorial, mediante planejamento e controle do uso, do parcelamento e da ocupação do:",
-  "options": [
-    "Solo urbano.",
-    "Espaço aéreo nacional e rotas de aviação civil.",
-    "Leito dos rios que banham mais de um Estado da Federação.",
-    "Subsolo mineral e reservas de minérios estratégicos da União."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 30, VIII da CF/88: 'promover, no que couber, adequado ordenamento territorial, mediante planejamento e controle do uso, do parcelamento e da ocupação do solo urbano'. É a base para a criação do Plano Diretor e do Código de Obras Municipal."
-},
-{
-  "id": 192,
-  "category": "constitucional",
-  "day": "w2_d1",
-  "discipline": "D. Constitucional",
-  "topic": "Lei Orgânica Municipal e Quórum de Aprovação (Art. 29)",
-  "question": "O Município reger-se-á por lei orgânica, votada em dois turnos, com o interstício mínimo de dez dias, e aprovada por:",
-  "options": [
-    "Dois terços dos membros da Câmara Municipal, que a promulgará.",
-    "Maioria simples dos vereadores presentes, sendo sancionada pelo Prefeito.",
-    "Maioria absoluta da Câmara, com homologação obrigatória pelo Governador.",
-    "Três quintos dos votos dos parlamentares em sessão conjunta com o Judiciário."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 29, caput da CF/88: 'O Município reger-se-á por lei orgânica, votada em dois turnos, com o interstício mínimo de dez dias, e aprovada por dois terços dos membros da Câmara Municipal, que a promulgará'. O Prefeito NÃO sanciona nem veta a Lei Orgânica; ela é PROMULGADA diretamente pela Mesa da Câmara!"
-},
-{
-  "id": 193,
-  "category": "constitucional",
-  "day": "w2_d1",
-  "discipline": "D. Constitucional",
-  "topic": "Limites de Subsídio dos Vereadores (Art. 29, VI)",
-  "question": "O subsídio dos Vereadores será fixado pelas respectivas Câmaras Municipais em cada legislatura para a subsequente, observados os limites da CF. Em municípios de até dez mil habitantes (faixa base), o subsídio máximo do Vereador corresponderá a qual percentual do subsídio dos Deputados Estaduais?",
-  "options": [
-    "20% (vinte por cento).",
-    "50% (cinquenta por cento).",
-    "75% (setenta e cinco por cento).",
-    "10% (dez por cento)."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 29, VI, 'a' da CF/88: em municípios de até 10.000 habitantes, o subsídio máximo do vereador é 20% do subsídio do Deputado Estadual. A escala sobe: 20%, 30%, 40%, 50%, 60% até 75% em municípios com mais de 500.000 habitantes."
-},
-{
-  "id": 194,
-  "category": "constitucional",
-  "day": "w2_d1",
-  "discipline": "D. Constitucional",
-  "topic": "Limite de Gasto com Folha de Pagamento da Câmara (Art. 29-A, § 1º)",
-  "question": "A Câmara Municipal não gastará mais de qual percentual de sua receita total com folha de pagamento, incluído o gasto com o subsídio de seus Vereadores (Art. 29-A, § 1º da CF)?",
-  "options": [
-    "70% (setenta por cento).",
-    "50% (cinquenta por cento).",
-    "60% (sessenta por cento).",
-    "80% (oitenta por cento)."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 29-A, § 1º da CF/88: 'A Câmara Municipal não gastará mais de setenta por cento de sua receita com folha de pagamento, incluído o gasto com o subsídio de seus Vereadores'. O descumprimento desse limite constitui crime de responsabilidade do Presidente da Câmara (Art. 29-A, § 3º)."
-},
-{
-  "id": 195,
-  "category": "constitucional",
-  "day": "w2_d1",
-  "discipline": "D. Constitucional",
-  "topic": "Fiscalização Contábil e Tribunal de Contas (Art. 31)",
-  "question": "A fiscalização do Município será exercida pelo Poder Legislativo Municipal, mediante controle externo, e pelos sistemas de controle interno do Executivo. O controle externo da Câmara Municipal é exercido com o auxílio do:",
-  "options": [
-    "Tribunal de Contas do Estado (ou do Município onde houver), cujo parecer prévio só deixa de prevalecer por decisão de dois terços dos vereadores.",
-    "Tribunal de Justiça do Estado, mediante sentença transitada em julgado proferida anualmente.",
-    "Ministério Público Estadual, através de inquérito civil conclusivo homologado pela Mesa.",
-    "Conselho Fiscal de Contabilidade Comunitária eleito pelos contribuintes locais."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 31, §§ 1º e 2º da CF/88: O controle externo é auxiliado pelo TCE. O parecer prévio do TCE sobre as contas anuais do Prefeito só pode ser rejeitado por decisão qualificada de DOIS TERÇOS (2/3) dos membros da Câmara Municipal."
-},
-{
-  "id": 196,
-  "category": "constitucional",
-  "day": "w2_d1",
-  "discipline": "D. Constitucional",
-  "topic": "Vedação de Novos Tribunais de Contas Municipais (Art. 31, § 4º)",
-  "question": "Sobre a estrutura de controle externo das contas municipais, o Art. 31, § 4º da Constituição Federal expressamente estabelece que:",
-  "options": [
-    "É vedada a criação de Tribunais, Conselhos ou órgãos de Contas Municipais.",
-    "Todos os municípios com mais de cinquenta mil eleitores devem instituir seu próprio Tribunal de Contas.",
-    "Os Municípios podem criar órgãos de contas municipais mediante autorização prévia do Senado Federal.",
-    "A fiscalização externa dos municípios dispensa a atuação de Tribunais de Contas estaduais."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 31, § 4º da CF/88: 'É vedada a criação de Tribunais, Conselhos ou órgãos de Contas Municipais'. Apenas os tribunais municipais já existentes antes de 1988 (como os dos municípios de São Paulo e Rio de Janeiro) foram mantidos; é proibido criar novos."
-},
-{
-  "id": 197,
-  "category": "constitucional",
-  "day": "w2_d1",
-  "discipline": "D. Constitucional",
-  "topic": "Contas Municipais à Disposição dos Contribuintes (Art. 31, § 3º)",
-  "question": "Conforme o Art. 31, § 3º da CF/88, as contas dos Municípios ficarão, anualmente, durante quantos dias, à disposição de qualquer contribuinte, para exame e apreciação, o qual poderá questionar-lhes a legitimidade, nos termos da lei?",
-  "options": [
-    "60 (sessenta) dias.",
-    "30 (trinta) dias.",
-    "90 (noventa) dias.",
-    "15 (quinze) dias."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 31, § 3º da CF/88: 'As contas dos Municípios ficarão, no decorrer de sessenta dias, anualmente, à disposição de qualquer contribuinte, para exame e apreciação, o qual poderá questionar-lhes a legitimidade, nos termos da lei'."
-},
-{
-  "id": 198,
-  "category": "constitucional",
-  "day": "w2_d1",
-  "discipline": "D. Constitucional",
-  "topic": "Bens da União vs Bens dos Estados (Arts. 20 e 26)",
-  "question": "A Constituição Federal define expressamente os bens pertencentes à União e aos Estados. Incluem-se entre os BENS DOS ESTADOS-MEMBROS (Art. 26 da CF/88):",
-  "options": [
-    "As águas superficiais ou subterrâneas, fluentes, emergentes e em depósito, ressalvadas, neste caso, na forma da lei, as decorrentes de obras da União.",
-    "Os rios que banhem mais de um Estado da Federação ou sirvam de limite com países vizinhos.",
-    "Os potenciais de energia hidráulica e os recursos minerais, inclusive os do subsolo.",
-    "As terras devolutas indispensáveis à defesa das fronteiras e fortificações militares."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 26, I da CF/88. As águas que nascem e correm exclusivamente dentro do território de um único estado são bens do Estado. Rios que atravessam mais de um estado ou fazem fronteira com outro país (Art. 20, III), potenciais de energia hidráulica (Art. 20, VIII) e terras de fronteira (Art. 20, II) pertencem à UNIÃO."
-},
-{
-  "id": 199,
-  "category": "constitucional",
-  "day": "w2_d1",
-  "discipline": "D. Constitucional",
-  "topic": "Intervenção do Estado no Município (Art. 35 da CF/88)",
-  "question": "O Estado-membro NÃO intervirá em seus Municípios, SALVO quando (Art. 35 da CF):",
-  "options": [
-    "Deixar de ser paga, sem motivo de força maior, por dois anos consecutivos, a dívida fundada.",
-    "O prefeito pertencer a partido político de oposição ao governador do Estado.",
-    "A câmara municipal aprovar moção de desconfiança contra a diretoria do hospital municipal.",
-    "O município apresentar índice de desemprego superior à média estadual no semestre."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Art. 35 da CF/88: O Estado só pode intervir no Município se: I - deixar de pagar dívida fundada por 2 anos consecutivos; II - não prestar contas devidas na lei; III - não aplicar o mínimo constitucional em saúde e educação; IV - o TJ prover representação para assegurar princípios ou prover execução de lei/ordem judicial."
-},
-{
-  "id": 200,
-  "category": "constitucional",
-  "day": "w2_d1",
-  "discipline": "D. Constitucional",
-  "topic": "Intervenção Federal em Municípios localizados em Estado",
-  "question": "A respeito da intervenção federal em Municípios localizados dentro de um Estado-membro (como o Município de Meruoca no Estado do Ceará), é correto afirmar que:",
-  "options": [
-    "A União não intervém diretamente em Municípios localizados em Estados, cabendo ao próprio Estado a intervenção municipal (a intervenção federal direta em município só cabe em Território Federal).",
-    "O Presidente da República pode decretar intervenção federal direta em qualquer município sem consultar o Governador do Estado.",
-    "A intervenção no município é sempre realizada pelo Ministério Público Federal mediante portaria ministerial.",
-    "O Governador do Estado pode intervir na União caso haja atraso no repasse do Fundo de Participação dos Estados."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Regra do Art. 35 e Art. 36 da CF: O Estado é quem intervém em seus Municípios. A União só intervém diretamente em Municípios localizados em TERRITÓRIOS FEDERAIS (Art. 35, caput)."
-},
-{
-  "id": 201,
-  "category": "portugues",
-  "day": "w2_d1",
-  "discipline": "Língua Portuguesa",
-  "topic": "Derivação Parassintética vs Prefixal e Sufixal",
-  "question": "A DERIVAÇÃO PARASSINTÉTICA ocorre quando prefixo e sufixo são agregados simultaneamente ao radical, de modo que a palavra não existe sem um deles. Assinale a alternativa que apresenta um vocábulo formado por derivação parassintética:",
-  "options": [
-    "Anoitecer (a + noit + ecer)",
-    "Infelizmente (in + feliz + mente)",
-    "Deslealdade (des + leal + dade)",
-    "Reorganização (re + organiza + ção)"
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Em 'a-noit-ecer', o prefixo 'a-' e o sufixo '-ecer' foram anexados simultaneamente ao radical 'noit-'. Se retirarmos o prefixo, não existe a palavra 'noitecer'; se retirarmos o sufixo, não existe 'anoite'. Já em 'infelizmente' (B) e 'deslealdade' (C), os afixos são independentes ('infeliz' e 'felizmente' existem no idioma, configurando derivação prefixal e sufixal)."
-},
-{
-  "id": 202,
-  "category": "portugues",
-  "day": "w2_d1",
-  "discipline": "Língua Portuguesa",
-  "topic": "Derivação Regressiva (Deverbal)",
-  "question": "A derivação regressiva (ou deverbal) consiste na formação de substantivos abstratos a partir de verbos, geralmente com a redução da terminação verbal para as vogais temáticas -a, -o, -e. Assinale o vocábulo formado por DERIVAÇÃO REGRESSIVA:",
-  "options": [
-    "O debate (derivado do verbo debater)",
-    "O pescador (derivado do verbo pescar)",
-    "A lealdade (derivado do adjetivo leal)",
-    "O antebraço (derivado do substantivo braço)"
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. 'O debate' é substantivo abstrato que indica ação, formado pela regressão do verbo 'debater' (perda da desinência infinitiva -r e fixação da vogal -e). Em (B), 'pescador' é derivação sufixal (-dor); em (C), 'lealdade' é derivação sufixal (-dade); em (D), 'antebraço' é derivação prefixal (ante-)."
-},
-{
-  "id": 203,
-  "category": "portugues",
-  "day": "w2_d1",
-  "discipline": "Língua Portuguesa",
-  "topic": "Derivação Imprópria (Conversão)",
-  "question": "A DERIVAÇÃO IMPRÓPRIA ocorre quando uma palavra muda de classe gramatical no contexto da oração sem que haja qualquer alteração em sua estrutura morfológica. Assinale a frase em que se constata a ocorrência de derivação imprópria:",
-  "options": [
-    "O 'sim' dos parlamentares foi decisivo para a promulgação da lei.",
-    "O servidor realizou um trabalho rápido e eficiente durante a sessão.",
-    "Eles discordaram profundamente das propostas apresentadas em plenário.",
-    "A comissão permanente elaborou um parecer extremamente detalhado."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. O vocábulo 'sim' é originalmente um advérbio de afirmação. Precedido pelo artigo definido 'o' ('O sim dos parlamentares'), foi substantivado (passou a funcionar como substantivo comum), configurando típico caso de derivação imprópria ou conversão."
-},
-{
-  "id": 204,
-  "category": "portugues",
-  "day": "w2_d1",
-  "discipline": "Língua Portuguesa",
-  "topic": "Composição por Justaposição vs Aglutinação",
-  "question": "Na formação de palavras por COMPOSIÇÃO, unem-se dois ou mais radicais. Quando os elementos componentes se unem mantendo a integridade fonética e gráfica de cada um, ocorre:",
-  "options": [
-    "Justaposição (ex: passatempo, pé-de-galinha, girassol).",
-    "Aglutinação (ex: planalto, vinagre, pernilongo).",
-    "Hibridismo morfológico greco-latino.",
-    "Reduplicação silábica imitativa onomatopeica."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Justaposição une palavras sem perda fonética de seus elementos (passa + tempo = passatempo; gira + sol = girassol; embora dobre o 's' para manter o som, não há supressão fonética). Na aglutinação, há perda/fusão fonética (plano + alto = planalto; vinho + acre = vinagre)."
-},
-{
-  "id": 205,
-  "category": "portugues",
-  "day": "w2_d1",
-  "discipline": "Língua Portuguesa",
-  "topic": "Composição por Aglutinação",
-  "question": "Assinale a alternativa em que AMBAS as palavras foram formadas pelo processo de COMPOSIÇÃO POR AGLUTINAÇÃO:",
-  "options": [
-    "Planalto (plano + alto) e vinagre (vinho + acre).",
-    "Guarda-roupa e couve-flor.",
-    "Beija-flor e pontapé.",
-    "Segunda-feira e micro-ondas."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Em 'planalto' (plano + alto) e 'vinagre' (vinho + acre), houve alteração fonética e perda de elementos mórficos originais, caracterizando aglutinação. Todas as outras opções trazem termos compostos por justaposição."
-},
-{
-  "id": 206,
-  "category": "portugues",
-  "day": "w2_d1",
-  "discipline": "Língua Portuguesa",
-  "topic": "Identificação do Radical",
-  "question": "O RADICAL é o elemento mórfico fundamental e indivisível que contém o significado básico da palavra e é comum às palavras de uma mesma família (cognatas). Identifique a palavra que NÃO pertence à mesma família cognata das demais:",
-  "options": [
-    "Pedreiro, pedregulho, apedrejar e pedra.",
-    "Livraria, livreiro, livrinho e livro.",
-    "Terráqueo, terrestre, aterrar e terra.",
-    "Cabelo, cabeceira, cabeçalho e cabeçudo."
-  ],
-  "correctAnswer": 3,
-  "commentary": "Gabarito: D. 'Cabelo' tem raiz etimológica ligada a pelos capilares (latim 'capillus'). Já 'cabeceira', 'cabeçalho' e 'cabeçudo' derivam do radical de 'cabeça' (latim 'capitia'). As opções A, B e C reúnem palavras legitimamente cognatas com o mesmo radical compartilhado."
-},
-{
-  "id": 207,
-  "category": "portugues",
-  "day": "w2_d1",
-  "discipline": "Língua Portuguesa",
-  "topic": "Desinências Nominais de Gênero e Número",
-  "question": "Na morfologia da Língua Portuguesa, as desinências nominais indicam gênero (masculino/feminino) e número (singular/plural). Na palavra 'MENINAS', os morfemas '-A-' e '-S' classificam-se, respectivamente, como:",
-  "options": [
-    "Desinência nominal de gênero feminino e desinência nominal de número plural.",
-    "Vogal temática e sufixo aumentativo.",
-    "Radical flexionado e consoante eufônica de ligação.",
-    "Afixo derivacional e desinência verbal de pessoa."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Na estrutura 'MENIN-A-S': 'menin-' é o radical; '-a-' é a desinência nominal de gênero feminino; '-s' é a desinência nominal de número plural."
-},
-{
-  "id": 208,
-  "category": "portugues",
-  "day": "w2_d1",
-  "discipline": "Língua Portuguesa",
-  "topic": "Vogal Temática Verbal e Tema",
-  "question": "A VOGAL TEMÁTICA liga o radical às desinências e indica a conjugação verbal (1ª -a, 2ª -e, 3ª -i). O radical somado à vogal temática constitui o:",
-  "options": [
-    "Tema.",
-    "Afixo composto.",
-    "Cognato absoluto.",
-    "Morfema zero."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Na morfologia verbal: Radical + Vogal Temática = TEMA. Exemplo: no verbo 'cantar', 'cant-' é o radical e '-a-' é a vogal temática da 1ª conjugação. O tema é 'canta-'."
-},
-{
-  "id": 209,
-  "category": "portugues",
-  "day": "w2_d1",
-  "discipline": "Língua Portuguesa",
-  "topic": "Vogais e Consoantes de Ligação",
-  "question": "Vogais e consoantes de ligação são elementos fonéticos eufônicos inseridos entre morfemas unicamente para facilitar a pronúncia, desprovidos de significado gramatical próprio. Há uma CONSOANTE DE LIGAÇÃO na palavra:",
-  "options": [
-    "Cafeteira (café + -t- + eira)",
-    "Infelizmente (in + feliz + mente)",
-    "Desleal (des + leal)",
-    "Pedrada (pedra + ada)"
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Em 'café' + '-eira', a junção direta geraria o cacófato 'cafeeira'. Inseriu-se a consoante eufônica '-t-' (cafeteira) exclusivamente para fluidez fonética. Outros exemplos: pau-l-ada, cha-l-eira."
-},
-{
-  "id": 210,
-  "category": "portugues",
-  "day": "w2_d1",
-  "discipline": "Língua Portuguesa",
-  "topic": "Hibridismo",
-  "question": "O processo de formação de palavras em que ocorre a junção de elementos mórficos originários de IDIOMAS DIFERENTES é denominado:",
-  "options": [
-    "Hibridismo (ex: televisão: tele grego + visão latim; burocracia: bureau francês + cracia grego).",
-    "Neologismo fonético espontâneo.",
-    "Siglonimização e acrônimo.",
-    "Onomatopeia imitativa de ruídos."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Hibridismo é a formação de uma palavra com radicais ou afixos de línguas distintas. Exemplos clássicos: Televisão (tele = grego, visão = latim), Burocracia (bureau = francês, cracia = grego), Automóvel (auto = grego, móvel = latim)."
-},
-{
-  "id": 211,
-  "category": "portugues",
-  "day": "w2_d1",
-  "discipline": "Língua Portuguesa",
-  "topic": "Onomatopeia",
-  "question": "Assinale a alternativa que apresenta vocábulos formados por ONOMATOPEIA (reprodução aproximada de sons ou ruídos da natureza e de objetos):",
-  "options": [
-    "Tic-tac, zunzum, miau e coaxar.",
-    "Amanhecer, entardecer e anoitecer.",
-    "Fidalgo, aguardente e pernalta.",
-    "Couve-flor, guarda-chuva e girassol."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. A onomatopeia consiste na criação de vocábulos que buscam imitar sons ou ruídos reais: tic-tac (relógio), zunzum (zumbido), miau (gato), coaxar (sapo), pingue-pongue."
-},
-{
-  "id": 212,
-  "category": "portugues",
-  "day": "w2_d1",
-  "discipline": "Língua Portuguesa",
-  "topic": "Derivação Prefixal com Prefixo Negativo",
-  "question": "Os prefixos 'in-' (latim) e 'a-' (grego) denotam privação ou negação. Assinale a opção em que AMBAS as palavras apresentam prefixos com valor semântico de NEGAÇÃO:",
-  "options": [
-    "Inativo e atípico.",
-    "Importar e adjunto.",
-    "Progresso e antebraço.",
-    "Submarino e supersensível."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. 'Inativo' = não ativo (in- negativo latino); 'Atípico' = não típico (a- de privação grego). Em (B), 'importar' traz o 'in-' com sentido de movimento para dentro; em (C), 'pro-' denota para a frente; em (D), 'sub-' significa debaixo."
-},
-{
-  "id": 213,
-  "category": "portugues",
-  "day": "w2_d1",
-  "discipline": "Língua Portuguesa",
-  "topic": "Sufixos Formadores de Substantivos Abstratos",
-  "question": "Os sufixos nominalizadores transformam verbos ou adjetivos em substantivos. O sufixo presente em 'ORGANIZAÇÃO' (-ção) indica precipuamente a noção de:",
-  "options": [
-    "Ação ou resultado de uma ação.",
-    "Lugar ou estabelecimento comercial.",
-    "Profissão ou agente executor.",
-    "Grau diminutivo pejorativo."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. O sufixo '-ção' (organiza + ção, promulga + ção, delibera + ção) é um sufixo nominalizador deverbal que exprime o ato, ação ou o resultado da ação do verbo."
-},
-{
-  "id": 214,
-  "category": "portugues",
-  "day": "w2_d1",
-  "discipline": "Língua Portuguesa",
-  "topic": "Siglas e Acrônimos",
-  "question": "No vocabulário administrativo e legislativo, as palavras formadas pela combinação das letras ou sílabas iniciais de uma denominação composta (ex: MERCOSUL, UNESCO, EMBRAPA) que podem ser pronunciadas como uma palavra comum denominam-se:",
-  "options": [
-    "Acrônimos.",
-    "Estrangeirismos arcaicos.",
-    "Derivações parassintéticas truncadas.",
-    "Arcaísmos de composição por justaposição."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Acrônimo é a sigla que se pronuncia como uma palavra contínua e natural da língua (ex: Embrapa, Mercosul, Petrobras, Unesco). Diferencia-se das siglas puras que exigem soletração letra a letra (ex: CPF, OAB, IPTU)."
-},
-{
-  "id": 215,
-  "category": "portugues",
-  "day": "w2_d1",
-  "discipline": "Língua Portuguesa",
-  "topic": "Neologismo",
-  "question": "O processo linguístico pelo qual novos termos são criados ou importados para suprir a necessidade de nomear novos conceitos científicos, tecnológicos ou socioculturais (ex: 'deletar', 'tuitar', 'printar') é chamado de:",
-  "options": [
-    "Neologismo.",
-    "Solecismo de regência.",
-    "Pleonasmo de reforço.",
-    "Ambiguidade estilística."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Neologismo é a criação de palavras novas ou a atribuição de novos significados a termos preexistentes na língua, refletindo inovações da sociedade e tecnologia."
-},
-{
-  "id": 216,
-  "category": "portugues",
-  "day": "w2_d1",
-  "discipline": "Língua Portuguesa",
-  "topic": "Palavra Primitiva vs Derivada",
-  "question": "Em relação à relação morfológica entre primitivo e derivado, assinale o par em que a segunda palavra é DERIVADA da primeira:",
-  "options": [
-    "Lei -> Legalizar.",
-    "História -> Histórico (ambas são primitivas).",
-    "Vento -> Ventania (ambas são formadas por composição).",
-    "Flor -> Floricultura (formada unicamente por hibridismo)."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. 'Lei' é vocábulo primitivo (não se origina de outra palavra na língua portuguesa). 'Legalizar' é derivada de 'legal' (sua vez derivada de lei) por sufixação (-izar)."
-},
-{
-  "id": 217,
-  "category": "portugues",
-  "day": "w2_d1",
-  "discipline": "Língua Portuguesa",
-  "topic": "Abreviatura vs Sigla vs Redução (Abreviação Vocabular)",
-  "question": "O processo de ABREVIAÇÃO VOCABULAR (ou redução) consiste na eliminação de uma parte da palavra a fim de economizar tempo e esforço na comunicação falada ou escrita. Assinale o exemplo de abreviação vocabular:",
-  "options": [
-    "Foto (de fotografia), moto (de motocicleta) e fone (de telefone).",
-    "OAB (Ordem dos Advogados do Brasil).",
-    "Passatempo (de passa + tempo).",
-    "Amanhecer (de a + manhã + ecer)."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Abreviação vocabular (ou redução) é a redução de uma palavra longa mantendo o significado original: foto (fotografia), moto (motocicleta), fone (telefone), quilo (quilograma), cine (cinema)."
-},
-{
-  "id": 218,
-  "category": "portugues",
-  "day": "w2_d1",
-  "discipline": "Língua Portuguesa",
-  "topic": "Desinência Modo-Temporal Verbal",
-  "question": "Na forma verbal 'ESTUDÁVAMOS', o segmento mórfico '-VA-' classifica-se como:",
-  "options": [
-    "Desinência modo-temporal (indica pretérito imperfeito do modo indicativo).",
-    "Desinência número-pessoal (indica primeira pessoa do plural).",
-    "Vogal de ligação eufônica.",
-    "Sufixo adverbializatório de intensidade."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Em 'estud-á-va-mos': 'estud-' é o radical; '-a-' é a vogal temática; 'estuda-' é o tema; '-va-' é a desinência modo-temporal (DMT) do pretérito imperfeito do indicativo; '-mos' é a desinência número-pessoal (DNP) de 1ª pessoa do plural."
-},
-{
-  "id": 219,
-  "category": "portugues",
-  "day": "w2_d1",
-  "discipline": "Língua Portuguesa",
-  "topic": "Análise Estrutural Completa de Vocábulo",
-  "question": "Assinale a alternativa em que a divisão mórfica do vocábulo 'DESALINHAMENTO' e a identificação de seus elementos estão inteiramente corretas:",
-  "options": [
-    "Des- (prefixo) + alinh- (radical) + -a- (vogal temática) + -mento (sufixo derivacional formador de substantivo).",
-    "Desalinha- (radical único) + -mento (desinência de número).",
-    "Des- (afixo flexional) + alinhamento (palavra composta por aglutinação).",
-    "De- (prefixo) + salinha (radical) + -mento (sufixo aumentativo)."
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. 'Desalinhamento' estrutura-se por: Prefixo 'des-' (sentido de negação/inversão) + Radical 'alinh-' (de linha) + Vogal temática '-a-' + Sufixo nominalizador '-mento' (formador de substantivo abstrato que indica ação ou resultado)."
-},
-{
-  "id": 220,
-  "category": "portugues",
-  "day": "w2_d1",
-  "discipline": "Língua Portuguesa",
-  "topic": "Identificação Geral dos Processos em Concurso",
-  "question": "Relacione as colunas quanto ao processo de formação de palavras:\n(1) Justaposição\n(2) Aglutinação\n(3) Parassíntese\n(4) Derivação Imprópria\n\n( ) Envergonhar\n( ) Guarda-noturno\n( ) O olhar triste da testemunha\n( ) Pernalta\n\nA sequência correta de preenchimento, de cima para baixo, é:",
-  "options": [
-    "3 — 1 — 4 — 2",
-    "1 — 3 — 2 — 4",
-    "3 — 2 — 1 — 4",
-    "4 — 1 — 3 — 2"
-  ],
-  "correctAnswer": 0,
-  "commentary": "Gabarito: A. Envergonhar: en- + vergonh- + -ar (parassíntese: 3); Guarda-noturno: guarda + noturno sem perda (justaposição: 1); O olhar triste: 'olhar' substantivado pelo artigo 'o' (derivação imprópria: 4); Pernalta: perna + alta com perda da vogal 'a' (aglutinação: 2). Sequência: 3, 1, 4, 2."
-}
 ];
 
 // =========================================================================
@@ -5084,6 +5070,7 @@ let appState = {
   checkedTasks: {},
   dayQuestions: {},
   quizAnswers: {},
+  bankVersion: 2,
   quizCategoryFilter: 'w2_d1',
   quizOrderMode: 'random', // 'random', 'interleaved', 'sequential'
   quizFilterStatus: 'all', // 'all', 'pending', 'wrong'
@@ -5143,6 +5130,12 @@ function loadState() {
     try {
       const parsed = JSON.parse(saved);
       appState = { ...appState, ...parsed };
+      if (appState.bankVersion !== 2) {
+        appState.bankVersion = 2;
+        appState.quizAnswers = {};
+        appState.quizShuffledOrder = {};
+        saveState();
+      }
       if (!appState.quizAnswers) appState.quizAnswers = {};
       if (!appState.quizOrderMode) appState.quizOrderMode = 'random';
       if (!appState.quizFilterStatus) appState.quizFilterStatus = 'all';

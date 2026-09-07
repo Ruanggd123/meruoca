@@ -24,7 +24,7 @@
       background: #f8fafc;
       margin: 0;
       padding: 24px;
-      font-size: 10.5pt;
+      font-size: 10pt;
       line-height: 1.45;
     }
     .container {
@@ -95,168 +95,165 @@
     .btn-action:hover {
       background: #1d4ed8;
     }
-    .section-title {
-      background: #1e3a8a;
-      color: white;
-      padding: 8px 14px;
-      border-radius: 6px;
-      font-size: 1.05rem;
-      font-weight: 800;
-      margin: 28px 0 16px 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .section-title.portugues {
-      background: #0284c7;
-    }
     .question-block {
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 16px 18px;
-      margin-bottom: 16px;
-      background: #ffffff;
+      margin-bottom: 22px;
+      padding-bottom: 16px;
+      border-bottom: 1px dashed var(--border);
       page-break-inside: avoid;
     }
     .question-meta {
       display: flex;
-      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
       margin-bottom: 8px;
-      font-size: 0.8rem;
     }
     .q-badge {
+      background: var(--primary);
+      color: white;
+      font-size: 0.75rem;
       font-weight: 800;
-      color: var(--primary);
+      padding: 2px 8px;
+      border-radius: 4px;
+      text-transform: uppercase;
     }
     .q-topic {
+      font-size: 0.82rem;
+      font-weight: 700;
       color: var(--text-muted);
-      font-weight: 600;
     }
     .question-text {
-      font-weight: 700;
-      color: var(--primary-dark);
+      font-size: 0.95rem;
+      font-weight: 600;
       margin-bottom: 12px;
-      line-height: 1.45;
-      white-space: pre-line;
+      color: #1e293b;
+      line-height: 1.5;
     }
     .options-list {
       list-style: none;
       padding: 0;
       margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
     }
     .option-item {
       display: flex;
       align-items: flex-start;
       gap: 10px;
-      padding: 6px 8px;
-      margin-bottom: 4px;
-      border-radius: 4px;
-      font-size: 0.92rem;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      color: #334155;
     }
     .option-letter {
-      width: 24px;
-      height: 24px;
-      border: 1.5px solid #94a3b8;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      font-size: 0.8rem;
-      color: #334155;
-      flex-shrink: 0;
-    }
-    .folha-respostas-box {
-      border: 2px dashed var(--primary);
-      border-radius: 8px;
-      padding: 20px;
-      margin: 30px 0;
-      background: #f8fafc;
-      page-break-before: always;
-    }
-    .folha-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 8px;
-      font-size: 0.82rem;
-      margin-top: 14px;
-    }
-    .folha-row {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      padding: 4px 6px;
-      background: white;
-      border: 1px solid var(--border);
-      border-radius: 4px;
-    }
-    .folha-num {
-      width: 28px;
-      font-weight: 800;
-      color: var(--primary);
-    }
-    .folha-circle {
-      width: 16px;
-      height: 16px;
-      border: 1px solid #64748b;
-      border-radius: 50%;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      font-size: 0.65rem;
-      font-weight: 700;
-      color: #475569;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      border: 1.5px solid #64748b;
+      font-size: 0.75rem;
+      font-weight: 800;
+      flex-shrink: 0;
+      color: #1e293b;
+      background: #f1f5f9;
+    }
+    .optical-sheet {
+      margin-top: 36px;
+      padding: 24px;
+      border: 2px solid #0f172a;
+      border-radius: 8px;
+      background: #fafafa;
+      page-break-before: always;
+    }
+    .optical-header {
+      text-align: center;
+      border-bottom: 2px solid #0f172a;
+      padding-bottom: 12px;
+      margin-bottom: 16px;
+    }
+    .optical-header h3 {
+      margin: 0 0 4px 0;
+      font-size: 1.15rem;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .bubble-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px 16px;
+    }
+    .bubble-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.82rem;
+    }
+    .bubble-qnum {
+      font-weight: 800;
+      width: 24px;
+      color: #0f172a;
+    }
+    .bubble-options {
+      display: flex;
+      gap: 6px;
+    }
+    .bubble-opt {
+      width: 19px;
+      height: 19px;
+      border-radius: 50%;
+      border: 1.5px solid #0f172a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      font-weight: bold;
     }
     .gabarito-section {
+      margin-top: 36px;
+      padding-top: 24px;
+      border-top: 2px solid var(--border);
       page-break-before: always;
-      margin-top: 30px;
     }
     .gabarito-item {
-      background: #f1f5f9;
-      border-left: 4px solid var(--primary);
-      padding: 10px 14px;
-      margin-bottom: 10px;
-      border-radius: 0 6px 6px 0;
-      font-size: 0.88rem;
-    }
-    .gabarito-item strong {
-      color: var(--primary-dark);
+      display: flex;
+      gap: 12px;
+      padding: 10px 12px;
+      border-bottom: 1px solid #e2e8f0;
     }
     .gabarito-letra {
-      background: #16a34a;
+      background: #15803d;
       color: white;
-      padding: 2px 8px;
-      border-radius: 4px;
       font-weight: 800;
-      margin-right: 6px;
+      font-size: 1rem;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
     }
     @media print {
       body { background: white; padding: 0; }
-      .container { padding: 0; box-shadow: none; max-width: 100%; }
+      .container { max-width: 100%; box-shadow: none; padding: 0; }
       .no-print { display: none !important; }
     }
   </style>
 </head>
 <body>
-
   <div class="container">
-
     <div class="no-print">
-      <button class="btn-action" onclick="window.print()">
-        <i class="fas fa-print"></i> Imprimir Caderno (PDF)
-      </button>
-      <a href="../index.html" class="btn-action" style="background: #e2e8f0; color: #334155;">
-        <i class="fas fa-arrow-left"></i> Voltar ao Gerenciador de Estudos
-      </a>
+      <button class="btn-action" onclick="window.print()"><i class="fas fa-print"></i> Imprimir Caderno (PDF A4)</button>
+      <a href="../index.html" class="btn-action" style="background: #64748b;"><i class="fas fa-arrow-left"></i> Voltar ao Painel</a>
     </div>
 
-    <!-- CABEÇALHO DA PROVA -->
     <div class="header-box">
       <div class="header-titles">
-        <span style="font-size: 0.75rem; font-weight: 800; text-transform: uppercase; color: #dc2626;">Caderno de Treino Diário Oficial • Semana 2</span>
+        <span style="font-size: 0.75rem; font-weight: 800; text-transform: uppercase; color: #dc2626;">Caderno de Treino Diário Oficial</span>
         <h1>Câmara Municipal de Meruoca / CE</h1>
         <h2>Concurso Público nº 001/2026 — Cargo: Técnico Legislativo</h2>
-        <p><strong>Semana 2 • Dia 1 (07/09/2026):</strong> D. Constitucional: Organização do Estado (20Q) • Português: Estrutura e Formação de Palavras (20Q)</p>
+        <p><strong>Semana 2 • Dia 1 (07/09/2026):</strong> D. Constitucional (CF/88 Arts. 18 ao 31) • Língua Portuguesa (Formação de Palavras)</p>
       </div>
       <div style="text-align: right;">
         <div class="badge-banca">Banca INBRASP</div>
@@ -264,12 +261,9 @@
       </div>
     </div>
 
-    <!-- SEÇÃO 1: DIREITO CONSTITUCIONAL (20Q) -->
-    <div class="section-title">
-      <span><i class="fas fa-landmark"></i> PARTE 1: DIREITO CONSTITUCIONAL (QUESTÕES 181 A 200)</span>
-      <span style="font-size: 0.8rem; font-weight: normal;">Organização do Estado (CF/88 Arts. 18 a 31: Competências, Municípios e Controle)</span>
-    </div>
-
+    <!-- QUESTÕES -->
+    <div>
+      
     <div class="question-block">
       <div class="question-meta">
         <span class="q-badge">QUESTÃO 181</span>
@@ -277,27 +271,22 @@
       </div>
       <div class="question-text">Conforme o Art. 18 da Constituição Federal de 1988, a organização político-administrativa da República Federativa do Brasil compreende a União, os Estados, o Distrito Federal e os Municípios. A respeito dessa estrutura, é correto afirmar que:</div>
       <ul class="options-list">
-    
         <li class="option-item">
           <span class="option-letter">A</span>
-          <span>Todos são entes autônomos, nos termos da Constituição, sendo vedada qualquer tentativa de secessão ou dissolução do pacto federativo.</span>
-        </li>
-        
-        <li class="option-item">
-          <span class="option-letter">B</span>
           <span>A União é soberana e os demais entes federativos não possuem autonomia administrativa ou orçamentária.</span>
         </li>
-        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Todos são entes autônomos, nos termos da Constituição, sendo vedada qualquer tentativa de secessão ou dissolução do pacto federativo.</span>
+        </li>
         <li class="option-item">
           <span class="option-letter">C</span>
           <span>Os Municípios subordinam-se administrativamente aos Estados-membros, dependendo de autorização da Assembleia Legislativa para criar seus órgãos.</span>
         </li>
-        
         <li class="option-item">
           <span class="option-letter">D</span>
           <span>O Distrito Federal pode ser dividido em Municípios autônomos por lei distrital aprovada por maioria simples.</span>
         </li>
-        
       </ul>
     </div>
     
@@ -308,27 +297,22 @@
       </div>
       <div class="question-text">A criação, a incorporação, a fusão e o desmembramento de Municípios, consoante o Art. 18, § 4º da CF/88 (redação da EC nº 15/96), far-se-ão por:</div>
       <ul class="options-list">
-    
         <li class="option-item">
           <span class="option-letter">A</span>
           <span>Lei estadual, dentro do período determinado por lei complementar federal, e dependerão de consulta prévia, mediante plebiscito, às populações dos Municípios envolvidos, após divulgação dos Estudos de Viabilidade Municipal.</span>
         </li>
-        
         <li class="option-item">
           <span class="option-letter">B</span>
           <span>Decreto legislativo da Câmara Municipal, homologado pelo Prefeito e pelo Governador do Estado.</span>
         </li>
-        
         <li class="option-item">
           <span class="option-letter">C</span>
           <span>Lei complementar municipal, independentemente de plebiscito, desde que aprovada por dois terços dos vereadores.</span>
         </li>
-        
         <li class="option-item">
           <span class="option-letter">D</span>
           <span>Portaria do Ministério da Justiça, mediante referendo das populações dos distritos afetados.</span>
         </li>
-        
       </ul>
     </div>
     
@@ -339,27 +323,22 @@
       </div>
       <div class="question-text">O Art. 19 da Constituição Federal estabelece proibições expressas impostas à União, aos Estados, ao Distrito Federal e aos Municípios. Assinale a conduta expressamente VEDADA a todos esses entes:</div>
       <ul class="options-list">
-    
         <li class="option-item">
           <span class="option-letter">A</span>
-          <span>Criar distinções entre brasileiros ou preferências entre si.</span>
-        </li>
-        
-        <li class="option-item">
-          <span class="option-letter">B</span>
           <span>Manter relações de colaboração de interesse público com cultos religiosos ou igrejas na forma da lei.</span>
         </li>
-        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Criar distinções entre brasileiros ou preferências entre si.</span>
+        </li>
         <li class="option-item">
           <span class="option-letter">C</span>
           <span>Instituir tributos municipais para a manutenção dos serviços de interesse local.</span>
         </li>
-        
         <li class="option-item">
           <span class="option-letter">D</span>
           <span>Celebrar convênios de assistência mútua com órgãos de segurança pública.</span>
         </li>
-        
       </ul>
     </div>
     
@@ -370,27 +349,22 @@
       </div>
       <div class="question-text">No padrão recorrente da banca INBRASP, assinale a matéria cuja competência legislativa é PRIVATIVA DA UNIÃO, conforme o Art. 22 da CF/88:</div>
       <ul class="options-list">
-    
         <li class="option-item">
           <span class="option-letter">A</span>
           <span>Direito civil, comercial, penal, processual, eleitoral, marítimo, aeronáutico, espacial e do trabalho.</span>
         </li>
-        
         <li class="option-item">
           <span class="option-letter">B</span>
           <span>Direito tributário, financeiro, penitenciário, econômico e urbanístico.</span>
         </li>
-        
         <li class="option-item">
           <span class="option-letter">C</span>
           <span>Proteção ao meio ambiente e controle da poluição em âmbito local.</span>
         </li>
-        
         <li class="option-item">
           <span class="option-letter">D</span>
           <span>Fomento da produção agropecuária e organização do abastecimento alimentar municipal.</span>
         </li>
-        
       </ul>
     </div>
     
@@ -401,27 +375,22 @@
       </div>
       <div class="question-text">Embora as matérias do Art. 22 sejam privativas da União, a própria Constituição Federal prevê que os Estados e o DF poderão ser autorizados a legislar sobre questões específicas dessas matérias mediante:</div>
       <ul class="options-list">
-    
         <li class="option-item">
           <span class="option-letter">A</span>
-          <span>Lei complementar federal.</span>
-        </li>
-        
-        <li class="option-item">
-          <span class="option-letter">B</span>
           <span>Medida provisória do Presidente da República.</span>
         </li>
-        
         <li class="option-item">
-          <span class="option-letter">C</span>
+          <span class="option-letter">B</span>
           <span>Resolução conjunta do Senado Federal e da Câmara dos Deputados.</span>
         </li>
-        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Lei complementar federal.</span>
+        </li>
         <li class="option-item">
           <span class="option-letter">D</span>
           <span>Decreto regulamentar do Ministério da Justiça.</span>
         </li>
-        
       </ul>
     </div>
     
@@ -432,27 +401,22 @@
       </div>
       <div class="question-text">O Art. 23 da CF/88 disciplina a competência comum (material/administrativa) da União, dos Estados, do Distrito Federal e dos Municípios. Constitui exemplo de competência comum de TODOS os entes federados:</div>
       <ul class="options-list">
-    
         <li class="option-item">
           <span class="option-letter">A</span>
-          <span>Cuidar da saúde e assistência pública, da proteção e garantia das pessoas com deficiência.</span>
-        </li>
-        
-        <li class="option-item">
-          <span class="option-letter">B</span>
           <span>Legislar privativamente sobre trânsito e transporte rodoviário interestadual.</span>
         </li>
-        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Cuidar da saúde e assistência pública, da proteção e garantia das pessoas com deficiência.</span>
+        </li>
         <li class="option-item">
           <span class="option-letter">C</span>
           <span>Emitir moeda de circulação nacional e fixar taxas de câmbio cambial.</span>
         </li>
-        
         <li class="option-item">
           <span class="option-letter">D</span>
           <span>Decretar o estado de sítio e o estado de defesa em todo o território nacional.</span>
         </li>
-        
       </ul>
     </div>
     
@@ -463,27 +427,22 @@
       </div>
       <div class="question-text">A competência legislativa CONCORRENTE prevista no Art. 24 da CF/88 (para legislar sobre direito tributário, financeiro, penitenciário, econômico e urbanístico) foi atribuída pela Constituição expressamente a:</div>
       <ul class="options-list">
-    
         <li class="option-item">
           <span class="option-letter">A</span>
-          <span>União, aos Estados e ao Distrito Federal, não figurando os Municípios no rol desse artigo.</span>
-        </li>
-        
-        <li class="option-item">
-          <span class="option-letter">B</span>
           <span>União, aos Estados, ao Distrito Federal e a todos os Municípios com mais de cem mil habitantes.</span>
         </li>
-        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>União, aos Estados e ao Distrito Federal, não figurando os Municípios no rol desse artigo.</span>
+        </li>
         <li class="option-item">
           <span class="option-letter">C</span>
           <span>Exclusivamente aos Municípios e ao Distrito Federal.</span>
         </li>
-        
         <li class="option-item">
           <span class="option-letter">D</span>
           <span>Apenas à União e aos Municípios que possuam câmara municipal instalada.</span>
         </li>
-        
       </ul>
     </div>
     
@@ -494,27 +453,22 @@
       </div>
       <div class="question-text">No âmbito da legislação concorrente (Art. 24), a competência da União limitar-se-á a estabelecer normas gerais (§ 1º). Sobre essa dinâmica, assinale a opção correta:</div>
       <ul class="options-list">
-    
         <li class="option-item">
           <span class="option-letter">A</span>
           <span>A superveniência de lei federal sobre normas gerais suspende a eficácia da lei estadual, no que lhe for contrário.</span>
         </li>
-        
         <li class="option-item">
           <span class="option-letter">B</span>
           <span>A superveniência de lei federal revoga expressamente e extingue a lei estadual anterior por completo.</span>
         </li>
-        
         <li class="option-item">
           <span class="option-letter">C</span>
           <span>Inexistindo lei federal sobre normas gerais, os Estados ficam impedidos de legislar sobre a matéria.</span>
         </li>
-        
         <li class="option-item">
           <span class="option-letter">D</span>
           <span>A competência da União para normas gerais exclui a competência suplementar dos Estados-membros.</span>
         </li>
-        
       </ul>
     </div>
     
@@ -525,27 +479,22 @@
       </div>
       <div class="question-text">De acordo com o Art. 30, I e II da CF/88, compete aos Municípios:</div>
       <ul class="options-list">
-    
         <li class="option-item">
           <span class="option-letter">A</span>
-          <span>Legislar sobre assuntos de interesse local e suplementar a legislação federal e a estadual no que couber.</span>
-        </li>
-        
-        <li class="option-item">
-          <span class="option-letter">B</span>
           <span>Legislar privativamente sobre direito processual civil e normas penais de menor potencial ofensivo.</span>
         </li>
-        
         <li class="option-item">
-          <span class="option-letter">C</span>
+          <span class="option-letter">B</span>
           <span>Fixar normas gerais de direito financeiro nacional com eficácia perante os Estados vizinhos.</span>
         </li>
-        
         <li class="option-item">
-          <span class="option-letter">D</span>
+          <span class="option-letter">C</span>
           <span>Instituir imposto sobre operações relativas à circulação de mercadorias e serviços (ICMS).</span>
         </li>
-        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Legislar sobre assuntos de interesse local e suplementar a legislação federal e a estadual no que couber.</span>
+        </li>
       </ul>
     </div>
     
@@ -556,27 +505,22 @@
       </div>
       <div class="question-text">Nos termos do Art. 30, V da CF/88, compete ao Município organizar e prestar, diretamente ou sob regime de concessão ou permissão, os serviços públicos de interesse local, incluído o de:</div>
       <ul class="options-list">
-    
         <li class="option-item">
           <span class="option-letter">A</span>
-          <span>Transporte coletivo, que tem caráter essencial.</span>
-        </li>
-        
-        <li class="option-item">
-          <span class="option-letter">B</span>
           <span>Energia nuclear e exploração de jazidas de petróleo na plataforma continental.</span>
         </li>
-        
         <li class="option-item">
-          <span class="option-letter">C</span>
+          <span class="option-letter">B</span>
           <span>Correios e telégrafos em âmbito interestadual.</span>
         </li>
-        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Transporte coletivo, que tem caráter essencial.</span>
+        </li>
         <li class="option-item">
           <span class="option-letter">D</span>
           <span>Radiodifusão sonora e televisiva educativa regional.</span>
         </li>
-        
       </ul>
     </div>
     
@@ -587,27 +531,22 @@
       </div>
       <div class="question-text">Compete aos Municípios promover, no que couber, adequado ordenamento territorial, mediante planejamento e controle do uso, do parcelamento e da ocupação do:</div>
       <ul class="options-list">
-    
         <li class="option-item">
           <span class="option-letter">A</span>
-          <span>Solo urbano.</span>
-        </li>
-        
-        <li class="option-item">
-          <span class="option-letter">B</span>
           <span>Espaço aéreo nacional e rotas de aviação civil.</span>
         </li>
-        
         <li class="option-item">
-          <span class="option-letter">C</span>
+          <span class="option-letter">B</span>
           <span>Leito dos rios que banham mais de um Estado da Federação.</span>
         </li>
-        
         <li class="option-item">
-          <span class="option-letter">D</span>
+          <span class="option-letter">C</span>
           <span>Subsolo mineral e reservas de minérios estratégicos da União.</span>
         </li>
-        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Solo urbano.</span>
+        </li>
       </ul>
     </div>
     
@@ -618,27 +557,22 @@
       </div>
       <div class="question-text">O Município reger-se-á por lei orgânica, votada em dois turnos, com o interstício mínimo de dez dias, e aprovada por:</div>
       <ul class="options-list">
-    
         <li class="option-item">
           <span class="option-letter">A</span>
-          <span>Dois terços dos membros da Câmara Municipal, que a promulgará.</span>
-        </li>
-        
-        <li class="option-item">
-          <span class="option-letter">B</span>
           <span>Maioria simples dos vereadores presentes, sendo sancionada pelo Prefeito.</span>
         </li>
-        
         <li class="option-item">
-          <span class="option-letter">C</span>
+          <span class="option-letter">B</span>
           <span>Maioria absoluta da Câmara, com homologação obrigatória pelo Governador.</span>
         </li>
-        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Dois terços dos membros da Câmara Municipal, que a promulgará.</span>
+        </li>
         <li class="option-item">
           <span class="option-letter">D</span>
           <span>Três quintos dos votos dos parlamentares em sessão conjunta com o Judiciário.</span>
         </li>
-        
       </ul>
     </div>
     
@@ -649,27 +583,22 @@
       </div>
       <div class="question-text">O subsídio dos Vereadores será fixado pelas respectivas Câmaras Municipais em cada legislatura para a subsequente, observados os limites da CF. Em municípios de até dez mil habitantes (faixa base), o subsídio máximo do Vereador corresponderá a qual percentual do subsídio dos Deputados Estaduais?</div>
       <ul class="options-list">
-    
         <li class="option-item">
           <span class="option-letter">A</span>
-          <span>20% (vinte por cento).</span>
-        </li>
-        
-        <li class="option-item">
-          <span class="option-letter">B</span>
           <span>50% (cinquenta por cento).</span>
         </li>
-        
         <li class="option-item">
-          <span class="option-letter">C</span>
+          <span class="option-letter">B</span>
           <span>75% (setenta e cinco por cento).</span>
         </li>
-        
         <li class="option-item">
-          <span class="option-letter">D</span>
+          <span class="option-letter">C</span>
           <span>10% (dez por cento).</span>
         </li>
-        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>20% (vinte por cento).</span>
+        </li>
       </ul>
     </div>
     
@@ -680,27 +609,22 @@
       </div>
       <div class="question-text">A Câmara Municipal não gastará mais de qual percentual de sua receita total com folha de pagamento, incluído o gasto com o subsídio de seus Vereadores (Art. 29-A, § 1º da CF)?</div>
       <ul class="options-list">
-    
         <li class="option-item">
           <span class="option-letter">A</span>
-          <span>70% (setenta por cento).</span>
-        </li>
-        
-        <li class="option-item">
-          <span class="option-letter">B</span>
           <span>50% (cinquenta por cento).</span>
         </li>
-        
         <li class="option-item">
-          <span class="option-letter">C</span>
+          <span class="option-letter">B</span>
           <span>60% (sessenta por cento).</span>
         </li>
-        
         <li class="option-item">
-          <span class="option-letter">D</span>
+          <span class="option-letter">C</span>
           <span>80% (oitenta por cento).</span>
         </li>
-        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>70% (setenta por cento).</span>
+        </li>
       </ul>
     </div>
     
@@ -711,27 +635,22 @@
       </div>
       <div class="question-text">A fiscalização do Município será exercida pelo Poder Legislativo Municipal, mediante controle externo, e pelos sistemas de controle interno do Executivo. O controle externo da Câmara Municipal é exercido com o auxílio do:</div>
       <ul class="options-list">
-    
         <li class="option-item">
           <span class="option-letter">A</span>
-          <span>Tribunal de Contas do Estado (ou do Município onde houver), cujo parecer prévio só deixa de prevalecer por decisão de dois terços dos vereadores.</span>
-        </li>
-        
-        <li class="option-item">
-          <span class="option-letter">B</span>
           <span>Tribunal de Justiça do Estado, mediante sentença transitada em julgado proferida anualmente.</span>
         </li>
-        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Tribunal de Contas do Estado (ou do Município onde houver), cujo parecer prévio só deixa de prevalecer por decisão de dois terços dos vereadores.</span>
+        </li>
         <li class="option-item">
           <span class="option-letter">C</span>
           <span>Ministério Público Estadual, através de inquérito civil conclusivo homologado pela Mesa.</span>
         </li>
-        
         <li class="option-item">
           <span class="option-letter">D</span>
           <span>Conselho Fiscal de Contabilidade Comunitária eleito pelos contribuintes locais.</span>
         </li>
-        
       </ul>
     </div>
     
@@ -742,27 +661,22 @@
       </div>
       <div class="question-text">Sobre a estrutura de controle externo das contas municipais, o Art. 31, § 4º da Constituição Federal expressamente estabelece que:</div>
       <ul class="options-list">
-    
         <li class="option-item">
           <span class="option-letter">A</span>
           <span>É vedada a criação de Tribunais, Conselhos ou órgãos de Contas Municipais.</span>
         </li>
-        
         <li class="option-item">
           <span class="option-letter">B</span>
           <span>Todos os municípios com mais de cinquenta mil eleitores devem instituir seu próprio Tribunal de Contas.</span>
         </li>
-        
         <li class="option-item">
           <span class="option-letter">C</span>
           <span>Os Municípios podem criar órgãos de contas municipais mediante autorização prévia do Senado Federal.</span>
         </li>
-        
         <li class="option-item">
           <span class="option-letter">D</span>
           <span>A fiscalização externa dos municípios dispensa a atuação de Tribunais de Contas estaduais.</span>
         </li>
-        
       </ul>
     </div>
     
@@ -773,27 +687,22 @@
       </div>
       <div class="question-text">Conforme o Art. 31, § 3º da CF/88, as contas dos Municípios ficarão, anualmente, durante quantos dias, à disposição de qualquer contribuinte, para exame e apreciação, o qual poderá questionar-lhes a legitimidade, nos termos da lei?</div>
       <ul class="options-list">
-    
         <li class="option-item">
           <span class="option-letter">A</span>
-          <span>60 (sessenta) dias.</span>
-        </li>
-        
-        <li class="option-item">
-          <span class="option-letter">B</span>
           <span>30 (trinta) dias.</span>
         </li>
-        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>60 (sessenta) dias.</span>
+        </li>
         <li class="option-item">
           <span class="option-letter">C</span>
           <span>90 (noventa) dias.</span>
         </li>
-        
         <li class="option-item">
           <span class="option-letter">D</span>
           <span>15 (quinze) dias.</span>
         </li>
-        
       </ul>
     </div>
     
@@ -804,27 +713,22 @@
       </div>
       <div class="question-text">A Constituição Federal define expressamente os bens pertencentes à União e aos Estados. Incluem-se entre os BENS DOS ESTADOS-MEMBROS (Art. 26 da CF/88):</div>
       <ul class="options-list">
-    
         <li class="option-item">
           <span class="option-letter">A</span>
-          <span>As águas superficiais ou subterrâneas, fluentes, emergentes e em depósito, ressalvadas, neste caso, na forma da lei, as decorrentes de obras da União.</span>
-        </li>
-        
-        <li class="option-item">
-          <span class="option-letter">B</span>
           <span>Os rios que banhem mais de um Estado da Federação ou sirvam de limite com países vizinhos.</span>
         </li>
-        
         <li class="option-item">
-          <span class="option-letter">C</span>
+          <span class="option-letter">B</span>
           <span>Os potenciais de energia hidráulica e os recursos minerais, inclusive os do subsolo.</span>
         </li>
-        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>As águas superficiais ou subterrâneas, fluentes, emergentes e em depósito, ressalvadas, neste caso, na forma da lei, as decorrentes de obras da União.</span>
+        </li>
         <li class="option-item">
           <span class="option-letter">D</span>
           <span>As terras devolutas indispensáveis à defesa das fronteiras e fortificações militares.</span>
         </li>
-        
       </ul>
     </div>
     
@@ -835,27 +739,22 @@
       </div>
       <div class="question-text">O Estado-membro NÃO intervirá em seus Municípios, SALVO quando (Art. 35 da CF):</div>
       <ul class="options-list">
-    
         <li class="option-item">
           <span class="option-letter">A</span>
-          <span>Deixar de ser paga, sem motivo de força maior, por dois anos consecutivos, a dívida fundada.</span>
-        </li>
-        
-        <li class="option-item">
-          <span class="option-letter">B</span>
           <span>O prefeito pertencer a partido político de oposição ao governador do Estado.</span>
         </li>
-        
         <li class="option-item">
-          <span class="option-letter">C</span>
+          <span class="option-letter">B</span>
           <span>A câmara municipal aprovar moção de desconfiança contra a diretoria do hospital municipal.</span>
         </li>
-        
         <li class="option-item">
-          <span class="option-letter">D</span>
+          <span class="option-letter">C</span>
           <span>O município apresentar índice de desemprego superior à média estadual no semestre.</span>
         </li>
-        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Deixar de ser paga, sem motivo de força maior, por dois anos consecutivos, a dívida fundada.</span>
+        </li>
       </ul>
     </div>
     
@@ -866,35 +765,25 @@
       </div>
       <div class="question-text">A respeito da intervenção federal em Municípios localizados dentro de um Estado-membro (como o Município de Meruoca no Estado do Ceará), é correto afirmar que:</div>
       <ul class="options-list">
-    
         <li class="option-item">
           <span class="option-letter">A</span>
           <span>A União não intervém diretamente em Municípios localizados em Estados, cabendo ao próprio Estado a intervenção municipal (a intervenção federal direta em município só cabe em Território Federal).</span>
         </li>
-        
         <li class="option-item">
           <span class="option-letter">B</span>
           <span>O Presidente da República pode decretar intervenção federal direta em qualquer município sem consultar o Governador do Estado.</span>
         </li>
-        
         <li class="option-item">
           <span class="option-letter">C</span>
           <span>A intervenção no município é sempre realizada pelo Ministério Público Federal mediante portaria ministerial.</span>
         </li>
-        
         <li class="option-item">
           <span class="option-letter">D</span>
           <span>O Governador do Estado pode intervir na União caso haja atraso no repasse do Fundo de Participação dos Estados.</span>
         </li>
-        
       </ul>
     </div>
     
-    <div class="section-title portugues">
-      <span><i class="fas fa-spell-check"></i> PARTE 2: LÍNGUA PORTUGUESA (QUESTÕES 201 A 220)</span>
-      <span style="font-size: 0.8rem; font-weight: normal;">Estrutura e Processos de Formação de Palavras (Derivação, Composição & Elementos Mórficos)</span>
-    </div>
-
     <div class="question-block">
       <div class="question-meta">
         <span class="q-badge">QUESTÃO 201</span>
@@ -902,27 +791,22 @@
       </div>
       <div class="question-text">A DERIVAÇÃO PARASSINTÉTICA ocorre quando prefixo e sufixo são agregados simultaneamente ao radical, de modo que a palavra não existe sem um deles. Assinale a alternativa que apresenta um vocábulo formado por derivação parassintética:</div>
       <ul class="options-list">
-    
         <li class="option-item">
           <span class="option-letter">A</span>
           <span>Anoitecer (a + noit + ecer)</span>
         </li>
-        
         <li class="option-item">
           <span class="option-letter">B</span>
           <span>Infelizmente (in + feliz + mente)</span>
         </li>
-        
         <li class="option-item">
           <span class="option-letter">C</span>
           <span>Deslealdade (des + leal + dade)</span>
         </li>
-        
         <li class="option-item">
           <span class="option-letter">D</span>
           <span>Reorganização (re + organiza + ção)</span>
         </li>
-        
       </ul>
     </div>
     
@@ -933,27 +817,22 @@
       </div>
       <div class="question-text">A derivação regressiva (ou deverbal) consiste na formação de substantivos abstratos a partir de verbos, geralmente com a redução da terminação verbal para as vogais temáticas -a, -o, -e. Assinale o vocábulo formado por DERIVAÇÃO REGRESSIVA:</div>
       <ul class="options-list">
-    
         <li class="option-item">
           <span class="option-letter">A</span>
-          <span>O debate (derivado do verbo debater)</span>
-        </li>
-        
-        <li class="option-item">
-          <span class="option-letter">B</span>
           <span>O pescador (derivado do verbo pescar)</span>
         </li>
-        
         <li class="option-item">
-          <span class="option-letter">C</span>
+          <span class="option-letter">B</span>
           <span>A lealdade (derivado do adjetivo leal)</span>
         </li>
-        
         <li class="option-item">
-          <span class="option-letter">D</span>
+          <span class="option-letter">C</span>
           <span>O antebraço (derivado do substantivo braço)</span>
         </li>
-        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>O debate (derivado do verbo debater)</span>
+        </li>
       </ul>
     </div>
     
@@ -964,27 +843,22 @@
       </div>
       <div class="question-text">A DERIVAÇÃO IMPRÓPRIA ocorre quando uma palavra muda de classe gramatical no contexto da oração sem que haja qualquer alteração em sua estrutura morfológica. Assinale a frase em que se constata a ocorrência de derivação imprópria:</div>
       <ul class="options-list">
-    
         <li class="option-item">
           <span class="option-letter">A</span>
-          <span>O 'sim' dos parlamentares foi decisivo para a promulgação da lei.</span>
-        </li>
-        
-        <li class="option-item">
-          <span class="option-letter">B</span>
           <span>O servidor realizou um trabalho rápido e eficiente durante a sessão.</span>
         </li>
-        
         <li class="option-item">
-          <span class="option-letter">C</span>
+          <span class="option-letter">B</span>
           <span>Eles discordaram profundamente das propostas apresentadas em plenário.</span>
         </li>
-        
         <li class="option-item">
-          <span class="option-letter">D</span>
+          <span class="option-letter">C</span>
           <span>A comissão permanente elaborou um parecer extremamente detalhado.</span>
         </li>
-        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>O 'sim' dos parlamentares foi decisivo para a promulgação da lei.</span>
+        </li>
       </ul>
     </div>
     
@@ -995,27 +869,22 @@
       </div>
       <div class="question-text">Na formação de palavras por COMPOSIÇÃO, unem-se dois ou mais radicais. Quando os elementos componentes se unem mantendo a integridade fonética e gráfica de cada um, ocorre:</div>
       <ul class="options-list">
-    
         <li class="option-item">
           <span class="option-letter">A</span>
-          <span>Justaposição (ex: passatempo, pé-de-galinha, girassol).</span>
-        </li>
-        
-        <li class="option-item">
-          <span class="option-letter">B</span>
           <span>Aglutinação (ex: planalto, vinagre, pernilongo).</span>
         </li>
-        
         <li class="option-item">
-          <span class="option-letter">C</span>
+          <span class="option-letter">B</span>
           <span>Hibridismo morfológico greco-latino.</span>
         </li>
-        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Justaposição (ex: passatempo, pé-de-galinha, girassol).</span>
+        </li>
         <li class="option-item">
           <span class="option-letter">D</span>
           <span>Reduplicação silábica imitativa onomatopeica.</span>
         </li>
-        
       </ul>
     </div>
     
@@ -1026,27 +895,22 @@
       </div>
       <div class="question-text">Assinale a alternativa em que AMBAS as palavras foram formadas pelo processo de COMPOSIÇÃO POR AGLUTINAÇÃO:</div>
       <ul class="options-list">
-    
         <li class="option-item">
           <span class="option-letter">A</span>
-          <span>Planalto (plano + alto) e vinagre (vinho + acre).</span>
-        </li>
-        
-        <li class="option-item">
-          <span class="option-letter">B</span>
           <span>Guarda-roupa e couve-flor.</span>
         </li>
-        
         <li class="option-item">
-          <span class="option-letter">C</span>
+          <span class="option-letter">B</span>
           <span>Beija-flor e pontapé.</span>
         </li>
-        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Planalto (plano + alto) e vinagre (vinho + acre).</span>
+        </li>
         <li class="option-item">
           <span class="option-letter">D</span>
           <span>Segunda-feira e micro-ondas.</span>
         </li>
-        
       </ul>
     </div>
     
@@ -1057,27 +921,22 @@
       </div>
       <div class="question-text">O RADICAL é o elemento mórfico fundamental e indivisível que contém o significado básico da palavra e é comum às palavras de uma mesma família (cognatas). Identifique a palavra que NÃO pertence à mesma família cognata das demais:</div>
       <ul class="options-list">
-    
         <li class="option-item">
           <span class="option-letter">A</span>
-          <span>Pedreiro, pedregulho, apedrejar e pedra.</span>
-        </li>
-        
-        <li class="option-item">
-          <span class="option-letter">B</span>
-          <span>Livraria, livreiro, livrinho e livro.</span>
-        </li>
-        
-        <li class="option-item">
-          <span class="option-letter">C</span>
-          <span>Terráqueo, terrestre, aterrar e terra.</span>
-        </li>
-        
-        <li class="option-item">
-          <span class="option-letter">D</span>
           <span>Cabelo, cabeceira, cabeçalho e cabeçudo.</span>
         </li>
-        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Pedreiro, pedregulho, apedrejar e pedra.</span>
+        </li>
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Livraria, livreiro, livrinho e livro.</span>
+        </li>
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Terráqueo, terrestre, aterrar e terra.</span>
+        </li>
       </ul>
     </div>
     
@@ -1088,27 +947,22 @@
       </div>
       <div class="question-text">Na morfologia da Língua Portuguesa, as desinências nominais indicam gênero (masculino/feminino) e número (singular/plural). Na palavra 'MENINAS', os morfemas '-A-' e '-S' classificam-se, respectivamente, como:</div>
       <ul class="options-list">
-    
         <li class="option-item">
           <span class="option-letter">A</span>
-          <span>Desinência nominal de gênero feminino e desinência nominal de número plural.</span>
-        </li>
-        
-        <li class="option-item">
-          <span class="option-letter">B</span>
           <span>Vogal temática e sufixo aumentativo.</span>
         </li>
-        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Desinência nominal de gênero feminino e desinência nominal de número plural.</span>
+        </li>
         <li class="option-item">
           <span class="option-letter">C</span>
           <span>Radical flexionado e consoante eufônica de ligação.</span>
         </li>
-        
         <li class="option-item">
           <span class="option-letter">D</span>
           <span>Afixo derivacional e desinência verbal de pessoa.</span>
         </li>
-        
       </ul>
     </div>
     
@@ -1119,27 +973,22 @@
       </div>
       <div class="question-text">A VOGAL TEMÁTICA liga o radical às desinências e indica a conjugação verbal (1ª -a, 2ª -e, 3ª -i). O radical somado à vogal temática constitui o:</div>
       <ul class="options-list">
-    
         <li class="option-item">
           <span class="option-letter">A</span>
-          <span>Tema.</span>
-        </li>
-        
-        <li class="option-item">
-          <span class="option-letter">B</span>
           <span>Afixo composto.</span>
         </li>
-        
         <li class="option-item">
-          <span class="option-letter">C</span>
+          <span class="option-letter">B</span>
           <span>Cognato absoluto.</span>
         </li>
-        
         <li class="option-item">
-          <span class="option-letter">D</span>
+          <span class="option-letter">C</span>
           <span>Morfema zero.</span>
         </li>
-        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Tema.</span>
+        </li>
       </ul>
     </div>
     
@@ -1150,27 +999,22 @@
       </div>
       <div class="question-text">Vogais e consoantes de ligação são elementos fonéticos eufônicos inseridos entre morfemas unicamente para facilitar a pronúncia, desprovidos de significado gramatical próprio. Há uma CONSOANTE DE LIGAÇÃO na palavra:</div>
       <ul class="options-list">
-    
         <li class="option-item">
           <span class="option-letter">A</span>
-          <span>Cafeteira (café + -t- + eira)</span>
-        </li>
-        
-        <li class="option-item">
-          <span class="option-letter">B</span>
           <span>Infelizmente (in + feliz + mente)</span>
         </li>
-        
         <li class="option-item">
-          <span class="option-letter">C</span>
+          <span class="option-letter">B</span>
           <span>Desleal (des + leal)</span>
         </li>
-        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Cafeteira (café + -t- + eira)</span>
+        </li>
         <li class="option-item">
           <span class="option-letter">D</span>
           <span>Pedrada (pedra + ada)</span>
         </li>
-        
       </ul>
     </div>
     
@@ -1181,27 +1025,22 @@
       </div>
       <div class="question-text">O processo de formação de palavras em que ocorre a junção de elementos mórficos originários de IDIOMAS DIFERENTES é denominado:</div>
       <ul class="options-list">
-    
         <li class="option-item">
           <span class="option-letter">A</span>
-          <span>Hibridismo (ex: televisão: tele grego + visão latim; burocracia: bureau francês + cracia grego).</span>
-        </li>
-        
-        <li class="option-item">
-          <span class="option-letter">B</span>
           <span>Neologismo fonético espontâneo.</span>
         </li>
-        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Hibridismo (ex: televisão: tele grego + visão latim; burocracia: bureau francês + cracia grego).</span>
+        </li>
         <li class="option-item">
           <span class="option-letter">C</span>
           <span>Siglonimização e acrônimo.</span>
         </li>
-        
         <li class="option-item">
           <span class="option-letter">D</span>
           <span>Onomatopeia imitativa de ruídos.</span>
         </li>
-        
       </ul>
     </div>
     
@@ -1212,27 +1051,22 @@
       </div>
       <div class="question-text">Assinale a alternativa que apresenta vocábulos formados por ONOMATOPEIA (reprodução aproximada de sons ou ruídos da natureza e de objetos):</div>
       <ul class="options-list">
-    
         <li class="option-item">
           <span class="option-letter">A</span>
-          <span>Tic-tac, zunzum, miau e coaxar.</span>
-        </li>
-        
-        <li class="option-item">
-          <span class="option-letter">B</span>
           <span>Amanhecer, entardecer e anoitecer.</span>
         </li>
-        
         <li class="option-item">
-          <span class="option-letter">C</span>
+          <span class="option-letter">B</span>
           <span>Fidalgo, aguardente e pernalta.</span>
         </li>
-        
         <li class="option-item">
-          <span class="option-letter">D</span>
+          <span class="option-letter">C</span>
           <span>Couve-flor, guarda-chuva e girassol.</span>
         </li>
-        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Tic-tac, zunzum, miau e coaxar.</span>
+        </li>
       </ul>
     </div>
     
@@ -1243,27 +1077,22 @@
       </div>
       <div class="question-text">Os prefixos 'in-' (latim) e 'a-' (grego) denotam privação ou negação. Assinale a opção em que AMBAS as palavras apresentam prefixos com valor semântico de NEGAÇÃO:</div>
       <ul class="options-list">
-    
         <li class="option-item">
           <span class="option-letter">A</span>
-          <span>Inativo e atípico.</span>
-        </li>
-        
-        <li class="option-item">
-          <span class="option-letter">B</span>
           <span>Importar e adjunto.</span>
         </li>
-        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Inativo e atípico.</span>
+        </li>
         <li class="option-item">
           <span class="option-letter">C</span>
           <span>Progresso e antebraço.</span>
         </li>
-        
         <li class="option-item">
           <span class="option-letter">D</span>
           <span>Submarino e supersensível.</span>
         </li>
-        
       </ul>
     </div>
     
@@ -1274,27 +1103,22 @@
       </div>
       <div class="question-text">Os sufixos nominalizadores transformam verbos ou adjetivos em substantivos. O sufixo presente em 'ORGANIZAÇÃO' (-ção) indica precipuamente a noção de:</div>
       <ul class="options-list">
-    
         <li class="option-item">
           <span class="option-letter">A</span>
           <span>Ação ou resultado de uma ação.</span>
         </li>
-        
         <li class="option-item">
           <span class="option-letter">B</span>
           <span>Lugar ou estabelecimento comercial.</span>
         </li>
-        
         <li class="option-item">
           <span class="option-letter">C</span>
           <span>Profissão ou agente executor.</span>
         </li>
-        
         <li class="option-item">
           <span class="option-letter">D</span>
           <span>Grau diminutivo pejorativo.</span>
         </li>
-        
       </ul>
     </div>
     
@@ -1305,27 +1129,22 @@
       </div>
       <div class="question-text">No vocabulário administrativo e legislativo, as palavras formadas pela combinação das letras ou sílabas iniciais de uma denominação composta (ex: MERCOSUL, UNESCO, EMBRAPA) que podem ser pronunciadas como uma palavra comum denominam-se:</div>
       <ul class="options-list">
-    
         <li class="option-item">
           <span class="option-letter">A</span>
-          <span>Acrônimos.</span>
-        </li>
-        
-        <li class="option-item">
-          <span class="option-letter">B</span>
           <span>Estrangeirismos arcaicos.</span>
         </li>
-        
         <li class="option-item">
-          <span class="option-letter">C</span>
+          <span class="option-letter">B</span>
           <span>Derivações parassintéticas truncadas.</span>
         </li>
-        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Acrônimos.</span>
+        </li>
         <li class="option-item">
           <span class="option-letter">D</span>
           <span>Arcaísmos de composição por justaposição.</span>
         </li>
-        
       </ul>
     </div>
     
@@ -1336,27 +1155,22 @@
       </div>
       <div class="question-text">O processo linguístico pelo qual novos termos são criados ou importados para suprir a necessidade de nomear novos conceitos científicos, tecnológicos ou socioculturais (ex: 'deletar', 'tuitar', 'printar') é chamado de:</div>
       <ul class="options-list">
-    
         <li class="option-item">
           <span class="option-letter">A</span>
-          <span>Neologismo.</span>
-        </li>
-        
-        <li class="option-item">
-          <span class="option-letter">B</span>
           <span>Solecismo de regência.</span>
         </li>
-        
         <li class="option-item">
-          <span class="option-letter">C</span>
+          <span class="option-letter">B</span>
           <span>Pleonasmo de reforço.</span>
         </li>
-        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Neologismo.</span>
+        </li>
         <li class="option-item">
           <span class="option-letter">D</span>
           <span>Ambiguidade estilística.</span>
         </li>
-        
       </ul>
     </div>
     
@@ -1367,27 +1181,22 @@
       </div>
       <div class="question-text">Em relação à relação morfológica entre primitivo e derivado, assinale o par em que a segunda palavra é DERIVADA da primeira:</div>
       <ul class="options-list">
-    
         <li class="option-item">
           <span class="option-letter">A</span>
           <span>Lei -> Legalizar.</span>
         </li>
-        
         <li class="option-item">
           <span class="option-letter">B</span>
           <span>História -> Histórico (ambas são primitivas).</span>
         </li>
-        
         <li class="option-item">
           <span class="option-letter">C</span>
           <span>Vento -> Ventania (ambas são formadas por composição).</span>
         </li>
-        
         <li class="option-item">
           <span class="option-letter">D</span>
           <span>Flor -> Floricultura (formada unicamente por hibridismo).</span>
         </li>
-        
       </ul>
     </div>
     
@@ -1398,27 +1207,22 @@
       </div>
       <div class="question-text">O processo de ABREVIAÇÃO VOCABULAR (ou redução) consiste na eliminação de uma parte da palavra a fim de economizar tempo e esforço na comunicação falada ou escrita. Assinale o exemplo de abreviação vocabular:</div>
       <ul class="options-list">
-    
         <li class="option-item">
           <span class="option-letter">A</span>
-          <span>Foto (de fotografia), moto (de motocicleta) e fone (de telefone).</span>
-        </li>
-        
-        <li class="option-item">
-          <span class="option-letter">B</span>
           <span>OAB (Ordem dos Advogados do Brasil).</span>
         </li>
-        
         <li class="option-item">
-          <span class="option-letter">C</span>
+          <span class="option-letter">B</span>
           <span>Passatempo (de passa + tempo).</span>
         </li>
-        
         <li class="option-item">
-          <span class="option-letter">D</span>
+          <span class="option-letter">C</span>
           <span>Amanhecer (de a + manhã + ecer).</span>
         </li>
-        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Foto (de fotografia), moto (de motocicleta) e fone (de telefone).</span>
+        </li>
       </ul>
     </div>
     
@@ -1429,27 +1233,22 @@
       </div>
       <div class="question-text">Na forma verbal 'ESTUDÁVAMOS', o segmento mórfico '-VA-' classifica-se como:</div>
       <ul class="options-list">
-    
         <li class="option-item">
           <span class="option-letter">A</span>
-          <span>Desinência modo-temporal (indica pretérito imperfeito do modo indicativo).</span>
-        </li>
-        
-        <li class="option-item">
-          <span class="option-letter">B</span>
           <span>Desinência número-pessoal (indica primeira pessoa do plural).</span>
         </li>
-        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Desinência modo-temporal (indica pretérito imperfeito do modo indicativo).</span>
+        </li>
         <li class="option-item">
           <span class="option-letter">C</span>
           <span>Vogal de ligação eufônica.</span>
         </li>
-        
         <li class="option-item">
           <span class="option-letter">D</span>
           <span>Sufixo adverbializatório de intensidade.</span>
         </li>
-        
       </ul>
     </div>
     
@@ -1460,27 +1259,22 @@
       </div>
       <div class="question-text">Assinale a alternativa em que a divisão mórfica do vocábulo 'DESALINHAMENTO' e a identificação de seus elementos estão inteiramente corretas:</div>
       <ul class="options-list">
-    
         <li class="option-item">
           <span class="option-letter">A</span>
-          <span>Des- (prefixo) + alinh- (radical) + -a- (vogal temática) + -mento (sufixo derivacional formador de substantivo).</span>
-        </li>
-        
-        <li class="option-item">
-          <span class="option-letter">B</span>
           <span>Desalinha- (radical único) + -mento (desinência de número).</span>
         </li>
-        
         <li class="option-item">
-          <span class="option-letter">C</span>
+          <span class="option-letter">B</span>
           <span>Des- (afixo flexional) + alinhamento (palavra composta por aglutinação).</span>
         </li>
-        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Des- (prefixo) + alinh- (radical) + -a- (vogal temática) + -mento (sufixo derivacional formador de substantivo).</span>
+        </li>
         <li class="option-item">
           <span class="option-letter">D</span>
           <span>De- (prefixo) + salinha (radical) + -mento (sufixo aumentativo).</span>
         </li>
-        
       </ul>
     </div>
     
@@ -1489,623 +1283,768 @@
         <span class="q-badge">QUESTÃO 220</span>
         <span class="q-topic">Língua Portuguesa • Identificação Geral dos Processos em Concurso</span>
       </div>
-      <div class="question-text">Relacione as colunas quanto ao processo de formação de palavras:
-(1) Justaposição
-(2) Aglutinação
-(3) Parassíntese
-(4) Derivação Imprópria
-
-( ) Envergonhar
-( ) Guarda-noturno
-( ) O olhar triste da testemunha
-( ) Pernalta
-
-A sequência correta de preenchimento, de cima para baixo, é:</div>
+      <div class="question-text">Relacione as colunas quanto ao processo de formação de palavras:<br>(1) Justaposição<br>(2) Aglutinação<br>(3) Parassíntese<br>(4) Derivação Imprópria<br><br>( ) Envergonhar<br>( ) Guarda-noturno<br>( ) O olhar triste da testemunha<br>( ) Pernalta<br><br>A sequência correta de preenchimento, de cima para baixo, é:</div>
       <ul class="options-list">
-    
         <li class="option-item">
           <span class="option-letter">A</span>
           <span>3 — 1 — 4 — 2</span>
         </li>
-        
         <li class="option-item">
           <span class="option-letter">B</span>
           <span>1 — 3 — 2 — 4</span>
         </li>
-        
         <li class="option-item">
           <span class="option-letter">C</span>
           <span>3 — 2 — 1 — 4</span>
         </li>
-        
         <li class="option-item">
           <span class="option-letter">D</span>
           <span>4 — 1 — 3 — 2</span>
         </li>
-        
       </ul>
     </div>
     
-    <!-- FOLHA ÓPTICA DE RESPOSTAS -->
-    <div class="folha-respostas-box">
-      <div style="text-align: center; border-bottom: 1px solid #cbd5e1; padding-bottom: 8px; margin-bottom: 10px;">
-        <strong style="font-size: 1.1rem; text-transform: uppercase; color: var(--primary);">Folha de Respostas Óptica — Simulação Real (40 Questões)</strong>
-        <p style="margin: 4px 0 0 0; font-size: 0.8rem; color: #64748b;">Preencha a bolha correspondente à alternativa escolhida para treino de agilidade.</p>
-      </div>
-      <div class="folha-grid">
+    </div>
 
-        <div class="folha-row">
-          <span class="folha-num">181</span>
-          <span class="folha-circle">A</span>
-          <span class="folha-circle">B</span>
-          <span class="folha-circle">C</span>
-          <span class="folha-circle">D</span>
+    <!-- FOLHA ÓPTICA -->
+    <div class="optical-sheet">
+      <div class="optical-header">
+        <h3>FOLHA DE RESPOSTAS (TREINO PRÉ-PROVA)</h3>
+        <p style="margin: 0; font-size: 0.8rem; color: #475569;">Preencha a bolha correspondente com caneta esferográfica de tinta preta ou azul.</p>
+      </div>
+      <div class="bubble-grid">
+        
+      <div class="bubble-row">
+        <span class="bubble-qnum">181</span>
+        <div class="bubble-options">
+          <span class="bubble-opt">A</span>
+          <span class="bubble-opt">B</span>
+          <span class="bubble-opt">C</span>
+          <span class="bubble-opt">D</span>
         </div>
+      </div>
     
-        <div class="folha-row">
-          <span class="folha-num">182</span>
-          <span class="folha-circle">A</span>
-          <span class="folha-circle">B</span>
-          <span class="folha-circle">C</span>
-          <span class="folha-circle">D</span>
+      <div class="bubble-row">
+        <span class="bubble-qnum">182</span>
+        <div class="bubble-options">
+          <span class="bubble-opt">A</span>
+          <span class="bubble-opt">B</span>
+          <span class="bubble-opt">C</span>
+          <span class="bubble-opt">D</span>
         </div>
+      </div>
     
-        <div class="folha-row">
-          <span class="folha-num">183</span>
-          <span class="folha-circle">A</span>
-          <span class="folha-circle">B</span>
-          <span class="folha-circle">C</span>
-          <span class="folha-circle">D</span>
+      <div class="bubble-row">
+        <span class="bubble-qnum">183</span>
+        <div class="bubble-options">
+          <span class="bubble-opt">A</span>
+          <span class="bubble-opt">B</span>
+          <span class="bubble-opt">C</span>
+          <span class="bubble-opt">D</span>
         </div>
+      </div>
     
-        <div class="folha-row">
-          <span class="folha-num">184</span>
-          <span class="folha-circle">A</span>
-          <span class="folha-circle">B</span>
-          <span class="folha-circle">C</span>
-          <span class="folha-circle">D</span>
+      <div class="bubble-row">
+        <span class="bubble-qnum">184</span>
+        <div class="bubble-options">
+          <span class="bubble-opt">A</span>
+          <span class="bubble-opt">B</span>
+          <span class="bubble-opt">C</span>
+          <span class="bubble-opt">D</span>
         </div>
+      </div>
     
-        <div class="folha-row">
-          <span class="folha-num">185</span>
-          <span class="folha-circle">A</span>
-          <span class="folha-circle">B</span>
-          <span class="folha-circle">C</span>
-          <span class="folha-circle">D</span>
+      <div class="bubble-row">
+        <span class="bubble-qnum">185</span>
+        <div class="bubble-options">
+          <span class="bubble-opt">A</span>
+          <span class="bubble-opt">B</span>
+          <span class="bubble-opt">C</span>
+          <span class="bubble-opt">D</span>
         </div>
+      </div>
     
-        <div class="folha-row">
-          <span class="folha-num">186</span>
-          <span class="folha-circle">A</span>
-          <span class="folha-circle">B</span>
-          <span class="folha-circle">C</span>
-          <span class="folha-circle">D</span>
+      <div class="bubble-row">
+        <span class="bubble-qnum">186</span>
+        <div class="bubble-options">
+          <span class="bubble-opt">A</span>
+          <span class="bubble-opt">B</span>
+          <span class="bubble-opt">C</span>
+          <span class="bubble-opt">D</span>
         </div>
+      </div>
     
-        <div class="folha-row">
-          <span class="folha-num">187</span>
-          <span class="folha-circle">A</span>
-          <span class="folha-circle">B</span>
-          <span class="folha-circle">C</span>
-          <span class="folha-circle">D</span>
+      <div class="bubble-row">
+        <span class="bubble-qnum">187</span>
+        <div class="bubble-options">
+          <span class="bubble-opt">A</span>
+          <span class="bubble-opt">B</span>
+          <span class="bubble-opt">C</span>
+          <span class="bubble-opt">D</span>
         </div>
+      </div>
     
-        <div class="folha-row">
-          <span class="folha-num">188</span>
-          <span class="folha-circle">A</span>
-          <span class="folha-circle">B</span>
-          <span class="folha-circle">C</span>
-          <span class="folha-circle">D</span>
+      <div class="bubble-row">
+        <span class="bubble-qnum">188</span>
+        <div class="bubble-options">
+          <span class="bubble-opt">A</span>
+          <span class="bubble-opt">B</span>
+          <span class="bubble-opt">C</span>
+          <span class="bubble-opt">D</span>
         </div>
+      </div>
     
-        <div class="folha-row">
-          <span class="folha-num">189</span>
-          <span class="folha-circle">A</span>
-          <span class="folha-circle">B</span>
-          <span class="folha-circle">C</span>
-          <span class="folha-circle">D</span>
+      <div class="bubble-row">
+        <span class="bubble-qnum">189</span>
+        <div class="bubble-options">
+          <span class="bubble-opt">A</span>
+          <span class="bubble-opt">B</span>
+          <span class="bubble-opt">C</span>
+          <span class="bubble-opt">D</span>
         </div>
+      </div>
     
-        <div class="folha-row">
-          <span class="folha-num">190</span>
-          <span class="folha-circle">A</span>
-          <span class="folha-circle">B</span>
-          <span class="folha-circle">C</span>
-          <span class="folha-circle">D</span>
+      <div class="bubble-row">
+        <span class="bubble-qnum">190</span>
+        <div class="bubble-options">
+          <span class="bubble-opt">A</span>
+          <span class="bubble-opt">B</span>
+          <span class="bubble-opt">C</span>
+          <span class="bubble-opt">D</span>
         </div>
+      </div>
     
-        <div class="folha-row">
-          <span class="folha-num">191</span>
-          <span class="folha-circle">A</span>
-          <span class="folha-circle">B</span>
-          <span class="folha-circle">C</span>
-          <span class="folha-circle">D</span>
+      <div class="bubble-row">
+        <span class="bubble-qnum">191</span>
+        <div class="bubble-options">
+          <span class="bubble-opt">A</span>
+          <span class="bubble-opt">B</span>
+          <span class="bubble-opt">C</span>
+          <span class="bubble-opt">D</span>
         </div>
+      </div>
     
-        <div class="folha-row">
-          <span class="folha-num">192</span>
-          <span class="folha-circle">A</span>
-          <span class="folha-circle">B</span>
-          <span class="folha-circle">C</span>
-          <span class="folha-circle">D</span>
+      <div class="bubble-row">
+        <span class="bubble-qnum">192</span>
+        <div class="bubble-options">
+          <span class="bubble-opt">A</span>
+          <span class="bubble-opt">B</span>
+          <span class="bubble-opt">C</span>
+          <span class="bubble-opt">D</span>
         </div>
+      </div>
     
-        <div class="folha-row">
-          <span class="folha-num">193</span>
-          <span class="folha-circle">A</span>
-          <span class="folha-circle">B</span>
-          <span class="folha-circle">C</span>
-          <span class="folha-circle">D</span>
+      <div class="bubble-row">
+        <span class="bubble-qnum">193</span>
+        <div class="bubble-options">
+          <span class="bubble-opt">A</span>
+          <span class="bubble-opt">B</span>
+          <span class="bubble-opt">C</span>
+          <span class="bubble-opt">D</span>
         </div>
+      </div>
     
-        <div class="folha-row">
-          <span class="folha-num">194</span>
-          <span class="folha-circle">A</span>
-          <span class="folha-circle">B</span>
-          <span class="folha-circle">C</span>
-          <span class="folha-circle">D</span>
+      <div class="bubble-row">
+        <span class="bubble-qnum">194</span>
+        <div class="bubble-options">
+          <span class="bubble-opt">A</span>
+          <span class="bubble-opt">B</span>
+          <span class="bubble-opt">C</span>
+          <span class="bubble-opt">D</span>
         </div>
+      </div>
     
-        <div class="folha-row">
-          <span class="folha-num">195</span>
-          <span class="folha-circle">A</span>
-          <span class="folha-circle">B</span>
-          <span class="folha-circle">C</span>
-          <span class="folha-circle">D</span>
+      <div class="bubble-row">
+        <span class="bubble-qnum">195</span>
+        <div class="bubble-options">
+          <span class="bubble-opt">A</span>
+          <span class="bubble-opt">B</span>
+          <span class="bubble-opt">C</span>
+          <span class="bubble-opt">D</span>
         </div>
+      </div>
     
-        <div class="folha-row">
-          <span class="folha-num">196</span>
-          <span class="folha-circle">A</span>
-          <span class="folha-circle">B</span>
-          <span class="folha-circle">C</span>
-          <span class="folha-circle">D</span>
+      <div class="bubble-row">
+        <span class="bubble-qnum">196</span>
+        <div class="bubble-options">
+          <span class="bubble-opt">A</span>
+          <span class="bubble-opt">B</span>
+          <span class="bubble-opt">C</span>
+          <span class="bubble-opt">D</span>
         </div>
+      </div>
     
-        <div class="folha-row">
-          <span class="folha-num">197</span>
-          <span class="folha-circle">A</span>
-          <span class="folha-circle">B</span>
-          <span class="folha-circle">C</span>
-          <span class="folha-circle">D</span>
+      <div class="bubble-row">
+        <span class="bubble-qnum">197</span>
+        <div class="bubble-options">
+          <span class="bubble-opt">A</span>
+          <span class="bubble-opt">B</span>
+          <span class="bubble-opt">C</span>
+          <span class="bubble-opt">D</span>
         </div>
+      </div>
     
-        <div class="folha-row">
-          <span class="folha-num">198</span>
-          <span class="folha-circle">A</span>
-          <span class="folha-circle">B</span>
-          <span class="folha-circle">C</span>
-          <span class="folha-circle">D</span>
+      <div class="bubble-row">
+        <span class="bubble-qnum">198</span>
+        <div class="bubble-options">
+          <span class="bubble-opt">A</span>
+          <span class="bubble-opt">B</span>
+          <span class="bubble-opt">C</span>
+          <span class="bubble-opt">D</span>
         </div>
+      </div>
     
-        <div class="folha-row">
-          <span class="folha-num">199</span>
-          <span class="folha-circle">A</span>
-          <span class="folha-circle">B</span>
-          <span class="folha-circle">C</span>
-          <span class="folha-circle">D</span>
+      <div class="bubble-row">
+        <span class="bubble-qnum">199</span>
+        <div class="bubble-options">
+          <span class="bubble-opt">A</span>
+          <span class="bubble-opt">B</span>
+          <span class="bubble-opt">C</span>
+          <span class="bubble-opt">D</span>
         </div>
+      </div>
     
-        <div class="folha-row">
-          <span class="folha-num">200</span>
-          <span class="folha-circle">A</span>
-          <span class="folha-circle">B</span>
-          <span class="folha-circle">C</span>
-          <span class="folha-circle">D</span>
+      <div class="bubble-row">
+        <span class="bubble-qnum">200</span>
+        <div class="bubble-options">
+          <span class="bubble-opt">A</span>
+          <span class="bubble-opt">B</span>
+          <span class="bubble-opt">C</span>
+          <span class="bubble-opt">D</span>
         </div>
+      </div>
     
-        <div class="folha-row">
-          <span class="folha-num">201</span>
-          <span class="folha-circle">A</span>
-          <span class="folha-circle">B</span>
-          <span class="folha-circle">C</span>
-          <span class="folha-circle">D</span>
+      <div class="bubble-row">
+        <span class="bubble-qnum">201</span>
+        <div class="bubble-options">
+          <span class="bubble-opt">A</span>
+          <span class="bubble-opt">B</span>
+          <span class="bubble-opt">C</span>
+          <span class="bubble-opt">D</span>
         </div>
+      </div>
     
-        <div class="folha-row">
-          <span class="folha-num">202</span>
-          <span class="folha-circle">A</span>
-          <span class="folha-circle">B</span>
-          <span class="folha-circle">C</span>
-          <span class="folha-circle">D</span>
+      <div class="bubble-row">
+        <span class="bubble-qnum">202</span>
+        <div class="bubble-options">
+          <span class="bubble-opt">A</span>
+          <span class="bubble-opt">B</span>
+          <span class="bubble-opt">C</span>
+          <span class="bubble-opt">D</span>
         </div>
+      </div>
     
-        <div class="folha-row">
-          <span class="folha-num">203</span>
-          <span class="folha-circle">A</span>
-          <span class="folha-circle">B</span>
-          <span class="folha-circle">C</span>
-          <span class="folha-circle">D</span>
+      <div class="bubble-row">
+        <span class="bubble-qnum">203</span>
+        <div class="bubble-options">
+          <span class="bubble-opt">A</span>
+          <span class="bubble-opt">B</span>
+          <span class="bubble-opt">C</span>
+          <span class="bubble-opt">D</span>
         </div>
+      </div>
     
-        <div class="folha-row">
-          <span class="folha-num">204</span>
-          <span class="folha-circle">A</span>
-          <span class="folha-circle">B</span>
-          <span class="folha-circle">C</span>
-          <span class="folha-circle">D</span>
+      <div class="bubble-row">
+        <span class="bubble-qnum">204</span>
+        <div class="bubble-options">
+          <span class="bubble-opt">A</span>
+          <span class="bubble-opt">B</span>
+          <span class="bubble-opt">C</span>
+          <span class="bubble-opt">D</span>
         </div>
+      </div>
     
-        <div class="folha-row">
-          <span class="folha-num">205</span>
-          <span class="folha-circle">A</span>
-          <span class="folha-circle">B</span>
-          <span class="folha-circle">C</span>
-          <span class="folha-circle">D</span>
+      <div class="bubble-row">
+        <span class="bubble-qnum">205</span>
+        <div class="bubble-options">
+          <span class="bubble-opt">A</span>
+          <span class="bubble-opt">B</span>
+          <span class="bubble-opt">C</span>
+          <span class="bubble-opt">D</span>
         </div>
+      </div>
     
-        <div class="folha-row">
-          <span class="folha-num">206</span>
-          <span class="folha-circle">A</span>
-          <span class="folha-circle">B</span>
-          <span class="folha-circle">C</span>
-          <span class="folha-circle">D</span>
+      <div class="bubble-row">
+        <span class="bubble-qnum">206</span>
+        <div class="bubble-options">
+          <span class="bubble-opt">A</span>
+          <span class="bubble-opt">B</span>
+          <span class="bubble-opt">C</span>
+          <span class="bubble-opt">D</span>
         </div>
+      </div>
     
-        <div class="folha-row">
-          <span class="folha-num">207</span>
-          <span class="folha-circle">A</span>
-          <span class="folha-circle">B</span>
-          <span class="folha-circle">C</span>
-          <span class="folha-circle">D</span>
+      <div class="bubble-row">
+        <span class="bubble-qnum">207</span>
+        <div class="bubble-options">
+          <span class="bubble-opt">A</span>
+          <span class="bubble-opt">B</span>
+          <span class="bubble-opt">C</span>
+          <span class="bubble-opt">D</span>
         </div>
+      </div>
     
-        <div class="folha-row">
-          <span class="folha-num">208</span>
-          <span class="folha-circle">A</span>
-          <span class="folha-circle">B</span>
-          <span class="folha-circle">C</span>
-          <span class="folha-circle">D</span>
+      <div class="bubble-row">
+        <span class="bubble-qnum">208</span>
+        <div class="bubble-options">
+          <span class="bubble-opt">A</span>
+          <span class="bubble-opt">B</span>
+          <span class="bubble-opt">C</span>
+          <span class="bubble-opt">D</span>
         </div>
+      </div>
     
-        <div class="folha-row">
-          <span class="folha-num">209</span>
-          <span class="folha-circle">A</span>
-          <span class="folha-circle">B</span>
-          <span class="folha-circle">C</span>
-          <span class="folha-circle">D</span>
+      <div class="bubble-row">
+        <span class="bubble-qnum">209</span>
+        <div class="bubble-options">
+          <span class="bubble-opt">A</span>
+          <span class="bubble-opt">B</span>
+          <span class="bubble-opt">C</span>
+          <span class="bubble-opt">D</span>
         </div>
+      </div>
     
-        <div class="folha-row">
-          <span class="folha-num">210</span>
-          <span class="folha-circle">A</span>
-          <span class="folha-circle">B</span>
-          <span class="folha-circle">C</span>
-          <span class="folha-circle">D</span>
+      <div class="bubble-row">
+        <span class="bubble-qnum">210</span>
+        <div class="bubble-options">
+          <span class="bubble-opt">A</span>
+          <span class="bubble-opt">B</span>
+          <span class="bubble-opt">C</span>
+          <span class="bubble-opt">D</span>
         </div>
+      </div>
     
-        <div class="folha-row">
-          <span class="folha-num">211</span>
-          <span class="folha-circle">A</span>
-          <span class="folha-circle">B</span>
-          <span class="folha-circle">C</span>
-          <span class="folha-circle">D</span>
+      <div class="bubble-row">
+        <span class="bubble-qnum">211</span>
+        <div class="bubble-options">
+          <span class="bubble-opt">A</span>
+          <span class="bubble-opt">B</span>
+          <span class="bubble-opt">C</span>
+          <span class="bubble-opt">D</span>
         </div>
+      </div>
     
-        <div class="folha-row">
-          <span class="folha-num">212</span>
-          <span class="folha-circle">A</span>
-          <span class="folha-circle">B</span>
-          <span class="folha-circle">C</span>
-          <span class="folha-circle">D</span>
+      <div class="bubble-row">
+        <span class="bubble-qnum">212</span>
+        <div class="bubble-options">
+          <span class="bubble-opt">A</span>
+          <span class="bubble-opt">B</span>
+          <span class="bubble-opt">C</span>
+          <span class="bubble-opt">D</span>
         </div>
+      </div>
     
-        <div class="folha-row">
-          <span class="folha-num">213</span>
-          <span class="folha-circle">A</span>
-          <span class="folha-circle">B</span>
-          <span class="folha-circle">C</span>
-          <span class="folha-circle">D</span>
+      <div class="bubble-row">
+        <span class="bubble-qnum">213</span>
+        <div class="bubble-options">
+          <span class="bubble-opt">A</span>
+          <span class="bubble-opt">B</span>
+          <span class="bubble-opt">C</span>
+          <span class="bubble-opt">D</span>
         </div>
+      </div>
     
-        <div class="folha-row">
-          <span class="folha-num">214</span>
-          <span class="folha-circle">A</span>
-          <span class="folha-circle">B</span>
-          <span class="folha-circle">C</span>
-          <span class="folha-circle">D</span>
+      <div class="bubble-row">
+        <span class="bubble-qnum">214</span>
+        <div class="bubble-options">
+          <span class="bubble-opt">A</span>
+          <span class="bubble-opt">B</span>
+          <span class="bubble-opt">C</span>
+          <span class="bubble-opt">D</span>
         </div>
+      </div>
     
-        <div class="folha-row">
-          <span class="folha-num">215</span>
-          <span class="folha-circle">A</span>
-          <span class="folha-circle">B</span>
-          <span class="folha-circle">C</span>
-          <span class="folha-circle">D</span>
+      <div class="bubble-row">
+        <span class="bubble-qnum">215</span>
+        <div class="bubble-options">
+          <span class="bubble-opt">A</span>
+          <span class="bubble-opt">B</span>
+          <span class="bubble-opt">C</span>
+          <span class="bubble-opt">D</span>
         </div>
+      </div>
     
-        <div class="folha-row">
-          <span class="folha-num">216</span>
-          <span class="folha-circle">A</span>
-          <span class="folha-circle">B</span>
-          <span class="folha-circle">C</span>
-          <span class="folha-circle">D</span>
+      <div class="bubble-row">
+        <span class="bubble-qnum">216</span>
+        <div class="bubble-options">
+          <span class="bubble-opt">A</span>
+          <span class="bubble-opt">B</span>
+          <span class="bubble-opt">C</span>
+          <span class="bubble-opt">D</span>
         </div>
+      </div>
     
-        <div class="folha-row">
-          <span class="folha-num">217</span>
-          <span class="folha-circle">A</span>
-          <span class="folha-circle">B</span>
-          <span class="folha-circle">C</span>
-          <span class="folha-circle">D</span>
+      <div class="bubble-row">
+        <span class="bubble-qnum">217</span>
+        <div class="bubble-options">
+          <span class="bubble-opt">A</span>
+          <span class="bubble-opt">B</span>
+          <span class="bubble-opt">C</span>
+          <span class="bubble-opt">D</span>
         </div>
+      </div>
     
-        <div class="folha-row">
-          <span class="folha-num">218</span>
-          <span class="folha-circle">A</span>
-          <span class="folha-circle">B</span>
-          <span class="folha-circle">C</span>
-          <span class="folha-circle">D</span>
+      <div class="bubble-row">
+        <span class="bubble-qnum">218</span>
+        <div class="bubble-options">
+          <span class="bubble-opt">A</span>
+          <span class="bubble-opt">B</span>
+          <span class="bubble-opt">C</span>
+          <span class="bubble-opt">D</span>
         </div>
+      </div>
     
-        <div class="folha-row">
-          <span class="folha-num">219</span>
-          <span class="folha-circle">A</span>
-          <span class="folha-circle">B</span>
-          <span class="folha-circle">C</span>
-          <span class="folha-circle">D</span>
+      <div class="bubble-row">
+        <span class="bubble-qnum">219</span>
+        <div class="bubble-options">
+          <span class="bubble-opt">A</span>
+          <span class="bubble-opt">B</span>
+          <span class="bubble-opt">C</span>
+          <span class="bubble-opt">D</span>
         </div>
+      </div>
     
-        <div class="folha-row">
-          <span class="folha-num">220</span>
-          <span class="folha-circle">A</span>
-          <span class="folha-circle">B</span>
-          <span class="folha-circle">C</span>
-          <span class="folha-circle">D</span>
+      <div class="bubble-row">
+        <span class="bubble-qnum">220</span>
+        <div class="bubble-options">
+          <span class="bubble-opt">A</span>
+          <span class="bubble-opt">B</span>
+          <span class="bubble-opt">C</span>
+          <span class="bubble-opt">D</span>
         </div>
+      </div>
     
       </div>
     </div>
 
-    <!-- GABARITO OFICIAL COMENTADO -->
+    <!-- GABARITO FUNDAMENTADO -->
     <div class="gabarito-section">
       <div style="background: var(--primary); color: white; padding: 10px 16px; border-radius: 6px; font-weight: 800; font-size: 1.1rem; margin-bottom: 16px;">
-        <i class="fas fa-check-double"></i> GABARITO OFICIAL FUNDAMENTADO (QUESTÕES 181 A 220)
+        <i class="fas fa-check-double"></i> GABARITO OFICIAL FUNDAMENTADO
       </div>
-
+      
       <div class="gabarito-item">
-        <span class="gabarito-letra">A</span>
-        <strong>Questão 181 (D. Constitucional - Forma de Estado & Autonomia Federativa (Art. 18)):</strong>
-        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 18, caput da CF/88: 'A organização político-administrativa da República Federativa do Brasil compreende a União, os Estados, o Distrito Federal e os Municípios, todos autônomos, nos termos desta Constituição'. A República Federativa do Brasil possui SOBERANIA (no plano internacional); os entes federados (União, Estados, DF e Municípios) possuem AUTONOMIA (política, administrativa e financeira). É vedada a secessão (pacto federativo indissolúvel).</p>
-      </div>
-    
-      <div class="gabarito-item">
-        <span class="gabarito-letra">A</span>
-        <strong>Questão 182 (D. Constitucional - Criação, Incorporação e Fusão de Municípios (Art. 18, § 4º)):</strong>
-        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 18, § 4º da CF/88: Quatro requisitos cumulativos: 1. Lei Complementar Federal (fixando o período); 2. Estudos de Viabilidade Municipal (apresentados e publicados); 3. Plebiscito prévio às populações de TODOS os municípios envolvidos; 4. Lei Estadual ordinária criando/desmembrando o município.</p>
+        <span class="gabarito-letra">B</span>
+        <div>
+          <strong>Questão 181 (D. Constitucional • Forma de Estado & Autonomia Federativa (Art. 18)):</strong>
+          <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Art. 18, caput da CF/88: 'A organização político-administrativa da República Federativa do Brasil compreende a União, os Estados, o Distrito Federal e os Municípios, todos autônomos, nos termos desta Constituição'. A República Federativa do Brasil possui SOBERANIA (no plano internacional); os entes federados (União, Estados, DF e Municípios) possuem AUTONOMIA (política, administrativa e financeira). É vedada a secessão (pacto federativo indissolúvel).</p>
+        </div>
       </div>
     
       <div class="gabarito-item">
         <span class="gabarito-letra">A</span>
-        <strong>Questão 183 (D. Constitucional - Vedações Federativas (Art. 19)):</strong>
-        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 19 da CF/88 estabelece 3 vedações absolutas a todos os entes: I - Estabelecer cultos religiosos ou igrejas, subvencioná-los ou embaraçar-lhes o funcionamento (ressalvada colaboração de interesse público); II - Recusar fé aos documentos públicos; III - Criar distinções entre brasileiros ou preferências entre si.</p>
+        <div>
+          <strong>Questão 182 (D. Constitucional • Criação, Incorporação e Fusão de Municípios (Art. 18, § 4º)):</strong>
+          <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 18, § 4º da CF/88: Quatro requisitos cumulativos: 1. Lei Complementar Federal (fixando o período); 2. Estudos de Viabilidade Municipal (apresentados e publicados); 3. Plebiscito prévio às populações de TODOS os municípios envolvidos; 4. Lei Estadual ordinária criando/desmembrando o município.</p>
+        </div>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">B</span>
+        <div>
+          <strong>Questão 183 (D. Constitucional • Vedações Federativas (Art. 19)):</strong>
+          <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Art. 19 da CF/88 estabelece 3 vedações absolutas a todos os entes: I - Estabelecer cultos religiosos ou igrejas, subvencioná-los ou embaraçar-lhes o funcionamento (ressalvada colaboração de interesse público); II - Recusar fé aos documentos públicos; III - Criar distinções entre brasileiros ou preferências entre si.</p>
+        </div>
       </div>
     
       <div class="gabarito-item">
         <span class="gabarito-letra">A</span>
-        <strong>Questão 184 (D. Constitucional - Competência Privativa da União (Art. 22)):</strong>
-        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 22, I da CF/88 (Mnemônico 'CAPACETE DE PIMENTA': Civil, Agrário, Penal, Aeronáutico, Comercial, Eleitoral, Trabalho, Espacial, Desapropriação, Processual, Marítimo). A opção (B) é competência concorrente da União/Estados/DF (Art. 24). A opção (C) e (D) são competências comuns (Art. 23).</p>
+        <div>
+          <strong>Questão 184 (D. Constitucional • Competência Privativa da União (Art. 22)):</strong>
+          <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 22, I da CF/88 (Mnemônico 'CAPACETE DE PIMENTA': Civil, Agrário, Penal, Aeronáutico, Comercial, Eleitoral, Trabalho, Espacial, Desapropriação, Processual, Marítimo). A opção (B) é competência concorrente da União/Estados/DF (Art. 24). A opção (C) e (D) são competências comuns (Art. 23).</p>
+        </div>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">C</span>
+        <div>
+          <strong>Questão 185 (D. Constitucional • Delegação de Matéria Privativa da União (Art. 22, Parágrafo Único)):</strong>
+          <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Art. 22, Parágrafo único da CF/88: 'Lei complementar poderá autorizar os Estados a legislar sobre questões específicas das matérias relacionadas neste artigo'. Atenção: somente por Lei Complementar Federal (não por lei ordinária), apenas para questões específicas (não genéricas) e para todos os Estados indistintamente.</p>
+        </div>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">B</span>
+        <div>
+          <strong>Questão 186 (D. Constitucional • Competência Comum (Art. 23 da CF/88)):</strong>
+          <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Art. 23, II da CF/88: 'cuidar da saúde e assistência pública, da proteção e garantia das pessoas com deficiência'. É competência material compartilhada por todos os entes (União, Estados, DF e Municípios).</p>
+        </div>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">B</span>
+        <div>
+          <strong>Questão 187 (D. Constitucional • Competência Concorrente e Exclusão do Município (Art. 24)):</strong>
+          <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Art. 24, caput da CF/88: 'Compete à União, aos Estados e ao Distrito Federal legislar concorrentemente sobre...'. Os MUNICÍPIOS NÃO figuram no Art. 24! A competência dos Municípios em matéria concorrente é apenas SUPLEMENTAR à legislação federal e estadual no que couber, por força do Art. 30, II.</p>
+        </div>
       </div>
     
       <div class="gabarito-item">
         <span class="gabarito-letra">A</span>
-        <strong>Questão 185 (D. Constitucional - Delegação de Matéria Privativa da União (Art. 22, Parágrafo Único)):</strong>
-        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 22, Parágrafo único da CF/88: 'Lei complementar poderá autorizar os Estados a legislar sobre questões específicas das matérias relacionadas neste artigo'. Atenção: somente por Lei Complementar Federal (não por lei ordinária), apenas para questões específicas (não genéricas) e para todos os Estados indistintamente.</p>
-      </div>
-    
-      <div class="gabarito-item">
-        <span class="gabarito-letra">A</span>
-        <strong>Questão 186 (D. Constitucional - Competência Comum (Art. 23 da CF/88)):</strong>
-        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 23, II da CF/88: 'cuidar da saúde e assistência pública, da proteção e garantia das pessoas com deficiência'. É competência material compartilhada por todos os entes (União, Estados, DF e Municípios).</p>
-      </div>
-    
-      <div class="gabarito-item">
-        <span class="gabarito-letra">A</span>
-        <strong>Questão 187 (D. Constitucional - Competência Concorrente e Exclusão do Município (Art. 24)):</strong>
-        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 24, caput da CF/88: 'Compete à União, aos Estados e ao Distrito Federal legislar concorrentemente sobre...'. Os MUNICÍPIOS NÃO figuram no Art. 24! A competência dos Municípios em matéria concorrente é apenas SUPLEMENTAR à legislação federal e estadual no que couber, por força do Art. 30, II.</p>
-      </div>
-    
-      <div class="gabarito-item">
-        <span class="gabarito-letra">A</span>
-        <strong>Questão 188 (D. Constitucional - Normas Gerais vs Suplementares no Art. 24):</strong>
-        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 24, § 4º da CF/88: 'A superveniência de lei federal sobre normas gerais suspende a eficácia da lei estadual, no que lhe for contrário'. Pegadinha favorita de concurso: a lei federal NÃO revoga a lei estadual, apenas SUSPENDE SUA EFICÁCIA naquilo que for incompatível.</p>
-      </div>
-    
-      <div class="gabarito-item">
-        <span class="gabarito-letra">A</span>
-        <strong>Questão 189 (D. Constitucional - Competência Legislativa do Município (Art. 30, I e II)):</strong>
-        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 30 da CF/88: 'Compete aos Municípios: I - legislar sobre assuntos de interesse local; II - suplementar a legislação federal e a estadual no que couber'. É o núcleo da autonomia legislativa do Município de Meruoca.</p>
-      </div>
-    
-      <div class="gabarito-item">
-        <span class="gabarito-letra">A</span>
-        <strong>Questão 190 (D. Constitucional - Competência Municipal: Serviços Públicos e Transporte (Art. 30, V)):</strong>
-        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 30, V da CF/88: 'organizar e prestar, diretamente ou sob regime de concessão ou permissão, os serviços públicos de interesse local, incluído o de transporte coletivo, que tem caráter essencial'.</p>
-      </div>
-    
-      <div class="gabarito-item">
-        <span class="gabarito-letra">A</span>
-        <strong>Questão 191 (D. Constitucional - Competência Municipal: Solo Urbano e Plano Diretor (Art. 30, VIII)):</strong>
-        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 30, VIII da CF/88: 'promover, no que couber, adequado ordenamento territorial, mediante planejamento e controle do uso, do parcelamento e da ocupação do solo urbano'. É a base para a criação do Plano Diretor e do Código de Obras Municipal.</p>
-      </div>
-    
-      <div class="gabarito-item">
-        <span class="gabarito-letra">A</span>
-        <strong>Questão 192 (D. Constitucional - Lei Orgânica Municipal e Quórum de Aprovação (Art. 29)):</strong>
-        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 29, caput da CF/88: 'O Município reger-se-á por lei orgânica, votada em dois turnos, com o interstício mínimo de dez dias, e aprovada por dois terços dos membros da Câmara Municipal, que a promulgará'. O Prefeito NÃO sanciona nem veta a Lei Orgânica; ela é PROMULGADA diretamente pela Mesa da Câmara!</p>
-      </div>
-    
-      <div class="gabarito-item">
-        <span class="gabarito-letra">A</span>
-        <strong>Questão 193 (D. Constitucional - Limites de Subsídio dos Vereadores (Art. 29, VI)):</strong>
-        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 29, VI, 'a' da CF/88: em municípios de até 10.000 habitantes, o subsídio máximo do vereador é 20% do subsídio do Deputado Estadual. A escala sobe: 20%, 30%, 40%, 50%, 60% até 75% em municípios com mais de 500.000 habitantes.</p>
-      </div>
-    
-      <div class="gabarito-item">
-        <span class="gabarito-letra">A</span>
-        <strong>Questão 194 (D. Constitucional - Limite de Gasto com Folha de Pagamento da Câmara (Art. 29-A, § 1º)):</strong>
-        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 29-A, § 1º da CF/88: 'A Câmara Municipal não gastará mais de setenta por cento de sua receita com folha de pagamento, incluído o gasto com o subsídio de seus Vereadores'. O descumprimento desse limite constitui crime de responsabilidade do Presidente da Câmara (Art. 29-A, § 3º).</p>
-      </div>
-    
-      <div class="gabarito-item">
-        <span class="gabarito-letra">A</span>
-        <strong>Questão 195 (D. Constitucional - Fiscalização Contábil e Tribunal de Contas (Art. 31)):</strong>
-        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 31, §§ 1º e 2º da CF/88: O controle externo é auxiliado pelo TCE. O parecer prévio do TCE sobre as contas anuais do Prefeito só pode ser rejeitado por decisão qualificada de DOIS TERÇOS (2/3) dos membros da Câmara Municipal.</p>
-      </div>
-    
-      <div class="gabarito-item">
-        <span class="gabarito-letra">A</span>
-        <strong>Questão 196 (D. Constitucional - Vedação de Novos Tribunais de Contas Municipais (Art. 31, § 4º)):</strong>
-        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 31, § 4º da CF/88: 'É vedada a criação de Tribunais, Conselhos ou órgãos de Contas Municipais'. Apenas os tribunais municipais já existentes antes de 1988 (como os dos municípios de São Paulo e Rio de Janeiro) foram mantidos; é proibido criar novos.</p>
-      </div>
-    
-      <div class="gabarito-item">
-        <span class="gabarito-letra">A</span>
-        <strong>Questão 197 (D. Constitucional - Contas Municipais à Disposição dos Contribuintes (Art. 31, § 3º)):</strong>
-        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 31, § 3º da CF/88: 'As contas dos Municípios ficarão, no decorrer de sessenta dias, anualmente, à disposição de qualquer contribuinte, para exame e apreciação, o qual poderá questionar-lhes a legitimidade, nos termos da lei'.</p>
-      </div>
-    
-      <div class="gabarito-item">
-        <span class="gabarito-letra">A</span>
-        <strong>Questão 198 (D. Constitucional - Bens da União vs Bens dos Estados (Arts. 20 e 26)):</strong>
-        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 26, I da CF/88. As águas que nascem e correm exclusivamente dentro do território de um único estado são bens do Estado. Rios que atravessam mais de um estado ou fazem fronteira com outro país (Art. 20, III), potenciais de energia hidráulica (Art. 20, VIII) e terras de fronteira (Art. 20, II) pertencem à UNIÃO.</p>
-      </div>
-    
-      <div class="gabarito-item">
-        <span class="gabarito-letra">A</span>
-        <strong>Questão 199 (D. Constitucional - Intervenção do Estado no Município (Art. 35 da CF/88)):</strong>
-        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 35 da CF/88: O Estado só pode intervir no Município se: I - deixar de pagar dívida fundada por 2 anos consecutivos; II - não prestar contas devidas na lei; III - não aplicar o mínimo constitucional em saúde e educação; IV - o TJ prover representação para assegurar princípios ou prover execução de lei/ordem judicial.</p>
-      </div>
-    
-      <div class="gabarito-item">
-        <span class="gabarito-letra">A</span>
-        <strong>Questão 200 (D. Constitucional - Intervenção Federal em Municípios localizados em Estado):</strong>
-        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Regra do Art. 35 e Art. 36 da CF: O Estado é quem intervém em seus Municípios. A União só intervém diretamente em Municípios localizados em TERRITÓRIOS FEDERAIS (Art. 35, caput).</p>
-      </div>
-    
-      <div class="gabarito-item">
-        <span class="gabarito-letra">A</span>
-        <strong>Questão 201 (Língua Portuguesa - Derivação Parassintética vs Prefixal e Sufixal):</strong>
-        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Em 'a-noit-ecer', o prefixo 'a-' e o sufixo '-ecer' foram anexados simultaneamente ao radical 'noit-'. Se retirarmos o prefixo, não existe a palavra 'noitecer'; se retirarmos o sufixo, não existe 'anoite'. Já em 'infelizmente' (B) e 'deslealdade' (C), os afixos são independentes ('infeliz' e 'felizmente' existem no idioma, configurando derivação prefixal e sufixal).</p>
-      </div>
-    
-      <div class="gabarito-item">
-        <span class="gabarito-letra">A</span>
-        <strong>Questão 202 (Língua Portuguesa - Derivação Regressiva (Deverbal)):</strong>
-        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. 'O debate' é substantivo abstrato que indica ação, formado pela regressão do verbo 'debater' (perda da desinência infinitiva -r e fixação da vogal -e). Em (B), 'pescador' é derivação sufixal (-dor); em (C), 'lealdade' é derivação sufixal (-dade); em (D), 'antebraço' é derivação prefixal (ante-).</p>
-      </div>
-    
-      <div class="gabarito-item">
-        <span class="gabarito-letra">A</span>
-        <strong>Questão 203 (Língua Portuguesa - Derivação Imprópria (Conversão)):</strong>
-        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. O vocábulo 'sim' é originalmente um advérbio de afirmação. Precedido pelo artigo definido 'o' ('O sim dos parlamentares'), foi substantivado (passou a funcionar como substantivo comum), configurando típico caso de derivação imprópria ou conversão.</p>
-      </div>
-    
-      <div class="gabarito-item">
-        <span class="gabarito-letra">A</span>
-        <strong>Questão 204 (Língua Portuguesa - Composição por Justaposição vs Aglutinação):</strong>
-        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Justaposição une palavras sem perda fonética de seus elementos (passa + tempo = passatempo; gira + sol = girassol; embora dobre o 's' para manter o som, não há supressão fonética). Na aglutinação, há perda/fusão fonética (plano + alto = planalto; vinho + acre = vinagre).</p>
-      </div>
-    
-      <div class="gabarito-item">
-        <span class="gabarito-letra">A</span>
-        <strong>Questão 205 (Língua Portuguesa - Composição por Aglutinação):</strong>
-        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Em 'planalto' (plano + alto) e 'vinagre' (vinho + acre), houve alteração fonética e perda de elementos mórficos originais, caracterizando aglutinação. Todas as outras opções trazem termos compostos por justaposição.</p>
+        <div>
+          <strong>Questão 188 (D. Constitucional • Normas Gerais vs Suplementares no Art. 24):</strong>
+          <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 24, § 4º da CF/88: 'A superveniência de lei federal sobre normas gerais suspende a eficácia da lei estadual, no que lhe for contrário'. Pegadinha favorita de concurso: a lei federal NÃO revoga a lei estadual, apenas SUSPENDE SUA EFICÁCIA naquilo que for incompatível.</p>
+        </div>
       </div>
     
       <div class="gabarito-item">
         <span class="gabarito-letra">D</span>
-        <strong>Questão 206 (Língua Portuguesa - Identificação do Radical):</strong>
-        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. 'Cabelo' tem raiz etimológica ligada a pelos capilares (latim 'capillus'). Já 'cabeceira', 'cabeçalho' e 'cabeçudo' derivam do radical de 'cabeça' (latim 'capitia'). As opções A, B e C reúnem palavras legitimamente cognatas com o mesmo radical compartilhado.</p>
+        <div>
+          <strong>Questão 189 (D. Constitucional • Competência Legislativa do Município (Art. 30, I e II)):</strong>
+          <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Art. 30 da CF/88: 'Compete aos Municípios: I - legislar sobre assuntos de interesse local; II - suplementar a legislação federal e a estadual no que couber'. É o núcleo da autonomia legislativa do Município de Meruoca.</p>
+        </div>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">C</span>
+        <div>
+          <strong>Questão 190 (D. Constitucional • Competência Municipal: Serviços Públicos e Transporte (Art. 30, V)):</strong>
+          <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Art. 30, V da CF/88: 'organizar e prestar, diretamente ou sob regime de concessão ou permissão, os serviços públicos de interesse local, incluído o de transporte coletivo, que tem caráter essencial'.</p>
+        </div>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">D</span>
+        <div>
+          <strong>Questão 191 (D. Constitucional • Competência Municipal: Solo Urbano e Plano Diretor (Art. 30, VIII)):</strong>
+          <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Art. 30, VIII da CF/88: 'promover, no que couber, adequado ordenamento territorial, mediante planejamento e controle do uso, do parcelamento e da ocupação do solo urbano'. É a base para a criação do Plano Diretor e do Código de Obras Municipal.</p>
+        </div>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">C</span>
+        <div>
+          <strong>Questão 192 (D. Constitucional • Lei Orgânica Municipal e Quórum de Aprovação (Art. 29)):</strong>
+          <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Art. 29, caput da CF/88: 'O Município reger-se-á por lei orgânica, votada em dois turnos, com o interstício mínimo de dez dias, e aprovada por dois terços dos membros da Câmara Municipal, que a promulgará'. O Prefeito NÃO sanciona nem veta a Lei Orgânica; ela é PROMULGADA diretamente pela Mesa da Câmara!</p>
+        </div>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">D</span>
+        <div>
+          <strong>Questão 193 (D. Constitucional • Limites de Subsídio dos Vereadores (Art. 29, VI)):</strong>
+          <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Art. 29, VI, 'a' da CF/88: em municípios de até 10.000 habitantes, o subsídio máximo do vereador é 20% do subsídio do Deputado Estadual. A escala sobe: 20%, 30%, 40%, 50%, 60% até 75% em municípios com mais de 500.000 habitantes.</p>
+        </div>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">D</span>
+        <div>
+          <strong>Questão 194 (D. Constitucional • Limite de Gasto com Folha de Pagamento da Câmara (Art. 29-A, § 1º)):</strong>
+          <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Art. 29-A, § 1º da CF/88: 'A Câmara Municipal não gastará mais de setenta por cento de sua receita com folha de pagamento, incluído o gasto com o subsídio de seus Vereadores'. O descumprimento desse limite constitui crime de responsabilidade do Presidente da Câmara (Art. 29-A, § 3º).</p>
+        </div>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">B</span>
+        <div>
+          <strong>Questão 195 (D. Constitucional • Fiscalização Contábil e Tribunal de Contas (Art. 31)):</strong>
+          <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Art. 31, §§ 1º e 2º da CF/88: O controle externo é auxiliado pelo TCE. O parecer prévio do TCE sobre as contas anuais do Prefeito só pode ser rejeitado por decisão qualificada de DOIS TERÇOS (2/3) dos membros da Câmara Municipal.</p>
+        </div>
       </div>
     
       <div class="gabarito-item">
         <span class="gabarito-letra">A</span>
-        <strong>Questão 207 (Língua Portuguesa - Desinências Nominais de Gênero e Número):</strong>
-        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Na estrutura 'MENIN-A-S': 'menin-' é o radical; '-a-' é a desinência nominal de gênero feminino; '-s' é a desinência nominal de número plural.</p>
+        <div>
+          <strong>Questão 196 (D. Constitucional • Vedação de Novos Tribunais de Contas Municipais (Art. 31, § 4º)):</strong>
+          <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 31, § 4º da CF/88: 'É vedada a criação de Tribunais, Conselhos ou órgãos de Contas Municipais'. Apenas os tribunais municipais já existentes antes de 1988 (como os dos municípios de São Paulo e Rio de Janeiro) foram mantidos; é proibido criar novos.</p>
+        </div>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">B</span>
+        <div>
+          <strong>Questão 197 (D. Constitucional • Contas Municipais à Disposição dos Contribuintes (Art. 31, § 3º)):</strong>
+          <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Art. 31, § 3º da CF/88: 'As contas dos Municípios ficarão, no decorrer de sessenta dias, anualmente, à disposição de qualquer contribuinte, para exame e apreciação, o qual poderá questionar-lhes a legitimidade, nos termos da lei'.</p>
+        </div>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">C</span>
+        <div>
+          <strong>Questão 198 (D. Constitucional • Bens da União vs Bens dos Estados (Arts. 20 e 26)):</strong>
+          <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Art. 26, I da CF/88. As águas que nascem e correm exclusivamente dentro do território de um único estado são bens do Estado. Rios que atravessam mais de um estado ou fazem fronteira com outro país (Art. 20, III), potenciais de energia hidráulica (Art. 20, VIII) e terras de fronteira (Art. 20, II) pertencem à UNIÃO.</p>
+        </div>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">D</span>
+        <div>
+          <strong>Questão 199 (D. Constitucional • Intervenção do Estado no Município (Art. 35 da CF/88)):</strong>
+          <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Art. 35 da CF/88: O Estado só pode intervir no Município se: I - deixar de pagar dívida fundada por 2 anos consecutivos; II - não prestar contas devidas na lei; III - não aplicar o mínimo constitucional em saúde e educação; IV - o TJ prover representação para assegurar princípios ou prover execução de lei/ordem judicial.</p>
+        </div>
       </div>
     
       <div class="gabarito-item">
         <span class="gabarito-letra">A</span>
-        <strong>Questão 208 (Língua Portuguesa - Vogal Temática Verbal e Tema):</strong>
-        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Na morfologia verbal: Radical + Vogal Temática = TEMA. Exemplo: no verbo 'cantar', 'cant-' é o radical e '-a-' é a vogal temática da 1ª conjugação. O tema é 'canta-'.</p>
+        <div>
+          <strong>Questão 200 (D. Constitucional • Intervenção Federal em Municípios localizados em Estado):</strong>
+          <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Regra do Art. 35 e Art. 36 da CF: O Estado é quem intervém em seus Municípios. A União só intervém diretamente em Municípios localizados em TERRITÓRIOS FEDERAIS (Art. 35, caput).</p>
+        </div>
       </div>
     
       <div class="gabarito-item">
         <span class="gabarito-letra">A</span>
-        <strong>Questão 209 (Língua Portuguesa - Vogais e Consoantes de Ligação):</strong>
-        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Em 'café' + '-eira', a junção direta geraria o cacófato 'cafeeira'. Inseriu-se a consoante eufônica '-t-' (cafeteira) exclusivamente para fluidez fonética. Outros exemplos: pau-l-ada, cha-l-eira.</p>
+        <div>
+          <strong>Questão 201 (Língua Portuguesa • Derivação Parassintética vs Prefixal e Sufixal):</strong>
+          <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Em 'a-noit-ecer', o prefixo 'a-' e o sufixo '-ecer' foram anexados simultaneamente ao radical 'noit-'. Se retirarmos o prefixo, não existe a palavra 'noitecer'; se retirarmos o sufixo, não existe 'anoite'. Já em 'infelizmente' (B) e 'deslealdade' (C), os afixos são independentes ('infeliz' e 'felizmente' existem no idioma, configurando derivação prefixal e sufixal).</p>
+        </div>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">D</span>
+        <div>
+          <strong>Questão 202 (Língua Portuguesa • Derivação Regressiva (Deverbal)):</strong>
+          <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. 'O debate' é substantivo abstrato que indica ação, formado pela regressão do verbo 'debater' (perda da desinência infinitiva -r e fixação da vogal -e). Em (B), 'pescador' é derivação sufixal (-dor); em (C), 'lealdade' é derivação sufixal (-dade); em (D), 'antebraço' é derivação prefixal (ante-).</p>
+        </div>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">D</span>
+        <div>
+          <strong>Questão 203 (Língua Portuguesa • Derivação Imprópria (Conversão)):</strong>
+          <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. O vocábulo 'sim' é originalmente um advérbio de afirmação. Precedido pelo artigo definido 'o' ('O sim dos parlamentares'), foi substantivado (passou a funcionar como substantivo comum), configurando típico caso de derivação imprópria ou conversão.</p>
+        </div>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">C</span>
+        <div>
+          <strong>Questão 204 (Língua Portuguesa • Composição por Justaposição vs Aglutinação):</strong>
+          <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Justaposição une palavras sem perda fonética de seus elementos (passa + tempo = passatempo; gira + sol = girassol; embora dobre o 's' para manter o som, não há supressão fonética). Na aglutinação, há perda/fusão fonética (plano + alto = planalto; vinho + acre = vinagre).</p>
+        </div>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">C</span>
+        <div>
+          <strong>Questão 205 (Língua Portuguesa • Composição por Aglutinação):</strong>
+          <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Em 'planalto' (plano + alto) e 'vinagre' (vinho + acre), houve alteração fonética e perda de elementos mórficos originais, caracterizando aglutinação. Todas as outras opções trazem termos compostos por justaposição.</p>
+        </div>
       </div>
     
       <div class="gabarito-item">
         <span class="gabarito-letra">A</span>
-        <strong>Questão 210 (Língua Portuguesa - Hibridismo):</strong>
-        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Hibridismo é a formação de uma palavra com radicais ou afixos de línguas distintas. Exemplos clássicos: Televisão (tele = grego, visão = latim), Burocracia (bureau = francês, cracia = grego), Automóvel (auto = grego, móvel = latim).</p>
+        <div>
+          <strong>Questão 206 (Língua Portuguesa • Identificação do Radical):</strong>
+          <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. 'Cabelo' tem raiz etimológica ligada a pelos capilares (latim 'capillus'). Já 'cabeceira', 'cabeçalho' e 'cabeçudo' derivam do radical de 'cabeça' (latim 'capitia'). As opções A, B e C reúnem palavras legitimamente cognatas com o mesmo radical compartilhado.</p>
+        </div>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">B</span>
+        <div>
+          <strong>Questão 207 (Língua Portuguesa • Desinências Nominais de Gênero e Número):</strong>
+          <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Na estrutura 'MENIN-A-S': 'menin-' é o radical; '-a-' é a desinência nominal de gênero feminino; '-s' é a desinência nominal de número plural.</p>
+        </div>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">D</span>
+        <div>
+          <strong>Questão 208 (Língua Portuguesa • Vogal Temática Verbal e Tema):</strong>
+          <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Na morfologia verbal: Radical + Vogal Temática = TEMA. Exemplo: no verbo 'cantar', 'cant-' é o radical e '-a-' é a vogal temática da 1ª conjugação. O tema é 'canta-'.</p>
+        </div>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">C</span>
+        <div>
+          <strong>Questão 209 (Língua Portuguesa • Vogais e Consoantes de Ligação):</strong>
+          <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Em 'café' + '-eira', a junção direta geraria o cacófato 'cafeeira'. Inseriu-se a consoante eufônica '-t-' (cafeteira) exclusivamente para fluidez fonética. Outros exemplos: pau-l-ada, cha-l-eira.</p>
+        </div>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">B</span>
+        <div>
+          <strong>Questão 210 (Língua Portuguesa • Hibridismo):</strong>
+          <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Hibridismo é a formação de uma palavra com radicais ou afixos de línguas distintas. Exemplos clássicos: Televisão (tele = grego, visão = latim), Burocracia (bureau = francês, cracia = grego), Automóvel (auto = grego, móvel = latim).</p>
+        </div>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">D</span>
+        <div>
+          <strong>Questão 211 (Língua Portuguesa • Onomatopeia):</strong>
+          <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. A onomatopeia consiste na criação de vocábulos que buscam imitar sons ou ruídos reais: tic-tac (relógio), zunzum (zumbido), miau (gato), coaxar (sapo), pingue-pongue.</p>
+        </div>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">B</span>
+        <div>
+          <strong>Questão 212 (Língua Portuguesa • Derivação Prefixal com Prefixo Negativo):</strong>
+          <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. 'Inativo' = não ativo (in- negativo latino); 'Atípico' = não típico (a- de privação grego). Em (B), 'importar' traz o 'in-' com sentido de movimento para dentro; em (C), 'pro-' denota para a frente; em (D), 'sub-' significa debaixo.</p>
+        </div>
       </div>
     
       <div class="gabarito-item">
         <span class="gabarito-letra">A</span>
-        <strong>Questão 211 (Língua Portuguesa - Onomatopeia):</strong>
-        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. A onomatopeia consiste na criação de vocábulos que buscam imitar sons ou ruídos reais: tic-tac (relógio), zunzum (zumbido), miau (gato), coaxar (sapo), pingue-pongue.</p>
+        <div>
+          <strong>Questão 213 (Língua Portuguesa • Sufixos Formadores de Substantivos Abstratos):</strong>
+          <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. O sufixo '-ção' (organiza + ção, promulga + ção, delibera + ção) é um sufixo nominalizador deverbal que exprime o ato, ação ou o resultado da ação do verbo.</p>
+        </div>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">C</span>
+        <div>
+          <strong>Questão 214 (Língua Portuguesa • Siglas e Acrônimos):</strong>
+          <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Acrônimo é a sigla que se pronuncia como uma palavra contínua e natural da língua (ex: Embrapa, Mercosul, Petrobras, Unesco). Diferencia-se das siglas puras que exigem soletração letra a letra (ex: CPF, OAB, IPTU).</p>
+        </div>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">C</span>
+        <div>
+          <strong>Questão 215 (Língua Portuguesa • Neologismo):</strong>
+          <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Neologismo é a criação de palavras novas ou a atribuição de novos significados a termos preexistentes na língua, refletindo inovações da sociedade e tecnologia.</p>
+        </div>
       </div>
     
       <div class="gabarito-item">
         <span class="gabarito-letra">A</span>
-        <strong>Questão 212 (Língua Portuguesa - Derivação Prefixal com Prefixo Negativo):</strong>
-        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. 'Inativo' = não ativo (in- negativo latino); 'Atípico' = não típico (a- de privação grego). Em (B), 'importar' traz o 'in-' com sentido de movimento para dentro; em (C), 'pro-' denota para a frente; em (D), 'sub-' significa debaixo.</p>
+        <div>
+          <strong>Questão 216 (Língua Portuguesa • Palavra Primitiva vs Derivada):</strong>
+          <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. 'Lei' é vocábulo primitivo (não se origina de outra palavra na língua portuguesa). 'Legalizar' é derivada de 'legal' (sua vez derivada de lei) por sufixação (-izar).</p>
+        </div>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">D</span>
+        <div>
+          <strong>Questão 217 (Língua Portuguesa • Abreviatura vs Sigla vs Redução (Abreviação Vocabular)):</strong>
+          <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Abreviação vocabular (ou redução) é a redução de uma palavra longa mantendo o significado original: foto (fotografia), moto (motocicleta), fone (telefone), quilo (quilograma), cine (cinema).</p>
+        </div>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">B</span>
+        <div>
+          <strong>Questão 218 (Língua Portuguesa • Desinência Modo-Temporal Verbal):</strong>
+          <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Em 'estud-á-va-mos': 'estud-' é o radical; '-a-' é a vogal temática; 'estuda-' é o tema; '-va-' é a desinência modo-temporal (DMT) do pretérito imperfeito do indicativo; '-mos' é a desinência número-pessoal (DNP) de 1ª pessoa do plural.</p>
+        </div>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">C</span>
+        <div>
+          <strong>Questão 219 (Língua Portuguesa • Análise Estrutural Completa de Vocábulo):</strong>
+          <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. 'Desalinhamento' estrutura-se por: Prefixo 'des-' (sentido de negação/inversão) + Radical 'alinh-' (de linha) + Vogal temática '-a-' + Sufixo nominalizador '-mento' (formador de substantivo abstrato que indica ação ou resultado).</p>
+        </div>
       </div>
     
       <div class="gabarito-item">
         <span class="gabarito-letra">A</span>
-        <strong>Questão 213 (Língua Portuguesa - Sufixos Formadores de Substantivos Abstratos):</strong>
-        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. O sufixo '-ção' (organiza + ção, promulga + ção, delibera + ção) é um sufixo nominalizador deverbal que exprime o ato, ação ou o resultado da ação do verbo.</p>
-      </div>
-    
-      <div class="gabarito-item">
-        <span class="gabarito-letra">A</span>
-        <strong>Questão 214 (Língua Portuguesa - Siglas e Acrônimos):</strong>
-        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Acrônimo é a sigla que se pronuncia como uma palavra contínua e natural da língua (ex: Embrapa, Mercosul, Petrobras, Unesco). Diferencia-se das siglas puras que exigem soletração letra a letra (ex: CPF, OAB, IPTU).</p>
-      </div>
-    
-      <div class="gabarito-item">
-        <span class="gabarito-letra">A</span>
-        <strong>Questão 215 (Língua Portuguesa - Neologismo):</strong>
-        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Neologismo é a criação de palavras novas ou a atribuição de novos significados a termos preexistentes na língua, refletindo inovações da sociedade e tecnologia.</p>
-      </div>
-    
-      <div class="gabarito-item">
-        <span class="gabarito-letra">A</span>
-        <strong>Questão 216 (Língua Portuguesa - Palavra Primitiva vs Derivada):</strong>
-        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. 'Lei' é vocábulo primitivo (não se origina de outra palavra na língua portuguesa). 'Legalizar' é derivada de 'legal' (sua vez derivada de lei) por sufixação (-izar).</p>
-      </div>
-    
-      <div class="gabarito-item">
-        <span class="gabarito-letra">A</span>
-        <strong>Questão 217 (Língua Portuguesa - Abreviatura vs Sigla vs Redução (Abreviação Vocabular)):</strong>
-        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Abreviação vocabular (ou redução) é a redução de uma palavra longa mantendo o significado original: foto (fotografia), moto (motocicleta), fone (telefone), quilo (quilograma), cine (cinema).</p>
-      </div>
-    
-      <div class="gabarito-item">
-        <span class="gabarito-letra">A</span>
-        <strong>Questão 218 (Língua Portuguesa - Desinência Modo-Temporal Verbal):</strong>
-        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Em 'estud-á-va-mos': 'estud-' é o radical; '-a-' é a vogal temática; 'estuda-' é o tema; '-va-' é a desinência modo-temporal (DMT) do pretérito imperfeito do indicativo; '-mos' é a desinência número-pessoal (DNP) de 1ª pessoa do plural.</p>
-      </div>
-    
-      <div class="gabarito-item">
-        <span class="gabarito-letra">A</span>
-        <strong>Questão 219 (Língua Portuguesa - Análise Estrutural Completa de Vocábulo):</strong>
-        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. 'Desalinhamento' estrutura-se por: Prefixo 'des-' (sentido de negação/inversão) + Radical 'alinh-' (de linha) + Vogal temática '-a-' + Sufixo nominalizador '-mento' (formador de substantivo abstrato que indica ação ou resultado).</p>
-      </div>
-    
-      <div class="gabarito-item">
-        <span class="gabarito-letra">A</span>
-        <strong>Questão 220 (Língua Portuguesa - Identificação Geral dos Processos em Concurso):</strong>
-        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Envergonhar: en- + vergonh- + -ar (parassíntese: 3); Guarda-noturno: guarda + noturno sem perda (justaposição: 1); O olhar triste: 'olhar' substantivado pelo artigo 'o' (derivação imprópria: 4); Pernalta: perna + alta com perda da vogal 'a' (aglutinação: 2). Sequência: 3, 1, 4, 2.</p>
+        <div>
+          <strong>Questão 220 (Língua Portuguesa • Identificação Geral dos Processos em Concurso):</strong>
+          <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Envergonhar: en- + vergonh- + -ar (parassíntese: 3); Guarda-noturno: guarda + noturno sem perda (justaposição: 1); O olhar triste: 'olhar' substantivado pelo artigo 'o' (derivação imprópria: 4); Pernalta: perna + alta com perda da vogal 'a' (aglutinação: 2). Sequência: 3, 1, 4, 2.</p>
+        </div>
       </div>
     
     </div>
 
   </div>
-
 </body>
 </html>
