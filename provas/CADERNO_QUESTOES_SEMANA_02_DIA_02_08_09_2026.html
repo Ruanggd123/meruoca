@@ -1,0 +1,2050 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>CADERNO OFICIAL DE QUESTÕES — SEMANA 2 / DIA 2 (08/09/2026) | INBRASP</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @page {
+      size: A4;
+      margin: 15mm 18mm;
+    }
+    :root {
+      --primary: #1e3a8a;
+      --primary-dark: #0f172a;
+      --accent: #dc2626;
+      --border: #cbd5e1;
+      --bg: #ffffff;
+      --text: #0f172a;
+      --text-muted: #475569;
+    }
+    body {
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+      color: var(--text);
+      background: #f8fafc;
+      margin: 0;
+      padding: 24px;
+      font-size: 10pt;
+      line-height: 1.45;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      padding: 36px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    }
+    .header-box {
+      border: 2px solid var(--primary);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f8fafc;
+    }
+    .header-titles h1 {
+      margin: 0 0 4px 0;
+      font-size: 1.35rem;
+      color: var(--primary);
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .header-titles h2 {
+      margin: 0 0 4px 0;
+      font-size: 1rem;
+      color: var(--text);
+      font-weight: 700;
+    }
+    .header-titles p {
+      margin: 0;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .badge-banca {
+      background: #fee2e2;
+      color: #991b1b;
+      font-weight: 800;
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      border: 1px solid #fecaca;
+    }
+    .no-print {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .btn-action {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+    }
+    .btn-action:hover {
+      background: #1d4ed8;
+    }
+    .question-block {
+      margin-bottom: 22px;
+      padding-bottom: 16px;
+      border-bottom: 1px dashed var(--border);
+      page-break-inside: avoid;
+    }
+    .question-meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+    .q-badge {
+      background: var(--primary);
+      color: white;
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 4px;
+      text-transform: uppercase;
+    }
+    .q-topic {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--text-muted);
+    }
+    .question-text {
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: #1e293b;
+      line-height: 1.5;
+    }
+    .options-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .option-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      color: #334155;
+    }
+    .option-letter {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      border: 1.5px solid #64748b;
+      font-size: 0.75rem;
+      font-weight: 800;
+      flex-shrink: 0;
+      color: #1e293b;
+      background: #f1f5f9;
+    }
+    .optical-sheet {
+      margin-top: 36px;
+      padding: 24px;
+      border: 2px solid #0f172a;
+      border-radius: 8px;
+      background: #fafafa;
+      page-break-before: always;
+    }
+    .optical-header {
+      text-align: center;
+      border-bottom: 2px solid #0f172a;
+      padding-bottom: 12px;
+      margin-bottom: 16px;
+    }
+    .optical-header h3 {
+      margin: 0 0 4px 0;
+      font-size: 1.15rem;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .bubble-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px 16px;
+    }
+    .bubble-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.82rem;
+    }
+    .bubble-qnum {
+      font-weight: 800;
+      width: 24px;
+      color: #0f172a;
+    }
+    .bubble-options {
+      display: flex;
+      gap: 6px;
+    }
+    .bubble-opt {
+      width: 19px;
+      height: 19px;
+      border-radius: 50%;
+      border: 1.5px solid #0f172a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      font-weight: bold;
+    }
+    .gabarito-section {
+      margin-top: 36px;
+      padding-top: 24px;
+      border-top: 2px solid var(--border);
+      page-break-before: always;
+    }
+    .gabarito-item {
+      display: flex;
+      gap: 12px;
+      padding: 10px 12px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .gabarito-letra {
+      background: #15803d;
+      color: white;
+      font-weight: 800;
+      font-size: 1rem;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    @media print {
+      body { background: white; padding: 0; }
+      .container { max-width: 100%; box-shadow: none; padding: 0; }
+      .no-print { display: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="no-print">
+      <button class="btn-action" onclick="window.print()"><i class="fas fa-print"></i> Imprimir Caderno (PDF A4)</button>
+      <a href="../index.html" class="btn-action" style="background: #64748b;"><i class="fas fa-arrow-left"></i> Voltar ao Painel</a>
+    </div>
+
+    <div class="header-box">
+      <div class="header-titles">
+        <span style="font-size: 0.75rem; font-weight: 800; text-transform: uppercase; color: #dc2626;">Caderno de Treino Diário Oficial</span>
+        <h1>Câmara Municipal de Meruoca / CE</h1>
+        <h2>Concurso Público nº 001/2026 — Cargo: Técnico Legislativo</h2>
+        <p><strong>Semana 2 • Dia 2 (08/09/2026):</strong> Técnico Legislativo: O Poder Legislativo (20Q) • Português: Morfologia & Verbos (20Q)</p>
+      </div>
+      <div style="text-align: right;">
+        <div class="badge-banca">Banca INBRASP</div>
+        <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 6px;">40 Questões (A, B, C, D)</div>
+      </div>
+    </div>
+
+    <!-- QUESTÕES -->
+    <div>
+      
+  <div class="question-block">
+    <div class="question-meta">
+      <span class="q-badge">QUESTÃO 221</span>
+      <span class="q-topic">Técnico Legislativo • Funções Típicas do Poder Legislativo</span>
+    </div>
+    <div class="question-text">O Poder Legislativo Municipal, exercido pela Câmara de Vereadores, possui funções essenciais atribuídas diretamente pelo ordenamento constitucional. São consideradas funções TÍPICAS do Poder Legislativo Municipal:</div>
+    <ul class="options-list">
+      <li class="option-item">
+        <span class="option-letter">A</span>
+        <span>Administrar os serviços públicos de saúde e saneamento básico em colaboração direta com os secretários municipais.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">B</span>
+        <span>Julgar litígios judiciais entre servidores públicos e a prefeitura, substituindo a competência da vara cível da comarca.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">C</span>
+        <span>Promover a desapropriação compulsória de imóveis urbanos que não cumpram a função social da propriedade sem participação do Executivo.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">D</span>
+        <span>Legislar sobre assuntos de interesse local e exercer a fiscalização contábil, financeira, orçamentária e patrimonial da administração pública local.</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="question-block">
+    <div class="question-meta">
+      <span class="q-badge">QUESTÃO 222</span>
+      <span class="q-topic">Técnico Legislativo • Funções Atípicas da Câmara Municipal</span>
+    </div>
+    <div class="question-text">A teoria da separação de poderes no Brasil admite o exercício de funções atípicas por todos os Poderes da República. No âmbito da Câmara Municipal, constitui exemplo legítimo de FUNÇÃO ATÍPICA DE NATUREZA JULGADORA:</div>
+    <ul class="options-list">
+      <li class="option-item">
+        <span class="option-letter">A</span>
+        <span>Processar e julgar mandados de segurança impetrados por cidadãos contra atos do Presidente da Casa Legislativa.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">B</span>
+        <span>Condenar criminalmente servidores municipais à pena restritiva de liberdade por crimes de peculato e corrupção.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">C</span>
+        <span>Julgar o Prefeito, o Vice-Prefeito e os próprios Vereadores por infrações político-administrativas tipificadas em lei.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">D</span>
+        <span>Julgar as ações populares de nulidade de contratos administrativos de licitação firmados pelo Poder Executivo.</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="question-block">
+    <div class="question-meta">
+      <span class="q-badge">QUESTÃO 223</span>
+      <span class="q-topic">Técnico Legislativo • Imunidade Material dos Vereadores (Art. 29, VIII CF)</span>
+    </div>
+    <div class="question-text">Nos termos do Art. 29, VIII da Constituição Federal de 1988 e das leis orgânicas municipais, os Vereadores gozam de inviolabilidade (imunidade material) por suas opiniões, palavras e votos:</div>
+    <ul class="options-list">
+      <li class="option-item">
+        <span class="option-letter">A</span>
+        <span>No exercício do mandato e na circunscrição do Município.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">B</span>
+        <span>Em todo o território nacional, independentemente de conexão com o exercício do mandato parlamentar.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">C</span>
+        <span>Apenas dentro do recinto físico do plenário e das comissões temáticas da Câmara de Vereadores.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">D</span>
+        <span>Exclusivamente durante os períodos de sessões extraordinárias convocadas com quórum qualificado de dois terços.</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="question-block">
+    <div class="question-meta">
+      <span class="q-badge">QUESTÃO 224</span>
+      <span class="q-topic">Técnico Legislativo • Mesa Diretora e Iniciativa Privativa de Leis</span>
+    </div>
+    <div class="question-text">A Mesa Diretora é o órgão colegiado responsável pela direção dos trabalhos legislativos e dos serviços administrativos da Câmara. É matéria de INICIATIVA PRIVATIVA da Mesa Diretora da Câmara Municipal propor projeto de lei que disponha sobre:</div>
+    <ul class="options-list">
+      <li class="option-item">
+        <span class="option-letter">A</span>
+        <span>A organização administrativa da Câmara, criação e extinção de seus cargos e a fixação da respectiva remuneração.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">B</span>
+        <span>O Plano Plurianual (PPA), as Diretrizes Orçamentárias (LDO) e o Orçamento Anual (LOA) do Município.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">C</span>
+        <span>O Plano Diretor de Desenvolvimento Urbano e o zoneamento territorial municipal.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">D</span>
+        <span>A criação de secretarias municipais e atribuições dos órgãos da administração direta do Poder Executivo.</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="question-block">
+    <div class="question-meta">
+      <span class="q-badge">QUESTÃO 225</span>
+      <span class="q-topic">Técnico Legislativo • Atribuições do Presidente da Câmara Municipal</span>
+    </div>
+    <div class="question-text">No desempenho de suas funções regimentais e institucionais, compete privativamente ao Presidente da Câmara Municipal de Vereadores:</div>
+    <ul class="options-list">
+      <li class="option-item">
+        <span class="option-letter">A</span>
+        <span>Sancionar projetos de lei de autoria exclusiva de parlamentares sem encaminhamento prévio ao Prefeito Municipal.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">B</span>
+        <span>Vetar parcialmente projetos de lei aprovados pelo Plenário por motivo de inconstitucionalidade material.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">C</span>
+        <span>Suspender unilateralmente a vigência de decretos do Poder Executivo sem deliberação do Plenário.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">D</span>
+        <span>Representar a Câmara em juízo e fora dele, bem como promulgar leis quando o Prefeito descumprir o prazo legal após a rejeição do veto pelo Plenário.</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="question-block">
+    <div class="question-meta">
+      <span class="q-badge">QUESTÃO 226</span>
+      <span class="q-topic">Técnico Legislativo • Comissões Parlamentares de Inquérito (CPIs)</span>
+    </div>
+    <div class="question-text">De acordo com a Constituição Federal (Art. 58, § 3º) e a legislação parlamentar, as Comissões Parlamentares de Inquérito (CPIs) no âmbito municipal serão criadas mediante requerimento de:</div>
+    <ul class="options-list">
+      <li class="option-item">
+        <span class="option-letter">A</span>
+        <span>Maioria absoluta dos membros da Câmara, para apuração ampla e irrestrita de qualquer ato da gestão municipal sem prazo determinado.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">B</span>
+        <span>Dois terços dos parlamentares presentes, com competência para decretar a indisponibilidade patrimonial e prisão preventiva dos investigados.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">C</span>
+        <span>Metade mais um dos vereadores, dependendo de prévia autorização homologatória do juiz de direito da comarca local.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">D</span>
+        <span>Pelo menos um terço dos membros da Câmara, para apuração de fato determinado e por prazo certo, com poderes de investigação próprios das autoridades judiciais.</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="question-block">
+    <div class="question-meta">
+      <span class="q-badge">QUESTÃO 227</span>
+      <span class="q-topic">Técnico Legislativo • Comissões Permanentes vs Temporárias</span>
+    </div>
+    <div class="question-text">Na estrutura organizacional do Poder Legislativo, as comissões parlamentares classificam-se em permanentes e temporárias. Sobre as COMISSÕES PERMANENTES, assinale a afirmativa correta:</div>
+    <ul class="options-list">
+      <li class="option-item">
+        <span class="option-letter">A</span>
+        <span>São constituídas exclusivamente para representar a Câmara Municipal em eventos protocolares e congressos fora do estado.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">B</span>
+        <span>Subsistem através das legislaturas e têm por objetivo analisar o mérito e a constitucionalidade das proposições afetas à sua respectiva área temática.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">C</span>
+        <span>Extinguem-se automaticamente assim que concluem a emissão de parecer sobre o projeto de lei orçamentária do ano corrente.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">D</span>
+        <span>São compostas exclusivamente pelos líderes partidários da base de apoio formal ao Prefeito Municipal.</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="question-block">
+    <div class="question-meta">
+      <span class="q-badge">QUESTÃO 228</span>
+      <span class="q-topic">Técnico Legislativo • Processo de Cassação por Infração Político-Administrativa</span>
+    </div>
+    <div class="question-text">No processo de cassação do mandato do Prefeito ou de Vereador perante a Câmara Municipal por infrações político-administrativas (Decreto-Lei nº 201/67 e LOM), a deliberação final que decide pela cassação exige o quórum qualificado de:</div>
+    <ul class="options-list">
+      <li class="option-item">
+        <span class="option-letter">A</span>
+        <span>Maioria simples dos vereadores votantes na sessão extraordinária de julgamento.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">B</span>
+        <span>Maioria absoluta dos membros componentes do Poder Legislativo Municipal.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">C</span>
+        <span>Dois terços (2/3) dos membros da Câmara Municipal, assegurados o contraditório e a ampla defesa ao acusado.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">D</span>
+        <span>Unanimidade dos vereadores que compõem a comissão processante destacada para o caso.</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="question-block">
+    <div class="question-meta">
+      <span class="q-badge">QUESTÃO 229</span>
+      <span class="q-topic">Técnico Legislativo • Perda e Extinção do Mandato de Vereador</span>
+    </div>
+    <div class="question-text">Em relação à perda e extinção do mandato parlamentar na Câmara Municipal, a declaração de perda do mandato será feita DE OFÍCIO PELA MESA DIRETORA (sem necessidade de votação do Plenário) quando o Vereador:</div>
+    <ul class="options-list">
+      <li class="option-item">
+        <span class="option-letter">A</span>
+        <span>Proceder de modo incompatível com a dignidade da Câmara ou incidir em quebra comprovada do decoro parlamentar.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">B</span>
+        <span>Deixar de comparecer, em cada sessão legislativa, à terça parte (1/3) das sessões ordinárias da Casa, salvo licença ou missão autorizada.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">C</span>
+        <span>Sofrer acusação formal formulada em CPI ainda sem julgamento do mérito judicial.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">D</span>
+        <span>Votar contra a orientação partidária do seu líder em projeto de lei de diretrizes orçamentárias.</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="question-block">
+    <div class="question-meta">
+      <span class="q-badge">QUESTÃO 230</span>
+      <span class="q-topic">Técnico Legislativo • Quórum Regimental: Maioria Simples vs Absoluta vs Qualificada</span>
+    </div>
+    <div class="question-text">O quórum de deliberação é a quantidade mínima de votos exigida para que a Câmara Municipal aprove legitimamente determinado ato legislativo. Assinale a correta correlação entre a matéria e o seu respectivo quórum constitucional:</div>
+    <ul class="options-list">
+      <li class="option-item">
+        <span class="option-letter">A</span>
+        <span>Aprovação de Emenda à Lei Orgânica Municipal — Exige quórum qualificado de dois terços (2/3) dos membros em dois turnos de votação.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">B</span>
+        <span>Aprovação de Lei Ordinária Municipal — Exige quórum qualificado de três quintos (3/5) de todos os eleitores cadastrados.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">C</span>
+        <span>Rejeição de veto do Prefeito Municipal — Exige maioria simples dos presentes na ordem do dia.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">D</span>
+        <span>Aprovação do Regimento Interno da Câmara — Exige maioria simples dos vereadores presentes na abertura da sessão.</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="question-block">
+    <div class="question-meta">
+      <span class="q-badge">QUESTÃO 231</span>
+      <span class="q-topic">Técnico Legislativo • Iniciativa Legislativa Popular no Município</span>
+    </div>
+    <div class="question-text">A Constituição Federal de 1988 consagrou a iniciativa popular de projetos de lei como expressão da democracia direta e participativa. No âmbito dos Municípios, a iniciativa popular de projetos de lei de interesse específico do município exige a manifestação de:</div>
+    <ul class="options-list">
+      <li class="option-item">
+        <span class="option-letter">A</span>
+        <span>Pelo menos 1% (um por cento) do eleitorado nacional distribuído em pelo menos cinco municípios limítrofes.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">B</span>
+        <span>Pelo menos 10% (dez por cento) dos servidores públicos municipais da administração direta e autárquica.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">C</span>
+        <span>Pelo menos 20% (vinte por cento) dos moradores inscritos no cadastro imobiliário de IPTU da cidade.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">D</span>
+        <span>Pelo menos 5% (cinco por cento) do eleitorado municipal, mediante projeto articulado subscrito pelos cidadãos.</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="question-block">
+    <div class="question-meta">
+      <span class="q-badge">QUESTÃO 232</span>
+      <span class="q-topic">Técnico Legislativo • Fases do Processo Legislativo Municipal</span>
+    </div>
+    <div class="question-text">O rito procedimental pelo qual uma proposição percorre os órgãos da Câmara até transformar-se em lei compõe o processo legislativo. A fase constitutiva do processo legislativo compreende as seguintes etapas em ordem cronológica:</div>
+    <ul class="options-list">
+      <li class="option-item">
+        <span class="option-letter">A</span>
+        <span>Elaboração de minuta no gabinete do vereador e divulgação oficiosa nas redes sociais da Câmara.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">B</span>
+        <span>Homologação liminar pelo Ministério Público Estadual e publicação no Diário da Justiça Eleitoral.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">C</span>
+        <span>Deliberação parlamentar (discussão e votação em Plenário) e deliberação executiva (sanção ou veto do Prefeito).</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">D</span>
+        <span>Parecer vinculante do Tribunal de Justiça Estadual e assinatura do Presidente da República.</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="question-block">
+    <div class="question-meta">
+      <span class="q-badge">QUESTÃO 233</span>
+      <span class="q-topic">Técnico Legislativo • Veto do Prefeito e Quórum de Rejeição</span>
+    </div>
+    <div class="question-text">Recebido o projeto de lei aprovado pela Câmara, o Prefeito Municipal dispõe do prazo de 15 (quinze) dias úteis para sancioná-lo ou vetá-lo. Caso decida pelo VETO, para que a Câmara Municipal REJEITE o veto e mantenha o texto original, é necessária deliberação por:</div>
+    <ul class="options-list">
+      <li class="option-item">
+        <span class="option-letter">A</span>
+        <span>Maioria simples dos vereadores que comparecerem à sessão em que o veto for apreciado.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">B</span>
+        <span>Maioria absoluta dos membros da Câmara Municipal, em escrutínio aberto, dentro do prazo legal de 30 dias.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">C</span>
+        <span>Quórum qualificado obrigatório e unânime de todos os líderes de bancada formalmente constituídos.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">D</span>
+        <span>Três quintos (3/5) dos membros titulares da comissão temática permanente de legislação e justiça.</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="question-block">
+    <div class="question-meta">
+      <span class="q-badge">QUESTÃO 234</span>
+      <span class="q-topic">Técnico Legislativo • Sessões Extraordinárias da Câmara</span>
+    </div>
+    <div class="question-text">A convocação extraordinária da Câmara Municipal é permitida em situações de urgência ou interesse público relevante. Durante uma Sessão Legislativa Extraordinária, a Câmara de Vereadores deliberará:</div>
+    <ul class="options-list">
+      <li class="option-item">
+        <span class="option-letter">A</span>
+        <span>Livremente sobre qualquer projeto pendente de votação ordinária, inclusive moções e homenagens cívicas.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">B</span>
+        <span>Exclusivamente sobre a destituição de membros da Mesa Diretora por voto de censura administrativa.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">C</span>
+        <span>Sobre matérias ordinárias mediante percepção obrigatória de verba pecuniária extraordinária dobrada por sessão.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">D</span>
+        <span>Somente sobre a matéria para a qual foi expressamente convocada, vedado o pagamento de parcela indenizatória em razão da convocação.</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="question-block">
+    <div class="question-meta">
+      <span class="q-badge">QUESTÃO 235</span>
+      <span class="q-topic">Técnico Legislativo • Controle Externo da Câmara e Parecer do TCE</span>
+    </div>
+    <div class="question-text">A fiscalização financeira e orçamentária do Município será exercida pela Câmara Municipal mediante controle externo, auxiliada pelo Tribunal de Contas do Estado. Acerca do parecer prévio emitido pelo Tribunal de Contas, assinale a opção correta:</div>
+    <ul class="options-list">
+      <li class="option-item">
+        <span class="option-letter">A</span>
+        <span>Possui eficácia vinculante automática e imediata, não podendo o Poder Legislativo discordar de suas conclusões técnicas.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">B</span>
+        <span>Tem natureza técnica e opinativa, deixando de prevalecer unicamente por decisão fundamentada de dois terços (2/3) dos membros da Câmara.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">C</span>
+        <span>Pode ser rejeitado livremente pela maioria simples dos vereadores presentes em sessão ordinária única.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">D</span>
+        <span>Depende de homologação prévia por decreto do Chefe do Poder Executivo para produzir efeitos de inelegibilidade.</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="question-block">
+    <div class="question-meta">
+      <span class="q-badge">QUESTÃO 236</span>
+      <span class="q-topic">Técnico Legislativo • Princípio da Simetria Constitucional no Processo Legislativo</span>
+    </div>
+    <div class="question-text">O Princípio da Simetria Constitucional exige que os entes federados adotem as regras básicas de organização e processo legislativo traçadas pela Constituição Federal. Em observância a esse princípio, é DEFESO (proibido) à Câmara Municipal:</div>
+    <ul class="options-list">
+      <li class="option-item">
+        <span class="option-letter">A</span>
+        <span>Rejeitar projetos de lei de iniciativa do Chefe do Poder Executivo que criem obrigações orçamentárias.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">B</span>
+        <span>Criar Comissões Parlamentares de Inquérito para apurar irregularidades em contratos de transporte público.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">C</span>
+        <span>Apresentar emenda parlamentar a projeto do Executivo que acarrete aumento de despesa em matérias de iniciativa reservada ao Prefeito.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">D</span>
+        <span>Apreciar vetos totais ou parciais apostos pelo Executivo em projetos de lei originados de emendas constitucionais.</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="question-block">
+    <div class="question-meta">
+      <span class="q-badge">QUESTÃO 237</span>
+      <span class="q-topic">Técnico Legislativo • Espécies Normativas: Decreto Legislativo vs Resolução</span>
+    </div>
+    <div class="question-text">Dentre os atos do processo legislativo previstos no ordenamento jurídico, diferenciam-se o DECRETO LEGISLATIVO e a RESOLUÇÃO da Câmara. A respeito dessa distinção técnica, assinale a opção correta:</div>
+    <ul class="options-list">
+      <li class="option-item">
+        <span class="option-letter">A</span>
+        <span>O Decreto Legislativo destina-se apenas a organizar o regimento interno, ao passo que a Resolução altera a Lei Orgânica Municipal.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">B</span>
+        <span>O Decreto Legislativo disciplina matéria de competência exclusiva da Câmara de efeitos externos (ex.: julgamento das contas do Prefeito), enquanto a Resolução disciplina matéria de economia interna (ex.: Regimento Interno).</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">C</span>
+        <span>A Resolução depende obrigatoriamente de sanção e promulgação pelo Prefeito Municipal para entrar em vigor.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">D</span>
+        <span>O Decreto Legislativo é ato administrativo infralegal expedido privativamente pelos Secretários Municipais.</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="question-block">
+    <div class="question-meta">
+      <span class="q-badge">QUESTÃO 238</span>
+      <span class="q-topic">Técnico Legislativo • Suplência e Convocação de Vereador</span>
+    </div>
+    <div class="question-text">Em consonância com as regras eleitorais e regimentais do Poder Legislativo Municipal, a convocação do suplente de Vereador dar-se-á nos casos de:</div>
+    <ul class="options-list">
+      <li class="option-item">
+        <span class="option-letter">A</span>
+        <span>Ausência justificada do titular a uma única sessão ordinária por motivos de saúde temporária.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">B</span>
+        <span>Voto divergente do titular em relação às deliberações firmadas em convenção partidária municipal.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">C</span>
+        <span>Morte, renúncia, cassação do titular ou licença por período contínuo superior ao fixado no Regimento Interno e Lei Orgânica.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">D</span>
+        <span>Instauração de sindicância administrativa preliminar sem afastamento cautelar determinado por juiz.</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="question-block">
+    <div class="question-meta">
+      <span class="q-badge">QUESTÃO 239</span>
+      <span class="q-topic">Técnico Legislativo • Natureza Jurídica do Regimento Interno da Câmara</span>
+    </div>
+    <div class="question-text">O Regimento Interno da Câmara Municipal é a norma jurídica mestra que estrutura seu funcionamento. Sob a ótica do Direito Constitucional e Administrativo, o Regimento Interno:</div>
+    <ul class="options-list">
+      <li class="option-item">
+        <span class="option-letter">A</span>
+        <span>É veiculado sob a forma de Lei Ordinária, sujeitando-se obrigatoriamente ao veto político do Prefeito Municipal.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">B</span>
+        <span>Constitui decreto governamental expedido pelo Governador do Estado para padronizar as câmaras municipais.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">C</span>
+        <span>É veiculado sob a forma de Resolução, constituindo matéria interna corporis e auto-organizatória, insuscetível de veto pelo Chefe do Poder Executivo.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">D</span>
+        <span>Exige referendo popular compulsório a cada eleição municipal para manter sua eficácia normativa interna.</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="question-block">
+    <div class="question-meta">
+      <span class="q-badge">QUESTÃO 240</span>
+      <span class="q-topic">Técnico Legislativo • Publicidade e Transparência dos Atos Parlamentares (Lei 12.527/2011)</span>
+    </div>
+    <div class="question-text">A Lei de Acesso à Informação (LAI - Lei nº 12.527/2011) e o Art. 37 da CF/88 impõem o princípio da publicidade aos órgãos legislativos. No âmbito da Câmara de Vereadores, constitui exigência de TRANSPARÊNCIA ATIVA:</div>
+    <ul class="options-list">
+      <li class="option-item">
+        <span class="option-letter">A</span>
+        <span>A exigência de que todo cidadão justifique documentalmente o motivo de seu interesse para obter cópia da ata da sessão.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">B</span>
+        <span>A divulgação em portal oficial na internet, independentemente de requerimentos, da execução orçamentária, folhas de pagamento, licitações e votações nominais.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">C</span>
+        <span>O fornecimento de informações contábeis restrito àqueles que comprovarem domicílio eleitoral no município há mais de cinco anos.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">D</span>
+        <span>A cobrança de taxa de protocolo prévia para acesso aos dados de remuneração dos cargos em comissão da Casa Legislativa.</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="question-block">
+    <div class="question-meta">
+      <span class="q-badge">QUESTÃO 241</span>
+      <span class="q-topic">Língua Portuguesa • Sintaxe do Verbo Haver (Impessoalidade)</span>
+    </div>
+    <div class="question-text">Nas provas da banca INBRASP, a sintaxe do verbo 'HAVER' é alvo frequente de cobrança gramatical. Assinale a frase em que a concordância do verbo destacado está INTEIRAMENTE CORRETA segundo a norma culta:</div>
+    <ul class="options-list">
+      <li class="option-item">
+        <span class="option-letter">A</span>
+        <span>Houve manifestações calorosas dos munícipes durante a apreciação das emendas orçamentárias.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">B</span>
+        <span>Houveram muitos pedidos de esclarecimento apresentados pelos vereadores da oposição.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">C</span>
+        <span>Haverão de existir soluções viáveis para equilibrar os limites de gastos da Câmara Municipal.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">D</span>
+        <span>Devem haverem critérios transparentes na concessão de diárias aos técnicos legislativos.</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="question-block">
+    <div class="question-meta">
+      <span class="q-badge">QUESTÃO 242</span>
+      <span class="q-topic">Língua Portuguesa • Verbo Haver vs. Verbo Existir</span>
+    </div>
+    <div class="question-text">Ao contrário de 'haver' (quando impessoal), o verbo 'EXISTIR' é pessoal e concorda normalmente com o seu sujeito gramatical. Assinale a alternativa que apresenta a correta concordância de ambos os verbos:</div>
+    <ul class="options-list">
+      <li class="option-item">
+        <span class="option-letter">A</span>
+        <span>Haviam muitas divergências entre os parlamentares, mas existia pontos de consenso sobre o piso salarial.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">B</span>
+        <span>Havia muitas divergências entre os parlamentares, mas existia pontos de consenso sobre o piso salarial.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">C</span>
+        <span>Haviam muitas divergências entre os parlamentares, mas existiam pontos de consenso sobre o piso salarial.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">D</span>
+        <span>Havia muitas divergências entre os parlamentares, mas existiam pontos de consenso sobre o piso salarial.</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="question-block">
+    <div class="question-meta">
+      <span class="q-badge">QUESTÃO 243</span>
+      <span class="q-topic">Língua Portuguesa • Locuções Verbais com Verbos Impessoais</span>
+    </div>
+    <div class="question-text">Nas locuções verbais em que o verbo principal é o verbo 'HAVER' (no sentido de existir), o verbo auxiliar herda a impessoalidade, permanecendo invariável. Assinale a opção que observa corretamente essa regra:</div>
+    <ul class="options-list">
+      <li class="option-item">
+        <span class="option-letter">A</span>
+        <span>Podem haver irregularidades graves nos relatórios fiscais do exercício pretérito.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">B</span>
+        <span>Pode haver irregularidades graves nos relatórios fiscais do exercício pretérito.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">C</span>
+        <span>Devem haverem mecanismos mais rígidos de controle preventivo dos gastos públicos.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">D</span>
+        <span>Vão haverem novas audiências públicas na Câmara Municipal nesta legislatura.</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="question-block">
+    <div class="question-meta">
+      <span class="q-badge">QUESTÃO 244</span>
+      <span class="q-topic">Língua Portuguesa • Voz Passiva Sintética (Partícula Apassivadora 'se')</span>
+    </div>
+    <div class="question-text">Quando associado a verbos transitivos diretos (VTD), o vocábulo 'SE' atua como partícula apassivadora, exigindo a concordância do verbo com o sujeito paciente. Assinale o exemplo que atende com exatidão a esse preceito:</div>
+    <ul class="options-list">
+      <li class="option-item">
+        <span class="option-letter">A</span>
+        <span>Aprovaram-se as diretrizes orçamentárias prioritárias para o próximo exercício financeiro.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">B</span>
+        <span>Aprovou-se as diretrizes orçamentárias prioritárias para o próximo exercício financeiro.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">C</span>
+        <span>Verificou-se muitas incoerências técnicas durante a instrução probatória do processo.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">D</span>
+        <span>Constatou-se várias incorreções graves nos cálculos atuariais do regime de previdência.</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="question-block">
+    <div class="question-meta">
+      <span class="q-badge">QUESTÃO 245</span>
+      <span class="q-topic">Língua Portuguesa • Índice de Indeterminação do Sujeito ('se')</span>
+    </div>
+    <div class="question-text">Quando o vocábulo 'SE' atua como ÍNDICE DE INDETERMINAÇÃO DO SUJEITO (acompanhando verbos transitivos indiretos, intransitivos ou de ligação), o verbo fica invariavelmente na 3ª pessoa do singular. Assinale a frase que exemplifica esse caso:</div>
+    <ul class="options-list">
+      <li class="option-item">
+        <span class="option-letter">A</span>
+        <span>Precisam-se de novos técnicos legislativos capacitados para atuar nas comissões temáticas.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">B</span>
+        <span>Precisa-se de novos técnicos legislativos capacitados para atuar nas comissões temáticas.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">C</span>
+        <span>Tratam-se de propostas orçamentárias de relevante interesse comunitário para Meruoca.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">D</span>
+        <span>Necessitam-se de certidões negativas de débito para a homologação da licitação.</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="question-block">
+    <div class="question-meta">
+      <span class="q-badge">QUESTÃO 246</span>
+      <span class="q-topic">Língua Portuguesa • Correlação Verbal (Subjuntivo e Indicativo)</span>
+    </div>
+    <div class="question-text">A adequada correlação entre os tempos e modos verbais confere coerência e precisão aos textos legislativos. Assinale a alternativa que apresenta a CORRETA CORRELAÇÃO verbal segundo a norma gramatical:</div>
+    <ul class="options-list">
+      <li class="option-item">
+        <span class="option-letter">A</span>
+        <span>Se o relator apresentasse o parecer tempestivamente, o Plenário votará a matéria hoje.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">B</span>
+        <span>Se o relator apresentar o parecer tempestivamente, o Plenário votava a matéria hoje.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">C</span>
+        <span>Caso o relator apresente o parecer tempestivamente, o Plenário votaria a matéria hoje.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">D</span>
+        <span>Se o relator apresentasse o parecer tempestivamente, o Plenário votaria a matéria hoje.</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="question-block">
+    <div class="question-meta">
+      <span class="q-badge">QUESTÃO 247</span>
+      <span class="q-topic">Língua Portuguesa • Pretérito Mais-Que-Perfeito do Indicativo</span>
+    </div>
+    <div class="question-text">Na oração 'Quando o Presidente abriu a sessão solene, a comissão já TERMINARA a leitura da ata', a forma verbal em destaque expressa:</div>
+    <ul class="options-list">
+      <li class="option-item">
+        <span class="option-letter">A</span>
+        <span>Uma ação habitual e contínua no presente com efeitos projetados para o futuro.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">B</span>
+        <span>Uma ação passada concluída anteriormente a outro fato também passado.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">C</span>
+        <span>Uma hipótese incerta condicionada à ocorrência de um evento contingente.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">D</span>
+        <span>Um fato futuro tomado em relação a um momento imediatamente contemporâneo.</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="question-block">
+    <div class="question-meta">
+      <span class="q-badge">QUESTÃO 248</span>
+      <span class="q-topic">Língua Portuguesa • Pretérito Perfeito vs. Pretérito Imperfeito</span>
+    </div>
+    <div class="question-text">Assinale a alternativa em que o verbo destacado no pretérito imperfeito do indicativo expressa uma ação habitual, costumeira ou repetitiva no passado:</div>
+    <ul class="options-list">
+      <li class="option-item">
+        <span class="option-letter">A</span>
+        <span>Naquela época, os munícipes COMPARECIAM semanalmente à Câmara para acompanhar as votações.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">B</span>
+        <span>Ontem à tarde, o Prefeito Municipal ASSINOU o decreto de exoneração do assessor parlamentar.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">C</span>
+        <span>A comissão processante ENCERROU os trabalhos de oitiva no prazo impreterível fixado em edital.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">D</span>
+        <span>Após a leitura do expediente, o Presidente DECLAROU aberta a ordem do dia para votações.</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="question-block">
+    <div class="question-meta">
+      <span class="q-badge">QUESTÃO 249</span>
+      <span class="q-topic">Língua Portuguesa • Conjugação do Verbo PÔR e Seus Derivados</span>
+    </div>
+    <div class="question-text">Os verbos derivados de 'PÔR' (como dispor, compor, propor, sobrepor) seguem rigorosamente o mesmo modelo de flexão do verbo primitivo. Assinale a frase com a flexão correta do verbo derivado:</div>
+    <ul class="options-list">
+      <li class="option-item">
+        <span class="option-letter">A</span>
+        <span>Quando o técnico legislativo propor a alteração do protocolo, a Mesa analisará a minuta.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">B</span>
+        <span>Se os vereadores comporem uma comissão especial, os fatos serão devidamente esclarecidos.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">C</span>
+        <span>Caso a assessoria jurídica não se opor à tramitação, o projeto seguirá para as comissões.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">D</span>
+        <span>Quando o técnico legislativo propuser a alteração do protocolo, a Mesa analisará a minuta.</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="question-block">
+    <div class="question-meta">
+      <span class="q-badge">QUESTÃO 250</span>
+      <span class="q-topic">Língua Portuguesa • Conjugação do Verbo VER vs. VIR</span>
+    </div>
+    <div class="question-text">A confusão entre as formas dos verbos 'VER' e 'VIR' no futuro do subjuntivo é recorrente em certames da banca INBRASP. Assinale a opção que emprega CORRETAMENTE a forma verbal correspondente ao verbo 'VER':</div>
+    <ul class="options-list">
+      <li class="option-item">
+        <span class="option-letter">A</span>
+        <span>Se o servidor ver qualquer irregularidade nas notas fiscais, deverá comunicá-la ao setor competente.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">B</span>
+        <span>Quando o vereador vim à tribuna, apresentará as reivindicações dos moradores locais.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">C</span>
+        <span>Se o servidor vir qualquer irregularidade nas notas fiscais, deverá comunicá-la ao setor competente.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">D</span>
+        <span>Caso você ver o procurador jurídico no plenário, solicite o parecer sobre o substitutivo.</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="question-block">
+    <div class="question-meta">
+      <span class="q-badge">QUESTÃO 251</span>
+      <span class="q-topic">Língua Portuguesa • Verbos Abundantes e Emprego do Particípio Duplo</span>
+    </div>
+    <div class="question-text">Os verbos abundantes possuem dois particípios: um regular (terminado em -ado ou -ido) e outro irregular (forma reduzida). Quanto ao seu emprego correto com os verbos auxiliares, assinale a opção correta:</div>
+    <ul class="options-list">
+      <li class="option-item">
+        <span class="option-letter">A</span>
+        <span>O relatório fora IMPRESSO pela gráfica e o secretário havia IMPRIMIDO o comprovante no gabinete.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">B</span>
+        <span>O relatório fora imprimido pela gráfica e o secretário havia impresso o comprovante no gabinete.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">C</span>
+        <span>O documento oficial foi aceitado pelo diretor e a secretária tinha aceite os protocolos diários.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">D</span>
+        <span>A comissão tinha entregue os pareceres após o decreto ter sido entregado pelo prefeito municipal.</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="question-block">
+    <div class="question-meta">
+      <span class="q-badge">QUESTÃO 252</span>
+      <span class="q-topic">Língua Portuguesa • Conjugação de Verbos em -IAR (Regra do MARIO)</span>
+    </div>
+    <div class="question-text">A maioria dos verbos terminados em -IAR é regular (ex.: criar $\rightarrow$ eu crio; avaliar $\rightarrow$ eu avalio). Todavia, os verbos do mnemônico 'MARIO' mudam o 'i' para 'ei' nas formas rizotônicas do presente. Pertence a esse grupo de conjugação especial o verbo:</div>
+    <ul class="options-list">
+      <li class="option-item">
+        <span class="option-letter">A</span>
+        <span>Copiar (eu copeio, tu copeias, ele copeia, eles copeiam).</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">B</span>
+        <span>Confiar (eu confeio, tu confeias, ele confeia, eles confeiam).</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">C</span>
+        <span>Ansiar (eu anseio, tu anseias, ele anseia, eles anseiam).</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">D</span>
+        <span>Ampliar (eu ampleio, tu ampleias, ele ampleia, eles ampleiam).</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="question-block">
+    <div class="question-meta">
+      <span class="q-badge">QUESTÃO 253</span>
+      <span class="q-topic">Língua Portuguesa • Infinitivo Pessoal (Flexionado)</span>
+    </div>
+    <div class="question-text">O infinitivo pessoal (ou flexionado) recebe desinências número-pessoais (-es, -mos, -des, -em). O emprego do infinitivo flexionado é OBRIGATÓRIO quando:</div>
+    <ul class="options-list">
+      <li class="option-item">
+        <span class="option-letter">A</span>
+        <span>O infinitivo possui sujeito próprio, claro e distinto do sujeito da oração principal.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">B</span>
+        <span>O verbo funciona como verbo principal de uma locução verbal regida por preposição de.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">C</span>
+        <span>O infinitivo integra uma locução verbal com verbo auxiliar modal como dever ou poder.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">D</span>
+        <span>A oração é introduzida pela preposição 'a' precedendo verbo que indica movimento contínuo.</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="question-block">
+    <div class="question-meta">
+      <span class="q-badge">QUESTÃO 254</span>
+      <span class="q-topic">Língua Portuguesa • Formação do Modo Imperativo</span>
+    </div>
+    <div class="question-text">A formação do modo imperativo obedece a regras precisas derivadas do presente do indicativo e do presente do subjuntivo. Sobre a formação do IMPERATIVO AFIRMATIVO, é correto afirmar que:</div>
+    <ul class="options-list">
+      <li class="option-item">
+        <span class="option-letter">A</span>
+        <span>Todas as formas derivam exclusivamente do pretérito perfeito do indicativo sem as desinências número-pessoais.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">B</span>
+        <span>As formas de 'tu' e 'vós' derivam do presente do indicativo sem a letra 's' final, enquanto as demais formas vêm do presente do subjuntivo.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">C</span>
+        <span>As formas de 'você' e 'vocês' são extraídas do pretérito imperfeito do indicativo com o acréscimo de desinência modal.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">D</span>
+        <span>O imperativo afirmativo e o imperativo negativo possuem idêntica formação morfológica em todas as pessoas gramaticais.</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="question-block">
+    <div class="question-meta">
+      <span class="q-badge">QUESTÃO 255</span>
+      <span class="q-topic">Língua Portuguesa • Formação do Modo Imperativo Negativo</span>
+    </div>
+    <div class="question-text">Na redação de atos oficiais e recomendações, o uso do imperativo negativo exige observância de sua matriz morfológica. O IMPERATIVO NEGATIVO forma-se a partir de:</div>
+    <ul class="options-list">
+      <li class="option-item">
+        <span class="option-letter">A</span>
+        <span>Todas as pessoas extraídas do presente do indicativo sem o 's' final das segundas pessoas.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">B</span>
+        <span>Formas do futuro do pretérito modificadas pela junção de partículas adverbiais de intensidade.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">C</span>
+        <span>Infinitivo pessoal antecedido da partícula negativa sem desinências flexionais de número.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">D</span>
+        <span>Todas as pessoas extraídas diretamente do presente do subjuntivo, antecedidas da palavra de negação.</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="question-block">
+    <div class="question-meta">
+      <span class="q-badge">QUESTÃO 256</span>
+      <span class="q-topic">Língua Portuguesa • Verbos Defectivos</span>
+    </div>
+    <div class="question-text">Os verbos defectivos são aqueles que não possuem conjugação completa em todas as formas, modos ou pessoas gramaticais. Constitui exemplo clássico de VERBO DEFECTIVO na língua portuguesa o verbo:</div>
+    <ul class="options-list">
+      <li class="option-item">
+        <span class="option-letter">A</span>
+        <span>Correr (que se conjuga em todas as pessoas do presente do indicativo: corro, corres, corre).</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">B</span>
+        <span>Escrever (que possui conjugação integral e abundante em todos os tempos do modo subjuntivo).</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">C</span>
+        <span>Falir (que não possui as formas da primeira, segunda e terceira pessoas do singular do presente do indicativo).</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">D</span>
+        <span>Partir (que funciona como modelo canônico da terceira conjugação regular em -ir).</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="question-block">
+    <div class="question-meta">
+      <span class="q-badge">QUESTÃO 257</span>
+      <span class="q-topic">Língua Portuguesa • Verbos Pronominais Essenciais vs Acidentais</span>
+    </div>
+    <div class="question-text">Os verbos pronominais conjugam-se com pronomes oblíquos átonos da mesma pessoa do sujeito. Classifica-se como PRONOMINAL ESSENCIAL (aquele que só existe acompanhado do pronome) o verbo:</div>
+    <ul class="options-list">
+      <li class="option-item">
+        <span class="option-letter">A</span>
+        <span>Lavar-se (pronominal acidental, pois existe a forma ativa transitiva direta 'lavar o carro').</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">B</span>
+        <span>Vestir-se (pronominal acidental, pois existe a forma transitiva direta 'vestir a toga').</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">C</span>
+        <span>Ferir-se (pronominal acidental, pois existe a forma transitiva direta 'ferir o adversário').</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">D</span>
+        <span>Queixar-se (não existe o verbo 'queixar' na acepção de reclamar sem o pronome).</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="question-block">
+    <div class="question-meta">
+      <span class="q-badge">QUESTÃO 258</span>
+      <span class="q-topic">Língua Portuguesa • Transitividade Verbal Contextual: Aspirar</span>
+    </div>
+    <div class="question-text">A regência verbal estuda a relação de dependência entre o verbo e seus complementos. O verbo 'ASPIRAR' apresenta dupla transitividade conforme o sentido pretendido. Assinale o uso em que 'aspirar' é TRANSITIVO INDIRETO (com preposição 'a'):</div>
+    <ul class="options-list">
+      <li class="option-item">
+        <span class="option-letter">A</span>
+        <span>Muitos candidatos dedicados aspiram ao cargo público de Técnico Legislativo da Câmara.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">B</span>
+        <span>O paciente internado na unidade hospitalar aspirava o ar puro da serra pela manhã.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">C</span>
+        <span>O aspirador de pó industrial aspirou todo o resíduo acumulado no carpete do plenário.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">D</span>
+        <span>Durante o trajeto na mata nativa, os atletas aspiraram a fumaça tóxica da queimada.</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="question-block">
+    <div class="question-meta">
+      <span class="q-badge">QUESTÃO 259</span>
+      <span class="q-topic">Língua Portuguesa • Regência Verbal: Assistir</span>
+    </div>
+    <div class="question-text">O verbo 'ASSISTIR' assume diferentes regências de acordo com o contexto comunicativo. Assinale a alternativa em que 'assistir' é empregado como TRANSITIVO INDIRETO no sentido de 'presenciar / ver':</div>
+    <ul class="options-list">
+      <li class="option-item">
+        <span class="option-letter">A</span>
+        <span>A equipe de enfermagem da assistência social assistiu os idosos durante a campanha de vacinação.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">B</span>
+        <span>O médico plantonista do município assistiu o paciente acidentado com extrema presteza.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">C</span>
+        <span>Os cidadãos interessados assistiram à sessão plenária da Câmara Municipal com entusiasmo.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">D</span>
+        <span>O técnico legislativo assistiu o vereador na elaboração da justificativa do projeto de lei.</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="question-block">
+    <div class="question-meta">
+      <span class="q-badge">QUESTÃO 260</span>
+      <span class="q-topic">Língua Portuguesa • Regência Verbal: Obedecer e Visar</span>
+    </div>
+    <div class="question-text">A norma culta exige atenção rigorosa à regência de determinados verbos de uso cotidiano no serviço público. Assinale a frase que respeita plenamente as normas de regência verbal:</div>
+    <ul class="options-list">
+      <li class="option-item">
+        <span class="option-letter">A</span>
+        <span>Todos os servidores públicos da Câmara devem obedecer às disposições do regimento interno.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">B</span>
+        <span>Todos os servidores públicos da Câmara devem obedecer as disposições do regimento interno.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">C</span>
+        <span>O projeto de lei complementar visa a promoção geral de incentivos fiscais no comércio.</span>
+      </li>
+      <li class="option-item">
+        <span class="option-letter">D</span>
+        <span>O assessor parlamentar visou ao documento oficial com carimbo institucional de protocolo.</span>
+      </li>
+    </ul>
+  </div>
+  
+    </div>
+
+    <!-- FOLHA ÓPTICA -->
+    <div class="optical-sheet">
+      <div class="optical-header">
+        <h3>FOLHA DE RESPOSTAS (TREINO PRÉ-PROVA)</h3>
+        <p style="margin: 0; font-size: 0.8rem; color: #475569;">Preencha a bolha correspondente com caneta esferográfica de tinta preta ou azul.</p>
+      </div>
+      <div class="bubble-grid">
+        
+    <div class="bubble-row">
+      <span class="bubble-qnum">221</span>
+      <div class="bubble-options">
+        <span class="bubble-opt">A</span>
+        <span class="bubble-opt">B</span>
+        <span class="bubble-opt">C</span>
+        <span class="bubble-opt">D</span>
+      </div>
+    </div>
+  
+    <div class="bubble-row">
+      <span class="bubble-qnum">222</span>
+      <div class="bubble-options">
+        <span class="bubble-opt">A</span>
+        <span class="bubble-opt">B</span>
+        <span class="bubble-opt">C</span>
+        <span class="bubble-opt">D</span>
+      </div>
+    </div>
+  
+    <div class="bubble-row">
+      <span class="bubble-qnum">223</span>
+      <div class="bubble-options">
+        <span class="bubble-opt">A</span>
+        <span class="bubble-opt">B</span>
+        <span class="bubble-opt">C</span>
+        <span class="bubble-opt">D</span>
+      </div>
+    </div>
+  
+    <div class="bubble-row">
+      <span class="bubble-qnum">224</span>
+      <div class="bubble-options">
+        <span class="bubble-opt">A</span>
+        <span class="bubble-opt">B</span>
+        <span class="bubble-opt">C</span>
+        <span class="bubble-opt">D</span>
+      </div>
+    </div>
+  
+    <div class="bubble-row">
+      <span class="bubble-qnum">225</span>
+      <div class="bubble-options">
+        <span class="bubble-opt">A</span>
+        <span class="bubble-opt">B</span>
+        <span class="bubble-opt">C</span>
+        <span class="bubble-opt">D</span>
+      </div>
+    </div>
+  
+    <div class="bubble-row">
+      <span class="bubble-qnum">226</span>
+      <div class="bubble-options">
+        <span class="bubble-opt">A</span>
+        <span class="bubble-opt">B</span>
+        <span class="bubble-opt">C</span>
+        <span class="bubble-opt">D</span>
+      </div>
+    </div>
+  
+    <div class="bubble-row">
+      <span class="bubble-qnum">227</span>
+      <div class="bubble-options">
+        <span class="bubble-opt">A</span>
+        <span class="bubble-opt">B</span>
+        <span class="bubble-opt">C</span>
+        <span class="bubble-opt">D</span>
+      </div>
+    </div>
+  
+    <div class="bubble-row">
+      <span class="bubble-qnum">228</span>
+      <div class="bubble-options">
+        <span class="bubble-opt">A</span>
+        <span class="bubble-opt">B</span>
+        <span class="bubble-opt">C</span>
+        <span class="bubble-opt">D</span>
+      </div>
+    </div>
+  
+    <div class="bubble-row">
+      <span class="bubble-qnum">229</span>
+      <div class="bubble-options">
+        <span class="bubble-opt">A</span>
+        <span class="bubble-opt">B</span>
+        <span class="bubble-opt">C</span>
+        <span class="bubble-opt">D</span>
+      </div>
+    </div>
+  
+    <div class="bubble-row">
+      <span class="bubble-qnum">230</span>
+      <div class="bubble-options">
+        <span class="bubble-opt">A</span>
+        <span class="bubble-opt">B</span>
+        <span class="bubble-opt">C</span>
+        <span class="bubble-opt">D</span>
+      </div>
+    </div>
+  
+    <div class="bubble-row">
+      <span class="bubble-qnum">231</span>
+      <div class="bubble-options">
+        <span class="bubble-opt">A</span>
+        <span class="bubble-opt">B</span>
+        <span class="bubble-opt">C</span>
+        <span class="bubble-opt">D</span>
+      </div>
+    </div>
+  
+    <div class="bubble-row">
+      <span class="bubble-qnum">232</span>
+      <div class="bubble-options">
+        <span class="bubble-opt">A</span>
+        <span class="bubble-opt">B</span>
+        <span class="bubble-opt">C</span>
+        <span class="bubble-opt">D</span>
+      </div>
+    </div>
+  
+    <div class="bubble-row">
+      <span class="bubble-qnum">233</span>
+      <div class="bubble-options">
+        <span class="bubble-opt">A</span>
+        <span class="bubble-opt">B</span>
+        <span class="bubble-opt">C</span>
+        <span class="bubble-opt">D</span>
+      </div>
+    </div>
+  
+    <div class="bubble-row">
+      <span class="bubble-qnum">234</span>
+      <div class="bubble-options">
+        <span class="bubble-opt">A</span>
+        <span class="bubble-opt">B</span>
+        <span class="bubble-opt">C</span>
+        <span class="bubble-opt">D</span>
+      </div>
+    </div>
+  
+    <div class="bubble-row">
+      <span class="bubble-qnum">235</span>
+      <div class="bubble-options">
+        <span class="bubble-opt">A</span>
+        <span class="bubble-opt">B</span>
+        <span class="bubble-opt">C</span>
+        <span class="bubble-opt">D</span>
+      </div>
+    </div>
+  
+    <div class="bubble-row">
+      <span class="bubble-qnum">236</span>
+      <div class="bubble-options">
+        <span class="bubble-opt">A</span>
+        <span class="bubble-opt">B</span>
+        <span class="bubble-opt">C</span>
+        <span class="bubble-opt">D</span>
+      </div>
+    </div>
+  
+    <div class="bubble-row">
+      <span class="bubble-qnum">237</span>
+      <div class="bubble-options">
+        <span class="bubble-opt">A</span>
+        <span class="bubble-opt">B</span>
+        <span class="bubble-opt">C</span>
+        <span class="bubble-opt">D</span>
+      </div>
+    </div>
+  
+    <div class="bubble-row">
+      <span class="bubble-qnum">238</span>
+      <div class="bubble-options">
+        <span class="bubble-opt">A</span>
+        <span class="bubble-opt">B</span>
+        <span class="bubble-opt">C</span>
+        <span class="bubble-opt">D</span>
+      </div>
+    </div>
+  
+    <div class="bubble-row">
+      <span class="bubble-qnum">239</span>
+      <div class="bubble-options">
+        <span class="bubble-opt">A</span>
+        <span class="bubble-opt">B</span>
+        <span class="bubble-opt">C</span>
+        <span class="bubble-opt">D</span>
+      </div>
+    </div>
+  
+    <div class="bubble-row">
+      <span class="bubble-qnum">240</span>
+      <div class="bubble-options">
+        <span class="bubble-opt">A</span>
+        <span class="bubble-opt">B</span>
+        <span class="bubble-opt">C</span>
+        <span class="bubble-opt">D</span>
+      </div>
+    </div>
+  
+    <div class="bubble-row">
+      <span class="bubble-qnum">241</span>
+      <div class="bubble-options">
+        <span class="bubble-opt">A</span>
+        <span class="bubble-opt">B</span>
+        <span class="bubble-opt">C</span>
+        <span class="bubble-opt">D</span>
+      </div>
+    </div>
+  
+    <div class="bubble-row">
+      <span class="bubble-qnum">242</span>
+      <div class="bubble-options">
+        <span class="bubble-opt">A</span>
+        <span class="bubble-opt">B</span>
+        <span class="bubble-opt">C</span>
+        <span class="bubble-opt">D</span>
+      </div>
+    </div>
+  
+    <div class="bubble-row">
+      <span class="bubble-qnum">243</span>
+      <div class="bubble-options">
+        <span class="bubble-opt">A</span>
+        <span class="bubble-opt">B</span>
+        <span class="bubble-opt">C</span>
+        <span class="bubble-opt">D</span>
+      </div>
+    </div>
+  
+    <div class="bubble-row">
+      <span class="bubble-qnum">244</span>
+      <div class="bubble-options">
+        <span class="bubble-opt">A</span>
+        <span class="bubble-opt">B</span>
+        <span class="bubble-opt">C</span>
+        <span class="bubble-opt">D</span>
+      </div>
+    </div>
+  
+    <div class="bubble-row">
+      <span class="bubble-qnum">245</span>
+      <div class="bubble-options">
+        <span class="bubble-opt">A</span>
+        <span class="bubble-opt">B</span>
+        <span class="bubble-opt">C</span>
+        <span class="bubble-opt">D</span>
+      </div>
+    </div>
+  
+    <div class="bubble-row">
+      <span class="bubble-qnum">246</span>
+      <div class="bubble-options">
+        <span class="bubble-opt">A</span>
+        <span class="bubble-opt">B</span>
+        <span class="bubble-opt">C</span>
+        <span class="bubble-opt">D</span>
+      </div>
+    </div>
+  
+    <div class="bubble-row">
+      <span class="bubble-qnum">247</span>
+      <div class="bubble-options">
+        <span class="bubble-opt">A</span>
+        <span class="bubble-opt">B</span>
+        <span class="bubble-opt">C</span>
+        <span class="bubble-opt">D</span>
+      </div>
+    </div>
+  
+    <div class="bubble-row">
+      <span class="bubble-qnum">248</span>
+      <div class="bubble-options">
+        <span class="bubble-opt">A</span>
+        <span class="bubble-opt">B</span>
+        <span class="bubble-opt">C</span>
+        <span class="bubble-opt">D</span>
+      </div>
+    </div>
+  
+    <div class="bubble-row">
+      <span class="bubble-qnum">249</span>
+      <div class="bubble-options">
+        <span class="bubble-opt">A</span>
+        <span class="bubble-opt">B</span>
+        <span class="bubble-opt">C</span>
+        <span class="bubble-opt">D</span>
+      </div>
+    </div>
+  
+    <div class="bubble-row">
+      <span class="bubble-qnum">250</span>
+      <div class="bubble-options">
+        <span class="bubble-opt">A</span>
+        <span class="bubble-opt">B</span>
+        <span class="bubble-opt">C</span>
+        <span class="bubble-opt">D</span>
+      </div>
+    </div>
+  
+    <div class="bubble-row">
+      <span class="bubble-qnum">251</span>
+      <div class="bubble-options">
+        <span class="bubble-opt">A</span>
+        <span class="bubble-opt">B</span>
+        <span class="bubble-opt">C</span>
+        <span class="bubble-opt">D</span>
+      </div>
+    </div>
+  
+    <div class="bubble-row">
+      <span class="bubble-qnum">252</span>
+      <div class="bubble-options">
+        <span class="bubble-opt">A</span>
+        <span class="bubble-opt">B</span>
+        <span class="bubble-opt">C</span>
+        <span class="bubble-opt">D</span>
+      </div>
+    </div>
+  
+    <div class="bubble-row">
+      <span class="bubble-qnum">253</span>
+      <div class="bubble-options">
+        <span class="bubble-opt">A</span>
+        <span class="bubble-opt">B</span>
+        <span class="bubble-opt">C</span>
+        <span class="bubble-opt">D</span>
+      </div>
+    </div>
+  
+    <div class="bubble-row">
+      <span class="bubble-qnum">254</span>
+      <div class="bubble-options">
+        <span class="bubble-opt">A</span>
+        <span class="bubble-opt">B</span>
+        <span class="bubble-opt">C</span>
+        <span class="bubble-opt">D</span>
+      </div>
+    </div>
+  
+    <div class="bubble-row">
+      <span class="bubble-qnum">255</span>
+      <div class="bubble-options">
+        <span class="bubble-opt">A</span>
+        <span class="bubble-opt">B</span>
+        <span class="bubble-opt">C</span>
+        <span class="bubble-opt">D</span>
+      </div>
+    </div>
+  
+    <div class="bubble-row">
+      <span class="bubble-qnum">256</span>
+      <div class="bubble-options">
+        <span class="bubble-opt">A</span>
+        <span class="bubble-opt">B</span>
+        <span class="bubble-opt">C</span>
+        <span class="bubble-opt">D</span>
+      </div>
+    </div>
+  
+    <div class="bubble-row">
+      <span class="bubble-qnum">257</span>
+      <div class="bubble-options">
+        <span class="bubble-opt">A</span>
+        <span class="bubble-opt">B</span>
+        <span class="bubble-opt">C</span>
+        <span class="bubble-opt">D</span>
+      </div>
+    </div>
+  
+    <div class="bubble-row">
+      <span class="bubble-qnum">258</span>
+      <div class="bubble-options">
+        <span class="bubble-opt">A</span>
+        <span class="bubble-opt">B</span>
+        <span class="bubble-opt">C</span>
+        <span class="bubble-opt">D</span>
+      </div>
+    </div>
+  
+    <div class="bubble-row">
+      <span class="bubble-qnum">259</span>
+      <div class="bubble-options">
+        <span class="bubble-opt">A</span>
+        <span class="bubble-opt">B</span>
+        <span class="bubble-opt">C</span>
+        <span class="bubble-opt">D</span>
+      </div>
+    </div>
+  
+    <div class="bubble-row">
+      <span class="bubble-qnum">260</span>
+      <div class="bubble-options">
+        <span class="bubble-opt">A</span>
+        <span class="bubble-opt">B</span>
+        <span class="bubble-opt">C</span>
+        <span class="bubble-opt">D</span>
+      </div>
+    </div>
+  
+      </div>
+    </div>
+
+    <!-- GABARITO FUNDAMENTADO -->
+    <div class="gabarito-section">
+      <div style="background: var(--primary); color: white; padding: 10px 16px; border-radius: 6px; font-weight: 800; font-size: 1.1rem; margin-bottom: 16px;">
+        <i class="fas fa-check-double"></i> GABARITO OFICIAL FUNDAMENTADO (QUESTÕES 221 A 260)
+      </div>
+      
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 221 (Técnico Legislativo • Funções Típicas do Poder Legislativo):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. O Poder Legislativo tem como funções típicas precípuas: (1) Legislar (elaborar normas jurídicas locais) e (2) Fiscalizar (controle externo contábil, financeiro, orçamentário e operacional do Executivo e dos seus próprios órgãos, com auxílio do Tribunal de Contas).</p>
+      </div>
+    </div>
+  
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 222 (Técnico Legislativo • Funções Atípicas da Câmara Municipal):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. A Câmara Municipal exerce função atípica de julgar ao processar e julgar o Prefeito e os próprios Vereadores por infrações político-administrativas (ex.: infrações descritas no Decreto-Lei nº 201/67 e na Lei Orgânica Municipal).</p>
+      </div>
+    </div>
+  
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 223 (Técnico Legislativo • Imunidade Material dos Vereadores (Art. 29, VIII CF)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 29, VIII da CF/88: 'inviolabilidade dos Vereadores por suas opiniões, palavras e votos no exercício do mandato e na circunscrição do Município'. A imunidade material do vereador possui limitação territorial estrita à circunscrição do município.</p>
+      </div>
+    </div>
+  
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 224 (Técnico Legislativo • Mesa Diretora e Iniciativa Privativa de Leis):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. A organização dos serviços da Câmara, a criação, transformação ou extinção de seus cargos, empregos e funções e a fixação da respectiva remuneração são de competência privativa da Mesa Diretora da Câmara (Art. 51, IV c/c Art. 29 da CF/88 e Lei Orgânica).</p>
+      </div>
+    </div>
+  
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 225 (Técnico Legislativo • Atribuições do Presidente da Câmara Municipal):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. O Presidente da Câmara é o representante judicial e extrajudicial do Poder Legislativo local. Além disso, se o Prefeito não promulgar a lei no prazo de 48 horas após a derrubada do veto, cabe ao Presidente da Câmara promulgá-la (e, se este não o fizer em igual prazo, ao Vice-Presidente).</p>
+      </div>
+    </div>
+  
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 226 (Técnico Legislativo • Comissões Parlamentares de Inquérito (CPIs)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Requisitos da CPI: requerimento de 1/3 dos membros da Casa, apuração de fato determinado, prazo certo e poderes de investigação próprios das autoridades judiciais. Atenção: CPI não tem reserva de jurisdição (não pode determinar interceptação telefônica, busca domiciliar nem decretar prisão fora de flagrante).</p>
+      </div>
+    </div>
+  
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 227 (Técnico Legislativo • Comissões Permanentes vs Temporárias):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Comissões Permanentes são órgãos técnicos colegiados estáveis que perduram pelas legislaturas e apreciam projetos de acordo com as áreas temáticas (Constituição e Justiça, Finanças e Orçamento, Obras Públicas, Educação e Saúde).</p>
+      </div>
+    </div>
+  
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 228 (Técnico Legislativo • Processo de Cassação por Infração Político-Administrativa):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Art. 5º, VI do DL 201/67 e disposições das Leis Orgânicas Municipais: o mandato do Prefeito ou Vereador somente será cassado se decorrer de decisão tomada por no mínimo 2/3 (dois terços) dos membros da Câmara Municipal.</p>
+      </div>
+    </div>
+  
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 229 (Técnico Legislativo • Perda e Extinção do Mandato de Vereador):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. A falta a 1/3 das sessões ordinárias anuais (sem licença justificada) ou a perda/suspensão dos direitos políticos gera EXTINÇÃO/PERDA DECLARADA DE OFÍCIO pela Mesa Diretora. Já a quebra de decoro ou condenação criminal com trânsito em julgado exige deliberação do Plenário por maioria absoluta.</p>
+      </div>
+    </div>
+  
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 230 (Técnico Legislativo • Quórum Regimental: Maioria Simples vs Absoluta vs Qualificada):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. A Emenda à Lei Orgânica exige votação em dois turnos com interstício mínimo de 10 dias e aprovação por 2/3 dos membros da Câmara (Art. 29, caput da CF/88). Lei ordinária exige maioria simples. Rejeição de veto exige maioria absoluta. Regimento interno exige maioria absoluta.</p>
+      </div>
+    </div>
+  
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 231 (Técnico Legislativo • Iniciativa Legislativa Popular no Município):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Art. 29, XIII da CF/88: 'iniciativa popular de projetos de lei de interesse específico do Município, da cidade ou de bairros, através de manifestação de, pelo menos, cinco por cento do eleitorado'.</p>
+      </div>
+    </div>
+  
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 232 (Técnico Legislativo • Fases do Processo Legislativo Municipal):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. O processo legislativo desdobra-se em: (1) Fase introdutória (iniciativa/protocolo); (2) Fase constitutiva (deliberação parlamentar em comissões e plenário + deliberação executiva com sanção ou veto); (3) Fase complementar (promulgação e publicação).</p>
+      </div>
+    </div>
+  
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 233 (Técnico Legislativo • Veto do Prefeito e Quórum de Rejeição):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Art. 66, § 4º da CF/88 aplicado por simetria aos Municípios: o veto só pode ser rejeitado pelo voto da maioria absoluta dos vereadores (e não por maioria simples). O silêncio do Prefeito após 15 dias úteis importa em sanção tácita.</p>
+      </div>
+    </div>
+  
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 234 (Técnico Legislativo • Sessões Extraordinárias da Câmara):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Art. 57, § 7º da CF/88 e legislação municipal: na sessão legislativa extraordinária, a Câmara somente delibera sobre a matéria para a qual foi convocada (princípio da especificidade da pauta) e é vedado o pagamento de parcela indenizatória pela convocação (Art. 57, § 7º).</p>
+      </div>
+    </div>
+  
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 235 (Técnico Legislativo • Controle Externo da Câmara e Parecer do TCE):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Art. 31, § 2º da CF/88: o parecer prévio emitido pelo órgão competente sobre as contas que o Prefeito deve prestar anualmente só deixará de prevalecer por decisão de dois terços dos membros da Câmara Municipal.</p>
+      </div>
+    </div>
+  
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 236 (Técnico Legislativo • Princípio da Simetria Constitucional no Processo Legislativo):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Art. 63, I da CF/88: não será admitido aumento da despesa prevista nos projetos de iniciativa exclusiva do Chefe do Poder Executivo. O princípio da simetria veda que vereadores aumentem despesa em projetos de iniciativa reservada do Prefeito.</p>
+      </div>
+    </div>
+  
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 237 (Técnico Legislativo • Espécies Normativas: Decreto Legislativo vs Resolução):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Decretos Legislativos tratam de competências privativas/exclusivas da Câmara que geram efeitos externos (ex: aprovação de contas do prefeito, concessão de licença ao prefeito, sustação de atos normativos do Executivo). Resoluções tratam de matéria estritamente interna (ex: Regimento Interno, estrutura administrativa dos gabinetes).</p>
+      </div>
+    </div>
+  
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 238 (Técnico Legislativo • Suplência e Convocação de Vereador):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. O suplente de vereador é convocado nos casos de vacância definitiva (morte, renúncia, perda/cassação de mandato) ou de licença do titular por período prolongado estabelecido na Lei Orgânica/Regimento Interno (geralmente superior a 120 dias ou para assumir cargo de Secretário Municipal).</p>
+      </div>
+    </div>
+  
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 239 (Técnico Legislativo • Natureza Jurídica do Regimento Interno da Câmara):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. O Regimento Interno é veiculado por Resolução, ato normativo primário de competência privativa da Câmara que corporifica sua autonomia institucional (auto-organização parlamentar). Não passa pelo crivo de sanção ou veto do Prefeito.</p>
+      </div>
+    </div>
+  
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 240 (Técnico Legislativo • Publicidade e Transparência dos Atos Parlamentares (Lei 12.527/2011)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. A transparência ativa consiste no dever do órgão público (incluindo as Câmaras Municipais) de disponibilizar espontaneamente na internet, sem necessidade de solicitação prévia, relatórios de despesas, salários, editais, contratos e deliberações plenárias (Art. 8º da Lei nº 12.527/2011).</p>
+      </div>
+    </div>
+  
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 241 (Língua Portuguesa • Sintaxe do Verbo Haver (Impessoalidade)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. O verbo HAVER, com sentido de 'existir', 'acontecer' ou tempo decorrido, é impessoal: não possui sujeito e deve permanecer obrigatoriamente na 3ª pessoa do singular ('Houve manifestações', 'Havia muitos pedidos', 'Deve haver critérios').</p>
+      </div>
+    </div>
+  
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 242 (Língua Portuguesa • Verbo Haver vs. Verbo Existir):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. 'Haver' (no sentido de existir) não vai para o plural ('Havia muitas divergências' - 'muitas divergências' é objeto direto). Já 'existir' é verbo intransitivo e possui sujeito ('pontos de consenso'), devendo concordar no plural ('existiam pontos de consenso').</p>
+      </div>
+    </div>
+  
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 243 (Língua Portuguesa • Locuções Verbais com Verbos Impessoais):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Quando 'haver' for o verbo principal de uma locução verbal e estiver no sentido de existir, ele transmite sua impessoalidade ao verbo auxiliar, que deve ficar no singular: 'Pode haver irregularidades', 'Deve haver mecanismos', 'Vai haver audiências'.</p>
+      </div>
+    </div>
+  
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 244 (Língua Portuguesa • Voz Passiva Sintética (Partícula Apassivadora 'se')):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Em 'Aprovaram-se as diretrizes', o verbo 'aprovar' é VTD acompanhado da partícula apassivadora 'se'. 'As diretrizes orçamentárias' é o sujeito paciente (na voz passiva analítica: 'As diretrizes orçamentárias foram aprovadas'). Logo, o verbo deve ir ao plural.</p>
+      </div>
+    </div>
+  
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 245 (Língua Portuguesa • Índice de Indeterminação do Sujeito ('se')):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Em 'Precisa-se de novos técnicos', o verbo 'precisar' é transitivo indireto (exige a preposição 'de'). O 'se' é índice de indeterminação do sujeito e 'de novos técnicos' é objeto indireto. Nesse caso, o verbo jamais vai para o plural: 'Precisa-se de...', 'Trata-se de...', 'Necessita-se de...'.</p>
+      </div>
+    </div>
+  
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 246 (Língua Portuguesa • Correlação Verbal (Subjuntivo e Indicativo)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. A clássica correlação condicional hipotética exige: Pretérito imperfeito do subjuntivo ('apresentasse') articulado ao Futuro do pretérito do indicativo ('votaria'). Já o futuro do subjuntivo ('se apresentar') articula-se ao futuro do presente ('votará').</p>
+      </div>
+    </div>
+  
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 247 (Língua Portuguesa • Pretérito Mais-Que-Perfeito do Indicativo):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. O pretérito mais-que-perfeito do indicativo (terminara, fizera, falara, concluíra) denota uma ação passada que ocorreu antes de outro evento igualmente passado (equivale à forma composta 'já havia terminado').</p>
+      </div>
+    </div>
+  
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 248 (Língua Portuguesa • Pretérito Perfeito vs. Pretérito Imperfeito):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. O pretérito imperfeito ('compareciam') indica ações habituais, contínuas ou de duração no passado. As outras alternativas trazem verbos no pretérito perfeito ('assinou', 'encerrou', 'declarou'), que exprimem ações pontuais e integralmente finalizadas.</p>
+      </div>
+    </div>
+  
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 249 (Língua Portuguesa • Conjugação do Verbo PÔR e Seus Derivados):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. No futuro do subjuntivo de pôr temos 'quando eu puser, quando tu puseres, quando ele puser'. Logo, os derivados flexionam-se: 'propuser' (e nunca 'propor'), 'compuserem' (e nunca 'comporem'), 'opuser' (e nunca 'opor').</p>
+      </div>
+    </div>
+  
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 250 (Língua Portuguesa • Conjugação do Verbo VER vs. VIR):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. No futuro do subjuntivo, o verbo VER conjuga-se: quando eu vir, quando tu vires, quando ele vir (e não 'se ele ver'). Já o verbo VIR conjuga-se: quando eu vier, quando tu vieres, quando ele vier.</p>
+      </div>
+    </div>
+  
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 251 (Língua Portuguesa • Verbos Abundantes e Emprego do Particípio Duplo):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Regra áurea dos particípios duplos: (1) Com os auxiliares TER ou HAVER usa-se a forma regular terminada em -ado/-ido ('havia imprimido', 'tinha aceitado', 'havia entregado'); (2) Com os auxiliares SER ou ESTAR usa-se a forma irregular reduzida ('foi impresso', 'foi aceito', 'foi entregue').</p>
+      </div>
+    </div>
+  
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 252 (Língua Portuguesa • Conjugação de Verbos em -IAR (Regra do MARIO)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Mnemônico MARIO: Medir/Mediar, Ansiar, Remediar, Incendiar e Odiar. Esses verbos recebem 'ei' nas formas rizotônicas do presente do indicativo e do subjuntivo (eu anseio, remedeio, incendeio, odeio). Os demais verbos em -iar são regulares (eu copio, confio, amplio).</p>
+      </div>
+    </div>
+  
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 253 (Língua Portuguesa • Infinitivo Pessoal (Flexionado)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. O infinitivo deve ser obrigatoriamente flexionado quando possuir sujeito próprio e explícito, diferente do sujeito da oração principal (ex.: 'O Presidente pediu para OS VEREADORES VOTAREM o projeto com urgência'). Em locuções verbais, o infinitivo não se flexiona ('Eles devem comparecer').</p>
+      </div>
+    </div>
+  
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 254 (Língua Portuguesa • Formação do Modo Imperativo):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. No Imperativo Afirmativo: 'tu' e 'vós' vêm do Presente do Indicativo cortando o 's' final (Tu cantas $\rightarrow$ Canta tu; Vós cantais $\rightarrow$ Cantai vós). As pessoas 'você', 'nós' e 'vocês' vêm diretamente do Presente do Subjuntivo sem alterações (Cante você, Cantemos nós, Cantem vocês).</p>
+      </div>
+    </div>
+  
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 255 (Língua Portuguesa • Formação do Modo Imperativo Negativo):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. O Imperativo Negativo tem formação 100% regular e unificada: todas as pessoas gramaticais (não cantes tu, não cante você, não cantemos nós, não canteis vós, não cantem vocês) são cópias exatas do Presente do Subjuntivo, antecedidas por palavra negativa ('não', 'nunca', 'jamais').</p>
+      </div>
+    </div>
+  
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 256 (Língua Portuguesa • Verbos Defectivos):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Verbos defectivos não se conjugam em determinadas formas. O verbo FALIR, por exemplo, no presente do indicativo, só possui a 1ª e 2ª pessoas do plural ('nós falimos', 'vós falis'), não possuindo as formas rizotônicas 'eu fali/falo/falo' (para evitar ambiguidade ou por tradição eufônica).</p>
+      </div>
+    </div>
+  
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 257 (Língua Portuguesa • Verbos Pronominais Essenciais vs Acidentais):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Verbos pronominais essenciais são aqueles que trazem o pronome oblíquo fundido à sua própria existência sem função sintática autônoma: queixar-se, arrepender-se, suicidar-se, zangar-se, atrever-se. Os acidentais podem ser empregados sem o pronome (lavar, ferir, pentear).</p>
+      </div>
+    </div>
+  
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 258 (Língua Portuguesa • Transitividade Verbal Contextual: Aspirar):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. O verbo ASPIRAR possui dois regimes clássicos: (1) Sentido de 'sorver/inalar/respirar' = Transitivo Direto sem preposição ('aspirou o ar'); (2) Sentido de 'almejar/desejar/pretender' = Transitivo Indireto com a preposição 'a' ('aspiram ao cargo público').</p>
+      </div>
+    </div>
+  
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 259 (Língua Portuguesa • Regência Verbal: Assistir):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. O verbo ASSISTIR: (1) No sentido de 'ver/presenciar' é Transitivo Indireto com preposição 'a' ('assistiram à sessão' - crase obrigatória); (2) No sentido de 'ajudar/socorrer' é preferencialmente Transitivo Direto sem preposição ('assistiu o paciente', 'assistiu o vereador'); (3) No sentido de 'caber/pertencer' é VTI com 'a' ('assiste ao cidadão esse direito').</p>
+      </div>
+    </div>
+  
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 260 (Língua Portuguesa • Regência Verbal: Obedecer e Visar):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. O verbo OBEDECER é estritamente Transitivo Indireto e rege a preposição 'a' ('obedecer a + as disposições = obedecer às disposições do regimento'). Já o verbo 'visar' no sentido de mirar ou apor visto é VTD ('visou o documento'). No sentido de almejar, rege 'a' ('visa à promoção').</p>
+      </div>
+    </div>
+  
+    </div>
+
+  </div>
+</body>
+</html>

@@ -42,7 +42,7 @@
         <button class="nav-btn" data-tab="tab-questoes">
           <i class="fas fa-tasks"></i>
           <span>Banco de Questões</span>
-          <span class="nav-badge highlight" id="sidebarQuizBadge">220</span>
+          <span class="nav-badge highlight" id="sidebarQuizBadge">260</span>
         </button>
         <button class="nav-btn" data-tab="tab-flashcards">
           <i class="fas fa-clone"></i>
@@ -211,9 +211,13 @@
 
           <!-- Seletor de Dias do Quiz -->
           <div class="day-tabs-nav">
-            <button class="day-tab-btn active" id="btnDayTabS2D1" onclick="selectQuizDay('w2_d1')">
+            <button class="day-tab-btn active" id="btnDayTabS2D2" onclick="selectQuizDay('w2_d2')">
               <i class="fas fa-star" style="color: var(--accent);"></i>
-              <span>Semana 2 • Dia 1 (07/09 - Hoje): 40Q</span>
+              <span>Semana 2 • Dia 2 (08/09 - Hoje): 40Q</span>
+            </button>
+            <button class="day-tab-btn" id="btnDayTabS2D1" onclick="selectQuizDay('w2_d1')">
+              <i class="fas fa-calendar-check"></i>
+              <span>Semana 2 • Dia 1 (07/09): 40Q</span>
             </button>
             <button class="day-tab-btn" id="btnDayTab6" onclick="selectQuizDay('dia6')">
               <i class="fas fa-trophy" style="color: var(--warning);"></i>
@@ -237,23 +241,23 @@
             </button>
             <button class="day-tab-btn" id="btnDayTabAll" onclick="selectQuizDay('all')">
               <i class="fas fa-layer-group"></i>
-              <span>Todas as Questões (220)</span>
+              <span>Todas as Questões (260)</span>
             </button>
           </div>
 
           <!-- Banner Informativo do Dia Selecionado -->
           <div class="day-info-banner" id="quizDayBanner">
             <div>
-              <h3 id="quizDayTitle">⭐ Semana 2 • Dia 1 — Segunda-feira (07/09/2026 - HOJE): Organização do Estado & Formação de Palavras (40 Questões)</h3>
-              <p id="quizDayDesc">20 questões de D. Constitucional (CF/88 Arts. 18 a 31: Competências, Municípios e Controle) + 20 de Português (Estrutura e Processos de Formação de Palavras). Padrão Oficial INBRASP.</p>
+              <h3 id="quizDayTitle">⭐ Semana 2 • Dia 2 — Terça-feira (08/09/2026 - HOJE): Poder Legislativo & Morfologia dos Verbos (40 Questões)</h3>
+              <p id="quizDayDesc">20 questões de Técnico Legislativo (Funções, Mesa Diretora, CPIs e Quóruns) + 20 de Português (Verbo Haver, Subjuntivo, Vozes Verbais e Regência). Padrão Oficial INBRASP.</p>
             </div>
             <div style="display: flex; gap: 8px; flex-wrap: wrap;">
               <button class="btn btn-secondary" style="font-size: 0.8rem; padding: 6px 12px;" onclick="filterQuizCategory('all')">Ver Todas as 40Q</button>
-              <a href="provas/CADERNO_QUESTOES_SEMANA_02_DIA_01_07_09_2026.html" target="_blank" class="btn btn-primary" style="font-size: 0.8rem; padding: 6px 12px;">
+              <a href="provas/CADERNO_QUESTOES_SEMANA_02_DIA_02_08_09_2026.html" target="_blank" class="btn btn-primary" style="font-size: 0.8rem; padding: 6px 12px;">
                 <i class="fas fa-print"></i> Abrir Caderno Hoje Impresso (PDF)
               </a>
-              <a href="provas/PROVA_OFICIAL_SIMULADO_01_INBRASP.html" target="_blank" class="btn btn-secondary" style="font-size: 0.8rem; padding: 6px 12px;">
-                <i class="fas fa-trophy"></i> Simulado 1 (40Q)
+              <a href="provas/CADERNO_QUESTOES_SEMANA_02_DIA_01_07_09_2026.html" target="_blank" class="btn btn-secondary" style="font-size: 0.8rem; padding: 6px 12px;">
+                <i class="fas fa-file-alt"></i> Caderno Dia 1 (40Q)
               </a>
             </div>
           </div>
@@ -990,7 +994,7 @@
     <button class="mobile-nav-btn" data-tab="tab-questoes">
       <i class="fas fa-tasks"></i>
       <span>Questões</span>
-      <span class="mobile-badge" id="mobileQuizBadge">220</span>
+      <span class="mobile-badge" id="mobileQuizBadge">260</span>
     </button>
     <button class="mobile-nav-btn" data-tab="tab-flashcards">
       <i class="fas fa-clone"></i>

@@ -3946,6 +3946,647 @@ const QUIZ_QUESTIONS_DATA = [
     "correctAnswer": 0,
     "commentary": "Gabarito: A. Envergonhar: en- + vergonh- + -ar (parassíntese: 3); Guarda-noturno: guarda + noturno sem perda (justaposição: 1); O olhar triste: 'olhar' substantivado pelo artigo 'o' (derivação imprópria: 4); Pernalta: perna + alta com perda da vogal 'a' (aglutinação: 2). Sequência: 3, 1, 4, 2."
   }
+,
+{
+  "id": 221,
+  "category": "legislacao",
+  "day": "w2_d2",
+  "discipline": "Técnico Legislativo",
+  "topic": "Funções Típicas do Poder Legislativo",
+  "question": "O Poder Legislativo Municipal, exercido pela Câmara de Vereadores, possui funções essenciais atribuídas diretamente pelo ordenamento constitucional. São consideradas funções TÍPICAS do Poder Legislativo Municipal:",
+  "options": [
+    "Administrar os serviços públicos de saúde e saneamento básico em colaboração direta com os secretários municipais.",
+    "Julgar litígios judiciais entre servidores públicos e a prefeitura, substituindo a competência da vara cível da comarca.",
+    "Promover a desapropriação compulsória de imóveis urbanos que não cumpram a função social da propriedade sem participação do Executivo.",
+    "Legislar sobre assuntos de interesse local e exercer a fiscalização contábil, financeira, orçamentária e patrimonial da administração pública local."
+  ],
+  "correctAnswer": 3,
+  "commentary": "Gabarito: D. O Poder Legislativo tem como funções típicas precípuas: (1) Legislar (elaborar normas jurídicas locais) e (2) Fiscalizar (controle externo contábil, financeiro, orçamentário e operacional do Executivo e dos seus próprios órgãos, com auxílio do Tribunal de Contas)."
+},
+{
+  "id": 222,
+  "category": "legislacao",
+  "day": "w2_d2",
+  "discipline": "Técnico Legislativo",
+  "topic": "Funções Atípicas da Câmara Municipal",
+  "question": "A teoria da separação de poderes no Brasil admite o exercício de funções atípicas por todos os Poderes da República. No âmbito da Câmara Municipal, constitui exemplo legítimo de FUNÇÃO ATÍPICA DE NATUREZA JULGADORA:",
+  "options": [
+    "Processar e julgar mandados de segurança impetrados por cidadãos contra atos do Presidente da Casa Legislativa.",
+    "Condenar criminalmente servidores municipais à pena restritiva de liberdade por crimes de peculato e corrupção.",
+    "Julgar o Prefeito, o Vice-Prefeito e os próprios Vereadores por infrações político-administrativas tipificadas em lei.",
+    "Julgar as ações populares de nulidade de contratos administrativos de licitação firmados pelo Poder Executivo."
+  ],
+  "correctAnswer": 2,
+  "commentary": "Gabarito: C. A Câmara Municipal exerce função atípica de julgar ao processar e julgar o Prefeito e os próprios Vereadores por infrações político-administrativas (ex.: infrações descritas no Decreto-Lei nº 201/67 e na Lei Orgânica Municipal)."
+},
+{
+  "id": 223,
+  "category": "legislacao",
+  "day": "w2_d2",
+  "discipline": "Técnico Legislativo",
+  "topic": "Imunidade Material dos Vereadores (Art. 29, VIII CF)",
+  "question": "Nos termos do Art. 29, VIII da Constituição Federal de 1988 e das leis orgânicas municipais, os Vereadores gozam de inviolabilidade (imunidade material) por suas opiniões, palavras e votos:",
+  "options": [
+    "No exercício do mandato e na circunscrição do Município.",
+    "Em todo o território nacional, independentemente de conexão com o exercício do mandato parlamentar.",
+    "Apenas dentro do recinto físico do plenário e das comissões temáticas da Câmara de Vereadores.",
+    "Exclusivamente durante os períodos de sessões extraordinárias convocadas com quórum qualificado de dois terços."
+  ],
+  "correctAnswer": 0,
+  "commentary": "Gabarito: A. Art. 29, VIII da CF/88: 'inviolabilidade dos Vereadores por suas opiniões, palavras e votos no exercício do mandato e na circunscrição do Município'. A imunidade material do vereador possui limitação territorial estrita à circunscrição do município."
+},
+{
+  "id": 224,
+  "category": "legislacao",
+  "day": "w2_d2",
+  "discipline": "Técnico Legislativo",
+  "topic": "Mesa Diretora e Iniciativa Privativa de Leis",
+  "question": "A Mesa Diretora é o órgão colegiado responsável pela direção dos trabalhos legislativos e dos serviços administrativos da Câmara. É matéria de INICIATIVA PRIVATIVA da Mesa Diretora da Câmara Municipal propor projeto de lei que disponha sobre:",
+  "options": [
+    "A organização administrativa da Câmara, criação e extinção de seus cargos e a fixação da respectiva remuneração.",
+    "O Plano Plurianual (PPA), as Diretrizes Orçamentárias (LDO) e o Orçamento Anual (LOA) do Município.",
+    "O Plano Diretor de Desenvolvimento Urbano e o zoneamento territorial municipal.",
+    "A criação de secretarias municipais e atribuições dos órgãos da administração direta do Poder Executivo."
+  ],
+  "correctAnswer": 0,
+  "commentary": "Gabarito: A. A organização dos serviços da Câmara, a criação, transformação ou extinção de seus cargos, empregos e funções e a fixação da respectiva remuneração são de competência privativa da Mesa Diretora da Câmara (Art. 51, IV c/c Art. 29 da CF/88 e Lei Orgânica)."
+},
+{
+  "id": 225,
+  "category": "legislacao",
+  "day": "w2_d2",
+  "discipline": "Técnico Legislativo",
+  "topic": "Atribuições do Presidente da Câmara Municipal",
+  "question": "No desempenho de suas funções regimentais e institucionais, compete privativamente ao Presidente da Câmara Municipal de Vereadores:",
+  "options": [
+    "Sancionar projetos de lei de autoria exclusiva de parlamentares sem encaminhamento prévio ao Prefeito Municipal.",
+    "Vetar parcialmente projetos de lei aprovados pelo Plenário por motivo de inconstitucionalidade material.",
+    "Suspender unilateralmente a vigência de decretos do Poder Executivo sem deliberação do Plenário.",
+    "Representar a Câmara em juízo e fora dele, bem como promulgar leis quando o Prefeito descumprir o prazo legal após a rejeição do veto pelo Plenário."
+  ],
+  "correctAnswer": 3,
+  "commentary": "Gabarito: D. O Presidente da Câmara é o representante judicial e extrajudicial do Poder Legislativo local. Além disso, se o Prefeito não promulgar a lei no prazo de 48 horas após a derrubada do veto, cabe ao Presidente da Câmara promulgá-la (e, se este não o fizer em igual prazo, ao Vice-Presidente)."
+},
+{
+  "id": 226,
+  "category": "legislacao",
+  "day": "w2_d2",
+  "discipline": "Técnico Legislativo",
+  "topic": "Comissões Parlamentares de Inquérito (CPIs)",
+  "question": "De acordo com a Constituição Federal (Art. 58, § 3º) e a legislação parlamentar, as Comissões Parlamentares de Inquérito (CPIs) no âmbito municipal serão criadas mediante requerimento de:",
+  "options": [
+    "Maioria absoluta dos membros da Câmara, para apuração ampla e irrestrita de qualquer ato da gestão municipal sem prazo determinado.",
+    "Dois terços dos parlamentares presentes, com competência para decretar a indisponibilidade patrimonial e prisão preventiva dos investigados.",
+    "Metade mais um dos vereadores, dependendo de prévia autorização homologatória do juiz de direito da comarca local.",
+    "Pelo menos um terço dos membros da Câmara, para apuração de fato determinado e por prazo certo, com poderes de investigação próprios das autoridades judiciais."
+  ],
+  "correctAnswer": 3,
+  "commentary": "Gabarito: D. Requisitos da CPI: requerimento de 1/3 dos membros da Casa, apuração de fato determinado, prazo certo e poderes de investigação próprios das autoridades judiciais. Atenção: CPI não tem reserva de jurisdição (não pode determinar interceptação telefônica, busca domiciliar nem decretar prisão fora de flagrante)."
+},
+{
+  "id": 227,
+  "category": "legislacao",
+  "day": "w2_d2",
+  "discipline": "Técnico Legislativo",
+  "topic": "Comissões Permanentes vs Temporárias",
+  "question": "Na estrutura organizacional do Poder Legislativo, as comissões parlamentares classificam-se em permanentes e temporárias. Sobre as COMISSÕES PERMANENTES, assinale a afirmativa correta:",
+  "options": [
+    "São constituídas exclusivamente para representar a Câmara Municipal em eventos protocolares e congressos fora do estado.",
+    "Subsistem através das legislaturas e têm por objetivo analisar o mérito e a constitucionalidade das proposições afetas à sua respectiva área temática.",
+    "Extinguem-se automaticamente assim que concluem a emissão de parecer sobre o projeto de lei orçamentária do ano corrente.",
+    "São compostas exclusivamente pelos líderes partidários da base de apoio formal ao Prefeito Municipal."
+  ],
+  "correctAnswer": 1,
+  "commentary": "Gabarito: B. Comissões Permanentes são órgãos técnicos colegiados estáveis que perduram pelas legislaturas e apreciam projetos de acordo com as áreas temáticas (Constituição e Justiça, Finanças e Orçamento, Obras Públicas, Educação e Saúde)."
+},
+{
+  "id": 228,
+  "category": "legislacao",
+  "day": "w2_d2",
+  "discipline": "Técnico Legislativo",
+  "topic": "Processo de Cassação por Infração Político-Administrativa",
+  "question": "No processo de cassação do mandato do Prefeito ou de Vereador perante a Câmara Municipal por infrações político-administrativas (Decreto-Lei nº 201/67 e LOM), a deliberação final que decide pela cassação exige o quórum qualificado de:",
+  "options": [
+    "Maioria simples dos vereadores votantes na sessão extraordinária de julgamento.",
+    "Maioria absoluta dos membros componentes do Poder Legislativo Municipal.",
+    "Dois terços (2/3) dos membros da Câmara Municipal, assegurados o contraditório e a ampla defesa ao acusado.",
+    "Unanimidade dos vereadores que compõem a comissão processante destacada para o caso."
+  ],
+  "correctAnswer": 2,
+  "commentary": "Gabarito: C. Art. 5º, VI do DL 201/67 e disposições das Leis Orgânicas Municipais: o mandato do Prefeito ou Vereador somente será cassado se decorrer de decisão tomada por no mínimo 2/3 (dois terços) dos membros da Câmara Municipal."
+},
+{
+  "id": 229,
+  "category": "legislacao",
+  "day": "w2_d2",
+  "discipline": "Técnico Legislativo",
+  "topic": "Perda e Extinção do Mandato de Vereador",
+  "question": "Em relação à perda e extinção do mandato parlamentar na Câmara Municipal, a declaração de perda do mandato será feita DE OFÍCIO PELA MESA DIRETORA (sem necessidade de votação do Plenário) quando o Vereador:",
+  "options": [
+    "Proceder de modo incompatível com a dignidade da Câmara ou incidir em quebra comprovada do decoro parlamentar.",
+    "Deixar de comparecer, em cada sessão legislativa, à terça parte (1/3) das sessões ordinárias da Casa, salvo licença ou missão autorizada.",
+    "Sofrer acusação formal formulada em CPI ainda sem julgamento do mérito judicial.",
+    "Votar contra a orientação partidária do seu líder em projeto de lei de diretrizes orçamentárias."
+  ],
+  "correctAnswer": 1,
+  "commentary": "Gabarito: B. A falta a 1/3 das sessões ordinárias anuais (sem licença justificada) ou a perda/suspensão dos direitos políticos gera EXTINÇÃO/PERDA DECLARADA DE OFÍCIO pela Mesa Diretora. Já a quebra de decoro ou condenação criminal com trânsito em julgado exige deliberação do Plenário por maioria absoluta."
+},
+{
+  "id": 230,
+  "category": "legislacao",
+  "day": "w2_d2",
+  "discipline": "Técnico Legislativo",
+  "topic": "Quórum Regimental: Maioria Simples vs Absoluta vs Qualificada",
+  "question": "O quórum de deliberação é a quantidade mínima de votos exigida para que a Câmara Municipal aprove legitimamente determinado ato legislativo. Assinale a correta correlação entre a matéria e o seu respectivo quórum constitucional:",
+  "options": [
+    "Aprovação de Emenda à Lei Orgânica Municipal — Exige quórum qualificado de dois terços (2/3) dos membros em dois turnos de votação.",
+    "Aprovação de Lei Ordinária Municipal — Exige quórum qualificado de três quintos (3/5) de todos os eleitores cadastrados.",
+    "Rejeição de veto do Prefeito Municipal — Exige maioria simples dos presentes na ordem do dia.",
+    "Aprovação do Regimento Interno da Câmara — Exige maioria simples dos vereadores presentes na abertura da sessão."
+  ],
+  "correctAnswer": 0,
+  "commentary": "Gabarito: A. A Emenda à Lei Orgânica exige votação em dois turnos com interstício mínimo de 10 dias e aprovação por 2/3 dos membros da Câmara (Art. 29, caput da CF/88). Lei ordinária exige maioria simples. Rejeição de veto exige maioria absoluta. Regimento interno exige maioria absoluta."
+},
+{
+  "id": 231,
+  "category": "legislacao",
+  "day": "w2_d2",
+  "discipline": "Técnico Legislativo",
+  "topic": "Iniciativa Legislativa Popular no Município",
+  "question": "A Constituição Federal de 1988 consagrou a iniciativa popular de projetos de lei como expressão da democracia direta e participativa. No âmbito dos Municípios, a iniciativa popular de projetos de lei de interesse específico do município exige a manifestação de:",
+  "options": [
+    "Pelo menos 1% (um por cento) do eleitorado nacional distribuído em pelo menos cinco municípios limítrofes.",
+    "Pelo menos 10% (dez por cento) dos servidores públicos municipais da administração direta e autárquica.",
+    "Pelo menos 20% (vinte por cento) dos moradores inscritos no cadastro imobiliário de IPTU da cidade.",
+    "Pelo menos 5% (cinco por cento) do eleitorado municipal, mediante projeto articulado subscrito pelos cidadãos."
+  ],
+  "correctAnswer": 3,
+  "commentary": "Gabarito: D. Art. 29, XIII da CF/88: 'iniciativa popular de projetos de lei de interesse específico do Município, da cidade ou de bairros, através de manifestação de, pelo menos, cinco por cento do eleitorado'."
+},
+{
+  "id": 232,
+  "category": "legislacao",
+  "day": "w2_d2",
+  "discipline": "Técnico Legislativo",
+  "topic": "Fases do Processo Legislativo Municipal",
+  "question": "O rito procedimental pelo qual uma proposição percorre os órgãos da Câmara até transformar-se em lei compõe o processo legislativo. A fase constitutiva do processo legislativo compreende as seguintes etapas em ordem cronológica:",
+  "options": [
+    "Elaboração de minuta no gabinete do vereador e divulgação oficiosa nas redes sociais da Câmara.",
+    "Homologação liminar pelo Ministério Público Estadual e publicação no Diário da Justiça Eleitoral.",
+    "Deliberação parlamentar (discussão e votação em Plenário) e deliberação executiva (sanção ou veto do Prefeito).",
+    "Parecer vinculante do Tribunal de Justiça Estadual e assinatura do Presidente da República."
+  ],
+  "correctAnswer": 2,
+  "commentary": "Gabarito: C. O processo legislativo desdobra-se em: (1) Fase introdutória (iniciativa/protocolo); (2) Fase constitutiva (deliberação parlamentar em comissões e plenário + deliberação executiva com sanção ou veto); (3) Fase complementar (promulgação e publicação)."
+},
+{
+  "id": 233,
+  "category": "legislacao",
+  "day": "w2_d2",
+  "discipline": "Técnico Legislativo",
+  "topic": "Veto do Prefeito e Quórum de Rejeição",
+  "question": "Recebido o projeto de lei aprovado pela Câmara, o Prefeito Municipal dispõe do prazo de 15 (quinze) dias úteis para sancioná-lo ou vetá-lo. Caso decida pelo VETO, para que a Câmara Municipal REJEITE o veto e mantenha o texto original, é necessária deliberação por:",
+  "options": [
+    "Maioria simples dos vereadores que comparecerem à sessão em que o veto for apreciado.",
+    "Maioria absoluta dos membros da Câmara Municipal, em escrutínio aberto, dentro do prazo legal de 30 dias.",
+    "Quórum qualificado obrigatório e unânime de todos os líderes de bancada formalmente constituídos.",
+    "Três quintos (3/5) dos membros titulares da comissão temática permanente de legislação e justiça."
+  ],
+  "correctAnswer": 1,
+  "commentary": "Gabarito: B. Art. 66, § 4º da CF/88 aplicado por simetria aos Municípios: o veto só pode ser rejeitado pelo voto da maioria absoluta dos vereadores (e não por maioria simples). O silêncio do Prefeito após 15 dias úteis importa em sanção tácita."
+},
+{
+  "id": 234,
+  "category": "legislacao",
+  "day": "w2_d2",
+  "discipline": "Técnico Legislativo",
+  "topic": "Sessões Extraordinárias da Câmara",
+  "question": "A convocação extraordinária da Câmara Municipal é permitida em situações de urgência ou interesse público relevante. Durante uma Sessão Legislativa Extraordinária, a Câmara de Vereadores deliberará:",
+  "options": [
+    "Livremente sobre qualquer projeto pendente de votação ordinária, inclusive moções e homenagens cívicas.",
+    "Exclusivamente sobre a destituição de membros da Mesa Diretora por voto de censura administrativa.",
+    "Sobre matérias ordinárias mediante percepção obrigatória de verba pecuniária extraordinária dobrada por sessão.",
+    "Somente sobre a matéria para a qual foi expressamente convocada, vedado o pagamento de parcela indenizatória em razão da convocação."
+  ],
+  "correctAnswer": 3,
+  "commentary": "Gabarito: D. Art. 57, § 7º da CF/88 e legislação municipal: na sessão legislativa extraordinária, a Câmara somente delibera sobre a matéria para a qual foi convocada (princípio da especificidade da pauta) e é vedado o pagamento de parcela indenizatória pela convocação (Art. 57, § 7º)."
+},
+{
+  "id": 235,
+  "category": "legislacao",
+  "day": "w2_d2",
+  "discipline": "Técnico Legislativo",
+  "topic": "Controle Externo da Câmara e Parecer do TCE",
+  "question": "A fiscalização financeira e orçamentária do Município será exercida pela Câmara Municipal mediante controle externo, auxiliada pelo Tribunal de Contas do Estado. Acerca do parecer prévio emitido pelo Tribunal de Contas, assinale a opção correta:",
+  "options": [
+    "Possui eficácia vinculante automática e imediata, não podendo o Poder Legislativo discordar de suas conclusões técnicas.",
+    "Tem natureza técnica e opinativa, deixando de prevalecer unicamente por decisão fundamentada de dois terços (2/3) dos membros da Câmara.",
+    "Pode ser rejeitado livremente pela maioria simples dos vereadores presentes em sessão ordinária única.",
+    "Depende de homologação prévia por decreto do Chefe do Poder Executivo para produzir efeitos de inelegibilidade."
+  ],
+  "correctAnswer": 1,
+  "commentary": "Gabarito: B. Art. 31, § 2º da CF/88: o parecer prévio emitido pelo órgão competente sobre as contas que o Prefeito deve prestar anualmente só deixará de prevalecer por decisão de dois terços dos membros da Câmara Municipal."
+},
+{
+  "id": 236,
+  "category": "legislacao",
+  "day": "w2_d2",
+  "discipline": "Técnico Legislativo",
+  "topic": "Princípio da Simetria Constitucional no Processo Legislativo",
+  "question": "O Princípio da Simetria Constitucional exige que os entes federados adotem as regras básicas de organização e processo legislativo traçadas pela Constituição Federal. Em observância a esse princípio, é DEFESO (proibido) à Câmara Municipal:",
+  "options": [
+    "Rejeitar projetos de lei de iniciativa do Chefe do Poder Executivo que criem obrigações orçamentárias.",
+    "Criar Comissões Parlamentares de Inquérito para apurar irregularidades em contratos de transporte público.",
+    "Apresentar emenda parlamentar a projeto do Executivo que acarrete aumento de despesa em matérias de iniciativa reservada ao Prefeito.",
+    "Apreciar vetos totais ou parciais apostos pelo Executivo em projetos de lei originados de emendas constitucionais."
+  ],
+  "correctAnswer": 2,
+  "commentary": "Gabarito: C. Art. 63, I da CF/88: não será admitido aumento da despesa prevista nos projetos de iniciativa exclusiva do Chefe do Poder Executivo. O princípio da simetria veda que vereadores aumentem despesa em projetos de iniciativa reservada do Prefeito."
+},
+{
+  "id": 237,
+  "category": "legislacao",
+  "day": "w2_d2",
+  "discipline": "Técnico Legislativo",
+  "topic": "Espécies Normativas: Decreto Legislativo vs Resolução",
+  "question": "Dentre os atos do processo legislativo previstos no ordenamento jurídico, diferenciam-se o DECRETO LEGISLATIVO e a RESOLUÇÃO da Câmara. A respeito dessa distinção técnica, assinale a opção correta:",
+  "options": [
+    "O Decreto Legislativo destina-se apenas a organizar o regimento interno, ao passo que a Resolução altera a Lei Orgânica Municipal.",
+    "O Decreto Legislativo disciplina matéria de competência exclusiva da Câmara de efeitos externos (ex.: julgamento das contas do Prefeito), enquanto a Resolução disciplina matéria de economia interna (ex.: Regimento Interno).",
+    "A Resolução depende obrigatoriamente de sanção e promulgação pelo Prefeito Municipal para entrar em vigor.",
+    "O Decreto Legislativo é ato administrativo infralegal expedido privativamente pelos Secretários Municipais."
+  ],
+  "correctAnswer": 1,
+  "commentary": "Gabarito: B. Decretos Legislativos tratam de competências privativas/exclusivas da Câmara que geram efeitos externos (ex: aprovação de contas do prefeito, concessão de licença ao prefeito, sustação de atos normativos do Executivo). Resoluções tratam de matéria estritamente interna (ex: Regimento Interno, estrutura administrativa dos gabinetes)."
+},
+{
+  "id": 238,
+  "category": "legislacao",
+  "day": "w2_d2",
+  "discipline": "Técnico Legislativo",
+  "topic": "Suplência e Convocação de Vereador",
+  "question": "Em consonância com as regras eleitorais e regimentais do Poder Legislativo Municipal, a convocação do suplente de Vereador dar-se-á nos casos de:",
+  "options": [
+    "Ausência justificada do titular a uma única sessão ordinária por motivos de saúde temporária.",
+    "Voto divergente do titular em relação às deliberações firmadas em convenção partidária municipal.",
+    "Morte, renúncia, cassação do titular ou licença por período contínuo superior ao fixado no Regimento Interno e Lei Orgânica.",
+    "Instauração de sindicância administrativa preliminar sem afastamento cautelar determinado por juiz."
+  ],
+  "correctAnswer": 2,
+  "commentary": "Gabarito: C. O suplente de vereador é convocado nos casos de vacância definitiva (morte, renúncia, perda/cassação de mandato) ou de licença do titular por período prolongado estabelecido na Lei Orgânica/Regimento Interno (geralmente superior a 120 dias ou para assumir cargo de Secretário Municipal)."
+},
+{
+  "id": 239,
+  "category": "legislacao",
+  "day": "w2_d2",
+  "discipline": "Técnico Legislativo",
+  "topic": "Natureza Jurídica do Regimento Interno da Câmara",
+  "question": "O Regimento Interno da Câmara Municipal é a norma jurídica mestra que estrutura seu funcionamento. Sob a ótica do Direito Constitucional e Administrativo, o Regimento Interno:",
+  "options": [
+    "É veiculado sob a forma de Lei Ordinária, sujeitando-se obrigatoriamente ao veto político do Prefeito Municipal.",
+    "Constitui decreto governamental expedido pelo Governador do Estado para padronizar as câmaras municipais.",
+    "É veiculado sob a forma de Resolução, constituindo matéria interna corporis e auto-organizatória, insuscetível de veto pelo Chefe do Poder Executivo.",
+    "Exige referendo popular compulsório a cada eleição municipal para manter sua eficácia normativa interna."
+  ],
+  "correctAnswer": 2,
+  "commentary": "Gabarito: C. O Regimento Interno é veiculado por Resolução, ato normativo primário de competência privativa da Câmara que corporifica sua autonomia institucional (auto-organização parlamentar). Não passa pelo crivo de sanção ou veto do Prefeito."
+},
+{
+  "id": 240,
+  "category": "legislacao",
+  "day": "w2_d2",
+  "discipline": "Técnico Legislativo",
+  "topic": "Publicidade e Transparência dos Atos Parlamentares (Lei 12.527/2011)",
+  "question": "A Lei de Acesso à Informação (LAI - Lei nº 12.527/2011) e o Art. 37 da CF/88 impõem o princípio da publicidade aos órgãos legislativos. No âmbito da Câmara de Vereadores, constitui exigência de TRANSPARÊNCIA ATIVA:",
+  "options": [
+    "A exigência de que todo cidadão justifique documentalmente o motivo de seu interesse para obter cópia da ata da sessão.",
+    "A divulgação em portal oficial na internet, independentemente de requerimentos, da execução orçamentária, folhas de pagamento, licitações e votações nominais.",
+    "O fornecimento de informações contábeis restrito àqueles que comprovarem domicílio eleitoral no município há mais de cinco anos.",
+    "A cobrança de taxa de protocolo prévia para acesso aos dados de remuneração dos cargos em comissão da Casa Legislativa."
+  ],
+  "correctAnswer": 1,
+  "commentary": "Gabarito: B. A transparência ativa consiste no dever do órgão público (incluindo as Câmaras Municipais) de disponibilizar espontaneamente na internet, sem necessidade de solicitação prévia, relatórios de despesas, salários, editais, contratos e deliberações plenárias (Art. 8º da Lei nº 12.527/2011)."
+},
+{
+  "id": 241,
+  "category": "portugues",
+  "day": "w2_d2",
+  "discipline": "Língua Portuguesa",
+  "topic": "Sintaxe do Verbo Haver (Impessoalidade)",
+  "question": "Nas provas da banca INBRASP, a sintaxe do verbo 'HAVER' é alvo frequente de cobrança gramatical. Assinale a frase em que a concordância do verbo destacado está INTEIRAMENTE CORRETA segundo a norma culta:",
+  "options": [
+    "Houve manifestações calorosas dos munícipes durante a apreciação das emendas orçamentárias.",
+    "Houveram muitos pedidos de esclarecimento apresentados pelos vereadores da oposição.",
+    "Haverão de existir soluções viáveis para equilibrar os limites de gastos da Câmara Municipal.",
+    "Devem haverem critérios transparentes na concessão de diárias aos técnicos legislativos."
+  ],
+  "correctAnswer": 0,
+  "commentary": "Gabarito: A. O verbo HAVER, com sentido de 'existir', 'acontecer' ou tempo decorrido, é impessoal: não possui sujeito e deve permanecer obrigatoriamente na 3ª pessoa do singular ('Houve manifestações', 'Havia muitos pedidos', 'Deve haver critérios')."
+},
+{
+  "id": 242,
+  "category": "portugues",
+  "day": "w2_d2",
+  "discipline": "Língua Portuguesa",
+  "topic": "Verbo Haver vs. Verbo Existir",
+  "question": "Ao contrário de 'haver' (quando impessoal), o verbo 'EXISTIR' é pessoal e concorda normalmente com o seu sujeito gramatical. Assinale a alternativa que apresenta a correta concordância de ambos os verbos:",
+  "options": [
+    "Haviam muitas divergências entre os parlamentares, mas existia pontos de consenso sobre o piso salarial.",
+    "Havia muitas divergências entre os parlamentares, mas existia pontos de consenso sobre o piso salarial.",
+    "Haviam muitas divergências entre os parlamentares, mas existiam pontos de consenso sobre o piso salarial.",
+    "Havia muitas divergências entre os parlamentares, mas existiam pontos de consenso sobre o piso salarial."
+  ],
+  "correctAnswer": 3,
+  "commentary": "Gabarito: D. 'Haver' (no sentido de existir) não vai para o plural ('Havia muitas divergências' - 'muitas divergências' é objeto direto). Já 'existir' é verbo intransitivo e possui sujeito ('pontos de consenso'), devendo concordar no plural ('existiam pontos de consenso')."
+},
+{
+  "id": 243,
+  "category": "portugues",
+  "day": "w2_d2",
+  "discipline": "Língua Portuguesa",
+  "topic": "Locuções Verbais com Verbos Impessoais",
+  "question": "Nas locuções verbais em que o verbo principal é o verbo 'HAVER' (no sentido de existir), o verbo auxiliar herda a impessoalidade, permanecendo invariável. Assinale a opção que observa corretamente essa regra:",
+  "options": [
+    "Podem haver irregularidades graves nos relatórios fiscais do exercício pretérito.",
+    "Pode haver irregularidades graves nos relatórios fiscais do exercício pretérito.",
+    "Devem haverem mecanismos mais rígidos de controle preventivo dos gastos públicos.",
+    "Vão haverem novas audiências públicas na Câmara Municipal nesta legislatura."
+  ],
+  "correctAnswer": 1,
+  "commentary": "Gabarito: B. Quando 'haver' for o verbo principal de uma locução verbal e estiver no sentido de existir, ele transmite sua impessoalidade ao verbo auxiliar, que deve ficar no singular: 'Pode haver irregularidades', 'Deve haver mecanismos', 'Vai haver audiências'."
+},
+{
+  "id": 244,
+  "category": "portugues",
+  "day": "w2_d2",
+  "discipline": "Língua Portuguesa",
+  "topic": "Voz Passiva Sintética (Partícula Apassivadora 'se')",
+  "question": "Quando associado a verbos transitivos diretos (VTD), o vocábulo 'SE' atua como partícula apassivadora, exigindo a concordância do verbo com o sujeito paciente. Assinale o exemplo que atende com exatidão a esse preceito:",
+  "options": [
+    "Aprovaram-se as diretrizes orçamentárias prioritárias para o próximo exercício financeiro.",
+    "Aprovou-se as diretrizes orçamentárias prioritárias para o próximo exercício financeiro.",
+    "Verificou-se muitas incoerências técnicas durante a instrução probatória do processo.",
+    "Constatou-se várias incorreções graves nos cálculos atuariais do regime de previdência."
+  ],
+  "correctAnswer": 0,
+  "commentary": "Gabarito: A. Em 'Aprovaram-se as diretrizes', o verbo 'aprovar' é VTD acompanhado da partícula apassivadora 'se'. 'As diretrizes orçamentárias' é o sujeito paciente (na voz passiva analítica: 'As diretrizes orçamentárias foram aprovadas'). Logo, o verbo deve ir ao plural."
+},
+{
+  "id": 245,
+  "category": "portugues",
+  "day": "w2_d2",
+  "discipline": "Língua Portuguesa",
+  "topic": "Índice de Indeterminação do Sujeito ('se')",
+  "question": "Quando o vocábulo 'SE' atua como ÍNDICE DE INDETERMINAÇÃO DO SUJEITO (acompanhando verbos transitivos indiretos, intransitivos ou de ligação), o verbo fica invariavelmente na 3ª pessoa do singular. Assinale a frase que exemplifica esse caso:",
+  "options": [
+    "Precisam-se de novos técnicos legislativos capacitados para atuar nas comissões temáticas.",
+    "Precisa-se de novos técnicos legislativos capacitados para atuar nas comissões temáticas.",
+    "Tratam-se de propostas orçamentárias de relevante interesse comunitário para Meruoca.",
+    "Necessitam-se de certidões negativas de débito para a homologação da licitação."
+  ],
+  "correctAnswer": 1,
+  "commentary": "Gabarito: B. Em 'Precisa-se de novos técnicos', o verbo 'precisar' é transitivo indireto (exige a preposição 'de'). O 'se' é índice de indeterminação do sujeito e 'de novos técnicos' é objeto indireto. Nesse caso, o verbo jamais vai para o plural: 'Precisa-se de...', 'Trata-se de...', 'Necessita-se de...'."
+},
+{
+  "id": 246,
+  "category": "portugues",
+  "day": "w2_d2",
+  "discipline": "Língua Portuguesa",
+  "topic": "Correlação Verbal (Subjuntivo e Indicativo)",
+  "question": "A adequada correlação entre os tempos e modos verbais confere coerência e precisão aos textos legislativos. Assinale a alternativa que apresenta a CORRETA CORRELAÇÃO verbal segundo a norma gramatical:",
+  "options": [
+    "Se o relator apresentasse o parecer tempestivamente, o Plenário votará a matéria hoje.",
+    "Se o relator apresentar o parecer tempestivamente, o Plenário votava a matéria hoje.",
+    "Caso o relator apresente o parecer tempestivamente, o Plenário votaria a matéria hoje.",
+    "Se o relator apresentasse o parecer tempestivamente, o Plenário votaria a matéria hoje."
+  ],
+  "correctAnswer": 3,
+  "commentary": "Gabarito: D. A clássica correlação condicional hipotética exige: Pretérito imperfeito do subjuntivo ('apresentasse') articulado ao Futuro do pretérito do indicativo ('votaria'). Já o futuro do subjuntivo ('se apresentar') articula-se ao futuro do presente ('votará')."
+},
+{
+  "id": 247,
+  "category": "portugues",
+  "day": "w2_d2",
+  "discipline": "Língua Portuguesa",
+  "topic": "Pretérito Mais-Que-Perfeito do Indicativo",
+  "question": "Na oração 'Quando o Presidente abriu a sessão solene, a comissão já TERMINARA a leitura da ata', a forma verbal em destaque expressa:",
+  "options": [
+    "Uma ação habitual e contínua no presente com efeitos projetados para o futuro.",
+    "Uma ação passada concluída anteriormente a outro fato também passado.",
+    "Uma hipótese incerta condicionada à ocorrência de um evento contingente.",
+    "Um fato futuro tomado em relação a um momento imediatamente contemporâneo."
+  ],
+  "correctAnswer": 1,
+  "commentary": "Gabarito: B. O pretérito mais-que-perfeito do indicativo (terminara, fizera, falara, concluíra) denota uma ação passada que ocorreu antes de outro evento igualmente passado (equivale à forma composta 'já havia terminado')."
+},
+{
+  "id": 248,
+  "category": "portugues",
+  "day": "w2_d2",
+  "discipline": "Língua Portuguesa",
+  "topic": "Pretérito Perfeito vs. Pretérito Imperfeito",
+  "question": "Assinale a alternativa em que o verbo destacado no pretérito imperfeito do indicativo expressa uma ação habitual, costumeira ou repetitiva no passado:",
+  "options": [
+    "Naquela época, os munícipes COMPARECIAM semanalmente à Câmara para acompanhar as votações.",
+    "Ontem à tarde, o Prefeito Municipal ASSINOU o decreto de exoneração do assessor parlamentar.",
+    "A comissão processante ENCERROU os trabalhos de oitiva no prazo impreterível fixado em edital.",
+    "Após a leitura do expediente, o Presidente DECLAROU aberta a ordem do dia para votações."
+  ],
+  "correctAnswer": 0,
+  "commentary": "Gabarito: A. O pretérito imperfeito ('compareciam') indica ações habituais, contínuas ou de duração no passado. As outras alternativas trazem verbos no pretérito perfeito ('assinou', 'encerrou', 'declarou'), que exprimem ações pontuais e integralmente finalizadas."
+},
+{
+  "id": 249,
+  "category": "portugues",
+  "day": "w2_d2",
+  "discipline": "Língua Portuguesa",
+  "topic": "Conjugação do Verbo PÔR e Seus Derivados",
+  "question": "Os verbos derivados de 'PÔR' (como dispor, compor, propor, sobrepor) seguem rigorosamente o mesmo modelo de flexão do verbo primitivo. Assinale a frase com a flexão correta do verbo derivado:",
+  "options": [
+    "Quando o técnico legislativo propor a alteração do protocolo, a Mesa analisará a minuta.",
+    "Se os vereadores comporem uma comissão especial, os fatos serão devidamente esclarecidos.",
+    "Caso a assessoria jurídica não se opor à tramitação, o projeto seguirá para as comissões.",
+    "Quando o técnico legislativo propuser a alteração do protocolo, a Mesa analisará a minuta."
+  ],
+  "correctAnswer": 3,
+  "commentary": "Gabarito: D. No futuro do subjuntivo de pôr temos 'quando eu puser, quando tu puseres, quando ele puser'. Logo, os derivados flexionam-se: 'propuser' (e nunca 'propor'), 'compuserem' (e nunca 'comporem'), 'opuser' (e nunca 'opor')."
+},
+{
+  "id": 250,
+  "category": "portugues",
+  "day": "w2_d2",
+  "discipline": "Língua Portuguesa",
+  "topic": "Conjugação do Verbo VER vs. VIR",
+  "question": "A confusão entre as formas dos verbos 'VER' e 'VIR' no futuro do subjuntivo é recorrente em certames da banca INBRASP. Assinale a opção que emprega CORRETAMENTE a forma verbal correspondente ao verbo 'VER':",
+  "options": [
+    "Se o servidor ver qualquer irregularidade nas notas fiscais, deverá comunicá-la ao setor competente.",
+    "Quando o vereador vim à tribuna, apresentará as reivindicações dos moradores locais.",
+    "Se o servidor vir qualquer irregularidade nas notas fiscais, deverá comunicá-la ao setor competente.",
+    "Caso você ver o procurador jurídico no plenário, solicite o parecer sobre o substitutivo."
+  ],
+  "correctAnswer": 2,
+  "commentary": "Gabarito: C. No futuro do subjuntivo, o verbo VER conjuga-se: quando eu vir, quando tu vires, quando ele vir (e não 'se ele ver'). Já o verbo VIR conjuga-se: quando eu vier, quando tu vieres, quando ele vier."
+},
+{
+  "id": 251,
+  "category": "portugues",
+  "day": "w2_d2",
+  "discipline": "Língua Portuguesa",
+  "topic": "Verbos Abundantes e Emprego do Particípio Duplo",
+  "question": "Os verbos abundantes possuem dois particípios: um regular (terminado em -ado ou -ido) e outro irregular (forma reduzida). Quanto ao seu emprego correto com os verbos auxiliares, assinale a opção correta:",
+  "options": [
+    "O relatório fora IMPRESSO pela gráfica e o secretário havia IMPRIMIDO o comprovante no gabinete.",
+    "O relatório fora imprimido pela gráfica e o secretário havia impresso o comprovante no gabinete.",
+    "O documento oficial foi aceitado pelo diretor e a secretária tinha aceite os protocolos diários.",
+    "A comissão tinha entregue os pareceres após o decreto ter sido entregado pelo prefeito municipal."
+  ],
+  "correctAnswer": 0,
+  "commentary": "Gabarito: A. Regra áurea dos particípios duplos: (1) Com os auxiliares TER ou HAVER usa-se a forma regular terminada em -ado/-ido ('havia imprimido', 'tinha aceitado', 'havia entregado'); (2) Com os auxiliares SER ou ESTAR usa-se a forma irregular reduzida ('foi impresso', 'foi aceito', 'foi entregue')."
+},
+{
+  "id": 252,
+  "category": "portugues",
+  "day": "w2_d2",
+  "discipline": "Língua Portuguesa",
+  "topic": "Conjugação de Verbos em -IAR (Regra do MARIO)",
+  "question": "A maioria dos verbos terminados em -IAR é regular (ex.: criar $\\rightarrow$ eu crio; avaliar $\\rightarrow$ eu avalio). Todavia, os verbos do mnemônico 'MARIO' mudam o 'i' para 'ei' nas formas rizotônicas do presente. Pertence a esse grupo de conjugação especial o verbo:",
+  "options": [
+    "Copiar (eu copeio, tu copeias, ele copeia, eles copeiam).",
+    "Confiar (eu confeio, tu confeias, ele confeia, eles confeiam).",
+    "Ansiar (eu anseio, tu anseias, ele anseia, eles anseiam).",
+    "Ampliar (eu ampleio, tu ampleias, ele ampleia, eles ampleiam)."
+  ],
+  "correctAnswer": 2,
+  "commentary": "Gabarito: C. Mnemônico MARIO: Medir/Mediar, Ansiar, Remediar, Incendiar e Odiar. Esses verbos recebem 'ei' nas formas rizotônicas do presente do indicativo e do subjuntivo (eu anseio, remedeio, incendeio, odeio). Os demais verbos em -iar são regulares (eu copio, confio, amplio)."
+},
+{
+  "id": 253,
+  "category": "portugues",
+  "day": "w2_d2",
+  "discipline": "Língua Portuguesa",
+  "topic": "Infinitivo Pessoal (Flexionado)",
+  "question": "O infinitivo pessoal (ou flexionado) recebe desinências número-pessoais (-es, -mos, -des, -em). O emprego do infinitivo flexionado é OBRIGATÓRIO quando:",
+  "options": [
+    "O infinitivo possui sujeito próprio, claro e distinto do sujeito da oração principal.",
+    "O verbo funciona como verbo principal de uma locução verbal regida por preposição de.",
+    "O infinitivo integra uma locução verbal com verbo auxiliar modal como dever ou poder.",
+    "A oração é introduzida pela preposição 'a' precedendo verbo que indica movimento contínuo."
+  ],
+  "correctAnswer": 0,
+  "commentary": "Gabarito: A. O infinitivo deve ser obrigatoriamente flexionado quando possuir sujeito próprio e explícito, diferente do sujeito da oração principal (ex.: 'O Presidente pediu para OS VEREADORES VOTAREM o projeto com urgência'). Em locuções verbais, o infinitivo não se flexiona ('Eles devem comparecer')."
+},
+{
+  "id": 254,
+  "category": "portugues",
+  "day": "w2_d2",
+  "discipline": "Língua Portuguesa",
+  "topic": "Formação do Modo Imperativo",
+  "question": "A formação do modo imperativo obedece a regras precisas derivadas do presente do indicativo e do presente do subjuntivo. Sobre a formação do IMPERATIVO AFIRMATIVO, é correto afirmar que:",
+  "options": [
+    "Todas as formas derivam exclusivamente do pretérito perfeito do indicativo sem as desinências número-pessoais.",
+    "As formas de 'tu' e 'vós' derivam do presente do indicativo sem a letra 's' final, enquanto as demais formas vêm do presente do subjuntivo.",
+    "As formas de 'você' e 'vocês' são extraídas do pretérito imperfeito do indicativo com o acréscimo de desinência modal.",
+    "O imperativo afirmativo e o imperativo negativo possuem idêntica formação morfológica em todas as pessoas gramaticais."
+  ],
+  "correctAnswer": 1,
+  "commentary": "Gabarito: B. No Imperativo Afirmativo: 'tu' e 'vós' vêm do Presente do Indicativo cortando o 's' final (Tu cantas $\\rightarrow$ Canta tu; Vós cantais $\\rightarrow$ Cantai vós). As pessoas 'você', 'nós' e 'vocês' vêm diretamente do Presente do Subjuntivo sem alterações (Cante você, Cantemos nós, Cantem vocês)."
+},
+{
+  "id": 255,
+  "category": "portugues",
+  "day": "w2_d2",
+  "discipline": "Língua Portuguesa",
+  "topic": "Formação do Modo Imperativo Negativo",
+  "question": "Na redação de atos oficiais e recomendações, o uso do imperativo negativo exige observância de sua matriz morfológica. O IMPERATIVO NEGATIVO forma-se a partir de:",
+  "options": [
+    "Todas as pessoas extraídas do presente do indicativo sem o 's' final das segundas pessoas.",
+    "Formas do futuro do pretérito modificadas pela junção de partículas adverbiais de intensidade.",
+    "Infinitivo pessoal antecedido da partícula negativa sem desinências flexionais de número.",
+    "Todas as pessoas extraídas diretamente do presente do subjuntivo, antecedidas da palavra de negação."
+  ],
+  "correctAnswer": 3,
+  "commentary": "Gabarito: D. O Imperativo Negativo tem formação 100% regular e unificada: todas as pessoas gramaticais (não cantes tu, não cante você, não cantemos nós, não canteis vós, não cantem vocês) são cópias exatas do Presente do Subjuntivo, antecedidas por palavra negativa ('não', 'nunca', 'jamais')."
+},
+{
+  "id": 256,
+  "category": "portugues",
+  "day": "w2_d2",
+  "discipline": "Língua Portuguesa",
+  "topic": "Verbos Defectivos",
+  "question": "Os verbos defectivos são aqueles que não possuem conjugação completa em todas as formas, modos ou pessoas gramaticais. Constitui exemplo clássico de VERBO DEFECTIVO na língua portuguesa o verbo:",
+  "options": [
+    "Correr (que se conjuga em todas as pessoas do presente do indicativo: corro, corres, corre).",
+    "Escrever (que possui conjugação integral e abundante em todos os tempos do modo subjuntivo).",
+    "Falir (que não possui as formas da primeira, segunda e terceira pessoas do singular do presente do indicativo).",
+    "Partir (que funciona como modelo canônico da terceira conjugação regular em -ir)."
+  ],
+  "correctAnswer": 2,
+  "commentary": "Gabarito: C. Verbos defectivos não se conjugam em determinadas formas. O verbo FALIR, por exemplo, no presente do indicativo, só possui a 1ª e 2ª pessoas do plural ('nós falimos', 'vós falis'), não possuindo as formas rizotônicas 'eu fali/falo/falo' (para evitar ambiguidade ou por tradição eufônica)."
+},
+{
+  "id": 257,
+  "category": "portugues",
+  "day": "w2_d2",
+  "discipline": "Língua Portuguesa",
+  "topic": "Verbos Pronominais Essenciais vs Acidentais",
+  "question": "Os verbos pronominais conjugam-se com pronomes oblíquos átonos da mesma pessoa do sujeito. Classifica-se como PRONOMINAL ESSENCIAL (aquele que só existe acompanhado do pronome) o verbo:",
+  "options": [
+    "Lavar-se (pronominal acidental, pois existe a forma ativa transitiva direta 'lavar o carro').",
+    "Vestir-se (pronominal acidental, pois existe a forma transitiva direta 'vestir a toga').",
+    "Ferir-se (pronominal acidental, pois existe a forma transitiva direta 'ferir o adversário').",
+    "Queixar-se (não existe o verbo 'queixar' na acepção de reclamar sem o pronome)."
+  ],
+  "correctAnswer": 3,
+  "commentary": "Gabarito: D. Verbos pronominais essenciais são aqueles que trazem o pronome oblíquo fundido à sua própria existência sem função sintática autônoma: queixar-se, arrepender-se, suicidar-se, zangar-se, atrever-se. Os acidentais podem ser empregados sem o pronome (lavar, ferir, pentear)."
+},
+{
+  "id": 258,
+  "category": "portugues",
+  "day": "w2_d2",
+  "discipline": "Língua Portuguesa",
+  "topic": "Transitividade Verbal Contextual: Aspirar",
+  "question": "A regência verbal estuda a relação de dependência entre o verbo e seus complementos. O verbo 'ASPIRAR' apresenta dupla transitividade conforme o sentido pretendido. Assinale o uso em que 'aspirar' é TRANSITIVO INDIRETO (com preposição 'a'):",
+  "options": [
+    "Muitos candidatos dedicados aspiram ao cargo público de Técnico Legislativo da Câmara.",
+    "O paciente internado na unidade hospitalar aspirava o ar puro da serra pela manhã.",
+    "O aspirador de pó industrial aspirou todo o resíduo acumulado no carpete do plenário.",
+    "Durante o trajeto na mata nativa, os atletas aspiraram a fumaça tóxica da queimada."
+  ],
+  "correctAnswer": 0,
+  "commentary": "Gabarito: A. O verbo ASPIRAR possui dois regimes clássicos: (1) Sentido de 'sorver/inalar/respirar' = Transitivo Direto sem preposição ('aspirou o ar'); (2) Sentido de 'almejar/desejar/pretender' = Transitivo Indireto com a preposição 'a' ('aspiram ao cargo público')."
+},
+{
+  "id": 259,
+  "category": "portugues",
+  "day": "w2_d2",
+  "discipline": "Língua Portuguesa",
+  "topic": "Regência Verbal: Assistir",
+  "question": "O verbo 'ASSISTIR' assume diferentes regências de acordo com o contexto comunicativo. Assinale a alternativa em que 'assistir' é empregado como TRANSITIVO INDIRETO no sentido de 'presenciar / ver':",
+  "options": [
+    "A equipe de enfermagem da assistência social assistiu os idosos durante a campanha de vacinação.",
+    "O médico plantonista do município assistiu o paciente acidentado com extrema presteza.",
+    "Os cidadãos interessados assistiram à sessão plenária da Câmara Municipal com entusiasmo.",
+    "O técnico legislativo assistiu o vereador na elaboração da justificativa do projeto de lei."
+  ],
+  "correctAnswer": 2,
+  "commentary": "Gabarito: C. O verbo ASSISTIR: (1) No sentido de 'ver/presenciar' é Transitivo Indireto com preposição 'a' ('assistiram à sessão' - crase obrigatória); (2) No sentido de 'ajudar/socorrer' é preferencialmente Transitivo Direto sem preposição ('assistiu o paciente', 'assistiu o vereador'); (3) No sentido de 'caber/pertencer' é VTI com 'a' ('assiste ao cidadão esse direito')."
+},
+{
+  "id": 260,
+  "category": "portugues",
+  "day": "w2_d2",
+  "discipline": "Língua Portuguesa",
+  "topic": "Regência Verbal: Obedecer e Visar",
+  "question": "A norma culta exige atenção rigorosa à regência de determinados verbos de uso cotidiano no serviço público. Assinale a frase que respeita plenamente as normas de regência verbal:",
+  "options": [
+    "Todos os servidores públicos da Câmara devem obedecer às disposições do regimento interno.",
+    "Todos os servidores públicos da Câmara devem obedecer as disposições do regimento interno.",
+    "O projeto de lei complementar visa a promoção geral de incentivos fiscais no comércio.",
+    "O assessor parlamentar visou ao documento oficial com carimbo institucional de protocolo."
+  ],
+  "correctAnswer": 0,
+  "commentary": "Gabarito: A. O verbo OBEDECER é estritamente Transitivo Indireto e rege a preposição 'a' ('obedecer a + as disposições = obedecer às disposições do regimento'). Já o verbo 'visar' no sentido de mirar ou apor visto é VTD ('visou o documento'). No sentido de almejar, rege 'a' ('visa à promoção')."
+}
 ];
 
 // =========================================================================
@@ -5070,8 +5711,8 @@ let appState = {
   checkedTasks: {},
   dayQuestions: {},
   quizAnswers: {},
-  bankVersion: 2,
-  quizCategoryFilter: 'w2_d1',
+  bankVersion: 3,
+  quizCategoryFilter: 'w2_d2',
   quizOrderMode: 'random', // 'random', 'interleaved', 'sequential'
   quizFilterStatus: 'all', // 'all', 'pending', 'wrong'
   quizShuffledOrder: {}, // armazena ordem embaralhada por chave de filtro para manter estabilidade
@@ -5130,8 +5771,8 @@ function loadState() {
     try {
       const parsed = JSON.parse(saved);
       appState = { ...appState, ...parsed };
-      if (appState.bankVersion !== 2) {
-        appState.bankVersion = 2;
+      if (appState.bankVersion !== 3) {
+        appState.bankVersion = 3;
         appState.quizAnswers = {};
         appState.quizShuffledOrder = {};
         saveState();
@@ -5781,8 +6422,8 @@ function selectQuizDay(dayKey) {
     if (titleEl) titleEl.innerText = "📅 Dia 2 — Terça-feira (01/09/2026): D. Constitucional & Português";
     if (descEl) descEl.innerText = "15 questões de Direito Constitucional (Art. 5º e Remédios) + 15 questões de Português (Tipos e Gêneros Textuais).";
   } else {
-    if (titleEl) titleEl.innerText = "📚 Todas as Questões do Banco de Provas (220 Questões)";
-    if (descEl) descEl.innerText = "Simulado geral contendo todas as 220 questões ativas (Semana 1 completa + Semana 2 Dia 1) para treino de alta performance.";
+    if (titleEl) titleEl.innerText = "📚 Todas as Questões do Banco de Provas (260 Questões)";
+    if (descEl) descEl.innerText = "Simulado geral contendo todas as 260 questões ativas (Semana 1 completa + Semana 2 Dias 1 e 2) para treino de alta performance.";
   }
 
   saveState();
