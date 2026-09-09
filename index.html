@@ -165,8 +165,8 @@
               <span class="metric-title">Flashcards & Caderno</span>
               <div class="metric-icon purple"><i class="fas fa-brain"></i></div>
             </div>
-            <div class="metric-value" id="metricFlashcardsMastered">0 / 37</div>
-            <div class="metric-sub">Conceitos dominados</div>
+            <div class="metric-value" id="metricFlashcardsMastered">0 / 57</div>
+            <div class="metric-sub">Conceitos dominados • <span id="metricErrorsCount">0</span> no caderno</div>
           </div>
         </section>
 
@@ -252,16 +252,16 @@
           <!-- Banner Informativo do Dia Selecionado -->
           <div class="day-info-banner" id="quizDayBanner">
             <div>
-              <h3 id="quizDayTitle">⭐ Semana 2 • Dia 2 — Terça-feira (08/09/2026 - HOJE): Poder Legislativo & Morfologia dos Verbos (40 Questões)</h3>
-              <p id="quizDayDesc">20 questões de Técnico Legislativo (Funções, Mesa Diretora, CPIs e Quóruns) + 20 de Português (Verbo Haver, Subjuntivo, Vozes Verbais e Regência). Padrão Oficial INBRASP.</p>
+              <h3 id="quizDayTitle">⭐ Semana 2 • Dia 3 — Quarta-feira (09/09/2026 - HOJE): Processo Legislativo & Pacote Office (40 Questões)</h3>
+              <p id="quizDayDesc">20 questões de Conhecimentos Específicos (Processo Legislativo, Espécies Normativas CF art. 59, Iniciativa, Tramitação, Emendas, Substitutivos e Vetos) + 20 questões de Informática (MS Word, Excel fórmulas, PowerPoint e Google Workspace). Padrão Oficial Banca INBRASP.</p>
             </div>
             <div style="display: flex; gap: 8px; flex-wrap: wrap;">
               <button class="btn btn-secondary" style="font-size: 0.8rem; padding: 6px 12px;" onclick="filterQuizCategory('all')">Ver Todas as 40Q</button>
-              <a href="provas/CADERNO_QUESTOES_SEMANA_02_DIA_02_08_09_2026.html" target="_blank" class="btn btn-primary" style="font-size: 0.8rem; padding: 6px 12px;">
+              <a href="provas/CADERNO_QUESTOES_SEMANA_02_DIA_03_09_09_2026.html" target="_blank" class="btn btn-primary" id="btnOpenDayBooklet" style="font-size: 0.8rem; padding: 6px 12px;">
                 <i class="fas fa-print"></i> Abrir Caderno Hoje Impresso (PDF)
               </a>
-              <a href="provas/CADERNO_QUESTOES_SEMANA_02_DIA_01_07_09_2026.html" target="_blank" class="btn btn-secondary" style="font-size: 0.8rem; padding: 6px 12px;">
-                <i class="fas fa-file-alt"></i> Caderno Dia 1 (40Q)
+              <a href="provas/CENTRAL_DE_PROVAS.html" target="_blank" class="btn btn-secondary" style="font-size: 0.8rem; padding: 6px 12px;">
+                <i class="fas fa-archive"></i> Central de Provas & Editais
               </a>
             </div>
           </div>
@@ -335,13 +335,14 @@
             </div>
 
             <div class="quiz-filter-group">
-              <button class="btn btn-secondary" style="font-size: 0.8rem; padding: 6px 12px;" onclick="filterFlashcards('all')">Todos</button>
-              <button class="btn btn-primary" style="font-size: 0.8rem; padding: 6px 12px;" onclick="filterFlashcards('dia4')">⭐ Dia 4: Port, Const & LO (Hoje)</button>
-              <button class="btn btn-secondary" style="font-size: 0.8rem; padding: 6px 12px;" onclick="filterFlashcards('dia3')">Dia 3: Admin & Info</button>
-              <button class="btn btn-secondary" style="font-size: 0.8rem; padding: 6px 12px;" onclick="filterFlashcards('legislacao')">Lei Orgânica & Regimento</button>
-              <button class="btn btn-secondary" style="font-size: 0.8rem; padding: 6px 12px;" onclick="filterFlashcards('constitucional')">Constitucional</button>
-              <button class="btn btn-secondary" style="font-size: 0.8rem; padding: 6px 12px;" onclick="filterFlashcards('administrativo')">D. Administrativo</button>
-              <button class="btn btn-secondary" style="font-size: 0.8rem; padding: 6px 12px;" onclick="filterFlashcards('informatica')">Informática</button>
+              <button class="btn btn-primary flashcard-filter-btn" style="font-size: 0.8rem; padding: 6px 12px;" onclick="filterFlashcards('all')">Todos (57)</button>
+              <button class="btn btn-secondary flashcard-filter-btn" style="font-size: 0.8rem; padding: 6px 12px;" onclick="filterFlashcards('semana2')">⭐ Semana 2 (Proc. Leg. & Office)</button>
+              <button class="btn btn-secondary flashcard-filter-btn" style="font-size: 0.8rem; padding: 6px 12px;" onclick="filterFlashcards('legislacao')">Lei Orgânica & Regimento</button>
+              <button class="btn btn-secondary flashcard-filter-btn" style="font-size: 0.8rem; padding: 6px 12px;" onclick="filterFlashcards('especificos')">Técnico & Proc. Legislativo</button>
+              <button class="btn btn-secondary flashcard-filter-btn" style="font-size: 0.8rem; padding: 6px 12px;" onclick="filterFlashcards('constitucional')">Constitucional</button>
+              <button class="btn btn-secondary flashcard-filter-btn" style="font-size: 0.8rem; padding: 6px 12px;" onclick="filterFlashcards('administrativo')">D. Administrativo</button>
+              <button class="btn btn-secondary flashcard-filter-btn" style="font-size: 0.8rem; padding: 6px 12px;" onclick="filterFlashcards('informatica')">Informática</button>
+              <button class="btn btn-secondary flashcard-filter-btn" style="font-size: 0.8rem; padding: 6px 12px;" onclick="filterFlashcards('portugues')">Português</button>
             </div>
           </div>
 

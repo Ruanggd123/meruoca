@@ -320,96 +320,186 @@ const FLASHCARDS_DATA = [
     explanation: "O Incremental é mais rápido de gravar; o Diferencial é mais rápido de restaurar."
   }
 ,
-{
-  "id": 31,
-  "category": "portugues",
-  "day": "dia4",
-  "tag": "Português — Proparoxítonas",
-  "question": "Qual é a regra geral de acentuação gráfica das palavras PROPAROXÍTONAS na Língua Portuguesa?",
-  "answer": "TODAS as palavras proparoxítonas são acentuadas graficamente.",
-  "explanation": "Exemplos clássicos da INBRASP: po-LÍ-ti-ca, CÔM-pu-to, TÉC-ni-co, CÂ-ma-ra, DÉ-fi-cit."
-},
-{
-  "id": 32,
-  "category": "portugues",
-  "day": "dia4",
-  "tag": "Português — Crase Proibida",
-  "question": "Quais são os 3 casos mais cobrados em concursos em que a CRASE é expressamente PROIBIDA?",
-  "answer": "1. Antes de palavras masculinas;\n2. Antes de verbos no infinitivo;\n3. Antes de pronomes que não aceitam artigo (esta, essa, quem, alguém, todos).",
-  "explanation": "Crase é a fusão de preposição 'a' + artigo 'a'. Se a palavra seguinte não aceita artigo feminino, a crase não pode ocorrer."
-},
-{
-  "id": 33,
-  "category": "portugues",
-  "day": "dia4",
-  "tag": "Português — Crase Facultativa",
-  "question": "Quais são os 3 casos clássicos em que a CRASE é FACULTATIVA (opcional)? (Mnemônico)",
-  "answer": "Mnemônico: ATÉ, NOME DE MULHER, POSSESSIVO\n1. Depois da palavra 'até';\n2. Antes de nomes próprios femininos sem qualificativo;\n3. Antes de pronome possessivo feminino singular (minha, sua, tua).",
-  "explanation": "Exemplos: 'Fui até a/à praça'; 'Entreguei o ofício a/à Maria'; 'Dirigi-me a/à sua sala'."
-},
-{
-  "id": 34,
-  "category": "portugues",
-  "day": "dia4",
-  "tag": "Português — Hiatos Tônicos",
-  "question": "Por que 'SAÍDA' e 'BAÚ' têm acento gráfico, mas 'RAINHA' e 'JUIZ' não têm?",
-  "answer": "'I' e 'U' tônicos em hiato recebem acento quando sozinhos na sílaba (ou com 's'). Não recebem acento se seguidos de 'nh' (ra-i-nha) ou de outra consoante como 'z' (ju-iz).",
-  "explanation": "Sa-í-da (acentua); Ba-ú (acentua); Ju-iz (não acentua, mas 'ju-í-zes' acentua porque o 'i' fica sozinho com a divisão silábica)."
-},
-{
-  "id": 35,
-  "category": "constitucional",
-  "day": "dia4",
-  "tag": "Constitucional — Direitos Sociais",
-  "question": "Quais são os limites constitucionais de jornada de trabalho para empregados urbanos e rurais (Art. 7º, XIII)?",
-  "answer": "Até 8 HORAS diárias e até 44 HORAS semanais.",
-  "explanation": "É facultada a compensação de horários e a redução de jornada mediante acordo ou convenção coletiva de trabalho."
-},
-{
-  "id": 36,
-  "category": "constitucional",
-  "day": "dia4",
-  "tag": "Constitucional — Menores de Idade",
-  "question": "Quais são as 3 idades-chave para o trabalho de menores segundo a CF/88 (Art. 7º, XXXIII)?",
-  "answer": "• 18 anos: Proibido trabalho noturno, perigoso ou insalubre.\n• 16 anos: Proibido qualquer trabalho em geral.\n• 14 anos: Permitido exclusivamente na condição de APRENDIZ.",
-  "explanation": "Atenção: A INBRASP adora tentar colocar aprendiz a partir de 12 anos ou trocar 16 por 14 anos na regra geral!"
-},
-{
-  "id": 37,
-  "category": "constitucional",
-  "day": "dia4",
-  "tag": "Constitucional — Horas Extras e Férias",
-  "question": "Qual o percentual MÍNIMO de adicional de horas extras e o acréscimo de férias na CF/88?",
-  "answer": "• Hora extra: no mínimo 50% superior à hora normal.\n• Férias: acréscimo de pelo menos 1/3 (um terço) a mais do salário normal.",
-  "explanation": "Art. 7º, XVI e XVII da CF/88."
-},
-{
-  "id": 38,
-  "category": "constitucional",
-  "day": "dia4",
-  "tag": "Constitucional — Estabilidade Sindical",
-  "question": "Qual o período da estabilidade provisória do dirigente sindical (Art. 8º, VIII da CF)?",
-  "answer": "A partir do registro da candidatura e, se eleito (mesmo suplente), até 1 ANO após o término do mandato.",
-  "explanation": "Salvo se cometer falta grave devidamente apurada nos termos da lei."
-},
-{
-  "id": 39,
-  "category": "legislacao",
-  "day": "dia4",
-  "tag": "Lei Orgânica de Meruoca",
-  "question": "Quem são os únicos detentores dos Poderes Políticos no âmbito do Município de Meruoca?",
-  "answer": "O Poder Legislativo (Câmara Municipal) e o Poder Executivo (Prefeitura).",
-  "explanation": "Município NÃO possui Poder Judiciário nem Ministério Público local. O Judiciário é estadual."
-},
-{
-  "id": 40,
-  "category": "legislacao",
-  "day": "dia4",
-  "tag": "Lei Orgânica de Meruoca",
-  "question": "Qual a diferença essencial entre Competência Privativa e Competência Comum do Município de Meruoca?",
-  "answer": "• Privativa: Assuntos de interesse estritamente local, tributos municipais, fixação de tarifas e zoneamento urbano.\n• Comum: Saúde, proteção ao meio ambiente, educação e assistência pública (exercida em cooperação com Estado e União).",
-  "explanation": "Competência privativa = só o município faz; comum = município, Estado e União atuam juntos."
-}
+  {
+    id: 38,
+    category: "portugues",
+    day: "dia4",
+    tag: "Português — Proparoxítonas",
+    question: "Qual é a regra geral de acentuação gráfica das palavras PROPAROXÍTONAS na Língua Portuguesa?",
+    answer: "TODAS as palavras proparoxítonas são acentuadas graficamente.",
+    explanation: "Exemplos clássicos da INBRASP: po-LÍ-ti-ca, CÔM-pu-to, TÉC-ni-co, CÂ-ma-ra, DÉ-fi-cit."
+  },
+  {
+    id: 39,
+    category: "portugues",
+    day: "dia4",
+    tag: "Português — Crase Proibida",
+    question: "Quais são os 3 casos mais cobrados em concursos em que a CRASE é expressamente PROIBIDA?",
+    answer: "1. Antes de palavras masculinas;\n2. Antes de verbos no infinitivo;\n3. Antes de pronomes que não aceitam artigo (esta, essa, quem, alguém, todos).",
+    explanation: "Crase é a fusão de preposição 'a' + artigo 'a'. Se a palavra seguinte não aceita artigo feminino, a crase não pode ocorrer."
+  },
+  {
+    id: 40,
+    category: "portugues",
+    day: "dia4",
+    tag: "Português — Crase Facultativa",
+    question: "Quais são os 3 casos clássicos em que a CRASE é FACULTATIVA (opcional)? (Mnemônico)",
+    answer: "Mnemônico: ATÉ, NOME DE MULHER, POSSESSIVO\n1. Depois da palavra 'até';\n2. Antes de nomes próprios femininos sem qualificativo;\n3. Antes de pronome possessivo feminino singular (minha, sua, tua).",
+    explanation: "Exemplos: 'Fui até a/à praça'; 'Entreguei o ofício a/à Maria'; 'Dirigi-me a/à sua sala'."
+  },
+  {
+    id: 41,
+    category: "portugues",
+    day: "dia4",
+    tag: "Português — Hiatos Tônicos",
+    question: "Por que 'SAÍDA' e 'BAÚ' têm acento gráfico, mas 'RAINHA' e 'JUIZ' não têm?",
+    answer: "'I' e 'U' tônicos em hiato recebem acento quando sozinhos na sílaba (ou com 's'). Não recebem acento se seguidos de 'nh' (ra-i-nha) ou de outra consoante como 'z' (ju-iz).",
+    explanation: "Sa-í-da (acentua); Ba-ú (acentua); Ju-iz (não acentua, mas 'ju-í-zes' acentua porque o 'i' fica sozinho com a divisão silábica)."
+  },
+  {
+    id: 42,
+    category: "constitucional",
+    day: "dia4",
+    tag: "Constitucional — Direitos Sociais",
+    question: "Quais são os limites constitucionais de jornada de trabalho para empregados urbanos e rurais (Art. 7º, XIII)?",
+    answer: "Até 8 HORAS diárias e até 44 HORAS semanais.",
+    explanation: "É facultada a compensação de horários e a redução de jornada mediante acordo ou convenção coletiva de trabalho."
+  },
+  {
+    id: 43,
+    category: "constitucional",
+    day: "dia4",
+    tag: "Constitucional — Menores de Idade",
+    question: "Quais são as 3 idades-chave para o trabalho de menores segundo a CF/88 (Art. 7º, XXXIII)?",
+    answer: "• 18 anos: Proibido trabalho noturno, perigoso ou insalubre.\n• 16 anos: Proibido qualquer trabalho em geral.\n• 14 anos: Permitido exclusivamente na condição de APRENDIZ.",
+    explanation: "Atenção: A INBRASP adora tentar colocar aprendiz a partir de 12 anos ou trocar 16 por 14 anos na regra geral!"
+  },
+  {
+    id: 44,
+    category: "constitucional",
+    day: "dia4",
+    tag: "Constitucional — Horas Extras e Férias",
+    question: "Qual o percentual MÍNIMO de adicional de horas extras e o acréscimo de férias na CF/88?",
+    answer: "• Hora extra: no mínimo 50% superior à hora normal.\n• Férias: acréscimo de pelo menos 1/3 (um terço) a mais do salário normal.",
+    explanation: "Art. 7º, XVI e XVII da CF/88."
+  },
+  {
+    id: 45,
+    category: "constitucional",
+    day: "dia4",
+    tag: "Constitucional — Estabilidade Sindical",
+    question: "Qual o período da estabilidade provisória do dirigente sindical (Art. 8º, VIII da CF)?",
+    answer: "A partir do registro da candidatura e, se eleito (mesmo suplente), até 1 ANO após o término do mandato.",
+    explanation: "Salvo se cometer falta grave devidamente apurada nos termos da lei."
+  },
+  {
+    id: 46,
+    category: "legislacao",
+    day: "dia4",
+    tag: "Lei Orgânica de Meruoca",
+    question: "Quem são os únicos detentores dos Poderes Políticos no âmbito do Município de Meruoca?",
+    answer: "O Poder Legislativo (Câmara Municipal) e o Poder Executivo (Prefeitura).",
+    explanation: "Município NÃO possui Poder Judiciário nem Ministério Público local. O Judiciário é estadual."
+  },
+  {
+    id: 47,
+    category: "legislacao",
+    day: "dia4",
+    tag: "Lei Orgânica de Meruoca",
+    question: "Qual a diferença essencial entre Competência Privativa e Competência Comum do Município de Meruoca?",
+    answer: "• Privativa: Assuntos de interesse estritamente local, tributos municipais, fixação de tarifas e zoneamento urbano.\n• Comum: Saúde, proteção ao meio ambiente, educação e assistência pública (exercida em cooperação com Estado e União).",
+    explanation: "Competência privativa = só o município faz; comum = município, Estado e União atuam juntos."
+  },
+  {
+    id: 48,
+    category: "especificos",
+    day: "w2_d3",
+    tag: "Processo Legislativo — Espécies Normativas (CF art. 59)",
+    question: "Quais são as 7 espécies normativas do Processo Legislativo Constitucional segundo o Art. 59 da CF/88?",
+    answer: "1. Emendas à Constituição;\n2. Leis Complementares;\n3. Leis Ordinárias;\n4. Leis Delegadas;\n5. Medidas Provisórias;\n6. Decretos Legislativos;\n7. Resoluções.",
+    explanation: "No âmbito municipal típico não existem Leis Delegadas nem Medidas Provisórias; os atos principais são Leis, Decretos Legislativos e Resoluções."
+  },
+  {
+    id: 49,
+    category: "especificos",
+    day: "w2_d3",
+    tag: "Processo Legislativo — Quóruns de Aprovação",
+    question: "Qual a diferença de quórum de aprovação entre LEI COMPLEMENTAR e LEI ORDINÁRIA?",
+    answer: "• Lei Complementar: Exige MAIORIA ABSOLUTA (primeiro número inteiro superior à metade de TODOS os membros da Casa).\n• Lei Ordinária: Exige MAIORIA SIMPLES (maioria dos votos dos presentes na sessão, presente a maioria absoluta).",
+    explanation: "Pegadinha INBRASP: Confundir maioria simples (relativa) com maioria absoluta."
+  },
+  {
+    id: 50,
+    category: "especificos",
+    day: "w2_d3",
+    tag: "Processo Legislativo — Veto e Prazos",
+    question: "Qual o prazo para o Chefe do Executivo vetar um projeto de lei e qual o quórum para a Câmara DERRUBAR o veto?",
+    answer: "• Prazo para veto: 15 DIAS ÚTEIS (o silêncio importa sanção tácita).\n• Derrubada do veto: MAIORIA ABSOLUTA dos membros da Câmara no prazo de 30 dias.",
+    explanation: "Se o veto não for apreciado em 30 dias corridos, sobresta as demais proposições da pauta (tranca a pauta)."
+  },
+  {
+    id: 51,
+    category: "especificos",
+    day: "w2_d2",
+    tag: "Técnico Legislativo — Funções da Câmara",
+    question: "Quais são as 2 funções TÍPICAS e as 2 funções ATÍPICAS da Câmara Municipal de Meruoca?",
+    answer: "• Típicas: LEGISLAR (produzir leis) e FISCALIZAR (controle contábil, orçamentário e político).\n• Atípicas: ADMINISTRAR (gerir sua estrutura e servidores) e JULGAR (julgar Prefeito e Vereadores por infrações político-administrativas).",
+    explanation: "A função julgadora exige quórum qualificado de dois terços (2/3) para cassação."
+  },
+  {
+    id: 52,
+    category: "administrativo",
+    day: "w1_d5",
+    tag: "D. Administrativo — Atributos do Ato (PATI)",
+    question: "Quais são os 4 atributos do ato administrativo? (Mnemônico PATI)",
+    answer: "• P = Presunção de Legitimidade e Veracidade\n• A = Autoexecutoriedade\n• T = Tipicidade\n• I = Imperatividade (Poder Extroverso)",
+    explanation: "A imperatividade e a autoexecutoriedade não estão presentes em todos os atos (ex.: certidões e atestados)."
+  },
+  {
+    id: 53,
+    category: "administrativo",
+    day: "w1_d5",
+    tag: "D. Administrativo — Poder de Polícia",
+    question: "Qual a diferença essencial entre Polícia Administrativa e Polícia Judiciária?",
+    answer: "• Polícia Administrativa: Incide sobre BENS, DIREITOS e ATIVIDADES; predominantemente PREVENTIVA; exercida por órgãos administrativos da prefeitura.\n• Polícia Judiciária: Incide sobre PESSOAS; predominantemente REPRESSIVA; exercida por órgãos de segurança pública.",
+    explanation: "Conceito clássico do Art. 78 do CTN recorrente nas provas da banca INBRASP."
+  },
+  {
+    id: 54,
+    category: "informatica",
+    day: "w2_d3",
+    tag: "Informática — Fórmulas do Excel",
+    question: "No MS Excel, qual a diferença entre =CONT.VALORES(A1:A10) e =CONT.NÚM(A1:A10)?",
+    answer: "• =CONT.VALORES: Conta qualquer célula NÃO VAZIA (números, textos, datas e erros).\n• =CONT.NÚM: Conta EXCLUSIVAMENTE as células que contêm valores numéricos.",
+    explanation: "Para contar células em branco utiliza-se a função =CONTAR.VAZIO(A1:A10)."
+  },
+  {
+    id: 55,
+    category: "informatica",
+    day: "w2_d3",
+    tag: "Informática — Atalhos de Teclado",
+    question: "No Windows 11 e MS Word (versão em português), quais são os atalhos para: Salvar documento e Captura de tela parcial?",
+    answer: "• Salvar no Word PT-BR: Ctrl + B (No LibreOffice e navegadores é Ctrl + S)\n• Captura de tela parcial: Windows + Shift + S",
+    explanation: "A banca INBRASP costuma explorar a diferença entre Ctrl+B (Word PT) e Ctrl+S (Browsers/Office EN)."
+  },
+  {
+    id: 56,
+    category: "portugues",
+    day: "w2_d2",
+    tag: "Português — Conjunções Subordinativas",
+    question: "Qual o valor semântico exato das conjunções: 'CONQUANTO', 'CONTANTO QUE' e 'POR CONSEGUINTE'?",
+    answer: "• CONQUANTO = Concessão (embora, ainda que)\n• CONTANTO QUE = Condição (caso, desde que)\n• POR CONSEGUINTE = Conclusão (portanto, logo, por isso)",
+    explanation: "Pegadinha INBRASP: Conquanto NUNCA é conclusão; expressa oposição concessiva!"
+  },
+  {
+    id: 57,
+    category: "legislacao",
+    day: "w2_d5",
+    tag: "Técnica Legislativa — LC 95/1998",
+    question: "Qual a hierarquia e forma correta de desdobramento de um Artigo segundo a Lei Complementar 95/1998?",
+    answer: "• O Artigo desdobra-se em PARÁGRAFOS (§) ou em INCISOS (I, II, III).\n• Os Incisos desdobram-se em ALÍNEAS (a, b, c).\n• As Alíneas desdobram-se em ITENS (1, 2, 3).",
+    explanation: "Artigos de 1 a 9 usam numeração ordinal (Art. 1º ao 9º); de 10 em diante usam cardinais (Art. 10, 11, etc.)."
+  }
 ];
 
 // =========================================================================
@@ -5257,40 +5347,15 @@ const WEEKS_DATA = [
             tasks: ["40m Teoria & CF Seca", "20m Leitura dos Arts. 1º a 4º", "10m Recuperação Ativa"]
           },
           {
-            badge: "Treino de Alto Nível • 1h40",
-            subject: "40 Questões + Caderno de Erros",
-            details: "20 questões de Processo Legislativo + 20 de Office & Google Workspace.",
-            tasks: ["20 Questões Proc. Leg.", "20 Questões Office/Workspace", "30m Caderno de Erros"]
+            badge: "Bloco 3 & 4 • 1h40",
+            subject: "30 Questões + Caderno de Erros",
+            details: "15 questões de Português + 15 questões de Constitucional. Registro dos erros e pegadinhas.",
+            tasks: ["15 Questões Português", "15 Questões Constitucional", "30m Caderno de Erros"]
           }
         ],
-        targetQuestions: 40
+        targetQuestions: 30
       },
-      {
-        id: "w2_d4",
-        dayLabel: "Quinta-feira",
-        date: "10/09/2026",
-        blocks: [
-          {
-            badge: "Bloco 1 • 1h10",
-            subject: "Poder Legislativo — Sessões, Agenda & Representação Partidária",
-            details: "Sessões plenárias (ordinárias, extraordinárias e solenes), Expediente vs Ordem do Dia, Partidos Políticos e Sistemas Eleitorais de Vereadores (quociente eleitoral e partidário - Edital pág. 24).",
-            tasks: ["40m Teoria Sessões & Ordem do Dia", "20m Quociente Eleitoral e Partidos", "10m Recuperação Ativa"]
-          },
-          {
-            badge: "Bloco 2 • 1h10",
-            subject: "Matemática & RLM — Razão, Proporção, Porcentagem & Regra de Três",
-            details: "Razão e proporção, grandezas diretamente e inversamente proporcionais, regra de três simples/composta e porcentagem no padrão INBRASP.",
-            tasks: ["40m Métodos e Fórmulas", "20m Resolução de Questões", "10m Recuperação Ativa"]
-          },
-          {
-            badge: "Treino de Alto Nível • 1h40",
-            subject: "40 Questões + Caderno de Erros",
-            details: "20 questões de Sessões/Sistemas Eleitorais + 20 de Matemática/RLM.",
-            tasks: ["20 Questões Legislativo", "20 Questões Matemática/RLM", "30m Caderno de Erros"]
-          }
-        ],
-        targetQuestions: 40
-      },
+      
       {
         id: "w1_d2",
         dayLabel: "Terça-feira",
@@ -5460,13 +5525,13 @@ const WEEKS_DATA = [
             tasks: ["40m Teoria Formação", "20m Exemplos e Prefixos", "10m Recuperação Ativa"]
           },
           {
-            badge: "Bloco 3 & 4 • 1h40",
-            subject: "30 Questões + Caderno de Erros",
-            details: "15 questões de Organização do Estado + 15 de Formação de Palavras.",
-            tasks: ["15 Questões Const.", "15 Questões Port.", "30m Caderno de Erros"]
+            badge: "Treino de Alto Nível • 1h40",
+            subject: "40 Questões + Caderno de Erros",
+            details: "20 questões de Organização do Estado + 20 de Formação de Palavras.",
+            tasks: ["20 Questões Const.", "20 Questões Port.", "30m Caderno de Erros"]
           }
         ],
-        targetQuestions: 30
+        targetQuestions: 40
       },
       {
         id: "w2_d2",
@@ -5486,13 +5551,13 @@ const WEEKS_DATA = [
             tasks: ["40m Teoria Verbos", "20m Conjugação e Tempos", "10m Recuperação Ativa"]
           },
           {
-            badge: "Bloco 3 & 4 • 1h40",
-            subject: "30 Questões + Caderno de Erros",
-            details: "15 questões de Legislativo + 15 de Verbos.",
-            tasks: ["15 Questões Legislativo", "15 Questões Verbos", "30m Caderno de Erros"]
+            badge: "Treino de Alto Nível • 1h40",
+            subject: "40 Questões + Caderno de Erros",
+            details: "20 questões de Legislativo + 20 de Verbos e Regência.",
+            tasks: ["20 Questões Legislativo", "20 Questões Verbos/Português", "30m Caderno de Erros"]
           }
         ],
-        targetQuestions: 30
+        targetQuestions: 40
       },
       {
         id: "w2_d3",
@@ -5512,10 +5577,10 @@ const WEEKS_DATA = [
             tasks: ["40m Teoria e Prática Office", "20m Fórmulas Excel", "10m Recuperação Ativa"]
           },
           {
-            badge: "Bloco 3 & 4 • 1h40",
-            subject: "30 Questões + Caderno de Erros",
-            details: "15 questões de Processo Legislativo + 15 de Office/Docs.",
-            tasks: ["15 Questões Proc. Leg.", "15 Questões Office", "30m Caderno de Erros"]
+            badge: "Treino de Alto Nível • 1h40",
+            subject: "40 Questões + Caderno de Erros",
+            details: "20 questões de Processo Legislativo + 20 de Office & Google Workspace.",
+            tasks: ["20 Questões Proc. Leg.", "20 Questões Office/Workspace", "30m Caderno de Erros"]
           }
         ],
         targetQuestions: 40
@@ -5527,25 +5592,26 @@ const WEEKS_DATA = [
         blocks: [
           {
             badge: "Bloco 1 • 1h10",
-            subject: "Processo Legislativo — Comissões e Fases Finais",
-            details: "Comissões permanentes e temporárias, sessões, discussão, votação, quóruns, sanção, veto e promulgação.",
-            tasks: ["40m Teoria Comissões & Veto", "20m Prazos de Sanção e Veto", "10m Recuperação Ativa"]
+            subject: "Poder Legislativo — Sessões, Agenda & Representação Partidária",
+            details: "Sessões plenárias (ordinárias, extraordinárias e solenes), Expediente vs Ordem do Dia, Partidos Políticos e Sistemas Eleitorais de Vereadores (quociente eleitoral e partidário - Edital pág. 24).",
+            tasks: ["40m Teoria Sessões & Ordem do Dia", "20m Quociente Eleitoral e Partidos", "10m Recuperação Ativa"]
           },
           {
             badge: "Bloco 2 • 1h10",
-            subject: "Matemática — Razão, Proporção & Porcentagem",
-            details: "Razão, proporção, regra de três simples e composta, cálculo de porcentagem e aumentos/descontos.",
-            tasks: ["40m Métodos de Resolução", "20m Prática de Problemas", "10m Recuperação Ativa"]
+            subject: "Matemática & RLM — Razão, Proporção, Porcentagem & Regra de Três",
+            details: "Razão e proporção, grandezas diretamente e inversamente proporcionais, regra de três simples/composta e porcentagem no padrão INBRASP.",
+            tasks: ["40m Métodos e Fórmulas", "20m Resolução de Questões", "10m Recuperação Ativa"]
           },
           {
-            badge: "Bloco 3 & 4 • 1h40",
-            subject: "30 Questões + Caderno de Erros",
-            details: "15 questões de Processo Legislativo + 15 de Matemática Comercial.",
-            tasks: ["15 Questões Proc. Leg.", "15 Questões Matemática", "30m Caderno de Erros"]
+            badge: "Treino de Alto Nível • 1h40",
+            subject: "40 Questões + Caderno de Erros",
+            details: "20 questões de Sessões/Sistemas Eleitorais + 20 de Matemática/RLM.",
+            tasks: ["20 Questões Legislativo", "20 Questões Matemática/RLM", "30m Caderno de Erros"]
           }
         ],
-        targetQuestions: 30
+        targetQuestions: 40
       },
+      
       {
         id: "w2_d5",
         dayLabel: "Sexta-feira",
@@ -6384,7 +6450,7 @@ let appState = {
   quizFilterStatus: 'all', // 'all', 'pending', 'wrong'
   quizShuffledOrder: {}, // armazena ordem embaralhada por chave de filtro para manter estabilidade
   currentFlashcardIndex: 0,
-  flashcardFilter: 'dia4',
+  flashcardFilter: 'all',
   masteredFlashcards: {},
   cadernoErros: [...DEFAULT_ERRORS],
   simulados: [
@@ -6450,6 +6516,9 @@ function loadState() {
       }
       if (!appState.currentWeek || appState.currentWeek === 1) {
         appState.currentWeek = 2;
+      }
+      if (!appState.flashcardFilter || appState.flashcardFilter === 'dia4') {
+        appState.flashcardFilter = 'all';
       }
       if (!appState.quizAnswers) appState.quizAnswers = {};
       if (!appState.quizOrderMode) appState.quizOrderMode = 'random';
@@ -6596,14 +6665,31 @@ function setupCountdown() {
 // MÓDULO FLASHCARDS 3D
 // =========================================================================
 function getFilteredFlashcards() {
-  if (appState.flashcardFilter === 'all') return FLASHCARDS_DATA;
+  if (!appState.flashcardFilter || appState.flashcardFilter === 'all') return FLASHCARDS_DATA;
+  if (appState.flashcardFilter === 'semana2') {
+    return FLASHCARDS_DATA.filter(fc => (fc.day && fc.day.startsWith('w2_')) || fc.id >= 48);
+  }
   if (appState.flashcardFilter === 'dia4') {
-    return FLASHCARDS_DATA.filter(fc => fc.day === 'dia4' || (fc.id >= 31 && fc.id <= 40));
+    return FLASHCARDS_DATA.filter(fc => fc.day === 'dia4' || (fc.id >= 38 && fc.id <= 47));
   }
   if (appState.flashcardFilter === 'dia3') {
-    return FLASHCARDS_DATA.filter(fc => fc.day === 'dia3' || (fc.id >= 23 && fc.id <= 30));
+    return FLASHCARDS_DATA.filter(fc => fc.day === 'dia3' || (fc.id >= 23 && fc.id <= 37));
   }
   return FLASHCARDS_DATA.filter(fc => fc.category === appState.flashcardFilter);
+}
+
+function filterFlashcards(cat) {
+  appState.flashcardFilter = cat;
+  appState.currentFlashcardIndex = 0;
+  
+  document.querySelectorAll('.flashcard-filter-btn').forEach(btn => {
+    const onclickStr = btn.getAttribute('onclick') || '';
+    const isActive = onclickStr.includes("'" + cat + "'");
+    btn.classList.toggle('btn-primary', isActive);
+    btn.classList.toggle('btn-secondary', !isActive);
+  });
+  
+  renderFlashcard();
 }
 
 function renderFlashcard() {
@@ -7002,6 +7088,19 @@ function selectQuizOption(qId, optIdx) {
   renderQuiz();
 }
 
+function getQuestionDayKey(q) {
+  if (q.day) {
+    if (q.day === 'dia3') return 'w1_d3';
+    if (q.day === 'dia4') return 'w1_d4';
+    if (q.day === 'dia5') return 'w1_d5';
+    if (q.day === 'dia6') return 'w1_d6';
+    return q.day;
+  }
+  if (q.category === 'constitucional' && q.id <= 15) return 'w1_d1';
+  if (q.category === 'portugues' && q.id <= 30) return 'w1_d2';
+  return 'w1_d1';
+}
+
 function confirmQuizAnswer(qId) {
   const q = QUIZ_QUESTIONS_DATA.find(item => item.id === qId);
   if (!q) return;
@@ -7016,13 +7115,7 @@ function confirmQuizAnswer(qId) {
     isCorrect: isCorrect
   };
 
-  let dayId = 'w1_d2';
-  if (qId >= 31 && qId <= 60) {
-    dayId = 'w1_d3';
-  } else if (q.category === 'constitucional') {
-    dayId = 'w1_d1';
-  }
-
+  const dayId = getQuestionDayKey(q);
   if (!appState.dayQuestions[dayId]) {
     appState.dayQuestions[dayId] = { done: 0, correct: 0 };
   }
@@ -7048,39 +7141,57 @@ function filterQuizCategory(cat) {
 const QUIZ_DAYS_CONFIG = {
   w2_d3: {
     title: "⭐ Semana 2 • Dia 3 — Quarta-feira (09/09/2026 - HOJE): Processo Legislativo & Pacote Office (40 Questões)",
-    desc: "20 questões de Conhecimentos Específicos (Processo Legislativo, Espécies Normativas CF art. 59, Iniciativa, Tramitação, Emendas, Substitutivos e Vetos) + 20 questões de Informática (MS Word, Excel fórmulas, PowerPoint e Google Workspace). Padrão Oficial Banca INBRASP."
+    desc: "20 questões de Conhecimentos Específicos (Processo Legislativo, Espécies Normativas CF art. 59, Iniciativa, Tramitação, Emendas, Substitutivos e Vetos) + 20 questões de Informática (MS Word, Excel fórmulas, PowerPoint e Google Workspace). Padrão Oficial Banca INBRASP.",
+    bookletUrl: "provas/CADERNO_QUESTOES_SEMANA_02_DIA_03_09_09_2026.html",
+    bookletLabel: "Abrir Caderno Hoje Impresso (PDF)"
   },
   w2_d2: {
     title: "📅 Semana 2 • Dia 2 — Terça-feira (08/09/2026): Funções da Câmara & Crase/Regência (40 Questões)",
-    desc: "20 questões de Técnico Legislativo (Funções do Poder Legislativo, Controle e Fiscalização) + 20 questões de Português (Uso do Sinal Indicativo de Crase, Sinais de Pontuação e Regência). Padrão Oficial INBRASP."
+    desc: "20 questões de Técnico Legislativo (Funções do Poder Legislativo, Controle e Fiscalização) + 20 questões de Português (Uso do Sinal Indicativo de Crase, Sinais de Pontuação e Regência). Padrão Oficial INBRASP.",
+    bookletUrl: "provas/CADERNO_QUESTOES_SEMANA_02_DIA_02_08_09_2026.html",
+    bookletLabel: "Abrir Caderno Dia 2 (PDF)"
   },
   w2_d1: {
     title: "📅 Semana 2 • Dia 1 — Segunda-feira (07/09/2026): Organização do Estado & Formação de Palavras (40 Questões)",
-    desc: "20 questões de D. Constitucional (CF/88 Arts. 18 a 31: Competências, Municípios e Controle) + 20 de Português (Estrutura e Processos de Formação de Palavras). Padrão Oficial INBRASP."
+    desc: "20 questões de D. Constitucional (CF/88 Arts. 18 a 31: Competências, Municípios e Controle) + 20 de Português (Estrutura e Processos de Formação de Palavras). Padrão Oficial INBRASP.",
+    bookletUrl: "provas/CADERNO_QUESTOES_SEMANA_02_DIA_01_07_09_2026.html",
+    bookletLabel: "Abrir Caderno Dia 1 (PDF)"
   },
   dia6: {
     title: "📅 Semana 1 • Dia 6 — Sábado (05/09/2026): SIMULADO 01 OFICIAL (40 Questões)",
-    desc: "Prova Completa 40Q no Padrão Oficial da Banca INBRASP (10 Português + 5 Informática + 5 RLM + 20 Específicas). Treino de cronometragem de 3 horas."
+    desc: "Prova Completa 40Q no Padrão Oficial da Banca INBRASP (10 Português + 5 Informática + 5 RLM + 20 Específicas). Treino de cronometragem de 3 horas.",
+    bookletUrl: "provas/PROVA_OFICIAL_SIMULADO_01_INBRASP.html",
+    bookletLabel: "Abrir Prova Simulado 01 (PDF)"
   },
   dia5: {
     title: "📅 Semana 1 • Dia 5 — Sexta-feira (04/09/2026): D. Administrativo, Python & Lei Orgânica (40 Questões)",
-    desc: "15 questões de D. Administrativo (Poderes & Atributos PATI) + 15 de Informática (Algoritmos, Fluxogramas & Python) + 10 de Lei Orgânica de Meruoca (Arts. 16 ao 30)."
+    desc: "15 questões de D. Administrativo (Poderes & Atributos PATI) + 15 de Informática (Algoritmos, Fluxogramas & Python) + 10 de Lei Orgânica de Meruoca (Arts. 16 ao 30).",
+    bookletUrl: "provas/CADERNO_QUESTOES_DIA_05_04_09_2026.html",
+    bookletLabel: "Abrir Caderno Dia 5 (PDF)"
   },
   dia4: {
     title: "📅 Semana 1 • Dia 4 — Quinta-feira (03/09/2026): Português, Constitucional & Lei Orgânica (40 Questões)",
-    desc: "15 questões de Português (Fonologia, Acentuação e Crase) + 15 de Constitucional (Direitos Sociais Arts. 6º ao 11) + 10 de Lei Orgânica de Meruoca (Arts. 1º ao 15)."
+    desc: "15 questões de Português (Fonologia, Acentuação e Crase) + 15 de Constitucional (Direitos Sociais Arts. 6º ao 11) + 10 de Lei Orgânica de Meruoca (Arts. 1º ao 15).",
+    bookletUrl: "provas/CADERNO_QUESTOES_DIA_04_03_09_2026.html",
+    bookletLabel: "Abrir Caderno Dia 4 (PDF)"
   },
   dia3: {
     title: "📅 Semana 1 • Dia 3 — Quarta-feira (02/09/2026): D. Administrativo & Informática (30 Questões)",
-    desc: "15 questões de Direito Administrativo (Princípios LIMPE e Organização) + 15 questões de Informática (Windows 11, Linux, Hardware e Backup)."
+    desc: "15 questões de Direito Administrativo (Princípios LIMPE e Organização) + 15 questões de Informática (Windows 11, Linux, Hardware e Backup).",
+    bookletUrl: "provas/CENTRAL_DE_PROVAS.html",
+    bookletLabel: "Abrir Central de Provas"
   },
   dia2: {
     title: "📅 Semana 1 • Dia 2 — Terça-feira (01/09/2026): D. Constitucional & Português (30 Questões)",
-    desc: "15 questões de Direito Constitucional (Art. 5º e Remédios) + 15 questões de Português (Tipos e Gêneros Textuais)."
+    desc: "15 questões de Direito Constitucional (Art. 5º e Remédios) + 15 questões de Português (Tipos e Gêneros Textuais).",
+    bookletUrl: "provas/CENTRAL_DE_PROVAS.html",
+    bookletLabel: "Abrir Central de Provas"
   },
   all: {
     title: "📚 Todas as Questões do Banco de Provas (300 Questões)",
-    desc: "Simulado geral contendo todas as 300 questões ativas (Semana 1 completa + Semana 2 Dias 1, 2 e 3) para treino de alta performance."
+    desc: "Simulado geral contendo todas as 300 questões ativas (Semana 1 completa + Semana 2 Dias 1, 2 e 3) para treino de alta performance.",
+    bookletUrl: "provas/CENTRAL_DE_PROVAS.html",
+    bookletLabel: "Abrir Central de Provas & Editais"
   }
 };
 
@@ -7099,16 +7210,21 @@ function selectQuizDay(dayKey) {
   const cfg = QUIZ_DAYS_CONFIG[dayKey] || QUIZ_DAYS_CONFIG.all;
   const titleEl = document.getElementById('quizDayTitle');
   const descEl = document.getElementById('quizDayDesc');
+  const bookletBtn = document.getElementById('btnOpenDayBooklet');
   if (titleEl) titleEl.innerText = cfg.title;
   if (descEl) descEl.innerText = cfg.desc;
+  if (bookletBtn && cfg.bookletUrl) {
+    bookletBtn.href = cfg.bookletUrl;
+    bookletBtn.innerHTML = `<i class="fas fa-print"></i> ${cfg.bookletLabel || 'Abrir Caderno Impresso (PDF)'}`;
+  }
 
   saveState();
   renderQuiz();
 }
 
 function resetQuizAnswers() {
-  if (confirm("Deseja realmente limpar todas as respostas do simulado e recomeçar do zero?")) {
-    const filterKey = appState.quizCategoryFilter || 'dia6';
+  if (confirm("Deseja realmente limpar todas as respostas do bloco selecionado e recomeçar do zero?")) {
+    const filterKey = appState.quizCategoryFilter || 'w2_d3';
     if (appState.quizShuffledOrder) {
       delete appState.quizShuffledOrder[`${filterKey}_random`];
       delete appState.quizShuffledOrder[`${filterKey}_interleaved`];
@@ -7116,12 +7232,23 @@ function resetQuizAnswers() {
     
     const baseQuestions = getFilteredBaseQuestions(filterKey);
     baseQuestions.forEach(q => {
+      const existing = appState.quizAnswers[q.id];
+      if (existing && existing.confirmed) {
+        const dayId = getQuestionDayKey(q);
+        if (appState.dayQuestions[dayId]) {
+          appState.dayQuestions[dayId].done = Math.max(0, (appState.dayQuestions[dayId].done || 0) - 1);
+          if (existing.isCorrect) {
+            appState.dayQuestions[dayId].correct = Math.max(0, (appState.dayQuestions[dayId].correct || 0) - 1);
+          }
+        }
+      }
       delete appState.quizAnswers[q.id];
     });
 
     saveState();
     renderQuiz();
-    showToast("Simulado reiniciado com nova ordem!");
+    renderDaysForWeek(appState.currentWeek);
+    showToast("Bloco reiniciado com nova ordem!");
   }
 }
 
@@ -7137,21 +7264,21 @@ function addQuizErrorToBook(qId) {
     id: 'err_quiz_' + qId + '_' + Date.now(),
     date: new Date().toLocaleDateString('pt-BR'),
     disciplina: q.discipline,
-    assunto: q.topic,
+    assunto: `Questão ${qId} — ${q.topic}`,
     tipo: 'duvida',
     conceito: `Gabarito correto: ${correctLetter}. ${q.commentary}`,
-    pegadinha: `Marquei alternativa ${userLetter}. A correta é ${correctLetter}: ${q.options[q.correctAnswer]}`,
+    pegadinha: `Marquei alternativa ${userLetter}. A alternativa correta é a ${correctLetter}: ${q.options[q.correctAnswer]}`,
     revisado: false
   };
 
-  const exists = appState.cadernoErros.some(e => e.assunto === q.topic);
+  const exists = appState.cadernoErros.some(e => e.id && e.id.startsWith('err_quiz_' + qId + '_'));
   if (!exists) {
     appState.cadernoErros.unshift(newError);
     saveState();
     renderCadernoErros();
     showToast(`Questão ${qId} enviada para o Caderno de Erros!`);
   } else {
-    showToast(`Este assunto já consta no seu Caderno de Erros.`);
+    showToast(`A Questão ${qId} já consta registrada no seu Caderno de Erros.`);
   }
 }
 
