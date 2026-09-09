@@ -5257,13 +5257,39 @@ const WEEKS_DATA = [
             tasks: ["40m Teoria & CF Seca", "20m Leitura dos Arts. 1º a 4º", "10m Recuperação Ativa"]
           },
           {
-            badge: "Bloco 3 & 4 • 1h40",
-            subject: "30 Questões + Caderno de Erros",
-            details: "15 questões de Português + 15 questões de Constitucional. Registro dos erros e pegadinhas.",
-            tasks: ["15 Questões Português", "15 Questões Constitucional", "30m Caderno de Erros"]
+            badge: "Treino de Alto Nível • 1h40",
+            subject: "40 Questões + Caderno de Erros",
+            details: "20 questões de Processo Legislativo + 20 de Office & Google Workspace.",
+            tasks: ["20 Questões Proc. Leg.", "20 Questões Office/Workspace", "30m Caderno de Erros"]
           }
         ],
-        targetQuestions: 30
+        targetQuestions: 40
+      },
+      {
+        id: "w2_d4",
+        dayLabel: "Quinta-feira",
+        date: "10/09/2026",
+        blocks: [
+          {
+            badge: "Bloco 1 • 1h10",
+            subject: "Poder Legislativo — Sessões, Agenda & Representação Partidária",
+            details: "Sessões plenárias (ordinárias, extraordinárias e solenes), Expediente vs Ordem do Dia, Partidos Políticos e Sistemas Eleitorais de Vereadores (quociente eleitoral e partidário - Edital pág. 24).",
+            tasks: ["40m Teoria Sessões & Ordem do Dia", "20m Quociente Eleitoral e Partidos", "10m Recuperação Ativa"]
+          },
+          {
+            badge: "Bloco 2 • 1h10",
+            subject: "Matemática & RLM — Razão, Proporção, Porcentagem & Regra de Três",
+            details: "Razão e proporção, grandezas diretamente e inversamente proporcionais, regra de três simples/composta e porcentagem no padrão INBRASP.",
+            tasks: ["40m Métodos e Fórmulas", "20m Resolução de Questões", "10m Recuperação Ativa"]
+          },
+          {
+            badge: "Treino de Alto Nível • 1h40",
+            subject: "40 Questões + Caderno de Erros",
+            details: "20 questões de Sessões/Sistemas Eleitorais + 20 de Matemática/RLM.",
+            tasks: ["20 Questões Legislativo", "20 Questões Matemática/RLM", "30m Caderno de Erros"]
+          }
+        ],
+        targetQuestions: 40
       },
       {
         id: "w1_d2",
@@ -6378,7 +6404,7 @@ let appState = {
     especificos: { acertos: 0, total: 40 },
     legislacao: { acertos: 0, total: 40 }
   },
-  currentWeek: 1
+  currentWeek: 2
 };
 
 // Inicialização Geral
@@ -6421,6 +6447,9 @@ function loadState() {
       if (!appState.lastSeenDay || appState.lastSeenDay !== 'w2_d3') {
         appState.quizCategoryFilter = 'w2_d3';
         appState.lastSeenDay = 'w2_d3';
+      }
+      if (!appState.currentWeek || appState.currentWeek === 1) {
+        appState.currentWeek = 2;
       }
       if (!appState.quizAnswers) appState.quizAnswers = {};
       if (!appState.quizOrderMode) appState.quizOrderMode = 'random';
@@ -7193,13 +7222,16 @@ function renderDaysForWeek(weekNum) {
     });
 
     const isDone = dayTotalTasks > 0 && dayDoneTasks === dayTotalTasks;
-    const isToday = (day.date === "31/08/2026" && weekNum === 1);
+    const todayStr = "09/09/2026";
+    const isToday = (day.date === todayStr);
+    const hasTodayInWeek = week.days.some(d => d.date === todayStr);
+    const shouldOpen = isToday || (!hasTodayInWeek && dIdx === 0);
 
     const questionsDone = (appState.dayQuestions[day.id] && appState.dayQuestions[day.id].done) || 0;
     const questionsCorrect = (appState.dayQuestions[day.id] && appState.dayQuestions[day.id].correct) || 0;
 
     return `
-      <div class="day-card ${isDone ? 'completed' : ''} ${isToday ? 'today' : ''} ${dIdx === 0 ? 'open' : ''}" id="card_${day.id}">
+      <div class="day-card ${isDone ? 'completed' : ''} ${isToday ? 'today' : ''} ${shouldOpen ? 'open' : ''}" id="card_${day.id}">
         <div class="day-header" onclick="toggleDayAccordion('${day.id}')">
           <div class="day-header-left">
             <span class="day-tag">${day.dayLabel}</span>
