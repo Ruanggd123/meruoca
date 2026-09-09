@@ -1,0 +1,2484 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>CADERNO OFICIAL DE QUESTÕES — SEMANA 2 / DIA 3 (09/09/2026) | INBRASP</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @page {
+      size: A4;
+      margin: 15mm 18mm;
+    }
+    :root {
+      --primary: #1e3a8a;
+      --primary-dark: #0f172a;
+      --accent: #dc2626;
+      --border: #cbd5e1;
+      --bg: #ffffff;
+      --text: #0f172a;
+      --text-muted: #475569;
+    }
+    body {
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+      color: var(--text);
+      background: #f8fafc;
+      margin: 0;
+      padding: 24px;
+      font-size: 10pt;
+      line-height: 1.45;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      padding: 36px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    }
+    .header-box {
+      border: 2px solid var(--primary);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f8fafc;
+    }
+    .header-titles h1 {
+      margin: 0 0 4px 0;
+      font-size: 1.35rem;
+      color: var(--primary);
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .header-titles h2 {
+      margin: 0 0 4px 0;
+      font-size: 1rem;
+      color: var(--text);
+      font-weight: 700;
+    }
+    .header-titles p {
+      margin: 0;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .badge-banca {
+      background: #fee2e2;
+      color: #991b1b;
+      font-weight: 800;
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      border: 1px solid #fecaca;
+    }
+    .no-print {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .btn-action {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+    }
+    .btn-action:hover {
+      background: #1d4ed8;
+    }
+    .question-block {
+      margin-bottom: 22px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #e2e8f0;
+      page-break-inside: avoid;
+    }
+    .q-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .q-number {
+      font-weight: 800;
+      color: var(--primary);
+      font-size: 1rem;
+    }
+    .q-badge {
+      background: #e2e8f0;
+      color: #334155;
+      font-size: 0.75rem;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 700;
+    }
+    .q-discipline {
+      font-size: 0.8rem;
+      color: #0369a1;
+      font-weight: 700;
+      background: #e0f2fe;
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+    .q-text {
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+      line-height: 1.5;
+      color: #1e293b;
+      text-align: justify;
+    }
+    .q-options {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .q-option {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 6px 10px;
+      border-radius: 6px;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+    }
+    .opt-letter {
+      background: #e2e8f0;
+      color: #1e293b;
+      width: 22px;
+      height: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-weight: 800;
+      font-size: 0.8rem;
+      flex-shrink: 0;
+    }
+    .opt-text {
+      font-size: 0.9rem;
+      line-height: 1.4;
+      color: #334155;
+    }
+    .page-break {
+      page-break-before: always;
+      margin-top: 30px;
+      border-top: 2px dashed #94a3b8;
+      padding-top: 20px;
+    }
+    .cartao-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin: 16px 0;
+    }
+    .cartao-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: #f1f5f9;
+      padding: 6px 10px;
+      border-radius: 6px;
+      border: 1px solid #cbd5e1;
+    }
+    .cartao-num {
+      font-weight: 800;
+      width: 24px;
+      color: #1e3a8a;
+      font-size: 0.85rem;
+    }
+    .cartao-bolhas {
+      display: flex;
+      gap: 6px;
+    }
+    .bolha {
+      width: 20px;
+      height: 20px;
+      border: 1px solid #64748b;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #475569;
+      background: white;
+    }
+    .gabarito-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 16px;
+    }
+    .gabarito-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 10px 14px;
+      background: #f8fafc;
+      border-left: 4px solid #10b981;
+      border-radius: 0 6px 6px 0;
+      border-top: 1px solid #e2e8f0;
+      border-right: 1px solid #e2e8f0;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .gabarito-letra {
+      background: #10b981;
+      color: white;
+      font-weight: 900;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    @media print {
+      body {
+        background: white;
+        padding: 0;
+      }
+      .container {
+        padding: 0;
+        box-shadow: none;
+        max-width: 100%;
+      }
+      .no-print {
+        display: none !important;
+      }
+      .question-block {
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="no-print">
+      <button class="btn-action" onclick="window.print()"><i class="fas fa-print"></i> Imprimir Caderno / Salvar PDF</button>
+      <a href="../index.html" class="btn-action" style="background: #475569;"><i class="fas fa-arrow-left"></i> Voltar ao App</a>
+      <a href="CENTRAL_DE_PROVAS.html" class="btn-action" style="background: #0284c7;"><i class="fas fa-archive"></i> Central de Cadernos</a>
+    </div>
+
+    <div class="header-box">
+      <div class="header-titles">
+        <h1>Câmara Municipal de Meruoca • Concurso Público 2026</h1>
+        <h2>Caderno Oficial de Treinamento Diário — Semana 2 / Dia 3</h2>
+        <p>Quarta-feira, 09/09/2026 • Cargo: Técnico Legislativo • 40 Questões Inéditas</p>
+      </div>
+      <div class="badge-banca">
+        BANCA INBRASP<br><span style="font-size: 0.75rem; font-weight: normal;">4 ALTERNATIVAS (A-D)</span>
+      </div>
+    </div>
+
+    <div style="background: #eff6ff; border: 1px solid #bfdbfe; padding: 12px 16px; border-radius: 8px; margin-bottom: 24px; font-size: 0.88rem; color: #1e40af;">
+      <strong><i class="fas fa-info-circle"></i> Conteúdo Programático Deste Caderno (40 Questões):</strong>
+      <ul style="margin: 6px 0 0 18px; padding: 0;">
+        <li><strong>Conhecimentos Específicos — Processo Legislativo (Questões 1 a 20 / IDs 261 a 280):</strong> Espécies normativas (CF/88 Art. 59), iniciativa privativa, tramitação, emendas parlamentares, substitutivos, pareceres das comissões e regime de vetos.</li>
+        <li><strong>Informática — Pacote Office & Google Workspace (Questões 21 a 40 / IDs 281 a 300):</strong> MS Word 365 (formatação, quebras, mala direta, atalhos), MS Excel (SOMA, MÉDIA, SE, CONT.SE, PROCV, referências absolutas e precedência), MS PowerPoint (transição, animação, slide mestre) e Google Workspace (Docs, Sheets, Drive).</li>
+      </ul>
+    </div>
+
+    <!-- QUESTÕES -->
+    
+    <div class="question-block" id="q_261">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 1</span>
+          <span class="q-badge">ID 261</span>
+        </div>
+        <span class="q-discipline">Processo Legislativo • Espécies Normativas (CF/88 Art. 59)</span>
+      </div>
+      <div class="q-text">
+        O processo legislativo brasileiro compreende a elaboração de atos normativos com diferentes alcances e requisitos formais. De acordo com o rol taxativo expresso no artigo 59 da Constituição Federal de 1988, compreende a elaboração de:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Instruções Normativas, Circulares Interministeriais, Decretos Executivos, Leis Ordinárias e Resoluções.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Emendas à Constituição, Leis Complementares, Leis Ordinárias, Leis Delegadas, Medidas Provisórias, Decretos Legislativos e Resoluções.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Portarias de Gabinete, Leis Orgânicas Municipais, Decretos-Leis, Provimentos e Tratados Comerciais.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Regimentos Internos, Pareceres Jurídicos Vinculantes, Resoluções de Conselho, Súmulas e Leis Ordinárias.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_262">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 2</span>
+          <span class="q-badge">ID 262</span>
+        </div>
+        <span class="q-discipline">Processo Legislativo • Emendas à Constituição: Procedimento e Limitações</span>
+      </div>
+      <div class="q-text">
+        Em relação ao procedimento de aprovação e formalização das Emendas à Constituição (CF/88, art. 60), assinale a alternativa juridicamente CORRETA:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">A proposta de emenda deve ser submetida à sanção ou veto motivado do Presidente da República no prazo de 15 dias úteis.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">A emenda constitucional exige para sua aprovação votação em turno único com quórum qualificado de maioria absoluta dos votos.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Qualquer cidadão ou parlamentar isolado possui legitimidade autônoma para propor diretamente uma Emenda Constitucional.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Aprovada em dois turnos por três quintos dos votos dos membros de cada Casa do Congresso Nacional, a emenda é promulgada pelas Mesas da Câmara dos Deputados e do Senado Federal, sem participação executiva de sanção ou veto.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_263">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 3</span>
+          <span class="q-badge">ID 263</span>
+        </div>
+        <span class="q-discipline">Processo Legislativo • Iniciativa Privativa de Leis</span>
+      </div>
+      <div class="q-text">
+        No âmbito da organização municipal, em observância ao princípio da simetria constitucional com o artigo 61, § 1º da CF/88, são de iniciativa PRIVATIVA do Prefeito Municipal os projetos de lei que disponham sobre:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Criação de cargos, funções ou empregos públicos na administração direta e autárquica do Poder Executivo, bem como a fixação ou aumento de sua remuneração.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Organização interna dos gabinetes parlamentares e criação de cargos e comissões do Poder Legislativo Municipal.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Fixação do subsídio dos Vereadores e do Presidente da Câmara para a legislatura subsequente.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Elaboração e reforma das disposições do Regimento Interno da Câmara Municipal de Vereadores.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_264">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 4</span>
+          <span class="q-badge">ID 264</span>
+        </div>
+        <span class="q-discipline">Processo Legislativo • Leis Complementares versus Leis Ordinárias</span>
+      </div>
+      <div class="q-text">
+        Acerca das distinções formais e materiais entre Leis Complementares e Leis Ordinárias no processo legislativo, assinale a afirmativa CORRETA:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">A lei complementar possui hierarquia normativa superior à lei ordinária, podendo revogar qualquer matéria mesmo quando não reservada a ela.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">As leis ordinárias exigem quórum de dois terços dos membros da Casa Legislativa para sua aprovação final.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">As leis complementares são reservadas para matérias expressamente taxadas na Constituição e dependem da aprovação por maioria absoluta, enquanto as leis ordinárias tratam da matéria comum residual e exigem apenas maioria simples.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">O Chefe do Poder Executivo não pode vetar projetos de lei complementar, cabendo apenas o veto em leis ordinárias.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_265">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 5</span>
+          <span class="q-badge">ID 265</span>
+        </div>
+        <span class="q-discipline">Processo Legislativo • Fases do Processo Legislativo: Fase Integrativa</span>
+      </div>
+      <div class="q-text">
+        A doutrina constitucional e a técnica legislativa dividem o processo legislativo em três fases fundamentais: introdutória (iniciativa), constitutiva (deliberação parlamentar e manifestação executiva) e integrativa de eficácia. Integram tipicamente a fase INTEGRATIVA de eficácia da lei:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">A leitura da proposição no Pequeno Expediente e sua distribuição às Comissões Técnicas.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">A promulgação e a publicação no Diário Oficial.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">A emissão de parecer pela Comissão de Constituição e Justiça e a votação em Plenário.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">A apresentação de emendas de bancada e o despacho de admissibilidade da Mesa Diretora.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_266">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 6</span>
+          <span class="q-badge">ID 266</span>
+        </div>
+        <span class="q-discipline">Processo Legislativo • Veto Executivo: Prazo, Motivos e Rejeição</span>
+      </div>
+      <div class="q-text">
+        Aprovado um projeto de lei pela Câmara Municipal, este é enviado ao Prefeito para sanção. Caso o Prefeito decida vetá-lo, o regime constitucional e legal do veto estabelece que:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">O veto deve ser formalizado no prazo de 15 (quinze) dias úteis, motivado por inconstitucionalidade (veto jurídico) ou por contrariedade ao interesse público (veto político), comunicando os motivos em até 48 horas ao Presidente da Câmara.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">O veto pode ser tácito, de modo que a ausência de manifestação do Chefe do Executivo em 15 dias importa em rejeição automática do projeto.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">O veto parcial pode incidir livremente sobre palavras isoladas, expressões avulsas ou orações intermediárias dentro de um artigo de lei.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">A Câmara só pode rejeitar o veto do Prefeito se obtiver unanimidade absoluta de votos de todos os parlamentares em sessão secreta.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_267">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 7</span>
+          <span class="q-badge">ID 267</span>
+        </div>
+        <span class="q-discipline">Processo Legislativo • Sanção Tácita e Sanção Expressa</span>
+      </div>
+      <div class="q-text">
+        No processo de formação das leis, a manifestação de concordância do Chefe do Poder Executivo com o projeto aprovado pelo Legislativo denomina-se 'Sanção'. Sobre as formas de sanção, é correto afirmar:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">A sanção expressa torna dispensável a promulgação e a publicação da nova lei.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">A sanção pode ser presumida caso o Prefeito assine um veto sem indicar os motivos.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Apenas o Presidente da República pode praticar sanção tácita, sendo vedada essa figura aos governadores e prefeitos.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">O silêncio do Chefe do Executivo após o transcurso integral do prazo constitucional de 15 dias úteis sem sanção expressa nem veto importa em sanção tácita.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_268">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 8</span>
+          <span class="q-badge">ID 268</span>
+        </div>
+        <span class="q-discipline">Processo Legislativo • Derrubada de Veto e Promulgação Supletiva</span>
+      </div>
+      <div class="q-text">
+        A Câmara Municipal de Meruoca, reunida em sessão plenária, apreciou o veto do Prefeito a determinado projeto de lei e o rejeitou pelo voto da maioria absoluta dos seus membros. Nessa hipótese, conforme as regras constitucionais aplicáveis ao processo legislativo:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">O projeto de lei perde o objeto e deve ser arquivado imediatamente pelo Diretor Legislativo.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">O Prefeito pode interpor novo veto sobre a mesma matéria, reiniciando o ciclo de deliberação parlamentar.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">O projeto será enviado ao Prefeito para promulgação; se este não o fizer dentro de 48 horas, o Presidente da Câmara o promulgará, e, se este não o fizer em igual prazo, caberá ao Vice-Presidente fazê-lo.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">A lei será promulgada compulsoriamente pelo Juiz de Direito Diretor do Foro da Comarca de Meruoca.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_269">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 9</span>
+          <span class="q-badge">ID 269</span>
+        </div>
+        <span class="q-discipline">Processo Legislativo • Classificação das Emendas Parlamentares</span>
+      </div>
+      <div class="q-text">
+        No decorrer dos debates parlamentares, os vereadores têm a faculdade de sugerir alterações aos projetos em tramitação por meio de 'Emendas'. A emenda que tem por finalidade suprimir total ou parcialmente texto de artigo, parágrafo, inciso ou alínea da proposição principal denomina-se:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Emenda Supressiva.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Emenda Aditiva.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Emenda Modificativa.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Emenda Aglutinativa.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_270">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 10</span>
+          <span class="q-badge">ID 270</span>
+        </div>
+        <span class="q-discipline">Processo Legislativo • Conceito e Tramitação de Substitutivo</span>
+      </div>
+      <div class="q-text">
+        Na tramitação regimental de proposições legislativas nas Câmaras Municipais, a denominação 'Substitutivo' corresponde a:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Um recurso interposto pelo autor contra o arquivamento sumário determinado pela CCJ.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Um tipo de voto em separado apresentado por parlamentar vencido no âmbito das comissões temáticas.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Um requerimento de urgência assinado pela Mesa para inverter a Ordem do Dia.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Uma proposição legislativa apresentada por parlamentar ou comissão para substituir integralmente o texto de um projeto de lei já em tramitação sobre a mesma matéria.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_271">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 11</span>
+          <span class="q-badge">ID 271</span>
+        </div>
+        <span class="q-discipline">Processo Legislativo • Atuação da Comissão de Constituição e Justiça (CCJ)</span>
+      </div>
+      <div class="q-text">
+        As Comissões Permanentes exercem controle preventivo e técnico essencial sobre as proposições. Sobre a atuação da Comissão de Constituição e Justiça (CCJ) ou comissão equivalente na Câmara Municipal, assinale a afirmativa CORRETA:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">A CCJ analisa exclusivamente a oportunidade financeira e a viabilidade orçamentária dos projetos de lei tributários.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Compete à CCJ manifestar-se obrigatoriamente sobre o aspecto constitucional, legal, regimental e a técnica legislativa das proposições antes de sua votação de mérito.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Se a CCJ aprovar o parecer pela inconstitucionalidade, a proposição é compulsoriamente remetida para sanção do Prefeito.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">A CCJ possui atribuição jurisdicional para julgar os crimes de responsabilidade e cassar o mandato de parlamentares.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_272">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 12</span>
+          <span class="q-badge">ID 272</span>
+        </div>
+        <span class="q-discipline">Processo Legislativo • Poder Terminativo das Comissões</span>
+      </div>
+      <div class="q-text">
+        O artigo 58, § 2º, I da CF/88 faculta aos regimentos regimentar a prerrogativa de as Comissões deliberarem em caráter conclusivo (ou terminativo) sobre determinadas proposições. Isso significa que:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">A decisão da comissão tem natureza de sentença judicial irrecorrível perante o Supremo Tribunal Federal.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">O projeto é sancionado imediatamente na própria sala da comissão sem que o Chefe do Executivo tome conhecimento.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">A comissão aprova ou rejeita o projeto com efeito definitivo, dispensando a competência do Plenário, salvo se houver recurso de determinado número de membros da Casa Legislativa exigindo a deliberação plenária.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">A proposição só pode ser arquivada mediante homologação prévia do Tribunal de Contas dos Municípios.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_273">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 13</span>
+          <span class="q-badge">ID 273</span>
+        </div>
+        <span class="q-discipline">Processo Legislativo • Decreto Legislativo versus Resolução</span>
+      </div>
+      <div class="q-text">
+        No exercício das atribuições privativas do Poder Legislativo Municipal, a Câmara expede atos normativos que não dependem de sanção do Prefeito. A espécie normativa adequada para disciplinar matéria de competência privativa da Câmara que produz efeitos EXTERNOS (como julgar as contas anuais do Prefeito ou conceder honrarias e títulos de cidadania) é:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">O Decreto Legislativo.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">A Portaria Administrativa.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">O Projeto de Lei Delegada.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">O Despacho Terminativo.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_274">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 14</span>
+          <span class="q-badge">ID 274</span>
+        </div>
+        <span class="q-discipline">Processo Legislativo • Matérias Disciplinadas por Resolução</span>
+      </div>
+      <div class="q-text">
+        A Resolução é a proposição legislativa destinada a regular matérias de competência privativa da Câmara Municipal que produzem efeitos político-administrativos interna corporis. Constitui matéria típica de RESOLUÇÃO da Câmara:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">A instituição da planta genérica de valores e alíquotas do IPTU municipal.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">A desafetação e doação onerosa de bens imóveis dominicais do Município.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">A fixação das diretrizes orçamentárias anuais do Poder Executivo (LDO).</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">A criação, transformação ou extinção dos cargos do quadro de servidores da Câmara Municipal e a alteração do seu Regimento Interno.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_275">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 15</span>
+          <span class="q-badge">ID 275</span>
+        </div>
+        <span class="q-discipline">Processo Legislativo • Quóruns Parlamentares: Maioria Simples versus Maioria Absoluta</span>
+      </div>
+      <div class="q-text">
+        A fixação de quórum é elemento essencial para a validade das deliberações parlamentares. Em conformidade com o artigo 47 da CF/88, salvo determinação legal em sentido diverso, as deliberações da Câmara serão tomadas por maioria de votos, presente a maioria absoluta de seus membros. Essa definição refere-se à:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Maioria Qualificada de Dois Terços.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Maioria Simples (ou Relativa).</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Unanimidade Regimental Suplementar.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Maioria Constitucional de Três Quintos.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_276">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 16</span>
+          <span class="q-badge">ID 276</span>
+        </div>
+        <span class="q-discipline">Processo Legislativo • Princípio da Irrepetibilidade (CF/88 Art. 67)</span>
+      </div>
+      <div class="q-text">
+        Um projeto de lei de autoria parlamentar foi rejeitado em Plenário na Câmara Municipal. Em relação à possibilidade de reapresentação dessa mesma matéria na mesma Sessão Legislativa (mesmo ano de trabalhos), a regra constitucional da irrepetibilidade (CF/88, art. 67) estabelece que:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">É terminantemente proibida sob qualquer pretexto até a realização da legislatura seguinte (quatro anos depois).</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Pode ser reapresentado livremente pelo mesmo vereador autor decorridos apenas sete dias da rejeição anterior.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Somente poderá ser objeto de novo projeto de lei mediante a assinatura e proposta formal da maioria absoluta dos membros da Casa Legislativa.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Depende de parecer favorável emitido previamente pelo Tribunal de Contas ou pelo Ministério Público Estadual.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_277">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 17</span>
+          <span class="q-badge">ID 277</span>
+        </div>
+        <span class="q-discipline">Processo Legislativo • Regime de Urgência no Processo Legislativo</span>
+      </div>
+      <div class="q-text">
+        O Regimento Interno prevê hipóteses em que determinada proposição pode tramitar em regime de 'Urgência Especial'. A principal consequência procedimental do deferimento do regime de urgência é:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">A promulgação instantânea da lei antes de qualquer votação plenária.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">A autorização para que o projeto seja sancionado sem leitura do seu texto.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">A anulação de todas as emendas e pareceres aprovados anteriormente pelas comissões.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">A dispensa de exigências e prazos regimentais ordinários para que a proposição seja incluída prontamente na Ordem do Dia e deliberada pelo Plenário.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_278">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 18</span>
+          <span class="q-badge">ID 278</span>
+        </div>
+        <span class="q-discipline">Processo Legislativo • Iniciativa Popular no Âmbito Municipal</span>
+      </div>
+      <div class="q-text">
+        A Constituição Federal de 1988, em seu artigo 29, inciso XIII, consagra o exercício direto da cidadania no processo legislativo municipal por meio da iniciativa popular de projetos de lei de interesse específico do Município, da cidade ou de bairros. Para que a iniciativa popular municipal seja válida, exige-se a manifestação de, pelo menos:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">5% (cinco por cento) do eleitorado do Município.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">1% (um por cento) dos cidadãos residentes no bairro.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">10% (dez por cento) do total de votantes da última eleição majoritária.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">15% (quinze por cento) dos eleitores alistados no Estado.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_279">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 19</span>
+          <span class="q-badge">ID 279</span>
+        </div>
+        <span class="q-discipline">Processo Legislativo • Fase da Redação Final (LC nº 95/1998)</span>
+      </div>
+      <div class="q-text">
+        Após a aprovação do projeto de lei em plenário, acompanhado de emendas que modificaram trechos de sua redação originária, a matéria é encaminhada para a confecção da 'Redação Final'. Nessa fase regulamentar:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Podem ser apresentadas novas emendas de mérito que criem despesas públicas adicionais.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">O relator tem o poder de rejeitar integralmente o mérito aprovado pela maioria do Plenário.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">É defeso efetuar qualquer alteração substancial de mérito, restringindo-se os trabalhos à escorreita adequação gramatical, clareza, precisão e técnica legislativa em harmonia com as deliberações plenárias.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">O projeto adquire status definitivo de lei sancionada, dispensando o envio ao Executivo.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_280">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 20</span>
+          <span class="q-badge">ID 280</span>
+        </div>
+        <span class="q-discipline">Processo Legislativo • Retirada de Proposição pelo Autor</span>
+      </div>
+      <div class="q-text">
+        Um parlamentar protocolou na Secretaria da Câmara Municipal um Projeto de Lei Ordinária. Dias depois, antes que a matéria fosse submetida à votação em Plenário, ele decide retirá-la definitivamente de tramitação. Segundo as regras gerais do processo legislativo regimental:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Uma proposição legislativa, após protocolada, torna-se patrimônio público inalienável e não pode ser retirada em hipótese alguma.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">O autor pode solicitar a retirada da proposição; se a deliberação em Plenário ainda não tiver sido iniciada, o deferimento é prerrogativa regimental do Presidente ou do autor; se já iniciada a votação, dependerá da concordância do Plenário.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">A retirada da proposição exige obrigatoriamente concordância prévia e homologação por decreto do Prefeito Municipal.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">O autor pode retirar a proposição inclusive depois que o projeto for sancionado e publicado como lei oficial.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_281">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 21</span>
+          <span class="q-badge">ID 281</span>
+        </div>
+        <span class="q-discipline">Informática • Microsoft Word 365: Quebras de Página versus Quebras de Seção</span>
+      </div>
+      <div class="q-text">
+        No Microsoft Word 365, ao preparar a minuta de um relatório técnico para a Mesa Diretora, o servidor necessita que as páginas 1 e 2 fiquem em orientação 'Retrato' e a página 3 fique em orientação 'Paisagem' para acomodar uma tabela extensa. Para permitir essa divergência de orientação de página no mesmo documento, deve-se inserir:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Uma Quebra de Linha Manual com o atalho Shift + Enter.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Uma Quebra de Página Simples com o atalho Ctrl + Enter.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Uma Quebra de Seção do tipo 'Próxima Página'.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Um Marcador de Recuo Negativo na Régua Horizontal.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_282">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 22</span>
+          <span class="q-badge">ID 282</span>
+        </div>
+        <span class="q-discipline">Informática • Microsoft Word 365: Teclas de Atalho Oficiais (Português)</span>
+      </div>
+      <div class="q-text">
+        No Microsoft Word configurado no padrão de idioma Português do Brasil, as teclas de atalho padrão utilizadas para 'Salvar as alterações no documento', 'Alinhar o texto no modo Justificado' e 'Desfazer a última ação' são, respectivamente:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Ctrl + B, Ctrl + J e Ctrl + Z.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Ctrl + S, Ctrl + U e Ctrl + D.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Ctrl + G, Ctrl + A e Ctrl + Z.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Ctrl + S, Ctrl + J e Ctrl + Y.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_283">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 23</span>
+          <span class="q-badge">ID 283</span>
+        </div>
+        <span class="q-discipline">Informática • Microsoft Word: Recurso de Mala Direta</span>
+      </div>
+      <div class="q-text">
+        O recurso 'Mala Direta' (Mail Merge) disponível na guia 'Correspondências' do Microsoft Word é especialmente indicado para qual finalidade no setor administrativo:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Enviar spam em lote para listas públicas de e-mails de forma anônima e indetectável.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Traduzir documentos legislativos inteiros automaticamente para dialetos regionais.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Comprimir arquivos pesados no formato ZIP antes de anexá-los ao correio eletrônico.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Gerar automaticamente lotes de documentos personalizados (como ofícios, convites, cartas e etiquetas) a partir de um modelo fixo integrado a uma lista ou tabela de dados (como planilha Excel ou contatos Outlook).</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_284">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 24</span>
+          <span class="q-badge">ID 284</span>
+        </div>
+        <span class="q-discipline">Informática • Microsoft Excel 365: Função SOMA e Sintaxe de Intervalos</span>
+      </div>
+      <div class="q-text">
+        Em uma planilha do Microsoft Excel 365, o usuário deseja somar todos os valores numéricos contidos no intervalo contínuo que vai da célula B2 até a célula B12. A sintaxe correta da fórmula que realiza essa operação é:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">=TOTAL(B2..B12)</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">=SOMA(B2:B12)</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">=SOMA(B2;B12)</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">=SOMATÓRIO(B2 a B12)</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_285">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 25</span>
+          <span class="q-badge">ID 285</span>
+        </div>
+        <span class="q-discipline">Informática • Microsoft Excel 365: Função MÉDIA</span>
+      </div>
+      <div class="q-text">
+        Considere as seguintes células em uma planilha do Excel: A1 = 10, A2 = 20, A3 = 30 e A4 = 40. Ao preencher a célula A5 com a fórmula `=MÉDIA(A1:A4)`, o valor numérico retornado será:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">25</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">100</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">20</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">50</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_286">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 26</span>
+          <span class="q-badge">ID 286</span>
+        </div>
+        <span class="q-discipline">Informática • Microsoft Excel: Referências Relativas, Absolutas e Mistas</span>
+      </div>
+      <div class="q-text">
+        No Microsoft Excel, ao copiar uma fórmula que contém a expressão `$E$5` de uma célula para outra, o comportamento das coordenadas da célula referenciada será caracterizado como:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Referência Relativa: a coluna E e a linha 5 serão automaticamente deslocadas.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Referência Mista: a coluna E permanece fixa, mas a linha 5 muda livremente.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Referência Absoluta: nem a coluna E nem a linha 5 sofrerão qualquer alteração ao serem copiadas para outra posição, mantendo-se estáticas.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Referência Inválida: o Excel exibirá o código de erro #REF! por uso incorreto de caracteres especiais.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_287">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 27</span>
+          <span class="q-badge">ID 287</span>
+        </div>
+        <span class="q-discipline">Informática • Microsoft Excel 365: Função Lógica SE</span>
+      </div>
+      <div class="q-text">
+        Um técnico elaborou a seguinte fórmula no Excel para avaliar o cumprimento de metas de atendimento da Câmara: `=SE(D4>=100; "Meta Atingida"; "Meta Pendente")`. Sabendo-se que o valor registrado na célula D4 é exatamente 100, o resultado exibido na célula da fórmula será:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Meta Pendente</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Meta Atingida</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">#NOME?</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">VERDADEIRO</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_288">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 28</span>
+          <span class="q-badge">ID 288</span>
+        </div>
+        <span class="q-discipline">Informática • Microsoft Excel 365: Função CONT.SE</span>
+      </div>
+      <div class="q-text">
+        Deseja-se saber quantas vezes a palavra 'Deferido' aparece na coluna de status dos processos legislativos, no intervalo de C2 até C80. A função do Microsoft Excel especificamente concebida para realizar contagens baseadas em um critério específico é:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">=SOMAR(C2:C80; "Deferido")</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">=CONTAR(C2:C80 = Deferido)</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">=LOCALIZAR.SE(C2:C80; "Deferido")</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">=CONT.SE(C2:C80; "Deferido")</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_289">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 29</span>
+          <span class="q-badge">ID 289</span>
+        </div>
+        <span class="q-discipline">Informática • Microsoft Excel 365: Função PROCV</span>
+      </div>
+      <div class="q-text">
+        A função `=PROCV(valor_procurado; matriz_tabela; núm_índice_coluna; [procurar_intervalo])` é uma das mais cobradas em provas de concurso. A respeito do seu funcionamento no Excel, é correto afirmar:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">O PROCV efetua uma pesquisa vertical, buscando o valor_procurado estritamente na PRIMEIRA coluna à esquerda da matriz_tabela e retornando o valor correspondente na mesma linha a partir do número da coluna indicado.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">O PROCV só funciona se a tabela estiver disposta na horizontal e com células em ordem decrescente.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">O PROCV serve para calcular o produto vetorial entre duas matrizes tridimensionais.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Caso o valor procurado não seja encontrado, o PROCV sempre substitui o erro pelo número zero automaticamente.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_290">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 30</span>
+          <span class="q-badge">ID 290</span>
+        </div>
+        <span class="q-discipline">Informática • Microsoft PowerPoint 365: Efeitos de Transição versus Efeitos de Animação</span>
+      </div>
+      <div class="q-text">
+        No Microsoft PowerPoint 365, ao preparar uma apresentação para a Sessão Solene da Câmara de Meruoca, o operador precisa configurar efeitos visuais. A distinção conceitual e prática entre 'Transições' e 'Animações' no PowerPoint reside no fato de que:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">As Transições são aplicadas a gráficos do Excel inseridos, enquanto as Animações só funcionam em textos sem formatação.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">As Animações referem-se à troca de um slide para outro na tela, enquanto as Transições se aplicam apenas ao áudio da apresentação.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">As Transições são os efeitos visuais que ocorrem durante a passagem de um slide para o slide seguinte, enquanto as Animações são os movimentos e efeitos visuais aplicados a elementos individuais (textos, imagens, ícones) dentro do próprio slide.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">As Transições são recursos exclusivos da versão web, e as Animações só existem na versão instalada para desktop.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_291">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 31</span>
+          <span class="q-badge">ID 291</span>
+        </div>
+        <span class="q-discipline">Informática • Microsoft PowerPoint: Slide Mestre</span>
+      </div>
+      <div class="q-text">
+        Para garantir uma identidade visual consistente em toda a apresentação (adicionar o brasão do Município de Meruoca, número de página e cor institucional de título em todos os slides de uma só vez), o recurso correto a ser utilizado no Microsoft PowerPoint é:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">O Editor de Estilos Rápidos da Barra de Status.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">O Modo de Exibição do Slide Mestre.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">O Painel de Seleção de Formas Vetoriais.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">A Ferramenta de Gravação de Macros de Áudio.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_292">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 32</span>
+          <span class="q-badge">ID 292</span>
+        </div>
+        <span class="q-discipline">Informática • Microsoft PowerPoint: Atalhos para Iniciar Apresentação (F5 versus Shift+F5)</span>
+      </div>
+      <div class="q-text">
+        Durante a realização de uma palestra na Câmara de Vereadores, o técnico está editando o slide número 14 no PowerPoint e precisa iniciar a exibição em tela cheia exatamente a partir desse slide atual (slide 14), sem voltar para o início. O atalho de teclado correspondente a essa ação é:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">F5</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Ctrl + F5</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Alt + F5</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Shift + F5</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_293">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 33</span>
+          <span class="q-badge">ID 293</span>
+        </div>
+        <span class="q-discipline">Informática • Google Docs: Colaboração em Tempo Real</span>
+      </div>
+      <div class="q-text">
+        No Google Docs (Documentos Google), integrado ao ecossistema Google Workspace, a coautoria simultânea de arquivos apresenta a seguinte característica funcional:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">O documento é bloqueado pelo primeiro usuário com 'lock' exclusivo, impedindo qualquer outra pessoa de visualizar o arquivo até o término da sessão.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">As edições de outros usuários só são refletidas após reinicialização completa do navegador web.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Vários usuários autorizados podem editar o documento de forma simultânea e síncrona na nuvem, sendo as alterações salvas automaticamente em tempo real e visualizadas com cursores coloridos identificando cada participante.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">O Google Docs exige que os usuários salvem as versões intermediárias periodicamente clicando em um ícone de disquete físico.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_294">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 34</span>
+          <span class="q-badge">ID 294</span>
+        </div>
+        <span class="q-discipline">Informática • Google Workspace / Drive: Níveis de Permissão de Compartilhamento</span>
+      </div>
+      <div class="q-text">
+        Ao compartilhar um arquivo no Google Drive com membros de uma equipe de trabalho, o proprietário pode conceder permissões diferenciadas. A permissão que autoriza o usuário a visualizar o documento e propor alterações por meio de anotações e balões laterais, mas que NÃO lhe concede poder de alterar diretamente o texto original sem a anuência do autor, é a de:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Comentarista.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Leitor.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Editor.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Proprietário Delegado.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_295">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 35</span>
+          <span class="q-badge">ID 295</span>
+        </div>
+        <span class="q-discipline">Informática • Google Sheets: Histórico de Versões e Segurança</span>
+      </div>
+      <div class="q-text">
+        Em uma planilha de controle financeiro desenvolvida no Google Sheets (Planilhas Google), um funcionário apagou acidentalmente fórmulas complexas na tarde de ontem. O recurso nativo do Google Workspace que permite recuperar com precisão o estado anterior da planilha é:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">O Modo de Limpeza Automática de Cache do Chrome.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">A Barra de Status com Desfazer Limitado a três cliques.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">O Formatador de Células em Cascata.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">O Histórico de Versões (Menu Arquivo -> Histórico de versões -> Ver histórico de versões).</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_296">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 36</span>
+          <span class="q-badge">ID 296</span>
+        </div>
+        <span class="q-discipline">Informática • Manipulação de Textos no Pacote Office: Área de Transferência</span>
+      </div>
+      <div class="q-text">
+        Ao selecionar um texto em um editor como o Microsoft Word e acionar a combinação de teclas `Ctrl + X`, o texto em questão:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">É formatado com efeito de sublinhado duplo e caixa alta.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">É recortado, isto é, retirado de sua posição original e enviado para a Área de Transferência, podendo ser inserido em outro local por meio do comando `Ctrl + V`.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">É duplicado na linha de baixo instantaneamente sem ser copiado para a memória.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">É permanentemente excluído sem possibilidade de ser colado posteriormente.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_297">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 37</span>
+          <span class="q-badge">ID 297</span>
+        </div>
+        <span class="q-discipline">Informática • Microsoft Excel: Precedência de Operadores Matemáticos</span>
+      </div>
+      <div class="q-text">
+        No Microsoft Excel, a ordem de execução dos operadores em uma fórmula matemática segue estritamente a hierarquia algébrica padrão. Considere a fórmula inserida em uma célula: `=2 + 3 * 4 ^ 2`. O resultado que será calculado e exibido pelo Excel é:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">50</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">80</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">400</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">38</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_298">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 38</span>
+          <span class="q-badge">ID 298</span>
+        </div>
+        <span class="q-discipline">Informática • Google Drive: Sincronização Local com 'Drive para Computador'</span>
+      </div>
+      <div class="q-text">
+        O aplicativo oficial 'Google Drive para computador' (antigo Backup and Sync / Drive File Stream) oferece aos usuários a capacidade de:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Executar jogos de computador e renderização 3D offline sem placa gráfica dedicada.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Substituir o disco rígido físico por uma conexão de fibra óptica sem sistema operacional.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Bloquear chamadas telefônicas no smartphone corporativo conectado via Bluetooth.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Acessar e gerenciar arquivos e pastas do Google Drive diretamente a partir do Explorador de Arquivos do Windows como se fossem uma unidade de disco local, integrando a sincronização em nuvem.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_299">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 39</span>
+          <span class="q-badge">ID 299</span>
+        </div>
+        <span class="q-discipline">Informática • Microsoft Word 365: Ferramenta Pincel de Formatação</span>
+      </div>
+      <div class="q-text">
+        No Microsoft Word 365, o ícone que reproduz o desenho de um pincel na guia 'Página Inicial' (Pincel de Formatação / Format Painter) destina-se a:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Desenhar vetores e figuras geométricas livres no cabeçalho do documento.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Copiar a formatação (tipo de fonte, tamanho, cor, negrito, espaçamento) de um trecho de texto já formatado e aplicá-la rapidamente a outro trecho selecionado.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Localizar e substituir automaticamente palavras com erros de concordância verbal.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Exportar o texto para impressoras térmicas matriciais de alta velocidade.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_300">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 40</span>
+          <span class="q-badge">ID 300</span>
+        </div>
+        <span class="q-discipline">Informática • Segurança no Pacote Office: Modo de Exibição Protegido e Macros</span>
+      </div>
+      <div class="q-text">
+        Ao abrir um arquivo de texto (.docx) ou pasta de trabalho (.xlsx) que foi recebido como anexo de e-mail de remetente desconhecido ou baixado da internet, o Microsoft Office costuma exibi-lo no 'Modo de Exibição Protegido'. O objetivo primordial desse mecanismo defensivo é:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Bloquear a conexão de internet de toda a repartição pública até que o arquivo seja deletado.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Criptografar compulsoriamente os arquivos do usuário com chave privada para exigir senha de acesso.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Abrir o documento em ambiente de leitura isolada (sandbox) com recursos de edição e execução de macros desabilitados, mitigando riscos de infecção por malwares antes da verificação do usuário.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Excluir automaticamente o arquivo do computador caso o usuário não possua assinatura corporativa da Microsoft.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <!-- CARTÃO-RESPOSTA -->
+    <div class="page-break"></div>
+    <div class="header-box" style="margin-top: 10px;">
+      <div class="header-titles">
+        <h1 style="font-size: 1.15rem;">Folha Oficial de Respostas (Gabarito do Candidato)</h1>
+        <p>Preencha os círculos completamente com caneta esferográfica preta ou azul.</p>
+      </div>
+      <div class="badge-banca" style="background: #e0f2fe; color: #0369a1; border-color: #bae6fd;">
+        Semana 2 • Dia 3
+      </div>
+    </div>
+
+    <div class="cartao-grid">
+      
+    <div class="cartao-item">
+      <span class="cartao-num">01</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">02</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">03</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">04</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">05</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">06</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">07</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">08</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">09</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">10</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">11</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">12</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">13</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">14</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">15</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">16</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">17</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">18</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">19</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">20</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">21</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">22</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">23</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">24</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">25</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">26</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">27</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">28</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">29</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">30</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">31</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">32</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">33</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">34</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">35</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">36</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">37</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">38</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">39</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">40</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+    </div>
+
+    <!-- GABARITO COMENTADO -->
+    <div class="page-break"></div>
+    <div class="header-box" style="margin-top: 10px;">
+      <div class="header-titles">
+        <h1 style="font-size: 1.15rem;">Gabarito Oficial Justificado e Comentado</h1>
+        <p>Fundamentação legal na CF/88, Regimento Padrão e documentação técnica oficial Microsoft/Google.</p>
+      </div>
+      <div class="badge-banca" style="background: #dcfce7; color: #166534; border-color: #bbf7d0;">
+        Gabarito Oficial
+      </div>
+    </div>
+
+    <div class="gabarito-list">
+      
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 261 (Processo Legislativo • Espécies Normativas (CF/88 Art. 59)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. O art. 59 da CF/88 estabelece taxativamente as espécies normativas que integram o processo legislativo: I - emendas à Constituição; II - leis complementares; III - leis ordinárias; IV - leis delegadas; V - medidas provisórias; VI - decretos legislativos; VII - resoluções. Atos como portarias, instruções normativas e circulares são atos infralegais da Administração, não compondo o processo legislativo constitucional.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 262 (Processo Legislativo • Emendas à Constituição: Procedimento e Limitações):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Conforme o art. 60, §§ 2º e 3º da CF/88: a proposta será discutida e votada em cada Casa do Congresso Nacional, em dois turnos, considerando-se aprovada se obtiver, em ambos, três quintos dos votos dos respectivos membros. A emenda à Constituição será promulgada pelas Mesas da Câmara dos Deputados e do Senado Federal, com o respectivo número de ordem. Não existe fase de sanção ou veto pelo Poder Executivo em emendas constitucionais.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 263 (Processo Legislativo • Iniciativa Privativa de Leis):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. A iniciativa de leis que versem sobre criação de cargos, funções ou empregos na administração pública direta e autárquica do Executivo, aumento de remuneração de seus servidores, regime jurídico e organização administrativa dos seus órgãos é competência privativa do Chefe do Poder Executivo (CF, art. 61, § 1º, II). As alternativas B, C e D versam sobre matérias de competência privativa da própria Câmara Municipal.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 264 (Processo Legislativo • Leis Complementares versus Leis Ordinárias):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. A diferença entre Lei Complementar (LC) e Lei Ordinária (LO) reside no critério material (a LC só pode tratar de matérias expressamente previstas no texto constitucional) e no critério formal (a LC é aprovada por MAIORIA ABSOLUTA, conforme o art. 69 da CF/88, enquanto a LO é aprovada por MAIORIA SIMPLES, nos termos do art. 47 da CF/88). Não há hierarquia formal entre elas segundo o STF, mas sim campos materiais de competência distintos.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 265 (Processo Legislativo • Fases do Processo Legislativo: Fase Integrativa):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. A fase integrativa da lei é aquela que confere executoriedade e vigência ao diploma legal formalmente aprovado. É composta pela PROMULGAÇÃO (atestado oficial da existência da lei e ordem de seu cumprimento) e pela PUBLICAÇÃO (ato que torna o texto público para gerar eficácia e presunção de conhecimento erga omnes, em obediência ao princípio da publicidade).</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 266 (Processo Legislativo • Veto Executivo: Prazo, Motivos e Rejeição):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Nos termos do art. 66, §§ 1º e 2º da CF/88 e das Leis Orgânicas Municipais: o veto é sempre expresso e motivado (não existe veto tácito), devendo ser exercido no prazo de 15 dias ÚTEIS. O veto parcial só pode abranger texto integral de artigo, parágrafo, inciso ou alínea (vedado vetar palavras ou expressões isoladas). Os motivos devem ser comunicados ao Presidente da Casa Legislativa dentro de 48 horas.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 267 (Processo Legislativo • Sanção Tácita e Sanção Expressa):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Art. 66, § 3º da CF/88: 'Decorrido o prazo de quinze dias, o silêncio do Presidente da República [ou do Prefeito, por simetria] importará em sanção'. Portanto, enquanto o veto deve ser sempre expresso e motivado, a sanção pode ser expressa (declaração formal positiva) ou tácita (decorrente da inércia após 15 dias úteis).</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 268 (Processo Legislativo • Derrubada de Veto e Promulgação Supletiva):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Conforme art. 66, §§ 5º e 7º da CF/88 e Leis Orgânicas municipais: se o veto for rejeitado, o projeto é enviado ao Chefe do Executivo para que o promulgue em 48 horas. Não o fazendo nesse prazo, abre-se a competência sucessiva/supletiva: o Presidente da Câmara o promulgará e, caso este também se omita em igual prazo (48 horas), caberá ao Vice-Presidente da Câmara fazê-lo.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 269 (Processo Legislativo • Classificação das Emendas Parlamentares):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Classificação técnica regimental das emendas: (1) Supressiva: visa a eliminar parte do texto da proposição; (2) Aditiva: acrescenta dispositivos ou novas previsões ao texto; (3) Modificativa: altera a redação de dispositivo sem criar novo assunto ou suprimir a regra; (4) Aglutinativa: resulta da fusão de proposições ou emendas correlatas.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 270 (Processo Legislativo • Conceito e Tramitação de Substitutivo):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Substitutivo é o projeto de lei apresentado por um parlamentar, bancada ou comissão competente com a finalidade de substituir integralmente uma proposição principal em andamento. Havendo aprovação do substitutivo, a proposição original e as emendas a ela apresentadas ficam automaticamente prejudicadas.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 271 (Processo Legislativo • Atuação da Comissão de Constituição e Justiça (CCJ)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. A Comissão de Constituição, Justiça e Redação Final (CCJ) atua como órgão de controle de juridicidade preventiva: aprecia a constitucionalidade (se a matéria ofende a CF ou a Lei Orgânica), a legalidade (se contraria leis gerais), o respeito ao regimento e a boa técnica legislativa (LC nº 95/98).</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 272 (Processo Legislativo • Poder Terminativo das Comissões):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Conforme o art. 58, § 2º, I da CF/88, às comissões cabe 'discutir e votar projeto de lei que dispensar, na forma do regimento, a competência do Plenário, salvo se houver recurso de um décimo dos membros da Casa'. Este é o chamado poder terminativo ou poder conclusivo das comissões.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 273 (Processo Legislativo • Decreto Legislativo versus Resolução):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. A distinção clássica no processo legislativo municipal estabelece: (1) DECRETO LEGISLATIVO: matéria de competência exclusiva/privativa da Câmara que produz efeitos EXTERNOS à Casa (ex.: julgamento das contas do Prefeito, concessão de título de cidadão honorário, autorização para o Prefeito ausentar-se do Município por período superior a 15 dias); (2) RESOLUÇÃO: matéria privativa da Câmara com efeitos INTERNOS (Regimento Interno, organização da Secretaria, criação de cargos do Legislativo).</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 274 (Processo Legislativo • Matérias Disciplinadas por Resolução):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. As Resoluções da Câmara tratam de sua vida e administração interna: regimento interno, estrutura administrativa do Legislativo, concessão de licença a vereador, regulamentação de seus serviços internos. Matérias tributárias, patrimoniais municipais gerais e orçamentárias (IPTU, alienação de imóveis, LDO) exigem Lei Formal (ordinária ou complementar).</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 275 (Processo Legislativo • Quóruns Parlamentares: Maioria Simples versus Maioria Absoluta):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. A regra geral do processo legislativo é a MAIORIA SIMPLES (ou relativa): exige a presença em sessão da maioria absoluta dos membros da Casa (quórum de instalação) e a votação favorável da maioria dos presentes (quórum de aprovação). Já a maioria absoluta exige o voto favorável do primeiro número inteiro acima da metade do total de membros que compõem a Casa, independentemente dos presentes.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 276 (Processo Legislativo • Princípio da Irrepetibilidade (CF/88 Art. 67)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Conforme o art. 67 da CF/88: 'A matéria constante de projeto de lei rejeitado somente poderá ser objeto de novo projeto, na mesma sessão legislativa, mediante proposta da maioria absoluta dos membros de qualquer das Casas do Congresso Nacional'. Essa salvaguarda impede que parlamentares sobrecarreguem repetitivamente os trabalhos com propostas já rejeitadas, salvo consenso qualificado.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 277 (Processo Legislativo • Regime de Urgência no Processo Legislativo):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. O regime de urgência tem o objetivo de conferir celeridade à tramitação de matérias inadiáveis ou de grave interesse coletivo. Ele autoriza a dispensa de prazos de interstício, distribuição imediata em avulsos e pronta inclusão na Ordem do Dia, reduzindo etapas intermediárias sem suprimir a soberania da deliberação plenária.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 278 (Processo Legislativo • Iniciativa Popular no Âmbito Municipal):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 29, XIII da CF/88: 'iniciativa popular de projetos de lei de interesse específico do Município, da cidade ou de bairros, através de manifestação de, pelo menos, cinco por cento do eleitorado'. Em nível federal (CF art. 61, § 2º) a regra é 1% do eleitorado nacional distribuído por pelo menos 5 estados com não menos de 0,3% em cada um.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 279 (Processo Legislativo • Fase da Redação Final (LC nº 95/1998)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. A fase de Redação Final (regida pelos preceitos da Lei Complementar nº 95/1998 e regimentos internos) é estritamente de consolidação formal do que já foi deliberado e aprovado. É vedada qualquer alteração de mérito, permitindo-se apenas correções vernáculas, ajustes de concordância, numeração de artigos e técnica legislativa.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 280 (Processo Legislativo • Retirada de Proposição pelo Autor):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Conforme praxe e normas regimentais: a retirada de proposição é de iniciativa de seu autor. Antes de ser submetida à deliberação plenária (ou antes de receber parecer contrário de comissão terminativa), a retirada pode ser deferida de plano pelo Presidente. Contudo, se a matéria já estiver sob deliberação/votação no Plenário, a retirada só poderá ocorrer se o próprio Plenário autorizar.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 281 (Informática • Microsoft Word 365: Quebras de Página versus Quebras de Seção):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. No MS Word, formatações de nível de página (orientação Retrato/Paisagem, cabeçalhos/rodapés diferentes, margens distintas e número de colunas) são atributos vinculados à SEÇÃO. Uma Quebra de Página simples apenas empurra o texto para a página seguinte na mesma seção. Para alterar a orientação de uma página isolada, é obrigatório inserir uma Quebra de Seção (Menu Layout -> Quebras -> Quebras de Seção -> Próxima Página).</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 282 (Informática • Microsoft Word 365: Teclas de Atalho Oficiais (Português)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Nos programas do Microsoft Office em Português: Ctrl + B = Salvar (no Word em inglês seria Ctrl + S); Ctrl + J = Alinhamento Justificado (Justify); Ctrl + Z = Desfazer (Undo). Vale lembrar que Ctrl + S em português sublinha o texto no Word.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 283 (Informática • Microsoft Word: Recurso de Mala Direta):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. A Mala Direta do Word permite criar cartas, ofícios, certificados ou etiquetas personalizadas em escala. Ela combina um 'documento principal' (texto base com campos de mesclagem como «Nome», «Cargo», «Endereço») com uma 'fonte de dados' (como uma planilha do Excel ou lista de contatos).</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 284 (Informática • Microsoft Excel 365: Função SOMA e Sintaxe de Intervalos):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. No Excel, o operador de intervalo contínuo é representado pelos dois pontos (:). Portanto, `=SOMA(B2:B12)` soma todas as células de B2 até B12. Atenção para a pegadinha: se usasse o ponto e vírgula (`=SOMA(B2;B12)`), somaria unicamente a célula B2 e a célula B12 isoladamente.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 285 (Informática • Microsoft Excel 365: Função MÉDIA):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. A função `=MÉDIA()` calcula a média aritmética simples dos valores contidos no intervalo: (10 + 20 + 30 + 40) / 4 = 100 / 4 = 25.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 286 (Informática • Microsoft Excel: Referências Relativas, Absolutas e Mistas):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. O caractere cifrão (`$`) é o operador de fixação (ancoragem) no Excel. Quando colocado antes da letra da coluna e antes do número da linha (`$E$5`), cria-se uma REFERÊNCIA ABSOLUTA, que nunca muda ao ser copiada ou arrastada. Se houvesse cifrão em apenas um dos componentes (ex: `$E5` ou `E$5`), seria uma referência mista.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 287 (Informática • Microsoft Excel 365: Função Lógica SE):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. A função SE tem a estrutura: `=SE(condição; valor_se_verdadeiro; valor_se_falso)`. A condição testada é `D4 >= 100`. Como D4 vale 100, o teste relacional `100 >= 100` é VERDADEIRO (maior ou igual). Logo, o Excel executa o segundo argumento e exibe a mensagem 'Meta Atingida'.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 288 (Informática • Microsoft Excel 365: Função CONT.SE):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. A função `=CONT.SE(intervalo; critérios)` conta o número de células dentro de um intervalo que atendem à condição estipulada. No caso em questão, `=CONT.SE(C2:C80; "Deferido")` conta com precisão as ocorrências da palavra. A função CONTAR() contaria apenas células com números, e SOMASE() somaria valores numéricos com base em critérios.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 289 (Informática • Microsoft Excel 365: Função PROCV):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. PROCV significa 'Procura Vertical'. Ela pesquisa um valor na PRIMEIRA coluna de um intervalo ou matriz e retorna um valor situado na mesma linha, extraído da coluna definida pelo argumento 'núm_índice_coluna'. Se não encontrar uma correspondência exata (quando configurado com FALSO ou 0 no último parâmetro), retorna o erro `#N/D`.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 290 (Informática • Microsoft PowerPoint 365: Efeitos de Transição versus Efeitos de Animação):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Conceito clássico de PowerPoint: TRANSIÇÃO é o efeito de passagem de tela entre um slide e outro (ex: Esmaecer, Empurrão, Cortina). ANIMAÇÃO é o efeito aplicado aos objetos específicos contidos no slide (ex: Surgir, Zoom, Rotação em uma caixa de texto ou foto).</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 291 (Informática • Microsoft PowerPoint: Slide Mestre):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. O 'Slide Mestre' (guia Exibir -> Slide Mestre) é o slide principal da hierarquia de apresentação que armazena informações sobre o tema, layout, fontes, cores e logotipos. Quaisquer alterações feitas no slide mestre são automaticamente replicadas em todos os slides da apresentação que utilizam aquele modelo.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 292 (Informática • Microsoft PowerPoint: Atalhos para Iniciar Apresentação (F5 versus Shift+F5)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. No Microsoft PowerPoint: F5 = Inicia a apresentação a partir do PRIMEIRO slide (slide 1); Shift + F5 = Inicia a apresentação a partir do SLIDE ATUAL em que o usuário está posicionado; Esc = Encerra a apresentação em tela cheia.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 293 (Informática • Google Docs: Colaboração em Tempo Real):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. O Google Docs é nativo em nuvem e destaca-se pela coautoria em tempo real: múltiplos usuários trabalham no mesmo arquivo simultaneamente, cada qual identificado por um cursor com sua cor e avatar/nome, com salvamento contínuo automático nos servidores do Google (Google Drive).</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 294 (Informática • Google Workspace / Drive: Níveis de Permissão de Compartilhamento):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Os níveis principais de compartilhamento no Google Drive são: (1) LEITOR: pode apenas visualizar e baixar o arquivo, sem adicionar comentários ou editar; (2) COMENTARISTA: pode visualizar e sugerir alterações/comentários em balões laterais, mas não altera o texto original diretamente; (3) EDITOR: tem controle total sobre o conteúdo do documento, podendo alterar textos, excluir trechos e aceitar ou rejeitar sugestões.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 295 (Informática • Google Sheets: Histórico de Versões e Segurança):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. O Google Workspace mantém um registro detalhado de todas as alterações feitas em um documento através do 'Histórico de versões' (atalho Ctrl+Alt+Shift+H). Ele permite navegar por todas as versões anteriores, ver exatamente quem fez cada edição e restaurar a versão selecionada a qualquer momento com segurança.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 296 (Informática • Manipulação de Textos no Pacote Office: Área de Transferência):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. A operação 'Recortar' (`Ctrl + X`) remove o conteúdo selecionado de seu local de origem e o armazena temporariamente na Área de Transferência (Clipboard) do sistema operacional, permitindo que seja colado (`Ctrl + V`) no mesmo aplicativo ou em outro documento.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 297 (Informática • Microsoft Excel: Precedência de Operadores Matemáticos):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. A precedência de operadores no Excel é: 1º Parênteses; 2º Potenciação (`^`); 3º Multiplicação (`*`) e Divisão (`/`); 4º Adição (`+`) e Subtração (`-`). Resolução passo a passo da fórmula `=2 + 3 * 4 ^ 2`: primeiro calcula a potência `4 ^ 2 = 16`; em seguida a multiplicação `3 * 16 = 48`; por último a adição `2 + 48 = 50`.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 298 (Informática • Google Drive: Sincronização Local com 'Drive para Computador'):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. O aplicativo 'Google Drive para computador' cria uma unidade virtual no Explorador de Arquivos do Windows (geralmente com letra própria, como G:). Isso permite aos usuários abrir, editar e organizar seus arquivos da nuvem diretamente pelos softwares instalados no Windows (como abrir um arquivo .docx no Microsoft Word direto da nuvem), mantendo a sincronização transparente.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 299 (Informática • Microsoft Word 365: Ferramenta Pincel de Formatação):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. O Pincel de Formatação copia unicamente o ESTILO e a FORMATAÇÃO (fonte, tamanho, cor, espaçamento, bordas) de uma seleção e a replica em outro texto. Dica prática para a prova: com um clique único no pincel, aplica-se uma vez; dando DUPLO CLIQUE no ícone do pincel, ele fica travado, permitindo aplicar a formatação repetidamente em vários trechos até que se pressione a tecla Esc.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 300 (Informática • Segurança no Pacote Office: Modo de Exibição Protegido e Macros):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. O Modo de Exibição Protegido (Protected View) é um recurso de segurança do Microsoft Office que abre documentos potencialmente inseguros (da internet, anexos de e-mail ou locais inseguros) em modo somente leitura com elementos ativos (como macros VBA e conexões de dados) bloqueados. Isso reduz os riscos de ataques cibernéticos causados por documentos adulterados.</p>
+      </div>
+    </div>
+  
+    </div>
+
+  </div>
+</body>
+</html>

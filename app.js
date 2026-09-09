@@ -4587,6 +4587,647 @@ const QUIZ_QUESTIONS_DATA = [
   "correctAnswer": 0,
   "commentary": "Gabarito: A. O verbo OBEDECER é estritamente Transitivo Indireto e rege a preposição 'a' ('obedecer a + as disposições = obedecer às disposições do regimento'). Já o verbo 'visar' no sentido de mirar ou apor visto é VTD ('visou o documento'). No sentido de almejar, rege 'a' ('visa à promoção')."
 }
+,
+{
+  "id": 261,
+  "category": "legislacao",
+  "day": "w2_d3",
+  "discipline": "Processo Legislativo",
+  "topic": "Espécies Normativas (CF/88 Art. 59)",
+  "question": "O processo legislativo brasileiro compreende a elaboração de atos normativos com diferentes alcances e requisitos formais. De acordo com o rol taxativo expresso no artigo 59 da Constituição Federal de 1988, compreende a elaboração de:",
+  "options": [
+    "Instruções Normativas, Circulares Interministeriais, Decretos Executivos, Leis Ordinárias e Resoluções.",
+    "Emendas à Constituição, Leis Complementares, Leis Ordinárias, Leis Delegadas, Medidas Provisórias, Decretos Legislativos e Resoluções.",
+    "Portarias de Gabinete, Leis Orgânicas Municipais, Decretos-Leis, Provimentos e Tratados Comerciais.",
+    "Regimentos Internos, Pareceres Jurídicos Vinculantes, Resoluções de Conselho, Súmulas e Leis Ordinárias."
+  ],
+  "correctAnswer": 1,
+  "commentary": "Gabarito: B. O art. 59 da CF/88 estabelece taxativamente as espécies normativas que integram o processo legislativo: I - emendas à Constituição; II - leis complementares; III - leis ordinárias; IV - leis delegadas; V - medidas provisórias; VI - decretos legislativos; VII - resoluções. Atos como portarias, instruções normativas e circulares são atos infralegais da Administração, não compondo o processo legislativo constitucional."
+},
+{
+  "id": 262,
+  "category": "legislacao",
+  "day": "w2_d3",
+  "discipline": "Processo Legislativo",
+  "topic": "Emendas à Constituição: Procedimento e Limitações",
+  "question": "Em relação ao procedimento de aprovação e formalização das Emendas à Constituição (CF/88, art. 60), assinale a alternativa juridicamente CORRETA:",
+  "options": [
+    "A proposta de emenda deve ser submetida à sanção ou veto motivado do Presidente da República no prazo de 15 dias úteis.",
+    "A emenda constitucional exige para sua aprovação votação em turno único com quórum qualificado de maioria absoluta dos votos.",
+    "Qualquer cidadão ou parlamentar isolado possui legitimidade autônoma para propor diretamente uma Emenda Constitucional.",
+    "Aprovada em dois turnos por três quintos dos votos dos membros de cada Casa do Congresso Nacional, a emenda é promulgada pelas Mesas da Câmara dos Deputados e do Senado Federal, sem participação executiva de sanção ou veto."
+  ],
+  "correctAnswer": 3,
+  "commentary": "Gabarito: D. Conforme o art. 60, §§ 2º e 3º da CF/88: a proposta será discutida e votada em cada Casa do Congresso Nacional, em dois turnos, considerando-se aprovada se obtiver, em ambos, três quintos dos votos dos respectivos membros. A emenda à Constituição será promulgada pelas Mesas da Câmara dos Deputados e do Senado Federal, com o respectivo número de ordem. Não existe fase de sanção ou veto pelo Poder Executivo em emendas constitucionais."
+},
+{
+  "id": 263,
+  "category": "legislacao",
+  "day": "w2_d3",
+  "discipline": "Processo Legislativo",
+  "topic": "Iniciativa Privativa de Leis",
+  "question": "No âmbito da organização municipal, em observância ao princípio da simetria constitucional com o artigo 61, § 1º da CF/88, são de iniciativa PRIVATIVA do Prefeito Municipal os projetos de lei que disponham sobre:",
+  "options": [
+    "Criação de cargos, funções ou empregos públicos na administração direta e autárquica do Poder Executivo, bem como a fixação ou aumento de sua remuneração.",
+    "Organização interna dos gabinetes parlamentares e criação de cargos e comissões do Poder Legislativo Municipal.",
+    "Fixação do subsídio dos Vereadores e do Presidente da Câmara para a legislatura subsequente.",
+    "Elaboração e reforma das disposições do Regimento Interno da Câmara Municipal de Vereadores."
+  ],
+  "correctAnswer": 0,
+  "commentary": "Gabarito: A. A iniciativa de leis que versem sobre criação de cargos, funções ou empregos na administração pública direta e autárquica do Executivo, aumento de remuneração de seus servidores, regime jurídico e organização administrativa dos seus órgãos é competência privativa do Chefe do Poder Executivo (CF, art. 61, § 1º, II). As alternativas B, C e D versam sobre matérias de competência privativa da própria Câmara Municipal."
+},
+{
+  "id": 264,
+  "category": "legislacao",
+  "day": "w2_d3",
+  "discipline": "Processo Legislativo",
+  "topic": "Leis Complementares versus Leis Ordinárias",
+  "question": "Acerca das distinções formais e materiais entre Leis Complementares e Leis Ordinárias no processo legislativo, assinale a afirmativa CORRETA:",
+  "options": [
+    "A lei complementar possui hierarquia normativa superior à lei ordinária, podendo revogar qualquer matéria mesmo quando não reservada a ela.",
+    "As leis ordinárias exigem quórum de dois terços dos membros da Casa Legislativa para sua aprovação final.",
+    "As leis complementares são reservadas para matérias expressamente taxadas na Constituição e dependem da aprovação por maioria absoluta, enquanto as leis ordinárias tratam da matéria comum residual e exigem apenas maioria simples.",
+    "O Chefe do Poder Executivo não pode vetar projetos de lei complementar, cabendo apenas o veto em leis ordinárias."
+  ],
+  "correctAnswer": 2,
+  "commentary": "Gabarito: C. A diferença entre Lei Complementar (LC) e Lei Ordinária (LO) reside no critério material (a LC só pode tratar de matérias expressamente previstas no texto constitucional) e no critério formal (a LC é aprovada por MAIORIA ABSOLUTA, conforme o art. 69 da CF/88, enquanto a LO é aprovada por MAIORIA SIMPLES, nos termos do art. 47 da CF/88). Não há hierarquia formal entre elas segundo o STF, mas sim campos materiais de competência distintos."
+},
+{
+  "id": 265,
+  "category": "legislacao",
+  "day": "w2_d3",
+  "discipline": "Processo Legislativo",
+  "topic": "Fases do Processo Legislativo: Fase Integrativa",
+  "question": "A doutrina constitucional e a técnica legislativa dividem o processo legislativo em três fases fundamentais: introdutória (iniciativa), constitutiva (deliberação parlamentar e manifestação executiva) e integrativa de eficácia. Integram tipicamente a fase INTEGRATIVA de eficácia da lei:",
+  "options": [
+    "A leitura da proposição no Pequeno Expediente e sua distribuição às Comissões Técnicas.",
+    "A promulgação e a publicação no Diário Oficial.",
+    "A emissão de parecer pela Comissão de Constituição e Justiça e a votação em Plenário.",
+    "A apresentação de emendas de bancada e o despacho de admissibilidade da Mesa Diretora."
+  ],
+  "correctAnswer": 1,
+  "commentary": "Gabarito: B. A fase integrativa da lei é aquela que confere executoriedade e vigência ao diploma legal formalmente aprovado. É composta pela PROMULGAÇÃO (atestado oficial da existência da lei e ordem de seu cumprimento) e pela PUBLICAÇÃO (ato que torna o texto público para gerar eficácia e presunção de conhecimento erga omnes, em obediência ao princípio da publicidade)."
+},
+{
+  "id": 266,
+  "category": "legislacao",
+  "day": "w2_d3",
+  "discipline": "Processo Legislativo",
+  "topic": "Veto Executivo: Prazo, Motivos e Rejeição",
+  "question": "Aprovado um projeto de lei pela Câmara Municipal, este é enviado ao Prefeito para sanção. Caso o Prefeito decida vetá-lo, o regime constitucional e legal do veto estabelece que:",
+  "options": [
+    "O veto deve ser formalizado no prazo de 15 (quinze) dias úteis, motivado por inconstitucionalidade (veto jurídico) ou por contrariedade ao interesse público (veto político), comunicando os motivos em até 48 horas ao Presidente da Câmara.",
+    "O veto pode ser tácito, de modo que a ausência de manifestação do Chefe do Executivo em 15 dias importa em rejeição automática do projeto.",
+    "O veto parcial pode incidir livremente sobre palavras isoladas, expressões avulsas ou orações intermediárias dentro de um artigo de lei.",
+    "A Câmara só pode rejeitar o veto do Prefeito se obtiver unanimidade absoluta de votos de todos os parlamentares em sessão secreta."
+  ],
+  "correctAnswer": 0,
+  "commentary": "Gabarito: A. Nos termos do art. 66, §§ 1º e 2º da CF/88 e das Leis Orgânicas Municipais: o veto é sempre expresso e motivado (não existe veto tácito), devendo ser exercido no prazo de 15 dias ÚTEIS. O veto parcial só pode abranger texto integral de artigo, parágrafo, inciso ou alínea (vedado vetar palavras ou expressões isoladas). Os motivos devem ser comunicados ao Presidente da Casa Legislativa dentro de 48 horas."
+},
+{
+  "id": 267,
+  "category": "legislacao",
+  "day": "w2_d3",
+  "discipline": "Processo Legislativo",
+  "topic": "Sanção Tácita e Sanção Expressa",
+  "question": "No processo de formação das leis, a manifestação de concordância do Chefe do Poder Executivo com o projeto aprovado pelo Legislativo denomina-se 'Sanção'. Sobre as formas de sanção, é correto afirmar:",
+  "options": [
+    "A sanção expressa torna dispensável a promulgação e a publicação da nova lei.",
+    "A sanção pode ser presumida caso o Prefeito assine um veto sem indicar os motivos.",
+    "Apenas o Presidente da República pode praticar sanção tácita, sendo vedada essa figura aos governadores e prefeitos.",
+    "O silêncio do Chefe do Executivo após o transcurso integral do prazo constitucional de 15 dias úteis sem sanção expressa nem veto importa em sanção tácita."
+  ],
+  "correctAnswer": 3,
+  "commentary": "Gabarito: D. Art. 66, § 3º da CF/88: 'Decorrido o prazo de quinze dias, o silêncio do Presidente da República [ou do Prefeito, por simetria] importará em sanção'. Portanto, enquanto o veto deve ser sempre expresso e motivado, a sanção pode ser expressa (declaração formal positiva) ou tácita (decorrente da inércia após 15 dias úteis)."
+},
+{
+  "id": 268,
+  "category": "legislacao",
+  "day": "w2_d3",
+  "discipline": "Processo Legislativo",
+  "topic": "Derrubada de Veto e Promulgação Supletiva",
+  "question": "A Câmara Municipal de Meruoca, reunida em sessão plenária, apreciou o veto do Prefeito a determinado projeto de lei e o rejeitou pelo voto da maioria absoluta dos seus membros. Nessa hipótese, conforme as regras constitucionais aplicáveis ao processo legislativo:",
+  "options": [
+    "O projeto de lei perde o objeto e deve ser arquivado imediatamente pelo Diretor Legislativo.",
+    "O Prefeito pode interpor novo veto sobre a mesma matéria, reiniciando o ciclo de deliberação parlamentar.",
+    "O projeto será enviado ao Prefeito para promulgação; se este não o fizer dentro de 48 horas, o Presidente da Câmara o promulgará, e, se este não o fizer em igual prazo, caberá ao Vice-Presidente fazê-lo.",
+    "A lei será promulgada compulsoriamente pelo Juiz de Direito Diretor do Foro da Comarca de Meruoca."
+  ],
+  "correctAnswer": 2,
+  "commentary": "Gabarito: C. Conforme art. 66, §§ 5º e 7º da CF/88 e Leis Orgânicas municipais: se o veto for rejeitado, o projeto é enviado ao Chefe do Executivo para que o promulgue em 48 horas. Não o fazendo nesse prazo, abre-se a competência sucessiva/supletiva: o Presidente da Câmara o promulgará e, caso este também se omita em igual prazo (48 horas), caberá ao Vice-Presidente da Câmara fazê-lo."
+},
+{
+  "id": 269,
+  "category": "legislacao",
+  "day": "w2_d3",
+  "discipline": "Processo Legislativo",
+  "topic": "Classificação das Emendas Parlamentares",
+  "question": "No decorrer dos debates parlamentares, os vereadores têm a faculdade de sugerir alterações aos projetos em tramitação por meio de 'Emendas'. A emenda que tem por finalidade suprimir total ou parcialmente texto de artigo, parágrafo, inciso ou alínea da proposição principal denomina-se:",
+  "options": [
+    "Emenda Supressiva.",
+    "Emenda Aditiva.",
+    "Emenda Modificativa.",
+    "Emenda Aglutinativa."
+  ],
+  "correctAnswer": 0,
+  "commentary": "Gabarito: A. Classificação técnica regimental das emendas: (1) Supressiva: visa a eliminar parte do texto da proposição; (2) Aditiva: acrescenta dispositivos ou novas previsões ao texto; (3) Modificativa: altera a redação de dispositivo sem criar novo assunto ou suprimir a regra; (4) Aglutinativa: resulta da fusão de proposições ou emendas correlatas."
+},
+{
+  "id": 270,
+  "category": "legislacao",
+  "day": "w2_d3",
+  "discipline": "Processo Legislativo",
+  "topic": "Conceito e Tramitação de Substitutivo",
+  "question": "Na tramitação regimental de proposições legislativas nas Câmaras Municipais, a denominação 'Substitutivo' corresponde a:",
+  "options": [
+    "Um recurso interposto pelo autor contra o arquivamento sumário determinado pela CCJ.",
+    "Um tipo de voto em separado apresentado por parlamentar vencido no âmbito das comissões temáticas.",
+    "Um requerimento de urgência assinado pela Mesa para inverter a Ordem do Dia.",
+    "Uma proposição legislativa apresentada por parlamentar ou comissão para substituir integralmente o texto de um projeto de lei já em tramitação sobre a mesma matéria."
+  ],
+  "correctAnswer": 3,
+  "commentary": "Gabarito: D. Substitutivo é o projeto de lei apresentado por um parlamentar, bancada ou comissão competente com a finalidade de substituir integralmente uma proposição principal em andamento. Havendo aprovação do substitutivo, a proposição original e as emendas a ela apresentadas ficam automaticamente prejudicadas."
+},
+{
+  "id": 271,
+  "category": "legislacao",
+  "day": "w2_d3",
+  "discipline": "Processo Legislativo",
+  "topic": "Atuação da Comissão de Constituição e Justiça (CCJ)",
+  "question": "As Comissões Permanentes exercem controle preventivo e técnico essencial sobre as proposições. Sobre a atuação da Comissão de Constituição e Justiça (CCJ) ou comissão equivalente na Câmara Municipal, assinale a afirmativa CORRETA:",
+  "options": [
+    "A CCJ analisa exclusivamente a oportunidade financeira e a viabilidade orçamentária dos projetos de lei tributários.",
+    "Compete à CCJ manifestar-se obrigatoriamente sobre o aspecto constitucional, legal, regimental e a técnica legislativa das proposições antes de sua votação de mérito.",
+    "Se a CCJ aprovar o parecer pela inconstitucionalidade, a proposição é compulsoriamente remetida para sanção do Prefeito.",
+    "A CCJ possui atribuição jurisdicional para julgar os crimes de responsabilidade e cassar o mandato de parlamentares."
+  ],
+  "correctAnswer": 1,
+  "commentary": "Gabarito: B. A Comissão de Constituição, Justiça e Redação Final (CCJ) atua como órgão de controle de juridicidade preventiva: aprecia a constitucionalidade (se a matéria ofende a CF ou a Lei Orgânica), a legalidade (se contraria leis gerais), o respeito ao regimento e a boa técnica legislativa (LC nº 95/98)."
+},
+{
+  "id": 272,
+  "category": "legislacao",
+  "day": "w2_d3",
+  "discipline": "Processo Legislativo",
+  "topic": "Poder Terminativo das Comissões",
+  "question": "O artigo 58, § 2º, I da CF/88 faculta aos regimentos regimentar a prerrogativa de as Comissões deliberarem em caráter conclusivo (ou terminativo) sobre determinadas proposições. Isso significa que:",
+  "options": [
+    "A decisão da comissão tem natureza de sentença judicial irrecorrível perante o Supremo Tribunal Federal.",
+    "O projeto é sancionado imediatamente na própria sala da comissão sem que o Chefe do Executivo tome conhecimento.",
+    "A comissão aprova ou rejeita o projeto com efeito definitivo, dispensando a competência do Plenário, salvo se houver recurso de determinado número de membros da Casa Legislativa exigindo a deliberação plenária.",
+    "A proposição só pode ser arquivada mediante homologação prévia do Tribunal de Contas dos Municípios."
+  ],
+  "correctAnswer": 2,
+  "commentary": "Gabarito: C. Conforme o art. 58, § 2º, I da CF/88, às comissões cabe 'discutir e votar projeto de lei que dispensar, na forma do regimento, a competência do Plenário, salvo se houver recurso de um décimo dos membros da Casa'. Este é o chamado poder terminativo ou poder conclusivo das comissões."
+},
+{
+  "id": 273,
+  "category": "legislacao",
+  "day": "w2_d3",
+  "discipline": "Processo Legislativo",
+  "topic": "Decreto Legislativo versus Resolução",
+  "question": "No exercício das atribuições privativas do Poder Legislativo Municipal, a Câmara expede atos normativos que não dependem de sanção do Prefeito. A espécie normativa adequada para disciplinar matéria de competência privativa da Câmara que produz efeitos EXTERNOS (como julgar as contas anuais do Prefeito ou conceder honrarias e títulos de cidadania) é:",
+  "options": [
+    "O Decreto Legislativo.",
+    "A Portaria Administrativa.",
+    "O Projeto de Lei Delegada.",
+    "O Despacho Terminativo."
+  ],
+  "correctAnswer": 0,
+  "commentary": "Gabarito: A. A distinção clássica no processo legislativo municipal estabelece: (1) DECRETO LEGISLATIVO: matéria de competência exclusiva/privativa da Câmara que produz efeitos EXTERNOS à Casa (ex.: julgamento das contas do Prefeito, concessão de título de cidadão honorário, autorização para o Prefeito ausentar-se do Município por período superior a 15 dias); (2) RESOLUÇÃO: matéria privativa da Câmara com efeitos INTERNOS (Regimento Interno, organização da Secretaria, criação de cargos do Legislativo)."
+},
+{
+  "id": 274,
+  "category": "legislacao",
+  "day": "w2_d3",
+  "discipline": "Processo Legislativo",
+  "topic": "Matérias Disciplinadas por Resolução",
+  "question": "A Resolução é a proposição legislativa destinada a regular matérias de competência privativa da Câmara Municipal que produzem efeitos político-administrativos interna corporis. Constitui matéria típica de RESOLUÇÃO da Câmara:",
+  "options": [
+    "A instituição da planta genérica de valores e alíquotas do IPTU municipal.",
+    "A desafetação e doação onerosa de bens imóveis dominicais do Município.",
+    "A fixação das diretrizes orçamentárias anuais do Poder Executivo (LDO).",
+    "A criação, transformação ou extinção dos cargos do quadro de servidores da Câmara Municipal e a alteração do seu Regimento Interno."
+  ],
+  "correctAnswer": 3,
+  "commentary": "Gabarito: D. As Resoluções da Câmara tratam de sua vida e administração interna: regimento interno, estrutura administrativa do Legislativo, concessão de licença a vereador, regulamentação de seus serviços internos. Matérias tributárias, patrimoniais municipais gerais e orçamentárias (IPTU, alienação de imóveis, LDO) exigem Lei Formal (ordinária ou complementar)."
+},
+{
+  "id": 275,
+  "category": "legislacao",
+  "day": "w2_d3",
+  "discipline": "Processo Legislativo",
+  "topic": "Quóruns Parlamentares: Maioria Simples versus Maioria Absoluta",
+  "question": "A fixação de quórum é elemento essencial para a validade das deliberações parlamentares. Em conformidade com o artigo 47 da CF/88, salvo determinação legal em sentido diverso, as deliberações da Câmara serão tomadas por maioria de votos, presente a maioria absoluta de seus membros. Essa definição refere-se à:",
+  "options": [
+    "Maioria Qualificada de Dois Terços.",
+    "Maioria Simples (ou Relativa).",
+    "Unanimidade Regimental Suplementar.",
+    "Maioria Constitucional de Três Quintos."
+  ],
+  "correctAnswer": 1,
+  "commentary": "Gabarito: B. A regra geral do processo legislativo é a MAIORIA SIMPLES (ou relativa): exige a presença em sessão da maioria absoluta dos membros da Casa (quórum de instalação) e a votação favorável da maioria dos presentes (quórum de aprovação). Já a maioria absoluta exige o voto favorável do primeiro número inteiro acima da metade do total de membros que compõem a Casa, independentemente dos presentes."
+},
+{
+  "id": 276,
+  "category": "legislacao",
+  "day": "w2_d3",
+  "discipline": "Processo Legislativo",
+  "topic": "Princípio da Irrepetibilidade (CF/88 Art. 67)",
+  "question": "Um projeto de lei de autoria parlamentar foi rejeitado em Plenário na Câmara Municipal. Em relação à possibilidade de reapresentação dessa mesma matéria na mesma Sessão Legislativa (mesmo ano de trabalhos), a regra constitucional da irrepetibilidade (CF/88, art. 67) estabelece que:",
+  "options": [
+    "É terminantemente proibida sob qualquer pretexto até a realização da legislatura seguinte (quatro anos depois).",
+    "Pode ser reapresentado livremente pelo mesmo vereador autor decorridos apenas sete dias da rejeição anterior.",
+    "Somente poderá ser objeto de novo projeto de lei mediante a assinatura e proposta formal da maioria absoluta dos membros da Casa Legislativa.",
+    "Depende de parecer favorável emitido previamente pelo Tribunal de Contas ou pelo Ministério Público Estadual."
+  ],
+  "correctAnswer": 2,
+  "commentary": "Gabarito: C. Conforme o art. 67 da CF/88: 'A matéria constante de projeto de lei rejeitado somente poderá ser objeto de novo projeto, na mesma sessão legislativa, mediante proposta da maioria absoluta dos membros de qualquer das Casas do Congresso Nacional'. Essa salvaguarda impede que parlamentares sobrecarreguem repetitivamente os trabalhos com propostas já rejeitadas, salvo consenso qualificado."
+},
+{
+  "id": 277,
+  "category": "legislacao",
+  "day": "w2_d3",
+  "discipline": "Processo Legislativo",
+  "topic": "Regime de Urgência no Processo Legislativo",
+  "question": "O Regimento Interno prevê hipóteses em que determinada proposição pode tramitar em regime de 'Urgência Especial'. A principal consequência procedimental do deferimento do regime de urgência é:",
+  "options": [
+    "A promulgação instantânea da lei antes de qualquer votação plenária.",
+    "A autorização para que o projeto seja sancionado sem leitura do seu texto.",
+    "A anulação de todas as emendas e pareceres aprovados anteriormente pelas comissões.",
+    "A dispensa de exigências e prazos regimentais ordinários para que a proposição seja incluída prontamente na Ordem do Dia e deliberada pelo Plenário."
+  ],
+  "correctAnswer": 3,
+  "commentary": "Gabarito: D. O regime de urgência tem o objetivo de conferir celeridade à tramitação de matérias inadiáveis ou de grave interesse coletivo. Ele autoriza a dispensa de prazos de interstício, distribuição imediata em avulsos e pronta inclusão na Ordem do Dia, reduzindo etapas intermediárias sem suprimir a soberania da deliberação plenária."
+},
+{
+  "id": 278,
+  "category": "legislacao",
+  "day": "w2_d3",
+  "discipline": "Processo Legislativo",
+  "topic": "Iniciativa Popular no Âmbito Municipal",
+  "question": "A Constituição Federal de 1988, em seu artigo 29, inciso XIII, consagra o exercício direto da cidadania no processo legislativo municipal por meio da iniciativa popular de projetos de lei de interesse específico do Município, da cidade ou de bairros. Para que a iniciativa popular municipal seja válida, exige-se a manifestação de, pelo menos:",
+  "options": [
+    "5% (cinco por cento) do eleitorado do Município.",
+    "1% (um por cento) dos cidadãos residentes no bairro.",
+    "10% (dez por cento) do total de votantes da última eleição majoritária.",
+    "15% (quinze por cento) dos eleitores alistados no Estado."
+  ],
+  "correctAnswer": 0,
+  "commentary": "Gabarito: A. Art. 29, XIII da CF/88: 'iniciativa popular de projetos de lei de interesse específico do Município, da cidade ou de bairros, através de manifestação de, pelo menos, cinco por cento do eleitorado'. Em nível federal (CF art. 61, § 2º) a regra é 1% do eleitorado nacional distribuído por pelo menos 5 estados com não menos de 0,3% em cada um."
+},
+{
+  "id": 279,
+  "category": "legislacao",
+  "day": "w2_d3",
+  "discipline": "Processo Legislativo",
+  "topic": "Fase da Redação Final (LC nº 95/1998)",
+  "question": "Após a aprovação do projeto de lei em plenário, acompanhado de emendas que modificaram trechos de sua redação originária, a matéria é encaminhada para a confecção da 'Redação Final'. Nessa fase regulamentar:",
+  "options": [
+    "Podem ser apresentadas novas emendas de mérito que criem despesas públicas adicionais.",
+    "O relator tem o poder de rejeitar integralmente o mérito aprovado pela maioria do Plenário.",
+    "É defeso efetuar qualquer alteração substancial de mérito, restringindo-se os trabalhos à escorreita adequação gramatical, clareza, precisão e técnica legislativa em harmonia com as deliberações plenárias.",
+    "O projeto adquire status definitivo de lei sancionada, dispensando o envio ao Executivo."
+  ],
+  "correctAnswer": 2,
+  "commentary": "Gabarito: C. A fase de Redação Final (regida pelos preceitos da Lei Complementar nº 95/1998 e regimentos internos) é estritamente de consolidação formal do que já foi deliberado e aprovado. É vedada qualquer alteração de mérito, permitindo-se apenas correções vernáculas, ajustes de concordância, numeração de artigos e técnica legislativa."
+},
+{
+  "id": 280,
+  "category": "legislacao",
+  "day": "w2_d3",
+  "discipline": "Processo Legislativo",
+  "topic": "Retirada de Proposição pelo Autor",
+  "question": "Um parlamentar protocolou na Secretaria da Câmara Municipal um Projeto de Lei Ordinária. Dias depois, antes que a matéria fosse submetida à votação em Plenário, ele decide retirá-la definitivamente de tramitação. Segundo as regras gerais do processo legislativo regimental:",
+  "options": [
+    "Uma proposição legislativa, após protocolada, torna-se patrimônio público inalienável e não pode ser retirada em hipótese alguma.",
+    "O autor pode solicitar a retirada da proposição; se a deliberação em Plenário ainda não tiver sido iniciada, o deferimento é prerrogativa regimental do Presidente ou do autor; se já iniciada a votação, dependerá da concordância do Plenário.",
+    "A retirada da proposição exige obrigatoriamente concordância prévia e homologação por decreto do Prefeito Municipal.",
+    "O autor pode retirar a proposição inclusive depois que o projeto for sancionado e publicado como lei oficial."
+  ],
+  "correctAnswer": 1,
+  "commentary": "Gabarito: B. Conforme praxe e normas regimentais: a retirada de proposição é de iniciativa de seu autor. Antes de ser submetida à deliberação plenária (ou antes de receber parecer contrário de comissão terminativa), a retirada pode ser deferida de plano pelo Presidente. Contudo, se a matéria já estiver sob deliberação/votação no Plenário, a retirada só poderá ocorrer se o próprio Plenário autorizar."
+},
+{
+  "id": 281,
+  "category": "informatica",
+  "day": "w2_d3",
+  "discipline": "Informática",
+  "topic": "Microsoft Word 365: Quebras de Página versus Quebras de Seção",
+  "question": "No Microsoft Word 365, ao preparar a minuta de um relatório técnico para a Mesa Diretora, o servidor necessita que as páginas 1 e 2 fiquem em orientação 'Retrato' e a página 3 fique em orientação 'Paisagem' para acomodar uma tabela extensa. Para permitir essa divergência de orientação de página no mesmo documento, deve-se inserir:",
+  "options": [
+    "Uma Quebra de Linha Manual com o atalho Shift + Enter.",
+    "Uma Quebra de Página Simples com o atalho Ctrl + Enter.",
+    "Uma Quebra de Seção do tipo 'Próxima Página'.",
+    "Um Marcador de Recuo Negativo na Régua Horizontal."
+  ],
+  "correctAnswer": 2,
+  "commentary": "Gabarito: C. No MS Word, formatações de nível de página (orientação Retrato/Paisagem, cabeçalhos/rodapés diferentes, margens distintas e número de colunas) são atributos vinculados à SEÇÃO. Uma Quebra de Página simples apenas empurra o texto para a página seguinte na mesma seção. Para alterar a orientação de uma página isolada, é obrigatório inserir uma Quebra de Seção (Menu Layout -> Quebras -> Quebras de Seção -> Próxima Página)."
+},
+{
+  "id": 282,
+  "category": "informatica",
+  "day": "w2_d3",
+  "discipline": "Informática",
+  "topic": "Microsoft Word 365: Teclas de Atalho Oficiais (Português)",
+  "question": "No Microsoft Word configurado no padrão de idioma Português do Brasil, as teclas de atalho padrão utilizadas para 'Salvar as alterações no documento', 'Alinhar o texto no modo Justificado' e 'Desfazer a última ação' são, respectivamente:",
+  "options": [
+    "Ctrl + B, Ctrl + J e Ctrl + Z.",
+    "Ctrl + S, Ctrl + U e Ctrl + D.",
+    "Ctrl + G, Ctrl + A e Ctrl + Z.",
+    "Ctrl + S, Ctrl + J e Ctrl + Y."
+  ],
+  "correctAnswer": 0,
+  "commentary": "Gabarito: A. Nos programas do Microsoft Office em Português: Ctrl + B = Salvar (no Word em inglês seria Ctrl + S); Ctrl + J = Alinhamento Justificado (Justify); Ctrl + Z = Desfazer (Undo). Vale lembrar que Ctrl + S em português sublinha o texto no Word."
+},
+{
+  "id": 283,
+  "category": "informatica",
+  "day": "w2_d3",
+  "discipline": "Informática",
+  "topic": "Microsoft Word: Recurso de Mala Direta",
+  "question": "O recurso 'Mala Direta' (Mail Merge) disponível na guia 'Correspondências' do Microsoft Word é especialmente indicado para qual finalidade no setor administrativo:",
+  "options": [
+    "Enviar spam em lote para listas públicas de e-mails de forma anônima e indetectável.",
+    "Traduzir documentos legislativos inteiros automaticamente para dialetos regionais.",
+    "Comprimir arquivos pesados no formato ZIP antes de anexá-los ao correio eletrônico.",
+    "Gerar automaticamente lotes de documentos personalizados (como ofícios, convites, cartas e etiquetas) a partir de um modelo fixo integrado a uma lista ou tabela de dados (como planilha Excel ou contatos Outlook)."
+  ],
+  "correctAnswer": 3,
+  "commentary": "Gabarito: D. A Mala Direta do Word permite criar cartas, ofícios, certificados ou etiquetas personalizadas em escala. Ela combina um 'documento principal' (texto base com campos de mesclagem como «Nome», «Cargo», «Endereço») com uma 'fonte de dados' (como uma planilha do Excel ou lista de contatos)."
+},
+{
+  "id": 284,
+  "category": "informatica",
+  "day": "w2_d3",
+  "discipline": "Informática",
+  "topic": "Microsoft Excel 365: Função SOMA e Sintaxe de Intervalos",
+  "question": "Em uma planilha do Microsoft Excel 365, o usuário deseja somar todos os valores numéricos contidos no intervalo contínuo que vai da célula B2 até a célula B12. A sintaxe correta da fórmula que realiza essa operação é:",
+  "options": [
+    "=TOTAL(B2..B12)",
+    "=SOMA(B2:B12)",
+    "=SOMA(B2;B12)",
+    "=SOMATÓRIO(B2 a B12)"
+  ],
+  "correctAnswer": 1,
+  "commentary": "Gabarito: B. No Excel, o operador de intervalo contínuo é representado pelos dois pontos (:). Portanto, `=SOMA(B2:B12)` soma todas as células de B2 até B12. Atenção para a pegadinha: se usasse o ponto e vírgula (`=SOMA(B2;B12)`), somaria unicamente a célula B2 e a célula B12 isoladamente."
+},
+{
+  "id": 285,
+  "category": "informatica",
+  "day": "w2_d3",
+  "discipline": "Informática",
+  "topic": "Microsoft Excel 365: Função MÉDIA",
+  "question": "Considere as seguintes células em uma planilha do Excel: A1 = 10, A2 = 20, A3 = 30 e A4 = 40. Ao preencher a célula A5 com a fórmula `=MÉDIA(A1:A4)`, o valor numérico retornado será:",
+  "options": [
+    "25",
+    "100",
+    "20",
+    "50"
+  ],
+  "correctAnswer": 0,
+  "commentary": "Gabarito: A. A função `=MÉDIA()` calcula a média aritmética simples dos valores contidos no intervalo: (10 + 20 + 30 + 40) / 4 = 100 / 4 = 25."
+},
+{
+  "id": 286,
+  "category": "informatica",
+  "day": "w2_d3",
+  "discipline": "Informática",
+  "topic": "Microsoft Excel: Referências Relativas, Absolutas e Mistas",
+  "question": "No Microsoft Excel, ao copiar uma fórmula que contém a expressão `$E$5` de uma célula para outra, o comportamento das coordenadas da célula referenciada será caracterizado como:",
+  "options": [
+    "Referência Relativa: a coluna E e a linha 5 serão automaticamente deslocadas.",
+    "Referência Mista: a coluna E permanece fixa, mas a linha 5 muda livremente.",
+    "Referência Absoluta: nem a coluna E nem a linha 5 sofrerão qualquer alteração ao serem copiadas para outra posição, mantendo-se estáticas.",
+    "Referência Inválida: o Excel exibirá o código de erro #REF! por uso incorreto de caracteres especiais."
+  ],
+  "correctAnswer": 2,
+  "commentary": "Gabarito: C. O caractere cifrão (`$`) é o operador de fixação (ancoragem) no Excel. Quando colocado antes da letra da coluna e antes do número da linha (`$E$5`), cria-se uma REFERÊNCIA ABSOLUTA, que nunca muda ao ser copiada ou arrastada. Se houvesse cifrão em apenas um dos componentes (ex: `$E5` ou `E$5`), seria uma referência mista."
+},
+{
+  "id": 287,
+  "category": "informatica",
+  "day": "w2_d3",
+  "discipline": "Informática",
+  "topic": "Microsoft Excel 365: Função Lógica SE",
+  "question": "Um técnico elaborou a seguinte fórmula no Excel para avaliar o cumprimento de metas de atendimento da Câmara: `=SE(D4>=100; \"Meta Atingida\"; \"Meta Pendente\")`. Sabendo-se que o valor registrado na célula D4 é exatamente 100, o resultado exibido na célula da fórmula será:",
+  "options": [
+    "Meta Pendente",
+    "Meta Atingida",
+    "#NOME?",
+    "VERDADEIRO"
+  ],
+  "correctAnswer": 1,
+  "commentary": "Gabarito: B. A função SE tem a estrutura: `=SE(condição; valor_se_verdadeiro; valor_se_falso)`. A condição testada é `D4 >= 100`. Como D4 vale 100, o teste relacional `100 >= 100` é VERDADEIRO (maior ou igual). Logo, o Excel executa o segundo argumento e exibe a mensagem 'Meta Atingida'."
+},
+{
+  "id": 288,
+  "category": "informatica",
+  "day": "w2_d3",
+  "discipline": "Informática",
+  "topic": "Microsoft Excel 365: Função CONT.SE",
+  "question": "Deseja-se saber quantas vezes a palavra 'Deferido' aparece na coluna de status dos processos legislativos, no intervalo de C2 até C80. A função do Microsoft Excel especificamente concebida para realizar contagens baseadas em um critério específico é:",
+  "options": [
+    "=SOMAR(C2:C80; \"Deferido\")",
+    "=CONTAR(C2:C80 = Deferido)",
+    "=LOCALIZAR.SE(C2:C80; \"Deferido\")",
+    "=CONT.SE(C2:C80; \"Deferido\")"
+  ],
+  "correctAnswer": 3,
+  "commentary": "Gabarito: D. A função `=CONT.SE(intervalo; critérios)` conta o número de células dentro de um intervalo que atendem à condição estipulada. No caso em questão, `=CONT.SE(C2:C80; \"Deferido\")` conta com precisão as ocorrências da palavra. A função CONTAR() contaria apenas células com números, e SOMASE() somaria valores numéricos com base em critérios."
+},
+{
+  "id": 289,
+  "category": "informatica",
+  "day": "w2_d3",
+  "discipline": "Informática",
+  "topic": "Microsoft Excel 365: Função PROCV",
+  "question": "A função `=PROCV(valor_procurado; matriz_tabela; núm_índice_coluna; [procurar_intervalo])` é uma das mais cobradas em provas de concurso. A respeito do seu funcionamento no Excel, é correto afirmar:",
+  "options": [
+    "O PROCV efetua uma pesquisa vertical, buscando o valor_procurado estritamente na PRIMEIRA coluna à esquerda da matriz_tabela e retornando o valor correspondente na mesma linha a partir do número da coluna indicado.",
+    "O PROCV só funciona se a tabela estiver disposta na horizontal e com células em ordem decrescente.",
+    "O PROCV serve para calcular o produto vetorial entre duas matrizes tridimensionais.",
+    "Caso o valor procurado não seja encontrado, o PROCV sempre substitui o erro pelo número zero automaticamente."
+  ],
+  "correctAnswer": 0,
+  "commentary": "Gabarito: A. PROCV significa 'Procura Vertical'. Ela pesquisa um valor na PRIMEIRA coluna de um intervalo ou matriz e retorna um valor situado na mesma linha, extraído da coluna definida pelo argumento 'núm_índice_coluna'. Se não encontrar uma correspondência exata (quando configurado com FALSO ou 0 no último parâmetro), retorna o erro `#N/D`."
+},
+{
+  "id": 290,
+  "category": "informatica",
+  "day": "w2_d3",
+  "discipline": "Informática",
+  "topic": "Microsoft PowerPoint 365: Efeitos de Transição versus Efeitos de Animação",
+  "question": "No Microsoft PowerPoint 365, ao preparar uma apresentação para a Sessão Solene da Câmara de Meruoca, o operador precisa configurar efeitos visuais. A distinção conceitual e prática entre 'Transições' e 'Animações' no PowerPoint reside no fato de que:",
+  "options": [
+    "As Transições são aplicadas a gráficos do Excel inseridos, enquanto as Animações só funcionam em textos sem formatação.",
+    "As Animações referem-se à troca de um slide para outro na tela, enquanto as Transições se aplicam apenas ao áudio da apresentação.",
+    "As Transições são os efeitos visuais que ocorrem durante a passagem de um slide para o slide seguinte, enquanto as Animações são os movimentos e efeitos visuais aplicados a elementos individuais (textos, imagens, ícones) dentro do próprio slide.",
+    "As Transições são recursos exclusivos da versão web, e as Animações só existem na versão instalada para desktop."
+  ],
+  "correctAnswer": 2,
+  "commentary": "Gabarito: C. Conceito clássico de PowerPoint: TRANSIÇÃO é o efeito de passagem de tela entre um slide e outro (ex: Esmaecer, Empurrão, Cortina). ANIMAÇÃO é o efeito aplicado aos objetos específicos contidos no slide (ex: Surgir, Zoom, Rotação em uma caixa de texto ou foto)."
+},
+{
+  "id": 291,
+  "category": "informatica",
+  "day": "w2_d3",
+  "discipline": "Informática",
+  "topic": "Microsoft PowerPoint: Slide Mestre",
+  "question": "Para garantir uma identidade visual consistente em toda a apresentação (adicionar o brasão do Município de Meruoca, número de página e cor institucional de título em todos os slides de uma só vez), o recurso correto a ser utilizado no Microsoft PowerPoint é:",
+  "options": [
+    "O Editor de Estilos Rápidos da Barra de Status.",
+    "O Modo de Exibição do Slide Mestre.",
+    "O Painel de Seleção de Formas Vetoriais.",
+    "A Ferramenta de Gravação de Macros de Áudio."
+  ],
+  "correctAnswer": 1,
+  "commentary": "Gabarito: B. O 'Slide Mestre' (guia Exibir -> Slide Mestre) é o slide principal da hierarquia de apresentação que armazena informações sobre o tema, layout, fontes, cores e logotipos. Quaisquer alterações feitas no slide mestre são automaticamente replicadas em todos os slides da apresentação que utilizam aquele modelo."
+},
+{
+  "id": 292,
+  "category": "informatica",
+  "day": "w2_d3",
+  "discipline": "Informática",
+  "topic": "Microsoft PowerPoint: Atalhos para Iniciar Apresentação (F5 versus Shift+F5)",
+  "question": "Durante a realização de uma palestra na Câmara de Vereadores, o técnico está editando o slide número 14 no PowerPoint e precisa iniciar a exibição em tela cheia exatamente a partir desse slide atual (slide 14), sem voltar para o início. O atalho de teclado correspondente a essa ação é:",
+  "options": [
+    "F5",
+    "Ctrl + F5",
+    "Alt + F5",
+    "Shift + F5"
+  ],
+  "correctAnswer": 3,
+  "commentary": "Gabarito: D. No Microsoft PowerPoint: F5 = Inicia a apresentação a partir do PRIMEIRO slide (slide 1); Shift + F5 = Inicia a apresentação a partir do SLIDE ATUAL em que o usuário está posicionado; Esc = Encerra a apresentação em tela cheia."
+},
+{
+  "id": 293,
+  "category": "informatica",
+  "day": "w2_d3",
+  "discipline": "Informática",
+  "topic": "Google Docs: Colaboração em Tempo Real",
+  "question": "No Google Docs (Documentos Google), integrado ao ecossistema Google Workspace, a coautoria simultânea de arquivos apresenta a seguinte característica funcional:",
+  "options": [
+    "O documento é bloqueado pelo primeiro usuário com 'lock' exclusivo, impedindo qualquer outra pessoa de visualizar o arquivo até o término da sessão.",
+    "As edições de outros usuários só são refletidas após reinicialização completa do navegador web.",
+    "Vários usuários autorizados podem editar o documento de forma simultânea e síncrona na nuvem, sendo as alterações salvas automaticamente em tempo real e visualizadas com cursores coloridos identificando cada participante.",
+    "O Google Docs exige que os usuários salvem as versões intermediárias periodicamente clicando em um ícone de disquete físico."
+  ],
+  "correctAnswer": 2,
+  "commentary": "Gabarito: C. O Google Docs é nativo em nuvem e destaca-se pela coautoria em tempo real: múltiplos usuários trabalham no mesmo arquivo simultaneamente, cada qual identificado por um cursor com sua cor e avatar/nome, com salvamento contínuo automático nos servidores do Google (Google Drive)."
+},
+{
+  "id": 294,
+  "category": "informatica",
+  "day": "w2_d3",
+  "discipline": "Informática",
+  "topic": "Google Workspace / Drive: Níveis de Permissão de Compartilhamento",
+  "question": "Ao compartilhar um arquivo no Google Drive com membros de uma equipe de trabalho, o proprietário pode conceder permissões diferenciadas. A permissão que autoriza o usuário a visualizar o documento e propor alterações por meio de anotações e balões laterais, mas que NÃO lhe concede poder de alterar diretamente o texto original sem a anuência do autor, é a de:",
+  "options": [
+    "Comentarista.",
+    "Leitor.",
+    "Editor.",
+    "Proprietário Delegado."
+  ],
+  "correctAnswer": 0,
+  "commentary": "Gabarito: A. Os níveis principais de compartilhamento no Google Drive são: (1) LEITOR: pode apenas visualizar e baixar o arquivo, sem adicionar comentários ou editar; (2) COMENTARISTA: pode visualizar e sugerir alterações/comentários em balões laterais, mas não altera o texto original diretamente; (3) EDITOR: tem controle total sobre o conteúdo do documento, podendo alterar textos, excluir trechos e aceitar ou rejeitar sugestões."
+},
+{
+  "id": 295,
+  "category": "informatica",
+  "day": "w2_d3",
+  "discipline": "Informática",
+  "topic": "Google Sheets: Histórico de Versões e Segurança",
+  "question": "Em uma planilha de controle financeiro desenvolvida no Google Sheets (Planilhas Google), um funcionário apagou acidentalmente fórmulas complexas na tarde de ontem. O recurso nativo do Google Workspace que permite recuperar com precisão o estado anterior da planilha é:",
+  "options": [
+    "O Modo de Limpeza Automática de Cache do Chrome.",
+    "A Barra de Status com Desfazer Limitado a três cliques.",
+    "O Formatador de Células em Cascata.",
+    "O Histórico de Versões (Menu Arquivo -> Histórico de versões -> Ver histórico de versões)."
+  ],
+  "correctAnswer": 3,
+  "commentary": "Gabarito: D. O Google Workspace mantém um registro detalhado de todas as alterações feitas em um documento através do 'Histórico de versões' (atalho Ctrl+Alt+Shift+H). Ele permite navegar por todas as versões anteriores, ver exatamente quem fez cada edição e restaurar a versão selecionada a qualquer momento com segurança."
+},
+{
+  "id": 296,
+  "category": "informatica",
+  "day": "w2_d3",
+  "discipline": "Informática",
+  "topic": "Manipulação de Textos no Pacote Office: Área de Transferência",
+  "question": "Ao selecionar um texto em um editor como o Microsoft Word e acionar a combinação de teclas `Ctrl + X`, o texto em questão:",
+  "options": [
+    "É formatado com efeito de sublinhado duplo e caixa alta.",
+    "É recortado, isto é, retirado de sua posição original e enviado para a Área de Transferência, podendo ser inserido em outro local por meio do comando `Ctrl + V`.",
+    "É duplicado na linha de baixo instantaneamente sem ser copiado para a memória.",
+    "É permanentemente excluído sem possibilidade de ser colado posteriormente."
+  ],
+  "correctAnswer": 1,
+  "commentary": "Gabarito: B. A operação 'Recortar' (`Ctrl + X`) remove o conteúdo selecionado de seu local de origem e o armazena temporariamente na Área de Transferência (Clipboard) do sistema operacional, permitindo que seja colado (`Ctrl + V`) no mesmo aplicativo ou em outro documento."
+},
+{
+  "id": 297,
+  "category": "informatica",
+  "day": "w2_d3",
+  "discipline": "Informática",
+  "topic": "Microsoft Excel: Precedência de Operadores Matemáticos",
+  "question": "No Microsoft Excel, a ordem de execução dos operadores em uma fórmula matemática segue estritamente a hierarquia algébrica padrão. Considere a fórmula inserida em uma célula: `=2 + 3 * 4 ^ 2`. O resultado que será calculado e exibido pelo Excel é:",
+  "options": [
+    "50",
+    "80",
+    "400",
+    "38"
+  ],
+  "correctAnswer": 0,
+  "commentary": "Gabarito: A. A precedência de operadores no Excel é: 1º Parênteses; 2º Potenciação (`^`); 3º Multiplicação (`*`) e Divisão (`/`); 4º Adição (`+`) e Subtração (`-`). Resolução passo a passo da fórmula `=2 + 3 * 4 ^ 2`: primeiro calcula a potência `4 ^ 2 = 16`; em seguida a multiplicação `3 * 16 = 48`; por último a adição `2 + 48 = 50`."
+},
+{
+  "id": 298,
+  "category": "informatica",
+  "day": "w2_d3",
+  "discipline": "Informática",
+  "topic": "Google Drive: Sincronização Local com 'Drive para Computador'",
+  "question": "O aplicativo oficial 'Google Drive para computador' (antigo Backup and Sync / Drive File Stream) oferece aos usuários a capacidade de:",
+  "options": [
+    "Executar jogos de computador e renderização 3D offline sem placa gráfica dedicada.",
+    "Substituir o disco rígido físico por uma conexão de fibra óptica sem sistema operacional.",
+    "Bloquear chamadas telefônicas no smartphone corporativo conectado via Bluetooth.",
+    "Acessar e gerenciar arquivos e pastas do Google Drive diretamente a partir do Explorador de Arquivos do Windows como se fossem uma unidade de disco local, integrando a sincronização em nuvem."
+  ],
+  "correctAnswer": 3,
+  "commentary": "Gabarito: D. O aplicativo 'Google Drive para computador' cria uma unidade virtual no Explorador de Arquivos do Windows (geralmente com letra própria, como G:). Isso permite aos usuários abrir, editar e organizar seus arquivos da nuvem diretamente pelos softwares instalados no Windows (como abrir um arquivo .docx no Microsoft Word direto da nuvem), mantendo a sincronização transparente."
+},
+{
+  "id": 299,
+  "category": "informatica",
+  "day": "w2_d3",
+  "discipline": "Informática",
+  "topic": "Microsoft Word 365: Ferramenta Pincel de Formatação",
+  "question": "No Microsoft Word 365, o ícone que reproduz o desenho de um pincel na guia 'Página Inicial' (Pincel de Formatação / Format Painter) destina-se a:",
+  "options": [
+    "Desenhar vetores e figuras geométricas livres no cabeçalho do documento.",
+    "Copiar a formatação (tipo de fonte, tamanho, cor, negrito, espaçamento) de um trecho de texto já formatado e aplicá-la rapidamente a outro trecho selecionado.",
+    "Localizar e substituir automaticamente palavras com erros de concordância verbal.",
+    "Exportar o texto para impressoras térmicas matriciais de alta velocidade."
+  ],
+  "correctAnswer": 1,
+  "commentary": "Gabarito: B. O Pincel de Formatação copia unicamente o ESTILO e a FORMATAÇÃO (fonte, tamanho, cor, espaçamento, bordas) de uma seleção e a replica em outro texto. Dica prática para a prova: com um clique único no pincel, aplica-se uma vez; dando DUPLO CLIQUE no ícone do pincel, ele fica travado, permitindo aplicar a formatação repetidamente em vários trechos até que se pressione a tecla Esc."
+},
+{
+  "id": 300,
+  "category": "informatica",
+  "day": "w2_d3",
+  "discipline": "Informática",
+  "topic": "Segurança no Pacote Office: Modo de Exibição Protegido e Macros",
+  "question": "Ao abrir um arquivo de texto (.docx) ou pasta de trabalho (.xlsx) que foi recebido como anexo de e-mail de remetente desconhecido ou baixado da internet, o Microsoft Office costuma exibi-lo no 'Modo de Exibição Protegido'. O objetivo primordial desse mecanismo defensivo é:",
+  "options": [
+    "Bloquear a conexão de internet de toda a repartição pública até que o arquivo seja deletado.",
+    "Criptografar compulsoriamente os arquivos do usuário com chave privada para exigir senha de acesso.",
+    "Abrir o documento em ambiente de leitura isolada (sandbox) com recursos de edição e execução de macros desabilitados, mitigando riscos de infecção por malwares antes da verificação do usuário.",
+    "Excluir automaticamente o arquivo do computador caso o usuário não possua assinatura corporativa da Microsoft."
+  ],
+  "correctAnswer": 2,
+  "commentary": "Gabarito: C. O Modo de Exibição Protegido (Protected View) é um recurso de segurança do Microsoft Office que abre documentos potencialmente inseguros (da internet, anexos de e-mail ou locais inseguros) em modo somente leitura com elementos ativos (como macros VBA e conexões de dados) bloqueados. Isso reduz os riscos de ataques cibernéticos causados por documentos adulterados."
+}
 ];
 
 // =========================================================================
@@ -4851,7 +5492,7 @@ const WEEKS_DATA = [
             tasks: ["15 Questões Proc. Leg.", "15 Questões Office", "30m Caderno de Erros"]
           }
         ],
-        targetQuestions: 30
+        targetQuestions: 40
       },
       {
         id: "w2_d4",
@@ -5712,7 +6353,7 @@ let appState = {
   dayQuestions: {},
   quizAnswers: {},
   bankVersion: 3,
-  quizCategoryFilter: 'w2_d2',
+  quizCategoryFilter: 'w2_d3',
   quizOrderMode: 'random', // 'random', 'interleaved', 'sequential'
   quizFilterStatus: 'all', // 'all', 'pending', 'wrong'
   quizShuffledOrder: {}, // armazena ordem embaralhada por chave de filtro para manter estabilidade
@@ -5748,7 +6389,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setupCountdown();
   renderWeekPills();
   renderDaysForWeek(appState.currentWeek);
-  renderQuiz();
+  selectQuizDay(appState.quizCategoryFilter || 'w2_d3');
   renderFlashcard();
   renderCadernoErros();
   renderSimulados();
@@ -5776,6 +6417,10 @@ function loadState() {
         appState.quizAnswers = {};
         appState.quizShuffledOrder = {};
         saveState();
+      }
+      if (!appState.lastSeenDay || appState.lastSeenDay !== 'w2_d3') {
+        appState.quizCategoryFilter = 'w2_d3';
+        appState.lastSeenDay = 'w2_d3';
       }
       if (!appState.quizAnswers) appState.quizAnswers = {};
       if (!appState.quizOrderMode) appState.quizOrderMode = 'random';
@@ -6060,23 +6705,11 @@ function interleaveQuestionsByDiscipline(questions) {
 
 // Retorna as questões base do filtro ativo
 function getFilteredBaseQuestions(filterKey) {
-  let questions = QUIZ_QUESTIONS_DATA;
-  if (filterKey === 'w2_d1') {
-    questions = questions.filter(q => q.id >= 181 && q.id <= 220);
-  } else if (filterKey === 'dia6') {
-    questions = questions.filter(q => q.id >= 141 && q.id <= 180);
-  } else if (filterKey === 'dia5') {
-    questions = questions.filter(q => q.id >= 101 && q.id <= 140);
-  } else if (filterKey === 'dia4') {
-    questions = questions.filter(q => q.id >= 61 && q.id <= 100);
-  } else if (filterKey === 'dia2') {
-    questions = questions.filter(q => q.id >= 1 && q.id <= 30);
-  } else if (filterKey === 'dia3') {
-    questions = questions.filter(q => q.id >= 31 && q.id <= 60);
-  } else if (filterKey !== 'all') {
-    questions = questions.filter(q => q.category === filterKey);
-  }
-  return questions;
+  if (filterKey === 'all') return QUIZ_QUESTIONS_DATA;
+  if (filterKey === 'dia2') return QUIZ_QUESTIONS_DATA.filter(q => q.day === 'dia2' || (q.id >= 1 && q.id <= 30));
+  const byDay = QUIZ_QUESTIONS_DATA.filter(q => q.day === filterKey);
+  if (byDay.length > 0) return byDay;
+  return QUIZ_QUESTIONS_DATA.filter(q => q.category === filterKey);
 }
 
 // Retorna as questões organizadas conforme o modo de ordenação e com persistência de ordem
@@ -6383,48 +7016,62 @@ function filterQuizCategory(cat) {
   renderQuiz();
 }
 
+const QUIZ_DAYS_CONFIG = {
+  w2_d3: {
+    title: "⭐ Semana 2 • Dia 3 — Quarta-feira (09/09/2026 - HOJE): Processo Legislativo & Pacote Office (40 Questões)",
+    desc: "20 questões de Conhecimentos Específicos (Processo Legislativo, Espécies Normativas CF art. 59, Iniciativa, Tramitação, Emendas, Substitutivos e Vetos) + 20 questões de Informática (MS Word, Excel fórmulas, PowerPoint e Google Workspace). Padrão Oficial Banca INBRASP."
+  },
+  w2_d2: {
+    title: "📅 Semana 2 • Dia 2 — Terça-feira (08/09/2026): Funções da Câmara & Crase/Regência (40 Questões)",
+    desc: "20 questões de Técnico Legislativo (Funções do Poder Legislativo, Controle e Fiscalização) + 20 questões de Português (Uso do Sinal Indicativo de Crase, Sinais de Pontuação e Regência). Padrão Oficial INBRASP."
+  },
+  w2_d1: {
+    title: "📅 Semana 2 • Dia 1 — Segunda-feira (07/09/2026): Organização do Estado & Formação de Palavras (40 Questões)",
+    desc: "20 questões de D. Constitucional (CF/88 Arts. 18 a 31: Competências, Municípios e Controle) + 20 de Português (Estrutura e Processos de Formação de Palavras). Padrão Oficial INBRASP."
+  },
+  dia6: {
+    title: "📅 Semana 1 • Dia 6 — Sábado (05/09/2026): SIMULADO 01 OFICIAL (40 Questões)",
+    desc: "Prova Completa 40Q no Padrão Oficial da Banca INBRASP (10 Português + 5 Informática + 5 RLM + 20 Específicas). Treino de cronometragem de 3 horas."
+  },
+  dia5: {
+    title: "📅 Semana 1 • Dia 5 — Sexta-feira (04/09/2026): D. Administrativo, Python & Lei Orgânica (40 Questões)",
+    desc: "15 questões de D. Administrativo (Poderes & Atributos PATI) + 15 de Informática (Algoritmos, Fluxogramas & Python) + 10 de Lei Orgânica de Meruoca (Arts. 16 ao 30)."
+  },
+  dia4: {
+    title: "📅 Semana 1 • Dia 4 — Quinta-feira (03/09/2026): Português, Constitucional & Lei Orgânica (40 Questões)",
+    desc: "15 questões de Português (Fonologia, Acentuação e Crase) + 15 de Constitucional (Direitos Sociais Arts. 6º ao 11) + 10 de Lei Orgânica de Meruoca (Arts. 1º ao 15)."
+  },
+  dia3: {
+    title: "📅 Semana 1 • Dia 3 — Quarta-feira (02/09/2026): D. Administrativo & Informática (30 Questões)",
+    desc: "15 questões de Direito Administrativo (Princípios LIMPE e Organização) + 15 questões de Informática (Windows 11, Linux, Hardware e Backup)."
+  },
+  dia2: {
+    title: "📅 Semana 1 • Dia 2 — Terça-feira (01/09/2026): D. Constitucional & Português (30 Questões)",
+    desc: "15 questões de Direito Constitucional (Art. 5º e Remédios) + 15 questões de Português (Tipos e Gêneros Textuais)."
+  },
+  all: {
+    title: "📚 Todas as Questões do Banco de Provas (300 Questões)",
+    desc: "Simulado geral contendo todas as 300 questões ativas (Semana 1 completa + Semana 2 Dias 1, 2 e 3) para treino de alta performance."
+  }
+};
+
 function selectQuizDay(dayKey) {
+  if (!QUIZ_DAYS_CONFIG[dayKey]) {
+    dayKey = 'w2_d3';
+  }
   appState.quizCategoryFilter = dayKey;
   
-  const btnS2D1 = document.getElementById('btnDayTabS2D1');
-  const btn6 = document.getElementById('btnDayTab6');
-  const btn5 = document.getElementById('btnDayTab5');
-  const btn4 = document.getElementById('btnDayTab4');
-  const btn3 = document.getElementById('btnDayTab3');
-  const btn2 = document.getElementById('btnDayTab2');
-  const btnAll = document.getElementById('btnDayTabAll');
-  if (btnS2D1) btnS2D1.classList.toggle('active', dayKey === 'w2_d1');
-  if (btn6) btn6.classList.toggle('active', dayKey === 'dia6');
-  if (btn5) btn5.classList.toggle('active', dayKey === 'dia5');
-  if (btn4) btn4.classList.toggle('active', dayKey === 'dia4');
-  if (btn3) btn3.classList.toggle('active', dayKey === 'dia3');
-  if (btn2) btn2.classList.toggle('active', dayKey === 'dia2');
-  if (btnAll) btnAll.classList.toggle('active', dayKey === 'all');
+  // Sincronizar classes ativas nos botões das abas
+  document.querySelectorAll('.day-tab-btn').forEach(btn => {
+    const onclickStr = btn.getAttribute('onclick') || '';
+    btn.classList.toggle('active', onclickStr.includes("'" + dayKey + "'"));
+  });
 
+  const cfg = QUIZ_DAYS_CONFIG[dayKey] || QUIZ_DAYS_CONFIG.all;
   const titleEl = document.getElementById('quizDayTitle');
   const descEl = document.getElementById('quizDayDesc');
-  if (dayKey === 'w2_d1') {
-    if (titleEl) titleEl.innerText = "⭐ Semana 2 • Dia 1 — Segunda-feira (07/09/2026 - HOJE): Organização do Estado & Formação de Palavras (40 Questões)";
-    if (descEl) descEl.innerText = "20 questões de D. Constitucional (CF/88 Arts. 18 a 31: Competências, Municípios e Controle) + 20 de Português (Estrutura e Processos de Formação de Palavras). Padrão Oficial INBRASP.";
-  } else if (dayKey === 'dia6') {
-    if (titleEl) titleEl.innerText = "📅 Dia 6 — Sábado (05/09/2026): SIMULADO 01 OFICIAL (40 Questões)";
-    if (descEl) descEl.innerText = "Prova Completa 40Q no Padrão Oficial da Banca INBRASP (10 Português + 5 Informática + 5 RLM + 20 Específicas). Treino de cronometragem de 3 horas.";
-  } else if (dayKey === 'dia5') {
-    if (titleEl) titleEl.innerText = "📅 Dia 5 — Sexta-feira (04/09/2026): D. Administrativo, Python & Lei Orgânica (40 Questões)";
-    if (descEl) descEl.innerText = "15 questões de D. Administrativo (Poderes & Atributos PATI) + 15 de Informática (Algoritmos, Fluxogramas & Python) + 10 de Lei Orgânica de Meruoca (Arts. 16 ao 30).";
-  } else if (dayKey === 'dia4') {
-    if (titleEl) titleEl.innerText = "📅 Dia 4 — Quinta-feira (03/09/2026): Português, Constitucional & Lei Orgânica (40 Questões)";
-    if (descEl) descEl.innerText = "15 questões de Português (Fonologia, Acentuação e Crase) + 15 de Constitucional (Direitos Sociais Arts. 6º ao 11) + 10 de Lei Orgânica de Meruoca (Arts. 1º ao 15).";
-  } else if (dayKey === 'dia3') {
-    if (titleEl) titleEl.innerText = "📅 Dia 3 — Quarta-feira (02/09/2026): D. Administrativo & Informática";
-    if (descEl) descEl.innerText = "15 questões de Direito Administrativo (Princípios LIMPE e Organização) + 15 questões de Informática (Windows 11, Linux, Hardware e Backup).";
-  } else if (dayKey === 'dia2') {
-    if (titleEl) titleEl.innerText = "📅 Dia 2 — Terça-feira (01/09/2026): D. Constitucional & Português";
-    if (descEl) descEl.innerText = "15 questões de Direito Constitucional (Art. 5º e Remédios) + 15 questões de Português (Tipos e Gêneros Textuais).";
-  } else {
-    if (titleEl) titleEl.innerText = "📚 Todas as Questões do Banco de Provas (260 Questões)";
-    if (descEl) descEl.innerText = "Simulado geral contendo todas as 260 questões ativas (Semana 1 completa + Semana 2 Dias 1 e 2) para treino de alta performance.";
-  }
+  if (titleEl) titleEl.innerText = cfg.title;
+  if (descEl) descEl.innerText = cfg.desc;
 
   saveState();
   renderQuiz();
