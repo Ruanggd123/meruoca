@@ -5317,7 +5317,648 @@ const QUIZ_QUESTIONS_DATA = [
   ],
   "correctAnswer": 2,
   "commentary": "Gabarito: C. O Modo de Exibição Protegido (Protected View) é um recurso de segurança do Microsoft Office que abre documentos potencialmente inseguros (da internet, anexos de e-mail ou locais inseguros) em modo somente leitura com elementos ativos (como macros VBA e conexões de dados) bloqueados. Isso reduz os riscos de ataques cibernéticos causados por documentos adulterados."
-}
+},
+  {
+    "id": 301,
+    "category": "especificos",
+    "day": "w2_d4",
+    "discipline": "Técnico Legislativo",
+    "topic": "Sessões Plenárias: Tipologias e Finalidades",
+    "question": "De acordo com as regras regimentais típicas das Câmaras Municipais e os princípios do Processo Legislativo, as sessões plenárias dividem-se em ordinárias, extraordinárias, solenes e secretas. Sobre a Sessão Extraordinária, é correto afirmar que:",
+    "options": [
+      "Destina-se exclusivamente à discussão e votação das matérias constantes do ato de sua convocação, sendo vedada a deliberação sobre assunto estranho à pauta.",
+      "Ocorre em dias e horários pré-determinados no Regimento Interno, independentemente de convocação especial prévia.",
+      "Gera obrigatoriamente o pagamento de parcela indenizatória aos vereadores em valor equivalente a 50% do subsídio mensal.",
+      "Pode deliberar sobre qualquer matéria de interesse do Município, inclusive projetos apresentados verbalmente na hora da sessão."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Conforme os princípios constitucionais (CF/88 art. 57, § 7º aplicável por simetria aos Municípios) e normas regimentais, na sessão legislativa extraordinária a Câmara Municipal delibera EXCLUSIVAMENTE sobre a matéria para a qual foi convocada. Além disso, a Emenda Constitucional nº 50/2006 vedou expressamente o pagamento de qualquer parcela indenizatória em razão de convocação extraordinária."
+  },
+  {
+    "id": 302,
+    "category": "especificos",
+    "day": "w2_d4",
+    "discipline": "Técnico Legislativo",
+    "topic": "Quórum de Abertura e Instalação de Sessão Plenária",
+    "question": "Para que uma Sessão Ordinária da Câmara Municipal de Meruoca possa ser legalmente aberta e tenha início a sua fase deliberativa, exige-se via de regra o quórum de presença de:",
+    "options": [
+      "Dois terços (2/3) de todos os membros que compõem a Câmara Municipal.",
+      "Maioria absoluta dos membros da Câmara Municipal (metade mais um dos vereadores).",
+      "Pelo menos um terço (1/3) dos vereadores para abertura e deliberação indistinta.",
+      "Apenas o Presidente e o Primeiro Secretário da Mesa Diretora, independente do número de presentes."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Em regra de processo legislativo e direito parlamentar municipal, a abertura da sessão ordinária ou o início da Ordem do Dia (fase de deliberação e votação) exige a presença da MAIORIA ABSOLUTA dos membros da Casa (primeiro número inteiro superior à metade do total de vereadores). Sem quórum mínimo, a sessão não pode deliberar."
+  },
+  {
+    "id": 303,
+    "category": "especificos",
+    "day": "w2_d4",
+    "discipline": "Técnico Legislativo",
+    "topic": "Fases da Sessão Plenária: Expediente vs. Ordem do Dia",
+    "question": "A sessão ordinária da Câmara Municipal é estruturada em momentos distintos. A fase destinada prioritariamente à leitura de correspondências recebidas, apresentação de proposições e breves pronunciamentos de vereadores, antes das votações, denomina-se:",
+    "options": [
+      "Ordem do Dia.",
+      "Tribuna Livre Comunitária.",
+      "Pequeno Expediente (ou Expediente).",
+      "Explicação Pessoal Final."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. A sessão plenária ordinária divide-se classicamente em: 1) Expediente (ou Pequeno/Grande Expediente), destinado a comunicações da Mesa, leitura de ofícios, apresentação de matérias e discursos; 2) Ordem do Dia, que é a fase deliberativa onde as proposições da pauta são discutidas e votadas; e 3) Explicações Pessoais, destinada às considerações finais dos vereadores."
+  },
+  {
+    "id": 304,
+    "category": "especificos",
+    "day": "w2_d4",
+    "discipline": "Técnico Legislativo",
+    "topic": "Convocação Extraordinária da Câmara Municipal",
+    "question": "A convocação extraordinária da Câmara Municipal fora do período ordinário de funcionamento ou em situações de urgência e interesse público relevante pode ser promovida legitimamente por:",
+    "options": [
+      "Qualquer cidadão eleitor do Município mediante abaixo-assinado com 50 assinaturas.",
+      "Exclusivamente pelo Delegado de Polícia da comarca local em razão de inquérito penal.",
+      "Pelo Juiz de Direito da Vara Única da Comarca com anuência do Ministério Público.",
+      "Pelo Prefeito Municipal, pelo Presidente da Câmara ou por requerimento da maioria dos vereadores."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. A convocação extraordinária da Câmara Municipal decorre de preceito constitucional e das Leis Orgânicas municipais: pode ser realizada pelo Prefeito (em caso de urgência relevante), pelo Presidente da Câmara ou pela maioria dos membros do Legislativo. Autoridades externas ou cidadãos isolados não detêm legitimidade para convocar sessões extraordinárias da Casa Legislativa."
+  },
+  {
+    "id": 305,
+    "category": "especificos",
+    "day": "w2_d4",
+    "discipline": "Técnico Legislativo",
+    "topic": "Instrumentos Parlamentares: Pedido de Vista",
+    "question": "Durante a tramitação de uma matéria colocada em discussão na Ordem do Dia, um vereador manifesta a necessidade de examinar mais detidamente o texto do projeto antes de proferir seu voto. O instrumento regimental cabível para essa finalidade é o:",
+    "options": [
+      "Pedido de Vista.",
+      "Recurso de Agravo Regimental.",
+      "Destaque para Votação em Separado.",
+      "Voto em Separado da Oposição."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. O Pedido de Vista é a prerrogativa regimental conferida ao parlamentar (seja em Comissão ou em Plenário) para obter acesso aos autos da proposição por prazo determinado, a fim de analisar a matéria detalhadamente antes de sua votação definitiva."
+  },
+  {
+    "id": 306,
+    "category": "especificos",
+    "day": "w2_d4",
+    "discipline": "Técnico Legislativo",
+    "topic": "Proposições: Emendas Modificativas, Supressivas e Aditivas",
+    "question": "No processo legislativo municipal, as emendas parlamentares apresentadas a um projeto de lei classificam-se conforme sua finalidade material. A emenda que visa eliminar parte do texto de um artigo ou parágrafo é classificada como:",
+    "options": [
+      "Emenda Modificativa.",
+      "Emenda Supressiva.",
+      "Emenda Aditiva.",
+      "Emenda Aglutinativa."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Conforme a técnica legislativa clássica e os Regimentos Internos: a) Emenda Supressiva: elimina qualquer parte de uma proposição; b) Emenda Aditiva: acrescenta algo novo ao texto; c) Emenda Modificativa: altera a redação sem criar ou extinguir substancialmente o dispositivo; d) Emenda Substitutiva: substitui integralmente a proposição (substitutivo) ou artigo."
+  },
+  {
+    "id": 307,
+    "category": "especificos",
+    "day": "w2_d4",
+    "discipline": "Técnico Legislativo",
+    "topic": "Atribuições do Presidente da Câmara e Voto de Minerva",
+    "question": "No exercício das funções da Presidência da Câmara Municipal, o Presidente da Mesa Diretora possui regras especiais quanto ao direito de voto no Plenário. Em regra geral, o Presidente vota quando:",
+    "options": [
+      "Desejar manifestar sua opinião partidária em qualquer discussão preliminar.",
+      "A votação envolver matéria contábil de fornecedores de pequeno valor.",
+      "Houver empate na votação pública (voto de desempate/Minerva) ou em matérias que exijam quórum qualificado (como 2/3).",
+      "O Prefeito Municipal enviar mensagem com pedido expresso de manifestação presidencial."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Por expressa tradição parlamentar e previsão regimental, o Presidente da Câmara não vota nas deliberações ordinárias para manter a imparcialidade na condução dos trabalhos, VOTANDO APENAS: 1) para desempatar a votação (voto de Minerva); 2) em votações secretas (quando existentes); 3) quando a matéria exigir quórum de dois terços (2/3) ou maioria absoluta, onde sua presença e voto contam para o quórum qualificado."
+  },
+  {
+    "id": 308,
+    "category": "especificos",
+    "day": "w2_d4",
+    "discipline": "Técnico Legislativo",
+    "topic": "Lideranças Partidárias e Colégio de Líderes",
+    "question": "A representação partidária no âmbito do Poder Legislativo organiza-se por meio de lideranças. Sobre o papel dos Líderes Partidários e do Colégio de Líderes, assinale a afirmativa correta:",
+    "options": [
+      "O Líder partidário perde o direito de discursar nas sessões se não for membro da Mesa Diretora.",
+      "O Colégio de Líderes substitui as Comissões Permanentes e pode aprovar leis sem necessidade de plenário.",
+      "Os Líderes são nomeados diretamente pelo Prefeito Municipal para representá-lo na bancada dos vereadores.",
+      "O Líder é o porta-voz autorizado de sua bancada partidária, podendo fazer uso da palavra pela liderança e orientar o voto de seus liderados nas deliberações."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. O Líder é o parlamentar formalmente indicado pela agremiação ou bloco partidário para expressar o posicionamento oficial da bancada, orientar a votação em plenário, participar de reuniões de definição de pauta no Colégio de Líderes e discursar no tempo destinado à liderança partidária."
+  },
+  {
+    "id": 309,
+    "category": "especificos",
+    "day": "w2_d4",
+    "discipline": "Técnico Legislativo",
+    "topic": "Maioria e Minoria na Composição da Câmara",
+    "question": "O princípio da proporcionalidade partidária, previsto no Art. 58, § 1º da Constituição Federal e aplicável às Câmaras Municipais, assegura que:",
+    "options": [
+      "A composição das Comissões Permanentes deve reproduzir, tanto quanto possível, a representação proporcional dos partidos ou blocos parlamentares que participam da Casa.",
+      "Todos os partidos com representação na Câmara devem ocupar obrigatoriamente um cargo na Mesa Diretora de forma rotativa a cada 6 meses.",
+      "O partido da Minoria tem o direito de indicar o Presidente da Câmara, independentemente da vontade do Plenário.",
+      "A Mesa Diretora deve ser composta exclusivamente por vereadores pertencentes à bancada de sustentação do Prefeito."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. O Art. 58, § 1º da CF/88 estabelece que na constituição da Mesa e de cada Comissão é assegurada, tanto quanto possível, a representação proporcional dos partidos ou dos blocos parlamentares com assento na Casa Legislativa. Esse postulado garante o pluralismo democrático e a voz da minoria."
+  },
+  {
+    "id": 310,
+    "category": "especificos",
+    "day": "w2_d4",
+    "discipline": "Técnico Legislativo",
+    "topic": "Sistema Eleitoral para Vereadores: Sistema Proporcional",
+    "question": "No Brasil, a eleição para os cargos do Poder Executivo (Prefeito e Governador) segue o Sistema Majoritário, enquanto a eleição para o cargo de Vereador da Câmara Municipal obedece estritamente ao:",
+    "options": [
+      "Sistema Distrital Puro, dividindo-se o Município em circunscrições de bairro.",
+      "Sistema Proporcional de Lista Aberta, no qual as vagas conquistadas pelo partido dependem da soma dos votos da legenda e dos seus candidatos.",
+      "Sistema Majoritário Simples em turno único, elegendo-se quem obtiver mais votos absolutos independentemente do partido.",
+      "Sistema de Sufrágio Censitário Obrigatório com lista partidária pré-ordenada e fechada."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. A eleição para Vereador (assim como para Deputado Estadual e Federal) no Brasil segue o SISTEMA PROPORCIONAL DE LISTA ABERTA (CF/88, art. 29, II e Código Eleitoral). As vagas são distribuídas aos partidos de acordo com o Quociente Eleitoral e o Quociente Partidário, sendo eleitos os candidatos mais votados dentro de cada legenda que atingirem a cláusula de barreira individual."
+  },
+  {
+    "id": 311,
+    "category": "especificos",
+    "day": "w2_d4",
+    "discipline": "Técnico Legislativo",
+    "topic": "Cálculo do Quociente Eleitoral (QE)",
+    "question": "Em uma eleição municipal para a Câmara de Vereadores com 9 cadeiras disponíveis, foram apurados exatamente 18.000 votos válidos (soma dos votos nominais e de legenda). Sabendo que o Quociente Eleitoral (QE) é obtido pela divisão do total de votos válidos pelo número de lugares a preencher (desprezada a fração se igual ou inferior a meio, ou arredondada para um se superior), qual é o Quociente Eleitoral dessa eleição?",
+    "options": [
+      "1.500 votos.",
+      "1.800 votos.",
+      "2.000 votos.",
+      "2.250 votos."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Aplicação direta da regra do Código Eleitoral (Art. 106): QE = Total de Votos Válidos / Número de Vagas a Preencher. No caso: QE = 18.000 / 9 = 2.000 votos. Logo, cada partido precisa de 2.000 votos para conquistar diretamente uma vaga."
+  },
+  {
+    "id": 312,
+    "category": "especificos",
+    "day": "w2_d4",
+    "discipline": "Técnico Legislativo",
+    "topic": "Cálculo do Quociente Partidário (QP)",
+    "question": "Considerando uma eleição em que o Quociente Eleitoral (QE) foi fixado em 2.000 votos, determinado partido político obteve um total de 6.400 votos válidos (entre votos nominais em seus candidatos e votos de legenda). Conforme o Código Eleitoral (Art. 107), o Quociente Partidário (QP) desse partido é igual a:",
+    "options": [
+      "1 cadeira.",
+      "2 cadeiras.",
+      "4 cadeiras.",
+      "3 cadeiras (desprezada a fração restante)."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. O Quociente Partidário (QP) define quantas vagas o partido obtém diretamente pela primeira fase de distribuição: QP = Votação do Partido / QE. Calculando: QP = 6.400 / 2.000 = 3,2. O Art. 107 do Código Eleitoral determina que se despreza a fração! Portanto, o QP é igual a 3 cadeiras. A fração restante (0,2 ou 400 votos) concorre na distribuição das sobras."
+  },
+  {
+    "id": 313,
+    "category": "especificos",
+    "day": "w2_d4",
+    "discipline": "Técnico Legislativo",
+    "topic": "Cláusula de Barreira Individual do Candidato a Vereador",
+    "question": "Para que um candidato a Vereador seja considerado eleito pelas vagas conquistadas pelo seu partido por meio do Quociente Partidário, a legislação eleitoral brasileira (Lei nº 9.504/97 e Código Eleitoral com alterações recentes) exige que o candidato tenha obtido votação nominal mínima de pelo menos:",
+    "options": [
+      "10% do Quociente Eleitoral (QE).",
+      "5% do total de eleitores inscritos no Município.",
+      "20% dos votos totais da legenda partidária.",
+      "50% da votação do candidato mais votado do Município."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Conforme o Art. 108 do Código Eleitoral (incluído pela Reforma Eleitoral - Lei 13.165/2015), estarão eleitos os candidatos que tenham obtido votos em número igual ou superior a 10% (dez por cento) do Quociente Eleitoral, na ordem da votação nominal que cada um tenha recebido. Essa é a chamada cláusula de barreira/desempenho individual para evitar o efeito 'puxador extremo' de candidatos sem representatividade própria."
+  },
+  {
+    "id": 314,
+    "category": "especificos",
+    "day": "w2_d4",
+    "discipline": "Técnico Legislativo",
+    "topic": "Distribuição das Sobras Eleitorais",
+    "question": "Quando as vagas de vereador não são integralmente preenchidas pelo Quociente Partidário, as vagas restantes ('sobras') são distribuídas pelo critério das maiores médias. A fórmula da média de cada partido participante é obtida por:",
+    "options": [
+      "Média = Votos Válidos do Município / Número Total de Partidos Concorrentes.",
+      "Média = Número de Votos Válidos do Partido / (Número de Vagas Já Obtidas pelo Partido + 1).",
+      "Média = Idade do Candidato Mais Velho + Votos Nominais da Coligação.",
+      "Média = Quociente Eleitoral * 2 / Total de Vagas da Câmara."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Conforme o Art. 109, I do Código Eleitoral, a média de cada agremiação para disputar as sobras é calculada dividindo-se o número de votos válidos atribuídos a cada partido pelo número de lugares por ele já obtidos mais 1: Média = Votos_Partido / (Vagas_Obtidas + 1). O partido que alcançar a maior média fica com a vaga, repetindo-se a operação até esgotarem as sobras."
+  },
+  {
+    "id": 315,
+    "category": "especificos",
+    "day": "w2_d4",
+    "discipline": "Técnico Legislativo",
+    "topic": "Fidelidade Partidária e Perda do Mandato Eletivo",
+    "question": "O mandato de vereador conquistado no sistema proporcional pertence ao partido político. Conforme jurisprudência pacífica do TSE e do STF, o vereador que se desfiliar do partido sem justa causa perderá o mandato. Constitui hipótese legítima de JUSTA CAUSA para desfiliação partidária:",
+    "options": [
+      "Desacordo pessoal entre o vereador e o tesoureiro do diretório municipal.",
+      "Convite financeiramente mais vantajoso oferecido por liderança do Poder Executivo.",
+      "Mudança substancial ou desvio reiterado do programa partidário, ou grave discriminação política pessoal comprovada.",
+      "Vontade unilateral do vereador expressa por notificação simples no cartório de títulos."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. A Lei dos Partidos Políticos (Lei 9.096/95, art. 22-A) e a Resolução TSE nº 22.610/2007 preveem taxativamente as hipóteses de justa causa: 1) mudança substancial ou desvio reiterado do programa partidário; 2) grave discriminação política pessoal; e 3) mudança de partido efetuada durante a 'janela partidária' (nos 30 dias que antecedem o prazo de filiação no ano da eleição do término do mandato)."
+  },
+  {
+    "id": 316,
+    "category": "especificos",
+    "day": "w2_d4",
+    "discipline": "Técnico Legislativo",
+    "topic": "Comissões Parlamentares de Inquérito (CPIs) Municipais",
+    "question": "A criação de Comissão Parlamentar de Inquérito (CPI) no âmbito da Câmara Municipal constitui importante instrumento de fiscalização da minoria parlamentar. Para a sua instauração válida, a CF/88 (art. 58, § 3º) e a Lei Orgânica exigem simultaneamente:",
+    "options": [
+      "Autorização prévia do Tribunal de Contas e concordância formal do Prefeito Municipal.",
+      "Votação unânime de todos os vereadores presentes e prazo indeterminado de atuação.",
+      "Aval da Procuradoria Jurídica do Município e homologação judicial pelo Juiz de Direito da Comarca.",
+      "Requerimento de pelo menos um terço (1/3) dos membros da Câmara, indicação de fato determinado e fixação de prazo certo de funcionamento."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. São três os requisitos cumulativos e indispensáveis para a instauração de CPI (CF/88 art. 58, § 3º e jurisprudência vinculante do STF): 1) requerimento de no mínimo 1/3 (um terço) dos membros da Casa; 2) apuração de fato determinado de interesse público; e 3) funcionamento por prazo certo. Presentes os requisitos, a instalação é direito público subjetivo das minorias, independendo de aprovação do plenário."
+  },
+  {
+    "id": 317,
+    "category": "especificos",
+    "day": "w2_d4",
+    "discipline": "Técnico Legislativo",
+    "topic": "Julgamento das Contas do Prefeito e Quórum Qualificado",
+    "question": "O controle externo da Câmara Municipal sobre as contas anuais prestadas pelo Chefe do Poder Executivo é exercido com o auxílio do Tribunal de Contas competente. Sobre o Parecer Prévio emitido pela Corte de Contas, a CF/88 (art. 31, § 2º) estabelece que ele:",
+    "options": [
+      "Só deixará de prevalecer por decisão de dois terços (2/3) dos membros da Câmara Municipal.",
+      "Tem caráter meramente opinativo simples, bastando a maioria dos presentes na sessão para derrubá-lo.",
+      "É irrecorrível e vincula a Câmara, impedindo qualquer deliberação política em sentido contrário.",
+      "Depende de homologação posterior pelo Ministério Público de Contas para produzir efeitos perante a Câmara."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Conforme o Art. 31, § 2º da Constituição Federal: 'O parecer prévio, emitido pelo órgão competente sobre as contas que o Prefeito deve anualmente prestar, só deixará de prevalecer por decisão de dois terços dos membros da Câmara Municipal'. É uma das regras mais cobradas pela banca INBRASP em concursos legislativos."
+  },
+  {
+    "id": 318,
+    "category": "especificos",
+    "day": "w2_d4",
+    "discipline": "Técnico Legislativo",
+    "topic": "Inviolabilidade e Imunidade Material do Vereador",
+    "question": "Em relação ao estatuto dos congressistas e parlamentares, a Constituição Federal estende aos Vereadores a prerrogativa da imunidade material (Art. 29, VIII). De acordo com o texto constitucional, os vereadores gozam de inviolabilidade por suas opiniões, palavras e votos:",
+    "options": [
+      "Em todo o território nacional, sob quaisquer circunstâncias de sua vida pessoal e partidária.",
+      "No exercício do mandato e na circunscrição do respectivo Município.",
+      "Apenas dentro do recinto físico do Plenário da Câmara durante as sessões solenes.",
+      "Exclusivamente durante o período eleitoral oficial regulamentado pelo TSE."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. A CF/88, em seu Art. 29, VIII, assegura expressamente a inviolabilidade dos Vereadores por suas opiniões, palavras e votos NO EXERCÍCIO DO MANDATO e NA CIRCUNSCRIÇÃO DO MUNICÍPIO. Atenção: vereador NÃO possui imunidade formal/processual ampla (foro por prerrogativa federal geral ou imunidade prisional ampla de parlamentar federal), limitando-se à inviolabilidade material territorialmente demarcada."
+  },
+  {
+    "id": 319,
+    "category": "especificos",
+    "day": "w2_d4",
+    "discipline": "Técnico Legislativo",
+    "topic": "Registro e Ata das Sessões Legislativas",
+    "question": "Ao término de cada sessão plenária da Câmara Municipal, os trabalhos legislativos, debates, presenças e votações ocorridas são formalmente consignados em documento oficial denominado Ata da Sessão. A respeito da Ata, é correto afirmar:",
+    "options": [
+      "A Ata é elaborada com valor sigiloso, sendo vedado o acesso aos cidadãos e à imprensa local.",
+      "A Ata só precisa ser redigida uma vez por ano, ao final da sessão legislativa anual de dezembro.",
+      "A Ata é lida e submetida à apreciação do Plenário na sessão ordinária seguinte, podendo os vereadores solicitar retificações antes de sua aprovação e assinatura.",
+      "A elaboração da Ata compete ao Prefeito Municipal, que a assina e publica no Diário Oficial."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. A Ata da sessão é lavrada pela Secretaria da Câmara sob supervisão da Mesa Diretora. Na sessão subsequente, a Ata é colocada em discussão e votação para que os vereadores possam requerer correções ou retificações quanto a falas ou registros de votos, sendo em seguida assinada pela Mesa e disponibilizada publicamente."
+  },
+  {
+    "id": 320,
+    "category": "especificos",
+    "day": "w2_d4",
+    "discipline": "Técnico Legislativo",
+    "topic": "Atos da Presidência da Câmara: Decretos, Resoluções e Portarias",
+    "question": "A competência administrativa interna da Câmara Municipal manifesta-se por meio de diferentes espécies normativas e atos regimentais. Para nomear servidor efetivo aprovado em concurso público ou conceder diárias de viagem a vereadores e servidores, o ato administrativo típico expedido pelo Presidente da Câmara é a:",
+    "options": [
+      "Lei Complementar Municipal.",
+      "Emenda à Lei Orgânica.",
+      "Medida Provisória Legislativa.",
+      "Portaria da Presidência."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Os atos de administração interna e de gestão de pessoal no âmbito da Câmara (como nomeação, exoneração, concessão de férias, licenças e autorização de diárias) são formalizados por meio de PORTARIA expedida pelo Presidente da Câmara. Resoluções e Decretos Legislativos tratam de matérias de competência privativa do Plenário."
+  },
+  {
+    "id": 321,
+    "category": "matematica",
+    "day": "w2_d4",
+    "discipline": "Matemática / RLM",
+    "topic": "Razão e Proporção: Divisão Simples",
+    "question": "Em um concurso promovido pela Câmara Municipal, a razão entre o número de candidatos inscritos para o cargo de Técnico Legislativo e o número de vagas ofertadas é de 45 para 1. Sabendo que foram abertas exatamente 4 vagas para o cargo, o número total de candidatos inscritos nessa seleção foi de:",
+    "options": [
+      "180 candidatos.",
+      "160 candidatos.",
+      "200 candidatos.",
+      "140 candidatos."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. A razão entre inscritos (x) e vagas (v) é expressa pela proporção: x / v = 45 / 1. Como v = 4, temos: x / 4 = 45 / 1  =>  x = 4 * 45 = 180 candidatos inscritos."
+  },
+  {
+    "id": 322,
+    "category": "matematica",
+    "day": "w2_d4",
+    "discipline": "Matemática / RLM",
+    "topic": "Divisão em Partes Diretamente Proporcionais",
+    "question": "Dois servidores da Câmara Municipal, Carlos e Mariana, digitalizaram juntos um total de 240 processos legislativos. A divisão do trabalho foi feita em partes diretamente proporcionais ao tempo de serviço de cada um no órgão: Carlos trabalha há 3 anos na Câmara e Mariana há 5 anos. Quantos processos Mariana digitalizou?",
+    "options": [
+      "90 processos.",
+      "150 processos.",
+      "120 processos.",
+      "160 processos."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Na divisão em partes diretamente proporcionais aos números 3 e 5, a soma das partes é: 3 + 5 = 8 partes. Cada parte (constante de proporcionalidade k) vale: k = 240 / 8 = 30 processos. Logo, Mariana, que tem proporção 5, digitalizou: 5 * 30 = 150 processos. (Carlos digitalizou 3 * 30 = 90)."
+  },
+  {
+    "id": 323,
+    "category": "matematica",
+    "day": "w2_d4",
+    "discipline": "Matemática / RLM",
+    "topic": "Divisão em Partes Inversamente Proporcionais",
+    "question": "A chefia do setor administrativo dividiu uma gratificação de R$ 1.800,00 entre dois técnicos em partes inversamente proporcionais ao número de dias que cada um faltou no mês. O técnico A teve 2 faltas e o técnico B teve 4 faltas. O valor recebido pelo técnico A foi de:",
+    "options": [
+      "R$ 600,00.",
+      "R$ 900,00.",
+      "R$ 1.200,00.",
+      "R$ 1.400,00."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Dividir em partes inversamente proporcionais a 2 e 4 equivale a dividir em partes diretamente proporcionais aos inversos 1/2 e 1/4. Multiplicando pelo MMC (4) para eliminar as frações: 1/2 * 4 = 2 partes para A; 1/4 * 4 = 1 parte para B. Total de partes = 2 + 1 = 3 partes. O valor de cada parte é 1.800 / 3 = R$ 600,00. Logo, o técnico A recebe 2 * 600 = R$ 1.200,00 (e o técnico B recebe 1 * 600 = R$ 600,00)."
+  },
+  {
+    "id": 324,
+    "category": "matematica",
+    "day": "w2_d4",
+    "discipline": "Matemática / RLM",
+    "topic": "Regra de Três Simples Direta: Consumo de Materiais",
+    "question": "O setor de reprografia da Câmara Municipal consome 6 resmas de papel A4 a cada 15 dias úteis de trabalho ordinário. Mantido exatamente o mesmo padrão diário de consumo, quantas resmas de papel serão consumidas em um período de 45 dias úteis?",
+    "options": [
+      "12 resmas.",
+      "15 resmas.",
+      "24 resmas.",
+      "18 resmas."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Trata-se de uma regra de três simples direta (quanto mais dias trabalhados, maior a quantidade de resmas consumidas): 6 resmas ---- 15 dias; x resmas ---- 45 dias. Multiplicando cruzado: 15 * x = 6 * 45  =>  15x = 270  =>  x = 270 / 15 = 18 resmas."
+  },
+  {
+    "id": 325,
+    "category": "matematica",
+    "day": "w2_d4",
+    "discipline": "Matemática / RLM",
+    "topic": "Regra de Três Simples Inversa: Tempo e Equipe",
+    "question": "Uma equipe composta por 4 arquivistas consegue organizar todo o acervo histórico de leis municipais em exatamente 15 dias de trabalho. Se a equipe fosse reforçada e contasse com 6 arquivistas com a mesma capacidade operacional dos primeiros, em quantos dias o mesmo acervo seria organizado?",
+    "options": [
+      "10 dias.",
+      "8 dias.",
+      "12 dias.",
+      "9 dias."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. É uma regra de três simples INVERSA (ao aumentar o número de arquivistas, o tempo necessário para executar o serviço diminui): 4 arquivistas ---- 15 dias; 6 arquivistas ---- x dias. Multiplicando em linha: 6 * x = 4 * 15  =>  6x = 60  =>  x = 60 / 6 = 10 dias."
+  },
+  {
+    "id": 326,
+    "category": "matematica",
+    "day": "w2_d4",
+    "discipline": "Matemática / RLM",
+    "topic": "Regra de Três Composta: Produção de Relatórios",
+    "question": "Trabalhando 6 horas por dia durante 8 dias, 3 redatores legislativos elaboram as atas de 72 sessões plenárias. Quantas atas de sessões plenárias seriam elaboradas por 4 redatores, trabalhando 8 horas por dia durante 5 dias, mantida a mesma produtividade individual?",
+    "options": [
+      "75 atas.",
+      "80 atas.",
+      "90 atas.",
+      "60 atas."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Montando a regra de três composta identificando as grandezas: Redatores (R), Horas/dia (H), Dias (D) e Atas (A - produto final): R1=3, H1=6, D1=8, A1=72; R2=4, H2=8, D2=5, A2=x. Comparando as grandezas em relação a Atas: Mais redatores = mais atas (direta); Mais horas/dia = mais atas (direta); Mais dias = mais atas (direta). Logo: 72 / x = (3/4) * (6/8) * (8/5)  =>  72 / x = (3 * 6 * 8) / (4 * 8 * 5) = 144 / 160 = 9 / 10. Multiplicando cruzado: 9 * x = 72 * 10  =>  9x = 720  =>  x = 80 atas."
+  },
+  {
+    "id": 327,
+    "category": "matematica",
+    "day": "w2_d4",
+    "discipline": "Matemática / RLM",
+    "topic": "Porcentagem: Cálculo de Desconto Comercial",
+    "question": "A Câmara de Meruoca realizou processo licitatório para compra de novos computadores cujo valor total tabelado era de R$ 45.000,00. A empresa vencedora ofereceu um desconto de 12% sobre o valor da tabela. Qual foi o valor final pago pela aquisição dos equipamentos?",
+    "options": [
+      "R$ 40.500,00.",
+      "R$ 38.600,00.",
+      "R$ 39.600,00.",
+      "R$ 41.200,00."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Calculando o desconto de 12% sobre 45.000: Desconto = 45.000 * 0,12 = R$ 5.400,00. Valor final = 45.000 - 5.400 = R$ 39.600,00. (Ou diretamente: 45.000 * 0,88 = R$ 39.600,00)."
+  },
+  {
+    "id": 328,
+    "category": "matematica",
+    "day": "w2_d4",
+    "discipline": "Matemática / RLM",
+    "topic": "Porcentagem: Variação Percentual",
+    "question": "No mês de janeiro, o número de atendimentos presenciais ao público na ouvidoria da Câmara foi de 250 pessoas. No mês de fevereiro, esse número subiu para 325 atendimentos. Qual foi o percentual de aumento verificado de janeiro para fevereiro?",
+    "options": [
+      "25%.",
+      "28%.",
+      "35%.",
+      "30%."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. A variação absoluta foi de: 325 - 250 = 75 atendimentos. A taxa percentual de aumento em relação ao valor inicial (janeiro) é: Taxa = (Variação / Valor_Inicial) * 100 = (75 / 250) * 100 = 0,30 * 100 = 30% de aumento."
+  },
+  {
+    "id": 329,
+    "category": "matematica",
+    "day": "w2_d4",
+    "discipline": "Matemática / RLM",
+    "topic": "Porcentagem: Aumentos Sucessivos",
+    "question": "O salário de um servidor público municipal sofreu dois reajustes salariais sucessivos: o primeiro de 10% no início do ano e o segundo de 20% no segundo semestre. O reajuste acumulado real sobre o salário inicial do servidor foi de:",
+    "options": [
+      "32%.",
+      "30%.",
+      "31%.",
+      "33%."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Em aumentos sucessivos, multiplica-se os fatores de correção: Fator 1 = 1 + 0,10 = 1,10; Fator 2 = 1 + 0,20 = 1,20. Fator acumulado = 1,10 * 1,20 = 1,32. Subtraindo a base 1: 1,32 - 1 = 0,32 = 32% de aumento acumulado. Dica clássica: aumentos sucessivos nunca são a soma direta (10 + 20 = 30% é a pegadinha da banca)."
+  },
+  {
+    "id": 330,
+    "category": "matematica",
+    "day": "w2_d4",
+    "discipline": "Matemática / RLM",
+    "topic": "Juros Simples: Cálculo de Juros",
+    "question": "Um servidor realizou uma aplicação financeira no valor de R$ 8.000,00 em regime de juros simples, a uma taxa de 1,5% ao mês, durante um período de 10 meses. O valor total dos juros rendidos por essa aplicação foi de:",
+    "options": [
+      "R$ 1.000,00.",
+      "R$ 1.200,00.",
+      "R$ 1.400,00.",
+      "R$ 960,00."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Fórmula do juro simples: J = C * i * t, onde C = 8.000, i = 1,5% = 0,015 ao mês e t = 10 meses. J = 8.000 * 0,015 * 10 = 8.000 * 0,15 = R$ 1.200,00 de juros."
+  },
+  {
+    "id": 331,
+    "category": "matematica",
+    "day": "w2_d4",
+    "discipline": "Matemática / RLM",
+    "topic": "Juros Simples: Cálculo do Montante",
+    "question": "Um empréstimo consignado de R$ 12.000,00 foi contratado à taxa de juros simples de 2% ao mês para ser quitado integralmente ao final de 8 meses em parcela única. Qual será o montante total (capital + juros) a ser pago na liquidação do empréstimo?",
+    "options": [
+      "R$ 13.600,00.",
+      "R$ 14.120,00.",
+      "R$ 13.920,00.",
+      "R$ 14.400,00."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Cálculo dos juros simples: J = C * i * t = 12.000 * 0,02 * 8 = 12.000 * 0,16 = R$ 1.920,00. O montante final é a soma do capital inicial com os juros: M = C + J = 12.000 + 1.920 = R$ 13.920,00."
+  },
+  {
+    "id": 332,
+    "category": "matematica",
+    "day": "w2_d4",
+    "discipline": "Matemática / RLM",
+    "topic": "Juros Simples: Determinação do Tempo",
+    "question": "Durante quanto tempo um capital de R$ 5.000,00 deve permanecer aplicado a uma taxa de juros simples de 2,5% ao mês para que gere um montante de R$ 6.500,00?",
+    "options": [
+      "8 meses.",
+      "10 meses.",
+      "14 meses.",
+      "12 meses."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Juros gerados: J = Montante - Capital = 6.500 - 5.000 = R$ 1.500,00. Pela fórmula J = C * i * t: 1.500 = 5.000 * 0,025 * t  =>  1.500 = 125 * t  =>  t = 1.500 / 125 = 12 meses."
+  },
+  {
+    "id": 333,
+    "category": "matematica",
+    "day": "w2_d4",
+    "discipline": "Matemática / RLM",
+    "topic": "Média Aritmética Simples e Ponderada",
+    "question": "Na avaliação de desempenho de um estagiário na Câmara, foram aplicadas 4 avaliações com notas de 0 a 10. Suas três primeiras notas foram 7,0; 8,0 e 6,0. Para que sua média aritmética final seja exatamente 8,0, qual nota ele precisa tirar na quarta avaliação?",
+    "options": [
+      "11,0 (impossível na escala de 0 a 10).",
+      "9,0.",
+      "10,0.",
+      "8,5."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Para a média de 4 notas ser 8,0, a soma das quatro notas deve ser: Soma = 4 * 8,0 = 32,0 pontos. A soma das três primeiras notas é: 7,0 + 8,0 + 6,0 = 21,0 pontos. Logo, a quarta nota necessária seria: 32,0 - 21,0 = 11,0 pontos. Como a escala de avaliação vai até 10,0, é matematicamente impossível atingir essa média final."
+  },
+  {
+    "id": 334,
+    "category": "matematica",
+    "day": "w2_d4",
+    "discipline": "Matemática / RLM",
+    "topic": "Equações do 1º Grau aplicadas ao Serviço Público",
+    "question": "Em uma sessão plenária extraordinária, o dobro do número de vereadores presentes somado a 5 resulta em 23 vereadores. Quantos vereadores estavam presentes nessa sessão?",
+    "options": [
+      "8 vereadores.",
+      "9 vereadores.",
+      "10 vereadores.",
+      "11 vereadores."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Montando a equação do 1º grau: sendo 'x' o número de vereadores presentes: 2x + 5 = 23  =>  2x = 23 - 5  =>  2x = 18  =>  x = 18 / 2 = 9 vereadores presentes."
+  },
+  {
+    "id": 335,
+    "category": "matematica",
+    "day": "w2_d4",
+    "discipline": "Matemática / RLM",
+    "topic": "Sistema de Equações do 1º Grau",
+    "question": "O almoxarifado da Câmara comprou 50 unidades de materiais de expediente entre pastas organizadoras e canetas esferográficas, totalizando uma despesa de R$ 160,00. Cada pasta custou R$ 5,00 e cada caneta custou R$ 2,00. Quantas pastas organizadoras foram compradas?",
+    "options": [
+      "15 pastas.",
+      "25 pastas.",
+      "20 pastas.",
+      "30 pastas."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Seja 'p' o número de pastas e 'c' o número de canetas. Sistema: 1) p + c = 50; 2) 5p + 2c = 160. Da primeira equação: c = 50 - p. Substituindo na segunda: 5p + 2(50 - p) = 160  =>  5p + 100 - 2p = 160  =>  3p = 160 - 100  =>  3p = 60  =>  p = 20 pastas organizadoras (e 30 canetas)."
+  },
+  {
+    "id": 336,
+    "category": "matematica",
+    "day": "w2_d4",
+    "discipline": "Matemática / RLM",
+    "topic": "Conversão de Unidades de Tempo e Medida",
+    "question": "Uma gravação audiovisual de uma sessão solene da Câmara Municipal durou exatamente 2 horas, 45 minutos e 30 segundos. Convertendo todo esse tempo exclusivamente para segundos, obtém-se:",
+    "options": [
+      "9.750 segundos.",
+      "10.230 segundos.",
+      "9.850 segundos.",
+      "9.930 segundos."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Conversão passo a passo: 1 hora = 3.600 segundos  =>  2 horas = 2 * 3.600 = 7.200 segundos; 1 minuto = 60 segundos  =>  45 minutos = 45 * 60 = 2.700 segundos; Mais os 30 segundos adicionais: Total = 7.200 + 2.700 + 30 = 9.930 segundos."
+  },
+  {
+    "id": 337,
+    "category": "matematica",
+    "day": "w2_d4",
+    "discipline": "Matemática / RLM",
+    "topic": "RLM: Conectivos Lógicos e Tabela Verdade da Conjunção",
+    "question": "Considerando as proposições simples p: 'O projeto de lei foi aprovado em plenário' (Verdadeira) e q: 'O Prefeito vetou o projeto' (Falsa), o valor lógico da proposição composta 'O projeto de lei foi aprovado E o Prefeito vetou o projeto' (p ^ q) é:",
+    "options": [
+      "Falso, pois na conjunção ('E') a proposição composta só é verdadeira quando todas as proposições componentes forem simultaneamente verdadeiras.",
+      "Verdadeiro, pois basta que uma das proposições seja verdadeira para validar a conjunção.",
+      "Inconclusivo, pois depende da publicação oficial no Diário da Câmara.",
+      "Verdadeiro, pois a conjunção assume sempre o valor da proposição que veio primeiro."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Pela tabela-verdade do conectivo da conjunção (operador lógico 'E' / ^): V ^ F = F. A conjunção exige a veracidade cumulativa e simultânea de ambas as proposições para ser verdadeira. Havendo ao menos uma proposição falsa, o resultado lógico é impreterivelmente FALSO."
+  },
+  {
+    "id": 338,
+    "category": "matematica",
+    "day": "w2_d4",
+    "discipline": "Matemática / RLM",
+    "topic": "RLM: Negação da Proposição Condicional (Se... então)",
+    "question": "Na lógica sentencial clássica, a negação lógica da proposição condicional 'Se o servidor cumpre a meta, então recebe o elogio funcional' equivale logicamente a:",
+    "options": [
+      "Se o servidor não cumpre a meta, então não recebe o elogio funcional.",
+      "O servidor cumpre a meta e não recebe o elogio funcional.",
+      "Se o servidor recebe o elogio funcional, então cumpriu a meta.",
+      "O servidor não cumpre a meta ou recebe o elogio funcional."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. A regra de ouro da negação da condicional (P -> Q) é a 'Regra do MANÉ': Mantém a primeira (P) E nega a segunda (~Q): ~(P -> Q) = P ^ ~Q. Portanto: 'O servidor cumpre a meta E não recebe o elogio funcional'."
+  },
+  {
+    "id": 339,
+    "category": "matematica",
+    "day": "w2_d4",
+    "discipline": "Matemática / RLM",
+    "topic": "Sequências Numéricas e Padrões Lógicos",
+    "question": "Observe a sequência lógica de números inteiros: 3, 7, 15, 31, 63, ... Mantendo-se o mesmo padrão aritmético de formação, o próximo termo dessa sequência é:",
+    "options": [
+      "95.",
+      "125.",
+      "127.",
+      "129."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. O padrão de formação pode ser visto de duas formas congruentes: 1) Cada termo é o dobro do anterior somado a 1: 3 * 2 + 1 = 7; 7 * 2 + 1 = 15; 15 * 2 + 1 = 31; 31 * 2 + 1 = 63; Próximo = 63 * 2 + 1 = 126 + 1 = 127. (Ou pelas potências de 2 subtraídas de 1: 2^2-1=3, 2^3-1=7, 2^4-1=15, 2^5-1=31, 2^6-1=63, 2^7-1=128-1=127)."
+  },
+  {
+    "id": 340,
+    "category": "matematica",
+    "day": "w2_d4",
+    "discipline": "Matemática / RLM",
+    "topic": "Interpretação de Gráficos e Conjuntos Numéricos",
+    "question": "Em uma pesquisa com os 30 servidores da Câmara Municipal, constatou-se que 18 servidores têm curso de capacitação em Processo Legislativo e 14 têm capacitação em Gestão Pública. Sabendo que 6 servidores possuem ambos os cursos, quantos servidores não possuem nenhum desses dois cursos?",
+    "options": [
+      "2 servidores.",
+      "3 servidores.",
+      "5 servidores.",
+      "4 servidores."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Utilizando o Diagrama de Venn e a teoria dos conjuntos: Total de servidores = 30; Interseção (ambos os cursos) = 6; Somente Processo Legislativo = 18 - 6 = 12; Somente Gestão Pública = 14 - 6 = 8; Total de servidores com pelo menos um curso = 12 + 6 + 8 = 26 servidores. Servidores sem nenhum dos cursos = 30 - 26 = 4 servidores."
+  }
+
 ];
 
 // =========================================================================
@@ -6445,7 +7086,7 @@ let appState = {
   dayQuestions: {},
   quizAnswers: {},
   bankVersion: 3,
-  quizCategoryFilter: 'w2_d3',
+  quizCategoryFilter: 'w2_d4',
   quizOrderMode: 'random', // 'random', 'interleaved', 'sequential'
   quizFilterStatus: 'all', // 'all', 'pending', 'wrong'
   quizShuffledOrder: {}, // armazena ordem embaralhada por chave de filtro para manter estabilidade
@@ -6481,7 +7122,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setupCountdown();
   renderWeekPills();
   renderDaysForWeek(appState.currentWeek);
-  selectQuizDay(appState.quizCategoryFilter || 'w2_d3');
+  selectQuizDay(appState.quizCategoryFilter || 'w2_d4');
   renderFlashcard();
   renderCadernoErros();
   renderSimulados();
@@ -6510,9 +7151,9 @@ function loadState() {
         appState.quizShuffledOrder = {};
         saveState();
       }
-      if (!appState.lastSeenDay || appState.lastSeenDay !== 'w2_d3') {
-        appState.quizCategoryFilter = 'w2_d3';
-        appState.lastSeenDay = 'w2_d3';
+      if (!appState.lastSeenDay || appState.lastSeenDay !== 'w2_d4') {
+        appState.quizCategoryFilter = 'w2_d4';
+        appState.lastSeenDay = 'w2_d4';
       }
       if (!appState.currentWeek || appState.currentWeek === 1) {
         appState.currentWeek = 2;
@@ -7139,11 +7780,17 @@ function filterQuizCategory(cat) {
 }
 
 const QUIZ_DAYS_CONFIG = {
+    w2_d4: {
+    title: "⭐ Semana 2 • Dia 4 — Quinta-feira (10/09/2026 - HOJE): Sessões, Representação Partidária & Matemática/RLM (40 Questões)",
+    desc: "20 questões de Conhecimentos Específicos (Sessões Plenárias, Ordem do Dia, Partidos Políticos, Quociente Eleitoral e Partidário) + 20 questões de Matemática & RLM (Razão, Proporção, Regra de Três, Porcentagem e Juros Simples). Padrão Oficial Banca INBRASP.",
+    bookletUrl: "provas/CADERNO_QUESTOES_SEMANA_02_DIA_04_10_09_2026.html",
+    bookletLabel: "Abrir Caderno Hoje Impresso (PDF)"
+  },
   w2_d3: {
-    title: "⭐ Semana 2 • Dia 3 — Quarta-feira (09/09/2026 - HOJE): Processo Legislativo & Pacote Office (40 Questões)",
+    title: "📅 Semana 2 • Dia 3 — Quarta-feira (09/09/2026): Processo Legislativo & Pacote Office (40 Questões)",
     desc: "20 questões de Conhecimentos Específicos (Processo Legislativo, Espécies Normativas CF art. 59, Iniciativa, Tramitação, Emendas, Substitutivos e Vetos) + 20 questões de Informática (MS Word, Excel fórmulas, PowerPoint e Google Workspace). Padrão Oficial Banca INBRASP.",
     bookletUrl: "provas/CADERNO_QUESTOES_SEMANA_02_DIA_03_09_09_2026.html",
-    bookletLabel: "Abrir Caderno Hoje Impresso (PDF)"
+    bookletLabel: "Abrir Caderno Dia 3 (PDF)"
   },
   w2_d2: {
     title: "📅 Semana 2 • Dia 2 — Terça-feira (08/09/2026): Funções da Câmara & Crase/Regência (40 Questões)",
@@ -7188,8 +7835,8 @@ const QUIZ_DAYS_CONFIG = {
     bookletLabel: "Abrir Central de Provas"
   },
   all: {
-    title: "📚 Todas as Questões do Banco de Provas (300 Questões)",
-    desc: "Simulado geral contendo todas as 300 questões ativas (Semana 1 completa + Semana 2 Dias 1, 2 e 3) para treino de alta performance.",
+    title: "📚 Todas as Questões do Banco de Provas (340 Questões)",
+    desc: "Simulado geral contendo todas as 340 questões ativas (Semana 1 completa + Semana 2 Dias 1, 2, 3 e 4) para treino de alta performance.",
     bookletUrl: "provas/CENTRAL_DE_PROVAS.html",
     bookletLabel: "Abrir Central de Provas & Editais"
   }
@@ -7197,7 +7844,7 @@ const QUIZ_DAYS_CONFIG = {
 
 function selectQuizDay(dayKey) {
   if (!QUIZ_DAYS_CONFIG[dayKey]) {
-    dayKey = 'w2_d3';
+    dayKey = 'w2_d4';
   }
   appState.quizCategoryFilter = dayKey;
   
@@ -7349,7 +7996,7 @@ function renderDaysForWeek(weekNum) {
     });
 
     const isDone = dayTotalTasks > 0 && dayDoneTasks === dayTotalTasks;
-    const todayStr = "09/09/2026";
+    const todayStr = "10/09/2026";
     const isToday = (day.date === todayStr);
     const hasTodayInWeek = week.days.some(d => d.date === todayStr);
     const shouldOpen = isToday || (!hasTodayInWeek && dIdx === 0);

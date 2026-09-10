@@ -1,0 +1,2532 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>CADERNO OFICIAL DE QUESTÕES — SEMANA 2 / DIA 4 (10/09/2026) | INBRASP</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @page {
+      size: A4;
+      margin: 15mm 18mm;
+    }
+    :root {
+      --primary: #1e3a8a;
+      --primary-dark: #0f172a;
+      --accent: #dc2626;
+      --border: #cbd5e1;
+      --bg: #ffffff;
+      --text: #0f172a;
+      --text-muted: #475569;
+    }
+    body {
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+      color: var(--text);
+      background: #f8fafc;
+      margin: 0;
+      padding: 24px;
+      font-size: 10pt;
+      line-height: 1.45;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      padding: 36px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    }
+    .header-box {
+      border: 2px solid var(--primary);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f8fafc;
+    }
+    .header-titles h1 {
+      margin: 0 0 4px 0;
+      font-size: 1.35rem;
+      color: var(--primary);
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .header-titles h2 {
+      margin: 0 0 4px 0;
+      font-size: 1rem;
+      color: var(--text);
+      font-weight: 700;
+    }
+    .header-titles p {
+      margin: 0;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .badge-banca {
+      background: #fee2e2;
+      color: #991b1b;
+      font-weight: 800;
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      border: 1px solid #fecaca;
+    }
+    .no-print {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .btn-action {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+    }
+    .btn-action:hover {
+      background: #1d4ed8;
+    }
+    .question-block {
+      margin-bottom: 22px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #e2e8f0;
+      page-break-inside: avoid;
+    }
+    .q-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .q-number {
+      font-weight: 800;
+      color: var(--primary);
+      font-size: 1rem;
+    }
+    .q-badge {
+      background: #e2e8f0;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #475569;
+    }
+    .q-discipline {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-weight: 600;
+      background: #f1f5f9;
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+    .q-text {
+      margin-bottom: 10px;
+      font-size: 0.95rem;
+      text-align: justify;
+    }
+    .q-options {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .q-option {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 0.9rem;
+    }
+    .opt-letter {
+      font-weight: 700;
+      background: #f1f5f9;
+      border: 1px solid #cbd5e1;
+      border-radius: 4px;
+      width: 22px;
+      height: 22px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 0.8rem;
+    }
+    .opt-text {
+      padding-top: 1px;
+    }
+    .cartao-resposta {
+      margin-top: 36px;
+      padding: 24px;
+      border: 2px dashed #94a3b8;
+      border-radius: 8px;
+      background: #f8fafc;
+      page-break-before: always;
+    }
+    .cartao-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-top: 16px;
+    }
+    .cartao-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.8rem;
+    }
+    .cartao-num {
+      font-weight: 700;
+      width: 24px;
+    }
+    .cartao-bolhas {
+      display: flex;
+      gap: 4px;
+    }
+    .bolha {
+      width: 18px;
+      height: 18px;
+      border: 1px solid #64748b;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.65rem;
+      font-weight: 600;
+    }
+    .gabarito-section {
+      margin-top: 36px;
+      page-break-before: always;
+    }
+    .gabarito-tabela {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 16px;
+      margin-bottom: 24px;
+    }
+    .gabarito-tabela th, .gabarito-tabela td {
+      border: 1px solid var(--border);
+      padding: 6px 10px;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+    .gabarito-tabela th {
+      background: var(--primary);
+      color: white;
+    }
+    .gabarito-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 12px;
+      padding: 10px;
+      background: #f8fafc;
+      border-radius: 6px;
+      border-left: 4px solid var(--primary);
+    }
+    .gabarito-letra {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--primary);
+      background: #e2e8f0;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+      flex-shrink: 0;
+    }
+    @media print {
+      body {
+        background: white;
+        padding: 0;
+        font-size: 9.5pt;
+      }
+      .container {
+        max-width: 100%;
+        padding: 0;
+        box-shadow: none;
+      }
+      .no-print {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="no-print">
+      <button class="btn-action" onclick="window.print()">
+        <i class="fas fa-print"></i> Imprimir Caderno Completo (PDF)
+      </button>
+      <a href="../index.html" class="btn-action" style="background: #475569;">
+        <i class="fas fa-arrow-left"></i> Voltar ao Sistema de Estudos
+      </a>
+      <a href="CENTRAL_DE_PROVAS.html" class="btn-action" style="background: #0284c7;">
+        <i class="fas fa-folder-open"></i> Central de Provas
+      </a>
+    </div>
+
+    <div class="header-box">
+      <div class="header-titles">
+        <h1>Câmara Municipal de Meruoca — Concurso Público 2026</h1>
+        <h2>Caderno Oficial de Questões • Semana 2 — Dia 4 (10/09/2026)</h2>
+        <p>Cargo: <strong>Técnico Legislativo</strong> • 40 Questões • Padrão Oficial da Banca INBRASP (4 Alternativas A, B, C, D)</p>
+      </div>
+      <div>
+        <span class="badge-banca">INBRASP 2026</span>
+      </div>
+    </div>
+
+    <!-- Instruções para o Candidato -->
+    <div style="background: #f1f5f9; border-left: 4px solid var(--primary); padding: 12px 16px; margin-bottom: 24px; border-radius: 4px; font-size: 0.85rem;">
+      <strong>INSTRUÇÕES GERAIS DE APLICAÇÃO:</strong>
+      <ul style="margin: 6px 0 0 18px; padding: 0;">
+        <li>Este caderno contém <strong>40 questões inéditas e oficiais</strong>: 20 de Conhecimentos Específicos (Sessões Plenárias, Ordem do Dia, Partidos Políticos e Sistemas Eleitorais) + 20 de Matemática & RLM (Razão, Proporção, Regra de Três, Porcentagem e Juros Simples).</li>
+        <li>Cada questão apresenta <strong>4 alternativas (A, B, C e D)</strong>, com exatamente uma única opção correta.</li>
+        <li>Tempo recomendado de resolução do bloco: <strong>2 horas e 30 minutos</strong> (média de 3,5 minutos por questão).</li>
+        <li>Ao final do caderno constam a folha de Cartão-Resposta para treino de preenchimento e o Gabarito com Comentários Pedagógicos detalhados.</li>
+      </ul>
+    </div>
+
+    <!-- Bloco das 40 Questões -->
+    <div class="questions-wrapper">
+      
+    <div class="question-block" id="q_301">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 1</span>
+          <span class="q-badge">ID 301</span>
+        </div>
+        <span class="q-discipline">Técnico Legislativo • Sessões Plenárias: Tipologias e Finalidades</span>
+      </div>
+      <div class="q-text">
+        De acordo com as regras regimentais típicas das Câmaras Municipais e os princípios do Processo Legislativo, as sessões plenárias dividem-se em ordinárias, extraordinárias, solenes e secretas. Sobre a Sessão Extraordinária, é correto afirmar que:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Destina-se exclusivamente à discussão e votação das matérias constantes do ato de sua convocação, sendo vedada a deliberação sobre assunto estranho à pauta.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Ocorre em dias e horários pré-determinados no Regimento Interno, independentemente de convocação especial prévia.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Gera obrigatoriamente o pagamento de parcela indenizatória aos vereadores em valor equivalente a 50% do subsídio mensal.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Pode deliberar sobre qualquer matéria de interesse do Município, inclusive projetos apresentados verbalmente na hora da sessão.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_302">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 2</span>
+          <span class="q-badge">ID 302</span>
+        </div>
+        <span class="q-discipline">Técnico Legislativo • Quórum de Abertura e Instalação de Sessão Plenária</span>
+      </div>
+      <div class="q-text">
+        Para que uma Sessão Ordinária da Câmara Municipal de Meruoca possa ser legalmente aberta e tenha início a sua fase deliberativa, exige-se via de regra o quórum de presença de:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Dois terços (2/3) de todos os membros que compõem a Câmara Municipal.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Maioria absoluta dos membros da Câmara Municipal (metade mais um dos vereadores).</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Pelo menos um terço (1/3) dos vereadores para abertura e deliberação indistinta.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Apenas o Presidente e o Primeiro Secretário da Mesa Diretora, independente do número de presentes.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_303">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 3</span>
+          <span class="q-badge">ID 303</span>
+        </div>
+        <span class="q-discipline">Técnico Legislativo • Fases da Sessão Plenária: Expediente vs. Ordem do Dia</span>
+      </div>
+      <div class="q-text">
+        A sessão ordinária da Câmara Municipal é estruturada em momentos distintos. A fase destinada prioritariamente à leitura de correspondências recebidas, apresentação de proposições e breves pronunciamentos de vereadores, antes das votações, denomina-se:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Ordem do Dia.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Tribuna Livre Comunitária.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Pequeno Expediente (ou Expediente).</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Explicação Pessoal Final.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_304">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 4</span>
+          <span class="q-badge">ID 304</span>
+        </div>
+        <span class="q-discipline">Técnico Legislativo • Convocação Extraordinária da Câmara Municipal</span>
+      </div>
+      <div class="q-text">
+        A convocação extraordinária da Câmara Municipal fora do período ordinário de funcionamento ou em situações de urgência e interesse público relevante pode ser promovida legitimamente por:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Qualquer cidadão eleitor do Município mediante abaixo-assinado com 50 assinaturas.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Exclusivamente pelo Delegado de Polícia da comarca local em razão de inquérito penal.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Pelo Juiz de Direito da Vara Única da Comarca com anuência do Ministério Público.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Pelo Prefeito Municipal, pelo Presidente da Câmara ou por requerimento da maioria dos vereadores.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_305">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 5</span>
+          <span class="q-badge">ID 305</span>
+        </div>
+        <span class="q-discipline">Técnico Legislativo • Instrumentos Parlamentares: Pedido de Vista</span>
+      </div>
+      <div class="q-text">
+        Durante a tramitação de uma matéria colocada em discussão na Ordem do Dia, um vereador manifesta a necessidade de examinar mais detidamente o texto do projeto antes de proferir seu voto. O instrumento regimental cabível para essa finalidade é o:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Pedido de Vista.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Recurso de Agravo Regimental.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Destaque para Votação em Separado.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Voto em Separado da Oposição.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_306">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 6</span>
+          <span class="q-badge">ID 306</span>
+        </div>
+        <span class="q-discipline">Técnico Legislativo • Proposições: Emendas Modificativas, Supressivas e Aditivas</span>
+      </div>
+      <div class="q-text">
+        No processo legislativo municipal, as emendas parlamentares apresentadas a um projeto de lei classificam-se conforme sua finalidade material. A emenda que visa eliminar parte do texto de um artigo ou parágrafo é classificada como:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Emenda Modificativa.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Emenda Supressiva.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Emenda Aditiva.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Emenda Aglutinativa.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_307">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 7</span>
+          <span class="q-badge">ID 307</span>
+        </div>
+        <span class="q-discipline">Técnico Legislativo • Atribuições do Presidente da Câmara e Voto de Minerva</span>
+      </div>
+      <div class="q-text">
+        No exercício das funções da Presidência da Câmara Municipal, o Presidente da Mesa Diretora possui regras especiais quanto ao direito de voto no Plenário. Em regra geral, o Presidente vota quando:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Desejar manifestar sua opinião partidária em qualquer discussão preliminar.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">A votação envolver matéria contábil de fornecedores de pequeno valor.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Houver empate na votação pública (voto de desempate/Minerva) ou em matérias que exijam quórum qualificado (como 2/3).</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">O Prefeito Municipal enviar mensagem com pedido expresso de manifestação presidencial.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_308">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 8</span>
+          <span class="q-badge">ID 308</span>
+        </div>
+        <span class="q-discipline">Técnico Legislativo • Lideranças Partidárias e Colégio de Líderes</span>
+      </div>
+      <div class="q-text">
+        A representação partidária no âmbito do Poder Legislativo organiza-se por meio de lideranças. Sobre o papel dos Líderes Partidários e do Colégio de Líderes, assinale a afirmativa correta:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">O Líder partidário perde o direito de discursar nas sessões se não for membro da Mesa Diretora.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">O Colégio de Líderes substitui as Comissões Permanentes e pode aprovar leis sem necessidade de plenário.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Os Líderes são nomeados diretamente pelo Prefeito Municipal para representá-lo na bancada dos vereadores.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">O Líder é o porta-voz autorizado de sua bancada partidária, podendo fazer uso da palavra pela liderança e orientar o voto de seus liderados nas deliberações.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_309">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 9</span>
+          <span class="q-badge">ID 309</span>
+        </div>
+        <span class="q-discipline">Técnico Legislativo • Maioria e Minoria na Composição da Câmara</span>
+      </div>
+      <div class="q-text">
+        O princípio da proporcionalidade partidária, previsto no Art. 58, § 1º da Constituição Federal e aplicável às Câmaras Municipais, assegura que:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">A composição das Comissões Permanentes deve reproduzir, tanto quanto possível, a representação proporcional dos partidos ou blocos parlamentares que participam da Casa.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Todos os partidos com representação na Câmara devem ocupar obrigatoriamente um cargo na Mesa Diretora de forma rotativa a cada 6 meses.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">O partido da Minoria tem o direito de indicar o Presidente da Câmara, independentemente da vontade do Plenário.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">A Mesa Diretora deve ser composta exclusivamente por vereadores pertencentes à bancada de sustentação do Prefeito.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_310">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 10</span>
+          <span class="q-badge">ID 310</span>
+        </div>
+        <span class="q-discipline">Técnico Legislativo • Sistema Eleitoral para Vereadores: Sistema Proporcional</span>
+      </div>
+      <div class="q-text">
+        No Brasil, a eleição para os cargos do Poder Executivo (Prefeito e Governador) segue o Sistema Majoritário, enquanto a eleição para o cargo de Vereador da Câmara Municipal obedece estritamente ao:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Sistema Distrital Puro, dividindo-se o Município em circunscrições de bairro.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Sistema Proporcional de Lista Aberta, no qual as vagas conquistadas pelo partido dependem da soma dos votos da legenda e dos seus candidatos.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Sistema Majoritário Simples em turno único, elegendo-se quem obtiver mais votos absolutos independentemente do partido.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Sistema de Sufrágio Censitário Obrigatório com lista partidária pré-ordenada e fechada.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_311">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 11</span>
+          <span class="q-badge">ID 311</span>
+        </div>
+        <span class="q-discipline">Técnico Legislativo • Cálculo do Quociente Eleitoral (QE)</span>
+      </div>
+      <div class="q-text">
+        Em uma eleição municipal para a Câmara de Vereadores com 9 cadeiras disponíveis, foram apurados exatamente 18.000 votos válidos (soma dos votos nominais e de legenda). Sabendo que o Quociente Eleitoral (QE) é obtido pela divisão do total de votos válidos pelo número de lugares a preencher (desprezada a fração se igual ou inferior a meio, ou arredondada para um se superior), qual é o Quociente Eleitoral dessa eleição?
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">1.500 votos.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">1.800 votos.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">2.000 votos.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">2.250 votos.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_312">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 12</span>
+          <span class="q-badge">ID 312</span>
+        </div>
+        <span class="q-discipline">Técnico Legislativo • Cálculo do Quociente Partidário (QP)</span>
+      </div>
+      <div class="q-text">
+        Considerando uma eleição em que o Quociente Eleitoral (QE) foi fixado em 2.000 votos, determinado partido político obteve um total de 6.400 votos válidos (entre votos nominais em seus candidatos e votos de legenda). Conforme o Código Eleitoral (Art. 107), o Quociente Partidário (QP) desse partido é igual a:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">1 cadeira.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">2 cadeiras.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">4 cadeiras.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">3 cadeiras (desprezada a fração restante).</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_313">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 13</span>
+          <span class="q-badge">ID 313</span>
+        </div>
+        <span class="q-discipline">Técnico Legislativo • Cláusula de Barreira Individual do Candidato a Vereador</span>
+      </div>
+      <div class="q-text">
+        Para que um candidato a Vereador seja considerado eleito pelas vagas conquistadas pelo seu partido por meio do Quociente Partidário, a legislação eleitoral brasileira (Lei nº 9.504/97 e Código Eleitoral com alterações recentes) exige que o candidato tenha obtido votação nominal mínima de pelo menos:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">10% do Quociente Eleitoral (QE).</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">5% do total de eleitores inscritos no Município.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">20% dos votos totais da legenda partidária.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">50% da votação do candidato mais votado do Município.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_314">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 14</span>
+          <span class="q-badge">ID 314</span>
+        </div>
+        <span class="q-discipline">Técnico Legislativo • Distribuição das Sobras Eleitorais</span>
+      </div>
+      <div class="q-text">
+        Quando as vagas de vereador não são integralmente preenchidas pelo Quociente Partidário, as vagas restantes ('sobras') são distribuídas pelo critério das maiores médias. A fórmula da média de cada partido participante é obtida por:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Média = Votos Válidos do Município / Número Total de Partidos Concorrentes.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Média = Número de Votos Válidos do Partido / (Número de Vagas Já Obtidas pelo Partido + 1).</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Média = Idade do Candidato Mais Velho + Votos Nominais da Coligação.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Média = Quociente Eleitoral * 2 / Total de Vagas da Câmara.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_315">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 15</span>
+          <span class="q-badge">ID 315</span>
+        </div>
+        <span class="q-discipline">Técnico Legislativo • Fidelidade Partidária e Perda do Mandato Eletivo</span>
+      </div>
+      <div class="q-text">
+        O mandato de vereador conquistado no sistema proporcional pertence ao partido político. Conforme jurisprudência pacífica do TSE e do STF, o vereador que se desfiliar do partido sem justa causa perderá o mandato. Constitui hipótese legítima de JUSTA CAUSA para desfiliação partidária:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Desacordo pessoal entre o vereador e o tesoureiro do diretório municipal.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Convite financeiramente mais vantajoso oferecido por liderança do Poder Executivo.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Mudança substancial ou desvio reiterado do programa partidário, ou grave discriminação política pessoal comprovada.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Vontade unilateral do vereador expressa por notificação simples no cartório de títulos.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_316">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 16</span>
+          <span class="q-badge">ID 316</span>
+        </div>
+        <span class="q-discipline">Técnico Legislativo • Comissões Parlamentares de Inquérito (CPIs) Municipais</span>
+      </div>
+      <div class="q-text">
+        A criação de Comissão Parlamentar de Inquérito (CPI) no âmbito da Câmara Municipal constitui importante instrumento de fiscalização da minoria parlamentar. Para a sua instauração válida, a CF/88 (art. 58, § 3º) e a Lei Orgânica exigem simultaneamente:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Autorização prévia do Tribunal de Contas e concordância formal do Prefeito Municipal.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Votação unânime de todos os vereadores presentes e prazo indeterminado de atuação.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Aval da Procuradoria Jurídica do Município e homologação judicial pelo Juiz de Direito da Comarca.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Requerimento de pelo menos um terço (1/3) dos membros da Câmara, indicação de fato determinado e fixação de prazo certo de funcionamento.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_317">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 17</span>
+          <span class="q-badge">ID 317</span>
+        </div>
+        <span class="q-discipline">Técnico Legislativo • Julgamento das Contas do Prefeito e Quórum Qualificado</span>
+      </div>
+      <div class="q-text">
+        O controle externo da Câmara Municipal sobre as contas anuais prestadas pelo Chefe do Poder Executivo é exercido com o auxílio do Tribunal de Contas competente. Sobre o Parecer Prévio emitido pela Corte de Contas, a CF/88 (art. 31, § 2º) estabelece que ele:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Só deixará de prevalecer por decisão de dois terços (2/3) dos membros da Câmara Municipal.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Tem caráter meramente opinativo simples, bastando a maioria dos presentes na sessão para derrubá-lo.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">É irrecorrível e vincula a Câmara, impedindo qualquer deliberação política em sentido contrário.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Depende de homologação posterior pelo Ministério Público de Contas para produzir efeitos perante a Câmara.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_318">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 18</span>
+          <span class="q-badge">ID 318</span>
+        </div>
+        <span class="q-discipline">Técnico Legislativo • Inviolabilidade e Imunidade Material do Vereador</span>
+      </div>
+      <div class="q-text">
+        Em relação ao estatuto dos congressistas e parlamentares, a Constituição Federal estende aos Vereadores a prerrogativa da imunidade material (Art. 29, VIII). De acordo com o texto constitucional, os vereadores gozam de inviolabilidade por suas opiniões, palavras e votos:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Em todo o território nacional, sob quaisquer circunstâncias de sua vida pessoal e partidária.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">No exercício do mandato e na circunscrição do respectivo Município.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Apenas dentro do recinto físico do Plenário da Câmara durante as sessões solenes.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Exclusivamente durante o período eleitoral oficial regulamentado pelo TSE.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_319">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 19</span>
+          <span class="q-badge">ID 319</span>
+        </div>
+        <span class="q-discipline">Técnico Legislativo • Registro e Ata das Sessões Legislativas</span>
+      </div>
+      <div class="q-text">
+        Ao término de cada sessão plenária da Câmara Municipal, os trabalhos legislativos, debates, presenças e votações ocorridas são formalmente consignados em documento oficial denominado Ata da Sessão. A respeito da Ata, é correto afirmar:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">A Ata é elaborada com valor sigiloso, sendo vedado o acesso aos cidadãos e à imprensa local.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">A Ata só precisa ser redigida uma vez por ano, ao final da sessão legislativa anual de dezembro.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">A Ata é lida e submetida à apreciação do Plenário na sessão ordinária seguinte, podendo os vereadores solicitar retificações antes de sua aprovação e assinatura.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">A elaboração da Ata compete ao Prefeito Municipal, que a assina e publica no Diário Oficial.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_320">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 20</span>
+          <span class="q-badge">ID 320</span>
+        </div>
+        <span class="q-discipline">Técnico Legislativo • Atos da Presidência da Câmara: Decretos, Resoluções e Portarias</span>
+      </div>
+      <div class="q-text">
+        A competência administrativa interna da Câmara Municipal manifesta-se por meio de diferentes espécies normativas e atos regimentais. Para nomear servidor efetivo aprovado em concurso público ou conceder diárias de viagem a vereadores e servidores, o ato administrativo típico expedido pelo Presidente da Câmara é a:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Lei Complementar Municipal.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Emenda à Lei Orgânica.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Medida Provisória Legislativa.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Portaria da Presidência.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_321">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 21</span>
+          <span class="q-badge">ID 321</span>
+        </div>
+        <span class="q-discipline">Matemática / RLM • Razão e Proporção: Divisão Simples</span>
+      </div>
+      <div class="q-text">
+        Em um concurso promovido pela Câmara Municipal, a razão entre o número de candidatos inscritos para o cargo de Técnico Legislativo e o número de vagas ofertadas é de 45 para 1. Sabendo que foram abertas exatamente 4 vagas para o cargo, o número total de candidatos inscritos nessa seleção foi de:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">180 candidatos.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">160 candidatos.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">200 candidatos.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">140 candidatos.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_322">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 22</span>
+          <span class="q-badge">ID 322</span>
+        </div>
+        <span class="q-discipline">Matemática / RLM • Divisão em Partes Diretamente Proporcionais</span>
+      </div>
+      <div class="q-text">
+        Dois servidores da Câmara Municipal, Carlos e Mariana, digitalizaram juntos um total de 240 processos legislativos. A divisão do trabalho foi feita em partes diretamente proporcionais ao tempo de serviço de cada um no órgão: Carlos trabalha há 3 anos na Câmara e Mariana há 5 anos. Quantos processos Mariana digitalizou?
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">90 processos.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">150 processos.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">120 processos.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">160 processos.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_323">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 23</span>
+          <span class="q-badge">ID 323</span>
+        </div>
+        <span class="q-discipline">Matemática / RLM • Divisão em Partes Inversamente Proporcionais</span>
+      </div>
+      <div class="q-text">
+        A chefia do setor administrativo dividiu uma gratificação de R$ 1.800,00 entre dois técnicos em partes inversamente proporcionais ao número de dias que cada um faltou no mês. O técnico A teve 2 faltas e o técnico B teve 4 faltas. O valor recebido pelo técnico A foi de:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">R$ 600,00.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">R$ 900,00.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">R$ 1.200,00.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">R$ 1.400,00.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_324">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 24</span>
+          <span class="q-badge">ID 324</span>
+        </div>
+        <span class="q-discipline">Matemática / RLM • Regra de Três Simples Direta: Consumo de Materiais</span>
+      </div>
+      <div class="q-text">
+        O setor de reprografia da Câmara Municipal consome 6 resmas de papel A4 a cada 15 dias úteis de trabalho ordinário. Mantido exatamente o mesmo padrão diário de consumo, quantas resmas de papel serão consumidas em um período de 45 dias úteis?
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">12 resmas.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">15 resmas.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">24 resmas.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">18 resmas.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_325">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 25</span>
+          <span class="q-badge">ID 325</span>
+        </div>
+        <span class="q-discipline">Matemática / RLM • Regra de Três Simples Inversa: Tempo e Equipe</span>
+      </div>
+      <div class="q-text">
+        Uma equipe composta por 4 arquivistas consegue organizar todo o acervo histórico de leis municipais em exatamente 15 dias de trabalho. Se a equipe fosse reforçada e contasse com 6 arquivistas com a mesma capacidade operacional dos primeiros, em quantos dias o mesmo acervo seria organizado?
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">10 dias.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">8 dias.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">12 dias.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">9 dias.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_326">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 26</span>
+          <span class="q-badge">ID 326</span>
+        </div>
+        <span class="q-discipline">Matemática / RLM • Regra de Três Composta: Produção de Relatórios</span>
+      </div>
+      <div class="q-text">
+        Trabalhando 6 horas por dia durante 8 dias, 3 redatores legislativos elaboram as atas de 72 sessões plenárias. Quantas atas de sessões plenárias seriam elaboradas por 4 redatores, trabalhando 8 horas por dia durante 5 dias, mantida a mesma produtividade individual?
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">75 atas.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">80 atas.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">90 atas.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">60 atas.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_327">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 27</span>
+          <span class="q-badge">ID 327</span>
+        </div>
+        <span class="q-discipline">Matemática / RLM • Porcentagem: Cálculo de Desconto Comercial</span>
+      </div>
+      <div class="q-text">
+        A Câmara de Meruoca realizou processo licitatório para compra de novos computadores cujo valor total tabelado era de R$ 45.000,00. A empresa vencedora ofereceu um desconto de 12% sobre o valor da tabela. Qual foi o valor final pago pela aquisição dos equipamentos?
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">R$ 40.500,00.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">R$ 38.600,00.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">R$ 39.600,00.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">R$ 41.200,00.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_328">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 28</span>
+          <span class="q-badge">ID 328</span>
+        </div>
+        <span class="q-discipline">Matemática / RLM • Porcentagem: Variação Percentual</span>
+      </div>
+      <div class="q-text">
+        No mês de janeiro, o número de atendimentos presenciais ao público na ouvidoria da Câmara foi de 250 pessoas. No mês de fevereiro, esse número subiu para 325 atendimentos. Qual foi o percentual de aumento verificado de janeiro para fevereiro?
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">25%.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">28%.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">35%.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">30%.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_329">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 29</span>
+          <span class="q-badge">ID 329</span>
+        </div>
+        <span class="q-discipline">Matemática / RLM • Porcentagem: Aumentos Sucessivos</span>
+      </div>
+      <div class="q-text">
+        O salário de um servidor público municipal sofreu dois reajustes salariais sucessivos: o primeiro de 10% no início do ano e o segundo de 20% no segundo semestre. O reajuste acumulado real sobre o salário inicial do servidor foi de:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">32%.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">30%.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">31%.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">33%.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_330">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 30</span>
+          <span class="q-badge">ID 330</span>
+        </div>
+        <span class="q-discipline">Matemática / RLM • Juros Simples: Cálculo de Juros</span>
+      </div>
+      <div class="q-text">
+        Um servidor realizou uma aplicação financeira no valor de R$ 8.000,00 em regime de juros simples, a uma taxa de 1,5% ao mês, durante um período de 10 meses. O valor total dos juros rendidos por essa aplicação foi de:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">R$ 1.000,00.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">R$ 1.200,00.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">R$ 1.400,00.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">R$ 960,00.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_331">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 31</span>
+          <span class="q-badge">ID 331</span>
+        </div>
+        <span class="q-discipline">Matemática / RLM • Juros Simples: Cálculo do Montante</span>
+      </div>
+      <div class="q-text">
+        Um empréstimo consignado de R$ 12.000,00 foi contratado à taxa de juros simples de 2% ao mês para ser quitado integralmente ao final de 8 meses em parcela única. Qual será o montante total (capital + juros) a ser pago na liquidação do empréstimo?
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">R$ 13.600,00.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">R$ 14.120,00.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">R$ 13.920,00.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">R$ 14.400,00.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_332">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 32</span>
+          <span class="q-badge">ID 332</span>
+        </div>
+        <span class="q-discipline">Matemática / RLM • Juros Simples: Determinação do Tempo</span>
+      </div>
+      <div class="q-text">
+        Durante quanto tempo um capital de R$ 5.000,00 deve permanecer aplicado a uma taxa de juros simples de 2,5% ao mês para que gere um montante de R$ 6.500,00?
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">8 meses.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">10 meses.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">14 meses.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">12 meses.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_333">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 33</span>
+          <span class="q-badge">ID 333</span>
+        </div>
+        <span class="q-discipline">Matemática / RLM • Média Aritmética Simples e Ponderada</span>
+      </div>
+      <div class="q-text">
+        Na avaliação de desempenho de um estagiário na Câmara, foram aplicadas 4 avaliações com notas de 0 a 10. Suas três primeiras notas foram 7,0; 8,0 e 6,0. Para que sua média aritmética final seja exatamente 8,0, qual nota ele precisa tirar na quarta avaliação?
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">11,0 (impossível na escala de 0 a 10).</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">9,0.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">10,0.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">8,5.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_334">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 34</span>
+          <span class="q-badge">ID 334</span>
+        </div>
+        <span class="q-discipline">Matemática / RLM • Equações do 1º Grau aplicadas ao Serviço Público</span>
+      </div>
+      <div class="q-text">
+        Em uma sessão plenária extraordinária, o dobro do número de vereadores presentes somado a 5 resulta em 23 vereadores. Quantos vereadores estavam presentes nessa sessão?
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">8 vereadores.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">9 vereadores.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">10 vereadores.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">11 vereadores.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_335">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 35</span>
+          <span class="q-badge">ID 335</span>
+        </div>
+        <span class="q-discipline">Matemática / RLM • Sistema de Equações do 1º Grau</span>
+      </div>
+      <div class="q-text">
+        O almoxarifado da Câmara comprou 50 unidades de materiais de expediente entre pastas organizadoras e canetas esferográficas, totalizando uma despesa de R$ 160,00. Cada pasta custou R$ 5,00 e cada caneta custou R$ 2,00. Quantas pastas organizadoras foram compradas?
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">15 pastas.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">25 pastas.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">20 pastas.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">30 pastas.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_336">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 36</span>
+          <span class="q-badge">ID 336</span>
+        </div>
+        <span class="q-discipline">Matemática / RLM • Conversão de Unidades de Tempo e Medida</span>
+      </div>
+      <div class="q-text">
+        Uma gravação audiovisual de uma sessão solene da Câmara Municipal durou exatamente 2 horas, 45 minutos e 30 segundos. Convertendo todo esse tempo exclusivamente para segundos, obtém-se:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">9.750 segundos.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">10.230 segundos.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">9.850 segundos.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">9.930 segundos.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_337">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 37</span>
+          <span class="q-badge">ID 337</span>
+        </div>
+        <span class="q-discipline">Matemática / RLM • RLM: Conectivos Lógicos e Tabela Verdade da Conjunção</span>
+      </div>
+      <div class="q-text">
+        Considerando as proposições simples p: 'O projeto de lei foi aprovado em plenário' (Verdadeira) e q: 'O Prefeito vetou o projeto' (Falsa), o valor lógico da proposição composta 'O projeto de lei foi aprovado E o Prefeito vetou o projeto' (p ^ q) é:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Falso, pois na conjunção ('E') a proposição composta só é verdadeira quando todas as proposições componentes forem simultaneamente verdadeiras.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Verdadeiro, pois basta que uma das proposições seja verdadeira para validar a conjunção.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Inconclusivo, pois depende da publicação oficial no Diário da Câmara.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Verdadeiro, pois a conjunção assume sempre o valor da proposição que veio primeiro.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_338">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 38</span>
+          <span class="q-badge">ID 338</span>
+        </div>
+        <span class="q-discipline">Matemática / RLM • RLM: Negação da Proposição Condicional (Se... então)</span>
+      </div>
+      <div class="q-text">
+        Na lógica sentencial clássica, a negação lógica da proposição condicional 'Se o servidor cumpre a meta, então recebe o elogio funcional' equivale logicamente a:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Se o servidor não cumpre a meta, então não recebe o elogio funcional.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">O servidor cumpre a meta e não recebe o elogio funcional.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Se o servidor recebe o elogio funcional, então cumpriu a meta.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">O servidor não cumpre a meta ou recebe o elogio funcional.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_339">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 39</span>
+          <span class="q-badge">ID 339</span>
+        </div>
+        <span class="q-discipline">Matemática / RLM • Sequências Numéricas e Padrões Lógicos</span>
+      </div>
+      <div class="q-text">
+        Observe a sequência lógica de números inteiros: 3, 7, 15, 31, 63, ... Mantendo-se o mesmo padrão aritmético de formação, o próximo termo dessa sequência é:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">95.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">125.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">127.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">129.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_340">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 40</span>
+          <span class="q-badge">ID 340</span>
+        </div>
+        <span class="q-discipline">Matemática / RLM • Interpretação de Gráficos e Conjuntos Numéricos</span>
+      </div>
+      <div class="q-text">
+        Em uma pesquisa com os 30 servidores da Câmara Municipal, constatou-se que 18 servidores têm curso de capacitação em Processo Legislativo e 14 têm capacitação em Gestão Pública. Sabendo que 6 servidores possuem ambos os cursos, quantos servidores não possuem nenhum desses dois cursos?
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">2 servidores.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">3 servidores.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">5 servidores.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">4 servidores.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+    </div>
+
+    <!-- Cartão Resposta Oficial -->
+    <div class="cartao-resposta">
+      <h3 style="margin-top: 0; color: var(--primary); text-transform: uppercase; font-size: 1.1rem; border-bottom: 2px solid var(--border); padding-bottom: 8px;">
+        <i class="fas fa-pen"></i> Folha de Respostas — Treino de Preenchimento de Gabarito
+      </h3>
+      <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 16px;">
+        Preencha completamente a bolha correspondente à alternativa assinalada com caneta esferográfica preta ou azul.
+      </p>
+      <div class="cartao-grid">
+        
+    <div class="cartao-item">
+      <span class="cartao-num">01</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">02</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">03</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">04</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">05</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">06</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">07</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">08</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">09</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">10</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">11</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">12</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">13</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">14</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">15</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">16</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">17</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">18</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">19</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">20</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">21</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">22</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">23</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">24</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">25</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">26</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">27</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">28</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">29</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">30</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">31</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">32</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">33</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">34</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">35</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">36</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">37</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">38</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">39</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">40</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+      </div>
+    </div>
+
+    <!-- Gabarito e Comentários Pedagógicos -->
+    <div class="gabarito-section">
+      <h2 style="color: var(--primary); text-transform: uppercase; font-size: 1.25rem; border-bottom: 2px solid var(--border); padding-bottom: 8px;">
+        <i class="fas fa-check-double"></i> Gabarito Oficial & Comentários Didáticos
+      </h2>
+      
+      <table class="gabarito-tabela">
+        <thead>
+          <tr>
+            <th>Q1</th><th>Q2</th><th>Q3</th><th>Q4</th><th>Q5</th><th>Q6</th><th>Q7</th><th>Q8</th><th>Q9</th><th>Q10</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>A</strong></td><td><strong>B</strong></td><td><strong>C</strong></td><td><strong>D</strong></td><td><strong>A</strong></td><td><strong>B</strong></td><td><strong>C</strong></td><td><strong>D</strong></td><td><strong>A</strong></td><td><strong>B</strong></td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th>Q11</th><th>Q12</th><th>Q13</th><th>Q14</th><th>Q15</th><th>Q16</th><th>Q17</th><th>Q18</th><th>Q19</th><th>Q20</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>C</strong></td><td><strong>D</strong></td><td><strong>A</strong></td><td><strong>B</strong></td><td><strong>C</strong></td><td><strong>D</strong></td><td><strong>A</strong></td><td><strong>B</strong></td><td><strong>C</strong></td><td><strong>D</strong></td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th>Q21</th><th>Q22</th><th>Q23</th><th>Q24</th><th>Q25</th><th>Q26</th><th>Q27</th><th>Q28</th><th>Q29</th><th>Q30</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>A</strong></td><td><strong>B</strong></td><td><strong>C</strong></td><td><strong>D</strong></td><td><strong>A</strong></td><td><strong>B</strong></td><td><strong>C</strong></td><td><strong>D</strong></td><td><strong>A</strong></td><td><strong>B</strong></td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th>Q31</th><th>Q32</th><th>Q33</th><th>Q34</th><th>Q35</th><th>Q36</th><th>Q37</th><th>Q38</th><th>Q39</th><th>Q40</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>C</strong></td><td><strong>D</strong></td><td><strong>A</strong></td><td><strong>B</strong></td><td><strong>C</strong></td><td><strong>D</strong></td><td><strong>A</strong></td><td><strong>B</strong></td><td><strong>C</strong></td><td><strong>D</strong></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 style="color: var(--primary); font-size: 1rem; margin-top: 24px;">Justificativas Fundamentadas e Comentários Questão a Questão:</h3>
+      <div style="margin-top: 12px;">
+        
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 301 (Técnico Legislativo • Sessões Plenárias: Tipologias e Finalidades):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Conforme os princípios constitucionais (CF/88 art. 57, § 7º aplicável por simetria aos Municípios) e normas regimentais, na sessão legislativa extraordinária a Câmara Municipal delibera EXCLUSIVAMENTE sobre a matéria para a qual foi convocada. Além disso, a Emenda Constitucional nº 50/2006 vedou expressamente o pagamento de qualquer parcela indenizatória em razão de convocação extraordinária.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 302 (Técnico Legislativo • Quórum de Abertura e Instalação de Sessão Plenária):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Em regra de processo legislativo e direito parlamentar municipal, a abertura da sessão ordinária ou o início da Ordem do Dia (fase de deliberação e votação) exige a presença da MAIORIA ABSOLUTA dos membros da Casa (primeiro número inteiro superior à metade do total de vereadores). Sem quórum mínimo, a sessão não pode deliberar.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 303 (Técnico Legislativo • Fases da Sessão Plenária: Expediente vs. Ordem do Dia):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. A sessão plenária ordinária divide-se classicamente em: 1) Expediente (ou Pequeno/Grande Expediente), destinado a comunicações da Mesa, leitura de ofícios, apresentação de matérias e discursos; 2) Ordem do Dia, que é a fase deliberativa onde as proposições da pauta são discutidas e votadas; e 3) Explicações Pessoais, destinada às considerações finais dos vereadores.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 304 (Técnico Legislativo • Convocação Extraordinária da Câmara Municipal):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. A convocação extraordinária da Câmara Municipal decorre de preceito constitucional e das Leis Orgânicas municipais: pode ser realizada pelo Prefeito (em caso de urgência relevante), pelo Presidente da Câmara ou pela maioria dos membros do Legislativo. Autoridades externas ou cidadãos isolados não detêm legitimidade para convocar sessões extraordinárias da Casa Legislativa.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 305 (Técnico Legislativo • Instrumentos Parlamentares: Pedido de Vista):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. O Pedido de Vista é a prerrogativa regimental conferida ao parlamentar (seja em Comissão ou em Plenário) para obter acesso aos autos da proposição por prazo determinado, a fim de analisar a matéria detalhadamente antes de sua votação definitiva.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 306 (Técnico Legislativo • Proposições: Emendas Modificativas, Supressivas e Aditivas):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Conforme a técnica legislativa clássica e os Regimentos Internos: a) Emenda Supressiva: elimina qualquer parte de uma proposição; b) Emenda Aditiva: acrescenta algo novo ao texto; c) Emenda Modificativa: altera a redação sem criar ou extinguir substancialmente o dispositivo; d) Emenda Substitutiva: substitui integralmente a proposição (substitutivo) ou artigo.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 307 (Técnico Legislativo • Atribuições do Presidente da Câmara e Voto de Minerva):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Por expressa tradição parlamentar e previsão regimental, o Presidente da Câmara não vota nas deliberações ordinárias para manter a imparcialidade na condução dos trabalhos, VOTANDO APENAS: 1) para desempatar a votação (voto de Minerva); 2) em votações secretas (quando existentes); 3) quando a matéria exigir quórum de dois terços (2/3) ou maioria absoluta, onde sua presença e voto contam para o quórum qualificado.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 308 (Técnico Legislativo • Lideranças Partidárias e Colégio de Líderes):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. O Líder é o parlamentar formalmente indicado pela agremiação ou bloco partidário para expressar o posicionamento oficial da bancada, orientar a votação em plenário, participar de reuniões de definição de pauta no Colégio de Líderes e discursar no tempo destinado à liderança partidária.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 309 (Técnico Legislativo • Maioria e Minoria na Composição da Câmara):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. O Art. 58, § 1º da CF/88 estabelece que na constituição da Mesa e de cada Comissão é assegurada, tanto quanto possível, a representação proporcional dos partidos ou dos blocos parlamentares com assento na Casa Legislativa. Esse postulado garante o pluralismo democrático e a voz da minoria.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 310 (Técnico Legislativo • Sistema Eleitoral para Vereadores: Sistema Proporcional):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. A eleição para Vereador (assim como para Deputado Estadual e Federal) no Brasil segue o SISTEMA PROPORCIONAL DE LISTA ABERTA (CF/88, art. 29, II e Código Eleitoral). As vagas são distribuídas aos partidos de acordo com o Quociente Eleitoral e o Quociente Partidário, sendo eleitos os candidatos mais votados dentro de cada legenda que atingirem a cláusula de barreira individual.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 311 (Técnico Legislativo • Cálculo do Quociente Eleitoral (QE)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Aplicação direta da regra do Código Eleitoral (Art. 106): QE = Total de Votos Válidos / Número de Vagas a Preencher. No caso: QE = 18.000 / 9 = 2.000 votos. Logo, cada partido precisa de 2.000 votos para conquistar diretamente uma vaga.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 312 (Técnico Legislativo • Cálculo do Quociente Partidário (QP)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. O Quociente Partidário (QP) define quantas vagas o partido obtém diretamente pela primeira fase de distribuição: QP = Votação do Partido / QE. Calculando: QP = 6.400 / 2.000 = 3,2. O Art. 107 do Código Eleitoral determina que se despreza a fração! Portanto, o QP é igual a 3 cadeiras. A fração restante (0,2 ou 400 votos) concorre na distribuição das sobras.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 313 (Técnico Legislativo • Cláusula de Barreira Individual do Candidato a Vereador):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Conforme o Art. 108 do Código Eleitoral (incluído pela Reforma Eleitoral - Lei 13.165/2015), estarão eleitos os candidatos que tenham obtido votos em número igual ou superior a 10% (dez por cento) do Quociente Eleitoral, na ordem da votação nominal que cada um tenha recebido. Essa é a chamada cláusula de barreira/desempenho individual para evitar o efeito 'puxador extremo' de candidatos sem representatividade própria.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 314 (Técnico Legislativo • Distribuição das Sobras Eleitorais):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Conforme o Art. 109, I do Código Eleitoral, a média de cada agremiação para disputar as sobras é calculada dividindo-se o número de votos válidos atribuídos a cada partido pelo número de lugares por ele já obtidos mais 1: Média = Votos_Partido / (Vagas_Obtidas + 1). O partido que alcançar a maior média fica com a vaga, repetindo-se a operação até esgotarem as sobras.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 315 (Técnico Legislativo • Fidelidade Partidária e Perda do Mandato Eletivo):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. A Lei dos Partidos Políticos (Lei 9.096/95, art. 22-A) e a Resolução TSE nº 22.610/2007 preveem taxativamente as hipóteses de justa causa: 1) mudança substancial ou desvio reiterado do programa partidário; 2) grave discriminação política pessoal; e 3) mudança de partido efetuada durante a 'janela partidária' (nos 30 dias que antecedem o prazo de filiação no ano da eleição do término do mandato).</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 316 (Técnico Legislativo • Comissões Parlamentares de Inquérito (CPIs) Municipais):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. São três os requisitos cumulativos e indispensáveis para a instauração de CPI (CF/88 art. 58, § 3º e jurisprudência vinculante do STF): 1) requerimento de no mínimo 1/3 (um terço) dos membros da Casa; 2) apuração de fato determinado de interesse público; e 3) funcionamento por prazo certo. Presentes os requisitos, a instalação é direito público subjetivo das minorias, independendo de aprovação do plenário.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 317 (Técnico Legislativo • Julgamento das Contas do Prefeito e Quórum Qualificado):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Conforme o Art. 31, § 2º da Constituição Federal: 'O parecer prévio, emitido pelo órgão competente sobre as contas que o Prefeito deve anualmente prestar, só deixará de prevalecer por decisão de dois terços dos membros da Câmara Municipal'. É uma das regras mais cobradas pela banca INBRASP em concursos legislativos.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 318 (Técnico Legislativo • Inviolabilidade e Imunidade Material do Vereador):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. A CF/88, em seu Art. 29, VIII, assegura expressamente a inviolabilidade dos Vereadores por suas opiniões, palavras e votos NO EXERCÍCIO DO MANDATO e NA CIRCUNSCRIÇÃO DO MUNICÍPIO. Atenção: vereador NÃO possui imunidade formal/processual ampla (foro por prerrogativa federal geral ou imunidade prisional ampla de parlamentar federal), limitando-se à inviolabilidade material territorialmente demarcada.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 319 (Técnico Legislativo • Registro e Ata das Sessões Legislativas):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. A Ata da sessão é lavrada pela Secretaria da Câmara sob supervisão da Mesa Diretora. Na sessão subsequente, a Ata é colocada em discussão e votação para que os vereadores possam requerer correções ou retificações quanto a falas ou registros de votos, sendo em seguida assinada pela Mesa e disponibilizada publicamente.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 320 (Técnico Legislativo • Atos da Presidência da Câmara: Decretos, Resoluções e Portarias):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Os atos de administração interna e de gestão de pessoal no âmbito da Câmara (como nomeação, exoneração, concessão de férias, licenças e autorização de diárias) são formalizados por meio de PORTARIA expedida pelo Presidente da Câmara. Resoluções e Decretos Legislativos tratam de matérias de competência privativa do Plenário.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 321 (Matemática / RLM • Razão e Proporção: Divisão Simples):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. A razão entre inscritos (x) e vagas (v) é expressa pela proporção: x / v = 45 / 1. Como v = 4, temos: x / 4 = 45 / 1  =>  x = 4 * 45 = 180 candidatos inscritos.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 322 (Matemática / RLM • Divisão em Partes Diretamente Proporcionais):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Na divisão em partes diretamente proporcionais aos números 3 e 5, a soma das partes é: 3 + 5 = 8 partes. Cada parte (constante de proporcionalidade k) vale: k = 240 / 8 = 30 processos. Logo, Mariana, que tem proporção 5, digitalizou: 5 * 30 = 150 processos. (Carlos digitalizou 3 * 30 = 90).</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 323 (Matemática / RLM • Divisão em Partes Inversamente Proporcionais):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Dividir em partes inversamente proporcionais a 2 e 4 equivale a dividir em partes diretamente proporcionais aos inversos 1/2 e 1/4. Multiplicando pelo MMC (4) para eliminar as frações: 1/2 * 4 = 2 partes para A; 1/4 * 4 = 1 parte para B. Total de partes = 2 + 1 = 3 partes. O valor de cada parte é 1.800 / 3 = R$ 600,00. Logo, o técnico A recebe 2 * 600 = R$ 1.200,00 (e o técnico B recebe 1 * 600 = R$ 600,00).</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 324 (Matemática / RLM • Regra de Três Simples Direta: Consumo de Materiais):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Trata-se de uma regra de três simples direta (quanto mais dias trabalhados, maior a quantidade de resmas consumidas): 6 resmas ---- 15 dias; x resmas ---- 45 dias. Multiplicando cruzado: 15 * x = 6 * 45  =>  15x = 270  =>  x = 270 / 15 = 18 resmas.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 325 (Matemática / RLM • Regra de Três Simples Inversa: Tempo e Equipe):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. É uma regra de três simples INVERSA (ao aumentar o número de arquivistas, o tempo necessário para executar o serviço diminui): 4 arquivistas ---- 15 dias; 6 arquivistas ---- x dias. Multiplicando em linha: 6 * x = 4 * 15  =>  6x = 60  =>  x = 60 / 6 = 10 dias.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 326 (Matemática / RLM • Regra de Três Composta: Produção de Relatórios):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Montando a regra de três composta identificando as grandezas: Redatores (R), Horas/dia (H), Dias (D) e Atas (A - produto final): R1=3, H1=6, D1=8, A1=72; R2=4, H2=8, D2=5, A2=x. Comparando as grandezas em relação a Atas: Mais redatores = mais atas (direta); Mais horas/dia = mais atas (direta); Mais dias = mais atas (direta). Logo: 72 / x = (3/4) * (6/8) * (8/5)  =>  72 / x = (3 * 6 * 8) / (4 * 8 * 5) = 144 / 160 = 9 / 10. Multiplicando cruzado: 9 * x = 72 * 10  =>  9x = 720  =>  x = 80 atas.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 327 (Matemática / RLM • Porcentagem: Cálculo de Desconto Comercial):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Calculando o desconto de 12% sobre 45.000: Desconto = 45.000 * 0,12 = R$ 5.400,00. Valor final = 45.000 - 5.400 = R$ 39.600,00. (Ou diretamente: 45.000 * 0,88 = R$ 39.600,00).</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 328 (Matemática / RLM • Porcentagem: Variação Percentual):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. A variação absoluta foi de: 325 - 250 = 75 atendimentos. A taxa percentual de aumento em relação ao valor inicial (janeiro) é: Taxa = (Variação / Valor_Inicial) * 100 = (75 / 250) * 100 = 0,30 * 100 = 30% de aumento.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 329 (Matemática / RLM • Porcentagem: Aumentos Sucessivos):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Em aumentos sucessivos, multiplica-se os fatores de correção: Fator 1 = 1 + 0,10 = 1,10; Fator 2 = 1 + 0,20 = 1,20. Fator acumulado = 1,10 * 1,20 = 1,32. Subtraindo a base 1: 1,32 - 1 = 0,32 = 32% de aumento acumulado. Dica clássica: aumentos sucessivos nunca são a soma direta (10 + 20 = 30% é a pegadinha da banca).</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 330 (Matemática / RLM • Juros Simples: Cálculo de Juros):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Fórmula do juro simples: J = C * i * t, onde C = 8.000, i = 1,5% = 0,015 ao mês e t = 10 meses. J = 8.000 * 0,015 * 10 = 8.000 * 0,15 = R$ 1.200,00 de juros.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 331 (Matemática / RLM • Juros Simples: Cálculo do Montante):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Cálculo dos juros simples: J = C * i * t = 12.000 * 0,02 * 8 = 12.000 * 0,16 = R$ 1.920,00. O montante final é a soma do capital inicial com os juros: M = C + J = 12.000 + 1.920 = R$ 13.920,00.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 332 (Matemática / RLM • Juros Simples: Determinação do Tempo):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Juros gerados: J = Montante - Capital = 6.500 - 5.000 = R$ 1.500,00. Pela fórmula J = C * i * t: 1.500 = 5.000 * 0,025 * t  =>  1.500 = 125 * t  =>  t = 1.500 / 125 = 12 meses.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 333 (Matemática / RLM • Média Aritmética Simples e Ponderada):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Para a média de 4 notas ser 8,0, a soma das quatro notas deve ser: Soma = 4 * 8,0 = 32,0 pontos. A soma das três primeiras notas é: 7,0 + 8,0 + 6,0 = 21,0 pontos. Logo, a quarta nota necessária seria: 32,0 - 21,0 = 11,0 pontos. Como a escala de avaliação vai até 10,0, é matematicamente impossível atingir essa média final.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 334 (Matemática / RLM • Equações do 1º Grau aplicadas ao Serviço Público):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Montando a equação do 1º grau: sendo 'x' o número de vereadores presentes: 2x + 5 = 23  =>  2x = 23 - 5  =>  2x = 18  =>  x = 18 / 2 = 9 vereadores presentes.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 335 (Matemática / RLM • Sistema de Equações do 1º Grau):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Seja 'p' o número de pastas e 'c' o número de canetas. Sistema: 1) p + c = 50; 2) 5p + 2c = 160. Da primeira equação: c = 50 - p. Substituindo na segunda: 5p + 2(50 - p) = 160  =>  5p + 100 - 2p = 160  =>  3p = 160 - 100  =>  3p = 60  =>  p = 20 pastas organizadoras (e 30 canetas).</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 336 (Matemática / RLM • Conversão de Unidades de Tempo e Medida):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Conversão passo a passo: 1 hora = 3.600 segundos  =>  2 horas = 2 * 3.600 = 7.200 segundos; 1 minuto = 60 segundos  =>  45 minutos = 45 * 60 = 2.700 segundos; Mais os 30 segundos adicionais: Total = 7.200 + 2.700 + 30 = 9.930 segundos.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 337 (Matemática / RLM • RLM: Conectivos Lógicos e Tabela Verdade da Conjunção):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Pela tabela-verdade do conectivo da conjunção (operador lógico 'E' / ^): V ^ F = F. A conjunção exige a veracidade cumulativa e simultânea de ambas as proposições para ser verdadeira. Havendo ao menos uma proposição falsa, o resultado lógico é impreterivelmente FALSO.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 338 (Matemática / RLM • RLM: Negação da Proposição Condicional (Se... então)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. A regra de ouro da negação da condicional (P -> Q) é a 'Regra do MANÉ': Mantém a primeira (P) E nega a segunda (~Q): ~(P -> Q) = P ^ ~Q. Portanto: 'O servidor cumpre a meta E não recebe o elogio funcional'.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 339 (Matemática / RLM • Sequências Numéricas e Padrões Lógicos):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. O padrão de formação pode ser visto de duas formas congruentes: 1) Cada termo é o dobro do anterior somado a 1: 3 * 2 + 1 = 7; 7 * 2 + 1 = 15; 15 * 2 + 1 = 31; 31 * 2 + 1 = 63; Próximo = 63 * 2 + 1 = 126 + 1 = 127. (Ou pelas potências de 2 subtraídas de 1: 2^2-1=3, 2^3-1=7, 2^4-1=15, 2^5-1=31, 2^6-1=63, 2^7-1=128-1=127).</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 340 (Matemática / RLM • Interpretação de Gráficos e Conjuntos Numéricos):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Utilizando o Diagrama de Venn e a teoria dos conjuntos: Total de servidores = 30; Interseção (ambos os cursos) = 6; Somente Processo Legislativo = 18 - 6 = 12; Somente Gestão Pública = 14 - 6 = 8; Total de servidores com pelo menos um curso = 12 + 6 + 8 = 26 servidores. Servidores sem nenhum dos cursos = 30 - 26 = 4 servidores.</p>
+      </div>
+    </div>
+  
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
