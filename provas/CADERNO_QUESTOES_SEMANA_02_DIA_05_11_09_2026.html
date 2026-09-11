@@ -1,0 +1,2538 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>CADERNO OFICIAL DE QUESTÕES — SEMANA 2 / DIA 5 (11/09/2026) | INBRASP</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @page {
+      size: A4;
+      margin: 15mm 18mm;
+    }
+    :root {
+      --primary: #1e3a8a;
+      --primary-dark: #0f172a;
+      --accent: #dc2626;
+      --border: #cbd5e1;
+      --bg: #ffffff;
+      --text: #0f172a;
+      --text-muted: #475569;
+    }
+    body {
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+      color: var(--text);
+      background: #f8fafc;
+      margin: 0;
+      padding: 24px;
+      font-size: 10pt;
+      line-height: 1.45;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      padding: 36px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    }
+    .header-box {
+      border: 2px solid var(--primary);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f8fafc;
+    }
+    .header-titles h1 {
+      margin: 0 0 4px 0;
+      font-size: 1.35rem;
+      color: var(--primary);
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .header-titles h2 {
+      margin: 0 0 4px 0;
+      font-size: 1rem;
+      color: var(--text);
+      font-weight: 700;
+    }
+    .header-titles p {
+      margin: 0;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .badge-banca {
+      background: #fee2e2;
+      color: #991b1b;
+      font-weight: 800;
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      border: 1px solid #fecaca;
+    }
+    .no-print {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .btn-action {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+    }
+    .btn-action:hover {
+      background: #1d4ed8;
+    }
+    .question-block {
+      margin-bottom: 22px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #e2e8f0;
+      page-break-inside: avoid;
+    }
+    .q-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .q-number {
+      font-weight: 800;
+      color: var(--primary);
+      font-size: 1rem;
+    }
+    .q-badge {
+      background: #e2e8f0;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #475569;
+    }
+    .q-discipline {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-weight: 600;
+      background: #f1f5f9;
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+    .q-text {
+      margin-bottom: 10px;
+      font-size: 0.95rem;
+      text-align: justify;
+    }
+    .q-options {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .q-option {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 0.9rem;
+    }
+    .opt-letter {
+      font-weight: 700;
+      background: #f1f5f9;
+      border: 1px solid #cbd5e1;
+      border-radius: 4px;
+      width: 22px;
+      height: 22px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 0.8rem;
+    }
+    .opt-text {
+      padding-top: 1px;
+    }
+    .cartao-resposta {
+      margin-top: 36px;
+      padding: 24px;
+      border: 2px dashed #94a3b8;
+      border-radius: 8px;
+      background: #f8fafc;
+      page-break-before: always;
+    }
+    .cartao-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-top: 16px;
+    }
+    .cartao-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.8rem;
+    }
+    .cartao-num {
+      font-weight: 700;
+      width: 24px;
+    }
+    .cartao-bolhas {
+      display: flex;
+      gap: 4px;
+    }
+    .bolha {
+      width: 18px;
+      height: 18px;
+      border: 1px solid #64748b;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.65rem;
+      font-weight: 600;
+    }
+    .gabarito-section {
+      margin-top: 36px;
+      page-break-before: always;
+    }
+    .gabarito-tabela {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 16px;
+      margin-bottom: 24px;
+    }
+    .gabarito-tabela th, .gabarito-tabela td {
+      border: 1px solid var(--border);
+      padding: 6px 10px;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+    .gabarito-tabela th {
+      background: var(--primary);
+      color: white;
+    }
+    .gabarito-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 12px;
+      padding: 10px;
+      background: #f8fafc;
+      border-radius: 6px;
+      border-left: 4px solid var(--primary);
+    }
+    .gabarito-letra {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--primary);
+      background: #e2e8f0;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+      flex-shrink: 0;
+    }
+    @media print {
+      body {
+        background: white;
+        padding: 0;
+        font-size: 9.5pt;
+      }
+      .container {
+        max-width: 100%;
+        padding: 0;
+        box-shadow: none;
+      }
+      .no-print {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="no-print">
+      <button class="btn-action" onclick="window.print()">
+        <i class="fas fa-print"></i> Imprimir Caderno Completo (PDF)
+      </button>
+      <a href="../index.html" class="btn-action" style="background: #475569;">
+        <i class="fas fa-arrow-left"></i> Voltar ao Sistema de Estudos
+      </a>
+      <a href="CENTRAL_DE_PROVAS.html" class="btn-action" style="background: #0284c7;">
+        <i class="fas fa-folder-open"></i> Central de Provas
+      </a>
+    </div>
+
+    <div class="header-box">
+      <div class="header-titles">
+        <h1>Câmara Municipal de Meruoca — Concurso Público 2026</h1>
+        <h2>Caderno Oficial de Questões • Semana 2 — Dia 5 (11/09/2026)</h2>
+        <p>Cargo: <strong>Técnico Legislativo</strong> • 40 Questões • Padrão Oficial da Banca INBRASP (4 Alternativas A, B, C, D)</p>
+      </div>
+      <div>
+        <span class="badge-banca">INBRASP 2026</span>
+      </div>
+    </div>
+
+    <!-- Instruções para o Candidato -->
+    <div style="background: #f1f5f9; border-left: 4px solid var(--primary); padding: 12px 16px; margin-bottom: 24px; border-radius: 4px; font-size: 0.85rem;">
+      <strong>INSTRUÇÕES GERAIS DE APLICAÇÃO:</strong>
+      <ul style="margin: 6px 0 0 18px; padding: 0;">
+        <li>Este caderno contém <strong>40 questões inéditas e oficiais</strong>: 20 de Conhecimentos Específicos (Técnica Legislativa conforme a LC Federal nº 95/1998 e alterações) + 20 de Língua Portuguesa (Sintaxe da Oração: termos essenciais, integrantes e acessórios).</li>
+        <li>Cada questão apresenta <strong>4 alternativas (A, B, C e D)</strong>, com exatamente uma única opção correta.</li>
+        <li>Tempo recomendado de resolução do bloco: <strong>2 horas e 30 minutos</strong> (média de 3,5 minutos por questão).</li>
+        <li>Ao final do caderno constam a folha de Cartão-Resposta para treino de preenchimento e o Gabarito com Comentários Pedagógicos detalhados com fundamentação legal e doutrinária.</li>
+      </ul>
+    </div>
+
+    <!-- Bloco das 40 Questões -->
+    <div class="questions-wrapper">
+      
+    <div class="question-block" id="q_341">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 1</span>
+          <span class="q-badge">ID 341</span>
+        </div>
+        <span class="q-discipline">Técnica Legislativa • Estrutura dos Atos Normativos: Parte Preliminar</span>
+      </div>
+      <div class="q-text">
+        Conforme a Lei Complementar nº 95/1998, que dispõe sobre a elaboração, redação e alteração das leis, a estrutura formal de uma lei compreende três partes básicas: a parte preliminar, a parte normativa e a parte final. Integram obrigatoriamente a PARTE PRELIMINAR de uma lei:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">A epígrafe, a ementa, o preâmbulo, o enunciado do objeto e a indicação do âmbito de aplicação.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">As disposições transitórias, a cláusula de revogação expressa e a data de vigência.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">O texto articulado dos capítulos, a tabela de anexos e os pareceres das comissões.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">A assinatura dos líderes partidários e a exposição de motivos assinada pelo relator.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_342">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 2</span>
+          <span class="q-badge">ID 342</span>
+        </div>
+        <span class="q-discipline">Técnica Legislativa • Numeração e Articulação dos Artigos</span>
+      </div>
+      <div class="q-text">
+        A respeito das regras de articulação dos atos normativos disciplinadas na Lei Complementar nº 95/1998 (Art. 10), a numeração ordinal e cardinal dos ARTIGOS deve obedecer à seguinte regra:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">A numeração dos artigos será ordinal do Art. 1º ao Art. 10, passando a cardinal a partir do Art. 11.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">A numeração dos artigos será ordinal do Art. 1º ao Art. 9º e cardinal a partir do Art. 10 (ex.: Art. 10, Art. 11, etc.).</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Todos os artigos de leis e decretos devem ser grafados compulsoriamente em algarismos romanos.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">A numeração dos artigos será sempre cardinal desde o início (Artigo 1, Artigo 2, etc.), vedado o uso de ordinais.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_343">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 3</span>
+          <span class="q-badge">ID 343</span>
+        </div>
+        <span class="q-discipline">Técnica Legislativa • Desdobramento de Artigos em Parágrafos</span>
+      </div>
+      <div class="q-text">
+        O artigo de uma lei municipal pode ser desdobrado em parágrafos para regulamentar aspectos complementares ou exceções à regra geral do 'caput'. Segundo a LC nº 95/1998, a correta indicação do parágrafo único e dos parágrafos múltiplos é:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">O parágrafo único deve ser grafado pelo símbolo '§ 1º' com a expressão 'Único' entre parênteses.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Havendo múltiplos parágrafos, todos são grafados por algarismos cardinais com a palavra 'Parágrafo' por extenso.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Quando houver apenas um parágrafo, será indicada a expressão por extenso 'Parágrafo único.'; havendo múltiplos parágrafos, usa-se o símbolo '§' seguido de numeração ordinal do 1º ao 9º e cardinal a partir do 10.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">O símbolo '§' só pode ser utilizado se houver mais de dez parágrafos no mesmo artigo.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_344">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 4</span>
+          <span class="q-badge">ID 344</span>
+        </div>
+        <span class="q-discipline">Técnica Legislativa • Desdobramento em Incisos, Alíneas e Itens</span>
+      </div>
+      <div class="q-text">
+        Na hierarquia formal de desdobramento e estruturação dos dispositivos de uma proposição legislativa, a Lei Complementar nº 95/1998 estabelece que:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">As alíneas se desdobram em incisos e os incisos se desdobram em itens numéricos.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Os artigos se desdobram diretamente em itens arábicos e estes se desdobram em letras maiúsculas.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Os parágrafos se desdobram em letras maiúsculas e os incisos em algarismos ordinais por extenso.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Os artigos e parágrafos desdobram-se em incisos (algarismos romanos); os incisos em alíneas (letras minúsculas); e as alíneas em itens (algarismos arábicos).</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_345">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 5</span>
+          <span class="q-badge">ID 345</span>
+        </div>
+        <span class="q-discipline">Técnica Legislativa • Pontuação na Articulação Legislativa</span>
+      </div>
+      <div class="q-text">
+        Quanto às normas de pontuação dos dispositivos legais reguladas pela Lei Complementar nº 95/1998 (Art. 10), assinale a alternativa que descreve o emprego gramatical CORRETO:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">O texto do artigo (ou parágrafo) que se desdobrar em incisos deve terminar com dois-pontos (:); os incisos e alíneas terminam com ponto e vírgula (;), exceto o último, que termina com ponto final (.).</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Todos os incisos e alíneas devem terminar impreterivelmente com ponto final, independentemente de haver continuidade do rol.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">O caput do artigo nunca pode terminar com dois-pontos, devendo ser empregado sempre ponto e vírgula.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">As alíneas devem terminar sempre com vírgula simples para indicar que pertencem à mesma oração subordinada.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_346">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 6</span>
+          <span class="q-badge">ID 346</span>
+        </div>
+        <span class="q-discipline">Técnica Legislativa • Regras de Alteração de Leis: Inserção de Novos Artigos</span>
+      </div>
+      <div class="q-text">
+        Ao elaborar um projeto de lei que pretenda incluir novos artigos entre o Art. 15 e o Art. 16 de uma lei municipal vigente, o redator legislativo deve seguir a sistemática da LC nº 95/1998 para evitar a rennumeração de toda a lei. O procedimento correto de acréscimo é:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Renomear o Art. 16 para Art. 17 e empurrar todos os artigos seguintes para a numeração seguinte.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Identificar os novos artigos com o número do artigo imediatamente anterior seguido de letras maiúsculas em ordem alfabética (ex.: Art. 15-A, Art. 15-B).</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Utilizar números fracionários ou decimais acompanhados de vírgula (ex.: Art. 15,1 e Art. 15,2).</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Inserir os novos dispositivos como anexos sem numeração ao final do texto consolidado.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_347">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 7</span>
+          <span class="q-badge">ID 347</span>
+        </div>
+        <span class="q-discipline">Técnica Legislativa • Proibição de Reaproveitamento de Numeração Revogada</span>
+      </div>
+      <div class="q-text">
+        Suponha que o Art. 8º da Lei Orgânica do Município de Meruoca tenha sido formalmente revogado há dois anos. Em novo projeto de lei, um vereador propõe introduzir nova norma e designá-la como 'Art. 8º'. À luz da LC nº 95/1998, essa prática é:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Permitida, desde que o novo assunto tenha pertinência temática com a matéria original.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Válida e recomendada para economizar espaço e evitar o acúmulo de dispositivos com sufixos alfabéticos.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Expressamente vedada, pois é proibido reaproveitar o número de dispositivo revogado, vetado ou declarado inconstitucional para matéria diversa.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Facultativa, ficando a critério discricionário do Presidente da Comissão de Legislação e Justiça.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_348">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 8</span>
+          <span class="q-badge">ID 348</span>
+        </div>
+        <span class="q-discipline">Técnica Legislativa • Cláusula de Revogação: Expressa vs. Genérica</span>
+      </div>
+      <div class="q-text">
+        Uma das alterações mais relevantes impostas pela LC nº 95/1998 no Direito Positivo brasileiro refere-se à CLÁUSULA DE REVOGAÇÃO (Art. 9º). A respeito desse tema, assinale a conduta estritamente obrigatória:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">É obrigatório o uso da cláusula genérica 'revogam-se as disposições em contrário' ao final de toda lei.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">A lei nova deve deixar a revogação tácita a cargo do Poder Judiciário, sendo desnecessário declarar revogações.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">As revogações devem ser feitas de modo velado para não prejudicar direitos adquiridos de terceiros.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">A cláusula de revogação deve enunciar expressamente todas as leis ou dispositivos que estão sendo revogados, sendo vedada a fórmula genérica 'revogam-se as disposições em contrário'.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_349">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 9</span>
+          <span class="q-badge">ID 349</span>
+        </div>
+        <span class="q-discipline">Técnica Legislativa • Cláusula de Vigência e Contagem do Prazo de Vacatio Legis</span>
+      </div>
+      <div class="q-text">
+        Segundo o Art. 8º da LC nº 95/1998, a cláusula de vigência deve indicar de forma expressa e clara o prazo para que a lei comece a produzir efeitos. Quando a lei estabelece um período de vacância (vacatio legis) fixado em dias corridos, a contagem do prazo opera-se:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Incluindo-se a data da publicação e a do último dia do prazo, entrando a lei em vigor no dia subsequente à sua consumação integral.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Excluindo-se o dia da publicação e contando-se apenas os dias úteis forenses da comarca.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Iniciando-se 15 dias após a circulação física do primeiro exemplar impresso.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Computando-se os prazos em meses lunares de 28 dias a partir da assinatura do Prefeito.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_350">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 10</span>
+          <span class="q-badge">ID 350</span>
+        </div>
+        <span class="q-discipline">Técnica Legislativa • Uso da Expressão 'Entra em Vigor na Data de sua Publicação'</span>
+      </div>
+      <div class="q-text">
+        A fórmula 'esta Lei entra em vigor na data de sua publicação' é frequentemente encontrada no encerramento de diplomas legais. Nos termos das diretrizes da LC nº 95/1998, essa fórmula:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Deve ser adotada compulsoriamente em todos os códigos e diplomas orçamentários do Município.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">É recomendada apenas para leis de pequena repercussão, que não demandem prazo de adaptação dos cidadãos ou da Administração Pública.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Foi banida do ordenamento e enseja a nulidade absoluta do ato legislativo.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Só pode ser utilizada caso o texto legal tenha menos de três artigos.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_351">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 11</span>
+          <span class="q-badge">ID 351</span>
+        </div>
+        <span class="q-discipline">Técnica Legislativa • Redação de Leis: Clareza, Precisão e Ordem Direta</span>
+      </div>
+      <div class="q-text">
+        As disposições normativas devem ser redigidas com clareza, precisão e ordem lógica. O Art. 11 da LC nº 95/1998 estabelece diretrizes de redação oficial. Para a obtenção de CLAREZA e PRECISÃO, o texto legal deve:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Empregar adjetivos superlativos e figuras de linguagem poéticas para embelezar o preâmbulo.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Usar frases longas e subordinadas com múltiplas negações para dificultar interpretações ambíguas.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Usar frases curtas em ordem direta, vocabulário corrente em sentido comum, evitando preciosismos e neologismos desnecessários.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Evitar a repetição de termos técnicos, substituindo-os a cada parágrafo por sinônimos inventados.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_352">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 12</span>
+          <span class="q-badge">ID 352</span>
+        </div>
+        <span class="q-discipline">Técnica Legislativa • Uso de Siglas e Nomenclaturas em Proposições</span>
+      </div>
+      <div class="q-text">
+        Ao redigir um projeto de lei que cite órgãos ou entidades públicas municipais e estaduais por meio de siglas (como TCM, SAAE, SUS), a técnica legislativa oficial exige que:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">As siglas sejam utilizadas isoladamente desde a ementa, sem necessidade de escrita por extenso.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">As siglas sejam grafadas sempre em letras minúsculas acompanhadas de asterisco no rodapé.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">O uso de qualquer sigla em texto de lei seja expressamente proibido pela Constituição.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Na primeira menção no texto normativo, a denominação do órgão ou entidade seja escrita por extenso, acompanhada da respectiva sigla entre parênteses.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_353">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 13</span>
+          <span class="q-badge">ID 353</span>
+        </div>
+        <span class="q-discipline">Técnica Legislativa • Consolidação de Leis: Conceito e Limites</span>
+      </div>
+      <div class="q-text">
+        A consolidação de leis consiste na integração de todas as leis vigentes sobre determinada matéria em um único diploma legal. Segundo a LC nº 95/1998 (Art. 13), o projeto de lei de consolidação:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Tem por objetivo reunir normas afins, revogando expressamente os atos originais e preservando o conteúdo substantivo das regras consolidadas.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Pode criar novos tributos e penalidades mais graves sem prévia discussão em comissão temática.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Extingue os direitos subjetivos concedidos por leis municipais anteriores a 1988.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Dispensa a aprovação pelo Plenário da Câmara, sendo publicado por despacho monocrático da Mesa.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_354">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 14</span>
+          <span class="q-badge">ID 354</span>
+        </div>
+        <span class="q-discipline">Técnica Legislativa • Alterações Permitidas no Processo de Consolidação</span>
+      </div>
+      <div class="q-text">
+        No processo de consolidação de leis municipais pela Câmara Municipal, a LC nº 95/1998 permite que sejam efetuadas certas adaptações formais no texto integrado. Entre as alterações permitidas na consolidação, inclui-se:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">A criação de novos cargos comissionados para a estrutura do Poder Legislativo.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">A declaração de nulidade de contratos administrativos celebrados no exercício anterior.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">A supressão de dispositivos já declarados inconstitucionais pelo STF ou TJ e a atualização de termos gramaticais obsoletos.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">A alteração dos quóruns regimentais de maioria qualificada previstos na Lei Orgânica.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_355">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 15</span>
+          <span class="q-badge">ID 355</span>
+        </div>
+        <span class="q-discipline">Técnica Legislativa • Ementa dos Atos Normativos</span>
+      </div>
+      <div class="q-text">
+        A ementa é o elemento formal que sintetiza o conteúdo da lei. De acordo com as disposições da LC nº 95/1998 (Art. 5º), a ementa de um ato normativo deve:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Conter no máximo cinco palavras e ser impressa em caracteres itálicos no rodapé da folha.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Reproduzir a justificação política do projeto com a biografia do parlamentar proponente.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Alinhar-se à esquerda do texto com tamanho de fonte superior ao do título principal da lei.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Ser grafada de forma concisa e indicar, com clareza e precisão, o objeto principal sobre o qual versa a lei.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_356">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 16</span>
+          <span class="q-badge">ID 356</span>
+        </div>
+        <span class="q-discipline">Técnica Legislativa • Unicidade do Objeto e Proibição de 'Jabutis'</span>
+      </div>
+      <div class="q-text">
+        O Art. 7º da LC nº 95/1998 estabelece que o primeiro artigo do texto legal indicará o objeto da lei e o seu âmbito de aplicação. O mesmo artigo preconiza o Princípio da Unicidade do Objeto. Isso significa que:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Cada lei tratará de um único objeto, não devendo conter matéria estranha ao seu objeto principal ou a este não vinculada por afinidade.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Uma lei municipal só pode possuir um único artigo substantivo em todo o seu corpo normativo.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">O Município só pode aprovar uma única lei tributária por ano legislativo ordinário.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">As leis ordinárias não podem ser alteradas por leis complementares sob pena de bitributação.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_357">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 17</span>
+          <span class="q-badge">ID 357</span>
+        </div>
+        <span class="q-discipline">Técnica Legislativa • Epígrafe de Leis e Decretos</span>
+      </div>
+      <div class="q-text">
+        Na técnica legislativa, a EPÍGRAFE localiza-se no topo do documento normativo. A sua correta formação formal é constituída por:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Pelo nome de batismo do autor do projeto e seu domicílio eleitoral.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Pelo título designativo da espécie normativa, número oficial do ato e ano de sua promulgação (ex.: LEI Nº 1.234, DE 11 DE SETEMBRO DE 2026).</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Por uma citação jurisprudencial de tribunal superior que fundamente a legalidade da matéria.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Pela indicação do partido político que detém a maioria dos assentos na Câmara.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_358">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 18</span>
+          <span class="q-badge">ID 358</span>
+        </div>
+        <span class="q-discipline">Técnica Legislativa • Agrupamento de Artigos em Capítulos e Títulos</span>
+      </div>
+      <div class="q-text">
+        Quando uma proposição legislativa possui grande extensão ou complexidade temática (como a Lei Orgânica ou o Regimento Interno), seus artigos podem ser agrupados hierarquicamente. A ordem hierárquica ascendente de agrupamento prevista na LC nº 95/1998 (Art. 10, VII) é:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Artigos -> Parágrafos -> Itens -> Alíneas -> Capítulos.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Artigos -> Títulos -> Livros -> Seções -> Subseções.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Artigos -> Subseções -> Seções -> Capítulos -> Títulos -> Livros -> Partes.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Artigos -> Alíneas -> Seções -> Anexos -> Decretos.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_359">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 19</span>
+          <span class="q-badge">ID 359</span>
+        </div>
+        <span class="q-discipline">Técnica Legislativa • Indicação de Prazos e Datas na Técnica Legislativa</span>
+      </div>
+      <div class="q-text">
+        A respeito da padronização e precisão textual na redação de leis conforme a LC nº 95/1998, as referências a datas e valores nos textos normativos devem ser expressas da seguinte maneira:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">As datas devem ser abreviadas em padrão numérico com barras (ex.: 11/09/26) para poupar linhas no diário.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Os valores monetários devem ser escritos exclusivamente em numerais arábicos, dispensando-se a escrita por extenso.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Os valores monetários e datas devem ser registrados em moeda estrangeira conversível pelo Banco Central.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Para expressar datas, utiliza-se a forma por extenso (ex.: 11 de setembro de 2026), grafando-se '1º' para o primeiro dia do mês; e valores monetários são expressos em algarismos seguidos de sua menção por extenso entre parênteses.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_360">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 20</span>
+          <span class="q-badge">ID 360</span>
+        </div>
+        <span class="q-discipline">Técnica Legislativa • Aplicabilidade da LC 95/98 no Âmbito Municipal</span>
+      </div>
+      <div class="q-text">
+        Em relação ao alcance federativo da Lei Complementar nº 95/1998, é juridicamente correto afirmar que suas regras e preceitos de técnica legislativa vinculam:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Todos os entes federados (União, Estados, Distrito Federal e Municípios), por expressa determinação do Art. 59, parágrafo único da Constituição Federal.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Exclusivamente o Congresso Nacional, não se aplicando às Câmaras Municipais nem às Assembleias Legislativas.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Apenas as capitais de Estado e cidades com mais de duzentos mil eleitores.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Exclusivamente os projetos de iniciativa privativa do Poder Judiciário e Ministério Público.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_361">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 21</span>
+          <span class="q-badge">ID 361</span>
+        </div>
+        <span class="q-discipline">Língua Portuguesa • Sintaxe: Identificação do Sujeito da Oração</span>
+      </div>
+      <div class="q-text">
+        Na oração 'Aprovaram os vereadores meruoquenses o novo plano de cargos da administração municipal', o sujeito da forma verbal 'Aprovaram' classifica-se como:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Indeterminado, pois o verbo encontra-se flexionado na 3ª pessoa do plural.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Sujeito Simples, cujo núcleo substantivo é 'vereadores', posposto ao verbo.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Oração sem sujeito, por tratar de matéria de interesse público.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Sujeito Composto, formado pelos termos 'vereadores' e 'plano de cargos'.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_362">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 22</span>
+          <span class="q-badge">ID 362</span>
+        </div>
+        <span class="q-discipline">Língua Portuguesa • Sintaxe: Sujeito Oculto (Desinencial) vs. Indeterminado</span>
+      </div>
+      <div class="q-text">
+        Assinale a alternativa em que o sujeito da oração classifica-se tecnicamente como SUJEITO INDETERMINADO:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Durante a sessão matutina, comparecemos pontualmente à reunião de lideranças partidárias.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">O Presidente e o Secretário assinaram a resolução legislativa de imediato.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Precisa-se de assessores jurídicos qualificados para a Comissão de Redação Final.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Choveu torrencialmente em Meruoca na madrugada da última terça-feira.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_363">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 23</span>
+          <span class="q-badge">ID 363</span>
+        </div>
+        <span class="q-discipline">Língua Portuguesa • Sintaxe: Oração Sem Sujeito e Concordância com Verbo 'Haver'</span>
+      </div>
+      <div class="q-text">
+        O verbo 'HAVER' é classificado como impessoal (oração sem sujeito) quando empregado no sentido de existir, ocorrer ou indicar tempo decorrido, devendo permanecer obrigatoriamente na 3ª pessoa do singular. Assinale a frase que exemplifica a correta regência e concordância sintática desse verbo:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Haviam muitos munícipes presentes no plenário durante a votação das contas públicas.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Houveram várias dúvidas regimentais suscitadas pelos técnicos legislativos durante os debates.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Se não houvessem tantas emendas supressivas, o projeto de lei já teria sido promulgado.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Houve muitos debates produtivos entre os vereadores antes da deliberação final da matéria.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_364">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 24</span>
+          <span class="q-badge">ID 364</span>
+        </div>
+        <span class="q-discipline">Língua Portuguesa • Sintaxe: Transitividade Verbal Direta e Indireta (VTDI)</span>
+      </div>
+      <div class="q-text">
+        Considere a frase: 'O Presidente da Câmara comunicou o cancelamento da sessão extraordinária aos vereadores da comarca'. O verbo 'comunicar', no contexto da oração, classifica-se sintaticamente como:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Verbo Transitivo Direto e Indireto (VTDI), regendo 'o cancelamento da sessão' como Objeto Direto e 'aos vereadores da comarca' como Objeto Indireto.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Verbo Transitivo Indireto (VTI), pois exige obrigatoriamente duas preposições sucessivas.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Verbo Intransitivo (VI), sendo todos os seus complementos meros adjuntos adverbiais de modo.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Verbo de Ligação (VL), expressando um estado transitório do sujeito parlamentar.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_365">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 25</span>
+          <span class="q-badge">ID 365</span>
+        </div>
+        <span class="q-discipline">Língua Portuguesa • Sintaxe: Predicado Verbal, Nominal e Verbo-Nominal</span>
+      </div>
+      <div class="q-text">
+        O predicado classifica-se conforme a natureza de seu(s) núcleo(s). Assinale a alternativa que contém um PREDICADO VERBO-NOMINAL:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Os técnicos legislativos analisaram detidamente as emendas apresentadas ao projeto.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Os novos vereadores da legislatura chegaram entusiasmados à primeira sessão plenária.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">A Lei Orgânica de Meruoca é fundamental para a organização político-administrativa do Município.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">O expediente parlamentar transcorreu sem nenhuma interrupção regimental.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_366">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 26</span>
+          <span class="q-badge">ID 366</span>
+        </div>
+        <span class="q-discipline">Língua Portuguesa • Sintaxe: Complemento Nominal vs. Adjunto Adnominal</span>
+      </div>
+      <div class="q-text">
+        Na oração 'A leitura do parecer das comissões esclareceu todas as dúvidas regimentais', o termo destacado 'do parecer das comissões' exerce a função sintática de:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Objeto Direto Preposicionado da forma verbal 'esclareceu'.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Adjunto Adverbial de Instrumento dos trabalhos de votação.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Complemento Nominal, pois completa o sentido do substantivo abstrato de ação 'leitura' com valor paciente/passivo (o parecer foi lido).</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Agente da Passiva com função predicativa de causa originária.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_367">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 27</span>
+          <span class="q-badge">ID 367</span>
+        </div>
+        <span class="q-discipline">Língua Portuguesa • Sintaxe: Adjunto Adnominal em Substantivo Abstrato</span>
+      </div>
+      <div class="q-text">
+        Diferenciando o Adjunto Adnominal do Complemento Nominal, assinale a opção em que o termo preposicionado em destaque exerce função de ADJUNTO ADNOMINAL:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">A obediência às leis municipais é dever inescusável de todos os munícipes.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">A confiança no Poder Legislativo foi restabelecida com as audiências públicas transparentes.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">O apoio aos servidores concursados foi aprovado por unanimidade pelos vereadores.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">A manifestação da Mesa Diretora encerrou a polêmica sobre o quórum de votação.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_368">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 28</span>
+          <span class="q-badge">ID 368</span>
+        </div>
+        <span class="q-discipline">Língua Portuguesa • Sintaxe: Identificação do Agente da Passiva</span>
+      </div>
+      <div class="q-text">
+        Na frase 'O projeto de lei de diretrizes orçamentárias foi sancionado pelo Prefeito Municipal dentro do prazo regimental', o termo 'pelo Prefeito Municipal' classifica-se sintaticamente como:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Agente da Passiva.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Objeto Indireto.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Adjunto Adverbial de Instrumento.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Complemento Nominal.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_369">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 29</span>
+          <span class="q-badge">ID 369</span>
+        </div>
+        <span class="q-discipline">Língua Portuguesa • Sintaxe: Identificação de Adjuntos Adverbiais</span>
+      </div>
+      <div class="q-text">
+        No trecho 'Ontem à tarde, o relator apresentou o parecer favorável na sala das comissões com extrema clareza', os termos destacados expressam, respectivamente, circunstâncias adverbiais de:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Causa, finalidade e consequência lógica.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Tempo, lugar e modo.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Instrumento, intensidade e companhia.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Dúvida, oposição e concessão.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_370">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 30</span>
+          <span class="q-badge">ID 370</span>
+        </div>
+        <span class="q-discipline">Língua Portuguesa • Sintaxe: Aposto Explicativo vs. Vocativo</span>
+      </div>
+      <div class="q-text">
+        A respeito dos termos 'Aposto' e 'Vocativo' na sintaxe da língua portuguesa, assinale a afirmativa correta:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">O Vocativo mantém estreita dependência sintática com o verbo da oração, exercendo função de sujeito em frases imperativas.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">O Aposto explicativo deve vir necessariamente sem vírgulas para não fragmentar a continuidade da frase.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">O Vocativo é um termo de chamamento ou interpelação, sintaticamente independente da oração, devendo ser sempre isolado por sinal de pontuação (vírgula).</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">O Aposto especificativo é aquele que vem sempre entre parênteses para explicar um conceito filosófico.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_371">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 31</span>
+          <span class="q-badge">ID 371</span>
+        </div>
+        <span class="q-discipline">Língua Portuguesa • Sintaxe: Classificação do Aposto Especificativo</span>
+      </div>
+      <div class="q-text">
+        Em 'O Município de Meruoca situa-se na Região Noroeste do Estado do Ceará', a expressão destacada 'de Meruoca' exerce função sintática de:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Adjunto Adverbial de Origem e Procedência.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Complemento Nominal do verbo situar-se.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Objeto Indireto do substantivo próprio Ceará.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Aposto Especificativo (ou Individualizador).</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_372">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 32</span>
+          <span class="q-badge">ID 372</span>
+        </div>
+        <span class="q-discipline">Língua Portuguesa • Sintaxe: Pronome Apassivador vs. Índice de Indeterminação do Sujeito</span>
+      </div>
+      <div class="q-text">
+        Analise as duas construções sintáticas a seguir:
+I. 'Publicaram-se os novos editais do concurso legislativo.'
+II. 'Necessita-se de servidores dedicados na assessoria parlamentar.'
+Quanto à função da partícula 'SE', é correto afirmar que:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Em I, o 'SE' é Partícula Apassivadora e 'os novos editais do concurso legislativo' é o Sujeito Paciente; em II, o 'SE' é Índice de Indeterminação do Sujeito e o sujeito é indeterminado.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Em ambas as frases, o 'SE' funciona exclusivamente como pronome reflexivo recíproco.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Em I, o termo 'os novos editais' é objeto direto e o sujeito é indeterminado.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Em II, o 'SE' é conjunção subordinativa condicional de valor conformativo.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_373">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 33</span>
+          <span class="q-badge">ID 373</span>
+        </div>
+        <span class="q-discipline">Língua Portuguesa • Sintaxe: Objeto Direto Preposicionado</span>
+      </div>
+      <div class="q-text">
+        O objeto direto preposicionado ocorre quando um verbo transitivo direto tem seu complemento introduzido por preposição, não por exigência de regência verbal, mas por razões estilísticas, de ênfase ou para evitar ambiguidade. Assinale a oração que apresenta esse recurso sintático:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">O técnico legislativo redigiu a ata da sessão plenária com agilidade.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Os vereadores amam a Meruoca e defendem os interesses de sua população com fervor.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">O relatório das contas anuais foi encaminhado ao tribunal competente no prazo legal.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">A assembleia dos servidores municipais reivindicou melhorias nos planos de saúde.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_374">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 34</span>
+          <span class="q-badge">ID 374</span>
+        </div>
+        <span class="q-discipline">Língua Portuguesa • Sintaxe: Objeto Pleonástico</span>
+      </div>
+      <div class="q-text">
+        Na oração 'Aos vereadores da oposição, não lhes restou alternativa senão apresentar a emenda supressiva', o pronome oblíquo 'lhes' retoma enfaticamente o termo prévio 'Aos vereadores da oposição'. Essa repetição estilística e sintática classifica o termo como:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Aposto Resumitivo Substantivado.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Predicativo do Objeto Indireto.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Objeto Indireto Pleonástico.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Adjunto Adverbial de Meio.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_375">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 35</span>
+          <span class="q-badge">ID 375</span>
+        </div>
+        <span class="q-discipline">Língua Portuguesa • Sintaxe: Função Sintática do Pronome Relativo 'QUE'</span>
+      </div>
+      <div class="q-text">
+        No período 'O projeto de lei que moderniza a estrutura administrativa da Câmara foi elogiado por todos os servidores', o pronome relativo 'que' exerce, dentro da oração subordinada adjetiva, a função sintática de:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Objeto Direto do verbo modernizar.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Complemento Nominal do substantivo lei.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Adjunto Adverbial de Instrumento.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Sujeito da forma verbal 'moderniza'.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_376">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 36</span>
+          <span class="q-badge">ID 376</span>
+        </div>
+        <span class="q-discipline">Língua Portuguesa • Sintaxe: Predicativo do Objeto</span>
+      </div>
+      <div class="q-text">
+        Assinale a alternativa em que o termo em destaque funciona sintaticamente como PREDICATIVO DO OBJETO:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">O Plenário da Câmara considerou a proposta de emenda inconstitucional.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">O experiente consultor jurídico redigiu o parecer preliminar com zelo.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">A Mesa Diretora permaneceu atenta às reivindicações dos munícipes presentes.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Os manifestantes saíram apressados após a votação final do projeto.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_377">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 37</span>
+          <span class="q-badge">ID 377</span>
+        </div>
+        <span class="q-discipline">Língua Portuguesa • Sintaxe: Pontuação do Vocativo no Texto Oficial</span>
+      </div>
+      <div class="q-text">
+        Em redação oficial e técnica parlamentar, o vocativo deve ser rigorosamente demarcado pela pontuação. Assinale a frase redigida em estrita conformidade com a norma-padrão da língua portuguesa:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Senhor Presidente solicito a palavra pela ordem, para esclarecer o voto da bancada.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Solicito a palavra pela ordem, Senhor Presidente, para esclarecer o voto da bancada.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Solicito a palavra pela ordem Senhor Presidente para esclarecer o voto da bancada.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Solicito a palavra, pela ordem Senhor Presidente, para esclarecer o voto da bancada.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_378">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 38</span>
+          <span class="q-badge">ID 378</span>
+        </div>
+        <span class="q-discipline">Língua Portuguesa • Sintaxe: Diferenciação de Adjunto Adnominal e Predicativo</span>
+      </div>
+      <div class="q-text">
+        Considere os dois enunciados a seguir:
+I. 'O vereador indignado discursou contra o aumento das taxas municipais.'
+II. 'O vereador discursou indignado contra o aumento das taxas municipais.'
+Do ponto de vista sintático-semântico, os termos destacados desempenham, respectivamente, os papéis de:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Adjunto Adverbial de Modo em I; e Objeto Direto Qualificador em II.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Complemento Nominal em I; e Adjunto Adnominal em II.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Adjunto Adnominal em I (característica atribuída de forma direta e inerente ao substantivo); e Predicativo do Sujeito em II (estado transitório associado ao momento da ação de discursar).</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Vocativo Invocatório em I; e Aposto Explicativo em II.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_379">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 39</span>
+          <span class="q-badge">ID 379</span>
+        </div>
+        <span class="q-discipline">Língua Portuguesa • Sintaxe: Termos Acessórios - Aposto Resumitivo / Recapitulativo</span>
+      </div>
+      <div class="q-text">
+        Na oração 'Projetos de lei, requerimentos verbais, indicações e moções de pesar, NADA impediu o avanço da pauta prioritária da sessão', a palavra destacada 'NADA' exerce a função sintática de:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Objeto Indireto Recíproco do verbo impedir.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Adjunto Adverbial de Negação Absoluta.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Complemento Nominal do substantivo pauta.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Aposto Resumitivo (ou Recapitulativo).</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_380">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 40</span>
+          <span class="q-badge">ID 380</span>
+        </div>
+        <span class="q-discipline">Língua Portuguesa • Sintaxe: Análise Sintática Global de Período</span>
+      </div>
+      <div class="q-text">
+        No excerto oficial 'A Comissão de Constituição e Justiça aprovou o parecer favorável do relator unanimemente', o termo sublinhado 'o parecer favorável do relator' classifica-se sintaticamente como:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Sujeito Paciente da oração passiva truncada.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Objeto Direto da forma verbal transitiva direta 'aprovou'.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Complemento Nominal da Comissão de Constituição.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Predicativo do Sujeito do ato decisório.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+    </div>
+
+    <!-- Cartão Resposta Oficial -->
+    <div class="cartao-resposta">
+      <h3 style="margin-top: 0; color: var(--primary); text-transform: uppercase; font-size: 1.1rem; border-bottom: 2px solid var(--border); padding-bottom: 8px;">
+        <i class="fas fa-pen"></i> Folha de Respostas — Treino de Preenchimento de Gabarito
+      </h3>
+      <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 16px;">
+        Preencha completamente a bolha correspondente à alternativa assinalada com caneta esferográfica preta ou azul.
+      </p>
+      <div class="cartao-grid">
+        
+    <div class="cartao-item">
+      <span class="cartao-num">01</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">02</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">03</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">04</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">05</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">06</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">07</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">08</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">09</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">10</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">11</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">12</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">13</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">14</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">15</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">16</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">17</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">18</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">19</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">20</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">21</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">22</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">23</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">24</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">25</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">26</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">27</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">28</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">29</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">30</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">31</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">32</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">33</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">34</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">35</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">36</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">37</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">38</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">39</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">40</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+      </div>
+    </div>
+
+    <!-- Gabarito e Comentários Pedagógicos -->
+    <div class="gabarito-section">
+      <h2 style="color: var(--primary); text-transform: uppercase; font-size: 1.25rem; border-bottom: 2px solid var(--border); padding-bottom: 8px;">
+        <i class="fas fa-check-double"></i> Gabarito Oficial & Comentários Didáticos
+      </h2>
+      
+      <table class="gabarito-tabela">
+        <thead>
+          <tr>
+            <th>Q1</th><th>Q2</th><th>Q3</th><th>Q4</th><th>Q5</th><th>Q6</th><th>Q7</th><th>Q8</th><th>Q9</th><th>Q10</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>A</strong></td><td><strong>B</strong></td><td><strong>C</strong></td><td><strong>D</strong></td><td><strong>A</strong></td><td><strong>B</strong></td><td><strong>C</strong></td><td><strong>D</strong></td><td><strong>A</strong></td><td><strong>B</strong></td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th>Q11</th><th>Q12</th><th>Q13</th><th>Q14</th><th>Q15</th><th>Q16</th><th>Q17</th><th>Q18</th><th>Q19</th><th>Q20</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>C</strong></td><td><strong>D</strong></td><td><strong>A</strong></td><td><strong>C</strong></td><td><strong>D</strong></td><td><strong>A</strong></td><td><strong>B</strong></td><td><strong>C</strong></td><td><strong>D</strong></td><td><strong>A</strong></td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th>Q21</th><th>Q22</th><th>Q23</th><th>Q24</th><th>Q25</th><th>Q26</th><th>Q27</th><th>Q28</th><th>Q29</th><th>Q30</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>B</strong></td><td><strong>C</strong></td><td><strong>D</strong></td><td><strong>A</strong></td><td><strong>B</strong></td><td><strong>C</strong></td><td><strong>D</strong></td><td><strong>A</strong></td><td><strong>B</strong></td><td><strong>C</strong></td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th>Q31</th><th>Q32</th><th>Q33</th><th>Q34</th><th>Q35</th><th>Q36</th><th>Q37</th><th>Q38</th><th>Q39</th><th>Q40</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>D</strong></td><td><strong>A</strong></td><td><strong>B</strong></td><td><strong>C</strong></td><td><strong>D</strong></td><td><strong>A</strong></td><td><strong>B</strong></td><td><strong>C</strong></td><td><strong>D</strong></td><td><strong>B</strong></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 style="color: var(--primary); font-size: 1rem; margin-top: 24px;">Justificativas Fundamentadas e Comentários Questão a Questão:</h3>
+      <div style="margin-top: 12px;">
+        
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 341 (Técnica Legislativa • Estrutura dos Atos Normativos: Parte Preliminar):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Conforme o Art. 3º, I da LC nº 95/1998, a parte preliminar compreende a epígrafe, a ementa, o preâmbulo, o enunciado do objeto e a indicação do âmbito de aplicação das disposições normativas. A parte normativa contém os artigos do texto legal e a parte final contém a vigência e revogação.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 342 (Técnica Legislativa • Numeração e Articulação dos Artigos):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. De acordo com o Art. 10, I da LC nº 95/1998: 'os artigos serão designados pela forma ordinal do primeiro ao nono e pela forma cardinal a partir do dez' (Art. 1º, Art. 2º... Art. 9º; Art. 10, Art. 11, etc.). Essa é uma das regras mais cobradas em provas de técnico legislativo.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 343 (Técnica Legislativa • Desdobramento de Artigos em Parágrafos):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Conforme o Art. 10, III da LC nº 95/1998: os parágrafos serão indicados pelo símbolo '§', seguido de numeração ordinal até o nono e cardinal a partir do dez. Quando existir apenas um parágrafo no artigo, a denominação é OBRIGATORIAMENTE por extenso: 'Parágrafo único.' (sendo vedado utilizar '§ único' ou '§ 1º único').</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 344 (Técnica Legislativa • Desdobramento em Incisos, Alíneas e Itens):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. A hierarquia expressa no Art. 10, incisos II, IV e V da LC nº 95/1998 é: 1) Os artigos e os parágrafos desdobram-se em INCISOS (indicados por algarismos romanos: I, II, III...); 2) Os incisos desdobram-se em ALÍNEAS (indicadas por letras minúsculas: a, b, c...); 3) As alíneas desdobram-se em ITENS (indicados por algarismos arábicos: 1, 2, 3...).</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 345 (Técnica Legislativa • Pontuação na Articulação Legislativa):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Conforme o Art. 10, VI da LC nº 95/1998: a) o texto do artigo ou parágrafo que se desdobra em incisos finaliza com dois-pontos (:); b) os incisos, alíneas e itens terminam com ponto e vírgula (;), à exceção do último do rol, que se encerra com ponto final (.); c) quando a alínea ou inciso se desdobrar, terminará por dois-pontos.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 346 (Técnica Legislativa • Regras de Alteração de Leis: Inserção de Novos Artigos):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. De acordo com o Art. 12, III, 'b' da LC nº 95/1998, é expressamente vedada a renumeração de artigos existentes. Para a inserção de novos dispositivos entre artigos já existentes, utiliza-se o número do artigo anterior acrescido de letras maiúsculas, em ordem alfabética: Art. 15-A, Art. 15-B, Art. 15-C. (O mesmo se aplica a parágrafos: § 1º-A; e a incisos: I-A).</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 347 (Técnica Legislativa • Proibição de Reaproveitamento de Numeração Revogada):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Conforme o Art. 12, III, 'b' e 'c' da LC nº 95/1998, é vedado o reaproveitamento do número de dispositivo revogado, vetado ou declarado inconstitucional para tratar de matéria diferente, a fim de preservar a segurança jurídica e o histórico da evolução legislativa.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 348 (Técnica Legislativa • Cláusula de Revogação: Expressa vs. Genérica):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. O Art. 9º da LC nº 95/1998 estabelece taxativamente: 'A cláusula de revogação deverá enunciar expressamente as leis ou disposições legais revogadas'. O parágrafo único do mesmo artigo veda expressamente o uso de cláusulas vagas e indeterminadas do tipo 'revogam-se as disposições em contrário'.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 349 (Técnica Legislativa • Cláusula de Vigência e Contagem do Prazo de Vacatio Legis):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Conforme o Art. 8º, § 1º da LC nº 95/1998 (redação dada pela LC 107/2001): 'A contagem do prazo para entrada em vigor das leis que estabeleçam período de vacância far-se-á com a inclusão da data da publicação e do último dia do prazo, entrando em vigor no dia subsequente à sua consumação integral'.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 350 (Técnica Legislativa • Uso da Expressão 'Entra em Vigor na Data de sua Publicação'):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. De acordo com o Art. 8º, 'caput' da LC nº 95/1998: a cláusula 'entra em vigor na data de sua publicação' deve ser reservada para as leis de pequena repercussão. Leis de grande alcance, códigos e normas que imponham novas obrigações materiais devem prever vacatio legis adequada para ampla divulgação e conhecimento.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 351 (Técnica Legislativa • Redação de Leis: Clareza, Precisão e Ordem Direta):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. O Art. 11, I da LC nº 95/1998 impõe: a) usar palavras e expressões em seu sentido comum (salvo termo técnico próprio da área); b) usar frases curtas e concisas em ordem direta; c) construir as orações na forma positiva; d) manter a uniformidade de tempo verbal e de terminologia ao longo de todo o ato normativo.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 352 (Técnica Legislativa • Uso de Siglas e Nomenclaturas em Proposições):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Conforme o Art. 11, II, 'f' da LC nº 95/1998, para assegurar a precisão do texto legal: 'indicar, expressamente, o dispositivo objeto de remissão (...) e grafar por extenso as referências a números e percentuais (...); e indicar a primeira menção de entidades e órgãos com o nome por extenso seguido da respectiva sigla entre parênteses'.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 353 (Técnica Legislativa • Consolidação de Leis: Conceito e Limites):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Conforme o Art. 13 da LC nº 95/1998, a consolidação consiste na reunião de atos normativos sobre determinado assunto em um único texto, eliminando duplicidades e contradições. É vedada qualquer alteração de mérito substantivo da lei consolidada que retire direitos ou crie novas obrigações não previstas nas leis originais.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 354 (Técnica Legislativa • Alterações Permitidas no Processo de Consolidação):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. O Art. 14 da LC nº 95/1998 autoriza expressamente, na consolidação: a) supressão de dispositivos declarados inconstitucionais pelo Judiciário com efeito erga omnes; b) supressão de dispositivos implicitamente revogados; c) adequação de terminologias e linguagem gramatical arcaica; d) uniformização do tempo verbal e fusão de dispositivos repetitivos.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 355 (Técnica Legislativa • Ementa dos Atos Normativos):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. O Art. 5º da LC nº 95/1998 preconiza: 'A ementa será grafada por meio de caracteres que a realcem e alinhar-se-á à direita da página, explicitando, de modo conciso, o objeto da lei'. Ela funciona como o resumo temático oficial do diploma.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 356 (Técnica Legislativa • Unicidade do Objeto e Proibição de 'Jabutis'):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Conforme o Art. 7º, II da LC nº 95/1998: 'a lei não conterá matéria estranha a seu objeto ou a este não vinculada por afinidade, pertinência ou conexão'. Essa regra visa banir os chamados 'jabutis' ou 'contrabandos legislativos' (inserção de temas totalmente alheios à ementa original do projeto).</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 357 (Técnica Legislativa • Epígrafe de Leis e Decretos):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Conforme o Art. 4º da LC nº 95/1998: 'A epígrafe, grafada em caracteres maiúsculos, propiciará identificação numérica e figurará a espécie normativa, número e data do ato' (exemplo clássico: LEI Nº 450, DE 11 DE SETEMBRO DE 2026).</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 358 (Técnica Legislativa • Agrupamento de Artigos em Capítulos e Títulos):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Conforme o Art. 10, VII da LC nº 95/1998: os artigos podem ser agrupados sucessivamente em: Subseções; as subseções em Seções; as seções em Capítulos; os capítulos em Títulos; os títulos em Livros; e os livros em Partes (Parte Geral e Parte Especial).</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 359 (Técnica Legislativa • Indicação de Prazos e Datas na Técnica Legislativa):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. O Art. 11, II da LC nº 95/1998 estabelece expressamente a obrigatoriedade de grafar datas por extenso (com '1º de...' para o primeiro dia do mês) e indicar valores monetários em algarismos seguidos da forma por extenso entre parênteses, garantindo exatidão probatória.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 360 (Técnica Legislativa • Aplicabilidade da LC 95/98 no Âmbito Municipal):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Conforme o Art. 59, parágrafo único da CF/88 e o Art. 1º da própria LC nº 95/1998, as normas de técnica legislativa para elaboração, redação e consolidação das leis aplicam-se à União, aos Estados, ao Distrito Federal e a todos os MUNICÍPIOS brasileiros, constituindo parâmetro cogente de legalidade e boa prática legislativa.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 361 (Língua Portuguesa • Sintaxe: Identificação do Sujeito da Oração):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Colocando a oração na ordem direta: 'Os vereadores meruoquenses [sujeito simples, núcleo: vereadores] aprovaram [verbo] o novo plano de cargos da administração municipal [objeto direto]'. A inversão sintática (sujeito posposto) é uma das armadilhas mais comuns da banca INBRASP para tentar induzir o candidato a marcar sujeito indeterminado.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 362 (Língua Portuguesa • Sintaxe: Sujeito Oculto (Desinencial) vs. Indeterminado):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Na frase 'Precisa-se de assessores jurídicos...', temos um Verbo Transitivo Indireto ('precisar de algo') acompanhado do pronome 'se' como ÍNDICE DE INDETERMINAÇÃO DO SUJEITO. Como o verbo é transitivo indireto (com preposição 'de'), a oração não admite voz passiva e o sujeito é INDETERMINADO. Nas outras: A tem sujeito desinencial (nós); B tem sujeito composto; D é oração sem sujeito (fenômeno da natureza).</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 363 (Língua Portuguesa • Sintaxe: Oração Sem Sujeito e Concordância com Verbo 'Haver'):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. No sentido de existir ou ocorrer, o verbo HAVER não possui sujeito e NÃO se flexiona no plural: 'Houve muitos debates' (e não 'houveram'). 'Muitos debates' é objeto direto da oração. As opções A, B e C estão incorretas porque flexionaram indevidamente o verbo impessoal no plural ('haviam', 'houveram', 'houvessem').</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 364 (Língua Portuguesa • Sintaxe: Transitividade Verbal Direta e Indireta (VTDI)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Quem comunica, comunica algo (Objeto Direto: 'o cancelamento da sessão extraordinária' - sem preposição) a alguém (Objeto Indireto: 'aos vereadores da comarca' - com preposição 'a'). Trata-se tipicamente de um Verbo Transitivo Direto e Indireto (VTDI ou bitransitivo).</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 365 (Língua Portuguesa • Sintaxe: Predicado Verbal, Nominal e Verbo-Nominal):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. O predicado verbo-nominal possui dois núcleos: um verbo significativo (de ação) e um nome (predicativo). Na oração 'chegaram entusiasmados à primeira sessão', o predicado é formado pelo verbo de ação 'chegaram' (núcleo verbal) + o adjetivo 'entusiasmados' (predicativo do sujeito, núcleo nominal). Em A temos predicado verbal; em C predicado nominal (verbo de ligação 'é' + predicativo 'fundamental'); em D predicado verbal.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 366 (Língua Portuguesa • Sintaxe: Complemento Nominal vs. Adjunto Adnominal):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. A distinção de ouro: 'leitura' é um substantivo abstrato transitivo derivado do verbo 'ler'. O termo preposicionado 'do parecer' tem sentido PACIENTE / PASSIVO (o parecer é lido por alguém, sofre a ação da leitura). Termo preposicionado completando substantivo abstrato com sentido passivo é sempre COMPLEMENTO NOMINAL. Se tivesse sentido ativo (ex.: 'A leitura do vereador'), seria adjunto adnominal.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 367 (Língua Portuguesa • Sintaxe: Adjunto Adnominal em Substantivo Abstrato):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Em 'A manifestação da Mesa Diretora', a Mesa Diretora é quem PRATICA a ação de manifestar-se (sentido ATIVO / agente). Termo preposicionado ligado a substantivo abstrato com valor ativo é ADJUNTO ADNOMINAL. Nas opções A, B e C os termos possuem sentido paciente ('às leis' = as leis são obedecidas; 'no Poder Legislativo' = o Poder recebe a confiança; 'aos servidores' = os servidores recebem apoio), sendo todos Complementos Nominais.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 368 (Língua Portuguesa • Sintaxe: Identificação do Agente da Passiva):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. A oração está na voz passiva analítica (verbo auxiliar 'foi' + particípio 'sancionado'). O termo preposicionado 'pelo Prefeito Municipal' representa o ser que executa a ação verbal na oração passiva, classificando-se como AGENTE DA PASSIVA. Passando para a voz ativa: 'O Prefeito Municipal sancionou o projeto de lei...'.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 369 (Língua Portuguesa • Sintaxe: Identificação de Adjuntos Adverbiais):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Análise das circunstâncias dos adjuntos adverbiais: 1) 'Ontem à tarde' indica a circunstância temporal em que o fato ocorreu (Tempo); 2) 'na sala das comissões' indica a localização física do ato (Lugar); 3) 'com extrema clareza' indica a maneira/forma como o relator apresentou o parecer (Modo).</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 370 (Língua Portuguesa • Sintaxe: Aposto Explicativo vs. Vocativo):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. O VOCATIVO não pertence nem ao sujeito nem ao predicado; é um termo independente utilizado para chamar, invocar ou interpelar o interlocutor ('Senhor Presidente, peço a palavra pela ordem'). Deve vir OBRIGATORIAMENTE isolado por vírgula (ou outro sinal de pontuação enfático). O aposto explicativo, por sua vez, amplia ou resume um termo de natureza substantiva.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 371 (Língua Portuguesa • Sintaxe: Classificação do Aposto Especificativo):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. O APOSTO ESPECIFICATIVO (ou individualizador) restringe e individualiza um substantivo genérico ('Município', 'cidade', 'rio', 'rua', 'poeta') por meio de um nome próprio, ligando-se a ele sem pausa e geralmente com preposição ('cidade de Sobral', 'Município de Meruoca', 'rua das Flores'). Não é separado por vírgulas.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 372 (Língua Portuguesa • Sintaxe: Pronome Apassivador vs. Índice de Indeterminação do Sujeito):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Regra capital da sintaxe: Em I, o verbo 'publicar' é Transitivo Direto. Com VTD + se, forma-se a voz passiva sintética (ou pronominal), onde o pronome 'se' é APASSIVADOR e o termo seguinte é o SUJEITO PACIENTE (que concorda com o verbo: 'os editais foram publicados' = 'publicaram-se os editais'). Em II, o verbo 'necessitar' é Transitivo Indireto (rege preposição 'de'). VTI + se resulta em ÍNDICE DE INDETERMINAÇÃO DO SUJEITO, mantendo o verbo obrigatoriamente no singular.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 373 (Língua Portuguesa • Sintaxe: Objeto Direto Preposicionado):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. O verbo 'amar' é Transitivo Direto ('quem ama, ama algo ou alguém'). Na frase 'amam a Meruoca', a preposição 'a' foi inserida antes do substantivo para expressar respeito cívico e realce afetivo, configurando classicamente um OBJETO DIRETO PREPOSICIONADO. Nas outras alternativas, os verbos 'redigir', 'encaminhar' e 'reivindicar' possuem objetos diretos comuns sem preposição ou objetos indiretos regenciais.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 374 (Língua Portuguesa • Sintaxe: Objeto Pleonástico):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. O termo 'Aos vereadores da oposição' é um Objeto Indireto já anteposto. A forma pronominal 'lhes' é inserida para duplicar/retomar esse mesmo objeto indireto com finalidade de ênfase e clareza, caracterizando a figura sintática do OBJETO INDIRETO PLEONÁSTICO.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 375 (Língua Portuguesa • Sintaxe: Função Sintática do Pronome Relativo 'QUE'):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Para descobrir a função do pronome relativo 'que', substitui-se o pronome pelo seu antecedente ('o projeto de lei'): 'O projeto de lei [sujeito] moderniza [verbo] a estrutura administrativa [objeto direto]'. Portanto, o pronome relativo 'que' funciona sintaticamente como SUJEITO da oração subordinada adjetiva.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 376 (Língua Portuguesa • Sintaxe: Predicativo do Objeto):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Na oração 'O Plenário [sujeito] considerou [verbo transitivo direto] a proposta de emenda [objeto direto] inconstitucional [predicativo do objeto]'. O adjetivo 'inconstitucional' expressa um atributo ou juízo de valor conferido pelo sujeito ao objeto direto 'a proposta de emenda', caracterizando o Predicativo do Objeto. Em C temos predicativo do sujeito ('atenta'); em D temos predicativo do sujeito ('apressados').</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 377 (Língua Portuguesa • Sintaxe: Pontuação do Vocativo no Texto Oficial):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. O vocativo 'Senhor Presidente' interpela diretamente o destinatário da fala. Quando intercalado no meio da oração, deve vir obrigatoriamente ISOLADO POR DUAS VÍRGULAS (uma antes e outra depois): 'Solicito a palavra pela ordem, Senhor Presidente, para esclarecer...'. Em A faltou a vírgula após o vocativo inicial; em C e D a pontuação ficou truncada.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 378 (Língua Portuguesa • Sintaxe: Diferenciação de Adjunto Adnominal e Predicativo):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Em I, 'indignado' é termo que integra o sintagma nominal ('O vereador indignado'), funcionando como ADJUNTO ADNOMINAL (qualidade vista como duradoura ou específica do sujeito). Em II, 'indignado' funciona como PREDICATIVO DO SUJEITO (estado psicológico momentâneo e circunstancial do vereador no instante em que proferia o discurso), integrando o predicado verbo-nominal.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 379 (Língua Portuguesa • Sintaxe: Termos Acessórios - Aposto Resumitivo / Recapitulativo):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. O APOSTO RESUMITIVO (ou recapitulativo) é exercido por um pronome indefinido (como 'tudo', 'nada', 'ninguém') que sintetiza em uma única palavra uma enumeração anterior de termos. Na oração, 'NADA' resume os múltiplos sujeitos enumerados ('projetos de lei, requerimentos, indicações...'), concordando o verbo no singular.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 380 (Língua Portuguesa • Sintaxe: Análise Sintática Global de Período):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Identificando os termos na oração: 'A Comissão de Constituição e Justiça' = Sujeito Simples; 'aprovou' = Verbo Transitivo Direto; 'o parecer favorável do relator' = OBJETO DIRETO (complemento sem preposição que sofre a ação de aprovar); 'unanimemente' = Adjunto Adverbial de Modo.</p>
+      </div>
+    </div>
+  
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

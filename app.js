@@ -5958,6 +5958,647 @@ const QUIZ_QUESTIONS_DATA = [
     "correctAnswer": 3,
     "commentary": "Gabarito: D. Utilizando o Diagrama de Venn e a teoria dos conjuntos: Total de servidores = 30; Interseção (ambos os cursos) = 6; Somente Processo Legislativo = 18 - 6 = 12; Somente Gestão Pública = 14 - 6 = 8; Total de servidores com pelo menos um curso = 12 + 6 + 8 = 26 servidores. Servidores sem nenhum dos cursos = 30 - 26 = 4 servidores."
   }
+,
+  {
+    "id": 341,
+    "category": "especificos",
+    "day": "w2_d5",
+    "discipline": "Técnica Legislativa",
+    "topic": "Estrutura dos Atos Normativos: Parte Preliminar",
+    "question": "Conforme a Lei Complementar nº 95/1998, que dispõe sobre a elaboração, redação e alteração das leis, a estrutura formal de uma lei compreende três partes básicas: a parte preliminar, a parte normativa e a parte final. Integram obrigatoriamente a PARTE PRELIMINAR de uma lei:",
+    "options": [
+      "A epígrafe, a ementa, o preâmbulo, o enunciado do objeto e a indicação do âmbito de aplicação.",
+      "As disposições transitórias, a cláusula de revogação expressa e a data de vigência.",
+      "O texto articulado dos capítulos, a tabela de anexos e os pareceres das comissões.",
+      "A assinatura dos líderes partidários e a exposição de motivos assinada pelo relator."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Conforme o Art. 3º, I da LC nº 95/1998, a parte preliminar compreende a epígrafe, a ementa, o preâmbulo, o enunciado do objeto e a indicação do âmbito de aplicação das disposições normativas. A parte normativa contém os artigos do texto legal e a parte final contém a vigência e revogação."
+  },
+  {
+    "id": 342,
+    "category": "especificos",
+    "day": "w2_d5",
+    "discipline": "Técnica Legislativa",
+    "topic": "Numeração e Articulação dos Artigos",
+    "question": "A respeito das regras de articulação dos atos normativos disciplinadas na Lei Complementar nº 95/1998 (Art. 10), a numeração ordinal e cardinal dos ARTIGOS deve obedecer à seguinte regra:",
+    "options": [
+      "A numeração dos artigos será ordinal do Art. 1º ao Art. 10, passando a cardinal a partir do Art. 11.",
+      "A numeração dos artigos será ordinal do Art. 1º ao Art. 9º e cardinal a partir do Art. 10 (ex.: Art. 10, Art. 11, etc.).",
+      "Todos os artigos de leis e decretos devem ser grafados compulsoriamente em algarismos romanos.",
+      "A numeração dos artigos será sempre cardinal desde o início (Artigo 1, Artigo 2, etc.), vedado o uso de ordinais."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. De acordo com o Art. 10, I da LC nº 95/1998: 'os artigos serão designados pela forma ordinal do primeiro ao nono e pela forma cardinal a partir do dez' (Art. 1º, Art. 2º... Art. 9º; Art. 10, Art. 11, etc.). Essa é uma das regras mais cobradas em provas de técnico legislativo."
+  },
+  {
+    "id": 343,
+    "category": "especificos",
+    "day": "w2_d5",
+    "discipline": "Técnica Legislativa",
+    "topic": "Desdobramento de Artigos em Parágrafos",
+    "question": "O artigo de uma lei municipal pode ser desdobrado em parágrafos para regulamentar aspectos complementares ou exceções à regra geral do 'caput'. Segundo a LC nº 95/1998, a correta indicação do parágrafo único e dos parágrafos múltiplos é:",
+    "options": [
+      "O parágrafo único deve ser grafado pelo símbolo '§ 1º' com a expressão 'Único' entre parênteses.",
+      "Havendo múltiplos parágrafos, todos são grafados por algarismos cardinais com a palavra 'Parágrafo' por extenso.",
+      "Quando houver apenas um parágrafo, será indicada a expressão por extenso 'Parágrafo único.'; havendo múltiplos parágrafos, usa-se o símbolo '§' seguido de numeração ordinal do 1º ao 9º e cardinal a partir do 10.",
+      "O símbolo '§' só pode ser utilizado se houver mais de dez parágrafos no mesmo artigo."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Conforme o Art. 10, III da LC nº 95/1998: os parágrafos serão indicados pelo símbolo '§', seguido de numeração ordinal até o nono e cardinal a partir do dez. Quando existir apenas um parágrafo no artigo, a denominação é OBRIGATORIAMENTE por extenso: 'Parágrafo único.' (sendo vedado utilizar '§ único' ou '§ 1º único')."
+  },
+  {
+    "id": 344,
+    "category": "especificos",
+    "day": "w2_d5",
+    "discipline": "Técnica Legislativa",
+    "topic": "Desdobramento em Incisos, Alíneas e Itens",
+    "question": "Na hierarquia formal de desdobramento e estruturação dos dispositivos de uma proposição legislativa, a Lei Complementar nº 95/1998 estabelece que:",
+    "options": [
+      "As alíneas se desdobram em incisos e os incisos se desdobram em itens numéricos.",
+      "Os artigos se desdobram diretamente em itens arábicos e estes se desdobram em letras maiúsculas.",
+      "Os parágrafos se desdobram em letras maiúsculas e os incisos em algarismos ordinais por extenso.",
+      "Os artigos e parágrafos desdobram-se em incisos (algarismos romanos); os incisos em alíneas (letras minúsculas); e as alíneas em itens (algarismos arábicos)."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. A hierarquia expressa no Art. 10, incisos II, IV e V da LC nº 95/1998 é: 1) Os artigos e os parágrafos desdobram-se em INCISOS (indicados por algarismos romanos: I, II, III...); 2) Os incisos desdobram-se em ALÍNEAS (indicadas por letras minúsculas: a, b, c...); 3) As alíneas desdobram-se em ITENS (indicados por algarismos arábicos: 1, 2, 3...)."
+  },
+  {
+    "id": 345,
+    "category": "especificos",
+    "day": "w2_d5",
+    "discipline": "Técnica Legislativa",
+    "topic": "Pontuação na Articulação Legislativa",
+    "question": "Quanto às normas de pontuação dos dispositivos legais reguladas pela Lei Complementar nº 95/1998 (Art. 10), assinale a alternativa que descreve o emprego gramatical CORRETO:",
+    "options": [
+      "O texto do artigo (ou parágrafo) que se desdobrar em incisos deve terminar com dois-pontos (:); os incisos e alíneas terminam com ponto e vírgula (;), exceto o último, que termina com ponto final (.).",
+      "Todos os incisos e alíneas devem terminar impreterivelmente com ponto final, independentemente de haver continuidade do rol.",
+      "O caput do artigo nunca pode terminar com dois-pontos, devendo ser empregado sempre ponto e vírgula.",
+      "As alíneas devem terminar sempre com vírgula simples para indicar que pertencem à mesma oração subordinada."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Conforme o Art. 10, VI da LC nº 95/1998: a) o texto do artigo ou parágrafo que se desdobra em incisos finaliza com dois-pontos (:); b) os incisos, alíneas e itens terminam com ponto e vírgula (;), à exceção do último do rol, que se encerra com ponto final (.); c) quando a alínea ou inciso se desdobrar, terminará por dois-pontos."
+  },
+  {
+    "id": 346,
+    "category": "especificos",
+    "day": "w2_d5",
+    "discipline": "Técnica Legislativa",
+    "topic": "Regras de Alteração de Leis: Inserção de Novos Artigos",
+    "question": "Ao elaborar um projeto de lei que pretenda incluir novos artigos entre o Art. 15 e o Art. 16 de uma lei municipal vigente, o redator legislativo deve seguir a sistemática da LC nº 95/1998 para evitar a rennumeração de toda a lei. O procedimento correto de acréscimo é:",
+    "options": [
+      "Renomear o Art. 16 para Art. 17 e empurrar todos os artigos seguintes para a numeração seguinte.",
+      "Identificar os novos artigos com o número do artigo imediatamente anterior seguido de letras maiúsculas em ordem alfabética (ex.: Art. 15-A, Art. 15-B).",
+      "Utilizar números fracionários ou decimais acompanhados de vírgula (ex.: Art. 15,1 e Art. 15,2).",
+      "Inserir os novos dispositivos como anexos sem numeração ao final do texto consolidado."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. De acordo com o Art. 12, III, 'b' da LC nº 95/1998, é expressamente vedada a renumeração de artigos existentes. Para a inserção de novos dispositivos entre artigos já existentes, utiliza-se o número do artigo anterior acrescido de letras maiúsculas, em ordem alfabética: Art. 15-A, Art. 15-B, Art. 15-C. (O mesmo se aplica a parágrafos: § 1º-A; e a incisos: I-A)."
+  },
+  {
+    "id": 347,
+    "category": "especificos",
+    "day": "w2_d5",
+    "discipline": "Técnica Legislativa",
+    "topic": "Proibição de Reaproveitamento de Numeração Revogada",
+    "question": "Suponha que o Art. 8º da Lei Orgânica do Município de Meruoca tenha sido formalmente revogado há dois anos. Em novo projeto de lei, um vereador propõe introduzir nova norma e designá-la como 'Art. 8º'. À luz da LC nº 95/1998, essa prática é:",
+    "options": [
+      "Permitida, desde que o novo assunto tenha pertinência temática com a matéria original.",
+      "Válida e recomendada para economizar espaço e evitar o acúmulo de dispositivos com sufixos alfabéticos.",
+      "Expressamente vedada, pois é proibido reaproveitar o número de dispositivo revogado, vetado ou declarado inconstitucional para matéria diversa.",
+      "Facultativa, ficando a critério discricionário do Presidente da Comissão de Legislação e Justiça."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Conforme o Art. 12, III, 'b' e 'c' da LC nº 95/1998, é vedado o reaproveitamento do número de dispositivo revogado, vetado ou declarado inconstitucional para tratar de matéria diferente, a fim de preservar a segurança jurídica e o histórico da evolução legislativa."
+  },
+  {
+    "id": 348,
+    "category": "especificos",
+    "day": "w2_d5",
+    "discipline": "Técnica Legislativa",
+    "topic": "Cláusula de Revogação: Expressa vs. Genérica",
+    "question": "Uma das alterações mais relevantes impostas pela LC nº 95/1998 no Direito Positivo brasileiro refere-se à CLÁUSULA DE REVOGAÇÃO (Art. 9º). A respeito desse tema, assinale a conduta estritamente obrigatória:",
+    "options": [
+      "É obrigatório o uso da cláusula genérica 'revogam-se as disposições em contrário' ao final de toda lei.",
+      "A lei nova deve deixar a revogação tácita a cargo do Poder Judiciário, sendo desnecessário declarar revogações.",
+      "As revogações devem ser feitas de modo velado para não prejudicar direitos adquiridos de terceiros.",
+      "A cláusula de revogação deve enunciar expressamente todas as leis ou dispositivos que estão sendo revogados, sendo vedada a fórmula genérica 'revogam-se as disposições em contrário'."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. O Art. 9º da LC nº 95/1998 estabelece taxativamente: 'A cláusula de revogação deverá enunciar expressamente as leis ou disposições legais revogadas'. O parágrafo único do mesmo artigo veda expressamente o uso de cláusulas vagas e indeterminadas do tipo 'revogam-se as disposições em contrário'."
+  },
+  {
+    "id": 349,
+    "category": "especificos",
+    "day": "w2_d5",
+    "discipline": "Técnica Legislativa",
+    "topic": "Cláusula de Vigência e Contagem do Prazo de Vacatio Legis",
+    "question": "Segundo o Art. 8º da LC nº 95/1998, a cláusula de vigência deve indicar de forma expressa e clara o prazo para que a lei comece a produzir efeitos. Quando a lei estabelece um período de vacância (vacatio legis) fixado em dias corridos, a contagem do prazo opera-se:",
+    "options": [
+      "Incluindo-se a data da publicação e a do último dia do prazo, entrando a lei em vigor no dia subsequente à sua consumação integral.",
+      "Excluindo-se o dia da publicação e contando-se apenas os dias úteis forenses da comarca.",
+      "Iniciando-se 15 dias após a circulação física do primeiro exemplar impresso.",
+      "Computando-se os prazos em meses lunares de 28 dias a partir da assinatura do Prefeito."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Conforme o Art. 8º, § 1º da LC nº 95/1998 (redação dada pela LC 107/2001): 'A contagem do prazo para entrada em vigor das leis que estabeleçam período de vacância far-se-á com a inclusão da data da publicação e do último dia do prazo, entrando em vigor no dia subsequente à sua consumação integral'."
+  },
+  {
+    "id": 350,
+    "category": "especificos",
+    "day": "w2_d5",
+    "discipline": "Técnica Legislativa",
+    "topic": "Uso da Expressão 'Entra em Vigor na Data de sua Publicação'",
+    "question": "A fórmula 'esta Lei entra em vigor na data de sua publicação' é frequentemente encontrada no encerramento de diplomas legais. Nos termos das diretrizes da LC nº 95/1998, essa fórmula:",
+    "options": [
+      "Deve ser adotada compulsoriamente em todos os códigos e diplomas orçamentários do Município.",
+      "É recomendada apenas para leis de pequena repercussão, que não demandem prazo de adaptação dos cidadãos ou da Administração Pública.",
+      "Foi banida do ordenamento e enseja a nulidade absoluta do ato legislativo.",
+      "Só pode ser utilizada caso o texto legal tenha menos de três artigos."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. De acordo com o Art. 8º, 'caput' da LC nº 95/1998: a cláusula 'entra em vigor na data de sua publicação' deve ser reservada para as leis de pequena repercussão. Leis de grande alcance, códigos e normas que imponham novas obrigações materiais devem prever vacatio legis adequada para ampla divulgação e conhecimento."
+  },
+  {
+    "id": 351,
+    "category": "especificos",
+    "day": "w2_d5",
+    "discipline": "Técnica Legislativa",
+    "topic": "Redação de Leis: Clareza, Precisão e Ordem Direta",
+    "question": "As disposições normativas devem ser redigidas com clareza, precisão e ordem lógica. O Art. 11 da LC nº 95/1998 estabelece diretrizes de redação oficial. Para a obtenção de CLAREZA e PRECISÃO, o texto legal deve:",
+    "options": [
+      "Empregar adjetivos superlativos e figuras de linguagem poéticas para embelezar o preâmbulo.",
+      "Usar frases longas e subordinadas com múltiplas negações para dificultar interpretações ambíguas.",
+      "Usar frases curtas em ordem direta, vocabulário corrente em sentido comum, evitando preciosismos e neologismos desnecessários.",
+      "Evitar a repetição de termos técnicos, substituindo-os a cada parágrafo por sinônimos inventados."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. O Art. 11, I da LC nº 95/1998 impõe: a) usar palavras e expressões em seu sentido comum (salvo termo técnico próprio da área); b) usar frases curtas e concisas em ordem direta; c) construir as orações na forma positiva; d) manter a uniformidade de tempo verbal e de terminologia ao longo de todo o ato normativo."
+  },
+  {
+    "id": 352,
+    "category": "especificos",
+    "day": "w2_d5",
+    "discipline": "Técnica Legislativa",
+    "topic": "Uso de Siglas e Nomenclaturas em Proposições",
+    "question": "Ao redigir um projeto de lei que cite órgãos ou entidades públicas municipais e estaduais por meio de siglas (como TCM, SAAE, SUS), a técnica legislativa oficial exige que:",
+    "options": [
+      "As siglas sejam utilizadas isoladamente desde a ementa, sem necessidade de escrita por extenso.",
+      "As siglas sejam grafadas sempre em letras minúsculas acompanhadas de asterisco no rodapé.",
+      "O uso de qualquer sigla em texto de lei seja expressamente proibido pela Constituição.",
+      "Na primeira menção no texto normativo, a denominação do órgão ou entidade seja escrita por extenso, acompanhada da respectiva sigla entre parênteses."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Conforme o Art. 11, II, 'f' da LC nº 95/1998, para assegurar a precisão do texto legal: 'indicar, expressamente, o dispositivo objeto de remissão (...) e grafar por extenso as referências a números e percentuais (...); e indicar a primeira menção de entidades e órgãos com o nome por extenso seguido da respectiva sigla entre parênteses'."
+  },
+  {
+    "id": 353,
+    "category": "especificos",
+    "day": "w2_d5",
+    "discipline": "Técnica Legislativa",
+    "topic": "Consolidação de Leis: Conceito e Limites",
+    "question": "A consolidação de leis consiste na integração de todas as leis vigentes sobre determinada matéria em um único diploma legal. Segundo a LC nº 95/1998 (Art. 13), o projeto de lei de consolidação:",
+    "options": [
+      "Tem por objetivo reunir normas afins, revogando expressamente os atos originais e preservando o conteúdo substantivo das regras consolidadas.",
+      "Pode criar novos tributos e penalidades mais graves sem prévia discussão em comissão temática.",
+      "Extingue os direitos subjetivos concedidos por leis municipais anteriores a 1988.",
+      "Dispensa a aprovação pelo Plenário da Câmara, sendo publicado por despacho monocrático da Mesa."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Conforme o Art. 13 da LC nº 95/1998, a consolidação consiste na reunião de atos normativos sobre determinado assunto em um único texto, eliminando duplicidades e contradições. É vedada qualquer alteração de mérito substantivo da lei consolidada que retire direitos ou crie novas obrigações não previstas nas leis originais."
+  },
+  {
+    "id": 354,
+    "category": "especificos",
+    "day": "w2_d5",
+    "discipline": "Técnica Legislativa",
+    "topic": "Alterações Permitidas no Processo de Consolidação",
+    "question": "No processo de consolidação de leis municipais pela Câmara Municipal, a LC nº 95/1998 permite que sejam efetuadas certas adaptações formais no texto integrado. Entre as alterações permitidas na consolidação, inclui-se:",
+    "options": [
+      "A criação de novos cargos comissionados para a estrutura do Poder Legislativo.",
+      "A declaração de nulidade de contratos administrativos celebrados no exercício anterior.",
+      "A supressão de dispositivos já declarados inconstitucionais pelo STF ou TJ e a atualização de termos gramaticais obsoletos.",
+      "A alteração dos quóruns regimentais de maioria qualificada previstos na Lei Orgânica."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. O Art. 14 da LC nº 95/1998 autoriza expressamente, na consolidação: a) supressão de dispositivos declarados inconstitucionais pelo Judiciário com efeito erga omnes; b) supressão de dispositivos implicitamente revogados; c) adequação de terminologias e linguagem gramatical arcaica; d) uniformização do tempo verbal e fusão de dispositivos repetitivos."
+  },
+  {
+    "id": 355,
+    "category": "especificos",
+    "day": "w2_d5",
+    "discipline": "Técnica Legislativa",
+    "topic": "Ementa dos Atos Normativos",
+    "question": "A ementa é o elemento formal que sintetiza o conteúdo da lei. De acordo com as disposições da LC nº 95/1998 (Art. 5º), a ementa de um ato normativo deve:",
+    "options": [
+      "Conter no máximo cinco palavras e ser impressa em caracteres itálicos no rodapé da folha.",
+      "Reproduzir a justificação política do projeto com a biografia do parlamentar proponente.",
+      "Alinhar-se à esquerda do texto com tamanho de fonte superior ao do título principal da lei.",
+      "Ser grafada de forma concisa e indicar, com clareza e precisão, o objeto principal sobre o qual versa a lei."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. O Art. 5º da LC nº 95/1998 preconiza: 'A ementa será grafada por meio de caracteres que a realcem e alinhar-se-á à direita da página, explicitando, de modo conciso, o objeto da lei'. Ela funciona como o resumo temático oficial do diploma."
+  },
+  {
+    "id": 356,
+    "category": "especificos",
+    "day": "w2_d5",
+    "discipline": "Técnica Legislativa",
+    "topic": "Unicidade do Objeto e Proibição de 'Jabutis'",
+    "question": "O Art. 7º da LC nº 95/1998 estabelece que o primeiro artigo do texto legal indicará o objeto da lei e o seu âmbito de aplicação. O mesmo artigo preconiza o Princípio da Unicidade do Objeto. Isso significa que:",
+    "options": [
+      "Cada lei tratará de um único objeto, não devendo conter matéria estranha ao seu objeto principal ou a este não vinculada por afinidade.",
+      "Uma lei municipal só pode possuir um único artigo substantivo em todo o seu corpo normativo.",
+      "O Município só pode aprovar uma única lei tributária por ano legislativo ordinário.",
+      "As leis ordinárias não podem ser alteradas por leis complementares sob pena de bitributação."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Conforme o Art. 7º, II da LC nº 95/1998: 'a lei não conterá matéria estranha a seu objeto ou a este não vinculada por afinidade, pertinência ou conexão'. Essa regra visa banir os chamados 'jabutis' ou 'contrabandos legislativos' (inserção de temas totalmente alheios à ementa original do projeto)."
+  },
+  {
+    "id": 357,
+    "category": "especificos",
+    "day": "w2_d5",
+    "discipline": "Técnica Legislativa",
+    "topic": "Epígrafe de Leis e Decretos",
+    "question": "Na técnica legislativa, a EPÍGRAFE localiza-se no topo do documento normativo. A sua correta formação formal é constituída por:",
+    "options": [
+      "Pelo nome de batismo do autor do projeto e seu domicílio eleitoral.",
+      "Pelo título designativo da espécie normativa, número oficial do ato e ano de sua promulgação (ex.: LEI Nº 1.234, DE 11 DE SETEMBRO DE 2026).",
+      "Por uma citação jurisprudencial de tribunal superior que fundamente a legalidade da matéria.",
+      "Pela indicação do partido político que detém a maioria dos assentos na Câmara."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Conforme o Art. 4º da LC nº 95/1998: 'A epígrafe, grafada em caracteres maiúsculos, propiciará identificação numérica e figurará a espécie normativa, número e data do ato' (exemplo clássico: LEI Nº 450, DE 11 DE SETEMBRO DE 2026)."
+  },
+  {
+    "id": 358,
+    "category": "especificos",
+    "day": "w2_d5",
+    "discipline": "Técnica Legislativa",
+    "topic": "Agrupamento de Artigos em Capítulos e Títulos",
+    "question": "Quando uma proposição legislativa possui grande extensão ou complexidade temática (como a Lei Orgânica ou o Regimento Interno), seus artigos podem ser agrupados hierarquicamente. A ordem hierárquica ascendente de agrupamento prevista na LC nº 95/1998 (Art. 10, VII) é:",
+    "options": [
+      "Artigos -> Parágrafos -> Itens -> Alíneas -> Capítulos.",
+      "Artigos -> Títulos -> Livros -> Seções -> Subseções.",
+      "Artigos -> Subseções -> Seções -> Capítulos -> Títulos -> Livros -> Partes.",
+      "Artigos -> Alíneas -> Seções -> Anexos -> Decretos."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Conforme o Art. 10, VII da LC nº 95/1998: os artigos podem ser agrupados sucessivamente em: Subseções; as subseções em Seções; as seções em Capítulos; os capítulos em Títulos; os títulos em Livros; e os livros em Partes (Parte Geral e Parte Especial)."
+  },
+  {
+    "id": 359,
+    "category": "especificos",
+    "day": "w2_d5",
+    "discipline": "Técnica Legislativa",
+    "topic": "Indicação de Prazos e Datas na Técnica Legislativa",
+    "question": "A respeito da padronização e precisão textual na redação de leis conforme a LC nº 95/1998, as referências a datas e valores nos textos normativos devem ser expressas da seguinte maneira:",
+    "options": [
+      "As datas devem ser abreviadas em padrão numérico com barras (ex.: 11/09/26) para poupar linhas no diário.",
+      "Os valores monetários devem ser escritos exclusivamente em numerais arábicos, dispensando-se a escrita por extenso.",
+      "Os valores monetários e datas devem ser registrados em moeda estrangeira conversível pelo Banco Central.",
+      "Para expressar datas, utiliza-se a forma por extenso (ex.: 11 de setembro de 2026), grafando-se '1º' para o primeiro dia do mês; e valores monetários são expressos em algarismos seguidos de sua menção por extenso entre parênteses."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. O Art. 11, II da LC nº 95/1998 estabelece expressamente a obrigatoriedade de grafar datas por extenso (com '1º de...' para o primeiro dia do mês) e indicar valores monetários em algarismos seguidos da forma por extenso entre parênteses, garantindo exatidão probatória."
+  },
+  {
+    "id": 360,
+    "category": "especificos",
+    "day": "w2_d5",
+    "discipline": "Técnica Legislativa",
+    "topic": "Aplicabilidade da LC 95/98 no Âmbito Municipal",
+    "question": "Em relação ao alcance federativo da Lei Complementar nº 95/1998, é juridicamente correto afirmar que suas regras e preceitos de técnica legislativa vinculam:",
+    "options": [
+      "Todos os entes federados (União, Estados, Distrito Federal e Municípios), por expressa determinação do Art. 59, parágrafo único da Constituição Federal.",
+      "Exclusivamente o Congresso Nacional, não se aplicando às Câmaras Municipais nem às Assembleias Legislativas.",
+      "Apenas as capitais de Estado e cidades com mais de duzentos mil eleitores.",
+      "Exclusivamente os projetos de iniciativa privativa do Poder Judiciário e Ministério Público."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Conforme o Art. 59, parágrafo único da CF/88 e o Art. 1º da própria LC nº 95/1998, as normas de técnica legislativa para elaboração, redação e consolidação das leis aplicam-se à União, aos Estados, ao Distrito Federal e a todos os MUNICÍPIOS brasileiros, constituindo parâmetro cogente de legalidade e boa prática legislativa."
+  },
+  {
+    "id": 361,
+    "category": "portugues",
+    "day": "w2_d5",
+    "discipline": "Língua Portuguesa",
+    "topic": "Sintaxe: Identificação do Sujeito da Oração",
+    "question": "Na oração 'Aprovaram os vereadores meruoquenses o novo plano de cargos da administração municipal', o sujeito da forma verbal 'Aprovaram' classifica-se como:",
+    "options": [
+      "Indeterminado, pois o verbo encontra-se flexionado na 3ª pessoa do plural.",
+      "Sujeito Simples, cujo núcleo substantivo é 'vereadores', posposto ao verbo.",
+      "Oração sem sujeito, por tratar de matéria de interesse público.",
+      "Sujeito Composto, formado pelos termos 'vereadores' e 'plano de cargos'."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Colocando a oração na ordem direta: 'Os vereadores meruoquenses [sujeito simples, núcleo: vereadores] aprovaram [verbo] o novo plano de cargos da administração municipal [objeto direto]'. A inversão sintática (sujeito posposto) é uma das armadilhas mais comuns da banca INBRASP para tentar induzir o candidato a marcar sujeito indeterminado."
+  },
+  {
+    "id": 362,
+    "category": "portugues",
+    "day": "w2_d5",
+    "discipline": "Língua Portuguesa",
+    "topic": "Sintaxe: Sujeito Oculto (Desinencial) vs. Indeterminado",
+    "question": "Assinale a alternativa em que o sujeito da oração classifica-se tecnicamente como SUJEITO INDETERMINADO:",
+    "options": [
+      "Durante a sessão matutina, comparecemos pontualmente à reunião de lideranças partidárias.",
+      "O Presidente e o Secretário assinaram a resolução legislativa de imediato.",
+      "Precisa-se de assessores jurídicos qualificados para a Comissão de Redação Final.",
+      "Choveu torrencialmente em Meruoca na madrugada da última terça-feira."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Na frase 'Precisa-se de assessores jurídicos...', temos um Verbo Transitivo Indireto ('precisar de algo') acompanhado do pronome 'se' como ÍNDICE DE INDETERMINAÇÃO DO SUJEITO. Como o verbo é transitivo indireto (com preposição 'de'), a oração não admite voz passiva e o sujeito é INDETERMINADO. Nas outras: A tem sujeito desinencial (nós); B tem sujeito composto; D é oração sem sujeito (fenômeno da natureza)."
+  },
+  {
+    "id": 363,
+    "category": "portugues",
+    "day": "w2_d5",
+    "discipline": "Língua Portuguesa",
+    "topic": "Sintaxe: Oração Sem Sujeito e Concordância com Verbo 'Haver'",
+    "question": "O verbo 'HAVER' é classificado como impessoal (oração sem sujeito) quando empregado no sentido de existir, ocorrer ou indicar tempo decorrido, devendo permanecer obrigatoriamente na 3ª pessoa do singular. Assinale a frase que exemplifica a correta regência e concordância sintática desse verbo:",
+    "options": [
+      "Haviam muitos munícipes presentes no plenário durante a votação das contas públicas.",
+      "Houveram várias dúvidas regimentais suscitadas pelos técnicos legislativos durante os debates.",
+      "Se não houvessem tantas emendas supressivas, o projeto de lei já teria sido promulgado.",
+      "Houve muitos debates produtivos entre os vereadores antes da deliberação final da matéria."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. No sentido de existir ou ocorrer, o verbo HAVER não possui sujeito e NÃO se flexiona no plural: 'Houve muitos debates' (e não 'houveram'). 'Muitos debates' é objeto direto da oração. As opções A, B e C estão incorretas porque flexionaram indevidamente o verbo impessoal no plural ('haviam', 'houveram', 'houvessem')."
+  },
+  {
+    "id": 364,
+    "category": "portugues",
+    "day": "w2_d5",
+    "discipline": "Língua Portuguesa",
+    "topic": "Sintaxe: Transitividade Verbal Direta e Indireta (VTDI)",
+    "question": "Considere a frase: 'O Presidente da Câmara comunicou o cancelamento da sessão extraordinária aos vereadores da comarca'. O verbo 'comunicar', no contexto da oração, classifica-se sintaticamente como:",
+    "options": [
+      "Verbo Transitivo Direto e Indireto (VTDI), regendo 'o cancelamento da sessão' como Objeto Direto e 'aos vereadores da comarca' como Objeto Indireto.",
+      "Verbo Transitivo Indireto (VTI), pois exige obrigatoriamente duas preposições sucessivas.",
+      "Verbo Intransitivo (VI), sendo todos os seus complementos meros adjuntos adverbiais de modo.",
+      "Verbo de Ligação (VL), expressando um estado transitório do sujeito parlamentar."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Quem comunica, comunica algo (Objeto Direto: 'o cancelamento da sessão extraordinária' - sem preposição) a alguém (Objeto Indireto: 'aos vereadores da comarca' - com preposição 'a'). Trata-se tipicamente de um Verbo Transitivo Direto e Indireto (VTDI ou bitransitivo)."
+  },
+  {
+    "id": 365,
+    "category": "portugues",
+    "day": "w2_d5",
+    "discipline": "Língua Portuguesa",
+    "topic": "Sintaxe: Predicado Verbal, Nominal e Verbo-Nominal",
+    "question": "O predicado classifica-se conforme a natureza de seu(s) núcleo(s). Assinale a alternativa que contém um PREDICADO VERBO-NOMINAL:",
+    "options": [
+      "Os técnicos legislativos analisaram detidamente as emendas apresentadas ao projeto.",
+      "Os novos vereadores da legislatura chegaram entusiasmados à primeira sessão plenária.",
+      "A Lei Orgânica de Meruoca é fundamental para a organização político-administrativa do Município.",
+      "O expediente parlamentar transcorreu sem nenhuma interrupção regimental."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. O predicado verbo-nominal possui dois núcleos: um verbo significativo (de ação) e um nome (predicativo). Na oração 'chegaram entusiasmados à primeira sessão', o predicado é formado pelo verbo de ação 'chegaram' (núcleo verbal) + o adjetivo 'entusiasmados' (predicativo do sujeito, núcleo nominal). Em A temos predicado verbal; em C predicado nominal (verbo de ligação 'é' + predicativo 'fundamental'); em D predicado verbal."
+  },
+  {
+    "id": 366,
+    "category": "portugues",
+    "day": "w2_d5",
+    "discipline": "Língua Portuguesa",
+    "topic": "Sintaxe: Complemento Nominal vs. Adjunto Adnominal",
+    "question": "Na oração 'A leitura do parecer das comissões esclareceu todas as dúvidas regimentais', o termo destacado 'do parecer das comissões' exerce a função sintática de:",
+    "options": [
+      "Objeto Direto Preposicionado da forma verbal 'esclareceu'.",
+      "Adjunto Adverbial de Instrumento dos trabalhos de votação.",
+      "Complemento Nominal, pois completa o sentido do substantivo abstrato de ação 'leitura' com valor paciente/passivo (o parecer foi lido).",
+      "Agente da Passiva com função predicativa de causa originária."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. A distinção de ouro: 'leitura' é um substantivo abstrato transitivo derivado do verbo 'ler'. O termo preposicionado 'do parecer' tem sentido PACIENTE / PASSIVO (o parecer é lido por alguém, sofre a ação da leitura). Termo preposicionado completando substantivo abstrato com sentido passivo é sempre COMPLEMENTO NOMINAL. Se tivesse sentido ativo (ex.: 'A leitura do vereador'), seria adjunto adnominal."
+  },
+  {
+    "id": 367,
+    "category": "portugues",
+    "day": "w2_d5",
+    "discipline": "Língua Portuguesa",
+    "topic": "Sintaxe: Adjunto Adnominal em Substantivo Abstrato",
+    "question": "Diferenciando o Adjunto Adnominal do Complemento Nominal, assinale a opção em que o termo preposicionado em destaque exerce função de ADJUNTO ADNOMINAL:",
+    "options": [
+      "A obediência às leis municipais é dever inescusável de todos os munícipes.",
+      "A confiança no Poder Legislativo foi restabelecida com as audiências públicas transparentes.",
+      "O apoio aos servidores concursados foi aprovado por unanimidade pelos vereadores.",
+      "A manifestação da Mesa Diretora encerrou a polêmica sobre o quórum de votação."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Em 'A manifestação da Mesa Diretora', a Mesa Diretora é quem PRATICA a ação de manifestar-se (sentido ATIVO / agente). Termo preposicionado ligado a substantivo abstrato com valor ativo é ADJUNTO ADNOMINAL. Nas opções A, B e C os termos possuem sentido paciente ('às leis' = as leis são obedecidas; 'no Poder Legislativo' = o Poder recebe a confiança; 'aos servidores' = os servidores recebem apoio), sendo todos Complementos Nominais."
+  },
+  {
+    "id": 368,
+    "category": "portugues",
+    "day": "w2_d5",
+    "discipline": "Língua Portuguesa",
+    "topic": "Sintaxe: Identificação do Agente da Passiva",
+    "question": "Na frase 'O projeto de lei de diretrizes orçamentárias foi sancionado pelo Prefeito Municipal dentro do prazo regimental', o termo 'pelo Prefeito Municipal' classifica-se sintaticamente como:",
+    "options": [
+      "Agente da Passiva.",
+      "Objeto Indireto.",
+      "Adjunto Adverbial de Instrumento.",
+      "Complemento Nominal."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. A oração está na voz passiva analítica (verbo auxiliar 'foi' + particípio 'sancionado'). O termo preposicionado 'pelo Prefeito Municipal' representa o ser que executa a ação verbal na oração passiva, classificando-se como AGENTE DA PASSIVA. Passando para a voz ativa: 'O Prefeito Municipal sancionou o projeto de lei...'."
+  },
+  {
+    "id": 369,
+    "category": "portugues",
+    "day": "w2_d5",
+    "discipline": "Língua Portuguesa",
+    "topic": "Sintaxe: Identificação de Adjuntos Adverbiais",
+    "question": "No trecho 'Ontem à tarde, o relator apresentou o parecer favorável na sala das comissões com extrema clareza', os termos destacados expressam, respectivamente, circunstâncias adverbiais de:",
+    "options": [
+      "Causa, finalidade e consequência lógica.",
+      "Tempo, lugar e modo.",
+      "Instrumento, intensidade e companhia.",
+      "Dúvida, oposição e concessão."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Análise das circunstâncias dos adjuntos adverbiais: 1) 'Ontem à tarde' indica a circunstância temporal em que o fato ocorreu (Tempo); 2) 'na sala das comissões' indica a localização física do ato (Lugar); 3) 'com extrema clareza' indica a maneira/forma como o relator apresentou o parecer (Modo)."
+  },
+  {
+    "id": 370,
+    "category": "portugues",
+    "day": "w2_d5",
+    "discipline": "Língua Portuguesa",
+    "topic": "Sintaxe: Aposto Explicativo vs. Vocativo",
+    "question": "A respeito dos termos 'Aposto' e 'Vocativo' na sintaxe da língua portuguesa, assinale a afirmativa correta:",
+    "options": [
+      "O Vocativo mantém estreita dependência sintática com o verbo da oração, exercendo função de sujeito em frases imperativas.",
+      "O Aposto explicativo deve vir necessariamente sem vírgulas para não fragmentar a continuidade da frase.",
+      "O Vocativo é um termo de chamamento ou interpelação, sintaticamente independente da oração, devendo ser sempre isolado por sinal de pontuação (vírgula).",
+      "O Aposto especificativo é aquele que vem sempre entre parênteses para explicar um conceito filosófico."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. O VOCATIVO não pertence nem ao sujeito nem ao predicado; é um termo independente utilizado para chamar, invocar ou interpelar o interlocutor ('Senhor Presidente, peço a palavra pela ordem'). Deve vir OBRIGATORIAMENTE isolado por vírgula (ou outro sinal de pontuação enfático). O aposto explicativo, por sua vez, amplia ou resume um termo de natureza substantiva."
+  },
+  {
+    "id": 371,
+    "category": "portugues",
+    "day": "w2_d5",
+    "discipline": "Língua Portuguesa",
+    "topic": "Sintaxe: Classificação do Aposto Especificativo",
+    "question": "Em 'O Município de Meruoca situa-se na Região Noroeste do Estado do Ceará', a expressão destacada 'de Meruoca' exerce função sintática de:",
+    "options": [
+      "Adjunto Adverbial de Origem e Procedência.",
+      "Complemento Nominal do verbo situar-se.",
+      "Objeto Indireto do substantivo próprio Ceará.",
+      "Aposto Especificativo (ou Individualizador)."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. O APOSTO ESPECIFICATIVO (ou individualizador) restringe e individualiza um substantivo genérico ('Município', 'cidade', 'rio', 'rua', 'poeta') por meio de um nome próprio, ligando-se a ele sem pausa e geralmente com preposição ('cidade de Sobral', 'Município de Meruoca', 'rua das Flores'). Não é separado por vírgulas."
+  },
+  {
+    "id": 372,
+    "category": "portugues",
+    "day": "w2_d5",
+    "discipline": "Língua Portuguesa",
+    "topic": "Sintaxe: Pronome Apassivador vs. Índice de Indeterminação do Sujeito",
+    "question": "Analise as duas construções sintáticas a seguir:\nI. 'Publicaram-se os novos editais do concurso legislativo.'\nII. 'Necessita-se de servidores dedicados na assessoria parlamentar.'\nQuanto à função da partícula 'SE', é correto afirmar que:",
+    "options": [
+      "Em I, o 'SE' é Partícula Apassivadora e 'os novos editais do concurso legislativo' é o Sujeito Paciente; em II, o 'SE' é Índice de Indeterminação do Sujeito e o sujeito é indeterminado.",
+      "Em ambas as frases, o 'SE' funciona exclusivamente como pronome reflexivo recíproco.",
+      "Em I, o termo 'os novos editais' é objeto direto e o sujeito é indeterminado.",
+      "Em II, o 'SE' é conjunção subordinativa condicional de valor conformativo."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Regra capital da sintaxe: Em I, o verbo 'publicar' é Transitivo Direto. Com VTD + se, forma-se a voz passiva sintética (ou pronominal), onde o pronome 'se' é APASSIVADOR e o termo seguinte é o SUJEITO PACIENTE (que concorda com o verbo: 'os editais foram publicados' = 'publicaram-se os editais'). Em II, o verbo 'necessitar' é Transitivo Indireto (rege preposição 'de'). VTI + se resulta em ÍNDICE DE INDETERMINAÇÃO DO SUJEITO, mantendo o verbo obrigatoriamente no singular."
+  },
+  {
+    "id": 373,
+    "category": "portugues",
+    "day": "w2_d5",
+    "discipline": "Língua Portuguesa",
+    "topic": "Sintaxe: Objeto Direto Preposicionado",
+    "question": "O objeto direto preposicionado ocorre quando um verbo transitivo direto tem seu complemento introduzido por preposição, não por exigência de regência verbal, mas por razões estilísticas, de ênfase ou para evitar ambiguidade. Assinale a oração que apresenta esse recurso sintático:",
+    "options": [
+      "O técnico legislativo redigiu a ata da sessão plenária com agilidade.",
+      "Os vereadores amam a Meruoca e defendem os interesses de sua população com fervor.",
+      "O relatório das contas anuais foi encaminhado ao tribunal competente no prazo legal.",
+      "A assembleia dos servidores municipais reivindicou melhorias nos planos de saúde."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. O verbo 'amar' é Transitivo Direto ('quem ama, ama algo ou alguém'). Na frase 'amam a Meruoca', a preposição 'a' foi inserida antes do substantivo para expressar respeito cívico e realce afetivo, configurando classicamente um OBJETO DIRETO PREPOSICIONADO. Nas outras alternativas, os verbos 'redigir', 'encaminhar' e 'reivindicar' possuem objetos diretos comuns sem preposição ou objetos indiretos regenciais."
+  },
+  {
+    "id": 374,
+    "category": "portugues",
+    "day": "w2_d5",
+    "discipline": "Língua Portuguesa",
+    "topic": "Sintaxe: Objeto Pleonástico",
+    "question": "Na oração 'Aos vereadores da oposição, não lhes restou alternativa senão apresentar a emenda supressiva', o pronome oblíquo 'lhes' retoma enfaticamente o termo prévio 'Aos vereadores da oposição'. Essa repetição estilística e sintática classifica o termo como:",
+    "options": [
+      "Aposto Resumitivo Substantivado.",
+      "Predicativo do Objeto Indireto.",
+      "Objeto Indireto Pleonástico.",
+      "Adjunto Adverbial de Meio."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. O termo 'Aos vereadores da oposição' é um Objeto Indireto já anteposto. A forma pronominal 'lhes' é inserida para duplicar/retomar esse mesmo objeto indireto com finalidade de ênfase e clareza, caracterizando a figura sintática do OBJETO INDIRETO PLEONÁSTICO."
+  },
+  {
+    "id": 375,
+    "category": "portugues",
+    "day": "w2_d5",
+    "discipline": "Língua Portuguesa",
+    "topic": "Sintaxe: Função Sintática do Pronome Relativo 'QUE'",
+    "question": "No período 'O projeto de lei que moderniza a estrutura administrativa da Câmara foi elogiado por todos os servidores', o pronome relativo 'que' exerce, dentro da oração subordinada adjetiva, a função sintática de:",
+    "options": [
+      "Objeto Direto do verbo modernizar.",
+      "Complemento Nominal do substantivo lei.",
+      "Adjunto Adverbial de Instrumento.",
+      "Sujeito da forma verbal 'moderniza'."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Para descobrir a função do pronome relativo 'que', substitui-se o pronome pelo seu antecedente ('o projeto de lei'): 'O projeto de lei [sujeito] moderniza [verbo] a estrutura administrativa [objeto direto]'. Portanto, o pronome relativo 'que' funciona sintaticamente como SUJEITO da oração subordinada adjetiva."
+  },
+  {
+    "id": 376,
+    "category": "portugues",
+    "day": "w2_d5",
+    "discipline": "Língua Portuguesa",
+    "topic": "Sintaxe: Predicativo do Objeto",
+    "question": "Assinale a alternativa em que o termo em destaque funciona sintaticamente como PREDICATIVO DO OBJETO:",
+    "options": [
+      "O Plenário da Câmara considerou a proposta de emenda inconstitucional.",
+      "O experiente consultor jurídico redigiu o parecer preliminar com zelo.",
+      "A Mesa Diretora permaneceu atenta às reivindicações dos munícipes presentes.",
+      "Os manifestantes saíram apressados após a votação final do projeto."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Na oração 'O Plenário [sujeito] considerou [verbo transitivo direto] a proposta de emenda [objeto direto] inconstitucional [predicativo do objeto]'. O adjetivo 'inconstitucional' expressa um atributo ou juízo de valor conferido pelo sujeito ao objeto direto 'a proposta de emenda', caracterizando o Predicativo do Objeto. Em C temos predicativo do sujeito ('atenta'); em D temos predicativo do sujeito ('apressados')."
+  },
+  {
+    "id": 377,
+    "category": "portugues",
+    "day": "w2_d5",
+    "discipline": "Língua Portuguesa",
+    "topic": "Sintaxe: Pontuação do Vocativo no Texto Oficial",
+    "question": "Em redação oficial e técnica parlamentar, o vocativo deve ser rigorosamente demarcado pela pontuação. Assinale a frase redigida em estrita conformidade com a norma-padrão da língua portuguesa:",
+    "options": [
+      "Senhor Presidente solicito a palavra pela ordem, para esclarecer o voto da bancada.",
+      "Solicito a palavra pela ordem, Senhor Presidente, para esclarecer o voto da bancada.",
+      "Solicito a palavra pela ordem Senhor Presidente para esclarecer o voto da bancada.",
+      "Solicito a palavra, pela ordem Senhor Presidente, para esclarecer o voto da bancada."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. O vocativo 'Senhor Presidente' interpela diretamente o destinatário da fala. Quando intercalado no meio da oração, deve vir obrigatoriamente ISOLADO POR DUAS VÍRGULAS (uma antes e outra depois): 'Solicito a palavra pela ordem, Senhor Presidente, para esclarecer...'. Em A faltou a vírgula após o vocativo inicial; em C e D a pontuação ficou truncada."
+  },
+  {
+    "id": 378,
+    "category": "portugues",
+    "day": "w2_d5",
+    "discipline": "Língua Portuguesa",
+    "topic": "Sintaxe: Diferenciação de Adjunto Adnominal e Predicativo",
+    "question": "Considere os dois enunciados a seguir:\nI. 'O vereador indignado discursou contra o aumento das taxas municipais.'\nII. 'O vereador discursou indignado contra o aumento das taxas municipais.'\nDo ponto de vista sintático-semântico, os termos destacados desempenham, respectivamente, os papéis de:",
+    "options": [
+      "Adjunto Adverbial de Modo em I; e Objeto Direto Qualificador em II.",
+      "Complemento Nominal em I; e Adjunto Adnominal em II.",
+      "Adjunto Adnominal em I (característica atribuída de forma direta e inerente ao substantivo); e Predicativo do Sujeito em II (estado transitório associado ao momento da ação de discursar).",
+      "Vocativo Invocatório em I; e Aposto Explicativo em II."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Em I, 'indignado' é termo que integra o sintagma nominal ('O vereador indignado'), funcionando como ADJUNTO ADNOMINAL (qualidade vista como duradoura ou específica do sujeito). Em II, 'indignado' funciona como PREDICATIVO DO SUJEITO (estado psicológico momentâneo e circunstancial do vereador no instante em que proferia o discurso), integrando o predicado verbo-nominal."
+  },
+  {
+    "id": 379,
+    "category": "portugues",
+    "day": "w2_d5",
+    "discipline": "Língua Portuguesa",
+    "topic": "Sintaxe: Termos Acessórios - Aposto Resumitivo / Recapitulativo",
+    "question": "Na oração 'Projetos de lei, requerimentos verbais, indicações e moções de pesar, NADA impediu o avanço da pauta prioritária da sessão', a palavra destacada 'NADA' exerce a função sintática de:",
+    "options": [
+      "Objeto Indireto Recíproco do verbo impedir.",
+      "Adjunto Adverbial de Negação Absoluta.",
+      "Complemento Nominal do substantivo pauta.",
+      "Aposto Resumitivo (ou Recapitulativo)."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. O APOSTO RESUMITIVO (ou recapitulativo) é exercido por um pronome indefinido (como 'tudo', 'nada', 'ninguém') que sintetiza em uma única palavra uma enumeração anterior de termos. Na oração, 'NADA' resume os múltiplos sujeitos enumerados ('projetos de lei, requerimentos, indicações...'), concordando o verbo no singular."
+  },
+  {
+    "id": 380,
+    "category": "portugues",
+    "day": "w2_d5",
+    "discipline": "Língua Portuguesa",
+    "topic": "Sintaxe: Análise Sintática Global de Período",
+    "question": "No excerto oficial 'A Comissão de Constituição e Justiça aprovou o parecer favorável do relator unanimemente', o termo sublinhado 'o parecer favorável do relator' classifica-se sintaticamente como:",
+    "options": [
+      "Sujeito Paciente da oração passiva truncada.",
+      "Objeto Direto da forma verbal transitiva direta 'aprovou'.",
+      "Complemento Nominal da Comissão de Constituição.",
+      "Predicativo do Sujeito do ato decisório."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Identificando os termos na oração: 'A Comissão de Constituição e Justiça' = Sujeito Simples; 'aprovou' = Verbo Transitivo Direto; 'o parecer favorável do relator' = OBJETO DIRETO (complemento sem preposição que sofre a ação de aprovar); 'unanimemente' = Adjunto Adverbial de Modo."
+  }
 
 ];
 
@@ -6271,13 +6912,13 @@ const WEEKS_DATA = [
             tasks: ["40m Teoria Sintaxe", "20m Análise de Frases", "10m Recuperação Ativa"]
           },
           {
-            badge: "Bloco 3 & 4 • 1h40",
-            subject: "30 Questões + Caderno de Erros",
-            details: "15 questões de LC 95/98 + 15 de Termos da Oração.",
-            tasks: ["15 Questões LC 95", "15 Questões Sintaxe", "30m Caderno de Erros"]
+            badge: "Treino de Alto Nível • 1h40",
+            subject: "40 Questões + Caderno de Erros",
+            details: "20 questões de Técnica Legislativa (LC 95/98) + 20 de Sintaxe da Oração.",
+            tasks: ["20 Questões LC 95/98", "20 Questões Sintaxe", "30m Caderno de Erros"]
           }
         ],
-        targetQuestions: 30
+        targetQuestions: 40
       },
       {
         id: "w2_d6",
@@ -7086,7 +7727,7 @@ let appState = {
   dayQuestions: {},
   quizAnswers: {},
   bankVersion: 3,
-  quizCategoryFilter: 'w2_d4',
+  quizCategoryFilter: 'w2_d5',
   quizOrderMode: 'random', // 'random', 'interleaved', 'sequential'
   quizFilterStatus: 'all', // 'all', 'pending', 'wrong'
   quizShuffledOrder: {}, // armazena ordem embaralhada por chave de filtro para manter estabilidade
@@ -7122,7 +7763,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setupCountdown();
   renderWeekPills();
   renderDaysForWeek(appState.currentWeek);
-  selectQuizDay(appState.quizCategoryFilter || 'w2_d4');
+  selectQuizDay(appState.quizCategoryFilter || 'w2_d5');
   renderFlashcard();
   renderCadernoErros();
   renderSimulados();
@@ -7151,9 +7792,9 @@ function loadState() {
         appState.quizShuffledOrder = {};
         saveState();
       }
-      if (!appState.lastSeenDay || appState.lastSeenDay !== 'w2_d4') {
-        appState.quizCategoryFilter = 'w2_d4';
-        appState.lastSeenDay = 'w2_d4';
+      if (!appState.lastSeenDay || appState.lastSeenDay !== 'w2_d5') {
+        appState.quizCategoryFilter = 'w2_d5';
+        appState.lastSeenDay = 'w2_d5';
       }
       if (!appState.currentWeek || appState.currentWeek === 1) {
         appState.currentWeek = 2;
@@ -7780,11 +8421,17 @@ function filterQuizCategory(cat) {
 }
 
 const QUIZ_DAYS_CONFIG = {
-    w2_d4: {
-    title: "⭐ Semana 2 • Dia 4 — Quinta-feira (10/09/2026 - HOJE): Sessões, Representação Partidária & Matemática/RLM (40 Questões)",
+      w2_d5: {
+    title: "⭐ Semana 2 • Dia 5 — Sexta-feira (11/09/2026 - HOJE): Técnica Legislativa LC 95/98 & Sintaxe da Oração (40 Questões)",
+    desc: "20 questões de Conhecimentos Específicos (Técnica Legislativa, LC 95/1998, Articulação, Alteração e Consolidação de Leis) + 20 questões de Língua Portuguesa (Sintaxe da Oração, Termos Essenciais, Integrantes e Acessórios, Transitividade e Pontuação). Padrão Oficial Banca INBRASP.",
+    bookletUrl: "provas/CADERNO_QUESTOES_SEMANA_02_DIA_05_11_09_2026.html",
+    bookletLabel: "Abrir Caderno Hoje Impresso (PDF)"
+  },
+  w2_d4: {
+    title: "📅 Semana 2 • Dia 4 — Quinta-feira (10/09/2026): Sessões, Representação Partidária & Matemática/RLM (40 Questões)",
     desc: "20 questões de Conhecimentos Específicos (Sessões Plenárias, Ordem do Dia, Partidos Políticos, Quociente Eleitoral e Partidário) + 20 questões de Matemática & RLM (Razão, Proporção, Regra de Três, Porcentagem e Juros Simples). Padrão Oficial Banca INBRASP.",
     bookletUrl: "provas/CADERNO_QUESTOES_SEMANA_02_DIA_04_10_09_2026.html",
-    bookletLabel: "Abrir Caderno Hoje Impresso (PDF)"
+    bookletLabel: "Abrir Caderno Dia 4 (PDF)"
   },
   w2_d3: {
     title: "📅 Semana 2 • Dia 3 — Quarta-feira (09/09/2026): Processo Legislativo & Pacote Office (40 Questões)",
@@ -7835,8 +8482,8 @@ const QUIZ_DAYS_CONFIG = {
     bookletLabel: "Abrir Central de Provas"
   },
   all: {
-    title: "📚 Todas as Questões do Banco de Provas (340 Questões)",
-    desc: "Simulado geral contendo todas as 340 questões ativas (Semana 1 completa + Semana 2 Dias 1, 2, 3 e 4) para treino de alta performance.",
+    title: "📚 Todas as Questões do Banco de Provas (380 Questões)",
+    desc: "Simulado geral contendo todas as 380 questões ativas (Semana 1 completa + Semana 2 Dias 1, 2, 3, 4 e 5) para treino de alta performance.",
     bookletUrl: "provas/CENTRAL_DE_PROVAS.html",
     bookletLabel: "Abrir Central de Provas & Editais"
   }
@@ -7844,7 +8491,7 @@ const QUIZ_DAYS_CONFIG = {
 
 function selectQuizDay(dayKey) {
   if (!QUIZ_DAYS_CONFIG[dayKey]) {
-    dayKey = 'w2_d4';
+    dayKey = 'w2_d5';
   }
   appState.quizCategoryFilter = dayKey;
   
@@ -7996,7 +8643,7 @@ function renderDaysForWeek(weekNum) {
     });
 
     const isDone = dayTotalTasks > 0 && dayDoneTasks === dayTotalTasks;
-    const todayStr = "10/09/2026";
+    const todayStr = "11/09/2026";
     const isToday = (day.date === todayStr);
     const hasTodayInWeek = week.days.some(d => d.date === todayStr);
     const shouldOpen = isToday || (!hasTodayInWeek && dIdx === 0);
