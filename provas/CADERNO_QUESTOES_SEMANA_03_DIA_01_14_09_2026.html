@@ -1,0 +1,2532 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>CADERNO OFICIAL DE QUESTÕES — SEMANA 3 / DIA 1 (14/09/2026) | INBRASP</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @page {
+      size: A4;
+      margin: 15mm 18mm;
+    }
+    :root {
+      --primary: #1e3a8a;
+      --primary-dark: #0f172a;
+      --accent: #dc2626;
+      --border: #cbd5e1;
+      --bg: #ffffff;
+      --text: #0f172a;
+      --text-muted: #475569;
+    }
+    body {
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+      color: var(--text);
+      background: #f8fafc;
+      margin: 0;
+      padding: 24px;
+      font-size: 10pt;
+      line-height: 1.45;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      padding: 36px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    }
+    .header-box {
+      border: 2px solid var(--primary);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f8fafc;
+    }
+    .header-titles h1 {
+      margin: 0 0 4px 0;
+      font-size: 1.35rem;
+      color: var(--primary);
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .header-titles h2 {
+      margin: 0 0 4px 0;
+      font-size: 1rem;
+      color: var(--text);
+      font-weight: 700;
+    }
+    .header-titles p {
+      margin: 0;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .badge-banca {
+      background: #fee2e2;
+      color: #991b1b;
+      font-weight: 800;
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      border: 1px solid #fecaca;
+    }
+    .no-print {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .btn-action {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+    }
+    .btn-action:hover {
+      background: #1d4ed8;
+    }
+    .question-block {
+      margin-bottom: 22px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #e2e8f0;
+      page-break-inside: avoid;
+    }
+    .q-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .q-number {
+      font-weight: 800;
+      color: var(--primary);
+      font-size: 1rem;
+    }
+    .q-badge {
+      background: #e2e8f0;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #475569;
+    }
+    .q-discipline {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-weight: 600;
+      background: #f1f5f9;
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+    .q-text {
+      margin-bottom: 10px;
+      font-size: 0.95rem;
+      text-align: justify;
+    }
+    .q-options {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .q-option {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 0.9rem;
+    }
+    .opt-letter {
+      font-weight: 700;
+      background: #f1f5f9;
+      border: 1px solid #cbd5e1;
+      border-radius: 4px;
+      width: 22px;
+      height: 22px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 0.8rem;
+    }
+    .opt-text {
+      padding-top: 1px;
+    }
+    .cartao-resposta {
+      margin-top: 36px;
+      padding: 24px;
+      border: 2px dashed #94a3b8;
+      border-radius: 8px;
+      background: #f8fafc;
+      page-break-before: always;
+    }
+    .cartao-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-top: 16px;
+    }
+    .cartao-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.8rem;
+    }
+    .cartao-num {
+      font-weight: 700;
+      width: 24px;
+    }
+    .cartao-bolhas {
+      display: flex;
+      gap: 4px;
+    }
+    .bolha {
+      width: 18px;
+      height: 18px;
+      border: 1px solid #64748b;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.65rem;
+      font-weight: 600;
+    }
+    .gabarito-section {
+      margin-top: 36px;
+      page-break-before: always;
+    }
+    .gabarito-tabela {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 16px;
+      margin-bottom: 24px;
+    }
+    .gabarito-tabela th, .gabarito-tabela td {
+      border: 1px solid var(--border);
+      padding: 6px 10px;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+    .gabarito-tabela th {
+      background: var(--primary);
+      color: white;
+    }
+    .gabarito-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 12px;
+      padding: 10px;
+      background: #f8fafc;
+      border-radius: 6px;
+      border-left: 4px solid var(--primary);
+    }
+    .gabarito-letra {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--primary);
+      background: #e2e8f0;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+      flex-shrink: 0;
+    }
+    @media print {
+      body {
+        background: white;
+        padding: 0;
+        font-size: 9.5pt;
+      }
+      .container {
+        max-width: 100%;
+        padding: 0;
+        box-shadow: none;
+      }
+      .no-print {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="no-print">
+      <button class="btn-action" onclick="window.print()">
+        <i class="fas fa-print"></i> Imprimir Caderno Completo (PDF)
+      </button>
+      <a href="../index.html" class="btn-action" style="background: #475569;">
+        <i class="fas fa-arrow-left"></i> Voltar ao Sistema de Estudos
+      </a>
+      <a href="CENTRAL_DE_PROVAS.html" class="btn-action" style="background: #0284c7;">
+        <i class="fas fa-folder-open"></i> Central de Provas
+      </a>
+    </div>
+
+    <div class="header-box">
+      <div class="header-titles">
+        <h1>Câmara Municipal de Meruoca — Concurso Público 2026</h1>
+        <h2>Caderno Oficial de Questões • Semana 3 — Dia 1 (14/09/2026)</h2>
+        <p>Cargo: <strong>Técnico Legislativo</strong> • 40 Questões • Padrão Oficial da Banca INBRASP (4 Alternativas A, B, C, D)</p>
+      </div>
+      <div>
+        <span class="badge-banca">INBRASP 2026</span>
+      </div>
+    </div>
+
+    <!-- Instruções para o Candidato -->
+    <div style="background: #f1f5f9; border-left: 4px solid var(--primary); padding: 12px 16px; margin-bottom: 24px; border-radius: 4px; font-size: 0.85rem;">
+      <strong>INSTRUÇÕES GERAIS DE APLICAÇÃO:</strong>
+      <ul style="margin: 6px 0 0 18px; padding: 0;">
+        <li>Este caderno contém <strong>40 questões inéditas e oficiais</strong>: 20 de Direito Administrativo (Atos Administrativos: conceito, elementos COMFIFOR, atributos PATI, mérito, classificação e espécies) + 20 de Língua Portuguesa (Período Composto: Coordenação e Subordinação, orações substantivas, adjetivas, adverbiais e conectivos).</li>
+        <li>Cada questão apresenta <strong>4 alternativas (A, B, C e D)</strong>, com exatamente uma única opção correta.</li>
+        <li>Tempo recomendado de resolução do bloco: <strong>2 horas e 30 minutos</strong> (média de 3,5 minutos por questão).</li>
+        <li>Ao final do caderno constam a folha de Cartão-Resposta para treino de preenchimento e o Gabarito com Comentários Pedagógicos detalhados com fundamentação legal e doutrinária.</li>
+      </ul>
+    </div>
+
+    <!-- Bloco das 40 Questões -->
+    <div class="questions-wrapper">
+      
+    <div class="question-block" id="q_381">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 1</span>
+          <span class="q-badge">ID 381</span>
+        </div>
+        <span class="q-discipline">D. Administrativo • Atos Administrativos: Conceito e Distinções</span>
+      </div>
+      <div class="q-text">
+        No âmbito do Direito Administrativo, a atuação do Poder Público desdobra-se em fatos e atos. Assinale a alternativa que apresenta a correta distinção entre ato administrativo e fato administrativo:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">O ato administrativo é a manifestação unilateral de vontade da Administração que visa produzir efeitos jurídicos imediatos sob regime de direito público; já o fato administrativo é qualquer acontecimento material da realidade que independe de manifestação volitiva voltada diretamente à produção de tais efeitos, mas repercute no mundo jurídico.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">O fato administrativo depende obrigatoriamente de um processo de deliberação solene em diário oficial; o ato administrativo prescinde de vontade humana e decorre sempre de eventos da natureza.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Todo fato administrativo constitui um ato administrativo bilateral praticado exclusivamente sob o regime de direito privado comum.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Ato e fato administrativo são termos estritamente sinônimos no ordenamento pátrio, designando indistintamente a celebração de contratos bilaterais pela Câmara Municipal.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_382">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 2</span>
+          <span class="q-badge">ID 382</span>
+        </div>
+        <span class="q-discipline">D. Administrativo • Elementos do Ato: Competência (Sujeito)</span>
+      </div>
+      <div class="q-text">
+        Sobre o elemento 'Competência' (sujeito) como requisito de validade dos atos administrativos, é CORRETO afirmar:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">A competência é plenamente renunciável e pode ser alienada pelo agente público titular caso haja prévia autorização em decreto executivo.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">A competência decorre sempre de expressa previsão legal, sendo, em regra, inderrogável, improrrogável e de exercício obrigatório pelo titular legalmente investido.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Qualquer matéria pode ser objeto de delegação administrativa entre órgãos, inclusive a edição de atos de caráter normativo e a decisão de recursos administrativos.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">A incompetência do agente público é considerada sempre vício material insanável, vedando de forma absoluta qualquer hipótese de convalidação administrativa.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_383">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 3</span>
+          <span class="q-badge">ID 383</span>
+        </div>
+        <span class="q-discipline">D. Administrativo • Elementos do Ato: Finalidade e Desvio de Poder</span>
+      </div>
+      <div class="q-text">
+        O Presidente da Câmara Municipal remove ex officio um servidor estável para atuar em setor distante como forma de represália pessoal por divergências políticas. Essa conduta vicia o ato administrativo no elemento:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Competência, configurando excesso de poder por extrapolação de atribuições formais.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Forma, por ter sido publicado em portaria legislativa comum e não em decreto legislativo.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Finalidade, configurando desvio de poder (ou desvio de finalidade), o que acarreta a nulidade absoluta do ato praticado.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Objeto, haja vista que a remoção de servidores públicos é conduta originariamente ilícita no serviço público.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_384">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 4</span>
+          <span class="q-badge">ID 384</span>
+        </div>
+        <span class="q-discipline">D. Administrativo • Elementos do Ato: Forma e Motivação</span>
+      </div>
+      <div class="q-text">
+        A respeito do requisito 'Forma' e do dever de motivação no âmbito dos atos administrativos, assinale a opção correta:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">No Direito Administrativo vige o princípio do informalismo absoluto, sendo a forma escrita dispensável mesmo para atos punitivos e exonerações.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">A forma é a exteriorização material da vontade administrativa, e a motivação consiste na exposição expressa dos fundamentos de fato e de direito que justificaram a prática do ato.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Motivo e motivação são expressões sinônimas que se referem exclusivamente ao estado psicológico subjetivo do gestor público.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">A ausência de motivação em atos vinculados acarreta sempre sua conversão automática em ato discricionário confirmatório.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_385">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 5</span>
+          <span class="q-badge">ID 385</span>
+        </div>
+        <span class="q-discipline">D. Administrativo • Teoria dos Motivos Determinantes</span>
+      </div>
+      <div class="q-text">
+        A Teoria dos Motivos Determinantes preconiza que:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">O administrador público não se vincula aos motivos que declarou formalmente, podendo alterá-los a qualquer tempo durante o processo judicial.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Os motivos determinantes aplicam-se exclusivamente aos atos negociais bilaterais subordinados ao Código Civil.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Apenas os atos expressamente vinculados se subordinam aos motivos fáticos da realidade, ficando os atos discricionários imunes à verificação fática.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">A validade do ato administrativo condiciona-se à veracidade e compatibilidade fática e jurídica dos motivos expressamente declarados pela autoridade, mesmo quando a lei não exigia motivação obrigatória.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_386">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 6</span>
+          <span class="q-badge">ID 386</span>
+        </div>
+        <span class="q-discipline">D. Administrativo • Elementos do Ato: Objeto, Motivo e Mérito Administrativo</span>
+      </div>
+      <div class="q-text">
+        Nos atos administrativos discricionários, o denominado 'mérito administrativo' (conveniência e oportunidade da Administração) reside fundamentalmente nos elementos:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Competência e Forma.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Competência e Finalidade.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Finalidade e Forma.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Motivo e Objeto.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_387">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 7</span>
+          <span class="q-badge">ID 387</span>
+        </div>
+        <span class="q-discipline">D. Administrativo • Atributos do Ato: Presunção de Legitimidade e Veracidade</span>
+      </div>
+      <div class="q-text">
+        Em relação ao atributo da presunção de legitimidade e veracidade dos atos administrativos, assinale a afirmativa INCORRETA:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Trata-se de uma presunção juris et de jure (absoluta), não admitindo produção de prova em contrário pelo particular prejudicado.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Presume-se que o ato foi editado em estrita conformidade com o ordenamento jurídico (legitimidade) e que os fatos relatados pela Administração são verdadeiros (veracidade).</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Opera a inversão do ônus da prova, incumbindo ao administrado comprovar a existência de ilegalidade ou falsidade na atuação administrativa.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Está presente em todos os atos administrativos, desde o momento de sua edição, conferindo-lhes imediata eficácia e operabilidade.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_388">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 8</span>
+          <span class="q-badge">ID 388</span>
+        </div>
+        <span class="q-discipline">D. Administrativo • Atributos do Ato: Autoexecutoriedade</span>
+      </div>
+      <div class="q-text">
+        A autoexecutoriedade é o atributo que permite à Administração Pública compelir materialmente o administrado ao cumprimento do ato sem a necessidade de prévia intervenção judicial. Sobre esse atributo, é correto assinalar que:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Está presente de forma irrestrita em todos os atos da Administração, autorizando inclusive a cobrança forçada de créditos e multas sem processo de execução fiscal.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Exige sempre autorização expressa do Ministério Público estadual antes de qualquer medida de polícia administrativa.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Impede que o Poder Judiciário faça qualquer controle a posteriori sobre a proporcionalidade da medida executada pela Administração.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Existe unicamente quando expressamente prevista em lei ou quando exigida por situação de urgência e iminente risco ao interesse público.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_389">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 9</span>
+          <span class="q-badge">ID 389</span>
+        </div>
+        <span class="q-discipline">D. Administrativo • Atributos do Ato: Tipicidade</span>
+      </div>
+      <div class="q-text">
+        O atributo do ato administrativo segundo o qual o ato deve corresponder a figuras previamente definidas pela lei para produzir determinados efeitos, funcionando como garantia contra arbitrariedades e impedindo a edição de atos inominados impositivos, denomina-se:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Imperatividade.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Tipicidade.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Exigibilidade.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Inalienabilidade.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_390">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 10</span>
+          <span class="q-badge">ID 390</span>
+        </div>
+        <span class="q-discipline">D. Administrativo • Atributos do Ato: Imperatividade</span>
+      </div>
+      <div class="q-text">
+        A imperatividade é o atributo pelo qual os atos administrativos se impõem a terceiros independentemente de sua concordância. Esse atributo NÃO está presente em:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Atos punitivos sancionatórios, como a aplicação de multa de trânsito.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Atos de fiscalização de posturas municipais e interdição de estabelecimentos.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Atos negociais (como a concessão de licença a pedido) e atos puramente enunciativos (como certidões e atestados).</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Atos normativos impositivos de deveres de observância compulsória geral.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_391">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 11</span>
+          <span class="q-badge">ID 391</span>
+        </div>
+        <span class="q-discipline">D. Administrativo • Classificação dos Atos: Formação da Vontade (Complexo vs Composto)</span>
+      </div>
+      <div class="q-text">
+        Em matéria de formação da vontade administrativa, a investidura de determinadas autoridades depende da indicação pelo Chefe do Executivo e da aprovação pelo Poder Legislativo, conjugando vontades de órgãos independentes para a formação de um único ato. Trata-se de um ato administrativo:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Simples.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Subjetivo.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Composto.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Complexo.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_392">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 12</span>
+          <span class="q-badge">ID 392</span>
+        </div>
+        <span class="q-discipline">D. Administrativo • Classificação dos Atos: Destinatários</span>
+      </div>
+      <div class="q-text">
+        Quanto aos destinatários, os atos administrativos classificam-se em gerais e individuais. Constitui exemplo de ato administrativo geral:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Um decreto regulamentar que disciplina o horário de funcionamento das repartições municipais.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">A portaria de demissão disciplinar aplicada a um servidor específico após regular PAD.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">A certidão de tempo de contribuição previdenciária expedida em nome de determinado servidor.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">O termo de posse individual de um novo Técnico Legislativo aprovado em concurso.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_393">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 13</span>
+          <span class="q-badge">ID 393</span>
+        </div>
+        <span class="q-discipline">D. Administrativo • Espécies de Atos: Licença vs Autorização</span>
+      </div>
+      <div class="q-text">
+        No que concerne às espécies de atos negociais, a diferenciação técnica clássica entre 'Licença' e 'Autorização' reside no fato de que:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">A licença é ato bilateral e oneroso regulado pelo Direito Comercial; a autorização é um contrato de adesão trabalhista.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">A licença decorre do poder disciplinar interno, enquanto a autorização é expressão exclusiva do poder judicante dos tribunais.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">A autorização gera direito adquirido imutável ao administrado, não podendo jamais ser cancelada pelo poder público.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">A licença é ato administrativo unilateral, vinculado e definitivo, gerando direito subjetivo ao administrado que preenche os requisitos legais; já a autorização é ato unilateral, discricionário e precário, revogável a qualquer tempo sem direito a indenização.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_394">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 14</span>
+          <span class="q-badge">ID 394</span>
+        </div>
+        <span class="q-discipline">D. Administrativo • Espécies de Atos: Atos Ordinatórios</span>
+      </div>
+      <div class="q-text">
+        Os atos ordinatórios destinam-se a disciplinar a rotina interna dos órgãos e a conduta funcional dos agentes públicos subalternos, decorrendo do poder hierárquico. São espécies de atos ordinatórios, EXCETO:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Instruções e Circulares internas.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Portarias de designação funcional e Ordens de Serviço.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Memorandos e Avisos administrativos.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Alvarás de autorização e licenças de funcionamento comercial.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_395">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 15</span>
+          <span class="q-badge">ID 395</span>
+        </div>
+        <span class="q-discipline">D. Administrativo • Espécies de Atos: Atos Enunciativos - Pareceres</span>
+      </div>
+      <div class="q-text">
+        No tocante aos atos enunciativos, os pareceres técnicos e jurídicos emitidos por órgãos de consultoria da Câmara Municipal classificam-se quanto à sua força vinculante. Quando a lei obriga o gestor a solicitar o parecer, porém não o obriga a decidir estritamente de acordo com a conclusão do parecerista, trata-se de um parecer:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Facultativo.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Obrigatório (ou preceptivo).</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Vinculante.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Arbitrário.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_396">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 16</span>
+          <span class="q-badge">ID 396</span>
+        </div>
+        <span class="q-discipline">D. Administrativo • Vícios dos Atos: Excesso de Poder vs Usurpação de Função</span>
+      </div>
+      <div class="q-text">
+        Considere duas situações hipotéticas no âmbito legislativo municipal: I. Um servidor efetivo do setor financeiro, com investidura legal, pratica ato de competência privativa do Diretor-Geral da Câmara. II. Um cidadão comum, sem qualquer vínculo funcional ou nomeação, assume uma mesa no plenário e assina termos oficiais fingindo ser servidor público. As situações I e II configuram, respectivamente:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Usurpação de função em I; e Excesso de poder em II.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Desvio de finalidade em I; e Função de fato em II.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Fato da administração em I; e Ato bilateral em II.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Excesso de poder em I; e Usurpação de função em II.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_397">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 17</span>
+          <span class="q-badge">ID 397</span>
+        </div>
+        <span class="q-discipline">D. Administrativo • Vícios dos Atos: Inexistência do Motivo</span>
+      </div>
+      <div class="q-text">
+        Uma servidora pública municipal teve sua licença-prêmio indeferida sob a motivação oficial expressa de que 'a servidora faltou injustificadamente por 15 dias durante o período aquisitivo'. Comprovado nos autos do recurso que a servidora nunca teve nenhuma falta, o ato administrativo padece de vício insanável no elemento:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Competência, por ausência de autorização ministerial.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Forma, pois deveria ter sido publicado em veículo de imprensa particular.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Motivo, em virtude da falsidade e inexistência fática do pressuposto alegado.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Finalidade mediata, visto que a concessão de licenças independe de histórico funcional.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_398">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 18</span>
+          <span class="q-badge">ID 398</span>
+        </div>
+        <span class="q-discipline">D. Administrativo • Atributos do Ato: Exigibilidade vs Executoriedade</span>
+      </div>
+      <div class="q-text">
+        A doutrina moderna desdobra a autoexecutoriedade em duas vertentes: exigibilidade e executoriedade. Constitui exemplo de manifestação da 'exigibilidade' do ato administrativo:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">A apreensão física de mercadorias deterioradas em estabelecimento comercial irregular.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">A demolição compulsória imediata de um imóvel em ruínas que ameaça desabar sobre pedestres.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">O uso moderado da força policial para desocupar um prédio público invadido.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">A cominação de multa pecuniária pela autoridade sanitária para induzir indiretamente o infrator ao cumprimento da obrigação.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_399">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 19</span>
+          <span class="q-badge">ID 399</span>
+        </div>
+        <span class="q-discipline">D. Administrativo • Classificação dos Atos: Perfeição, Validade e Eficácia</span>
+      </div>
+      <div class="q-text">
+        Um ato administrativo que completou todo o seu ciclo de formação interna, está em perfeita conformidade com as exigências da lei, porém encontra-se submetido a uma condição suspensiva futura para que passe a produzir seus efeitos práticos, é tecnicamente classificado como:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Perfeito, válido, mas ineficaz.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Imperfeito, inválido e nulo de pleno direito.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Perfeito, nulo e eficaz provisoriamente.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Inexistente, revogável e exaurido.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_400">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 20</span>
+          <span class="q-badge">ID 400</span>
+        </div>
+        <span class="q-discipline">D. Administrativo • Espécies de Atos: Atos Punitivos no Poder Disciplinar</span>
+      </div>
+      <div class="q-text">
+        A aplicação de penalidade disciplinar de suspensão a um servidor da Câmara Municipal após a conclusão de processo administrativo disciplinar constitui espécie de ato punitivo interno fundado diretamente no poder:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Regulamentar.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Normativo originário.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Disciplinar.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">De polícia judiciária.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_401">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 21</span>
+          <span class="q-badge">ID 401</span>
+        </div>
+        <span class="q-discipline">Língua Portuguesa • Coordenação: Oração Coordenada Sindética Adversativa</span>
+      </div>
+      <div class="q-text">
+        No excerto 'O projeto de lei continha excelentes propostas para a saúde de Meruoca, PORÉM o plenário da Câmara rejeitou seu texto base', a oração introduzida pela conjunção destacada classifica-se como:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Oração Coordenada Sindética Conclusiva.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Oração Coordenada Sindética Explicativa.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Oração Coordenada Sindética Adversativa.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Oração Subordinada Adverbial Concessiva.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_402">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 22</span>
+          <span class="q-badge">ID 402</span>
+        </div>
+        <span class="q-discipline">Língua Portuguesa • Coordenação: Oração Coordenada Sindética Conclusiva</span>
+      </div>
+      <div class="q-text">
+        Assinale a alternativa que apresenta uma Oração Coordenada Sindética Conclusiva:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Os prazos regimentais foram rigorosamente obedecidos; PORTANTO, a deliberação legislativa é válida.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Os vereadores compareceram ao plenário E debateram com entusiasmo as emendas.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Não atrase o envio dos relatórios, POIS o Tribunal de Contas iniciará a auditoria amanhã.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">ORA defendia a aprovação imediata da matéria, ORA postulava pedido de vistas regimental.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_403">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 23</span>
+          <span class="q-badge">ID 403</span>
+        </div>
+        <span class="q-discipline">Língua Portuguesa • Conjunções Coordenativas: Emprego e Sentido do Conectivo 'Pois'</span>
+      </div>
+      <div class="q-text">
+        Quanto à sintaxe e ao valor semântico da conjunção 'pois' no período composto, assinale a afirmativa correta:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Quando colocada após o verbo da oração (entre vírgulas), a conjunção 'pois' possui valor conclusivo; quando anteposta ao verbo, introduz oração explicativa ou causal.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">A conjunção 'pois' assume exclusivamente sentido adversativo quando empregada no início do período oracional.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">O conectivo 'pois' é uma conjunção estritamente proporcional equivalente a 'à medida que'.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">O termo 'pois' funciona como conjunção subordinativa concessiva em qualquer contexto formal.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_404">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 24</span>
+          <span class="q-badge">ID 404</span>
+        </div>
+        <span class="q-discipline">Língua Portuguesa • Subordinação: Oração Subordinada Substantiva Subjetiva</span>
+      </div>
+      <div class="q-text">
+        Na oração 'É indispensável QUE TODOS OS EDIS PARTICIPEM DA VOTAÇÃO', a oração destacada em maiúsculas exerce a função sintática de:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Objeto Direto da oração principal.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Predicativo do Objeto Indireto.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Complemento Nominal do adjetivo indispensável.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Sujeito da oração principal (Oração Subordinada Substantiva Subjetiva).</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_405">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 25</span>
+          <span class="q-badge">ID 405</span>
+        </div>
+        <span class="q-discipline">Língua Portuguesa • Subordinação: Oração Subordinada Substantiva Objetiva Direta</span>
+      </div>
+      <div class="q-text">
+        No período 'O parecerista constatou QUE O PROJETO ATENDIA AOS LIMITES DA LEI DE RESPONSABILIDADE FISCAL', a oração em destaque classifica-se como:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Subordinada Substantiva Objetiva Indireta.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Subordinada Adjetiva Restritiva.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Subordinada Substantiva Objetiva Direta.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Subordinada Adverbial Conformativa.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_406">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 26</span>
+          <span class="q-badge">ID 406</span>
+        </div>
+        <span class="q-discipline">Língua Portuguesa • Subordinação: Completiva Nominal vs Objetiva Indireta</span>
+      </div>
+      <div class="q-text">
+        Considere as orações: I. 'A comissão tinha a convicção DE QUE AS CONTAS SERIAM APROVADAS.' II. 'O Presidente da Mesa necessitava DE QUE OS SECRETÁRIOS CONFERISSEM O QUÓRUM.' Os segmentos destacados exercem, respectivamente, as funções de:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Objeto Indireto em I; e Complemento Nominal em II.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Aposto Explicativo em I; e Sujeito Oracional em II.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Objeto Direto Preposicionado em I; e Adjunto Adnominal em II.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Complemento Nominal em I; e Objeto Indireto em II.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_407">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 27</span>
+          <span class="q-badge">ID 407</span>
+        </div>
+        <span class="q-discipline">Língua Portuguesa • Subordinação: Oração Subordinada Substantiva Predicativa</span>
+      </div>
+      <div class="q-text">
+        Na frase 'A principal meta da comissão parlamentar é QUE A AUDITORIA CONCLUA O RELATÓRIO NO PRAZO', a oração subordinada classifica-se como:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Subordinada Substantiva Predicativa.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Subordinada Substantiva Subjetiva.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Subordinada Substantiva Apositiva.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Subordinada Adverbial Consecutiva.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_408">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 28</span>
+          <span class="q-badge">ID 408</span>
+        </div>
+        <span class="q-discipline">Língua Portuguesa • Subordinação: Oração Subordinada Substantiva Apositiva</span>
+      </div>
+      <div class="q-text">
+        Assinale a alternativa que apresenta uma Oração Subordinada Substantiva Apositiva:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Todos os cidadãos sabem que a publicidade administrativa é imperativa.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">A exigência dos vereadores consistia nisto: QUE AS REUNIÕES FOSSEM TRANSMITIDAS AO VIVO.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Convém que o parecer da assessoria chegue antes da abertura dos trabalhos.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">O edital foi publicado pelos servidores para que os licitantes comparecessem.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_409">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 29</span>
+          <span class="q-badge">ID 409</span>
+        </div>
+        <span class="q-discipline">Língua Portuguesa • Subordinação: Orações Adjetivas (Explicativa vs Restritiva)</span>
+      </div>
+      <div class="q-text">
+        Considere os enunciados: I. 'Os vereadores de Meruoca, QUE ESTUDARAM O REGIMENTO INTERNO, votaram favoravelmente ao parecer.' II. 'Os vereadores de Meruoca QUE ESTUDARAM O REGIMENTO INTERNO votaram favoravelmente ao parecer.' Quanto ao sentido e à pontuação, é correto afirmar:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Em I, a oração entre vírgulas é restritiva e indica que apenas uma parcela dos vereadores estudou o regimento.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Em II, a ausência de vírgulas torna a oração explicativa e generalizante a todos os vereadores do plenário.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Em I, a oração é explicativa, indicando que todos os vereadores de Meruoca estudaram o regimento; em II, a oração é restritiva, indicando que apenas aqueles vereadores que estudaram o regimento votaram favoravelmente.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">As duas construções possuem idêntico valor semântico e gramatical, sendo a vírgula de uso meramente optativo e facultativo.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_410">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 30</span>
+          <span class="q-badge">ID 410</span>
+        </div>
+        <span class="q-discipline">Língua Portuguesa • Subordinação Adverbial: Causal vs Consecutiva</span>
+      </div>
+      <div class="q-text">
+        No período 'A solenidade atraiu tantas pessoas da comunidade QUE O AUDITÓRIO DA CÂMARA FICOU COMPLETAMENTE LOTADO', a oração destacada estabelece com a oração principal uma relação de:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Causa da atração das pessoas.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Consequência (efeito decorrente da grande quantidade de presentes).</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Concessão à realização da solenidade.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Finalidade almejada pela Mesa Diretora.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_411">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 31</span>
+          <span class="q-badge">ID 411</span>
+        </div>
+        <span class="q-discipline">Língua Portuguesa • Subordinação Adverbial: Concessiva e Conectivos Concessivos</span>
+      </div>
+      <div class="q-text">
+        Assinale a alternativa que contém uma oração subordinada adverbial concessiva:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">CONQUANTO HOUVESSE INTENSA PRESSÃO DA BANCADA DE OPOSIÇÃO, o presidente manteve a votação da ordem do dia.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Logo que o sinal sonoro soou, os parlamentares ingressaram no recinto do plenário.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Caso o projeto não seja protocolado até as 17 horas, a matéria será arquivada.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">À medida que as semanas transcorriam, a preparação dos candidatos tornava-se mais consistente.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_412">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 32</span>
+          <span class="q-badge">ID 412</span>
+        </div>
+        <span class="q-discipline">Língua Portuguesa • Conjunções Subordinativas: Polissemia do Conectivo 'Como'</span>
+      </div>
+      <div class="q-text">
+        A conjunção 'como' pode assumir diferentes valores sintáticos e semânticos. Analise o período: 'COMO NÃO HAVIA QUÓRUM REGIMENTAL MÍNIMO, a sessão ordinária foi declarada suspensa pelo Presidente'. Nesse contexto, o conectivo 'como' introduz uma oração subordinada adverbial:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Comparativa.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Conformativa.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Causal.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Consecutiva.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_413">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 33</span>
+          <span class="q-badge">ID 413</span>
+        </div>
+        <span class="q-discipline">Língua Portuguesa • Subordinação Adverbial: Oração Condicional e Locuções</span>
+      </div>
+      <div class="q-text">
+        Em 'A emenda aditiva será incorporada ao texto final do projeto, DESDE QUE OBTENHA DOIS TERÇOS DOS VOTOS DOS VEREADORES', a oração sublinhada expressa ideia de:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Tempo cronológico simultâneo.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Condição indispensável para a ocorrência da oração principal.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Concessão mitigada com verbo no subjuntivo.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Proporcionalidade mútua de eventos.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_414">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 34</span>
+          <span class="q-badge">ID 414</span>
+        </div>
+        <span class="q-discipline">Língua Portuguesa • Subordinação Adverbial: Conformativa</span>
+      </div>
+      <div class="q-text">
+        No trecho 'A prestação de contas da Mesa Diretora foi elaborada CONSOANTE DETERMINA A LEI DE RESPONSABILIDADE FISCAL', o termo destacado introduz uma oração subordinada adverbial:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Concessiva.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Conclusiva.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Conformativa.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Consecutiva.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_415">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 35</span>
+          <span class="q-badge">ID 415</span>
+        </div>
+        <span class="q-discipline">Língua Portuguesa • Subordinação Adverbial: Proporcional ('À medida que')</span>
+      </div>
+      <div class="q-text">
+        A respeito das locuções proporcionais e temporais, assinale a opção gramaticalmente CORRETA:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">A locução 'à medida em que' é a forma culta padrão consagrada pela gramática para indicar proporção simultânea.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">A locução correta para indicar gradação proporcional é 'à medida que' (ou 'à proporção que'), devendo-se evitar a forma híbrida e incorreta 'à medida em que'.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">As locuções 'à medida que' e 'na medida em que' são perfeitamente sinônimas e intercambiáveis com valor causal em qualquer redação oficial.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">O conectivo 'ao passo que' expressa obrigatoriamente tempo pontual futuro pretérito.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_416">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 36</span>
+          <span class="q-badge">ID 416</span>
+        </div>
+        <span class="q-discipline">Língua Portuguesa • Subordinação Adverbial: Finalidade ('A fim de que')</span>
+      </div>
+      <div class="q-text">
+        No trecho 'O Presidente convocou a reunião extraordinária A FIM DE QUE OS PARLAMENTARES DEBATESSEM O PLANO DIRETOR', a oração sublinhada traduz uma circunstância de:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Finalidade (objetivo ou meta visada pela convocação).</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Causa pretérita da reunião.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Consequência imediata da fala do Presidente.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Condição preliminar à realização do debate.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_417">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 37</span>
+          <span class="q-badge">ID 417</span>
+        </div>
+        <span class="q-discipline">Língua Portuguesa • Período Composto: Orações Reduzidas</span>
+      </div>
+      <div class="q-text">
+        Na oração 'TERMINADA A LEITURA DA ATA, o Presidente abriu a fase de pronunciamento dos líderes partidários', a oração destacada é classificada como:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Oração subordinada substantiva apositiva de gerúndio.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Oração coordenada assindética explicativa.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Oração subordinada adverbial temporal reduzida de particípio.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Oração subordinada adjetiva restritiva de infinitivo.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_418">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 38</span>
+          <span class="q-badge">ID 418</span>
+        </div>
+        <span class="q-discipline">Língua Portuguesa • Morfossintaxe: Distinção entre Pronome Relativo e Conjunção Integrante</span>
+      </div>
+      <div class="q-text">
+        Observe as duas frases extraídas de pronunciamentos oficiais: I. 'Os assessores informaram QUE AS DILIGÊNCIAS JÁ HAVIAM SIDO REALIZADAS.' II. 'As diligências QUE A COMISSÃO REALIZOU trouxeram novos fatos aos autos.' A palavra 'que' presente em I e II classifica-se, respectivamente, como:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Pronome relativo em I; e Conjunção integrante em II.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Conjunção integrante em I; e Pronome relativo em II.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Conjunção consecutiva em I; e Conjunção explicativa em II.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Pronome indefinido em I; e Partícula expletiva de realce em II.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_419">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 39</span>
+          <span class="q-badge">ID 419</span>
+        </div>
+        <span class="q-discipline">Língua Portuguesa • Morfossintaxe: Funções da Palavra 'SE' no Período Composto</span>
+      </div>
+      <div class="q-text">
+        Assinale a frase em que o vocábulo 'se' atua como CONJUNÇÃO INTEGRANTE introduzindo oração subordinada substantiva:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">O servidor perguntou ao Diretor SE HAVERIA EXPEDIENTE REGULAR DURANTE O FERIADO MUNICIPAL.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Se o quórum qualificado não for alcançado, a sessão não poderá deliberar a matéria.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Aprovou-se a resolução administrativa sem nenhum voto contrário na Casa.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Vive-se com muita tranquilidade nos distritos serranos de Meruoca.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_420">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 40</span>
+          <span class="q-badge">ID 420</span>
+        </div>
+        <span class="q-discipline">Língua Portuguesa • Período Composto: Período Misto (Coordenação e Subordinação)</span>
+      </div>
+      <div class="q-text">
+        No período 'O relator concluiu o voto, MAS advertiu que o texto da lei necessitava de aprimoramento', temos:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Um período composto exclusivamente por orações coordenadas assindéticas sem conectivos.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Um período composto por coordenação (oração coordenada sindética adversativa 'mas advertiu') e por subordinação (oração subordinada substantiva objetiva direta 'que o texto da lei necessitava de aprimoramento').</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Um período simples constituído de uma única oração absoluta com adjuntos adverbiais compostos.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Um período composto exclusivamente por orações subordinadas adjetivas restritivas correlatas.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+    </div>
+
+    <!-- Cartão Resposta Oficial -->
+    <div class="cartao-resposta">
+      <h3 style="margin-top: 0; color: var(--primary); text-transform: uppercase; font-size: 1.1rem; border-bottom: 2px solid var(--border); padding-bottom: 8px;">
+        <i class="fas fa-pen"></i> Folha de Respostas — Treino de Preenchimento de Gabarito
+      </h3>
+      <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 16px;">
+        Preencha completamente a bolha correspondente à alternativa assinalada com caneta esferográfica preta ou azul.
+      </p>
+      <div class="cartao-grid">
+        
+    <div class="cartao-item">
+      <span class="cartao-num">01</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">02</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">03</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">04</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">05</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">06</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">07</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">08</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">09</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">10</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">11</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">12</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">13</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">14</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">15</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">16</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">17</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">18</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">19</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">20</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">21</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">22</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">23</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">24</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">25</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">26</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">27</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">28</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">29</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">30</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">31</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">32</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">33</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">34</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">35</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">36</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">37</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">38</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">39</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">40</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+      </div>
+    </div>
+
+    <!-- Gabarito e Comentários Pedagógicos -->
+    <div class="gabarito-section">
+      <h2 style="color: var(--primary); text-transform: uppercase; font-size: 1.25rem; border-bottom: 2px solid var(--border); padding-bottom: 8px;">
+        <i class="fas fa-check-double"></i> Gabarito Oficial & Comentários Didáticos
+      </h2>
+      
+      <table class="gabarito-tabela">
+        <thead>
+          <tr>
+            <th>Q1</th><th>Q2</th><th>Q3</th><th>Q4</th><th>Q5</th><th>Q6</th><th>Q7</th><th>Q8</th><th>Q9</th><th>Q10</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>A</strong></td><td><strong>B</strong></td><td><strong>C</strong></td><td><strong>B</strong></td><td><strong>D</strong></td><td><strong>D</strong></td><td><strong>A</strong></td><td><strong>D</strong></td><td><strong>B</strong></td><td><strong>C</strong></td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th>Q11</th><th>Q12</th><th>Q13</th><th>Q14</th><th>Q15</th><th>Q16</th><th>Q17</th><th>Q18</th><th>Q19</th><th>Q20</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>D</strong></td><td><strong>A</strong></td><td><strong>D</strong></td><td><strong>D</strong></td><td><strong>B</strong></td><td><strong>D</strong></td><td><strong>C</strong></td><td><strong>D</strong></td><td><strong>A</strong></td><td><strong>C</strong></td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th>Q21</th><th>Q22</th><th>Q23</th><th>Q24</th><th>Q25</th><th>Q26</th><th>Q27</th><th>Q28</th><th>Q29</th><th>Q30</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>C</strong></td><td><strong>A</strong></td><td><strong>A</strong></td><td><strong>D</strong></td><td><strong>C</strong></td><td><strong>D</strong></td><td><strong>A</strong></td><td><strong>B</strong></td><td><strong>C</strong></td><td><strong>B</strong></td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th>Q31</th><th>Q32</th><th>Q33</th><th>Q34</th><th>Q35</th><th>Q36</th><th>Q37</th><th>Q38</th><th>Q39</th><th>Q40</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>A</strong></td><td><strong>C</strong></td><td><strong>B</strong></td><td><strong>C</strong></td><td><strong>B</strong></td><td><strong>A</strong></td><td><strong>C</strong></td><td><strong>B</strong></td><td><strong>A</strong></td><td><strong>B</strong></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 style="color: var(--primary); font-size: 1rem; margin-top: 24px;">Justificativas Fundamentadas e Comentários Questão a Questão:</h3>
+      <div style="margin-top: 12px;">
+        
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 381 (D. Administrativo • Atos Administrativos: Conceito e Distinções):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Conforme doutrina consagrada (Hely Lopes Meirelles e Di Pietro), o ato administrativo é uma declaração de vontade do Estado (ou de quem lhe faça as vezes) que produz efeitos jurídicos imediatos regidos pelo direito público. Já o fato administrativo é uma ocorrência fática material (como o decurso do tempo, a morte de um servidor ou a colisão de uma viatura) que pode gerar consequências jurídicas reflexas, sem constituir em si uma declaração intencional de vontade jurídica da Administração.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 382 (D. Administrativo • Elementos do Ato: Competência (Sujeito)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. O princípio da legalidade determina que a competência é sempre fixada em lei, configurando poder-dever irrenunciável, inderrogável e de exercício obrigatório. A alternativa A erra ao permitir renúncia; a C erra porque o art. 13 da Lei 9.784/1999 veda expressamente a delegação de atos normativos, decisão de recursos e matérias de competência exclusiva (mneumônico CENORA); e a D erra pois o vício de competência, desde que não seja razão de competência exclusiva, admite convalidação (ratificação).</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 383 (D. Administrativo • Elementos do Ato: Finalidade e Desvio de Poder):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. A finalidade do ato administrativo é elemento sempre vinculado e visa ao interesse público e ao fim específico pretendido pela lei. O uso da remoção funcional como sanção ou vingança pessoal caracteriza típico DESVIO DE PODER (ou desvio de finalidade), espécie de abuso de poder que atinge o elemento finalidade e torna o ato nulo de pleno direito (vício insanável).</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 384 (D. Administrativo • Elementos do Ato: Forma e Motivação):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. A FORMA é a maneira pela qual o ato se exterioriza (em regra, escrita e solene para garantir controle e publicidade). A MOTIVAÇÃO é a formalização discursiva e expressa das razões fáticas e jurídicas que embasaram o ato. Motivo é o pressuposto fático e legal; motivação é a sua declaração formal no texto do ato.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 385 (D. Administrativo • Teoria dos Motivos Determinantes):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Pela Teoria dos Motivos Determinantes, quando a autoridade pública declara formalmente os motivos que justificaram o ato, a validade deste fica indissociavelmente vinculada à existência real e legal desses motivos. Se demonstrada a inexistência ou falsidade dos fatos alegados, o ato será nulo, mesmo que se tratasse originalmente de ato discricionário cuja motivação prévia não fosse legalmente obrigatória (como na exoneração ad nutum de cargo comissionado).</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 386 (D. Administrativo • Elementos do Ato: Objeto, Motivo e Mérito Administrativo):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Enquanto a Competência, a Finalidade e a Forma são elementos obrigatoriamente VINCULADOS em qualquer ato administrativo, a margem de escolha discricionária outorgada por lei ao administrador (juízo de oportunidade e conveniência — mérito administrativo) concentra-se nos elementos MOTIVO (valoração da situação fática autorizadora) e OBJETO (escolha do conteúdo ou medida cabível).</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 387 (D. Administrativo • Atributos do Ato: Presunção de Legitimidade e Veracidade):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. A presunção de legitimidade e veracidade é juris tantum (relativa), e NÃO juris et de jure (absoluta). Ela admite sim prova em contrário; no entanto, em razão da presunção, inverte-se o ônus da prova, cabendo ao particular comprovar que o ato é ilegal ou que os fatos declarados não condizem com a verdade.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 388 (D. Administrativo • Atributos do Ato: Autoexecutoriedade):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. A autoexecutoriedade NÃO existe em todos os atos administrativos (por exemplo, a cobrança de multas administrativas exige execução fiscal perante o Judiciário). Segundo a melhor doutrina, a autoexecutoriedade manifesta-se em duas hipóteses: 1) quando houver expressa autorização legal; ou 2) em situações de urgência que demandem atuação imediata para salvaguardar a ordem, saúde ou segurança públicas.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 389 (D. Administrativo • Atributos do Ato: Tipicidade):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. A TIPICIDADE (atributo formulado e destacado pela Profª Maria Sylvia Zanella Di Pietro) define que o ato administrativo deve corresponder a figuras predefinidas em lei aptas a produzir determinados efeitos jurídicos. Impede que a Administração crie atos inominados para impor obrigações coercitivas unilaterais fora dos moldes da lei.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 390 (D. Administrativo • Atributos do Ato: Imperatividade):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. A imperatividade (decorrente do poder extroverso do Estado) impõe obrigações a terceiros unilateralmente. Por isso, ela NÃO se faz presente nos atos negociais (nos quais o particular solicita voluntariamente um benefício ou autorização, como licença e alvará) nem nos atos enunciativos (que apenas atestam uma situação preexistente, como certidões, certidões de tempo de serviço e atestados).</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 391 (D. Administrativo • Classificação dos Atos: Formação da Vontade (Complexo vs Composto)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. O ATO COMPLEXO nasce da conjugação de vontades de órgãos diferentes e independentes que se fundem para formar um único ato (ex.: nomeação de Ministro do STF com aprovação do Senado, concessão de aposentadoria sujeita a registro pelo Tribunal de Contas). Já o ATO COMPOSTO é praticado por um único órgão e apenas depende da homologação/aprovação ou visto (ato acessório) de outro órgão.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 392 (D. Administrativo • Classificação dos Atos: Destinatários):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Atos gerais (ou normativos) possuem destinatários indeterminados, comando abstrato e eficácia erga omnes, prevalecendo sobre os atos individuais. O decreto que regulamenta o horário de funcionamento das repartições do Município atinge a coletividade indiscriminada de servidores e cidadãos, sendo genuinamente um ato geral.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 393 (D. Administrativo • Espécies de Atos: Licença vs Autorização):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Distinção essencial em provas de concurso: a LICENÇA é vinculada e confere direito subjetivo ao particular que cumpre as exigências legais (ex.: licença para construir, licença para dirigir). A AUTORIZAÇÃO é ato discricionário e precário, concedido no interesse predominante do particular, podendo a Administração revogá-lo discricionariamente por razões de conveniência e oportunidade sem indenização (ex.: autorização para uso de calçada por quiosque).</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 394 (D. Administrativo • Espécies de Atos: Atos Ordinatórios):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Alvarás de autorização e licenças de funcionamento são espécies de ATOS NEGOCIAIS, voltados a conferir faculdades aos particulares mediante manifestação externa da Administração. Já instruções, circulares, portarias, ordens de serviço e memorandos são típicos ATOS ORDINATÓRIOS de circulação interna disciplinar.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 395 (D. Administrativo • Espécies de Atos: Atos Enunciativos - Pareceres):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Classificação dos pareceres: 1) FACULTATIVO: a autoridade não é obrigada a pedir e nem a seguir a conclusão; 2) OBRIGATÓRIO (preceptivo): a lei exige expressamente a consulta prévia (solicitação do parecer), mas a autoridade mantém a liberdade de decidir de modo divergente se motivar adequadamente; 3) VINCULANTE: a lei exige a consulta prévia e impõe a obrigação de seguir e acatar as conclusões do parecer.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 396 (D. Administrativo • Vícios dos Atos: Excesso de Poder vs Usurpação de Função):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. No caso I, o agente é servidor regularmente investido, mas age além dos limites da sua competência legal: isso configura EXCESSO DE PODER (vício de competência). No caso II, o sujeito não tem investidura nem vínculo com a Administração, praticando ato fingindo ser agente público: isso configura USURPAÇÃO DE FUNÇÃO (crime tipificado no Código Penal e conduta juridicamente inexistente perante o Estado).</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 397 (D. Administrativo • Vícios dos Atos: Inexistência do Motivo):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. O MOTIVO é o pressuposto de fato e de direito que autoriza a prática do ato. Se a Administração fundamenta seu ato em um fato materialmente inexistente ou falso (supostas faltas inexistentes), há vício fatal de motivo. Pela Teoria dos Motivos Determinantes, a falsidade do motivo enseja a anulação/nulidade do ato denegatório.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 398 (D. Administrativo • Atributos do Ato: Exigibilidade vs Executoriedade):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. A EXIGIBILIDADE atua pela coerção indireta (meios indiretos que compelem o administrado a cumprir a ordem sob ameaça de sanção, como a imposição de multas diárias). A EXECUTORIEDADE (coerção direta) autoriza a Administração a praticar diretamente a conduta material sobre as coisas ou pessoas sem mediação (como apreender mercadorias, demolir obra irregular ou interditar estabelecimento).</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 399 (D. Administrativo • Classificação dos Atos: Perfeição, Validade e Eficácia):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Análise dos planos do ato administrativo: 1) PERFEIÇÃO: completou o ciclo de formação; 2) VALIDADE: obedece a todos os requisitos de legalidade; 3) EFICÁCIA: aptidão atual para produzir efeitos. Se o ato cumpriu as etapas e a lei, mas aguarda termo inicial ou condição suspensiva, ele é PERFEITO, VÁLIDO, porém ainda INEFICAZ.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 400 (D. Administrativo • Espécies de Atos: Atos Punitivos no Poder Disciplinar):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. O PODER DISCIPLINAR é a prerrogativa conferida à Administração Pública para apurar infrações e aplicar sanções aos servidores públicos e àqueles sujeitos a vínculo especial e específico com o Estado (como concessionárias e contratados). Difere do poder de polícia, que impõe restrições a particulares em geral sem vínculo jurídico específico.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 401 (Língua Portuguesa • Coordenação: Oração Coordenada Sindética Adversativa):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. A conjunção 'porém' estabelece uma relação de oposição/contraste entre orações sintaticamente independentes, configurando típica ORAÇÃO COORDENADA SINDÉTICA ADVERSATIVA (conectivos adversativos: mas, porém, contudo, todavia, entretanto, no entanto).</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 402 (Língua Portuguesa • Coordenação: Oração Coordenada Sindética Conclusiva):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. A oração 'PORTANTO, a deliberação legislativa é válida' exprime dedução e encerramento lógico decorrente do fato anterior, sendo Coordenada Sindética Conclusiva (conectivos: logo, portanto, por conseguinte, por isso, pois posposto ao verbo). Na alternativa B temos aditiva; na C temos explicativa ('pois' anteposto); na D temos alternativas correlativas.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 403 (Língua Portuguesa • Conjunções Coordenativas: Emprego e Sentido do Conectivo 'Pois'):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Regra clássica da gramática normativa (Cunha & Cintra, Bechara): quando a conjunção 'pois' vem após o verbo da oração que encabeça (posposta ao verbo e isolada por vírgulas), ela tem valor CONCLUSIVO (ex.: 'Estudou com afinco; obterá, pois, a vaga'). Quando vem antes do verbo (anteposta), tem valor EXPLICATIVO ou CAUSAL (ex.: 'Entre depressa, pois vai chover').</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 404 (Língua Portuguesa • Subordinação: Oração Subordinada Substantiva Subjetiva):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Analisando a oração principal: 'É indispensável' possui verbo de ligação ('É') e predicativo do sujeito ('indispensável'), mas falta o sujeito da oração! Pergunta-se: O que é indispensável? Resposta: 'que todos os edis participem da votação' (ou 'A participação de todos os edis é indispensável'). Logo, a oração funciona como SUJEITO da oração principal, classificando-se como Subordinada Substantiva Subjetiva.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 405 (Língua Portuguesa • Subordinação: Oração Subordinada Substantiva Objetiva Direta):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. O verbo da oração principal 'constatou' é Transitivo Direto (VTD) e não exige preposição: 'O parecerista constatou ISTO'. O termo 'isto' substitui a oração inteira, que funciona como complemento verbal sem preposição (Objeto Direto), sendo, portanto, Oração Subordinada Substantiva Objetiva Direta, encabeçada pela conjunção integrante 'que'.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 406 (Língua Portuguesa • Subordinação: Completiva Nominal vs Objetiva Indireta):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Em I, a oração subordinada 'de que as contas seriam aprovadas' completa o sentido de um NOME substantivo abstrato ('convicção'), funcionando como COMPLEMENTO NOMINAL (Oração Subordinada Substantiva Completiva Nominal). Em II, a oração 'de que os secretários conferissem o quórum' completa o sentido de um VERBO transitivo indireto ('necessitava'), funcionando como OBJETO INDIRETO (Oração Subordinada Substantiva Objetiva Indireta).</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 407 (Língua Portuguesa • Subordinação: Oração Subordinada Substantiva Predicativa):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. A estrutura da oração principal apresenta Sujeito ('A principal meta da comissão parlamentar') + Verbo de Ligação ('é'). O termo que se segue a um verbo de ligação para caracterizar o sujeito é o PREDICATIVO DO SUJEITO. Como essa atribuição é feita por meio de uma oração encabeçada por conjunção integrante, temos uma Oração Subordinada Substantiva Predicativa.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 408 (Língua Portuguesa • Subordinação: Oração Subordinada Substantiva Apositiva):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. A Oração Subordinada Substantiva Apositiva exerce a função sintática de aposto de um termo da oração principal, explicando-o de forma específica. Geralmente vem pontuada com dois-pontos ou travessões (ex.: '...consistia nisto: que as reuniões fossem transmitidas ao vivo').</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 409 (Língua Portuguesa • Subordinação: Orações Adjetivas (Explicativa vs Restritiva)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Clássica questão de bancas sobre orações adjetivas: 1) ADJETIVA EXPLICATIVA (com vírgulas): atribui uma qualidade ou circunstância inerente a todo o grupo (sentido generalizante / totalitário); 2) ADJETIVA RESTRITIVA (sem vírgulas): restringe, recorta e delimita o sentido do substantivo antecedente a apenas uma parte dos indivíduos (apenas aqueles que estudaram, e não a totalidade).</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 410 (Língua Portuguesa • Subordinação Adverbial: Causal vs Consecutiva):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. A presença do termo intensificador na oração principal ('tantas pessoas') associado à conjunção subordinativa 'que' ('tanto... que', 'tão... que', 'tal... que') estabelece nítida relação de CONSEQUÊNCIA (efeito gerado pela intensidade da causa anterior). Trata-se de uma Oração Subordinada Adverbial Consecutiva.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 411 (Língua Portuguesa • Subordinação Adverbial: Concessiva e Conectivos Concessivos):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. A oração 'CONQUANTO houvesse intensa pressão...' introduz uma ressalva/obstáculo incapaz de anular ou impedir a realização da ação principal, caracterizando Oração Subordinada Adverbial Concessiva. 'Conquanto' é conectivo estritamente concessivo (sinônimo de embora, ainda que, se bem que, posto que). B é temporal; C é condicional; D é proporcional.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 412 (Língua Portuguesa • Conjunções Subordinativas: Polissemia do Conectivo 'Como'):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Quando o conectivo 'como' inicia o período antes da oração principal, equivalendo semanticamente a 'já que', 'visto que' ou 'porquanto', ele introduz oração subordinada adverbial CAUSAL ('Já que não havia quórum mínimo, a sessão foi suspensa'). Não se trata de comparação nem conformidade.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 413 (Língua Portuguesa • Subordinação Adverbial: Oração Condicional e Locuções):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. A locução 'desde que' seguida de verbo no modo subjuntivo ('obtenha') estabelece uma CONDIÇÃO obrigatória para que a emenda seja incorporada. Trata-se de uma Oração Subordinada Adverbial Condicional (equivalente a 'caso obtenha', 'se obtiver'). Note que 'desde que' com indicativo teria valor temporal, o que não ocorre na frase.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 414 (Língua Portuguesa • Subordinação Adverbial: Conformativa):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. O conectivo 'consoante' é conjunção subordinativa conformativa por excelência (sinônimo perfeito de 'conforme', 'segundo', 'de acordo com'). Expressa concordância ou conformidade com uma regra ou padrão exterior, classificando-se a oração como Subordinada Adverbial Conformativa.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 415 (Língua Portuguesa • Subordinação Adverbial: Proporcional ('À medida que')):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Pegadinha frequente de concurso: 1) 'À MEDIDA QUE' indica PROPORÇÃO (gradação simultânea); 2) 'NA MEDIDA EM QUE' indica CAUSA (equivalente a visto que, já que); 3) A forma 'à medida em que' é considerada erro gramatical grosseiro (mistura indevida das duas locuções anteriores).</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 416 (Língua Portuguesa • Subordinação Adverbial: Finalidade ('A fim de que')):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. A locução conjuntiva 'a fim de que' (grafada separadamente na indicação de objetivo) introduz uma Oração Subordinada Adverbial FINAL, denotando a intenção, propósito ou objetivo que move a ação expressa na oração principal.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 417 (Língua Portuguesa • Período Composto: Orações Reduzidas):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Desenvolvendo a oração: 'Assim que terminou a leitura da ata / Quando terminou a leitura da ata, o Presidente abriu a fase...'. Por não possuir conectivo explícito e ter seu verbo flexionado no particípio ('terminada'), trata-se de uma ORAÇÃO SUBORDINADA ADVERBIAL TEMPORAL REDUZIDA DE PARTICÍPIO.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 418 (Língua Portuguesa • Morfossintaxe: Distinção entre Pronome Relativo e Conjunção Integrante):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Em I, o 'que' introduz uma oração subordinada substantiva objetiva direta completando o verbo 'informaram' (pode ser substituído por 'isto': 'informaram isto'); logo, é CONJUNÇÃO INTEGRANTE. Em II, o 'que' retoma o substantivo antecedente 'diligências' ('as quais a comissão realizou'), funcionando como elo de subordinação adjetiva; logo, é PRONOME RELATIVO.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 419 (Língua Portuguesa • Morfossintaxe: Funções da Palavra 'SE' no Período Composto):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Em A, o 'se' introduz oração subordinada substantiva objetiva direta completando o verbo 'perguntou' ('perguntou isto'); logo, atua como CONJUNÇÃO INTEGRANTE. Em B, 'se' é conjunção condicional; em C, 'se' é pronome apassivador ('a resolução foi aprovada'); em D, 'se' é índice de indeterminação do sujeito.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 420 (Língua Portuguesa • Período Composto: Período Misto (Coordenação e Subordinação)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Estrutura analítica do período: 1) 'O relator concluiu o voto' = Oração principal / coordenada assindética; 2) 'MAS advertiu' = Oração Coordenada Sindética Adversativa em relação à primeira; 3) 'que o texto da lei necessitava de aprimoramento' = Oração Subordinada Substantiva Objetiva Direta subordinada ao verbo transitivo direto 'advertiu'. Trata-se de um período misto composto por coordenação e subordinação.</p>
+      </div>
+    </div>
+  
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

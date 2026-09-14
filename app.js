@@ -6599,6 +6599,647 @@ const QUIZ_QUESTIONS_DATA = [
     "correctAnswer": 1,
     "commentary": "Gabarito: B. Identificando os termos na oração: 'A Comissão de Constituição e Justiça' = Sujeito Simples; 'aprovou' = Verbo Transitivo Direto; 'o parecer favorável do relator' = OBJETO DIRETO (complemento sem preposição que sofre a ação de aprovar); 'unanimemente' = Adjunto Adverbial de Modo."
   }
+,
+  {
+    "id": 381,
+    "category": "administrativo",
+    "day": "w3_d1",
+    "discipline": "D. Administrativo",
+    "topic": "Atos Administrativos: Conceito e Distinções",
+    "question": "No âmbito do Direito Administrativo, a atuação do Poder Público desdobra-se em fatos e atos. Assinale a alternativa que apresenta a correta distinção entre ato administrativo e fato administrativo:",
+    "options": [
+      "O ato administrativo é a manifestação unilateral de vontade da Administração que visa produzir efeitos jurídicos imediatos sob regime de direito público; já o fato administrativo é qualquer acontecimento material da realidade que independe de manifestação volitiva voltada diretamente à produção de tais efeitos, mas repercute no mundo jurídico.",
+      "O fato administrativo depende obrigatoriamente de um processo de deliberação solene em diário oficial; o ato administrativo prescinde de vontade humana e decorre sempre de eventos da natureza.",
+      "Todo fato administrativo constitui um ato administrativo bilateral praticado exclusivamente sob o regime de direito privado comum.",
+      "Ato e fato administrativo são termos estritamente sinônimos no ordenamento pátrio, designando indistintamente a celebração de contratos bilaterais pela Câmara Municipal."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Conforme doutrina consagrada (Hely Lopes Meirelles e Di Pietro), o ato administrativo é uma declaração de vontade do Estado (ou de quem lhe faça as vezes) que produz efeitos jurídicos imediatos regidos pelo direito público. Já o fato administrativo é uma ocorrência fática material (como o decurso do tempo, a morte de um servidor ou a colisão de uma viatura) que pode gerar consequências jurídicas reflexas, sem constituir em si uma declaração intencional de vontade jurídica da Administração."
+  },
+  {
+    "id": 382,
+    "category": "administrativo",
+    "day": "w3_d1",
+    "discipline": "D. Administrativo",
+    "topic": "Elementos do Ato: Competência (Sujeito)",
+    "question": "Sobre o elemento 'Competência' (sujeito) como requisito de validade dos atos administrativos, é CORRETO afirmar:",
+    "options": [
+      "A competência é plenamente renunciável e pode ser alienada pelo agente público titular caso haja prévia autorização em decreto executivo.",
+      "A competência decorre sempre de expressa previsão legal, sendo, em regra, inderrogável, improrrogável e de exercício obrigatório pelo titular legalmente investido.",
+      "Qualquer matéria pode ser objeto de delegação administrativa entre órgãos, inclusive a edição de atos de caráter normativo e a decisão de recursos administrativos.",
+      "A incompetência do agente público é considerada sempre vício material insanável, vedando de forma absoluta qualquer hipótese de convalidação administrativa."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. O princípio da legalidade determina que a competência é sempre fixada em lei, configurando poder-dever irrenunciável, inderrogável e de exercício obrigatório. A alternativa A erra ao permitir renúncia; a C erra porque o art. 13 da Lei 9.784/1999 veda expressamente a delegação de atos normativos, decisão de recursos e matérias de competência exclusiva (mneumônico CENORA); e a D erra pois o vício de competência, desde que não seja razão de competência exclusiva, admite convalidação (ratificação)."
+  },
+  {
+    "id": 383,
+    "category": "administrativo",
+    "day": "w3_d1",
+    "discipline": "D. Administrativo",
+    "topic": "Elementos do Ato: Finalidade e Desvio de Poder",
+    "question": "O Presidente da Câmara Municipal remove ex officio um servidor estável para atuar em setor distante como forma de represália pessoal por divergências políticas. Essa conduta vicia o ato administrativo no elemento:",
+    "options": [
+      "Competência, configurando excesso de poder por extrapolação de atribuições formais.",
+      "Forma, por ter sido publicado em portaria legislativa comum e não em decreto legislativo.",
+      "Finalidade, configurando desvio de poder (ou desvio de finalidade), o que acarreta a nulidade absoluta do ato praticado.",
+      "Objeto, haja vista que a remoção de servidores públicos é conduta originariamente ilícita no serviço público."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. A finalidade do ato administrativo é elemento sempre vinculado e visa ao interesse público e ao fim específico pretendido pela lei. O uso da remoção funcional como sanção ou vingança pessoal caracteriza típico DESVIO DE PODER (ou desvio de finalidade), espécie de abuso de poder que atinge o elemento finalidade e torna o ato nulo de pleno direito (vício insanável)."
+  },
+  {
+    "id": 384,
+    "category": "administrativo",
+    "day": "w3_d1",
+    "discipline": "D. Administrativo",
+    "topic": "Elementos do Ato: Forma e Motivação",
+    "question": "A respeito do requisito 'Forma' e do dever de motivação no âmbito dos atos administrativos, assinale a opção correta:",
+    "options": [
+      "No Direito Administrativo vige o princípio do informalismo absoluto, sendo a forma escrita dispensável mesmo para atos punitivos e exonerações.",
+      "A forma é a exteriorização material da vontade administrativa, e a motivação consiste na exposição expressa dos fundamentos de fato e de direito que justificaram a prática do ato.",
+      "Motivo e motivação são expressões sinônimas que se referem exclusivamente ao estado psicológico subjetivo do gestor público.",
+      "A ausência de motivação em atos vinculados acarreta sempre sua conversão automática em ato discricionário confirmatório."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. A FORMA é a maneira pela qual o ato se exterioriza (em regra, escrita e solene para garantir controle e publicidade). A MOTIVAÇÃO é a formalização discursiva e expressa das razões fáticas e jurídicas que embasaram o ato. Motivo é o pressuposto fático e legal; motivação é a sua declaração formal no texto do ato."
+  },
+  {
+    "id": 385,
+    "category": "administrativo",
+    "day": "w3_d1",
+    "discipline": "D. Administrativo",
+    "topic": "Teoria dos Motivos Determinantes",
+    "question": "A Teoria dos Motivos Determinantes preconiza que:",
+    "options": [
+      "O administrador público não se vincula aos motivos que declarou formalmente, podendo alterá-los a qualquer tempo durante o processo judicial.",
+      "Os motivos determinantes aplicam-se exclusivamente aos atos negociais bilaterais subordinados ao Código Civil.",
+      "Apenas os atos expressamente vinculados se subordinam aos motivos fáticos da realidade, ficando os atos discricionários imunes à verificação fática.",
+      "A validade do ato administrativo condiciona-se à veracidade e compatibilidade fática e jurídica dos motivos expressamente declarados pela autoridade, mesmo quando a lei não exigia motivação obrigatória."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Pela Teoria dos Motivos Determinantes, quando a autoridade pública declara formalmente os motivos que justificaram o ato, a validade deste fica indissociavelmente vinculada à existência real e legal desses motivos. Se demonstrada a inexistência ou falsidade dos fatos alegados, o ato será nulo, mesmo que se tratasse originalmente de ato discricionário cuja motivação prévia não fosse legalmente obrigatória (como na exoneração ad nutum de cargo comissionado)."
+  },
+  {
+    "id": 386,
+    "category": "administrativo",
+    "day": "w3_d1",
+    "discipline": "D. Administrativo",
+    "topic": "Elementos do Ato: Objeto, Motivo e Mérito Administrativo",
+    "question": "Nos atos administrativos discricionários, o denominado 'mérito administrativo' (conveniência e oportunidade da Administração) reside fundamentalmente nos elementos:",
+    "options": [
+      "Competência e Forma.",
+      "Competência e Finalidade.",
+      "Finalidade e Forma.",
+      "Motivo e Objeto."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Enquanto a Competência, a Finalidade e a Forma são elementos obrigatoriamente VINCULADOS em qualquer ato administrativo, a margem de escolha discricionária outorgada por lei ao administrador (juízo de oportunidade e conveniência — mérito administrativo) concentra-se nos elementos MOTIVO (valoração da situação fática autorizadora) e OBJETO (escolha do conteúdo ou medida cabível)."
+  },
+  {
+    "id": 387,
+    "category": "administrativo",
+    "day": "w3_d1",
+    "discipline": "D. Administrativo",
+    "topic": "Atributos do Ato: Presunção de Legitimidade e Veracidade",
+    "question": "Em relação ao atributo da presunção de legitimidade e veracidade dos atos administrativos, assinale a afirmativa INCORRETA:",
+    "options": [
+      "Trata-se de uma presunção juris et de jure (absoluta), não admitindo produção de prova em contrário pelo particular prejudicado.",
+      "Presume-se que o ato foi editado em estrita conformidade com o ordenamento jurídico (legitimidade) e que os fatos relatados pela Administração são verdadeiros (veracidade).",
+      "Opera a inversão do ônus da prova, incumbindo ao administrado comprovar a existência de ilegalidade ou falsidade na atuação administrativa.",
+      "Está presente em todos os atos administrativos, desde o momento de sua edição, conferindo-lhes imediata eficácia e operabilidade."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. A presunção de legitimidade e veracidade é juris tantum (relativa), e NÃO juris et de jure (absoluta). Ela admite sim prova em contrário; no entanto, em razão da presunção, inverte-se o ônus da prova, cabendo ao particular comprovar que o ato é ilegal ou que os fatos declarados não condizem com a verdade."
+  },
+  {
+    "id": 388,
+    "category": "administrativo",
+    "day": "w3_d1",
+    "discipline": "D. Administrativo",
+    "topic": "Atributos do Ato: Autoexecutoriedade",
+    "question": "A autoexecutoriedade é o atributo que permite à Administração Pública compelir materialmente o administrado ao cumprimento do ato sem a necessidade de prévia intervenção judicial. Sobre esse atributo, é correto assinalar que:",
+    "options": [
+      "Está presente de forma irrestrita em todos os atos da Administração, autorizando inclusive a cobrança forçada de créditos e multas sem processo de execução fiscal.",
+      "Exige sempre autorização expressa do Ministério Público estadual antes de qualquer medida de polícia administrativa.",
+      "Impede que o Poder Judiciário faça qualquer controle a posteriori sobre a proporcionalidade da medida executada pela Administração.",
+      "Existe unicamente quando expressamente prevista em lei ou quando exigida por situação de urgência e iminente risco ao interesse público."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. A autoexecutoriedade NÃO existe em todos os atos administrativos (por exemplo, a cobrança de multas administrativas exige execução fiscal perante o Judiciário). Segundo a melhor doutrina, a autoexecutoriedade manifesta-se em duas hipóteses: 1) quando houver expressa autorização legal; ou 2) em situações de urgência que demandem atuação imediata para salvaguardar a ordem, saúde ou segurança públicas."
+  },
+  {
+    "id": 389,
+    "category": "administrativo",
+    "day": "w3_d1",
+    "discipline": "D. Administrativo",
+    "topic": "Atributos do Ato: Tipicidade",
+    "question": "O atributo do ato administrativo segundo o qual o ato deve corresponder a figuras previamente definidas pela lei para produzir determinados efeitos, funcionando como garantia contra arbitrariedades e impedindo a edição de atos inominados impositivos, denomina-se:",
+    "options": [
+      "Imperatividade.",
+      "Tipicidade.",
+      "Exigibilidade.",
+      "Inalienabilidade."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. A TIPICIDADE (atributo formulado e destacado pela Profª Maria Sylvia Zanella Di Pietro) define que o ato administrativo deve corresponder a figuras predefinidas em lei aptas a produzir determinados efeitos jurídicos. Impede que a Administração crie atos inominados para impor obrigações coercitivas unilaterais fora dos moldes da lei."
+  },
+  {
+    "id": 390,
+    "category": "administrativo",
+    "day": "w3_d1",
+    "discipline": "D. Administrativo",
+    "topic": "Atributos do Ato: Imperatividade",
+    "question": "A imperatividade é o atributo pelo qual os atos administrativos se impõem a terceiros independentemente de sua concordância. Esse atributo NÃO está presente em:",
+    "options": [
+      "Atos punitivos sancionatórios, como a aplicação de multa de trânsito.",
+      "Atos de fiscalização de posturas municipais e interdição de estabelecimentos.",
+      "Atos negociais (como a concessão de licença a pedido) e atos puramente enunciativos (como certidões e atestados).",
+      "Atos normativos impositivos de deveres de observância compulsória geral."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. A imperatividade (decorrente do poder extroverso do Estado) impõe obrigações a terceiros unilateralmente. Por isso, ela NÃO se faz presente nos atos negociais (nos quais o particular solicita voluntariamente um benefício ou autorização, como licença e alvará) nem nos atos enunciativos (que apenas atestam uma situação preexistente, como certidões, certidões de tempo de serviço e atestados)."
+  },
+  {
+    "id": 391,
+    "category": "administrativo",
+    "day": "w3_d1",
+    "discipline": "D. Administrativo",
+    "topic": "Classificação dos Atos: Formação da Vontade (Complexo vs Composto)",
+    "question": "Em matéria de formação da vontade administrativa, a investidura de determinadas autoridades depende da indicação pelo Chefe do Executivo e da aprovação pelo Poder Legislativo, conjugando vontades de órgãos independentes para a formação de um único ato. Trata-se de um ato administrativo:",
+    "options": [
+      "Simples.",
+      "Subjetivo.",
+      "Composto.",
+      "Complexo."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. O ATO COMPLEXO nasce da conjugação de vontades de órgãos diferentes e independentes que se fundem para formar um único ato (ex.: nomeação de Ministro do STF com aprovação do Senado, concessão de aposentadoria sujeita a registro pelo Tribunal de Contas). Já o ATO COMPOSTO é praticado por um único órgão e apenas depende da homologação/aprovação ou visto (ato acessório) de outro órgão."
+  },
+  {
+    "id": 392,
+    "category": "administrativo",
+    "day": "w3_d1",
+    "discipline": "D. Administrativo",
+    "topic": "Classificação dos Atos: Destinatários",
+    "question": "Quanto aos destinatários, os atos administrativos classificam-se em gerais e individuais. Constitui exemplo de ato administrativo geral:",
+    "options": [
+      "Um decreto regulamentar que disciplina o horário de funcionamento das repartições municipais.",
+      "A portaria de demissão disciplinar aplicada a um servidor específico após regular PAD.",
+      "A certidão de tempo de contribuição previdenciária expedida em nome de determinado servidor.",
+      "O termo de posse individual de um novo Técnico Legislativo aprovado em concurso."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Atos gerais (ou normativos) possuem destinatários indeterminados, comando abstrato e eficácia erga omnes, prevalecendo sobre os atos individuais. O decreto que regulamenta o horário de funcionamento das repartições do Município atinge a coletividade indiscriminada de servidores e cidadãos, sendo genuinamente um ato geral."
+  },
+  {
+    "id": 393,
+    "category": "administrativo",
+    "day": "w3_d1",
+    "discipline": "D. Administrativo",
+    "topic": "Espécies de Atos: Licença vs Autorização",
+    "question": "No que concerne às espécies de atos negociais, a diferenciação técnica clássica entre 'Licença' e 'Autorização' reside no fato de que:",
+    "options": [
+      "A licença é ato bilateral e oneroso regulado pelo Direito Comercial; a autorização é um contrato de adesão trabalhista.",
+      "A licença decorre do poder disciplinar interno, enquanto a autorização é expressão exclusiva do poder judicante dos tribunais.",
+      "A autorização gera direito adquirido imutável ao administrado, não podendo jamais ser cancelada pelo poder público.",
+      "A licença é ato administrativo unilateral, vinculado e definitivo, gerando direito subjetivo ao administrado que preenche os requisitos legais; já a autorização é ato unilateral, discricionário e precário, revogável a qualquer tempo sem direito a indenização."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Distinção essencial em provas de concurso: a LICENÇA é vinculada e confere direito subjetivo ao particular que cumpre as exigências legais (ex.: licença para construir, licença para dirigir). A AUTORIZAÇÃO é ato discricionário e precário, concedido no interesse predominante do particular, podendo a Administração revogá-lo discricionariamente por razões de conveniência e oportunidade sem indenização (ex.: autorização para uso de calçada por quiosque)."
+  },
+  {
+    "id": 394,
+    "category": "administrativo",
+    "day": "w3_d1",
+    "discipline": "D. Administrativo",
+    "topic": "Espécies de Atos: Atos Ordinatórios",
+    "question": "Os atos ordinatórios destinam-se a disciplinar a rotina interna dos órgãos e a conduta funcional dos agentes públicos subalternos, decorrendo do poder hierárquico. São espécies de atos ordinatórios, EXCETO:",
+    "options": [
+      "Instruções e Circulares internas.",
+      "Portarias de designação funcional e Ordens de Serviço.",
+      "Memorandos e Avisos administrativos.",
+      "Alvarás de autorização e licenças de funcionamento comercial."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Alvarás de autorização e licenças de funcionamento são espécies de ATOS NEGOCIAIS, voltados a conferir faculdades aos particulares mediante manifestação externa da Administração. Já instruções, circulares, portarias, ordens de serviço e memorandos são típicos ATOS ORDINATÓRIOS de circulação interna disciplinar."
+  },
+  {
+    "id": 395,
+    "category": "administrativo",
+    "day": "w3_d1",
+    "discipline": "D. Administrativo",
+    "topic": "Espécies de Atos: Atos Enunciativos - Pareceres",
+    "question": "No tocante aos atos enunciativos, os pareceres técnicos e jurídicos emitidos por órgãos de consultoria da Câmara Municipal classificam-se quanto à sua força vinculante. Quando a lei obriga o gestor a solicitar o parecer, porém não o obriga a decidir estritamente de acordo com a conclusão do parecerista, trata-se de um parecer:",
+    "options": [
+      "Facultativo.",
+      "Obrigatório (ou preceptivo).",
+      "Vinculante.",
+      "Arbitrário."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Classificação dos pareceres: 1) FACULTATIVO: a autoridade não é obrigada a pedir e nem a seguir a conclusão; 2) OBRIGATÓRIO (preceptivo): a lei exige expressamente a consulta prévia (solicitação do parecer), mas a autoridade mantém a liberdade de decidir de modo divergente se motivar adequadamente; 3) VINCULANTE: a lei exige a consulta prévia e impõe a obrigação de seguir e acatar as conclusões do parecer."
+  },
+  {
+    "id": 396,
+    "category": "administrativo",
+    "day": "w3_d1",
+    "discipline": "D. Administrativo",
+    "topic": "Vícios dos Atos: Excesso de Poder vs Usurpação de Função",
+    "question": "Considere duas situações hipotéticas no âmbito legislativo municipal: I. Um servidor efetivo do setor financeiro, com investidura legal, pratica ato de competência privativa do Diretor-Geral da Câmara. II. Um cidadão comum, sem qualquer vínculo funcional ou nomeação, assume uma mesa no plenário e assina termos oficiais fingindo ser servidor público. As situações I e II configuram, respectivamente:",
+    "options": [
+      "Usurpação de função em I; e Excesso de poder em II.",
+      "Desvio de finalidade em I; e Função de fato em II.",
+      "Fato da administração em I; e Ato bilateral em II.",
+      "Excesso de poder em I; e Usurpação de função em II."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. No caso I, o agente é servidor regularmente investido, mas age além dos limites da sua competência legal: isso configura EXCESSO DE PODER (vício de competência). No caso II, o sujeito não tem investidura nem vínculo com a Administração, praticando ato fingindo ser agente público: isso configura USURPAÇÃO DE FUNÇÃO (crime tipificado no Código Penal e conduta juridicamente inexistente perante o Estado)."
+  },
+  {
+    "id": 397,
+    "category": "administrativo",
+    "day": "w3_d1",
+    "discipline": "D. Administrativo",
+    "topic": "Vícios dos Atos: Inexistência do Motivo",
+    "question": "Uma servidora pública municipal teve sua licença-prêmio indeferida sob a motivação oficial expressa de que 'a servidora faltou injustificadamente por 15 dias durante o período aquisitivo'. Comprovado nos autos do recurso que a servidora nunca teve nenhuma falta, o ato administrativo padece de vício insanável no elemento:",
+    "options": [
+      "Competência, por ausência de autorização ministerial.",
+      "Forma, pois deveria ter sido publicado em veículo de imprensa particular.",
+      "Motivo, em virtude da falsidade e inexistência fática do pressuposto alegado.",
+      "Finalidade mediata, visto que a concessão de licenças independe de histórico funcional."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. O MOTIVO é o pressuposto de fato e de direito que autoriza a prática do ato. Se a Administração fundamenta seu ato em um fato materialmente inexistente ou falso (supostas faltas inexistentes), há vício fatal de motivo. Pela Teoria dos Motivos Determinantes, a falsidade do motivo enseja a anulação/nulidade do ato denegatório."
+  },
+  {
+    "id": 398,
+    "category": "administrativo",
+    "day": "w3_d1",
+    "discipline": "D. Administrativo",
+    "topic": "Atributos do Ato: Exigibilidade vs Executoriedade",
+    "question": "A doutrina moderna desdobra a autoexecutoriedade em duas vertentes: exigibilidade e executoriedade. Constitui exemplo de manifestação da 'exigibilidade' do ato administrativo:",
+    "options": [
+      "A apreensão física de mercadorias deterioradas em estabelecimento comercial irregular.",
+      "A demolição compulsória imediata de um imóvel em ruínas que ameaça desabar sobre pedestres.",
+      "O uso moderado da força policial para desocupar um prédio público invadido.",
+      "A cominação de multa pecuniária pela autoridade sanitária para induzir indiretamente o infrator ao cumprimento da obrigação."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. A EXIGIBILIDADE atua pela coerção indireta (meios indiretos que compelem o administrado a cumprir a ordem sob ameaça de sanção, como a imposição de multas diárias). A EXECUTORIEDADE (coerção direta) autoriza a Administração a praticar diretamente a conduta material sobre as coisas ou pessoas sem mediação (como apreender mercadorias, demolir obra irregular ou interditar estabelecimento)."
+  },
+  {
+    "id": 399,
+    "category": "administrativo",
+    "day": "w3_d1",
+    "discipline": "D. Administrativo",
+    "topic": "Classificação dos Atos: Perfeição, Validade e Eficácia",
+    "question": "Um ato administrativo que completou todo o seu ciclo de formação interna, está em perfeita conformidade com as exigências da lei, porém encontra-se submetido a uma condição suspensiva futura para que passe a produzir seus efeitos práticos, é tecnicamente classificado como:",
+    "options": [
+      "Perfeito, válido, mas ineficaz.",
+      "Imperfeito, inválido e nulo de pleno direito.",
+      "Perfeito, nulo e eficaz provisoriamente.",
+      "Inexistente, revogável e exaurido."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Análise dos planos do ato administrativo: 1) PERFEIÇÃO: completou o ciclo de formação; 2) VALIDADE: obedece a todos os requisitos de legalidade; 3) EFICÁCIA: aptidão atual para produzir efeitos. Se o ato cumpriu as etapas e a lei, mas aguarda termo inicial ou condição suspensiva, ele é PERFEITO, VÁLIDO, porém ainda INEFICAZ."
+  },
+  {
+    "id": 400,
+    "category": "administrativo",
+    "day": "w3_d1",
+    "discipline": "D. Administrativo",
+    "topic": "Espécies de Atos: Atos Punitivos no Poder Disciplinar",
+    "question": "A aplicação de penalidade disciplinar de suspensão a um servidor da Câmara Municipal após a conclusão de processo administrativo disciplinar constitui espécie de ato punitivo interno fundado diretamente no poder:",
+    "options": [
+      "Regulamentar.",
+      "Normativo originário.",
+      "Disciplinar.",
+      "De polícia judiciária."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. O PODER DISCIPLINAR é a prerrogativa conferida à Administração Pública para apurar infrações e aplicar sanções aos servidores públicos e àqueles sujeitos a vínculo especial e específico com o Estado (como concessionárias e contratados). Difere do poder de polícia, que impõe restrições a particulares em geral sem vínculo jurídico específico."
+  },
+  {
+    "id": 401,
+    "category": "portugues",
+    "day": "w3_d1",
+    "discipline": "Língua Portuguesa",
+    "topic": "Coordenação: Oração Coordenada Sindética Adversativa",
+    "question": "No excerto 'O projeto de lei continha excelentes propostas para a saúde de Meruoca, PORÉM o plenário da Câmara rejeitou seu texto base', a oração introduzida pela conjunção destacada classifica-se como:",
+    "options": [
+      "Oração Coordenada Sindética Conclusiva.",
+      "Oração Coordenada Sindética Explicativa.",
+      "Oração Coordenada Sindética Adversativa.",
+      "Oração Subordinada Adverbial Concessiva."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. A conjunção 'porém' estabelece uma relação de oposição/contraste entre orações sintaticamente independentes, configurando típica ORAÇÃO COORDENADA SINDÉTICA ADVERSATIVA (conectivos adversativos: mas, porém, contudo, todavia, entretanto, no entanto)."
+  },
+  {
+    "id": 402,
+    "category": "portugues",
+    "day": "w3_d1",
+    "discipline": "Língua Portuguesa",
+    "topic": "Coordenação: Oração Coordenada Sindética Conclusiva",
+    "question": "Assinale a alternativa que apresenta uma Oração Coordenada Sindética Conclusiva:",
+    "options": [
+      "Os prazos regimentais foram rigorosamente obedecidos; PORTANTO, a deliberação legislativa é válida.",
+      "Os vereadores compareceram ao plenário E debateram com entusiasmo as emendas.",
+      "Não atrase o envio dos relatórios, POIS o Tribunal de Contas iniciará a auditoria amanhã.",
+      "ORA defendia a aprovação imediata da matéria, ORA postulava pedido de vistas regimental."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. A oração 'PORTANTO, a deliberação legislativa é válida' exprime dedução e encerramento lógico decorrente do fato anterior, sendo Coordenada Sindética Conclusiva (conectivos: logo, portanto, por conseguinte, por isso, pois posposto ao verbo). Na alternativa B temos aditiva; na C temos explicativa ('pois' anteposto); na D temos alternativas correlativas."
+  },
+  {
+    "id": 403,
+    "category": "portugues",
+    "day": "w3_d1",
+    "discipline": "Língua Portuguesa",
+    "topic": "Conjunções Coordenativas: Emprego e Sentido do Conectivo 'Pois'",
+    "question": "Quanto à sintaxe e ao valor semântico da conjunção 'pois' no período composto, assinale a afirmativa correta:",
+    "options": [
+      "Quando colocada após o verbo da oração (entre vírgulas), a conjunção 'pois' possui valor conclusivo; quando anteposta ao verbo, introduz oração explicativa ou causal.",
+      "A conjunção 'pois' assume exclusivamente sentido adversativo quando empregada no início do período oracional.",
+      "O conectivo 'pois' é uma conjunção estritamente proporcional equivalente a 'à medida que'.",
+      "O termo 'pois' funciona como conjunção subordinativa concessiva em qualquer contexto formal."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Regra clássica da gramática normativa (Cunha & Cintra, Bechara): quando a conjunção 'pois' vem após o verbo da oração que encabeça (posposta ao verbo e isolada por vírgulas), ela tem valor CONCLUSIVO (ex.: 'Estudou com afinco; obterá, pois, a vaga'). Quando vem antes do verbo (anteposta), tem valor EXPLICATIVO ou CAUSAL (ex.: 'Entre depressa, pois vai chover')."
+  },
+  {
+    "id": 404,
+    "category": "portugues",
+    "day": "w3_d1",
+    "discipline": "Língua Portuguesa",
+    "topic": "Subordinação: Oração Subordinada Substantiva Subjetiva",
+    "question": "Na oração 'É indispensável QUE TODOS OS EDIS PARTICIPEM DA VOTAÇÃO', a oração destacada em maiúsculas exerce a função sintática de:",
+    "options": [
+      "Objeto Direto da oração principal.",
+      "Predicativo do Objeto Indireto.",
+      "Complemento Nominal do adjetivo indispensável.",
+      "Sujeito da oração principal (Oração Subordinada Substantiva Subjetiva)."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Analisando a oração principal: 'É indispensável' possui verbo de ligação ('É') e predicativo do sujeito ('indispensável'), mas falta o sujeito da oração! Pergunta-se: O que é indispensável? Resposta: 'que todos os edis participem da votação' (ou 'A participação de todos os edis é indispensável'). Logo, a oração funciona como SUJEITO da oração principal, classificando-se como Subordinada Substantiva Subjetiva."
+  },
+  {
+    "id": 405,
+    "category": "portugues",
+    "day": "w3_d1",
+    "discipline": "Língua Portuguesa",
+    "topic": "Subordinação: Oração Subordinada Substantiva Objetiva Direta",
+    "question": "No período 'O parecerista constatou QUE O PROJETO ATENDIA AOS LIMITES DA LEI DE RESPONSABILIDADE FISCAL', a oração em destaque classifica-se como:",
+    "options": [
+      "Subordinada Substantiva Objetiva Indireta.",
+      "Subordinada Adjetiva Restritiva.",
+      "Subordinada Substantiva Objetiva Direta.",
+      "Subordinada Adverbial Conformativa."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. O verbo da oração principal 'constatou' é Transitivo Direto (VTD) e não exige preposição: 'O parecerista constatou ISTO'. O termo 'isto' substitui a oração inteira, que funciona como complemento verbal sem preposição (Objeto Direto), sendo, portanto, Oração Subordinada Substantiva Objetiva Direta, encabeçada pela conjunção integrante 'que'."
+  },
+  {
+    "id": 406,
+    "category": "portugues",
+    "day": "w3_d1",
+    "discipline": "Língua Portuguesa",
+    "topic": "Subordinação: Completiva Nominal vs Objetiva Indireta",
+    "question": "Considere as orações: I. 'A comissão tinha a convicção DE QUE AS CONTAS SERIAM APROVADAS.' II. 'O Presidente da Mesa necessitava DE QUE OS SECRETÁRIOS CONFERISSEM O QUÓRUM.' Os segmentos destacados exercem, respectivamente, as funções de:",
+    "options": [
+      "Objeto Indireto em I; e Complemento Nominal em II.",
+      "Aposto Explicativo em I; e Sujeito Oracional em II.",
+      "Objeto Direto Preposicionado em I; e Adjunto Adnominal em II.",
+      "Complemento Nominal em I; e Objeto Indireto em II."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Em I, a oração subordinada 'de que as contas seriam aprovadas' completa o sentido de um NOME substantivo abstrato ('convicção'), funcionando como COMPLEMENTO NOMINAL (Oração Subordinada Substantiva Completiva Nominal). Em II, a oração 'de que os secretários conferissem o quórum' completa o sentido de um VERBO transitivo indireto ('necessitava'), funcionando como OBJETO INDIRETO (Oração Subordinada Substantiva Objetiva Indireta)."
+  },
+  {
+    "id": 407,
+    "category": "portugues",
+    "day": "w3_d1",
+    "discipline": "Língua Portuguesa",
+    "topic": "Subordinação: Oração Subordinada Substantiva Predicativa",
+    "question": "Na frase 'A principal meta da comissão parlamentar é QUE A AUDITORIA CONCLUA O RELATÓRIO NO PRAZO', a oração subordinada classifica-se como:",
+    "options": [
+      "Subordinada Substantiva Predicativa.",
+      "Subordinada Substantiva Subjetiva.",
+      "Subordinada Substantiva Apositiva.",
+      "Subordinada Adverbial Consecutiva."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. A estrutura da oração principal apresenta Sujeito ('A principal meta da comissão parlamentar') + Verbo de Ligação ('é'). O termo que se segue a um verbo de ligação para caracterizar o sujeito é o PREDICATIVO DO SUJEITO. Como essa atribuição é feita por meio de uma oração encabeçada por conjunção integrante, temos uma Oração Subordinada Substantiva Predicativa."
+  },
+  {
+    "id": 408,
+    "category": "portugues",
+    "day": "w3_d1",
+    "discipline": "Língua Portuguesa",
+    "topic": "Subordinação: Oração Subordinada Substantiva Apositiva",
+    "question": "Assinale a alternativa que apresenta uma Oração Subordinada Substantiva Apositiva:",
+    "options": [
+      "Todos os cidadãos sabem que a publicidade administrativa é imperativa.",
+      "A exigência dos vereadores consistia nisto: QUE AS REUNIÕES FOSSEM TRANSMITIDAS AO VIVO.",
+      "Convém que o parecer da assessoria chegue antes da abertura dos trabalhos.",
+      "O edital foi publicado pelos servidores para que os licitantes comparecessem."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. A Oração Subordinada Substantiva Apositiva exerce a função sintática de aposto de um termo da oração principal, explicando-o de forma específica. Geralmente vem pontuada com dois-pontos ou travessões (ex.: '...consistia nisto: que as reuniões fossem transmitidas ao vivo')."
+  },
+  {
+    "id": 409,
+    "category": "portugues",
+    "day": "w3_d1",
+    "discipline": "Língua Portuguesa",
+    "topic": "Subordinação: Orações Adjetivas (Explicativa vs Restritiva)",
+    "question": "Considere os enunciados: I. 'Os vereadores de Meruoca, QUE ESTUDARAM O REGIMENTO INTERNO, votaram favoravelmente ao parecer.' II. 'Os vereadores de Meruoca QUE ESTUDARAM O REGIMENTO INTERNO votaram favoravelmente ao parecer.' Quanto ao sentido e à pontuação, é correto afirmar:",
+    "options": [
+      "Em I, a oração entre vírgulas é restritiva e indica que apenas uma parcela dos vereadores estudou o regimento.",
+      "Em II, a ausência de vírgulas torna a oração explicativa e generalizante a todos os vereadores do plenário.",
+      "Em I, a oração é explicativa, indicando que todos os vereadores de Meruoca estudaram o regimento; em II, a oração é restritiva, indicando que apenas aqueles vereadores que estudaram o regimento votaram favoravelmente.",
+      "As duas construções possuem idêntico valor semântico e gramatical, sendo a vírgula de uso meramente optativo e facultativo."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Clássica questão de bancas sobre orações adjetivas: 1) ADJETIVA EXPLICATIVA (com vírgulas): atribui uma qualidade ou circunstância inerente a todo o grupo (sentido generalizante / totalitário); 2) ADJETIVA RESTRITIVA (sem vírgulas): restringe, recorta e delimita o sentido do substantivo antecedente a apenas uma parte dos indivíduos (apenas aqueles que estudaram, e não a totalidade)."
+  },
+  {
+    "id": 410,
+    "category": "portugues",
+    "day": "w3_d1",
+    "discipline": "Língua Portuguesa",
+    "topic": "Subordinação Adverbial: Causal vs Consecutiva",
+    "question": "No período 'A solenidade atraiu tantas pessoas da comunidade QUE O AUDITÓRIO DA CÂMARA FICOU COMPLETAMENTE LOTADO', a oração destacada estabelece com a oração principal uma relação de:",
+    "options": [
+      "Causa da atração das pessoas.",
+      "Consequência (efeito decorrente da grande quantidade de presentes).",
+      "Concessão à realização da solenidade.",
+      "Finalidade almejada pela Mesa Diretora."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. A presença do termo intensificador na oração principal ('tantas pessoas') associado à conjunção subordinativa 'que' ('tanto... que', 'tão... que', 'tal... que') estabelece nítida relação de CONSEQUÊNCIA (efeito gerado pela intensidade da causa anterior). Trata-se de uma Oração Subordinada Adverbial Consecutiva."
+  },
+  {
+    "id": 411,
+    "category": "portugues",
+    "day": "w3_d1",
+    "discipline": "Língua Portuguesa",
+    "topic": "Subordinação Adverbial: Concessiva e Conectivos Concessivos",
+    "question": "Assinale a alternativa que contém uma oração subordinada adverbial concessiva:",
+    "options": [
+      "CONQUANTO HOUVESSE INTENSA PRESSÃO DA BANCADA DE OPOSIÇÃO, o presidente manteve a votação da ordem do dia.",
+      "Logo que o sinal sonoro soou, os parlamentares ingressaram no recinto do plenário.",
+      "Caso o projeto não seja protocolado até as 17 horas, a matéria será arquivada.",
+      "À medida que as semanas transcorriam, a preparação dos candidatos tornava-se mais consistente."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. A oração 'CONQUANTO houvesse intensa pressão...' introduz uma ressalva/obstáculo incapaz de anular ou impedir a realização da ação principal, caracterizando Oração Subordinada Adverbial Concessiva. 'Conquanto' é conectivo estritamente concessivo (sinônimo de embora, ainda que, se bem que, posto que). B é temporal; C é condicional; D é proporcional."
+  },
+  {
+    "id": 412,
+    "category": "portugues",
+    "day": "w3_d1",
+    "discipline": "Língua Portuguesa",
+    "topic": "Conjunções Subordinativas: Polissemia do Conectivo 'Como'",
+    "question": "A conjunção 'como' pode assumir diferentes valores sintáticos e semânticos. Analise o período: 'COMO NÃO HAVIA QUÓRUM REGIMENTAL MÍNIMO, a sessão ordinária foi declarada suspensa pelo Presidente'. Nesse contexto, o conectivo 'como' introduz uma oração subordinada adverbial:",
+    "options": [
+      "Comparativa.",
+      "Conformativa.",
+      "Causal.",
+      "Consecutiva."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Quando o conectivo 'como' inicia o período antes da oração principal, equivalendo semanticamente a 'já que', 'visto que' ou 'porquanto', ele introduz oração subordinada adverbial CAUSAL ('Já que não havia quórum mínimo, a sessão foi suspensa'). Não se trata de comparação nem conformidade."
+  },
+  {
+    "id": 413,
+    "category": "portugues",
+    "day": "w3_d1",
+    "discipline": "Língua Portuguesa",
+    "topic": "Subordinação Adverbial: Oração Condicional e Locuções",
+    "question": "Em 'A emenda aditiva será incorporada ao texto final do projeto, DESDE QUE OBTENHA DOIS TERÇOS DOS VOTOS DOS VEREADORES', a oração sublinhada expressa ideia de:",
+    "options": [
+      "Tempo cronológico simultâneo.",
+      "Condição indispensável para a ocorrência da oração principal.",
+      "Concessão mitigada com verbo no subjuntivo.",
+      "Proporcionalidade mútua de eventos."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. A locução 'desde que' seguida de verbo no modo subjuntivo ('obtenha') estabelece uma CONDIÇÃO obrigatória para que a emenda seja incorporada. Trata-se de uma Oração Subordinada Adverbial Condicional (equivalente a 'caso obtenha', 'se obtiver'). Note que 'desde que' com indicativo teria valor temporal, o que não ocorre na frase."
+  },
+  {
+    "id": 414,
+    "category": "portugues",
+    "day": "w3_d1",
+    "discipline": "Língua Portuguesa",
+    "topic": "Subordinação Adverbial: Conformativa",
+    "question": "No trecho 'A prestação de contas da Mesa Diretora foi elaborada CONSOANTE DETERMINA A LEI DE RESPONSABILIDADE FISCAL', o termo destacado introduz uma oração subordinada adverbial:",
+    "options": [
+      "Concessiva.",
+      "Conclusiva.",
+      "Conformativa.",
+      "Consecutiva."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. O conectivo 'consoante' é conjunção subordinativa conformativa por excelência (sinônimo perfeito de 'conforme', 'segundo', 'de acordo com'). Expressa concordância ou conformidade com uma regra ou padrão exterior, classificando-se a oração como Subordinada Adverbial Conformativa."
+  },
+  {
+    "id": 415,
+    "category": "portugues",
+    "day": "w3_d1",
+    "discipline": "Língua Portuguesa",
+    "topic": "Subordinação Adverbial: Proporcional ('À medida que')",
+    "question": "A respeito das locuções proporcionais e temporais, assinale a opção gramaticalmente CORRETA:",
+    "options": [
+      "A locução 'à medida em que' é a forma culta padrão consagrada pela gramática para indicar proporção simultânea.",
+      "A locução correta para indicar gradação proporcional é 'à medida que' (ou 'à proporção que'), devendo-se evitar a forma híbrida e incorreta 'à medida em que'.",
+      "As locuções 'à medida que' e 'na medida em que' são perfeitamente sinônimas e intercambiáveis com valor causal em qualquer redação oficial.",
+      "O conectivo 'ao passo que' expressa obrigatoriamente tempo pontual futuro pretérito."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Pegadinha frequente de concurso: 1) 'À MEDIDA QUE' indica PROPORÇÃO (gradação simultânea); 2) 'NA MEDIDA EM QUE' indica CAUSA (equivalente a visto que, já que); 3) A forma 'à medida em que' é considerada erro gramatical grosseiro (mistura indevida das duas locuções anteriores)."
+  },
+  {
+    "id": 416,
+    "category": "portugues",
+    "day": "w3_d1",
+    "discipline": "Língua Portuguesa",
+    "topic": "Subordinação Adverbial: Finalidade ('A fim de que')",
+    "question": "No trecho 'O Presidente convocou a reunião extraordinária A FIM DE QUE OS PARLAMENTARES DEBATESSEM O PLANO DIRETOR', a oração sublinhada traduz uma circunstância de:",
+    "options": [
+      "Finalidade (objetivo ou meta visada pela convocação).",
+      "Causa pretérita da reunião.",
+      "Consequência imediata da fala do Presidente.",
+      "Condição preliminar à realização do debate."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. A locução conjuntiva 'a fim de que' (grafada separadamente na indicação de objetivo) introduz uma Oração Subordinada Adverbial FINAL, denotando a intenção, propósito ou objetivo que move a ação expressa na oração principal."
+  },
+  {
+    "id": 417,
+    "category": "portugues",
+    "day": "w3_d1",
+    "discipline": "Língua Portuguesa",
+    "topic": "Período Composto: Orações Reduzidas",
+    "question": "Na oração 'TERMINADA A LEITURA DA ATA, o Presidente abriu a fase de pronunciamento dos líderes partidários', a oração destacada é classificada como:",
+    "options": [
+      "Oração subordinada substantiva apositiva de gerúndio.",
+      "Oração coordenada assindética explicativa.",
+      "Oração subordinada adverbial temporal reduzida de particípio.",
+      "Oração subordinada adjetiva restritiva de infinitivo."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Desenvolvendo a oração: 'Assim que terminou a leitura da ata / Quando terminou a leitura da ata, o Presidente abriu a fase...'. Por não possuir conectivo explícito e ter seu verbo flexionado no particípio ('terminada'), trata-se de uma ORAÇÃO SUBORDINADA ADVERBIAL TEMPORAL REDUZIDA DE PARTICÍPIO."
+  },
+  {
+    "id": 418,
+    "category": "portugues",
+    "day": "w3_d1",
+    "discipline": "Língua Portuguesa",
+    "topic": "Morfossintaxe: Distinção entre Pronome Relativo e Conjunção Integrante",
+    "question": "Observe as duas frases extraídas de pronunciamentos oficiais: I. 'Os assessores informaram QUE AS DILIGÊNCIAS JÁ HAVIAM SIDO REALIZADAS.' II. 'As diligências QUE A COMISSÃO REALIZOU trouxeram novos fatos aos autos.' A palavra 'que' presente em I e II classifica-se, respectivamente, como:",
+    "options": [
+      "Pronome relativo em I; e Conjunção integrante em II.",
+      "Conjunção integrante em I; e Pronome relativo em II.",
+      "Conjunção consecutiva em I; e Conjunção explicativa em II.",
+      "Pronome indefinido em I; e Partícula expletiva de realce em II."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Em I, o 'que' introduz uma oração subordinada substantiva objetiva direta completando o verbo 'informaram' (pode ser substituído por 'isto': 'informaram isto'); logo, é CONJUNÇÃO INTEGRANTE. Em II, o 'que' retoma o substantivo antecedente 'diligências' ('as quais a comissão realizou'), funcionando como elo de subordinação adjetiva; logo, é PRONOME RELATIVO."
+  },
+  {
+    "id": 419,
+    "category": "portugues",
+    "day": "w3_d1",
+    "discipline": "Língua Portuguesa",
+    "topic": "Morfossintaxe: Funções da Palavra 'SE' no Período Composto",
+    "question": "Assinale a frase em que o vocábulo 'se' atua como CONJUNÇÃO INTEGRANTE introduzindo oração subordinada substantiva:",
+    "options": [
+      "O servidor perguntou ao Diretor SE HAVERIA EXPEDIENTE REGULAR DURANTE O FERIADO MUNICIPAL.",
+      "Se o quórum qualificado não for alcançado, a sessão não poderá deliberar a matéria.",
+      "Aprovou-se a resolução administrativa sem nenhum voto contrário na Casa.",
+      "Vive-se com muita tranquilidade nos distritos serranos de Meruoca."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Em A, o 'se' introduz oração subordinada substantiva objetiva direta completando o verbo 'perguntou' ('perguntou isto'); logo, atua como CONJUNÇÃO INTEGRANTE. Em B, 'se' é conjunção condicional; em C, 'se' é pronome apassivador ('a resolução foi aprovada'); em D, 'se' é índice de indeterminação do sujeito."
+  },
+  {
+    "id": 420,
+    "category": "portugues",
+    "day": "w3_d1",
+    "discipline": "Língua Portuguesa",
+    "topic": "Período Composto: Período Misto (Coordenação e Subordinação)",
+    "question": "No período 'O relator concluiu o voto, MAS advertiu que o texto da lei necessitava de aprimoramento', temos:",
+    "options": [
+      "Um período composto exclusivamente por orações coordenadas assindéticas sem conectivos.",
+      "Um período composto por coordenação (oração coordenada sindética adversativa 'mas advertiu') e por subordinação (oração subordinada substantiva objetiva direta 'que o texto da lei necessitava de aprimoramento').",
+      "Um período simples constituído de uma única oração absoluta com adjuntos adverbiais compostos.",
+      "Um período composto exclusivamente por orações subordinadas adjetivas restritivas correlatas."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Estrutura analítica do período: 1) 'O relator concluiu o voto' = Oração principal / coordenada assindética; 2) 'MAS advertiu' = Oração Coordenada Sindética Adversativa em relação à primeira; 3) 'que o texto da lei necessitava de aprimoramento' = Oração Subordinada Substantiva Objetiva Direta subordinada ao verbo transitivo direto 'advertiu'. Trata-se de um período misto composto por coordenação e subordinação."
+  }
 
 ];
 
@@ -6973,13 +7614,13 @@ const WEEKS_DATA = [
             tasks: ["40m Teoria Conjunções", "20m Quadro de Conectivos", "10m Recuperação Ativa"]
           },
           {
-            badge: "Bloco 3 & 4 • 1h40",
-            subject: "30 Questões + Caderno de Erros",
-            details: "15 de Atos Administrativos + 15 de Conjunções/Período Composto.",
-            tasks: ["15 Questões Atos", "15 Questões Conjunções", "30m Caderno de Erros"]
+            badge: "Treino de Alto Nível • 1h40",
+            subject: "40 Questões + Caderno de Erros",
+            details: "20 questões de Direito Administrativo (Atos Administrativos) + 20 de Língua Portuguesa (Período Composto).",
+            tasks: ["20 Questões Atos Administrativos", "20 Questões Período Composto", "30m Caderno de Erros"]
           }
         ],
-        targetQuestions: 30
+        targetQuestions: 40
       },
       {
         id: "w3_d2",
@@ -7727,7 +8368,7 @@ let appState = {
   dayQuestions: {},
   quizAnswers: {},
   bankVersion: 3,
-  quizCategoryFilter: 'w2_d5',
+  quizCategoryFilter: 'w3_d1',
   quizOrderMode: 'random', // 'random', 'interleaved', 'sequential'
   quizFilterStatus: 'all', // 'all', 'pending', 'wrong'
   quizShuffledOrder: {}, // armazena ordem embaralhada por chave de filtro para manter estabilidade
@@ -7752,7 +8393,7 @@ let appState = {
     especificos: { acertos: 0, total: 40 },
     legislacao: { acertos: 0, total: 40 }
   },
-  currentWeek: 2
+  currentWeek: 3
 };
 
 // Inicialização Geral
@@ -7763,7 +8404,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setupCountdown();
   renderWeekPills();
   renderDaysForWeek(appState.currentWeek);
-  selectQuizDay(appState.quizCategoryFilter || 'w2_d5');
+  selectQuizDay(appState.quizCategoryFilter || 'w3_d1');
   renderFlashcard();
   renderCadernoErros();
   renderSimulados();
@@ -7792,12 +8433,12 @@ function loadState() {
         appState.quizShuffledOrder = {};
         saveState();
       }
-      if (!appState.lastSeenDay || appState.lastSeenDay !== 'w2_d5') {
-        appState.quizCategoryFilter = 'w2_d5';
-        appState.lastSeenDay = 'w2_d5';
+      if (!appState.lastSeenDay || appState.lastSeenDay !== 'w3_d1') {
+        appState.quizCategoryFilter = 'w3_d1';
+        appState.lastSeenDay = 'w3_d1';
       }
-      if (!appState.currentWeek || appState.currentWeek === 1) {
-        appState.currentWeek = 2;
+      if (!appState.currentWeek || appState.currentWeek === 1 || appState.currentWeek === 2) {
+        appState.currentWeek = 3;
       }
       if (!appState.flashcardFilter || appState.flashcardFilter === 'dia4') {
         appState.flashcardFilter = 'all';
@@ -8421,11 +9062,17 @@ function filterQuizCategory(cat) {
 }
 
 const QUIZ_DAYS_CONFIG = {
-      w2_d5: {
-    title: "⭐ Semana 2 • Dia 5 — Sexta-feira (11/09/2026 - HOJE): Técnica Legislativa LC 95/98 & Sintaxe da Oração (40 Questões)",
+        w3_d1: {
+    title: "⭐ Semana 3 • Dia 1 — Segunda-feira (14/09/2026 - HOJE): Atos Administrativos & Período Composto (40 Questões)",
+    desc: "20 questões de Direito Administrativo (Atos Administrativos: requisitos COMFIFOR, atributos PATI, mérito, classificação e espécies) + 20 questões de Língua Portuguesa (Período Composto: Coordenação e Subordinação, orações substantivas, adjetivas, adverbiais e conectivos). Padrão Oficial Banca INBRASP.",
+    bookletUrl: "provas/CADERNO_QUESTOES_SEMANA_03_DIA_01_14_09_2026.html",
+    bookletLabel: "Abrir Caderno Hoje Impresso (PDF)"
+  },
+  w2_d5: {
+    title: "📅 Semana 2 • Dia 5 — Sexta-feira (11/09/2026): Técnica Legislativa LC 95/98 & Sintaxe da Oração (40 Questões)",
     desc: "20 questões de Conhecimentos Específicos (Técnica Legislativa, LC 95/1998, Articulação, Alteração e Consolidação de Leis) + 20 questões de Língua Portuguesa (Sintaxe da Oração, Termos Essenciais, Integrantes e Acessórios, Transitividade e Pontuação). Padrão Oficial Banca INBRASP.",
     bookletUrl: "provas/CADERNO_QUESTOES_SEMANA_02_DIA_05_11_09_2026.html",
-    bookletLabel: "Abrir Caderno Hoje Impresso (PDF)"
+    bookletLabel: "Abrir Caderno Dia 5 (PDF)"
   },
   w2_d4: {
     title: "📅 Semana 2 • Dia 4 — Quinta-feira (10/09/2026): Sessões, Representação Partidária & Matemática/RLM (40 Questões)",
@@ -8482,8 +9129,8 @@ const QUIZ_DAYS_CONFIG = {
     bookletLabel: "Abrir Central de Provas"
   },
   all: {
-    title: "📚 Todas as Questões do Banco de Provas (380 Questões)",
-    desc: "Simulado geral contendo todas as 380 questões ativas (Semana 1 completa + Semana 2 Dias 1, 2, 3, 4 e 5) para treino de alta performance.",
+    title: "📚 Todas as Questões do Banco de Provas (420 Questões)",
+    desc: "Simulado geral contendo todas as 420 questões ativas (Semanas 1 e 2 completas + Semana 3 Dia 1) para treino de alta performance.",
     bookletUrl: "provas/CENTRAL_DE_PROVAS.html",
     bookletLabel: "Abrir Central de Provas & Editais"
   }
@@ -8491,7 +9138,7 @@ const QUIZ_DAYS_CONFIG = {
 
 function selectQuizDay(dayKey) {
   if (!QUIZ_DAYS_CONFIG[dayKey]) {
-    dayKey = 'w2_d5';
+    dayKey = 'w3_d1';
   }
   appState.quizCategoryFilter = dayKey;
   
@@ -8643,7 +9290,7 @@ function renderDaysForWeek(weekNum) {
     });
 
     const isDone = dayTotalTasks > 0 && dayDoneTasks === dayTotalTasks;
-    const todayStr = "11/09/2026";
+    const todayStr = "14/09/2026";
     const isToday = (day.date === todayStr);
     const hasTodayInWeek = week.days.some(d => d.date === todayStr);
     const shouldOpen = isToday || (!hasTodayInWeek && dIdx === 0);
