@@ -7240,6 +7240,647 @@ const QUIZ_QUESTIONS_DATA = [
     "correctAnswer": 1,
     "commentary": "Gabarito: B. Estrutura analítica do período: 1) 'O relator concluiu o voto' = Oração principal / coordenada assindética; 2) 'MAS advertiu' = Oração Coordenada Sindética Adversativa em relação à primeira; 3) 'que o texto da lei necessitava de aprimoramento' = Oração Subordinada Substantiva Objetiva Direta subordinada ao verbo transitivo direto 'advertiu'. Trata-se de um período misto composto por coordenação e subordinação."
   }
+,
+  {
+    "id": 421,
+    "category": "administrativo",
+    "day": "w3_d2",
+    "discipline": "D. Administrativo",
+    "topic": "Invalidação: Anulação dos Atos Administrativos",
+    "question": "A respeito do instituto da anulação do ato administrativo, com base na jurisprudência sumulada do Supremo Tribunal Federal (Súmulas 346 e 473) e na Lei Federal nº 9.784/1999, é CORRETO afirmar:",
+    "options": [
+      "A anulação decorre exclusivamente de juízo discricionário de conveniência e oportunidade, produzindo efeitos prospectivos (ex nunc) a partir da decisão que a decreta.",
+      "A Administração Pública não pode anular seus próprios atos ilegais quando já tiverem decorrido mais de 30 dias de sua publicação, cabendo apenas a via jurisdicional.",
+      "O Poder Judiciário tem competência originária para anular ex officio, sem qualquer provocação da parte interessada, os atos administrativos editados pela Câmara Municipal.",
+      "A anulação é a declaração de invalidade de ato administrativo que padece de vício de legalidade, operando efeitos retroativos (ex tunc), podendo ser declarada pela própria Administração (autotutela) ou pelo Poder Judiciário mediante provocação."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. A ANULAÇÃO incide sobre atos ilegais (com vício de conformidade jurídica). Por desconstituir uma ilegalidade originária, opera efeitos retroativos (ex tunc), fulminando o ato desde o seu nascimento. Pode ser pronunciada pela própria Administração fundada no princípio da autotutela (Súmulas 346 e 473 do STF) ou pelo Poder Judiciário, desde que provocado (o Judiciário não anula ex officio atos administrativos)."
+  },
+  {
+    "id": 422,
+    "category": "administrativo",
+    "day": "w3_d2",
+    "discipline": "D. Administrativo",
+    "topic": "Invalidação: Prazo Decadencial para Anulação",
+    "question": "O direito da Administração de anular os atos administrativos de que decorram efeitos favoráveis para os destinatários decai em:",
+    "options": [
+      "Cinco anos, contados da data em que foram praticados, salvo comprovada má-fé do administrado.",
+      "Dois anos da ciência do ato pelo Tribunal de Contas do Estado.",
+      "Dez anos impreterivelmente, não comportando qualquer exceção relativa a dolo ou má-fé.",
+      "Três anos para atos da administração direta e um ano para os da administração indireta."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Nos termos expressos do art. 54 da Lei Federal nº 9.784/1999 (norma geral de processo administrativo aplicável por simetria): 'O direito da Administração de anular os atos administrativos de que decorram efeitos favoráveis para os destinatários decai em cinco anos, contados da data em que foram praticados, salvo comprovada má-fé'. Havendo má-fé do beneficiário, o ato pode ser anulado a qualquer tempo."
+  },
+  {
+    "id": 423,
+    "category": "administrativo",
+    "day": "w3_d2",
+    "discipline": "D. Administrativo",
+    "topic": "Extinção: Revogação dos Atos Administrativos",
+    "question": "Quanto ao instituto da revogação do ato administrativo, assinale a afirmativa juridicamente correta:",
+    "options": [
+      "A revogação pode ser determinada pelo Poder Judiciário no exercício de sua função jurisdicional típica, sempre que considerar o ato inoportuno para a coletividade.",
+      "A revogação incide apenas sobre atos vinculados, sendo terminantemente vedada a revogação de atos administrativos discricionários.",
+      "A revogação extingue o ato com efeitos retroativos à data de sua emissão originária (efeitos ex tunc), desfazendo todas as relações pretéritas já consolidadas.",
+      "A revogação atinge atos plenamente válidos e legais que, por razões supervenientes de conveniência e oportunidade, tornaram-se desinteressantes para a Administração, produzindo efeitos ex nunc (não retroativos)."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. A REVOGAÇÃO fundamenta-se no mérito administrativo (conveniência e oportunidade da Administração perante um ato perfeito e válido). Seus efeitos são estritamente prospectivos (ex nunc, não retroagem). É prerrogativa privativa da própria Administração: o Poder Judiciário jamais pode revogar atos administrativos do Poder Executivo ou Legislativo (só pode revogar seus próprios atos em gestão administrativa interna)."
+  },
+  {
+    "id": 424,
+    "category": "administrativo",
+    "day": "w3_d2",
+    "discipline": "D. Administrativo",
+    "topic": "Extinção: Atos Irrevogáveis",
+    "question": "A doutrina de Direito Administrativo elenca hipóteses em que o ato administrativo NÃO pode ser objeto de revogação. São espécies de atos irrevogáveis, EXCETO:",
+    "options": [
+      "Atos consumados ou exauridos que já produziram integralmente todos os seus efeitos.",
+      "Atos que geraram direito adquirido, nos termos da garantia constitucional.",
+      "Atos vinculados, nos quais a Administração não dispõe de margem de escolha de mérito.",
+      "Atos discricionários contínuos, como a permissão ou autorização precária de uso de bem público."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. A autorização e a permissão de uso de bem público são atos discricionários e precários, sendo a essência deles a possibilidade de REVOGAÇÃO a qualquer momento pelo Poder Público por razões de oportunidade e conveniência. Já os atos consumados, vinculados, enunciativos, que integram procedimento preclusivo e os que geraram direito adquirido são formalmente IRREVOGÁVEIS."
+  },
+  {
+    "id": 425,
+    "category": "administrativo",
+    "day": "w3_d2",
+    "discipline": "D. Administrativo",
+    "topic": "Extinção: Cassação do Ato Administrativo",
+    "question": "A Câmara Municipal de Meruoca concedeu alvará de funcionamento a uma empresa com a condição expressa de respeitar os limites acústicos e de segurança contra incêndio. Posteriormente, constatou-se que o estabelecimento passou a realizar shows pirotécnicos sem isolamento acústico, violando frontalmente as obrigações impostas. A extinção desse ato administrativo em razão do descumprimento culposo das condições pelo beneficiário configura:",
+    "options": [
+      "Revogação tácita.",
+      "Caducidade normativa.",
+      "Cassação.",
+      "Contraposição."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. A CASSAÇÃO ocorre quando o destinatário do ato descumpre as condições legais ou regulamentares que eram indispensáveis para a continuidade e fruição daquele benefício ou autorização. É uma forma de extinção com caráter sancionatório pelo descumprimento superveniente de deveres pelo particular."
+  },
+  {
+    "id": 426,
+    "category": "administrativo",
+    "day": "w3_d2",
+    "discipline": "D. Administrativo",
+    "topic": "Extinção: Caducidade do Ato Administrativo",
+    "question": "A retirada do ato administrativo do ordenamento jurídico decorrente da edição de uma nova legislação que tornou inviável ou proibida a manutenção daquela situação anteriormente deferida denomina-se:",
+    "options": [
+      "Caducidade.",
+      "Anulação ficta.",
+      "Renúncia expressa.",
+      "Desapropriação indireta."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. A CADUCIDADE (ou decaimento) consiste na extinção do ato administrativo válido em virtude da superveniência de norma jurídica superior com a qual o ato ou direito tornou-se incompatível (ex.: autorização válida para explorar atividade em determinado local que passa a ser declarada área de proteção ambiental rigorosa por lei nova)."
+  },
+  {
+    "id": 427,
+    "category": "administrativo",
+    "day": "w3_d2",
+    "discipline": "D. Administrativo",
+    "topic": "Extinção: Contraposição e Renúncia",
+    "question": "Considere as seguintes formas de desfazimento de atos: I. A nomeação de um novo Diretor para um cargo em comissão extingue automaticamente a nomeação do ocupante anterior. II. Um servidor público regularmente investido formula pedido escrito abrindo mão formalmente de sua promoção funcional. As situações I e II exemplificam, respectivamente:",
+    "options": [
+      "Caducidade em I; e Cassação em II.",
+      "Convalidação em I; e Reforma em II.",
+      "Anulação em I; e Revogação unilateral em II.",
+      "Contraposição (ou derrubada) em I; e Renúncia em II."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. A CONTRAPOSIÇÃO (ou derrubada) ocorre quando a edição de um novo ato, fundado em competência diversa, gera efeitos diametralmente opostos aos do ato primitivo, extinguindo-o implicitamente (ex.: a nomeação extingue a investidura anterior). A RENÚNCIA ocorre quando o próprio titular ou beneficiário do ato abre mão voluntariamente do direito ou prerrogativa conferida pelo ato administrativo."
+  },
+  {
+    "id": 428,
+    "category": "administrativo",
+    "day": "w3_d2",
+    "discipline": "D. Administrativo",
+    "topic": "Convalidação: Requisitos e Pressupostos de Validade",
+    "question": "Nos termos do art. 55 da Lei Federal nº 9.784/1999, 'em decisão na qual se evidencie não acarretarem lesão ao interesse público nem prejuízo a terceiros, os atos que apresentarem defeitos sanáveis poderão ser convalidados pela própria Administração'. A respeito da convalidação, é correto afirmar:",
+    "options": [
+      "A convalidação opera efeitos prospectivos (ex nunc), passando o ato a ter eficácia válida apenas após a assinatura do termo de saneamento.",
+      "Podem ser objeto de convalidação os atos que padecem de desvio de finalidade e os que versam sobre objeto juridicamente ilícito.",
+      "A convalidação opera efeitos retroativos (ex tunc), convalidando o ato desde o momento originário de sua prática no mundo jurídico.",
+      "Qualquer ato nulo de pleno direito deve ser compulsoriamente convalidado para preservar a despesa pública."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. A CONVALIDAÇÃO (ou saneamento) é o ato pelo qual a Administração corrige um defeito sanável de um ato anterior. Ela produz efeitos RETROATIVOS (ex tunc), validando os efeitos desde a data originária em que foi praticado. Para ser convalidado, exige-se que: 1) não haja lesão ao interesse público; 2) não haja prejuízo a terceiros; 3) o defeito seja sanável (apenas Competência e Forma)."
+  },
+  {
+    "id": 429,
+    "category": "administrativo",
+    "day": "w3_d2",
+    "discipline": "D. Administrativo",
+    "topic": "Convalidação: Vícios Sanáveis (Regra FO-CO)",
+    "question": "Em conformidade com a doutrina consolidada de Direito Administrativo (Hely Lopes Meirelles, Di Pietro e Carvalho Filho), a convalidação de atos administrativos somente é juridicamente admitida quando o vício residir nos elementos:",
+    "options": [
+      "Motivo e Objeto, desde que haja parecer ministerial favorável.",
+      "Finalidade e Motivo, em face do interesse da coletividade.",
+      "Competência (desde que não privativa/exclusiva) e Forma (desde que não exigida como essencialidade de validade pela lei).",
+      "Objeto e Finalidade, quando houver dolo comprovado de terceiro."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Regra áurea e macete clássico dos concursos ('FO-CO'): somente são sanáveis os vícios de FORMA e COMPETÊNCIA. Mas atenção aos limites: a competência só pode ser convalidada (ratificada) se NÃO for privativa ou exclusiva nem envolver matéria em razão da pessoa ou órgão; a forma só pode ser convalidada se a solenidade omitida não constituir a própria essência e substância de validade legal do ato."
+  },
+  {
+    "id": 430,
+    "category": "administrativo",
+    "day": "w3_d2",
+    "discipline": "D. Administrativo",
+    "topic": "Convalidação: Formas de Saneamento (Ratificação, Reforma e Conversão)",
+    "question": "A doutrina reconhece diferentes modalidades de aproveitamento e preservação dos atos administrativos. A hipótese em que a Administração retira do ato apenas a sua parte viciada ou ilegal, mantendo incólume a parcela válida e aproveitável do seu conteúdo, denomina-se:",
+    "options": [
+      "Reforma.",
+      "Conversão.",
+      "Ratificação.",
+      "Revogação cominatória."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Modalidades de saneamento: 1) RATIFICAÇÃO: a autoridade competente supre a falta de competência daquele que praticou originariamente o ato sanável; 2) REFORMA: a Administração suprime a parcela ilegal/viciada do ato, conservando a parte válida; 3) CONVERSÃO: o ato inválido é transformado retroativamente em outra espécie de ato administrativo válido."
+  },
+  {
+    "id": 431,
+    "category": "administrativo",
+    "day": "w3_d2",
+    "discipline": "D. Administrativo",
+    "topic": "Classificação: Vinculação vs Discricionariedade",
+    "question": "A respeito da distinção entre atos administrativos vinculados e discricionários, assinale a afirmativa correta:",
+    "options": [
+      "No ato vinculado, a lei confere ao administrador ampla liberdade para decidir se pratica ou não o ato segundo critérios subjetivos de conveniência.",
+      "Nos atos discricionários, o administrador atua sem nenhuma vinculação à lei ou à Constituição, possuindo poder absoluto de comando.",
+      "No ato vinculado, a lei estabelece de forma objetiva e estrita todos os requisitos e comportamentos a serem adotados pela autoridade, inexistindo margem de liberdade ou opção de mérito.",
+      "O ato discricionário não admite controle de legalidade perante o Poder Judiciário sob nenhuma hipótese."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. No ATO VINCULADO (ou regrado), a lei prevê detalhadamente a conduta a ser adotada diante do fato concreto; preenchidos os requisitos, o agente tem o dever de expedir o ato (direito subjetivo do administrado). No ATO DISCRICIONÁRIO, a lei outorga uma margem legítima de escolha de oportunidade e conveniência, sempre dentro dos limites estabelecidos pela própria lei."
+  },
+  {
+    "id": 432,
+    "category": "administrativo",
+    "day": "w3_d2",
+    "discipline": "D. Administrativo",
+    "topic": "Controle dos Atos: Limites do Controle Jurisdicional sobre Atos Discricionários",
+    "question": "O controle exercido pelo Poder Judiciário sobre os atos administrativos discricionários editados pela Câmara Municipal:",
+    "options": [
+      "Pode substituir a escolha discricionária de mérito da Mesa Diretora por outra opção que o magistrado julgue mais conveniente ao interesse público.",
+      "Restringe-se à verificação da legalidade, legitimidade, veracidade dos motivos declarados e conformidade aos princípios da razoabilidade e proporcionalidade, sendo vedada a substituição do mérito administrativo pelo juiz.",
+      "É totalmente proibido pelo princípio da separação dos poderes estabelecido no art. 2º da Constituição Federal.",
+      "Abrange exclusivamente a fixação de valores pecuniários das diárias parlamentares."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Princípio basilar do Direito Público: o Poder Judiciário NÃO pode reexaminar o MÉRITO administrativo (oportunidade e conveniência legítimas), sob pena de invasão indevida na esfera administrativa. Contudo, o Judiciário PODE e DEVE controlar a legalidade, o desvio de finalidade, a veracidade dos motivos (Teoria dos Motivos Determinantes) e os excessos que violem a razoabilidade e a proporcionalidade."
+  },
+  {
+    "id": 433,
+    "category": "administrativo",
+    "day": "w3_d2",
+    "discipline": "D. Administrativo",
+    "topic": "Teoria das Nulidades: Distinção entre Nulo e Anulável",
+    "question": "No regime das nulidades dos atos administrativos no Direito brasileiro, assinale a correta correspondência:",
+    "options": [
+      "O ato nulo possui defeito leve sanável e pode ser ratificado com efeitos prospectivos.",
+      "O ato anulável é aquele que possui vício insanável no motivo ou no objeto, impondo-se a obrigatoriedade de revogação.",
+      "O ato nulo apresenta vício grave e insanável, não admitindo convalidação, gerando nulidade de pleno direito; já o ato anulável ostenta vício sanável, podendo ser convalidado pela Administração se presentes os requisitos legais.",
+      "Não existe a categoria de atos anuláveis no Direito Administrativo, sendo todos os atos viciados considerados inexistentes."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. A doutrina majoritária e a Lei 9.784/1999 (art. 55) consagram a dicotomia: 1) ATOS NULOS: possuem vícios graves e insanáveis (finalidade ilícita, objeto proibido, motivo falso, competência exclusiva violada), devendo ser anulados de ofício, sem admitir convalidação; 2) ATOS ANULÁVEIS: possuem defeitos sanáveis (competência não exclusiva e forma secundária), permitindo a convalidação pela Administração."
+  },
+  {
+    "id": 434,
+    "category": "administrativo",
+    "day": "w3_d2",
+    "discipline": "D. Administrativo",
+    "topic": "Teoria das Nulidades: Ato Inexistente",
+    "question": "O ato administrativo que ostenta uma aparência de ato estatal, mas foi praticado por alguém que não possui qualquer investidura pública nem competência legal atribuída (usurpador de função), ou cujo objeto é física ou juridicamente impossível (como a nomeação de pessoa falecida), é qualificado pela doutrina como ato:",
+    "options": [
+      "Revogável por conveniência.",
+      "Inexistente.",
+      "Convalidável por ratificação.",
+      "Anulável a pedido das partes."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. O ATO INEXISTENTE é aquele que apresenta uma aberração jurídica tão extrema que sequer atinge o plano da existência do negócio jurídico (ex.: conduta de usurpador de função pública ou nomeação de pessoa comprovadamente morta). Ele não produz nenhum efeito jurídico, não goza de presunção de legitimidade e não depende de prazo decadencial para anulação."
+  },
+  {
+    "id": 435,
+    "category": "administrativo",
+    "day": "w3_d2",
+    "discipline": "D. Administrativo",
+    "topic": "Autotutela: Exigência de Contraditório na Anulação",
+    "question": "De acordo com a Súmula Vinculante nº 5 do STF e a jurisprudência pacífica dos Tribunais Superiores, a anulação de ato administrativo pela própria Administração que afete a esfera de direitos individuais de terceiros:",
+    "options": [
+      "Deve ser sempre precedida de processo administrativo no qual se assegurem o contraditório e a ampla defesa ao administrado interessado.",
+      "Prescinde de contraditório ou defesa, tendo em vista a supremacia absoluta do interesse público sobre o privado.",
+      "Só pode ser realizada após autorização expressa do Tribunal de Contas da União.",
+      "Gera direito automático e incondicional à indenização por lucros cessantes em favor do infrator."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Conforme expressa jurisprudência vinculante e pacificada (STF e STJ): embora a Administração possa anular seus próprios atos ilegais com fulcro no poder de autotutela, quando essa anulação atingir a esfera de direitos ou interesses individuais de terceiros (como a cassação de pensão ou anulação de nomeação de servidor), é INDISPENSÁVEL a prévia instauração de processo administrativo com contraditório e ampla defesa."
+  },
+  {
+    "id": 436,
+    "category": "administrativo",
+    "day": "w3_d2",
+    "discipline": "D. Administrativo",
+    "topic": "Invalidação: Proteção aos Terceiros de Boa-Fé",
+    "question": "Considere que a nomeação de um determinado servidor público para a Câmara Municipal foi posteriormente anulada pelo fato de ter sido praticada por autoridade incompetente. Os atos praticados por esse servidor perante terceiros de boa-fé enquanto esteve em exercício funcional de fato:",
+    "options": [
+      "São integralmente nulos e desfeitos, devendo todos os cidadãos atendidos refazer seus requerimentos.",
+      "São preservados e mantidos como válidos em relação aos terceiros de boa-fé, com esteio na Teoria da Aparência e no Princípio da Segurança Jurídica.",
+      "São convertidos automaticamente em atos judiciais de jurisdição voluntária.",
+      "Dependem de convalidação individual expressa pelo Presidente da República."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Aplicação da Teoria do Funcionário de Fato e do princípio da segurança jurídica: ainda que a investidura do servidor seja anulada retroativamente, os atos por ele praticados perante os cidadãos e administrados de boa-fé são PRESERVADOS e reputam-se válidos perante terceiros, evitando prejuízos desproporcionais à coletividade."
+  },
+  {
+    "id": 437,
+    "category": "administrativo",
+    "day": "w3_d2",
+    "discipline": "D. Administrativo",
+    "topic": "Convalidação: Vício de Forma Sanável vs Insanável",
+    "question": "Em relação ao vício de forma no ato administrativo, é correto asseverar que:",
+    "options": [
+      "Todo e qualquer vício de forma é considerado insanável pela legislação pátria.",
+      "O vício de forma é convalidável quando a lei não houver exigido solenidade específica como condição indispensável à validade e eficácia do ato.",
+      "A forma oral é convalidável mediante publicação de extrato após 10 anos da conduta.",
+      "A ausência de forma solene prescrita expressamente sob pena de nulidade pode ser suprida pelo decurso de prazo bienal."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. O vício de FORMA é sanável (convalidável) desde que a solenidade omitida ou defeituosa não seja exigida pela lei como requisito 'ad solemnitatem' (essência de validade absoluta do ato). Se a forma era meramente secundária ou instrumental, a Administração pode supri-la ou regularizá-la retroativamente."
+  },
+  {
+    "id": 438,
+    "category": "administrativo",
+    "day": "w3_d2",
+    "discipline": "D. Administrativo",
+    "topic": "Saneamento dos Atos: Conversão de Atos Administrativos",
+    "question": "Quando a Administração Pública aproveita um ato que seria originariamente nulo em determinada categoria, aproveitando seus elementos para qualificá-lo validamente sob outra roupagem jurídica (como aproveitar uma licença nula concedida de forma precária convertendo-a em autorização administrativa), opera-se o fenômeno da:",
+    "options": [
+      "Conversão do ato administrativo.",
+      "Cassação mandatória.",
+      "Caducidade de competência.",
+      "Revogação tácita."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. A CONVERSÃO é o aproveitamento de um ato inválido numa categoria jurídica que passa a ser recepcionado como ato válido sob outra espécie ou figura legal compatível com a vontade estatal e os elementos fáticos existentes."
+  },
+  {
+    "id": 439,
+    "category": "administrativo",
+    "day": "w3_d2",
+    "discipline": "D. Administrativo",
+    "topic": "Extinção: Diferenciação entre Cassação e Revogação",
+    "question": "A diferença fundamental entre a Revogação e a Cassação reside no fato de que:",
+    "options": [
+      "A revogação decorre de ilegalidade original; a cassação decorre de mérito discricionário do administrado.",
+      "A revogação decorre de reavaliação de oportunidade e conveniência pela Administração; a cassação é ato cominatória/sancionatório motivado pelo descumprimento superveniente de deveres pelo particular.",
+      "A revogação produz efeitos ex tunc; a cassação produz efeitos exclusivamente moratórios.",
+      "A cassação é competência privativa do Poder Judiciário; a revogação cabe apenas ao Tribunal de Contas."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Na REVOGAÇÃO, o particular não praticou nenhuma falta nem cometeu nenhuma irregularidade: a Administração simplesmente não deseja mais manter o ato por conveniência pública. Na CASSAÇÃO, o desfazimento do ato é imputado exclusivamente à culpa do particular, que descumpriu as condições legais pré-estabelecidas para desfrutar daquele ato."
+  },
+  {
+    "id": 440,
+    "category": "administrativo",
+    "day": "w3_d2",
+    "discipline": "D. Administrativo",
+    "topic": "Invalidação: Desvio de Poder / Desvio de Finalidade",
+    "question": "O desvio de finalidade (ou desvio de poder) é vício que atinge o elemento finalidade do ato administrativo. Uma vez comprovado o desvio de finalidade em um ato administrativo praticado pelo Presidente de uma Câmara Municipal, o ato deve ser:",
+    "options": [
+      "Convalidado por ato do plenário legislativo em 30 dias.",
+      "Anulado, por se tratar de vício grave de legalidade insanável no ordenamento jurídico.",
+      "Convertido em ato de cortesia política sem valor normativo.",
+      "Revogado com efeitos prospectivos para salvaguardar as finanças públicas."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. O DESVIO DE FINALIDADE acarreta a NULIDADE ABSOLUTA do ato administrativo (art. 2º, 'e', da Lei nº 4.717/1965 — Lei da Ação Popular). O vício de finalidade é radicalmente INSANÁVEL, impondo-se a sua ANULAÇÃO retroativa (ex tunc), jamais cabendo convalidação ou mera revogação."
+  },
+  {
+    "id": 441,
+    "category": "matematica",
+    "day": "w3_d2",
+    "discipline": "Matemática / RLM",
+    "topic": "Sistema de Medidas: Conversão de Comprimento (km para metros)",
+    "question": "Para uma obra de reforma da fiação da Câmara de Meruoca, foram adquiridos 3 rolos de cabeamento de rede com 0,45 km de comprimento cada um. Se na primeira etapa da obra foram utilizados 820 metros de cabo, quantos metros de cabeamento ainda restam?",
+    "options": [
+      "430 metros.",
+      "1.350 metros.",
+      "530 metros.",
+      "680 metros."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Passo a passo: 1) Cada rolo tem 0,45 km = 0,45 × 1.000 = 450 metros. 2) O total adquirido em 3 rolos foi: 3 × 450 m = 1.350 metros. 3) Foram utilizados 820 metros. 4) Restante: 1.350 - 820 = 530 metros."
+  },
+  {
+    "id": 442,
+    "category": "matematica",
+    "day": "w3_d2",
+    "discipline": "Matemática / RLM",
+    "topic": "Sistema de Medidas: Unidades de Superfície e Hectares",
+    "question": "O Município de Meruoca desapropriou um terreno plano de 2,4 hectares para a construção de um complexo de apoio administrativo. Sabendo que 1 hectare (ha) equivale a 10.000 m² e que 35% dessa área total será destinada ao estacionamento público, qual será a área destinada ao estacionamento?",
+    "options": [
+      "6.800 m².",
+      "7.200 m².",
+      "8.400 m².",
+      "9.600 m²."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Passo a passo: 1) Área total do terreno em metros quadrados: 2,4 ha = 2,4 × 10.000 m² = 24.000 m². 2) Área do estacionamento: 35% de 24.000 m² = 0,35 × 24.000 = 8.400 m²."
+  },
+  {
+    "id": 443,
+    "category": "matematica",
+    "day": "w3_d2",
+    "discipline": "Matemática / RLM",
+    "topic": "Sistema de Medidas: Volume e Capacidade (m³ e Litros)",
+    "question": "O reservatório de água do edifício da Câmara Municipal possui formato de paralelepípedo retângulo com as seguintes dimensões internas: 4 metros de comprimento, 2,5 metros de largura e 1,8 metro de altura. Sabendo que 1 m³ de volume comporta exatamente 1.000 litros de água, qual é a capacidade máxima total desse reservatório em litros?",
+    "options": [
+      "14.500 litros.",
+      "20.000 litros.",
+      "16.200 litros.",
+      "18.000 litros."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Passo a passo: 1) Volume em m³ = Comprimento × Largura × Altura = 4 × 2,5 × 1,8 = 10 × 1,8 = 18 m³. 2) Conversão para litros: 1 m³ = 1.000 litros. Portanto: 18 × 1.000 = 18.000 litros."
+  },
+  {
+    "id": 444,
+    "category": "matematica",
+    "day": "w3_d2",
+    "discipline": "Matemática / RLM",
+    "topic": "Sistema de Medidas: Massa (kg e Toneladas)",
+    "question": "Em uma campanha de reciclagem de papéis de arquivos obsoletos da Câmara de Meruoca, foram arrecadados 2,8 toneladas de papel. Esse material foi dividido e acondicionado igualmente em sacas de 35 kg cada. Quantas sacas completas foram necessárias para embalar todo o papel reciclado?",
+    "options": [
+      "75 sacas.",
+      "90 sacas.",
+      "85 sacas.",
+      "80 sacas."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Passo a passo: 1) Sabendo que 1 tonelada (t) = 1.000 kg, temos: 2,8 t = 2,8 × 1.000 = 2.800 kg de papel. 2) Dividindo o total pelo peso de cada saca: 2.800 / 35. 2.800 ÷ 35 = 80 sacas completas."
+  },
+  {
+    "id": 445,
+    "category": "matematica",
+    "day": "w3_d2",
+    "discipline": "Matemática / RLM",
+    "topic": "Sistema de Medidas: Unidades de Tempo e Conversões Decimais",
+    "question": "Uma sessão plenária extraordinária da Câmara iniciou-se às 09h 15min e encerrou-se exatamente às 12h 03min. Qual foi a duração total dessa sessão plenária expressa em minutos?",
+    "options": [
+      "172 minutos.",
+      "158 minutos.",
+      "168 minutos.",
+      "148 minutos."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Passo a passo: 1) Intervalo de 09h 15min até 12h 00min: faltam 45 minutos para 10h + 2 horas completas (10h às 12h) = 2h 45min. 2) De 12h 00min até 12h 03min: mais 3 minutos. Total = 2 horas e 48 minutos. 3) Convertendo 2h 48min para minutos: (2 × 60) + 48 = 120 + 48 = 168 minutos."
+  },
+  {
+    "id": 446,
+    "category": "matematica",
+    "day": "w3_d2",
+    "discipline": "Matemática / RLM",
+    "topic": "Sistema Monetário Brasileiro: Troco e Cédulas",
+    "question": "Um servidor comprou materiais de expediente para o setor legislativo totalizando R$ 346,80. Para efetuar o pagamento, entregou no caixa 4 cédulas de R$ 100,00. O troco recebido pelo servidor foi de:",
+    "options": [
+      "R$ 54,20.",
+      "R$ 55,20.",
+      "R$ 52,20.",
+      "R$ 53,20."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Passo a passo: 1) Valor entregue: 4 × R$ 100,00 = R$ 400,00. 2) Valor da compra: R$ 346,80. 3) Troco = 400,00 - 346,80 = R$ 53,20."
+  },
+  {
+    "id": 447,
+    "category": "matematica",
+    "day": "w3_d2",
+    "discipline": "Matemática / RLM",
+    "topic": "Sistema Monetário: Juros Simples e Parcelamento",
+    "question": "Um equipamento eletrônico de som para o plenário custa R$ 4.000,00 à vista. A loja oferece o plano de pagamento a prazo em 4 parcelas mensais iguais com taxa de juros simples de 2,5% ao mês sobre o valor inicial à vista. Qual será o valor de cada uma das 4 parcelas?",
+    "options": [
+      "R$ 1.050,00.",
+      "R$ 1.200,00.",
+      "R$ 1.150,00.",
+      "R$ 1.100,00."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Passo a passo: 1) Juros simples: J = C × i × t. Capital (C) = 4.000; taxa (i) = 2,5% ao mês = 0,025; tempo (t) = 4 meses. 2) J = 4.000 × 0,025 × 4 = 4.000 × 0,10 = R$ 400,00 de juros totais. 3) Montante a pagar = C + J = 4.000 + 400 = R$ 4.400,00. 4) Valor de cada uma das 4 parcelas iguais: 4.400 / 4 = R$ 1.100,00."
+  },
+  {
+    "id": 448,
+    "category": "matematica",
+    "day": "w3_d2",
+    "discipline": "Matemática / RLM",
+    "topic": "Sistema Monetário: Descontos e Orçamento",
+    "question": "Em uma licitação para compra de papel A4, a empresa vencedora ofereceu um lote de 50 caixas no valor total de R$ 1.800,00. Caso a Câmara efetue o pagamento em parcela única até 5 dias úteis, a empresa concede um desconto promocional de 8%. Qual será o valor final a ser pago com o desconto aplicado?",
+    "options": [
+      "R$ 1.680,00.",
+      "R$ 1.640,00.",
+      "R$ 1.656,00.",
+      "R$ 1.624,00."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Passo a passo: 1) Valor do desconto de 8% sobre R$ 1.800,00: 0,08 × 1.800 = R$ 144,00. 2) Valor final com desconto: 1.800,00 - 144,00 = R$ 1.656,00 (ou diretamente: 1.800 × 0,92 = R$ 1.656,00)."
+  },
+  {
+    "id": 449,
+    "category": "matematica",
+    "day": "w3_d2",
+    "discipline": "Matemática / RLM",
+    "topic": "Sistema de Medidas: Capacidade em Mililitros (ml) e Litros",
+    "question": "Para uma audiência pública na Câmara foram compradas garrafas de água mineral com capacidade de 350 ml cada. Se no total foram servidos 42 litros de água durante a audiência, quantas garrafas completas de 350 ml foram consumidas?",
+    "options": [
+      "110 garrafas.",
+      "120 garrafas.",
+      "130 garrafas.",
+      "140 garrafas."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Passo a passo: 1) Converter litros para mililitros: 1 L = 1.000 ml, logo 42 litros = 42 × 1.000 = 42.000 ml. 2) Dividir pelo volume de cada garrafa: 42.000 ÷ 350 = 4.200 ÷ 35 = 120 garrafas."
+  },
+  {
+    "id": 450,
+    "category": "matematica",
+    "day": "w3_d2",
+    "discipline": "Matemática / RLM",
+    "topic": "Sistema de Medidas: Conversão de Área (m² para cm² e ladrilhos)",
+    "question": "O piso de uma sala de reuniões de 24 m² será totalmente revestido com placas cerâmicas quadradas de 40 cm de lado. Desconsiderando perdas e rejuntes, quantas placas cerâmicas completas serão necessárias para cobrir todo o piso dessa sala?",
+    "options": [
+      "160 placas.",
+      "120 placas.",
+      "150 placas.",
+      "180 placas."
+    ],
+    "correctAnswer": 2,
+    "commentary": "Gabarito: C. Passo a passo: 1) Área de cada placa quadrada: 40 cm = 0,4 m. Área = 0,4 m × 0,4 m = 0,16 m² (ou 40 × 40 = 1.600 cm²). 2) Área total da sala: 24 m² = 24 × 10.000 = 240.000 cm². 3) Quantidade de placas = 24 / 0,16 = 2.400 / 16 = 150 placas."
+  },
+  {
+    "id": 451,
+    "category": "matematica",
+    "day": "w3_d2",
+    "discipline": "Matemática / RLM",
+    "topic": "Sistema de Medidas: Perímetro e Cálculo de Custo Linear",
+    "question": "Um terreno retangular pertencente ao patrimônio da Câmara de Meruoca possui 45 metros de comprimento e 25 metros de largura. A administração pretende cercar todo o seu contorno com grade de proteção metálica. Se o metro linear da grade instalada custa R$ 85,00, qual será o custo total para cercar o perímetro desse terreno?",
+    "options": [
+      "R$ 9.650,00.",
+      "R$ 10.850,00.",
+      "R$ 12.450,00.",
+      "R$ 11.900,00."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Passo a passo: 1) O perímetro de um retângulo é 2 × (comprimento + largura) = 2 × (45 + 25) = 2 × 70 = 140 metros. 2) Custo total = 140 m × R$ 85,00/m = R$ 11.900,00."
+  },
+  {
+    "id": 452,
+    "category": "matematica",
+    "day": "w3_d2",
+    "discipline": "Matemática / RLM",
+    "topic": "Sistema Monetário: Diárias e Operações Fundamentais",
+    "question": "Dois servidores da Câmara de Meruoca viajaram em missão oficial para Fortaleza para participar de treinamento sobre o Processo Legislativo. Cada servidor tem direito a uma diária de R$ 220,00 por dia completo e R$ 110,00 por meia diária. Sabendo que a missão durou 3 dias completos e 1 meia diária para cada um dos dois servidores, qual foi o valor total pago em diárias pela Câmara?",
+    "options": [
+      "R$ 1.620,00.",
+      "R$ 770,00.",
+      "R$ 1.480,00.",
+      "R$ 1.540,00."
+    ],
+    "correctAnswer": 3,
+    "commentary": "Gabarito: D. Passo a passo: 1) Diárias por servidor: 3 dias completos = 3 × 220 = R$ 660,00; mais 1 meia diária = R$ 110,00. Total por servidor = 660 + 110 = R$ 770,00. 2) Como foram 2 servidores: 2 × R$ 770,00 = R$ 1.540,00."
+  },
+  {
+    "id": 453,
+    "category": "matematica",
+    "day": "w3_d2",
+    "discipline": "Matemática / RLM",
+    "topic": "Sistema de Medidas: Escalas e Conversão de Unidades",
+    "question": "Em uma planta arquitetônica da nova sede da Câmara desenhada na escala 1 : 250, a extensão da fachada principal mede 12 cm no papel. Qual é a medida real dessa fachada em metros?",
+    "options": [
+      "25 metros.",
+      "30 metros.",
+      "35 metros.",
+      "300 metros."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Passo a passo: 1) Na escala 1 : 250, cada 1 cm no mapa representa 250 cm na realidade. 2) Medida real em cm = 12 × 250 = 3.000 cm. 3) Convertendo centímetros para metros: 1 metro = 100 cm, logo 3.000 cm = 3.000 ÷ 100 = 30 metros."
+  },
+  {
+    "id": 454,
+    "category": "matematica",
+    "day": "w3_d2",
+    "discipline": "Matemática / RLM",
+    "topic": "Sistema de Medidas: Capacidade e Custo de Combustível",
+    "question": "O veículo oficial da Câmara Municipal tem rendimento médio de 12,5 km por litro de gasolina. Em uma semana de vistorias parlamentares na zona rural de Meruoca, o veículo percorreu 450 km. Se o litro da gasolina custa R$ 5,80, qual foi o gasto total com combustível nessa semana?",
+    "options": [
+      "R$ 208,80.",
+      "R$ 198,60.",
+      "R$ 215,40.",
+      "R$ 226,20."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Passo a passo: 1) Quantidade de litros consumidos = Distância / Rendimento = 450 ÷ 12,5 = 36 litros. 2) Custo total = 36 litros × R$ 5,80/litro = R$ 208,80."
+  },
+  {
+    "id": 455,
+    "category": "matematica",
+    "day": "w3_d2",
+    "discipline": "Matemática / RLM",
+    "topic": "Sistema de Medidas: Horas Decimais para Minutos",
+    "question": "Um servidor levou 3,4 horas para redigir a ata detalhada de uma sessão solene. Essa duração de 3,4 horas equivale exatamente a:",
+    "options": [
+      "3 horas e 40 minutos.",
+      "3 horas e 24 minutos.",
+      "3 horas e 15 minutos.",
+      "3 horas e 4 minutos."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Pegadinha clássica em concursos: 3,4 horas NÃO é 3 horas e 40 minutos! Temos 3 horas inteiras + 0,4 de uma hora. Como 1 hora tem 60 minutos, 0,4 hora = 0,4 × 60 minutos = 24 minutos. Portanto, 3,4 horas equivale exatamente a 3 horas e 24 minutos."
+  },
+  {
+    "id": 456,
+    "category": "matematica",
+    "day": "w3_d2",
+    "discipline": "Matemática / RLM",
+    "topic": "Sistema de Medidas: Massa (Gramas e Miligramas)",
+    "question": "Para o tratamento de desinfecção dos reservatórios do prédio do Legislativo, a vigilância sanitária recomenda utilizar 2,5 mg de cloro ativo para cada 1 litro de água. Para desinfetar uma caixa d'água contendo 8.000 litros de água, quantos gramas de cloro ativo serão necessários?",
+    "options": [
+      "200 gramas.",
+      "20 gramas.",
+      "2 gramas.",
+      "2.000 gramas."
+    ],
+    "correctAnswer": 1,
+    "commentary": "Gabarito: B. Passo a passo: 1) Quantidade total de cloro em miligramas: 8.000 litros × 2,5 mg/L = 20.000 mg. 2) Conversão de mg para gramas: 1 g = 1.000 mg. Logo, 20.000 mg = 20.000 ÷ 1.000 = 20 gramas."
+  },
+  {
+    "id": 457,
+    "category": "matematica",
+    "day": "w3_d2",
+    "discipline": "Matemática / RLM",
+    "topic": "Sistema Monetário: Percentuais sobre Remuneração",
+    "question": "O salário inicial de um Técnico Legislativo de Meruoca é fixado no edital em R$ 1.800,00. Após a conclusão do estágio probatório e cumprimento dos critérios do Plano de Cargos e Carreiras, o servidor receberá uma gratificação de desempenho de 22% sobre seu vencimento básico, acrescida de um adicional de qualificação de 15% (também incidente sobre o vencimento básico). Com esses dois benefícios, qual passará a ser a remuneração bruta total desse servidor?",
+    "options": [
+      "R$ 2.466,00.",
+      "R$ 2.412,00.",
+      "R$ 2.380,00.",
+      "R$ 2.520,00."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Passo a passo: 1) Soma dos percentuais de acréscimo: 22% + 15% = 37% sobre o vencimento básico. 2) Valor total dos adicionais: 0,37 × 1.800 = R$ 666,00. 3) Remuneração bruta = Vencimento básico + adicionais = 1.800 + 666 = R$ 2.466,00."
+  },
+  {
+    "id": 458,
+    "category": "matematica",
+    "day": "w3_d2",
+    "discipline": "Matemática / RLM",
+    "topic": "Sistema de Medidas: Superfície, Capacidade e Rendimento",
+    "question": "O plenário da Câmara possui 4 paredes que precisam ser pintadas. Duas paredes medem 12 m por 3,5 m cada, e as outras duas medem 8 m por 3,5 m cada. O pintor informou que cada lata de tinta de 3,6 litros rende 40 m² de pintura com duas demãos. Quantas latas de tinta de 3,6 L, no mínimo, a administração precisará comprar para pintar todo o plenário?",
+    "options": [
+      "4 latas.",
+      "3 latas.",
+      "5 latas.",
+      "6 latas."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Passo a passo: 1) Área das duas primeiras paredes: 2 × (12 × 3,5) = 2 × 42 = 84 m². 2) Área das outras duas paredes: 2 × (8 × 3,5) = 2 × 28 = 56 m². 3) Área total = 84 + 56 = 140 m². 4) Rendimento por lata = 40 m². 5) Número de latas = 140 ÷ 40 = 3,5 latas. Como a compra deve ser de latas inteiras, serão necessárias no mínimo 4 latas completas."
+  },
+  {
+    "id": 459,
+    "category": "matematica",
+    "day": "w3_d2",
+    "discipline": "Matemática / RLM",
+    "topic": "Sistema Monetário: Comparação À Vista vs A Prazo",
+    "question": "Para a aquisição de 10 novos computadores, a Câmara recebeu duas propostas: Proposta I: Pagamento à vista com 12% de desconto sobre o valor de tabela de R$ 35.000,00. Proposta II: Pagamento em duas parcelas de R$ 16.000,00 (uma entrada e outra após 30 dias). A economia obtida pela Câmara ao optar pela Proposta I em relação à Proposta II é de:",
+    "options": [
+      "R$ 1.200,00.",
+      "R$ 1.500,00.",
+      "R$ 1.800,00.",
+      "R$ 2.200,00."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Passo a passo: 1) Proposta I (à vista): Desconto de 12% em R$ 35.000 = 0,12 × 35.000 = R$ 4.200,00. Valor pago = 35.000 - 4.200 = R$ 30.800,00. 2) Proposta II: 2 parcelas de R$ 16.000 = R$ 32.000,00. 3) Diferença (economia): 32.000,00 - 30.800,00 = R$ 1.200,00."
+  },
+  {
+    "id": 460,
+    "category": "matematica",
+    "day": "w3_d2",
+    "discipline": "Matemática / RLM",
+    "topic": "Sistema de Medidas: Vazão, Volume e Tempo",
+    "question": "Uma torneira com defeito em um dos banheiros da Câmara fica gotejando e perde 15 ml de água por minuto. Se o defeito demorou 8 horas para ser reparado pela equipe de manutenção, qual foi a quantidade total de água desperdiçada nesse período?",
+    "options": [
+      "7,2 litros.",
+      "8,5 litros.",
+      "6,4 litros.",
+      "9,0 litros."
+    ],
+    "correctAnswer": 0,
+    "commentary": "Gabarito: A. Passo a passo: 1) Tempo decorrido em minutos: 8 horas = 8 × 60 = 480 minutos. 2) Quantidade de água desperdiçada em ml: 480 minutos × 15 ml/minuto = 7.200 ml. 3) Convertendo ml para litros: 1 L = 1.000 ml. Logo, 7.200 ÷ 1.000 = 7,2 litros."
+  }
 
 ];
 
@@ -7640,13 +8281,13 @@ const WEEKS_DATA = [
             tasks: ["40m Conversão de Unidades", "20m Resolução de Problemas", "10m Recuperação Ativa"]
           },
           {
-            badge: "Bloco 3 & 4 • 1h40",
-            subject: "30 Questões + Caderno de Erros",
-            details: "15 de Atos/Extinção + 15 de Medidas e Matemática.",
-            tasks: ["15 Questões Extinção Atos", "15 Questões Medidas", "30m Caderno de Erros"]
+            badge: "Treino de Alto Nível • 1h40",
+            subject: "40 Questões + Caderno de Erros",
+            details: "20 questões de Extinção e Convalidação de Atos + 20 de Sistema Monetário e Medidas.",
+            tasks: ["20 Questões Extinção Atos", "20 Questões Medidas", "30m Caderno de Erros"]
           }
         ],
-        targetQuestions: 30
+        targetQuestions: 40
       },
       {
         id: "w3_d3",
@@ -8368,7 +9009,7 @@ let appState = {
   dayQuestions: {},
   quizAnswers: {},
   bankVersion: 3,
-  quizCategoryFilter: 'w3_d1',
+  quizCategoryFilter: 'w3_d2',
   quizOrderMode: 'random', // 'random', 'interleaved', 'sequential'
   quizFilterStatus: 'all', // 'all', 'pending', 'wrong'
   quizShuffledOrder: {}, // armazena ordem embaralhada por chave de filtro para manter estabilidade
@@ -8404,7 +9045,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setupCountdown();
   renderWeekPills();
   renderDaysForWeek(appState.currentWeek);
-  selectQuizDay(appState.quizCategoryFilter || 'w3_d1');
+  selectQuizDay(appState.quizCategoryFilter || 'w3_d2');
   renderFlashcard();
   renderCadernoErros();
   renderSimulados();
@@ -8433,9 +9074,9 @@ function loadState() {
         appState.quizShuffledOrder = {};
         saveState();
       }
-      if (!appState.lastSeenDay || appState.lastSeenDay !== 'w3_d1') {
-        appState.quizCategoryFilter = 'w3_d1';
-        appState.lastSeenDay = 'w3_d1';
+      if (!appState.lastSeenDay || appState.lastSeenDay !== 'w3_d2') {
+        appState.quizCategoryFilter = 'w3_d2';
+        appState.lastSeenDay = 'w3_d2';
       }
       if (!appState.currentWeek || appState.currentWeek === 1 || appState.currentWeek === 2) {
         appState.currentWeek = 3;
@@ -9062,11 +9703,17 @@ function filterQuizCategory(cat) {
 }
 
 const QUIZ_DAYS_CONFIG = {
-        w3_d1: {
-    title: "⭐ Semana 3 • Dia 1 — Segunda-feira (14/09/2026 - HOJE): Atos Administrativos & Período Composto (40 Questões)",
+          w3_d2: {
+    title: "⭐ Semana 3 • Dia 2 — Terça-feira (15/09/2026 - HOJE): Extinção de Atos & Matemática/Medidas (40 Questões)",
+    desc: "20 questões de Direito Administrativo (Extinção, Invalidação e Convalidação dos Atos: Anulação, Revogação, Cassação, Caducidade, Convalidação FO-CO, Vinculação e Discricionariedade) + 20 questões de Matemática & RLM (Sistema Monetário Brasileiro, Trocos, Juros e Descontos, Sistema de Medidas: comprimento, superfície, volume, capacidade, massa e tempo). Padrão Oficial Banca INBRASP.",
+    bookletUrl: "provas/CADERNO_QUESTOES_SEMANA_03_DIA_02_15_09_2026.html",
+    bookletLabel: "Abrir Caderno Hoje Impresso (PDF)"
+  },
+  w3_d1: {
+    title: "📅 Semana 3 • Dia 1 — Segunda-feira (14/09/2026): Atos Administrativos & Período Composto (40 Questões)",
     desc: "20 questões de Direito Administrativo (Atos Administrativos: requisitos COMFIFOR, atributos PATI, mérito, classificação e espécies) + 20 questões de Língua Portuguesa (Período Composto: Coordenação e Subordinação, orações substantivas, adjetivas, adverbiais e conectivos). Padrão Oficial Banca INBRASP.",
     bookletUrl: "provas/CADERNO_QUESTOES_SEMANA_03_DIA_01_14_09_2026.html",
-    bookletLabel: "Abrir Caderno Hoje Impresso (PDF)"
+    bookletLabel: "Abrir Caderno Dia 1 (PDF)"
   },
   w2_d5: {
     title: "📅 Semana 2 • Dia 5 — Sexta-feira (11/09/2026): Técnica Legislativa LC 95/98 & Sintaxe da Oração (40 Questões)",
@@ -9129,8 +9776,8 @@ const QUIZ_DAYS_CONFIG = {
     bookletLabel: "Abrir Central de Provas"
   },
   all: {
-    title: "📚 Todas as Questões do Banco de Provas (420 Questões)",
-    desc: "Simulado geral contendo todas as 420 questões ativas (Semanas 1 e 2 completas + Semana 3 Dia 1) para treino de alta performance.",
+    title: "📚 Todas as Questões do Banco de Provas (460 Questões)",
+    desc: "Simulado geral contendo todas as 460 questões ativas (Semanas 1 e 2 completas + Semana 3 Dias 1 e 2) para treino de alta performance.",
     bookletUrl: "provas/CENTRAL_DE_PROVAS.html",
     bookletLabel: "Abrir Central de Provas & Editais"
   }
@@ -9138,7 +9785,7 @@ const QUIZ_DAYS_CONFIG = {
 
 function selectQuizDay(dayKey) {
   if (!QUIZ_DAYS_CONFIG[dayKey]) {
-    dayKey = 'w3_d1';
+    dayKey = 'w3_d2';
   }
   appState.quizCategoryFilter = dayKey;
   
@@ -9290,7 +9937,7 @@ function renderDaysForWeek(weekNum) {
     });
 
     const isDone = dayTotalTasks > 0 && dayDoneTasks === dayTotalTasks;
-    const todayStr = "14/09/2026";
+    const todayStr = "15/09/2026";
     const isToday = (day.date === todayStr);
     const hasTodayInWeek = week.days.some(d => d.date === todayStr);
     const shouldOpen = isToday || (!hasTodayInWeek && dIdx === 0);

@@ -1,0 +1,2532 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>CADERNO OFICIAL DE QUESTÕES — SEMANA 3 / DIA 2 (15/09/2026) | INBRASP</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @page {
+      size: A4;
+      margin: 15mm 18mm;
+    }
+    :root {
+      --primary: #1e3a8a;
+      --primary-dark: #0f172a;
+      --accent: #dc2626;
+      --border: #cbd5e1;
+      --bg: #ffffff;
+      --text: #0f172a;
+      --text-muted: #475569;
+    }
+    body {
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+      color: var(--text);
+      background: #f8fafc;
+      margin: 0;
+      padding: 24px;
+      font-size: 10pt;
+      line-height: 1.45;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      padding: 36px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    }
+    .header-box {
+      border: 2px solid var(--primary);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f8fafc;
+    }
+    .header-titles h1 {
+      margin: 0 0 4px 0;
+      font-size: 1.35rem;
+      color: var(--primary);
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .header-titles h2 {
+      margin: 0 0 4px 0;
+      font-size: 1rem;
+      color: var(--text);
+      font-weight: 700;
+    }
+    .header-titles p {
+      margin: 0;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .badge-banca {
+      background: #fee2e2;
+      color: #991b1b;
+      font-weight: 800;
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      border: 1px solid #fecaca;
+    }
+    .no-print {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .btn-action {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+    }
+    .btn-action:hover {
+      background: #1d4ed8;
+    }
+    .question-block {
+      margin-bottom: 22px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #e2e8f0;
+      page-break-inside: avoid;
+    }
+    .q-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .q-number {
+      font-weight: 800;
+      color: var(--primary);
+      font-size: 1rem;
+    }
+    .q-badge {
+      background: #e2e8f0;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #475569;
+    }
+    .q-discipline {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-weight: 600;
+      background: #f1f5f9;
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+    .q-text {
+      margin-bottom: 10px;
+      font-size: 0.95rem;
+      text-align: justify;
+    }
+    .q-options {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .q-option {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 0.9rem;
+    }
+    .opt-letter {
+      font-weight: 700;
+      background: #f1f5f9;
+      border: 1px solid #cbd5e1;
+      border-radius: 4px;
+      width: 22px;
+      height: 22px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 0.8rem;
+    }
+    .opt-text {
+      padding-top: 1px;
+    }
+    .cartao-resposta {
+      margin-top: 36px;
+      padding: 24px;
+      border: 2px dashed #94a3b8;
+      border-radius: 8px;
+      background: #f8fafc;
+      page-break-before: always;
+    }
+    .cartao-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-top: 16px;
+    }
+    .cartao-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.8rem;
+    }
+    .cartao-num {
+      font-weight: 700;
+      width: 24px;
+    }
+    .cartao-bolhas {
+      display: flex;
+      gap: 4px;
+    }
+    .bolha {
+      width: 18px;
+      height: 18px;
+      border: 1px solid #64748b;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.65rem;
+      font-weight: 600;
+    }
+    .gabarito-section {
+      margin-top: 36px;
+      page-break-before: always;
+    }
+    .gabarito-tabela {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 16px;
+      margin-bottom: 24px;
+    }
+    .gabarito-tabela th, .gabarito-tabela td {
+      border: 1px solid var(--border);
+      padding: 6px 10px;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+    .gabarito-tabela th {
+      background: var(--primary);
+      color: white;
+    }
+    .gabarito-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 12px;
+      padding: 10px;
+      background: #f8fafc;
+      border-radius: 6px;
+      border-left: 4px solid var(--primary);
+    }
+    .gabarito-letra {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--primary);
+      background: #e2e8f0;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+      flex-shrink: 0;
+    }
+    @media print {
+      body {
+        background: white;
+        padding: 0;
+        font-size: 9.5pt;
+      }
+      .container {
+        max-width: 100%;
+        padding: 0;
+        box-shadow: none;
+      }
+      .no-print {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="no-print">
+      <button class="btn-action" onclick="window.print()">
+        <i class="fas fa-print"></i> Imprimir Caderno Completo (PDF)
+      </button>
+      <a href="../index.html" class="btn-action" style="background: #475569;">
+        <i class="fas fa-arrow-left"></i> Voltar ao Sistema de Estudos
+      </a>
+      <a href="CENTRAL_DE_PROVAS.html" class="btn-action" style="background: #0284c7;">
+        <i class="fas fa-folder-open"></i> Central de Provas
+      </a>
+    </div>
+
+    <div class="header-box">
+      <div class="header-titles">
+        <h1>Câmara Municipal de Meruoca — Concurso Público 2026</h1>
+        <h2>Caderno Oficial de Questões • Semana 3 — Dia 2 (15/09/2026)</h2>
+        <p>Cargo: <strong>Técnico Legislativo</strong> • 40 Questões • Padrão Oficial da Banca INBRASP (4 Alternativas A, B, C, D)</p>
+      </div>
+      <div>
+        <span class="badge-banca">INBRASP 2026</span>
+      </div>
+    </div>
+
+    <!-- Instruções para o Candidato -->
+    <div style="background: #f1f5f9; border-left: 4px solid var(--primary); padding: 12px 16px; margin-bottom: 24px; border-radius: 4px; font-size: 0.85rem;">
+      <strong>INSTRUÇÕES GERAIS DE APLICAÇÃO:</strong>
+      <ul style="margin: 6px 0 0 18px; padding: 0;">
+        <li>Este caderno contém <strong>40 questões inéditas e oficiais</strong>: 20 de Direito Administrativo (Extinção, Invalidação e Convalidação dos Atos: Anulação, Revogação, Cassação, Caducidade, Convalidação FO-CO, Vinculação e Discricionariedade) + 20 de Matemática & RLM (Sistema Monetário Brasileiro, Trocos, Juros e Descontos, Sistema de Medidas: comprimento, superfície, volume, capacidade, massa e tempo).</li>
+        <li>Cada questão apresenta <strong>4 alternativas (A, B, C e D)</strong>, com exatamente uma única opção correta.</li>
+        <li>Tempo recomendado de resolução do bloco: <strong>2 horas e 30 minutos</strong> (média de 3,5 minutos por questão).</li>
+        <li>Ao final do caderno constam a folha de Cartão-Resposta para treino de preenchimento e o Gabarito com Comentários Didáticos e Cálculos Passo a Passo.</li>
+      </ul>
+    </div>
+
+    <!-- Bloco das 40 Questões -->
+    <div class="questions-wrapper">
+      
+    <div class="question-block" id="q_421">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 1</span>
+          <span class="q-badge">ID 421</span>
+        </div>
+        <span class="q-discipline">D. Administrativo • Invalidação: Anulação dos Atos Administrativos</span>
+      </div>
+      <div class="q-text">
+        A respeito do instituto da anulação do ato administrativo, com base na jurisprudência sumulada do Supremo Tribunal Federal (Súmulas 346 e 473) e na Lei Federal nº 9.784/1999, é CORRETO afirmar:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">A anulação decorre exclusivamente de juízo discricionário de conveniência e oportunidade, produzindo efeitos prospectivos (ex nunc) a partir da decisão que a decreta.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">A Administração Pública não pode anular seus próprios atos ilegais quando já tiverem decorrido mais de 30 dias de sua publicação, cabendo apenas a via jurisdicional.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">O Poder Judiciário tem competência originária para anular ex officio, sem qualquer provocação da parte interessada, os atos administrativos editados pela Câmara Municipal.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">A anulação é a declaração de invalidade de ato administrativo que padece de vício de legalidade, operando efeitos retroativos (ex tunc), podendo ser declarada pela própria Administração (autotutela) ou pelo Poder Judiciário mediante provocação.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_422">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 2</span>
+          <span class="q-badge">ID 422</span>
+        </div>
+        <span class="q-discipline">D. Administrativo • Invalidação: Prazo Decadencial para Anulação</span>
+      </div>
+      <div class="q-text">
+        O direito da Administração de anular os atos administrativos de que decorram efeitos favoráveis para os destinatários decai em:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Cinco anos, contados da data em que foram praticados, salvo comprovada má-fé do administrado.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Dois anos da ciência do ato pelo Tribunal de Contas do Estado.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Dez anos impreterivelmente, não comportando qualquer exceção relativa a dolo ou má-fé.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Três anos para atos da administração direta e um ano para os da administração indireta.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_423">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 3</span>
+          <span class="q-badge">ID 423</span>
+        </div>
+        <span class="q-discipline">D. Administrativo • Extinção: Revogação dos Atos Administrativos</span>
+      </div>
+      <div class="q-text">
+        Quanto ao instituto da revogação do ato administrativo, assinale a afirmativa juridicamente correta:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">A revogação pode ser determinada pelo Poder Judiciário no exercício de sua função jurisdicional típica, sempre que considerar o ato inoportuno para a coletividade.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">A revogação incide apenas sobre atos vinculados, sendo terminantemente vedada a revogação de atos administrativos discricionários.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">A revogação extingue o ato com efeitos retroativos à data de sua emissão originária (efeitos ex tunc), desfazendo todas as relações pretéritas já consolidadas.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">A revogação atinge atos plenamente válidos e legais que, por razões supervenientes de conveniência e oportunidade, tornaram-se desinteressantes para a Administração, produzindo efeitos ex nunc (não retroativos).</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_424">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 4</span>
+          <span class="q-badge">ID 424</span>
+        </div>
+        <span class="q-discipline">D. Administrativo • Extinção: Atos Irrevogáveis</span>
+      </div>
+      <div class="q-text">
+        A doutrina de Direito Administrativo elenca hipóteses em que o ato administrativo NÃO pode ser objeto de revogação. São espécies de atos irrevogáveis, EXCETO:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Atos consumados ou exauridos que já produziram integralmente todos os seus efeitos.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Atos que geraram direito adquirido, nos termos da garantia constitucional.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Atos vinculados, nos quais a Administração não dispõe de margem de escolha de mérito.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Atos discricionários contínuos, como a permissão ou autorização precária de uso de bem público.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_425">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 5</span>
+          <span class="q-badge">ID 425</span>
+        </div>
+        <span class="q-discipline">D. Administrativo • Extinção: Cassação do Ato Administrativo</span>
+      </div>
+      <div class="q-text">
+        A Câmara Municipal de Meruoca concedeu alvará de funcionamento a uma empresa com a condição expressa de respeitar os limites acústicos e de segurança contra incêndio. Posteriormente, constatou-se que o estabelecimento passou a realizar shows pirotécnicos sem isolamento acústico, violando frontalmente as obrigações impostas. A extinção desse ato administrativo em razão do descumprimento culposo das condições pelo beneficiário configura:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Revogação tácita.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Caducidade normativa.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Cassação.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Contraposição.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_426">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 6</span>
+          <span class="q-badge">ID 426</span>
+        </div>
+        <span class="q-discipline">D. Administrativo • Extinção: Caducidade do Ato Administrativo</span>
+      </div>
+      <div class="q-text">
+        A retirada do ato administrativo do ordenamento jurídico decorrente da edição de uma nova legislação que tornou inviável ou proibida a manutenção daquela situação anteriormente deferida denomina-se:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Caducidade.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Anulação ficta.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Renúncia expressa.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Desapropriação indireta.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_427">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 7</span>
+          <span class="q-badge">ID 427</span>
+        </div>
+        <span class="q-discipline">D. Administrativo • Extinção: Contraposição e Renúncia</span>
+      </div>
+      <div class="q-text">
+        Considere as seguintes formas de desfazimento de atos: I. A nomeação de um novo Diretor para um cargo em comissão extingue automaticamente a nomeação do ocupante anterior. II. Um servidor público regularmente investido formula pedido escrito abrindo mão formalmente de sua promoção funcional. As situações I e II exemplificam, respectivamente:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Caducidade em I; e Cassação em II.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Convalidação em I; e Reforma em II.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Anulação em I; e Revogação unilateral em II.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Contraposição (ou derrubada) em I; e Renúncia em II.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_428">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 8</span>
+          <span class="q-badge">ID 428</span>
+        </div>
+        <span class="q-discipline">D. Administrativo • Convalidação: Requisitos e Pressupostos de Validade</span>
+      </div>
+      <div class="q-text">
+        Nos termos do art. 55 da Lei Federal nº 9.784/1999, 'em decisão na qual se evidencie não acarretarem lesão ao interesse público nem prejuízo a terceiros, os atos que apresentarem defeitos sanáveis poderão ser convalidados pela própria Administração'. A respeito da convalidação, é correto afirmar:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">A convalidação opera efeitos prospectivos (ex nunc), passando o ato a ter eficácia válida apenas após a assinatura do termo de saneamento.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Podem ser objeto de convalidação os atos que padecem de desvio de finalidade e os que versam sobre objeto juridicamente ilícito.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">A convalidação opera efeitos retroativos (ex tunc), convalidando o ato desde o momento originário de sua prática no mundo jurídico.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Qualquer ato nulo de pleno direito deve ser compulsoriamente convalidado para preservar a despesa pública.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_429">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 9</span>
+          <span class="q-badge">ID 429</span>
+        </div>
+        <span class="q-discipline">D. Administrativo • Convalidação: Vícios Sanáveis (Regra FO-CO)</span>
+      </div>
+      <div class="q-text">
+        Em conformidade com a doutrina consolidada de Direito Administrativo (Hely Lopes Meirelles, Di Pietro e Carvalho Filho), a convalidação de atos administrativos somente é juridicamente admitida quando o vício residir nos elementos:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Motivo e Objeto, desde que haja parecer ministerial favorável.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Finalidade e Motivo, em face do interesse da coletividade.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Competência (desde que não privativa/exclusiva) e Forma (desde que não exigida como essencialidade de validade pela lei).</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Objeto e Finalidade, quando houver dolo comprovado de terceiro.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_430">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 10</span>
+          <span class="q-badge">ID 430</span>
+        </div>
+        <span class="q-discipline">D. Administrativo • Convalidação: Formas de Saneamento (Ratificação, Reforma e Conversão)</span>
+      </div>
+      <div class="q-text">
+        A doutrina reconhece diferentes modalidades de aproveitamento e preservação dos atos administrativos. A hipótese em que a Administração retira do ato apenas a sua parte viciada ou ilegal, mantendo incólume a parcela válida e aproveitável do seu conteúdo, denomina-se:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Reforma.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Conversão.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Ratificação.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Revogação cominatória.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_431">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 11</span>
+          <span class="q-badge">ID 431</span>
+        </div>
+        <span class="q-discipline">D. Administrativo • Classificação: Vinculação vs Discricionariedade</span>
+      </div>
+      <div class="q-text">
+        A respeito da distinção entre atos administrativos vinculados e discricionários, assinale a afirmativa correta:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">No ato vinculado, a lei confere ao administrador ampla liberdade para decidir se pratica ou não o ato segundo critérios subjetivos de conveniência.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Nos atos discricionários, o administrador atua sem nenhuma vinculação à lei ou à Constituição, possuindo poder absoluto de comando.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">No ato vinculado, a lei estabelece de forma objetiva e estrita todos os requisitos e comportamentos a serem adotados pela autoridade, inexistindo margem de liberdade ou opção de mérito.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">O ato discricionário não admite controle de legalidade perante o Poder Judiciário sob nenhuma hipótese.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_432">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 12</span>
+          <span class="q-badge">ID 432</span>
+        </div>
+        <span class="q-discipline">D. Administrativo • Controle dos Atos: Limites do Controle Jurisdicional sobre Atos Discricionários</span>
+      </div>
+      <div class="q-text">
+        O controle exercido pelo Poder Judiciário sobre os atos administrativos discricionários editados pela Câmara Municipal:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Pode substituir a escolha discricionária de mérito da Mesa Diretora por outra opção que o magistrado julgue mais conveniente ao interesse público.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Restringe-se à verificação da legalidade, legitimidade, veracidade dos motivos declarados e conformidade aos princípios da razoabilidade e proporcionalidade, sendo vedada a substituição do mérito administrativo pelo juiz.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">É totalmente proibido pelo princípio da separação dos poderes estabelecido no art. 2º da Constituição Federal.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Abrange exclusivamente a fixação de valores pecuniários das diárias parlamentares.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_433">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 13</span>
+          <span class="q-badge">ID 433</span>
+        </div>
+        <span class="q-discipline">D. Administrativo • Teoria das Nulidades: Distinção entre Nulo e Anulável</span>
+      </div>
+      <div class="q-text">
+        No regime das nulidades dos atos administrativos no Direito brasileiro, assinale a correta correspondência:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">O ato nulo possui defeito leve sanável e pode ser ratificado com efeitos prospectivos.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">O ato anulável é aquele que possui vício insanável no motivo ou no objeto, impondo-se a obrigatoriedade de revogação.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">O ato nulo apresenta vício grave e insanável, não admitindo convalidação, gerando nulidade de pleno direito; já o ato anulável ostenta vício sanável, podendo ser convalidado pela Administração se presentes os requisitos legais.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Não existe a categoria de atos anuláveis no Direito Administrativo, sendo todos os atos viciados considerados inexistentes.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_434">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 14</span>
+          <span class="q-badge">ID 434</span>
+        </div>
+        <span class="q-discipline">D. Administrativo • Teoria das Nulidades: Ato Inexistente</span>
+      </div>
+      <div class="q-text">
+        O ato administrativo que ostenta uma aparência de ato estatal, mas foi praticado por alguém que não possui qualquer investidura pública nem competência legal atribuída (usurpador de função), ou cujo objeto é física ou juridicamente impossível (como a nomeação de pessoa falecida), é qualificado pela doutrina como ato:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Revogável por conveniência.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Inexistente.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Convalidável por ratificação.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Anulável a pedido das partes.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_435">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 15</span>
+          <span class="q-badge">ID 435</span>
+        </div>
+        <span class="q-discipline">D. Administrativo • Autotutela: Exigência de Contraditório na Anulação</span>
+      </div>
+      <div class="q-text">
+        De acordo com a Súmula Vinculante nº 5 do STF e a jurisprudência pacífica dos Tribunais Superiores, a anulação de ato administrativo pela própria Administração que afete a esfera de direitos individuais de terceiros:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Deve ser sempre precedida de processo administrativo no qual se assegurem o contraditório e a ampla defesa ao administrado interessado.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Prescinde de contraditório ou defesa, tendo em vista a supremacia absoluta do interesse público sobre o privado.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Só pode ser realizada após autorização expressa do Tribunal de Contas da União.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Gera direito automático e incondicional à indenização por lucros cessantes em favor do infrator.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_436">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 16</span>
+          <span class="q-badge">ID 436</span>
+        </div>
+        <span class="q-discipline">D. Administrativo • Invalidação: Proteção aos Terceiros de Boa-Fé</span>
+      </div>
+      <div class="q-text">
+        Considere que a nomeação de um determinado servidor público para a Câmara Municipal foi posteriormente anulada pelo fato de ter sido praticada por autoridade incompetente. Os atos praticados por esse servidor perante terceiros de boa-fé enquanto esteve em exercício funcional de fato:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">São integralmente nulos e desfeitos, devendo todos os cidadãos atendidos refazer seus requerimentos.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">São preservados e mantidos como válidos em relação aos terceiros de boa-fé, com esteio na Teoria da Aparência e no Princípio da Segurança Jurídica.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">São convertidos automaticamente em atos judiciais de jurisdição voluntária.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Dependem de convalidação individual expressa pelo Presidente da República.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_437">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 17</span>
+          <span class="q-badge">ID 437</span>
+        </div>
+        <span class="q-discipline">D. Administrativo • Convalidação: Vício de Forma Sanável vs Insanável</span>
+      </div>
+      <div class="q-text">
+        Em relação ao vício de forma no ato administrativo, é correto asseverar que:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Todo e qualquer vício de forma é considerado insanável pela legislação pátria.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">O vício de forma é convalidável quando a lei não houver exigido solenidade específica como condição indispensável à validade e eficácia do ato.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">A forma oral é convalidável mediante publicação de extrato após 10 anos da conduta.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">A ausência de forma solene prescrita expressamente sob pena de nulidade pode ser suprida pelo decurso de prazo bienal.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_438">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 18</span>
+          <span class="q-badge">ID 438</span>
+        </div>
+        <span class="q-discipline">D. Administrativo • Saneamento dos Atos: Conversão de Atos Administrativos</span>
+      </div>
+      <div class="q-text">
+        Quando a Administração Pública aproveita um ato que seria originariamente nulo em determinada categoria, aproveitando seus elementos para qualificá-lo validamente sob outra roupagem jurídica (como aproveitar uma licença nula concedida de forma precária convertendo-a em autorização administrativa), opera-se o fenômeno da:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Conversão do ato administrativo.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Cassação mandatória.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Caducidade de competência.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Revogação tácita.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_439">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 19</span>
+          <span class="q-badge">ID 439</span>
+        </div>
+        <span class="q-discipline">D. Administrativo • Extinção: Diferenciação entre Cassação e Revogação</span>
+      </div>
+      <div class="q-text">
+        A diferença fundamental entre a Revogação e a Cassação reside no fato de que:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">A revogação decorre de ilegalidade original; a cassação decorre de mérito discricionário do administrado.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">A revogação decorre de reavaliação de oportunidade e conveniência pela Administração; a cassação é ato cominatória/sancionatório motivado pelo descumprimento superveniente de deveres pelo particular.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">A revogação produz efeitos ex tunc; a cassação produz efeitos exclusivamente moratórios.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">A cassação é competência privativa do Poder Judiciário; a revogação cabe apenas ao Tribunal de Contas.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_440">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 20</span>
+          <span class="q-badge">ID 440</span>
+        </div>
+        <span class="q-discipline">D. Administrativo • Invalidação: Desvio de Poder / Desvio de Finalidade</span>
+      </div>
+      <div class="q-text">
+        O desvio de finalidade (ou desvio de poder) é vício que atinge o elemento finalidade do ato administrativo. Uma vez comprovado o desvio de finalidade em um ato administrativo praticado pelo Presidente de uma Câmara Municipal, o ato deve ser:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">Convalidado por ato do plenário legislativo em 30 dias.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">Anulado, por se tratar de vício grave de legalidade insanável no ordenamento jurídico.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">Convertido em ato de cortesia política sem valor normativo.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">Revogado com efeitos prospectivos para salvaguardar as finanças públicas.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_441">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 21</span>
+          <span class="q-badge">ID 441</span>
+        </div>
+        <span class="q-discipline">Matemática / RLM • Sistema de Medidas: Conversão de Comprimento (km para metros)</span>
+      </div>
+      <div class="q-text">
+        Para uma obra de reforma da fiação da Câmara de Meruoca, foram adquiridos 3 rolos de cabeamento de rede com 0,45 km de comprimento cada um. Se na primeira etapa da obra foram utilizados 820 metros de cabo, quantos metros de cabeamento ainda restam?
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">430 metros.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">1.350 metros.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">530 metros.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">680 metros.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_442">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 22</span>
+          <span class="q-badge">ID 442</span>
+        </div>
+        <span class="q-discipline">Matemática / RLM • Sistema de Medidas: Unidades de Superfície e Hectares</span>
+      </div>
+      <div class="q-text">
+        O Município de Meruoca desapropriou um terreno plano de 2,4 hectares para a construção de um complexo de apoio administrativo. Sabendo que 1 hectare (ha) equivale a 10.000 m² e que 35% dessa área total será destinada ao estacionamento público, qual será a área destinada ao estacionamento?
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">6.800 m².</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">7.200 m².</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">8.400 m².</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">9.600 m².</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_443">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 23</span>
+          <span class="q-badge">ID 443</span>
+        </div>
+        <span class="q-discipline">Matemática / RLM • Sistema de Medidas: Volume e Capacidade (m³ e Litros)</span>
+      </div>
+      <div class="q-text">
+        O reservatório de água do edifício da Câmara Municipal possui formato de paralelepípedo retângulo com as seguintes dimensões internas: 4 metros de comprimento, 2,5 metros de largura e 1,8 metro de altura. Sabendo que 1 m³ de volume comporta exatamente 1.000 litros de água, qual é a capacidade máxima total desse reservatório em litros?
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">14.500 litros.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">20.000 litros.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">16.200 litros.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">18.000 litros.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_444">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 24</span>
+          <span class="q-badge">ID 444</span>
+        </div>
+        <span class="q-discipline">Matemática / RLM • Sistema de Medidas: Massa (kg e Toneladas)</span>
+      </div>
+      <div class="q-text">
+        Em uma campanha de reciclagem de papéis de arquivos obsoletos da Câmara de Meruoca, foram arrecadados 2,8 toneladas de papel. Esse material foi dividido e acondicionado igualmente em sacas de 35 kg cada. Quantas sacas completas foram necessárias para embalar todo o papel reciclado?
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">75 sacas.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">90 sacas.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">85 sacas.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">80 sacas.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_445">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 25</span>
+          <span class="q-badge">ID 445</span>
+        </div>
+        <span class="q-discipline">Matemática / RLM • Sistema de Medidas: Unidades de Tempo e Conversões Decimais</span>
+      </div>
+      <div class="q-text">
+        Uma sessão plenária extraordinária da Câmara iniciou-se às 09h 15min e encerrou-se exatamente às 12h 03min. Qual foi a duração total dessa sessão plenária expressa em minutos?
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">172 minutos.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">158 minutos.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">168 minutos.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">148 minutos.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_446">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 26</span>
+          <span class="q-badge">ID 446</span>
+        </div>
+        <span class="q-discipline">Matemática / RLM • Sistema Monetário Brasileiro: Troco e Cédulas</span>
+      </div>
+      <div class="q-text">
+        Um servidor comprou materiais de expediente para o setor legislativo totalizando R$ 346,80. Para efetuar o pagamento, entregou no caixa 4 cédulas de R$ 100,00. O troco recebido pelo servidor foi de:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">R$ 54,20.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">R$ 55,20.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">R$ 52,20.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">R$ 53,20.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_447">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 27</span>
+          <span class="q-badge">ID 447</span>
+        </div>
+        <span class="q-discipline">Matemática / RLM • Sistema Monetário: Juros Simples e Parcelamento</span>
+      </div>
+      <div class="q-text">
+        Um equipamento eletrônico de som para o plenário custa R$ 4.000,00 à vista. A loja oferece o plano de pagamento a prazo em 4 parcelas mensais iguais com taxa de juros simples de 2,5% ao mês sobre o valor inicial à vista. Qual será o valor de cada uma das 4 parcelas?
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">R$ 1.050,00.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">R$ 1.200,00.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">R$ 1.150,00.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">R$ 1.100,00.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_448">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 28</span>
+          <span class="q-badge">ID 448</span>
+        </div>
+        <span class="q-discipline">Matemática / RLM • Sistema Monetário: Descontos e Orçamento</span>
+      </div>
+      <div class="q-text">
+        Em uma licitação para compra de papel A4, a empresa vencedora ofereceu um lote de 50 caixas no valor total de R$ 1.800,00. Caso a Câmara efetue o pagamento em parcela única até 5 dias úteis, a empresa concede um desconto promocional de 8%. Qual será o valor final a ser pago com o desconto aplicado?
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">R$ 1.680,00.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">R$ 1.640,00.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">R$ 1.656,00.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">R$ 1.624,00.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_449">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 29</span>
+          <span class="q-badge">ID 449</span>
+        </div>
+        <span class="q-discipline">Matemática / RLM • Sistema de Medidas: Capacidade em Mililitros (ml) e Litros</span>
+      </div>
+      <div class="q-text">
+        Para uma audiência pública na Câmara foram compradas garrafas de água mineral com capacidade de 350 ml cada. Se no total foram servidos 42 litros de água durante a audiência, quantas garrafas completas de 350 ml foram consumidas?
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">110 garrafas.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">120 garrafas.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">130 garrafas.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">140 garrafas.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_450">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 30</span>
+          <span class="q-badge">ID 450</span>
+        </div>
+        <span class="q-discipline">Matemática / RLM • Sistema de Medidas: Conversão de Área (m² para cm² e ladrilhos)</span>
+      </div>
+      <div class="q-text">
+        O piso de uma sala de reuniões de 24 m² será totalmente revestido com placas cerâmicas quadradas de 40 cm de lado. Desconsiderando perdas e rejuntes, quantas placas cerâmicas completas serão necessárias para cobrir todo o piso dessa sala?
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">160 placas.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">120 placas.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">150 placas.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">180 placas.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_451">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 31</span>
+          <span class="q-badge">ID 451</span>
+        </div>
+        <span class="q-discipline">Matemática / RLM • Sistema de Medidas: Perímetro e Cálculo de Custo Linear</span>
+      </div>
+      <div class="q-text">
+        Um terreno retangular pertencente ao patrimônio da Câmara de Meruoca possui 45 metros de comprimento e 25 metros de largura. A administração pretende cercar todo o seu contorno com grade de proteção metálica. Se o metro linear da grade instalada custa R$ 85,00, qual será o custo total para cercar o perímetro desse terreno?
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">R$ 9.650,00.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">R$ 10.850,00.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">R$ 12.450,00.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">R$ 11.900,00.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_452">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 32</span>
+          <span class="q-badge">ID 452</span>
+        </div>
+        <span class="q-discipline">Matemática / RLM • Sistema Monetário: Diárias e Operações Fundamentais</span>
+      </div>
+      <div class="q-text">
+        Dois servidores da Câmara de Meruoca viajaram em missão oficial para Fortaleza para participar de treinamento sobre o Processo Legislativo. Cada servidor tem direito a uma diária de R$ 220,00 por dia completo e R$ 110,00 por meia diária. Sabendo que a missão durou 3 dias completos e 1 meia diária para cada um dos dois servidores, qual foi o valor total pago em diárias pela Câmara?
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">R$ 1.620,00.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">R$ 770,00.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">R$ 1.480,00.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">R$ 1.540,00.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_453">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 33</span>
+          <span class="q-badge">ID 453</span>
+        </div>
+        <span class="q-discipline">Matemática / RLM • Sistema de Medidas: Escalas e Conversão de Unidades</span>
+      </div>
+      <div class="q-text">
+        Em uma planta arquitetônica da nova sede da Câmara desenhada na escala 1 : 250, a extensão da fachada principal mede 12 cm no papel. Qual é a medida real dessa fachada em metros?
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">25 metros.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">30 metros.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">35 metros.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">300 metros.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_454">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 34</span>
+          <span class="q-badge">ID 454</span>
+        </div>
+        <span class="q-discipline">Matemática / RLM • Sistema de Medidas: Capacidade e Custo de Combustível</span>
+      </div>
+      <div class="q-text">
+        O veículo oficial da Câmara Municipal tem rendimento médio de 12,5 km por litro de gasolina. Em uma semana de vistorias parlamentares na zona rural de Meruoca, o veículo percorreu 450 km. Se o litro da gasolina custa R$ 5,80, qual foi o gasto total com combustível nessa semana?
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">R$ 208,80.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">R$ 198,60.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">R$ 215,40.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">R$ 226,20.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_455">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 35</span>
+          <span class="q-badge">ID 455</span>
+        </div>
+        <span class="q-discipline">Matemática / RLM • Sistema de Medidas: Horas Decimais para Minutos</span>
+      </div>
+      <div class="q-text">
+        Um servidor levou 3,4 horas para redigir a ata detalhada de uma sessão solene. Essa duração de 3,4 horas equivale exatamente a:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">3 horas e 40 minutos.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">3 horas e 24 minutos.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">3 horas e 15 minutos.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">3 horas e 4 minutos.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_456">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 36</span>
+          <span class="q-badge">ID 456</span>
+        </div>
+        <span class="q-discipline">Matemática / RLM • Sistema de Medidas: Massa (Gramas e Miligramas)</span>
+      </div>
+      <div class="q-text">
+        Para o tratamento de desinfecção dos reservatórios do prédio do Legislativo, a vigilância sanitária recomenda utilizar 2,5 mg de cloro ativo para cada 1 litro de água. Para desinfetar uma caixa d'água contendo 8.000 litros de água, quantos gramas de cloro ativo serão necessários?
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">200 gramas.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">20 gramas.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">2 gramas.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">2.000 gramas.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_457">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 37</span>
+          <span class="q-badge">ID 457</span>
+        </div>
+        <span class="q-discipline">Matemática / RLM • Sistema Monetário: Percentuais sobre Remuneração</span>
+      </div>
+      <div class="q-text">
+        O salário inicial de um Técnico Legislativo de Meruoca é fixado no edital em R$ 1.800,00. Após a conclusão do estágio probatório e cumprimento dos critérios do Plano de Cargos e Carreiras, o servidor receberá uma gratificação de desempenho de 22% sobre seu vencimento básico, acrescida de um adicional de qualificação de 15% (também incidente sobre o vencimento básico). Com esses dois benefícios, qual passará a ser a remuneração bruta total desse servidor?
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">R$ 2.466,00.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">R$ 2.412,00.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">R$ 2.380,00.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">R$ 2.520,00.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_458">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 38</span>
+          <span class="q-badge">ID 458</span>
+        </div>
+        <span class="q-discipline">Matemática / RLM • Sistema de Medidas: Superfície, Capacidade e Rendimento</span>
+      </div>
+      <div class="q-text">
+        O plenário da Câmara possui 4 paredes que precisam ser pintadas. Duas paredes medem 12 m por 3,5 m cada, e as outras duas medem 8 m por 3,5 m cada. O pintor informou que cada lata de tinta de 3,6 litros rende 40 m² de pintura com duas demãos. Quantas latas de tinta de 3,6 L, no mínimo, a administração precisará comprar para pintar todo o plenário?
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">4 latas.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">3 latas.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">5 latas.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">6 latas.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_459">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 39</span>
+          <span class="q-badge">ID 459</span>
+        </div>
+        <span class="q-discipline">Matemática / RLM • Sistema Monetário: Comparação À Vista vs A Prazo</span>
+      </div>
+      <div class="q-text">
+        Para a aquisição de 10 novos computadores, a Câmara recebeu duas propostas: Proposta I: Pagamento à vista com 12% de desconto sobre o valor de tabela de R$ 35.000,00. Proposta II: Pagamento em duas parcelas de R$ 16.000,00 (uma entrada e outra após 30 dias). A economia obtida pela Câmara ao optar pela Proposta I em relação à Proposta II é de:
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">R$ 1.200,00.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">R$ 1.500,00.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">R$ 1.800,00.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">R$ 2.200,00.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="question-block" id="q_460">
+      <div class="q-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="q-number">Questão 40</span>
+          <span class="q-badge">ID 460</span>
+        </div>
+        <span class="q-discipline">Matemática / RLM • Sistema de Medidas: Vazão, Volume e Tempo</span>
+      </div>
+      <div class="q-text">
+        Uma torneira com defeito em um dos banheiros da Câmara fica gotejando e perde 15 ml de água por minuto. Se o defeito demorou 8 horas para ser reparado pela equipe de manutenção, qual foi a quantidade total de água desperdiçada nesse período?
+      </div>
+      <div class="q-options">
+        
+          <div class="q-option">
+            <span class="opt-letter">A</span>
+            <span class="opt-text">7,2 litros.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">B</span>
+            <span class="opt-text">8,5 litros.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">C</span>
+            <span class="opt-text">6,4 litros.</span>
+          </div>
+        
+          <div class="q-option">
+            <span class="opt-letter">D</span>
+            <span class="opt-text">9,0 litros.</span>
+          </div>
+        
+      </div>
+    </div>
+  
+    </div>
+
+    <!-- Cartão Resposta Oficial -->
+    <div class="cartao-resposta">
+      <h3 style="margin-top: 0; color: var(--primary); text-transform: uppercase; font-size: 1.1rem; border-bottom: 2px solid var(--border); padding-bottom: 8px;">
+        <i class="fas fa-pen"></i> Folha de Respostas — Treino de Preenchimento de Gabarito
+      </h3>
+      <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 16px;">
+        Preencha completamente a bolha correspondente à alternativa assinalada com caneta esferográfica preta ou azul.
+      </p>
+      <div class="cartao-grid">
+        
+    <div class="cartao-item">
+      <span class="cartao-num">01</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">02</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">03</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">04</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">05</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">06</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">07</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">08</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">09</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">10</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">11</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">12</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">13</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">14</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">15</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">16</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">17</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">18</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">19</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">20</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">21</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">22</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">23</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">24</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">25</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">26</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">27</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">28</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">29</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">30</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">31</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">32</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">33</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">34</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">35</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">36</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">37</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">38</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">39</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+
+    <div class="cartao-item">
+      <span class="cartao-num">40</span>
+      <div class="cartao-bolhas">
+        <span class="bolha">A</span><span class="bolha">B</span><span class="bolha">C</span><span class="bolha">D</span>
+      </div>
+    </div>
+  
+      </div>
+    </div>
+
+    <!-- Gabarito e Comentários Pedagógicos -->
+    <div class="gabarito-section">
+      <h2 style="color: var(--primary); text-transform: uppercase; font-size: 1.25rem; border-bottom: 2px solid var(--border); padding-bottom: 8px;">
+        <i class="fas fa-check-double"></i> Gabarito Oficial & Comentários Didáticos
+      </h2>
+      
+      <table class="gabarito-tabela">
+        <thead>
+          <tr>
+            <th>Q1</th><th>Q2</th><th>Q3</th><th>Q4</th><th>Q5</th><th>Q6</th><th>Q7</th><th>Q8</th><th>Q9</th><th>Q10</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>D</strong></td><td><strong>A</strong></td><td><strong>D</strong></td><td><strong>D</strong></td><td><strong>C</strong></td><td><strong>A</strong></td><td><strong>D</strong></td><td><strong>C</strong></td><td><strong>C</strong></td><td><strong>A</strong></td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th>Q11</th><th>Q12</th><th>Q13</th><th>Q14</th><th>Q15</th><th>Q16</th><th>Q17</th><th>Q18</th><th>Q19</th><th>Q20</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>C</strong></td><td><strong>B</strong></td><td><strong>C</strong></td><td><strong>B</strong></td><td><strong>A</strong></td><td><strong>B</strong></td><td><strong>B</strong></td><td><strong>A</strong></td><td><strong>B</strong></td><td><strong>B</strong></td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th>Q21</th><th>Q22</th><th>Q23</th><th>Q24</th><th>Q25</th><th>Q26</th><th>Q27</th><th>Q28</th><th>Q29</th><th>Q30</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>C</strong></td><td><strong>C</strong></td><td><strong>D</strong></td><td><strong>D</strong></td><td><strong>C</strong></td><td><strong>D</strong></td><td><strong>D</strong></td><td><strong>C</strong></td><td><strong>B</strong></td><td><strong>C</strong></td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th>Q31</th><th>Q32</th><th>Q33</th><th>Q34</th><th>Q35</th><th>Q36</th><th>Q37</th><th>Q38</th><th>Q39</th><th>Q40</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>D</strong></td><td><strong>D</strong></td><td><strong>B</strong></td><td><strong>A</strong></td><td><strong>B</strong></td><td><strong>B</strong></td><td><strong>A</strong></td><td><strong>A</strong></td><td><strong>A</strong></td><td><strong>A</strong></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 style="color: var(--primary); font-size: 1rem; margin-top: 24px;">Justificativas Fundamentadas e Comentários Questão a Questão:</h3>
+      <div style="margin-top: 12px;">
+        
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 421 (D. Administrativo • Invalidação: Anulação dos Atos Administrativos):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. A ANULAÇÃO incide sobre atos ilegais (com vício de conformidade jurídica). Por desconstituir uma ilegalidade originária, opera efeitos retroativos (ex tunc), fulminando o ato desde o seu nascimento. Pode ser pronunciada pela própria Administração fundada no princípio da autotutela (Súmulas 346 e 473 do STF) ou pelo Poder Judiciário, desde que provocado (o Judiciário não anula ex officio atos administrativos).</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 422 (D. Administrativo • Invalidação: Prazo Decadencial para Anulação):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Nos termos expressos do art. 54 da Lei Federal nº 9.784/1999 (norma geral de processo administrativo aplicável por simetria): 'O direito da Administração de anular os atos administrativos de que decorram efeitos favoráveis para os destinatários decai em cinco anos, contados da data em que foram praticados, salvo comprovada má-fé'. Havendo má-fé do beneficiário, o ato pode ser anulado a qualquer tempo.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 423 (D. Administrativo • Extinção: Revogação dos Atos Administrativos):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. A REVOGAÇÃO fundamenta-se no mérito administrativo (conveniência e oportunidade da Administração perante um ato perfeito e válido). Seus efeitos são estritamente prospectivos (ex nunc, não retroagem). É prerrogativa privativa da própria Administração: o Poder Judiciário jamais pode revogar atos administrativos do Poder Executivo ou Legislativo (só pode revogar seus próprios atos em gestão administrativa interna).</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 424 (D. Administrativo • Extinção: Atos Irrevogáveis):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. A autorização e a permissão de uso de bem público são atos discricionários e precários, sendo a essência deles a possibilidade de REVOGAÇÃO a qualquer momento pelo Poder Público por razões de oportunidade e conveniência. Já os atos consumados, vinculados, enunciativos, que integram procedimento preclusivo e os que geraram direito adquirido são formalmente IRREVOGÁVEIS.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 425 (D. Administrativo • Extinção: Cassação do Ato Administrativo):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. A CASSAÇÃO ocorre quando o destinatário do ato descumpre as condições legais ou regulamentares que eram indispensáveis para a continuidade e fruição daquele benefício ou autorização. É uma forma de extinção com caráter sancionatório pelo descumprimento superveniente de deveres pelo particular.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 426 (D. Administrativo • Extinção: Caducidade do Ato Administrativo):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. A CADUCIDADE (ou decaimento) consiste na extinção do ato administrativo válido em virtude da superveniência de norma jurídica superior com a qual o ato ou direito tornou-se incompatível (ex.: autorização válida para explorar atividade em determinado local que passa a ser declarada área de proteção ambiental rigorosa por lei nova).</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 427 (D. Administrativo • Extinção: Contraposição e Renúncia):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. A CONTRAPOSIÇÃO (ou derrubada) ocorre quando a edição de um novo ato, fundado em competência diversa, gera efeitos diametralmente opostos aos do ato primitivo, extinguindo-o implicitamente (ex.: a nomeação extingue a investidura anterior). A RENÚNCIA ocorre quando o próprio titular ou beneficiário do ato abre mão voluntariamente do direito ou prerrogativa conferida pelo ato administrativo.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 428 (D. Administrativo • Convalidação: Requisitos e Pressupostos de Validade):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. A CONVALIDAÇÃO (ou saneamento) é o ato pelo qual a Administração corrige um defeito sanável de um ato anterior. Ela produz efeitos RETROATIVOS (ex tunc), validando os efeitos desde a data originária em que foi praticado. Para ser convalidado, exige-se que: 1) não haja lesão ao interesse público; 2) não haja prejuízo a terceiros; 3) o defeito seja sanável (apenas Competência e Forma).</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 429 (D. Administrativo • Convalidação: Vícios Sanáveis (Regra FO-CO)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Regra áurea e macete clássico dos concursos ('FO-CO'): somente são sanáveis os vícios de FORMA e COMPETÊNCIA. Mas atenção aos limites: a competência só pode ser convalidada (ratificada) se NÃO for privativa ou exclusiva nem envolver matéria em razão da pessoa ou órgão; a forma só pode ser convalidada se a solenidade omitida não constituir a própria essência e substância de validade legal do ato.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 430 (D. Administrativo • Convalidação: Formas de Saneamento (Ratificação, Reforma e Conversão)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Modalidades de saneamento: 1) RATIFICAÇÃO: a autoridade competente supre a falta de competência daquele que praticou originariamente o ato sanável; 2) REFORMA: a Administração suprime a parcela ilegal/viciada do ato, conservando a parte válida; 3) CONVERSÃO: o ato inválido é transformado retroativamente em outra espécie de ato administrativo válido.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 431 (D. Administrativo • Classificação: Vinculação vs Discricionariedade):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. No ATO VINCULADO (ou regrado), a lei prevê detalhadamente a conduta a ser adotada diante do fato concreto; preenchidos os requisitos, o agente tem o dever de expedir o ato (direito subjetivo do administrado). No ATO DISCRICIONÁRIO, a lei outorga uma margem legítima de escolha de oportunidade e conveniência, sempre dentro dos limites estabelecidos pela própria lei.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 432 (D. Administrativo • Controle dos Atos: Limites do Controle Jurisdicional sobre Atos Discricionários):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Princípio basilar do Direito Público: o Poder Judiciário NÃO pode reexaminar o MÉRITO administrativo (oportunidade e conveniência legítimas), sob pena de invasão indevida na esfera administrativa. Contudo, o Judiciário PODE e DEVE controlar a legalidade, o desvio de finalidade, a veracidade dos motivos (Teoria dos Motivos Determinantes) e os excessos que violem a razoabilidade e a proporcionalidade.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 433 (D. Administrativo • Teoria das Nulidades: Distinção entre Nulo e Anulável):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. A doutrina majoritária e a Lei 9.784/1999 (art. 55) consagram a dicotomia: 1) ATOS NULOS: possuem vícios graves e insanáveis (finalidade ilícita, objeto proibido, motivo falso, competência exclusiva violada), devendo ser anulados de ofício, sem admitir convalidação; 2) ATOS ANULÁVEIS: possuem defeitos sanáveis (competência não exclusiva e forma secundária), permitindo a convalidação pela Administração.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 434 (D. Administrativo • Teoria das Nulidades: Ato Inexistente):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. O ATO INEXISTENTE é aquele que apresenta uma aberração jurídica tão extrema que sequer atinge o plano da existência do negócio jurídico (ex.: conduta de usurpador de função pública ou nomeação de pessoa comprovadamente morta). Ele não produz nenhum efeito jurídico, não goza de presunção de legitimidade e não depende de prazo decadencial para anulação.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 435 (D. Administrativo • Autotutela: Exigência de Contraditório na Anulação):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Conforme expressa jurisprudência vinculante e pacificada (STF e STJ): embora a Administração possa anular seus próprios atos ilegais com fulcro no poder de autotutela, quando essa anulação atingir a esfera de direitos ou interesses individuais de terceiros (como a cassação de pensão ou anulação de nomeação de servidor), é INDISPENSÁVEL a prévia instauração de processo administrativo com contraditório e ampla defesa.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 436 (D. Administrativo • Invalidação: Proteção aos Terceiros de Boa-Fé):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Aplicação da Teoria do Funcionário de Fato e do princípio da segurança jurídica: ainda que a investidura do servidor seja anulada retroativamente, os atos por ele praticados perante os cidadãos e administrados de boa-fé são PRESERVADOS e reputam-se válidos perante terceiros, evitando prejuízos desproporcionais à coletividade.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 437 (D. Administrativo • Convalidação: Vício de Forma Sanável vs Insanável):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. O vício de FORMA é sanável (convalidável) desde que a solenidade omitida ou defeituosa não seja exigida pela lei como requisito 'ad solemnitatem' (essência de validade absoluta do ato). Se a forma era meramente secundária ou instrumental, a Administração pode supri-la ou regularizá-la retroativamente.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 438 (D. Administrativo • Saneamento dos Atos: Conversão de Atos Administrativos):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. A CONVERSÃO é o aproveitamento de um ato inválido numa categoria jurídica que passa a ser recepcionado como ato válido sob outra espécie ou figura legal compatível com a vontade estatal e os elementos fáticos existentes.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 439 (D. Administrativo • Extinção: Diferenciação entre Cassação e Revogação):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Na REVOGAÇÃO, o particular não praticou nenhuma falta nem cometeu nenhuma irregularidade: a Administração simplesmente não deseja mais manter o ato por conveniência pública. Na CASSAÇÃO, o desfazimento do ato é imputado exclusivamente à culpa do particular, que descumpriu as condições legais pré-estabelecidas para desfrutar daquele ato.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 440 (D. Administrativo • Invalidação: Desvio de Poder / Desvio de Finalidade):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. O DESVIO DE FINALIDADE acarreta a NULIDADE ABSOLUTA do ato administrativo (art. 2º, 'e', da Lei nº 4.717/1965 — Lei da Ação Popular). O vício de finalidade é radicalmente INSANÁVEL, impondo-se a sua ANULAÇÃO retroativa (ex tunc), jamais cabendo convalidação ou mera revogação.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 441 (Matemática / RLM • Sistema de Medidas: Conversão de Comprimento (km para metros)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Passo a passo: 1) Cada rolo tem 0,45 km = 0,45 × 1.000 = 450 metros. 2) O total adquirido em 3 rolos foi: 3 × 450 m = 1.350 metros. 3) Foram utilizados 820 metros. 4) Restante: 1.350 - 820 = 530 metros.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 442 (Matemática / RLM • Sistema de Medidas: Unidades de Superfície e Hectares):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Passo a passo: 1) Área total do terreno em metros quadrados: 2,4 ha = 2,4 × 10.000 m² = 24.000 m². 2) Área do estacionamento: 35% de 24.000 m² = 0,35 × 24.000 = 8.400 m².</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 443 (Matemática / RLM • Sistema de Medidas: Volume e Capacidade (m³ e Litros)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Passo a passo: 1) Volume em m³ = Comprimento × Largura × Altura = 4 × 2,5 × 1,8 = 10 × 1,8 = 18 m³. 2) Conversão para litros: 1 m³ = 1.000 litros. Portanto: 18 × 1.000 = 18.000 litros.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 444 (Matemática / RLM • Sistema de Medidas: Massa (kg e Toneladas)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Passo a passo: 1) Sabendo que 1 tonelada (t) = 1.000 kg, temos: 2,8 t = 2,8 × 1.000 = 2.800 kg de papel. 2) Dividindo o total pelo peso de cada saca: 2.800 / 35. 2.800 ÷ 35 = 80 sacas completas.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 445 (Matemática / RLM • Sistema de Medidas: Unidades de Tempo e Conversões Decimais):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Passo a passo: 1) Intervalo de 09h 15min até 12h 00min: faltam 45 minutos para 10h + 2 horas completas (10h às 12h) = 2h 45min. 2) De 12h 00min até 12h 03min: mais 3 minutos. Total = 2 horas e 48 minutos. 3) Convertendo 2h 48min para minutos: (2 × 60) + 48 = 120 + 48 = 168 minutos.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 446 (Matemática / RLM • Sistema Monetário Brasileiro: Troco e Cédulas):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Passo a passo: 1) Valor entregue: 4 × R$ 100,00 = R$ 400,00. 2) Valor da compra: R$ 346,80. 3) Troco = 400,00 - 346,80 = R$ 53,20.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 447 (Matemática / RLM • Sistema Monetário: Juros Simples e Parcelamento):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Passo a passo: 1) Juros simples: J = C × i × t. Capital (C) = 4.000; taxa (i) = 2,5% ao mês = 0,025; tempo (t) = 4 meses. 2) J = 4.000 × 0,025 × 4 = 4.000 × 0,10 = R$ 400,00 de juros totais. 3) Montante a pagar = C + J = 4.000 + 400 = R$ 4.400,00. 4) Valor de cada uma das 4 parcelas iguais: 4.400 / 4 = R$ 1.100,00.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 448 (Matemática / RLM • Sistema Monetário: Descontos e Orçamento):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Passo a passo: 1) Valor do desconto de 8% sobre R$ 1.800,00: 0,08 × 1.800 = R$ 144,00. 2) Valor final com desconto: 1.800,00 - 144,00 = R$ 1.656,00 (ou diretamente: 1.800 × 0,92 = R$ 1.656,00).</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 449 (Matemática / RLM • Sistema de Medidas: Capacidade em Mililitros (ml) e Litros):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Passo a passo: 1) Converter litros para mililitros: 1 L = 1.000 ml, logo 42 litros = 42 × 1.000 = 42.000 ml. 2) Dividir pelo volume de cada garrafa: 42.000 ÷ 350 = 4.200 ÷ 35 = 120 garrafas.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">C</span>
+      <div>
+        <strong>Questão 450 (Matemática / RLM • Sistema de Medidas: Conversão de Área (m² para cm² e ladrilhos)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Passo a passo: 1) Área de cada placa quadrada: 40 cm = 0,4 m. Área = 0,4 m × 0,4 m = 0,16 m² (ou 40 × 40 = 1.600 cm²). 2) Área total da sala: 24 m² = 24 × 10.000 = 240.000 cm². 3) Quantidade de placas = 24 / 0,16 = 2.400 / 16 = 150 placas.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 451 (Matemática / RLM • Sistema de Medidas: Perímetro e Cálculo de Custo Linear):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Passo a passo: 1) O perímetro de um retângulo é 2 × (comprimento + largura) = 2 × (45 + 25) = 2 × 70 = 140 metros. 2) Custo total = 140 m × R$ 85,00/m = R$ 11.900,00.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">D</span>
+      <div>
+        <strong>Questão 452 (Matemática / RLM • Sistema Monetário: Diárias e Operações Fundamentais):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Passo a passo: 1) Diárias por servidor: 3 dias completos = 3 × 220 = R$ 660,00; mais 1 meia diária = R$ 110,00. Total por servidor = 660 + 110 = R$ 770,00. 2) Como foram 2 servidores: 2 × R$ 770,00 = R$ 1.540,00.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 453 (Matemática / RLM • Sistema de Medidas: Escalas e Conversão de Unidades):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Passo a passo: 1) Na escala 1 : 250, cada 1 cm no mapa representa 250 cm na realidade. 2) Medida real em cm = 12 × 250 = 3.000 cm. 3) Convertendo centímetros para metros: 1 metro = 100 cm, logo 3.000 cm = 3.000 ÷ 100 = 30 metros.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 454 (Matemática / RLM • Sistema de Medidas: Capacidade e Custo de Combustível):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Passo a passo: 1) Quantidade de litros consumidos = Distância / Rendimento = 450 ÷ 12,5 = 36 litros. 2) Custo total = 36 litros × R$ 5,80/litro = R$ 208,80.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 455 (Matemática / RLM • Sistema de Medidas: Horas Decimais para Minutos):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Pegadinha clássica em concursos: 3,4 horas NÃO é 3 horas e 40 minutos! Temos 3 horas inteiras + 0,4 de uma hora. Como 1 hora tem 60 minutos, 0,4 hora = 0,4 × 60 minutos = 24 minutos. Portanto, 3,4 horas equivale exatamente a 3 horas e 24 minutos.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">B</span>
+      <div>
+        <strong>Questão 456 (Matemática / RLM • Sistema de Medidas: Massa (Gramas e Miligramas)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Passo a passo: 1) Quantidade total de cloro em miligramas: 8.000 litros × 2,5 mg/L = 20.000 mg. 2) Conversão de mg para gramas: 1 g = 1.000 mg. Logo, 20.000 mg = 20.000 ÷ 1.000 = 20 gramas.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 457 (Matemática / RLM • Sistema Monetário: Percentuais sobre Remuneração):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Passo a passo: 1) Soma dos percentuais de acréscimo: 22% + 15% = 37% sobre o vencimento básico. 2) Valor total dos adicionais: 0,37 × 1.800 = R$ 666,00. 3) Remuneração bruta = Vencimento básico + adicionais = 1.800 + 666 = R$ 2.466,00.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 458 (Matemática / RLM • Sistema de Medidas: Superfície, Capacidade e Rendimento):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Passo a passo: 1) Área das duas primeiras paredes: 2 × (12 × 3,5) = 2 × 42 = 84 m². 2) Área das outras duas paredes: 2 × (8 × 3,5) = 2 × 28 = 56 m². 3) Área total = 84 + 56 = 140 m². 4) Rendimento por lata = 40 m². 5) Número de latas = 140 ÷ 40 = 3,5 latas. Como a compra deve ser de latas inteiras, serão necessárias no mínimo 4 latas completas.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 459 (Matemática / RLM • Sistema Monetário: Comparação À Vista vs A Prazo):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Passo a passo: 1) Proposta I (à vista): Desconto de 12% em R$ 35.000 = 0,12 × 35.000 = R$ 4.200,00. Valor pago = 35.000 - 4.200 = R$ 30.800,00. 2) Proposta II: 2 parcelas de R$ 16.000 = R$ 32.000,00. 3) Diferença (economia): 32.000,00 - 30.800,00 = R$ 1.200,00.</p>
+      </div>
+    </div>
+  
+
+    <div class="gabarito-item">
+      <span class="gabarito-letra">A</span>
+      <div>
+        <strong>Questão 460 (Matemática / RLM • Sistema de Medidas: Vazão, Volume e Tempo):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Passo a passo: 1) Tempo decorrido em minutos: 8 horas = 8 × 60 = 480 minutos. 2) Quantidade de água desperdiçada em ml: 480 minutos × 15 ml/minuto = 7.200 ml. 3) Convertendo ml para litros: 1 L = 1.000 ml. Logo, 7.200 ÷ 1.000 = 7,2 litros.</p>
+      </div>
+    </div>
+  
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
