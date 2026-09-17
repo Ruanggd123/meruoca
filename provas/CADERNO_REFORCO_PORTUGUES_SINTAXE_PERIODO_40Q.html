@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>REFORÇO MESCLADO PORTUGUÊS — DIA 11 (Sintaxe) + DIA 14 (Período) | 40Q INBRASP</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @page { size: A4; margin: 15mm 18mm; }
+    :root { --primary: #1e3a8a; --primary-dark: #0f172a; --accent: #dc2626; --border: #cbd5e1; --text: #0f172a; --text-muted: #475569; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; color: var(--text); background: #f8fafc; margin: 0; padding: 24px; font-size: 10.5pt; line-height: 1.45; }
+    .container { max-width: 960px; margin: 0 auto; background: white; padding: 36px 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); }
+    .header-box { border: 2px solid var(--accent); border-radius: 8px; padding: 16px 20px; margin-bottom: 24px; display: flex; justify-content: space-between; align-items: center; background: #fff7f7; }
+    .header-titles h1 { margin: 0 0 4px 0; font-size: 1.35rem; color: var(--accent); font-weight: 800; text-transform: uppercase; }
+    .header-titles h2 { margin: 0 0 4px 0; font-size: 1rem; font-weight: 700; }
+    .header-titles p { margin: 0; font-size: 0.85rem; color: var(--text-muted); }
+    .badge-banca { background: #fee2e2; color: #991b1b; font-weight: 800; padding: 6px 14px; border-radius: 6px; font-size: 0.85rem; text-transform: uppercase; border: 1px solid #fecaca; }
+    .no-print { display: flex; gap: 12px; margin-bottom: 24px; flex-wrap: wrap; }
+    .btn-action { background: var(--accent); color: white; border: none; padding: 10px 18px; border-radius: 6px; font-weight: 700; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; font-size: 0.9rem; }
+    .howto { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 8px; padding: 12px 16px; font-size: 0.88rem; margin-bottom: 20px; }
+    .question-block { border: 1px solid var(--border); border-radius: 8px; padding: 16px 18px; margin-bottom: 16px; background: #fff; page-break-inside: avoid; }
+    .question-meta { display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 0.8rem; flex-wrap: wrap; gap: 6px; }
+    .q-badge { font-weight: 800; color: var(--accent); }
+    .q-topic { color: var(--text-muted); font-weight: 600; }
+    .q-orig { font-size: 0.75rem; color: #9333ea; font-weight: 700; }
+    .question-text { font-weight: 700; color: var(--primary-dark); margin-bottom: 12px; white-space: pre-line; }
+    .options-list { list-style: none; padding: 0; margin: 0; }
+    .option-item { display: flex; gap: 10px; padding: 6px 8px; margin-bottom: 4px; font-size: 0.92rem; }
+    .option-letter { width: 24px; height: 24px; border: 1.5px solid #94a3b8; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.8rem; flex-shrink: 0; }
+    .folha-respostas-box { border: 2px dashed var(--accent); border-radius: 8px; padding: 20px; margin: 30px 0; background: #fff7f7; page-break-before: always; }
+    .folha-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 14px; font-size: 0.82rem; }
+    .folha-row { display: flex; align-items: center; gap: 6px; padding: 4px 6px; background: white; border: 1px solid var(--border); border-radius: 4px; }
+    .folha-num { width: 44px; font-weight: 800; color: var(--accent); font-size: 0.75rem; }
+    .folha-circle { width: 16px; height: 16px; border: 1px solid #64748b; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 0.65rem; font-weight: 700; color: #475569; }
+    .gabarito-section { page-break-before: always; margin-top: 30px; }
+    .gabarito-item { background: #f1f5f9; border-left: 4px solid var(--accent); padding: 10px 14px; margin-bottom: 10px; border-radius: 0 6px 6px 0; font-size: 0.88rem; }
+    .gabarito-letra { background: #16a34a; color: white; padding: 2px 8px; border-radius: 4px; font-weight: 800; margin-right: 6px; }
+    @media print { body { background: white; padding: 0; } .container { box-shadow: none; max-width: 100%; padding: 0; } .no-print { display: none !important; } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="no-print">
+      <button class="btn-action" onclick="window.print()"><i class="fas fa-print"></i> Imprimir Reforço (PDF)</button>
+      <a href="../index.html" class="btn-action" style="background:#e2e8f0;color:#334155;"><i class="fas fa-arrow-left"></i> Fazer no App Interativo</a>
+    </div>
+    <div class="header-box">
+      <div class="header-titles">
+        <span style="font-size:0.75rem;font-weight:800;text-transform:uppercase;color:#dc2626;">Reforço mesclado • para fazer agora</span>
+        <h1>Português — Dia 11 + Dia 14</h1>
+        <h2>Sintaxe da Oração (361–380) + Período Composto (401–420) — 40Q mescladas</h2>
+        <p>Ordem alternada 1 sintaxe + 1 período. Padrão INBRASP 4 alternativas. ID original mantido em cada questão.</p>
+      </div>
+      <div style="text-align:right;"><div class="badge-banca">Banca INBRASP</div><div style="font-size:0.75rem;color:var(--text-muted);margin-top:6px;">40 Questões (A,B,C,D)</div></div>
+    </div>
+    <div class="howto"><strong>Como fazer agora:</strong> 1) Responda na ordem sem consultar. 2) Marque o gabarito na folha óptica. 3) Confira no gabarito fundamentado no final. 4) Jogue os erros no Caderno de Erros do app. No app, o bloco <strong>REFORÇO HOJE</strong> tem as mesmas 40 já mescláveis (Aleatório/Intercalado) e salva seu progresso.</div>
+
+    <div class="question-block">
+      <div class="question-meta"><span class="q-badge">QUESTÃO 01 (ID 361)</span><span class="q-topic">Língua Portuguesa • Sintaxe: Identificação do Sujeito da Oração</span><span class="q-orig">DIA 11 • Sintaxe</span></div>
+      <div class="question-text">Na oração 'Aprovaram os vereadores meruoquenses o novo plano de cargos da administração municipal', o sujeito da forma verbal 'Aprovaram' classifica-se como:</div>
+      <ul class="options-list">
+        <li class="option-item"><span class="option-letter">A</span><span>Indeterminado, pois o verbo encontra-se flexionado na 3ª pessoa do plural.</span></li>
+        <li class="option-item"><span class="option-letter">B</span><span>Sujeito Simples, cujo núcleo substantivo é 'vereadores', posposto ao verbo.</span></li>
+        <li class="option-item"><span class="option-letter">C</span><span>Oração sem sujeito, por tratar de matéria de interesse público.</span></li>
+        <li class="option-item"><span class="option-letter">D</span><span>Sujeito Composto, formado pelos termos 'vereadores' e 'plano de cargos'.</span></li>
+      </ul>
+    </div>
+    <div class="question-block">
+      <div class="question-meta"><span class="q-badge">QUESTÃO 02 (ID 401)</span><span class="q-topic">Língua Portuguesa • Coordenação: Oração Coordenada Sindética Adversativa</span><span class="q-orig">DIA 14 • Período</span></div>
+      <div class="question-text">No excerto 'O projeto de lei continha excelentes propostas para a saúde de Meruoca, PORÉM o plenário da Câmara rejeitou seu texto base', a oração introduzida pela conjunção destacada classifica-se como:</div>
+      <ul class="options-list">
+        <li class="option-item"><span class="option-letter">A</span><span>Oração Coordenada Sindética Conclusiva.</span></li>
+        <li class="option-item"><span class="option-letter">B</span><span>Oração Coordenada Sindética Explicativa.</span></li>
+        <li class="option-item"><span class="option-letter">C</span><span>Oração Coordenada Sindética Adversativa.</span></li>
+        <li class="option-item"><span class="option-letter">D</span><span>Oração Subordinada Adverbial Concessiva.</span></li>
+      </ul>
+    </div>
+    <div class="question-block">
+      <div class="question-meta"><span class="q-badge">QUESTÃO 03 (ID 362)</span><span class="q-topic">Língua Portuguesa • Sintaxe: Sujeito Oculto (Desinencial) vs. Indeterminado</span><span class="q-orig">DIA 11 • Sintaxe</span></div>
+      <div class="question-text">Assinale a alternativa em que o sujeito da oração classifica-se tecnicamente como SUJEITO INDETERMINADO:</div>
+      <ul class="options-list">
+        <li class="option-item"><span class="option-letter">A</span><span>Durante a sessão matutina, comparecemos pontualmente à reunião de lideranças partidárias.</span></li>
+        <li class="option-item"><span class="option-letter">B</span><span>O Presidente e o Secretário assinaram a resolução legislativa de imediato.</span></li>
+        <li class="option-item"><span class="option-letter">C</span><span>Precisa-se de assessores jurídicos qualificados para a Comissão de Redação Final.</span></li>
+        <li class="option-item"><span class="option-letter">D</span><span>Choveu torrencialmente em Meruoca na madrugada da última terça-feira.</span></li>
+      </ul>
+    </div>
+    <div class="question-block">
+      <div class="question-meta"><span class="q-badge">QUESTÃO 04 (ID 402)</span><span class="q-topic">Língua Portuguesa • Coordenação: Oração Coordenada Sindética Conclusiva</span><span class="q-orig">DIA 14 • Período</span></div>
+      <div class="question-text">Assinale a alternativa que apresenta uma Oração Coordenada Sindética Conclusiva:</div>
+      <ul class="options-list">
+        <li class="option-item"><span class="option-letter">A</span><span>Os prazos regimentais foram rigorosamente obedecidos; PORTANTO, a deliberação legislativa é válida.</span></li>
+        <li class="option-item"><span class="option-letter">B</span><span>Os vereadores compareceram ao plenário E debateram com entusiasmo as emendas.</span></li>
+        <li class="option-item"><span class="option-letter">C</span><span>Não atrase o envio dos relatórios, POIS o Tribunal de Contas iniciará a auditoria amanhã.</span></li>
+        <li class="option-item"><span class="option-letter">D</span><span>ORA defendia a aprovação imediata da matéria, ORA postulava pedido de vistas regimental.</span></li>
+      </ul>
+    </div>
+    <div class="question-block">
+      <div class="question-meta"><span class="q-badge">QUESTÃO 05 (ID 363)</span><span class="q-topic">Língua Portuguesa • Sintaxe: Oração Sem Sujeito e Concordância com Verbo 'Haver'</span><span class="q-orig">DIA 11 • Sintaxe</span></div>
+      <div class="question-text">O verbo 'HAVER' é classificado como impessoal (oração sem sujeito) quando empregado no sentido de existir, ocorrer ou indicar tempo decorrido, devendo permanecer obrigatoriamente na 3ª pessoa do singular. Assinale a frase que exemplifica a correta regência e concordância sintática desse verbo:</div>
+      <ul class="options-list">
+        <li class="option-item"><span class="option-letter">A</span><span>Haviam muitos munícipes presentes no plenário durante a votação das contas públicas.</span></li>
+        <li class="option-item"><span class="option-letter">B</span><span>Houveram várias dúvidas regimentais suscitadas pelos técnicos legislativos durante os debates.</span></li>
+        <li class="option-item"><span class="option-letter">C</span><span>Se não houvessem tantas emendas supressivas, o projeto de lei já teria sido promulgado.</span></li>
+        <li class="option-item"><span class="option-letter">D</span><span>Houve muitos debates produtivos entre os vereadores antes da deliberação final da matéria.</span></li>
+      </ul>
+    </div>
+    <div class="question-block">
+      <div class="question-meta"><span class="q-badge">QUESTÃO 06 (ID 403)</span><span class="q-topic">Língua Portuguesa • Conjunções Coordenativas: Emprego e Sentido do Conectivo 'Pois'</span><span class="q-orig">DIA 14 • Período</span></div>
+      <div class="question-text">Quanto à sintaxe e ao valor semântico da conjunção 'pois' no período composto, assinale a afirmativa correta:</div>
+      <ul class="options-list">
+        <li class="option-item"><span class="option-letter">A</span><span>Quando colocada após o verbo da oração (entre vírgulas), a conjunção 'pois' possui valor conclusivo; quando anteposta ao verbo, introduz oração explicativa ou causal.</span></li>
+        <li class="option-item"><span class="option-letter">B</span><span>A conjunção 'pois' assume exclusivamente sentido adversativo quando empregada no início do período oracional.</span></li>
+        <li class="option-item"><span class="option-letter">C</span><span>O conectivo 'pois' é uma conjunção estritamente proporcional equivalente a 'à medida que'.</span></li>
+        <li class="option-item"><span class="option-letter">D</span><span>O termo 'pois' funciona como conjunção subordinativa concessiva em qualquer contexto formal.</span></li>
+      </ul>
+    </div>
+    <div class="question-block">
+      <div class="question-meta"><span class="q-badge">QUESTÃO 07 (ID 364)</span><span class="q-topic">Língua Portuguesa • Sintaxe: Transitividade Verbal Direta e Indireta (VTDI)</span><span class="q-orig">DIA 11 • Sintaxe</span></div>
+      <div class="question-text">Considere a frase: 'O Presidente da Câmara comunicou o cancelamento da sessão extraordinária aos vereadores da comarca'. O verbo 'comunicar', no contexto da oração, classifica-se sintaticamente como:</div>
+      <ul class="options-list">
+        <li class="option-item"><span class="option-letter">A</span><span>Verbo Transitivo Direto e Indireto (VTDI), regendo 'o cancelamento da sessão' como Objeto Direto e 'aos vereadores da comarca' como Objeto Indireto.</span></li>
+        <li class="option-item"><span class="option-letter">B</span><span>Verbo Transitivo Indireto (VTI), pois exige obrigatoriamente duas preposições sucessivas.</span></li>
+        <li class="option-item"><span class="option-letter">C</span><span>Verbo Intransitivo (VI), sendo todos os seus complementos meros adjuntos adverbiais de modo.</span></li>
+        <li class="option-item"><span class="option-letter">D</span><span>Verbo de Ligação (VL), expressando um estado transitório do sujeito parlamentar.</span></li>
+      </ul>
+    </div>
+    <div class="question-block">
+      <div class="question-meta"><span class="q-badge">QUESTÃO 08 (ID 404)</span><span class="q-topic">Língua Portuguesa • Subordinação: Oração Subordinada Substantiva Subjetiva</span><span class="q-orig">DIA 14 • Período</span></div>
+      <div class="question-text">Na oração 'É indispensável QUE TODOS OS EDIS PARTICIPEM DA VOTAÇÃO', a oração destacada em maiúsculas exerce a função sintática de:</div>
+      <ul class="options-list">
+        <li class="option-item"><span class="option-letter">A</span><span>Objeto Direto da oração principal.</span></li>
+        <li class="option-item"><span class="option-letter">B</span><span>Predicativo do Objeto Indireto.</span></li>
+        <li class="option-item"><span class="option-letter">C</span><span>Complemento Nominal do adjetivo indispensável.</span></li>
+        <li class="option-item"><span class="option-letter">D</span><span>Sujeito da oração principal (Oração Subordinada Substantiva Subjetiva).</span></li>
+      </ul>
+    </div>
+    <div class="question-block">
+      <div class="question-meta"><span class="q-badge">QUESTÃO 09 (ID 365)</span><span class="q-topic">Língua Portuguesa • Sintaxe: Predicado Verbal, Nominal e Verbo-Nominal</span><span class="q-orig">DIA 11 • Sintaxe</span></div>
+      <div class="question-text">O predicado classifica-se conforme a natureza de seu(s) núcleo(s). Assinale a alternativa que contém um PREDICADO VERBO-NOMINAL:</div>
+      <ul class="options-list">
+        <li class="option-item"><span class="option-letter">A</span><span>Os técnicos legislativos analisaram detidamente as emendas apresentadas ao projeto.</span></li>
+        <li class="option-item"><span class="option-letter">B</span><span>Os novos vereadores da legislatura chegaram entusiasmados à primeira sessão plenária.</span></li>
+        <li class="option-item"><span class="option-letter">C</span><span>A Lei Orgânica de Meruoca é fundamental para a organização político-administrativa do Município.</span></li>
+        <li class="option-item"><span class="option-letter">D</span><span>O expediente parlamentar transcorreu sem nenhuma interrupção regimental.</span></li>
+      </ul>
+    </div>
+    <div class="question-block">
+      <div class="question-meta"><span class="q-badge">QUESTÃO 10 (ID 405)</span><span class="q-topic">Língua Portuguesa • Subordinação: Oração Subordinada Substantiva Objetiva Direta</span><span class="q-orig">DIA 14 • Período</span></div>
+      <div class="question-text">No período 'O parecerista constatou QUE O PROJETO ATENDIA AOS LIMITES DA LEI DE RESPONSABILIDADE FISCAL', a oração em destaque classifica-se como:</div>
+      <ul class="options-list">
+        <li class="option-item"><span class="option-letter">A</span><span>Subordinada Substantiva Objetiva Indireta.</span></li>
+        <li class="option-item"><span class="option-letter">B</span><span>Subordinada Adjetiva Restritiva.</span></li>
+        <li class="option-item"><span class="option-letter">C</span><span>Subordinada Substantiva Objetiva Direta.</span></li>
+        <li class="option-item"><span class="option-letter">D</span><span>Subordinada Adverbial Conformativa.</span></li>
+      </ul>
+    </div>
+    <div class="question-block">
+      <div class="question-meta"><span class="q-badge">QUESTÃO 11 (ID 366)</span><span class="q-topic">Língua Portuguesa • Sintaxe: Complemento Nominal vs. Adjunto Adnominal</span><span class="q-orig">DIA 11 • Sintaxe</span></div>
+      <div class="question-text">Na oração 'A leitura do parecer das comissões esclareceu todas as dúvidas regimentais', o termo destacado 'do parecer das comissões' exerce a função sintática de:</div>
+      <ul class="options-list">
+        <li class="option-item"><span class="option-letter">A</span><span>Objeto Direto Preposicionado da forma verbal 'esclareceu'.</span></li>
+        <li class="option-item"><span class="option-letter">B</span><span>Adjunto Adverbial de Instrumento dos trabalhos de votação.</span></li>
+        <li class="option-item"><span class="option-letter">C</span><span>Complemento Nominal, pois completa o sentido do substantivo abstrato de ação 'leitura' com valor paciente/passivo (o parecer foi lido).</span></li>
+        <li class="option-item"><span class="option-letter">D</span><span>Agente da Passiva com função predicativa de causa originária.</span></li>
+      </ul>
+    </div>
+    <div class="question-block">
+      <div class="question-meta"><span class="q-badge">QUESTÃO 12 (ID 406)</span><span class="q-topic">Língua Portuguesa • Subordinação: Completiva Nominal vs Objetiva Indireta</span><span class="q-orig">DIA 14 • Período</span></div>
+      <div class="question-text">Considere as orações: I. 'A comissão tinha a convicção DE QUE AS CONTAS SERIAM APROVADAS.' II. 'O Presidente da Mesa necessitava DE QUE OS SECRETÁRIOS CONFERISSEM O QUÓRUM.' Os segmentos destacados exercem, respectivamente, as funções de:</div>
+      <ul class="options-list">
+        <li class="option-item"><span class="option-letter">A</span><span>Objeto Indireto em I; e Complemento Nominal em II.</span></li>
+        <li class="option-item"><span class="option-letter">B</span><span>Aposto Explicativo em I; e Sujeito Oracional em II.</span></li>
+        <li class="option-item"><span class="option-letter">C</span><span>Objeto Direto Preposicionado em I; e Adjunto Adnominal em II.</span></li>
+        <li class="option-item"><span class="option-letter">D</span><span>Complemento Nominal em I; e Objeto Indireto em II.</span></li>
+      </ul>
+    </div>
+    <div class="question-block">
+      <div class="question-meta"><span class="q-badge">QUESTÃO 13 (ID 367)</span><span class="q-topic">Língua Portuguesa • Sintaxe: Adjunto Adnominal em Substantivo Abstrato</span><span class="q-orig">DIA 11 • Sintaxe</span></div>
+      <div class="question-text">Diferenciando o Adjunto Adnominal do Complemento Nominal, assinale a opção em que o termo preposicionado em destaque exerce função de ADJUNTO ADNOMINAL:</div>
+      <ul class="options-list">
+        <li class="option-item"><span class="option-letter">A</span><span>A obediência às leis municipais é dever inescusável de todos os munícipes.</span></li>
+        <li class="option-item"><span class="option-letter">B</span><span>A confiança no Poder Legislativo foi restabelecida com as audiências públicas transparentes.</span></li>
+        <li class="option-item"><span class="option-letter">C</span><span>O apoio aos servidores concursados foi aprovado por unanimidade pelos vereadores.</span></li>
+        <li class="option-item"><span class="option-letter">D</span><span>A manifestação da Mesa Diretora encerrou a polêmica sobre o quórum de votação.</span></li>
+      </ul>
+    </div>
+    <div class="question-block">
+      <div class="question-meta"><span class="q-badge">QUESTÃO 14 (ID 407)</span><span class="q-topic">Língua Portuguesa • Subordinação: Oração Subordinada Substantiva Predicativa</span><span class="q-orig">DIA 14 • Período</span></div>
+      <div class="question-text">Na frase 'A principal meta da comissão parlamentar é QUE A AUDITORIA CONCLUA O RELATÓRIO NO PRAZO', a oração subordinada classifica-se como:</div>
+      <ul class="options-list">
+        <li class="option-item"><span class="option-letter">A</span><span>Subordinada Substantiva Predicativa.</span></li>
+        <li class="option-item"><span class="option-letter">B</span><span>Subordinada Substantiva Subjetiva.</span></li>
+        <li class="option-item"><span class="option-letter">C</span><span>Subordinada Substantiva Apositiva.</span></li>
+        <li class="option-item"><span class="option-letter">D</span><span>Subordinada Adverbial Consecutiva.</span></li>
+      </ul>
+    </div>
+    <div class="question-block">
+      <div class="question-meta"><span class="q-badge">QUESTÃO 15 (ID 368)</span><span class="q-topic">Língua Portuguesa • Sintaxe: Identificação do Agente da Passiva</span><span class="q-orig">DIA 11 • Sintaxe</span></div>
+      <div class="question-text">Na frase 'O projeto de lei de diretrizes orçamentárias foi sancionado pelo Prefeito Municipal dentro do prazo regimental', o termo 'pelo Prefeito Municipal' classifica-se sintaticamente como:</div>
+      <ul class="options-list">
+        <li class="option-item"><span class="option-letter">A</span><span>Agente da Passiva.</span></li>
+        <li class="option-item"><span class="option-letter">B</span><span>Objeto Indireto.</span></li>
+        <li class="option-item"><span class="option-letter">C</span><span>Adjunto Adverbial de Instrumento.</span></li>
+        <li class="option-item"><span class="option-letter">D</span><span>Complemento Nominal.</span></li>
+      </ul>
+    </div>
+    <div class="question-block">
+      <div class="question-meta"><span class="q-badge">QUESTÃO 16 (ID 408)</span><span class="q-topic">Língua Portuguesa • Subordinação: Oração Subordinada Substantiva Apositiva</span><span class="q-orig">DIA 14 • Período</span></div>
+      <div class="question-text">Assinale a alternativa que apresenta uma Oração Subordinada Substantiva Apositiva:</div>
+      <ul class="options-list">
+        <li class="option-item"><span class="option-letter">A</span><span>Todos os cidadãos sabem que a publicidade administrativa é imperativa.</span></li>
+        <li class="option-item"><span class="option-letter">B</span><span>A exigência dos vereadores consistia nisto: QUE AS REUNIÕES FOSSEM TRANSMITIDAS AO VIVO.</span></li>
+        <li class="option-item"><span class="option-letter">C</span><span>Convém que o parecer da assessoria chegue antes da abertura dos trabalhos.</span></li>
+        <li class="option-item"><span class="option-letter">D</span><span>O edital foi publicado pelos servidores para que os licitantes comparecessem.</span></li>
+      </ul>
+    </div>
+    <div class="question-block">
+      <div class="question-meta"><span class="q-badge">QUESTÃO 17 (ID 369)</span><span class="q-topic">Língua Portuguesa • Sintaxe: Identificação de Adjuntos Adverbiais</span><span class="q-orig">DIA 11 • Sintaxe</span></div>
+      <div class="question-text">No trecho 'Ontem à tarde, o relator apresentou o parecer favorável na sala das comissões com extrema clareza', os termos destacados expressam, respectivamente, circunstâncias adverbiais de:</div>
+      <ul class="options-list">
+        <li class="option-item"><span class="option-letter">A</span><span>Causa, finalidade e consequência lógica.</span></li>
+        <li class="option-item"><span class="option-letter">B</span><span>Tempo, lugar e modo.</span></li>
+        <li class="option-item"><span class="option-letter">C</span><span>Instrumento, intensidade e companhia.</span></li>
+        <li class="option-item"><span class="option-letter">D</span><span>Dúvida, oposição e concessão.</span></li>
+      </ul>
+    </div>
+    <div class="question-block">
+      <div class="question-meta"><span class="q-badge">QUESTÃO 18 (ID 409)</span><span class="q-topic">Língua Portuguesa • Subordinação: Orações Adjetivas (Explicativa vs Restritiva)</span><span class="q-orig">DIA 14 • Período</span></div>
+      <div class="question-text">Considere os enunciados: I. 'Os vereadores de Meruoca, QUE ESTUDARAM O REGIMENTO INTERNO, votaram favoravelmente ao parecer.' II. 'Os vereadores de Meruoca QUE ESTUDARAM O REGIMENTO INTERNO votaram favoravelmente ao parecer.' Quanto ao sentido e à pontuação, é correto afirmar:</div>
+      <ul class="options-list">
+        <li class="option-item"><span class="option-letter">A</span><span>Em I, a oração entre vírgulas é restritiva e indica que apenas uma parcela dos vereadores estudou o regimento.</span></li>
+        <li class="option-item"><span class="option-letter">B</span><span>Em II, a ausência de vírgulas torna a oração explicativa e generalizante a todos os vereadores do plenário.</span></li>
+        <li class="option-item"><span class="option-letter">C</span><span>Em I, a oração é explicativa, indicando que todos os vereadores de Meruoca estudaram o regimento; em II, a oração é restritiva, indicando que apenas aqueles vereadores que estudaram o regimento votaram favoravelmente.</span></li>
+        <li class="option-item"><span class="option-letter">D</span><span>As duas construções possuem idêntico valor semântico e gramatical, sendo a vírgula de uso meramente optativo e facultativo.</span></li>
+      </ul>
+    </div>
+    <div class="question-block">
+      <div class="question-meta"><span class="q-badge">QUESTÃO 19 (ID 370)</span><span class="q-topic">Língua Portuguesa • Sintaxe: Aposto Explicativo vs. Vocativo</span><span class="q-orig">DIA 11 • Sintaxe</span></div>
+      <div class="question-text">A respeito dos termos 'Aposto' e 'Vocativo' na sintaxe da língua portuguesa, assinale a afirmativa correta:</div>
+      <ul class="options-list">
+        <li class="option-item"><span class="option-letter">A</span><span>O Vocativo mantém estreita dependência sintática com o verbo da oração, exercendo função de sujeito em frases imperativas.</span></li>
+        <li class="option-item"><span class="option-letter">B</span><span>O Aposto explicativo deve vir necessariamente sem vírgulas para não fragmentar a continuidade da frase.</span></li>
+        <li class="option-item"><span class="option-letter">C</span><span>O Vocativo é um termo de chamamento ou interpelação, sintaticamente independente da oração, devendo ser sempre isolado por sinal de pontuação (vírgula).</span></li>
+        <li class="option-item"><span class="option-letter">D</span><span>O Aposto especificativo é aquele que vem sempre entre parênteses para explicar um conceito filosófico.</span></li>
+      </ul>
+    </div>
+    <div class="question-block">
+      <div class="question-meta"><span class="q-badge">QUESTÃO 20 (ID 410)</span><span class="q-topic">Língua Portuguesa • Subordinação Adverbial: Causal vs Consecutiva</span><span class="q-orig">DIA 14 • Período</span></div>
+      <div class="question-text">No período 'A solenidade atraiu tantas pessoas da comunidade QUE O AUDITÓRIO DA CÂMARA FICOU COMPLETAMENTE LOTADO', a oração destacada estabelece com a oração principal uma relação de:</div>
+      <ul class="options-list">
+        <li class="option-item"><span class="option-letter">A</span><span>Causa da atração das pessoas.</span></li>
+        <li class="option-item"><span class="option-letter">B</span><span>Consequência (efeito decorrente da grande quantidade de presentes).</span></li>
+        <li class="option-item"><span class="option-letter">C</span><span>Concessão à realização da solenidade.</span></li>
+        <li class="option-item"><span class="option-letter">D</span><span>Finalidade almejada pela Mesa Diretora.</span></li>
+      </ul>
+    </div>
+    <div class="question-block">
+      <div class="question-meta"><span class="q-badge">QUESTÃO 21 (ID 371)</span><span class="q-topic">Língua Portuguesa • Sintaxe: Classificação do Aposto Especificativo</span><span class="q-orig">DIA 11 • Sintaxe</span></div>
+      <div class="question-text">Em 'O Município de Meruoca situa-se na Região Noroeste do Estado do Ceará', a expressão destacada 'de Meruoca' exerce função sintática de:</div>
+      <ul class="options-list">
+        <li class="option-item"><span class="option-letter">A</span><span>Adjunto Adverbial de Origem e Procedência.</span></li>
+        <li class="option-item"><span class="option-letter">B</span><span>Complemento Nominal do verbo situar-se.</span></li>
+        <li class="option-item"><span class="option-letter">C</span><span>Objeto Indireto do substantivo próprio Ceará.</span></li>
+        <li class="option-item"><span class="option-letter">D</span><span>Aposto Especificativo (ou Individualizador).</span></li>
+      </ul>
+    </div>
+    <div class="question-block">
+      <div class="question-meta"><span class="q-badge">QUESTÃO 22 (ID 411)</span><span class="q-topic">Língua Portuguesa • Subordinação Adverbial: Concessiva e Conectivos Concessivos</span><span class="q-orig">DIA 14 • Período</span></div>
+      <div class="question-text">Assinale a alternativa que contém uma oração subordinada adverbial concessiva:</div>
+      <ul class="options-list">
+        <li class="option-item"><span class="option-letter">A</span><span>CONQUANTO HOUVESSE INTENSA PRESSÃO DA BANCADA DE OPOSIÇÃO, o presidente manteve a votação da ordem do dia.</span></li>
+        <li class="option-item"><span class="option-letter">B</span><span>Logo que o sinal sonoro soou, os parlamentares ingressaram no recinto do plenário.</span></li>
+        <li class="option-item"><span class="option-letter">C</span><span>Caso o projeto não seja protocolado até as 17 horas, a matéria será arquivada.</span></li>
+        <li class="option-item"><span class="option-letter">D</span><span>À medida que as semanas transcorriam, a preparação dos candidatos tornava-se mais consistente.</span></li>
+      </ul>
+    </div>
+    <div class="question-block">
+      <div class="question-meta"><span class="q-badge">QUESTÃO 23 (ID 372)</span><span class="q-topic">Língua Portuguesa • Sintaxe: Pronome Apassivador vs. Índice de Indeterminação do Sujeito</span><span class="q-orig">DIA 11 • Sintaxe</span></div>
+      <div class="question-text">Analise as duas construções sintáticas a seguir:
+I. 'Publicaram-se os novos editais do concurso legislativo.'
+II. 'Necessita-se de servidores dedicados na assessoria parlamentar.'
+Quanto à função da partícula 'SE', é correto afirmar que:</div>
+      <ul class="options-list">
+        <li class="option-item"><span class="option-letter">A</span><span>Em I, o 'SE' é Partícula Apassivadora e 'os novos editais do concurso legislativo' é o Sujeito Paciente; em II, o 'SE' é Índice de Indeterminação do Sujeito e o sujeito é indeterminado.</span></li>
+        <li class="option-item"><span class="option-letter">B</span><span>Em ambas as frases, o 'SE' funciona exclusivamente como pronome reflexivo recíproco.</span></li>
+        <li class="option-item"><span class="option-letter">C</span><span>Em I, o termo 'os novos editais' é objeto direto e o sujeito é indeterminado.</span></li>
+        <li class="option-item"><span class="option-letter">D</span><span>Em II, o 'SE' é conjunção subordinativa condicional de valor conformativo.</span></li>
+      </ul>
+    </div>
+    <div class="question-block">
+      <div class="question-meta"><span class="q-badge">QUESTÃO 24 (ID 412)</span><span class="q-topic">Língua Portuguesa • Conjunções Subordinativas: Polissemia do Conectivo 'Como'</span><span class="q-orig">DIA 14 • Período</span></div>
+      <div class="question-text">A conjunção 'como' pode assumir diferentes valores sintáticos e semânticos. Analise o período: 'COMO NÃO HAVIA QUÓRUM REGIMENTAL MÍNIMO, a sessão ordinária foi declarada suspensa pelo Presidente'. Nesse contexto, o conectivo 'como' introduz uma oração subordinada adverbial:</div>
+      <ul class="options-list">
+        <li class="option-item"><span class="option-letter">A</span><span>Comparativa.</span></li>
+        <li class="option-item"><span class="option-letter">B</span><span>Conformativa.</span></li>
+        <li class="option-item"><span class="option-letter">C</span><span>Causal.</span></li>
+        <li class="option-item"><span class="option-letter">D</span><span>Consecutiva.</span></li>
+      </ul>
+    </div>
+    <div class="question-block">
+      <div class="question-meta"><span class="q-badge">QUESTÃO 25 (ID 373)</span><span class="q-topic">Língua Portuguesa • Sintaxe: Objeto Direto Preposicionado</span><span class="q-orig">DIA 11 • Sintaxe</span></div>
+      <div class="question-text">O objeto direto preposicionado ocorre quando um verbo transitivo direto tem seu complemento introduzido por preposição, não por exigência de regência verbal, mas por razões estilísticas, de ênfase ou para evitar ambiguidade. Assinale a oração que apresenta esse recurso sintático:</div>
+      <ul class="options-list">
+        <li class="option-item"><span class="option-letter">A</span><span>O técnico legislativo redigiu a ata da sessão plenária com agilidade.</span></li>
+        <li class="option-item"><span class="option-letter">B</span><span>Os vereadores amam a Meruoca e defendem os interesses de sua população com fervor.</span></li>
+        <li class="option-item"><span class="option-letter">C</span><span>O relatório das contas anuais foi encaminhado ao tribunal competente no prazo legal.</span></li>
+        <li class="option-item"><span class="option-letter">D</span><span>A assembleia dos servidores municipais reivindicou melhorias nos planos de saúde.</span></li>
+      </ul>
+    </div>
+    <div class="question-block">
+      <div class="question-meta"><span class="q-badge">QUESTÃO 26 (ID 413)</span><span class="q-topic">Língua Portuguesa • Subordinação Adverbial: Oração Condicional e Locuções</span><span class="q-orig">DIA 14 • Período</span></div>
+      <div class="question-text">Em 'A emenda aditiva será incorporada ao texto final do projeto, DESDE QUE OBTENHA DOIS TERÇOS DOS VOTOS DOS VEREADORES', a oração sublinhada expressa ideia de:</div>
+      <ul class="options-list">
+        <li class="option-item"><span class="option-letter">A</span><span>Tempo cronológico simultâneo.</span></li>
+        <li class="option-item"><span class="option-letter">B</span><span>Condição indispensável para a ocorrência da oração principal.</span></li>
+        <li class="option-item"><span class="option-letter">C</span><span>Concessão mitigada com verbo no subjuntivo.</span></li>
+        <li class="option-item"><span class="option-letter">D</span><span>Proporcionalidade mútua de eventos.</span></li>
+      </ul>
+    </div>
+    <div class="question-block">
+      <div class="question-meta"><span class="q-badge">QUESTÃO 27 (ID 374)</span><span class="q-topic">Língua Portuguesa • Sintaxe: Objeto Pleonástico</span><span class="q-orig">DIA 11 • Sintaxe</span></div>
+      <div class="question-text">Na oração 'Aos vereadores da oposição, não lhes restou alternativa senão apresentar a emenda supressiva', o pronome oblíquo 'lhes' retoma enfaticamente o termo prévio 'Aos vereadores da oposição'. Essa repetição estilística e sintática classifica o termo como:</div>
+      <ul class="options-list">
+        <li class="option-item"><span class="option-letter">A</span><span>Aposto Resumitivo Substantivado.</span></li>
+        <li class="option-item"><span class="option-letter">B</span><span>Predicativo do Objeto Indireto.</span></li>
+        <li class="option-item"><span class="option-letter">C</span><span>Objeto Indireto Pleonástico.</span></li>
+        <li class="option-item"><span class="option-letter">D</span><span>Adjunto Adverbial de Meio.</span></li>
+      </ul>
+    </div>
+    <div class="question-block">
+      <div class="question-meta"><span class="q-badge">QUESTÃO 28 (ID 414)</span><span class="q-topic">Língua Portuguesa • Subordinação Adverbial: Conformativa</span><span class="q-orig">DIA 14 • Período</span></div>
+      <div class="question-text">No trecho 'A prestação de contas da Mesa Diretora foi elaborada CONSOANTE DETERMINA A LEI DE RESPONSABILIDADE FISCAL', o termo destacado introduz uma oração subordinada adverbial:</div>
+      <ul class="options-list">
+        <li class="option-item"><span class="option-letter">A</span><span>Concessiva.</span></li>
+        <li class="option-item"><span class="option-letter">B</span><span>Conclusiva.</span></li>
+        <li class="option-item"><span class="option-letter">C</span><span>Conformativa.</span></li>
+        <li class="option-item"><span class="option-letter">D</span><span>Consecutiva.</span></li>
+      </ul>
+    </div>
+    <div class="question-block">
+      <div class="question-meta"><span class="q-badge">QUESTÃO 29 (ID 375)</span><span class="q-topic">Língua Portuguesa • Sintaxe: Função Sintática do Pronome Relativo 'QUE'</span><span class="q-orig">DIA 11 • Sintaxe</span></div>
+      <div class="question-text">No período 'O projeto de lei que moderniza a estrutura administrativa da Câmara foi elogiado por todos os servidores', o pronome relativo 'que' exerce, dentro da oração subordinada adjetiva, a função sintática de:</div>
+      <ul class="options-list">
+        <li class="option-item"><span class="option-letter">A</span><span>Objeto Direto do verbo modernizar.</span></li>
+        <li class="option-item"><span class="option-letter">B</span><span>Complemento Nominal do substantivo lei.</span></li>
+        <li class="option-item"><span class="option-letter">C</span><span>Adjunto Adverbial de Instrumento.</span></li>
+        <li class="option-item"><span class="option-letter">D</span><span>Sujeito da forma verbal 'moderniza'.</span></li>
+      </ul>
+    </div>
+    <div class="question-block">
+      <div class="question-meta"><span class="q-badge">QUESTÃO 30 (ID 415)</span><span class="q-topic">Língua Portuguesa • Subordinação Adverbial: Proporcional ('À medida que')</span><span class="q-orig">DIA 14 • Período</span></div>
+      <div class="question-text">A respeito das locuções proporcionais e temporais, assinale a opção gramaticalmente CORRETA:</div>
+      <ul class="options-list">
+        <li class="option-item"><span class="option-letter">A</span><span>A locução 'à medida em que' é a forma culta padrão consagrada pela gramática para indicar proporção simultânea.</span></li>
+        <li class="option-item"><span class="option-letter">B</span><span>A locução correta para indicar gradação proporcional é 'à medida que' (ou 'à proporção que'), devendo-se evitar a forma híbrida e incorreta 'à medida em que'.</span></li>
+        <li class="option-item"><span class="option-letter">C</span><span>As locuções 'à medida que' e 'na medida em que' são perfeitamente sinônimas e intercambiáveis com valor causal em qualquer redação oficial.</span></li>
+        <li class="option-item"><span class="option-letter">D</span><span>O conectivo 'ao passo que' expressa obrigatoriamente tempo pontual futuro pretérito.</span></li>
+      </ul>
+    </div>
+    <div class="question-block">
+      <div class="question-meta"><span class="q-badge">QUESTÃO 31 (ID 376)</span><span class="q-topic">Língua Portuguesa • Sintaxe: Predicativo do Objeto</span><span class="q-orig">DIA 11 • Sintaxe</span></div>
+      <div class="question-text">Assinale a alternativa em que o termo em destaque funciona sintaticamente como PREDICATIVO DO OBJETO:</div>
+      <ul class="options-list">
+        <li class="option-item"><span class="option-letter">A</span><span>O Plenário da Câmara considerou a proposta de emenda inconstitucional.</span></li>
+        <li class="option-item"><span class="option-letter">B</span><span>O experiente consultor jurídico redigiu o parecer preliminar com zelo.</span></li>
+        <li class="option-item"><span class="option-letter">C</span><span>A Mesa Diretora permaneceu atenta às reivindicações dos munícipes presentes.</span></li>
+        <li class="option-item"><span class="option-letter">D</span><span>Os manifestantes saíram apressados após a votação final do projeto.</span></li>
+      </ul>
+    </div>
+    <div class="question-block">
+      <div class="question-meta"><span class="q-badge">QUESTÃO 32 (ID 416)</span><span class="q-topic">Língua Portuguesa • Subordinação Adverbial: Finalidade ('A fim de que')</span><span class="q-orig">DIA 14 • Período</span></div>
+      <div class="question-text">No trecho 'O Presidente convocou a reunião extraordinária A FIM DE QUE OS PARLAMENTARES DEBATESSEM O PLANO DIRETOR', a oração sublinhada traduz uma circunstância de:</div>
+      <ul class="options-list">
+        <li class="option-item"><span class="option-letter">A</span><span>Finalidade (objetivo ou meta visada pela convocação).</span></li>
+        <li class="option-item"><span class="option-letter">B</span><span>Causa pretérita da reunião.</span></li>
+        <li class="option-item"><span class="option-letter">C</span><span>Consequência imediata da fala do Presidente.</span></li>
+        <li class="option-item"><span class="option-letter">D</span><span>Condição preliminar à realização do debate.</span></li>
+      </ul>
+    </div>
+    <div class="question-block">
+      <div class="question-meta"><span class="q-badge">QUESTÃO 33 (ID 377)</span><span class="q-topic">Língua Portuguesa • Sintaxe: Pontuação do Vocativo no Texto Oficial</span><span class="q-orig">DIA 11 • Sintaxe</span></div>
+      <div class="question-text">Em redação oficial e técnica parlamentar, o vocativo deve ser rigorosamente demarcado pela pontuação. Assinale a frase redigida em estrita conformidade com a norma-padrão da língua portuguesa:</div>
+      <ul class="options-list">
+        <li class="option-item"><span class="option-letter">A</span><span>Senhor Presidente solicito a palavra pela ordem, para esclarecer o voto da bancada.</span></li>
+        <li class="option-item"><span class="option-letter">B</span><span>Solicito a palavra pela ordem, Senhor Presidente, para esclarecer o voto da bancada.</span></li>
+        <li class="option-item"><span class="option-letter">C</span><span>Solicito a palavra pela ordem Senhor Presidente para esclarecer o voto da bancada.</span></li>
+        <li class="option-item"><span class="option-letter">D</span><span>Solicito a palavra, pela ordem Senhor Presidente, para esclarecer o voto da bancada.</span></li>
+      </ul>
+    </div>
+    <div class="question-block">
+      <div class="question-meta"><span class="q-badge">QUESTÃO 34 (ID 417)</span><span class="q-topic">Língua Portuguesa • Período Composto: Orações Reduzidas</span><span class="q-orig">DIA 14 • Período</span></div>
+      <div class="question-text">Na oração 'TERMINADA A LEITURA DA ATA, o Presidente abriu a fase de pronunciamento dos líderes partidários', a oração destacada é classificada como:</div>
+      <ul class="options-list">
+        <li class="option-item"><span class="option-letter">A</span><span>Oração subordinada substantiva apositiva de gerúndio.</span></li>
+        <li class="option-item"><span class="option-letter">B</span><span>Oração coordenada assindética explicativa.</span></li>
+        <li class="option-item"><span class="option-letter">C</span><span>Oração subordinada adverbial temporal reduzida de particípio.</span></li>
+        <li class="option-item"><span class="option-letter">D</span><span>Oração subordinada adjetiva restritiva de infinitivo.</span></li>
+      </ul>
+    </div>
+    <div class="question-block">
+      <div class="question-meta"><span class="q-badge">QUESTÃO 35 (ID 378)</span><span class="q-topic">Língua Portuguesa • Sintaxe: Diferenciação de Adjunto Adnominal e Predicativo</span><span class="q-orig">DIA 11 • Sintaxe</span></div>
+      <div class="question-text">Considere os dois enunciados a seguir:
+I. 'O vereador indignado discursou contra o aumento das taxas municipais.'
+II. 'O vereador discursou indignado contra o aumento das taxas municipais.'
+Do ponto de vista sintático-semântico, os termos destacados desempenham, respectivamente, os papéis de:</div>
+      <ul class="options-list">
+        <li class="option-item"><span class="option-letter">A</span><span>Adjunto Adverbial de Modo em I; e Objeto Direto Qualificador em II.</span></li>
+        <li class="option-item"><span class="option-letter">B</span><span>Complemento Nominal em I; e Adjunto Adnominal em II.</span></li>
+        <li class="option-item"><span class="option-letter">C</span><span>Adjunto Adnominal em I (característica atribuída de forma direta e inerente ao substantivo); e Predicativo do Sujeito em II (estado transitório associado ao momento da ação de discursar).</span></li>
+        <li class="option-item"><span class="option-letter">D</span><span>Vocativo Invocatório em I; e Aposto Explicativo em II.</span></li>
+      </ul>
+    </div>
+    <div class="question-block">
+      <div class="question-meta"><span class="q-badge">QUESTÃO 36 (ID 418)</span><span class="q-topic">Língua Portuguesa • Morfossintaxe: Distinção entre Pronome Relativo e Conjunção Integrante</span><span class="q-orig">DIA 14 • Período</span></div>
+      <div class="question-text">Observe as duas frases extraídas de pronunciamentos oficiais: I. 'Os assessores informaram QUE AS DILIGÊNCIAS JÁ HAVIAM SIDO REALIZADAS.' II. 'As diligências QUE A COMISSÃO REALIZOU trouxeram novos fatos aos autos.' A palavra 'que' presente em I e II classifica-se, respectivamente, como:</div>
+      <ul class="options-list">
+        <li class="option-item"><span class="option-letter">A</span><span>Pronome relativo em I; e Conjunção integrante em II.</span></li>
+        <li class="option-item"><span class="option-letter">B</span><span>Conjunção integrante em I; e Pronome relativo em II.</span></li>
+        <li class="option-item"><span class="option-letter">C</span><span>Conjunção consecutiva em I; e Conjunção explicativa em II.</span></li>
+        <li class="option-item"><span class="option-letter">D</span><span>Pronome indefinido em I; e Partícula expletiva de realce em II.</span></li>
+      </ul>
+    </div>
+    <div class="question-block">
+      <div class="question-meta"><span class="q-badge">QUESTÃO 37 (ID 379)</span><span class="q-topic">Língua Portuguesa • Sintaxe: Termos Acessórios - Aposto Resumitivo / Recapitulativo</span><span class="q-orig">DIA 11 • Sintaxe</span></div>
+      <div class="question-text">Na oração 'Projetos de lei, requerimentos verbais, indicações e moções de pesar, NADA impediu o avanço da pauta prioritária da sessão', a palavra destacada 'NADA' exerce a função sintática de:</div>
+      <ul class="options-list">
+        <li class="option-item"><span class="option-letter">A</span><span>Objeto Indireto Recíproco do verbo impedir.</span></li>
+        <li class="option-item"><span class="option-letter">B</span><span>Adjunto Adverbial de Negação Absoluta.</span></li>
+        <li class="option-item"><span class="option-letter">C</span><span>Complemento Nominal do substantivo pauta.</span></li>
+        <li class="option-item"><span class="option-letter">D</span><span>Aposto Resumitivo (ou Recapitulativo).</span></li>
+      </ul>
+    </div>
+    <div class="question-block">
+      <div class="question-meta"><span class="q-badge">QUESTÃO 38 (ID 419)</span><span class="q-topic">Língua Portuguesa • Morfossintaxe: Funções da Palavra 'SE' no Período Composto</span><span class="q-orig">DIA 14 • Período</span></div>
+      <div class="question-text">Assinale a frase em que o vocábulo 'se' atua como CONJUNÇÃO INTEGRANTE introduzindo oração subordinada substantiva:</div>
+      <ul class="options-list">
+        <li class="option-item"><span class="option-letter">A</span><span>O servidor perguntou ao Diretor SE HAVERIA EXPEDIENTE REGULAR DURANTE O FERIADO MUNICIPAL.</span></li>
+        <li class="option-item"><span class="option-letter">B</span><span>Se o quórum qualificado não for alcançado, a sessão não poderá deliberar a matéria.</span></li>
+        <li class="option-item"><span class="option-letter">C</span><span>Aprovou-se a resolução administrativa sem nenhum voto contrário na Casa.</span></li>
+        <li class="option-item"><span class="option-letter">D</span><span>Vive-se com muita tranquilidade nos distritos serranos de Meruoca.</span></li>
+      </ul>
+    </div>
+    <div class="question-block">
+      <div class="question-meta"><span class="q-badge">QUESTÃO 39 (ID 380)</span><span class="q-topic">Língua Portuguesa • Sintaxe: Análise Sintática Global de Período</span><span class="q-orig">DIA 11 • Sintaxe</span></div>
+      <div class="question-text">No excerto oficial 'A Comissão de Constituição e Justiça aprovou o parecer favorável do relator unanimemente', o termo sublinhado 'o parecer favorável do relator' classifica-se sintaticamente como:</div>
+      <ul class="options-list">
+        <li class="option-item"><span class="option-letter">A</span><span>Sujeito Paciente da oração passiva truncada.</span></li>
+        <li class="option-item"><span class="option-letter">B</span><span>Objeto Direto da forma verbal transitiva direta 'aprovou'.</span></li>
+        <li class="option-item"><span class="option-letter">C</span><span>Complemento Nominal da Comissão de Constituição.</span></li>
+        <li class="option-item"><span class="option-letter">D</span><span>Predicativo do Sujeito do ato decisório.</span></li>
+      </ul>
+    </div>
+    <div class="question-block">
+      <div class="question-meta"><span class="q-badge">QUESTÃO 40 (ID 420)</span><span class="q-topic">Língua Portuguesa • Período Composto: Período Misto (Coordenação e Subordinação)</span><span class="q-orig">DIA 14 • Período</span></div>
+      <div class="question-text">No período 'O relator concluiu o voto, MAS advertiu que o texto da lei necessitava de aprimoramento', temos:</div>
+      <ul class="options-list">
+        <li class="option-item"><span class="option-letter">A</span><span>Um período composto exclusivamente por orações coordenadas assindéticas sem conectivos.</span></li>
+        <li class="option-item"><span class="option-letter">B</span><span>Um período composto por coordenação (oração coordenada sindética adversativa 'mas advertiu') e por subordinação (oração subordinada substantiva objetiva direta 'que o texto da lei necessitava de aprimoramento').</span></li>
+        <li class="option-item"><span class="option-letter">C</span><span>Um período simples constituído de uma única oração absoluta com adjuntos adverbiais compostos.</span></li>
+        <li class="option-item"><span class="option-letter">D</span><span>Um período composto exclusivamente por orações subordinadas adjetivas restritivas correlatas.</span></li>
+      </ul>
+    </div>
+    <div class="folha-respostas-box">
+      <div style="text-align:center;border-bottom:1px solid #cbd5e1;padding-bottom:8px;margin-bottom:10px;">
+        <strong style="font-size:1.1rem;text-transform:uppercase;color:var(--accent);">Folha de Respostas — Reforço 40Q</strong>
+        <p style="margin:4px 0 0 0;font-size:0.8rem;color:#64748b;">Q = ordem do caderno • ID = código no app</p>
+      </div>
+      <div class="folha-grid">
+        <div class="folha-row"><span class="folha-num">Q01·361</span><span class="folha-circle">A</span><span class="folha-circle">B</span><span class="folha-circle">C</span><span class="folha-circle">D</span></div>
+        <div class="folha-row"><span class="folha-num">Q02·401</span><span class="folha-circle">A</span><span class="folha-circle">B</span><span class="folha-circle">C</span><span class="folha-circle">D</span></div>
+        <div class="folha-row"><span class="folha-num">Q03·362</span><span class="folha-circle">A</span><span class="folha-circle">B</span><span class="folha-circle">C</span><span class="folha-circle">D</span></div>
+        <div class="folha-row"><span class="folha-num">Q04·402</span><span class="folha-circle">A</span><span class="folha-circle">B</span><span class="folha-circle">C</span><span class="folha-circle">D</span></div>
+        <div class="folha-row"><span class="folha-num">Q05·363</span><span class="folha-circle">A</span><span class="folha-circle">B</span><span class="folha-circle">C</span><span class="folha-circle">D</span></div>
+        <div class="folha-row"><span class="folha-num">Q06·403</span><span class="folha-circle">A</span><span class="folha-circle">B</span><span class="folha-circle">C</span><span class="folha-circle">D</span></div>
+        <div class="folha-row"><span class="folha-num">Q07·364</span><span class="folha-circle">A</span><span class="folha-circle">B</span><span class="folha-circle">C</span><span class="folha-circle">D</span></div>
+        <div class="folha-row"><span class="folha-num">Q08·404</span><span class="folha-circle">A</span><span class="folha-circle">B</span><span class="folha-circle">C</span><span class="folha-circle">D</span></div>
+        <div class="folha-row"><span class="folha-num">Q09·365</span><span class="folha-circle">A</span><span class="folha-circle">B</span><span class="folha-circle">C</span><span class="folha-circle">D</span></div>
+        <div class="folha-row"><span class="folha-num">Q10·405</span><span class="folha-circle">A</span><span class="folha-circle">B</span><span class="folha-circle">C</span><span class="folha-circle">D</span></div>
+        <div class="folha-row"><span class="folha-num">Q11·366</span><span class="folha-circle">A</span><span class="folha-circle">B</span><span class="folha-circle">C</span><span class="folha-circle">D</span></div>
+        <div class="folha-row"><span class="folha-num">Q12·406</span><span class="folha-circle">A</span><span class="folha-circle">B</span><span class="folha-circle">C</span><span class="folha-circle">D</span></div>
+        <div class="folha-row"><span class="folha-num">Q13·367</span><span class="folha-circle">A</span><span class="folha-circle">B</span><span class="folha-circle">C</span><span class="folha-circle">D</span></div>
+        <div class="folha-row"><span class="folha-num">Q14·407</span><span class="folha-circle">A</span><span class="folha-circle">B</span><span class="folha-circle">C</span><span class="folha-circle">D</span></div>
+        <div class="folha-row"><span class="folha-num">Q15·368</span><span class="folha-circle">A</span><span class="folha-circle">B</span><span class="folha-circle">C</span><span class="folha-circle">D</span></div>
+        <div class="folha-row"><span class="folha-num">Q16·408</span><span class="folha-circle">A</span><span class="folha-circle">B</span><span class="folha-circle">C</span><span class="folha-circle">D</span></div>
+        <div class="folha-row"><span class="folha-num">Q17·369</span><span class="folha-circle">A</span><span class="folha-circle">B</span><span class="folha-circle">C</span><span class="folha-circle">D</span></div>
+        <div class="folha-row"><span class="folha-num">Q18·409</span><span class="folha-circle">A</span><span class="folha-circle">B</span><span class="folha-circle">C</span><span class="folha-circle">D</span></div>
+        <div class="folha-row"><span class="folha-num">Q19·370</span><span class="folha-circle">A</span><span class="folha-circle">B</span><span class="folha-circle">C</span><span class="folha-circle">D</span></div>
+        <div class="folha-row"><span class="folha-num">Q20·410</span><span class="folha-circle">A</span><span class="folha-circle">B</span><span class="folha-circle">C</span><span class="folha-circle">D</span></div>
+        <div class="folha-row"><span class="folha-num">Q21·371</span><span class="folha-circle">A</span><span class="folha-circle">B</span><span class="folha-circle">C</span><span class="folha-circle">D</span></div>
+        <div class="folha-row"><span class="folha-num">Q22·411</span><span class="folha-circle">A</span><span class="folha-circle">B</span><span class="folha-circle">C</span><span class="folha-circle">D</span></div>
+        <div class="folha-row"><span class="folha-num">Q23·372</span><span class="folha-circle">A</span><span class="folha-circle">B</span><span class="folha-circle">C</span><span class="folha-circle">D</span></div>
+        <div class="folha-row"><span class="folha-num">Q24·412</span><span class="folha-circle">A</span><span class="folha-circle">B</span><span class="folha-circle">C</span><span class="folha-circle">D</span></div>
+        <div class="folha-row"><span class="folha-num">Q25·373</span><span class="folha-circle">A</span><span class="folha-circle">B</span><span class="folha-circle">C</span><span class="folha-circle">D</span></div>
+        <div class="folha-row"><span class="folha-num">Q26·413</span><span class="folha-circle">A</span><span class="folha-circle">B</span><span class="folha-circle">C</span><span class="folha-circle">D</span></div>
+        <div class="folha-row"><span class="folha-num">Q27·374</span><span class="folha-circle">A</span><span class="folha-circle">B</span><span class="folha-circle">C</span><span class="folha-circle">D</span></div>
+        <div class="folha-row"><span class="folha-num">Q28·414</span><span class="folha-circle">A</span><span class="folha-circle">B</span><span class="folha-circle">C</span><span class="folha-circle">D</span></div>
+        <div class="folha-row"><span class="folha-num">Q29·375</span><span class="folha-circle">A</span><span class="folha-circle">B</span><span class="folha-circle">C</span><span class="folha-circle">D</span></div>
+        <div class="folha-row"><span class="folha-num">Q30·415</span><span class="folha-circle">A</span><span class="folha-circle">B</span><span class="folha-circle">C</span><span class="folha-circle">D</span></div>
+        <div class="folha-row"><span class="folha-num">Q31·376</span><span class="folha-circle">A</span><span class="folha-circle">B</span><span class="folha-circle">C</span><span class="folha-circle">D</span></div>
+        <div class="folha-row"><span class="folha-num">Q32·416</span><span class="folha-circle">A</span><span class="folha-circle">B</span><span class="folha-circle">C</span><span class="folha-circle">D</span></div>
+        <div class="folha-row"><span class="folha-num">Q33·377</span><span class="folha-circle">A</span><span class="folha-circle">B</span><span class="folha-circle">C</span><span class="folha-circle">D</span></div>
+        <div class="folha-row"><span class="folha-num">Q34·417</span><span class="folha-circle">A</span><span class="folha-circle">B</span><span class="folha-circle">C</span><span class="folha-circle">D</span></div>
+        <div class="folha-row"><span class="folha-num">Q35·378</span><span class="folha-circle">A</span><span class="folha-circle">B</span><span class="folha-circle">C</span><span class="folha-circle">D</span></div>
+        <div class="folha-row"><span class="folha-num">Q36·418</span><span class="folha-circle">A</span><span class="folha-circle">B</span><span class="folha-circle">C</span><span class="folha-circle">D</span></div>
+        <div class="folha-row"><span class="folha-num">Q37·379</span><span class="folha-circle">A</span><span class="folha-circle">B</span><span class="folha-circle">C</span><span class="folha-circle">D</span></div>
+        <div class="folha-row"><span class="folha-num">Q38·419</span><span class="folha-circle">A</span><span class="folha-circle">B</span><span class="folha-circle">C</span><span class="folha-circle">D</span></div>
+        <div class="folha-row"><span class="folha-num">Q39·380</span><span class="folha-circle">A</span><span class="folha-circle">B</span><span class="folha-circle">C</span><span class="folha-circle">D</span></div>
+        <div class="folha-row"><span class="folha-num">Q40·420</span><span class="folha-circle">A</span><span class="folha-circle">B</span><span class="folha-circle">C</span><span class="folha-circle">D</span></div>
+      </div>
+    </div>
+    <div class="gabarito-section">
+      <div style="background:var(--accent);color:white;padding:10px 16px;border-radius:6px;font-weight:800;font-size:1.1rem;margin-bottom:16px;"><i class="fas fa-check-double"></i> GABARITO FUNDAMENTADO (na ordem do caderno)</div>
+      <div class="gabarito-item"><span class="gabarito-letra">B</span><strong>Q01 • ID 361 (Língua Portuguesa — Sintaxe: Identificação do Sujeito da Oração):</strong><p style="margin:4px 0 0 0;color:#334155;font-size:0.85rem;">Gabarito: B. Colocando a oração na ordem direta: 'Os vereadores meruoquenses [sujeito simples, núcleo: vereadores] aprovaram [verbo] o novo plano de cargos da administração municipal [objeto direto]'. A inversão sintática (sujeito posposto) é uma das armadilhas mais comuns da banca INBRASP para tentar induzir o candidato a marcar sujeito indeterminado.</p></div>
+      <div class="gabarito-item"><span class="gabarito-letra">C</span><strong>Q02 • ID 401 (Língua Portuguesa — Coordenação: Oração Coordenada Sindética Adversativa):</strong><p style="margin:4px 0 0 0;color:#334155;font-size:0.85rem;">Gabarito: C. A conjunção 'porém' estabelece uma relação de oposição/contraste entre orações sintaticamente independentes, configurando típica ORAÇÃO COORDENADA SINDÉTICA ADVERSATIVA (conectivos adversativos: mas, porém, contudo, todavia, entretanto, no entanto).</p></div>
+      <div class="gabarito-item"><span class="gabarito-letra">C</span><strong>Q03 • ID 362 (Língua Portuguesa — Sintaxe: Sujeito Oculto (Desinencial) vs. Indeterminado):</strong><p style="margin:4px 0 0 0;color:#334155;font-size:0.85rem;">Gabarito: C. Na frase 'Precisa-se de assessores jurídicos...', temos um Verbo Transitivo Indireto ('precisar de algo') acompanhado do pronome 'se' como ÍNDICE DE INDETERMINAÇÃO DO SUJEITO. Como o verbo é transitivo indireto (com preposição 'de'), a oração não admite voz passiva e o sujeito é INDETERMINADO. Nas outras: A tem sujeito desinencial (nós); B tem sujeito composto; D é oração sem sujeito (fenômeno da natureza).</p></div>
+      <div class="gabarito-item"><span class="gabarito-letra">A</span><strong>Q04 • ID 402 (Língua Portuguesa — Coordenação: Oração Coordenada Sindética Conclusiva):</strong><p style="margin:4px 0 0 0;color:#334155;font-size:0.85rem;">Gabarito: A. A oração 'PORTANTO, a deliberação legislativa é válida' exprime dedução e encerramento lógico decorrente do fato anterior, sendo Coordenada Sindética Conclusiva (conectivos: logo, portanto, por conseguinte, por isso, pois posposto ao verbo). Na alternativa B temos aditiva; na C temos explicativa ('pois' anteposto); na D temos alternativas correlativas.</p></div>
+      <div class="gabarito-item"><span class="gabarito-letra">D</span><strong>Q05 • ID 363 (Língua Portuguesa — Sintaxe: Oração Sem Sujeito e Concordância com Verbo 'Haver'):</strong><p style="margin:4px 0 0 0;color:#334155;font-size:0.85rem;">Gabarito: D. No sentido de existir ou ocorrer, o verbo HAVER não possui sujeito e NÃO se flexiona no plural: 'Houve muitos debates' (e não 'houveram'). 'Muitos debates' é objeto direto da oração. As opções A, B e C estão incorretas porque flexionaram indevidamente o verbo impessoal no plural ('haviam', 'houveram', 'houvessem').</p></div>
+      <div class="gabarito-item"><span class="gabarito-letra">A</span><strong>Q06 • ID 403 (Língua Portuguesa — Conjunções Coordenativas: Emprego e Sentido do Conectivo 'Pois'):</strong><p style="margin:4px 0 0 0;color:#334155;font-size:0.85rem;">Gabarito: A. Regra clássica da gramática normativa (Cunha &amp; Cintra, Bechara): quando a conjunção 'pois' vem após o verbo da oração que encabeça (posposta ao verbo e isolada por vírgulas), ela tem valor CONCLUSIVO (ex.: 'Estudou com afinco; obterá, pois, a vaga'). Quando vem antes do verbo (anteposta), tem valor EXPLICATIVO ou CAUSAL (ex.: 'Entre depressa, pois vai chover').</p></div>
+      <div class="gabarito-item"><span class="gabarito-letra">A</span><strong>Q07 • ID 364 (Língua Portuguesa — Sintaxe: Transitividade Verbal Direta e Indireta (VTDI)):</strong><p style="margin:4px 0 0 0;color:#334155;font-size:0.85rem;">Gabarito: A. Quem comunica, comunica algo (Objeto Direto: 'o cancelamento da sessão extraordinária' - sem preposição) a alguém (Objeto Indireto: 'aos vereadores da comarca' - com preposição 'a'). Trata-se tipicamente de um Verbo Transitivo Direto e Indireto (VTDI ou bitransitivo).</p></div>
+      <div class="gabarito-item"><span class="gabarito-letra">D</span><strong>Q08 • ID 404 (Língua Portuguesa — Subordinação: Oração Subordinada Substantiva Subjetiva):</strong><p style="margin:4px 0 0 0;color:#334155;font-size:0.85rem;">Gabarito: D. Analisando a oração principal: 'É indispensável' possui verbo de ligação ('É') e predicativo do sujeito ('indispensável'), mas falta o sujeito da oração! Pergunta-se: O que é indispensável? Resposta: 'que todos os edis participem da votação' (ou 'A participação de todos os edis é indispensável'). Logo, a oração funciona como SUJEITO da oração principal, classificando-se como Subordinada Substantiva Subjetiva.</p></div>
+      <div class="gabarito-item"><span class="gabarito-letra">B</span><strong>Q09 • ID 365 (Língua Portuguesa — Sintaxe: Predicado Verbal, Nominal e Verbo-Nominal):</strong><p style="margin:4px 0 0 0;color:#334155;font-size:0.85rem;">Gabarito: B. O predicado verbo-nominal possui dois núcleos: um verbo significativo (de ação) e um nome (predicativo). Na oração 'chegaram entusiasmados à primeira sessão', o predicado é formado pelo verbo de ação 'chegaram' (núcleo verbal) + o adjetivo 'entusiasmados' (predicativo do sujeito, núcleo nominal). Em A temos predicado verbal; em C predicado nominal (verbo de ligação 'é' + predicativo 'fundamental'); em D predicado verbal.</p></div>
+      <div class="gabarito-item"><span class="gabarito-letra">C</span><strong>Q10 • ID 405 (Língua Portuguesa — Subordinação: Oração Subordinada Substantiva Objetiva Direta):</strong><p style="margin:4px 0 0 0;color:#334155;font-size:0.85rem;">Gabarito: C. O verbo da oração principal 'constatou' é Transitivo Direto (VTD) e não exige preposição: 'O parecerista constatou ISTO'. O termo 'isto' substitui a oração inteira, que funciona como complemento verbal sem preposição (Objeto Direto), sendo, portanto, Oração Subordinada Substantiva Objetiva Direta, encabeçada pela conjunção integrante 'que'.</p></div>
+      <div class="gabarito-item"><span class="gabarito-letra">C</span><strong>Q11 • ID 366 (Língua Portuguesa — Sintaxe: Complemento Nominal vs. Adjunto Adnominal):</strong><p style="margin:4px 0 0 0;color:#334155;font-size:0.85rem;">Gabarito: C. A distinção de ouro: 'leitura' é um substantivo abstrato transitivo derivado do verbo 'ler'. O termo preposicionado 'do parecer' tem sentido PACIENTE / PASSIVO (o parecer é lido por alguém, sofre a ação da leitura). Termo preposicionado completando substantivo abstrato com sentido passivo é sempre COMPLEMENTO NOMINAL. Se tivesse sentido ativo (ex.: 'A leitura do vereador'), seria adjunto adnominal.</p></div>
+      <div class="gabarito-item"><span class="gabarito-letra">D</span><strong>Q12 • ID 406 (Língua Portuguesa — Subordinação: Completiva Nominal vs Objetiva Indireta):</strong><p style="margin:4px 0 0 0;color:#334155;font-size:0.85rem;">Gabarito: D. Em I, a oração subordinada 'de que as contas seriam aprovadas' completa o sentido de um NOME substantivo abstrato ('convicção'), funcionando como COMPLEMENTO NOMINAL (Oração Subordinada Substantiva Completiva Nominal). Em II, a oração 'de que os secretários conferissem o quórum' completa o sentido de um VERBO transitivo indireto ('necessitava'), funcionando como OBJETO INDIRETO (Oração Subordinada Substantiva Objetiva Indireta).</p></div>
+      <div class="gabarito-item"><span class="gabarito-letra">D</span><strong>Q13 • ID 367 (Língua Portuguesa — Sintaxe: Adjunto Adnominal em Substantivo Abstrato):</strong><p style="margin:4px 0 0 0;color:#334155;font-size:0.85rem;">Gabarito: D. Em 'A manifestação da Mesa Diretora', a Mesa Diretora é quem PRATICA a ação de manifestar-se (sentido ATIVO / agente). Termo preposicionado ligado a substantivo abstrato com valor ativo é ADJUNTO ADNOMINAL. Nas opções A, B e C os termos possuem sentido paciente ('às leis' = as leis são obedecidas; 'no Poder Legislativo' = o Poder recebe a confiança; 'aos servidores' = os servidores recebem apoio), sendo todos Complementos Nominais.</p></div>
+      <div class="gabarito-item"><span class="gabarito-letra">A</span><strong>Q14 • ID 407 (Língua Portuguesa — Subordinação: Oração Subordinada Substantiva Predicativa):</strong><p style="margin:4px 0 0 0;color:#334155;font-size:0.85rem;">Gabarito: A. A estrutura da oração principal apresenta Sujeito ('A principal meta da comissão parlamentar') + Verbo de Ligação ('é'). O termo que se segue a um verbo de ligação para caracterizar o sujeito é o PREDICATIVO DO SUJEITO. Como essa atribuição é feita por meio de uma oração encabeçada por conjunção integrante, temos uma Oração Subordinada Substantiva Predicativa.</p></div>
+      <div class="gabarito-item"><span class="gabarito-letra">A</span><strong>Q15 • ID 368 (Língua Portuguesa — Sintaxe: Identificação do Agente da Passiva):</strong><p style="margin:4px 0 0 0;color:#334155;font-size:0.85rem;">Gabarito: A. A oração está na voz passiva analítica (verbo auxiliar 'foi' + particípio 'sancionado'). O termo preposicionado 'pelo Prefeito Municipal' representa o ser que executa a ação verbal na oração passiva, classificando-se como AGENTE DA PASSIVA. Passando para a voz ativa: 'O Prefeito Municipal sancionou o projeto de lei...'.</p></div>
+      <div class="gabarito-item"><span class="gabarito-letra">B</span><strong>Q16 • ID 408 (Língua Portuguesa — Subordinação: Oração Subordinada Substantiva Apositiva):</strong><p style="margin:4px 0 0 0;color:#334155;font-size:0.85rem;">Gabarito: B. A Oração Subordinada Substantiva Apositiva exerce a função sintática de aposto de um termo da oração principal, explicando-o de forma específica. Geralmente vem pontuada com dois-pontos ou travessões (ex.: '...consistia nisto: que as reuniões fossem transmitidas ao vivo').</p></div>
+      <div class="gabarito-item"><span class="gabarito-letra">B</span><strong>Q17 • ID 369 (Língua Portuguesa — Sintaxe: Identificação de Adjuntos Adverbiais):</strong><p style="margin:4px 0 0 0;color:#334155;font-size:0.85rem;">Gabarito: B. Análise das circunstâncias dos adjuntos adverbiais: 1) 'Ontem à tarde' indica a circunstância temporal em que o fato ocorreu (Tempo); 2) 'na sala das comissões' indica a localização física do ato (Lugar); 3) 'com extrema clareza' indica a maneira/forma como o relator apresentou o parecer (Modo).</p></div>
+      <div class="gabarito-item"><span class="gabarito-letra">C</span><strong>Q18 • ID 409 (Língua Portuguesa — Subordinação: Orações Adjetivas (Explicativa vs Restritiva)):</strong><p style="margin:4px 0 0 0;color:#334155;font-size:0.85rem;">Gabarito: C. Clássica questão de bancas sobre orações adjetivas: 1) ADJETIVA EXPLICATIVA (com vírgulas): atribui uma qualidade ou circunstância inerente a todo o grupo (sentido generalizante / totalitário); 2) ADJETIVA RESTRITIVA (sem vírgulas): restringe, recorta e delimita o sentido do substantivo antecedente a apenas uma parte dos indivíduos (apenas aqueles que estudaram, e não a totalidade).</p></div>
+      <div class="gabarito-item"><span class="gabarito-letra">C</span><strong>Q19 • ID 370 (Língua Portuguesa — Sintaxe: Aposto Explicativo vs. Vocativo):</strong><p style="margin:4px 0 0 0;color:#334155;font-size:0.85rem;">Gabarito: C. O VOCATIVO não pertence nem ao sujeito nem ao predicado; é um termo independente utilizado para chamar, invocar ou interpelar o interlocutor ('Senhor Presidente, peço a palavra pela ordem'). Deve vir OBRIGATORIAMENTE isolado por vírgula (ou outro sinal de pontuação enfático). O aposto explicativo, por sua vez, amplia ou resume um termo de natureza substantiva.</p></div>
+      <div class="gabarito-item"><span class="gabarito-letra">B</span><strong>Q20 • ID 410 (Língua Portuguesa — Subordinação Adverbial: Causal vs Consecutiva):</strong><p style="margin:4px 0 0 0;color:#334155;font-size:0.85rem;">Gabarito: B. A presença do termo intensificador na oração principal ('tantas pessoas') associado à conjunção subordinativa 'que' ('tanto... que', 'tão... que', 'tal... que') estabelece nítida relação de CONSEQUÊNCIA (efeito gerado pela intensidade da causa anterior). Trata-se de uma Oração Subordinada Adverbial Consecutiva.</p></div>
+      <div class="gabarito-item"><span class="gabarito-letra">D</span><strong>Q21 • ID 371 (Língua Portuguesa — Sintaxe: Classificação do Aposto Especificativo):</strong><p style="margin:4px 0 0 0;color:#334155;font-size:0.85rem;">Gabarito: D. O APOSTO ESPECIFICATIVO (ou individualizador) restringe e individualiza um substantivo genérico ('Município', 'cidade', 'rio', 'rua', 'poeta') por meio de um nome próprio, ligando-se a ele sem pausa e geralmente com preposição ('cidade de Sobral', 'Município de Meruoca', 'rua das Flores'). Não é separado por vírgulas.</p></div>
+      <div class="gabarito-item"><span class="gabarito-letra">A</span><strong>Q22 • ID 411 (Língua Portuguesa — Subordinação Adverbial: Concessiva e Conectivos Concessivos):</strong><p style="margin:4px 0 0 0;color:#334155;font-size:0.85rem;">Gabarito: A. A oração 'CONQUANTO houvesse intensa pressão...' introduz uma ressalva/obstáculo incapaz de anular ou impedir a realização da ação principal, caracterizando Oração Subordinada Adverbial Concessiva. 'Conquanto' é conectivo estritamente concessivo (sinônimo de embora, ainda que, se bem que, posto que). B é temporal; C é condicional; D é proporcional.</p></div>
+      <div class="gabarito-item"><span class="gabarito-letra">A</span><strong>Q23 • ID 372 (Língua Portuguesa — Sintaxe: Pronome Apassivador vs. Índice de Indeterminação do Sujeito):</strong><p style="margin:4px 0 0 0;color:#334155;font-size:0.85rem;">Gabarito: A. Regra capital da sintaxe: Em I, o verbo 'publicar' é Transitivo Direto. Com VTD + se, forma-se a voz passiva sintética (ou pronominal), onde o pronome 'se' é APASSIVADOR e o termo seguinte é o SUJEITO PACIENTE (que concorda com o verbo: 'os editais foram publicados' = 'publicaram-se os editais'). Em II, o verbo 'necessitar' é Transitivo Indireto (rege preposição 'de'). VTI + se resulta em ÍNDICE DE INDETERMINAÇÃO DO SUJEITO, mantendo o verbo obrigatoriamente no singular.</p></div>
+      <div class="gabarito-item"><span class="gabarito-letra">C</span><strong>Q24 • ID 412 (Língua Portuguesa — Conjunções Subordinativas: Polissemia do Conectivo 'Como'):</strong><p style="margin:4px 0 0 0;color:#334155;font-size:0.85rem;">Gabarito: C. Quando o conectivo 'como' inicia o período antes da oração principal, equivalendo semanticamente a 'já que', 'visto que' ou 'porquanto', ele introduz oração subordinada adverbial CAUSAL ('Já que não havia quórum mínimo, a sessão foi suspensa'). Não se trata de comparação nem conformidade.</p></div>
+      <div class="gabarito-item"><span class="gabarito-letra">B</span><strong>Q25 • ID 373 (Língua Portuguesa — Sintaxe: Objeto Direto Preposicionado):</strong><p style="margin:4px 0 0 0;color:#334155;font-size:0.85rem;">Gabarito: B. O verbo 'amar' é Transitivo Direto ('quem ama, ama algo ou alguém'). Na frase 'amam a Meruoca', a preposição 'a' foi inserida antes do substantivo para expressar respeito cívico e realce afetivo, configurando classicamente um OBJETO DIRETO PREPOSICIONADO. Nas outras alternativas, os verbos 'redigir', 'encaminhar' e 'reivindicar' possuem objetos diretos comuns sem preposição ou objetos indiretos regenciais.</p></div>
+      <div class="gabarito-item"><span class="gabarito-letra">B</span><strong>Q26 • ID 413 (Língua Portuguesa — Subordinação Adverbial: Oração Condicional e Locuções):</strong><p style="margin:4px 0 0 0;color:#334155;font-size:0.85rem;">Gabarito: B. A locução 'desde que' seguida de verbo no modo subjuntivo ('obtenha') estabelece uma CONDIÇÃO obrigatória para que a emenda seja incorporada. Trata-se de uma Oração Subordinada Adverbial Condicional (equivalente a 'caso obtenha', 'se obtiver'). Note que 'desde que' com indicativo teria valor temporal, o que não ocorre na frase.</p></div>
+      <div class="gabarito-item"><span class="gabarito-letra">C</span><strong>Q27 • ID 374 (Língua Portuguesa — Sintaxe: Objeto Pleonástico):</strong><p style="margin:4px 0 0 0;color:#334155;font-size:0.85rem;">Gabarito: C. O termo 'Aos vereadores da oposição' é um Objeto Indireto já anteposto. A forma pronominal 'lhes' é inserida para duplicar/retomar esse mesmo objeto indireto com finalidade de ênfase e clareza, caracterizando a figura sintática do OBJETO INDIRETO PLEONÁSTICO.</p></div>
+      <div class="gabarito-item"><span class="gabarito-letra">C</span><strong>Q28 • ID 414 (Língua Portuguesa — Subordinação Adverbial: Conformativa):</strong><p style="margin:4px 0 0 0;color:#334155;font-size:0.85rem;">Gabarito: C. O conectivo 'consoante' é conjunção subordinativa conformativa por excelência (sinônimo perfeito de 'conforme', 'segundo', 'de acordo com'). Expressa concordância ou conformidade com uma regra ou padrão exterior, classificando-se a oração como Subordinada Adverbial Conformativa.</p></div>
+      <div class="gabarito-item"><span class="gabarito-letra">D</span><strong>Q29 • ID 375 (Língua Portuguesa — Sintaxe: Função Sintática do Pronome Relativo 'QUE'):</strong><p style="margin:4px 0 0 0;color:#334155;font-size:0.85rem;">Gabarito: D. Para descobrir a função do pronome relativo 'que', substitui-se o pronome pelo seu antecedente ('o projeto de lei'): 'O projeto de lei [sujeito] moderniza [verbo] a estrutura administrativa [objeto direto]'. Portanto, o pronome relativo 'que' funciona sintaticamente como SUJEITO da oração subordinada adjetiva.</p></div>
+      <div class="gabarito-item"><span class="gabarito-letra">B</span><strong>Q30 • ID 415 (Língua Portuguesa — Subordinação Adverbial: Proporcional ('À medida que')):</strong><p style="margin:4px 0 0 0;color:#334155;font-size:0.85rem;">Gabarito: B. Pegadinha frequente de concurso: 1) 'À MEDIDA QUE' indica PROPORÇÃO (gradação simultânea); 2) 'NA MEDIDA EM QUE' indica CAUSA (equivalente a visto que, já que); 3) A forma 'à medida em que' é considerada erro gramatical grosseiro (mistura indevida das duas locuções anteriores).</p></div>
+      <div class="gabarito-item"><span class="gabarito-letra">A</span><strong>Q31 • ID 376 (Língua Portuguesa — Sintaxe: Predicativo do Objeto):</strong><p style="margin:4px 0 0 0;color:#334155;font-size:0.85rem;">Gabarito: A. Na oração 'O Plenário [sujeito] considerou [verbo transitivo direto] a proposta de emenda [objeto direto] inconstitucional [predicativo do objeto]'. O adjetivo 'inconstitucional' expressa um atributo ou juízo de valor conferido pelo sujeito ao objeto direto 'a proposta de emenda', caracterizando o Predicativo do Objeto. Em C temos predicativo do sujeito ('atenta'); em D temos predicativo do sujeito ('apressados').</p></div>
+      <div class="gabarito-item"><span class="gabarito-letra">A</span><strong>Q32 • ID 416 (Língua Portuguesa — Subordinação Adverbial: Finalidade ('A fim de que')):</strong><p style="margin:4px 0 0 0;color:#334155;font-size:0.85rem;">Gabarito: A. A locução conjuntiva 'a fim de que' (grafada separadamente na indicação de objetivo) introduz uma Oração Subordinada Adverbial FINAL, denotando a intenção, propósito ou objetivo que move a ação expressa na oração principal.</p></div>
+      <div class="gabarito-item"><span class="gabarito-letra">B</span><strong>Q33 • ID 377 (Língua Portuguesa — Sintaxe: Pontuação do Vocativo no Texto Oficial):</strong><p style="margin:4px 0 0 0;color:#334155;font-size:0.85rem;">Gabarito: B. O vocativo 'Senhor Presidente' interpela diretamente o destinatário da fala. Quando intercalado no meio da oração, deve vir obrigatoriamente ISOLADO POR DUAS VÍRGULAS (uma antes e outra depois): 'Solicito a palavra pela ordem, Senhor Presidente, para esclarecer...'. Em A faltou a vírgula após o vocativo inicial; em C e D a pontuação ficou truncada.</p></div>
+      <div class="gabarito-item"><span class="gabarito-letra">C</span><strong>Q34 • ID 417 (Língua Portuguesa — Período Composto: Orações Reduzidas):</strong><p style="margin:4px 0 0 0;color:#334155;font-size:0.85rem;">Gabarito: C. Desenvolvendo a oração: 'Assim que terminou a leitura da ata / Quando terminou a leitura da ata, o Presidente abriu a fase...'. Por não possuir conectivo explícito e ter seu verbo flexionado no particípio ('terminada'), trata-se de uma ORAÇÃO SUBORDINADA ADVERBIAL TEMPORAL REDUZIDA DE PARTICÍPIO.</p></div>
+      <div class="gabarito-item"><span class="gabarito-letra">C</span><strong>Q35 • ID 378 (Língua Portuguesa — Sintaxe: Diferenciação de Adjunto Adnominal e Predicativo):</strong><p style="margin:4px 0 0 0;color:#334155;font-size:0.85rem;">Gabarito: C. Em I, 'indignado' é termo que integra o sintagma nominal ('O vereador indignado'), funcionando como ADJUNTO ADNOMINAL (qualidade vista como duradoura ou específica do sujeito). Em II, 'indignado' funciona como PREDICATIVO DO SUJEITO (estado psicológico momentâneo e circunstancial do vereador no instante em que proferia o discurso), integrando o predicado verbo-nominal.</p></div>
+      <div class="gabarito-item"><span class="gabarito-letra">B</span><strong>Q36 • ID 418 (Língua Portuguesa — Morfossintaxe: Distinção entre Pronome Relativo e Conjunção Integrante):</strong><p style="margin:4px 0 0 0;color:#334155;font-size:0.85rem;">Gabarito: B. Em I, o 'que' introduz uma oração subordinada substantiva objetiva direta completando o verbo 'informaram' (pode ser substituído por 'isto': 'informaram isto'); logo, é CONJUNÇÃO INTEGRANTE. Em II, o 'que' retoma o substantivo antecedente 'diligências' ('as quais a comissão realizou'), funcionando como elo de subordinação adjetiva; logo, é PRONOME RELATIVO.</p></div>
+      <div class="gabarito-item"><span class="gabarito-letra">D</span><strong>Q37 • ID 379 (Língua Portuguesa — Sintaxe: Termos Acessórios - Aposto Resumitivo / Recapitulativo):</strong><p style="margin:4px 0 0 0;color:#334155;font-size:0.85rem;">Gabarito: D. O APOSTO RESUMITIVO (ou recapitulativo) é exercido por um pronome indefinido (como 'tudo', 'nada', 'ninguém') que sintetiza em uma única palavra uma enumeração anterior de termos. Na oração, 'NADA' resume os múltiplos sujeitos enumerados ('projetos de lei, requerimentos, indicações...'), concordando o verbo no singular.</p></div>
+      <div class="gabarito-item"><span class="gabarito-letra">A</span><strong>Q38 • ID 419 (Língua Portuguesa — Morfossintaxe: Funções da Palavra 'SE' no Período Composto):</strong><p style="margin:4px 0 0 0;color:#334155;font-size:0.85rem;">Gabarito: A. Em A, o 'se' introduz oração subordinada substantiva objetiva direta completando o verbo 'perguntou' ('perguntou isto'); logo, atua como CONJUNÇÃO INTEGRANTE. Em B, 'se' é conjunção condicional; em C, 'se' é pronome apassivador ('a resolução foi aprovada'); em D, 'se' é índice de indeterminação do sujeito.</p></div>
+      <div class="gabarito-item"><span class="gabarito-letra">B</span><strong>Q39 • ID 380 (Língua Portuguesa — Sintaxe: Análise Sintática Global de Período):</strong><p style="margin:4px 0 0 0;color:#334155;font-size:0.85rem;">Gabarito: B. Identificando os termos na oração: 'A Comissão de Constituição e Justiça' = Sujeito Simples; 'aprovou' = Verbo Transitivo Direto; 'o parecer favorável do relator' = OBJETO DIRETO (complemento sem preposição que sofre a ação de aprovar); 'unanimemente' = Adjunto Adverbial de Modo.</p></div>
+      <div class="gabarito-item"><span class="gabarito-letra">B</span><strong>Q40 • ID 420 (Língua Portuguesa — Período Composto: Período Misto (Coordenação e Subordinação)):</strong><p style="margin:4px 0 0 0;color:#334155;font-size:0.85rem;">Gabarito: B. Estrutura analítica do período: 1) 'O relator concluiu o voto' = Oração principal / coordenada assindética; 2) 'MAS advertiu' = Oração Coordenada Sindética Adversativa em relação à primeira; 3) 'que o texto da lei necessitava de aprimoramento' = Oração Subordinada Substantiva Objetiva Direta subordinada ao verbo transitivo direto 'advertiu'. Trata-se de um período misto composto por coordenação e subordinação.</p></div>
+    </div>
+  </div>
+</body>
+</html>

@@ -42,7 +42,12 @@
         <button class="nav-btn" data-tab="tab-questoes">
           <i class="fas fa-tasks"></i>
           <span>Questões & Simulado</span>
-          <span class="nav-badge highlight" id="sidebarQuizBadge">300</span>
+          <span class="nav-badge highlight" id="sidebarQuizBadge">490</span>
+        </button>
+        <button class="nav-btn" data-tab="tab-macetes">
+          <i class="fas fa-magic" style="color: #f59e0b;"></i>
+          <span>Macetes Português</span>
+          <span class="nav-badge highlight" style="background: rgba(245,158,11,0.2); color: #f59e0b;">ACERTE TUDO</span>
         </button>
         <button class="nav-btn" data-tab="tab-flashcards">
           <i class="fas fa-clone"></i>
@@ -211,9 +216,17 @@
 
           <!-- Seletor de Dias do Quiz -->
           <div class="day-tabs-nav">
-            <button class="day-tab-btn active" id="btnDayTabS3D2" onclick="selectQuizDay('w3_d2')">
+            <button class="day-tab-btn active" id="btnDayTabReforcoPort" onclick="selectQuizDay('reforco_port')">
               <i class="fas fa-star" style="color: var(--accent);"></i>
-              <span>Semana 3 • Dia 2 (15/09 - Hoje): 40Q</span>
+              <span>⭐ Reforço Hoje: PT Dia 11 + 14 mesclados (40Q)</span>
+            </button>
+            <button class="day-tab-btn" id="btnDayTabS3D3" onclick="selectQuizDay('w3_d3')">
+              <i class="fas fa-calendar-check"></i>
+              <span>Semana 3 • Dia 3 (16/09): 30Q</span>
+            </button>
+            <button class="day-tab-btn" id="btnDayTabS3D2" onclick="selectQuizDay('w3_d2')">
+              <i class="fas fa-calendar-check"></i>
+              <span>Semana 3 • Dia 2 (15/09): 40Q</span>
             </button>
             <button class="day-tab-btn" id="btnDayTabS3D1" onclick="selectQuizDay('w3_d1')">
               <i class="fas fa-calendar-check"></i>
@@ -261,19 +274,19 @@
             </button>
             <button class="day-tab-btn" id="btnDayTabAll" onclick="selectQuizDay('all')">
               <i class="fas fa-layer-group"></i>
-              <span>Todas as Questões (460)</span>
+              <span>Todas as Questões (490)</span>
             </button>
           </div>
 
           <!-- Banner Informativo do Dia Selecionado -->
           <div class="day-info-banner" id="quizDayBanner">
             <div>
-              <h3 id="quizDayTitle">⭐ Semana 3 • Dia 2 — Terça-feira (15/09/2026 - HOJE): Extinção de Atos & Matemática/Medidas (40 Questões)</h3>
-              <p id="quizDayDesc">20 questões de Direito Administrativo (Extinção, Invalidação e Convalidação dos Atos: Anulação, Revogação, Cassação, Caducidade, Convalidação FO-CO, Vinculação e Discricionariedade) + 20 questões de Matemática & RLM (Sistema Monetário Brasileiro, Trocos, Juros e Descontos, Sistema de Medidas: comprimento, superfície, volume, capacidade, massa e tempo). Padrão Oficial Banca INBRASP.</p>
+              <h3 id="quizDayTitle">⭐ REFORÇO HOJE — Português Dia 11 + Dia 14 MESCLADOS (40 Questões)</h3>
+              <p id="quizDayDesc">20 questões de Sintaxe da Oração dia 11 (IDs 361-380: sujeito, transitividade, complemento x adjunto, SE, aposto, vocativo) + 20 questões de Período Composto dia 14 (IDs 401-420: coordenação, substantivas, adjetivas, adverbiais e SE). Mescladas para fazer agora. Padrão Oficial Banca INBRASP.</p>
             </div>
             <div style="display: flex; gap: 8px; flex-wrap: wrap;">
               <button class="btn btn-secondary" style="font-size: 0.8rem; padding: 6px 12px;" onclick="filterQuizCategory('all')">Ver Todas as 40Q</button>
-              <a href="provas/CADERNO_QUESTOES_SEMANA_03_DIA_02_15_09_2026.html" target="_blank" class="btn btn-primary" id="btnOpenDayBooklet" style="font-size: 0.8rem; padding: 6px 12px;">
+              <a href="provas/CADERNO_REFORCO_PORTUGUES_SINTAXE_PERIODO_40Q.html" target="_blank" class="btn btn-primary" id="btnOpenDayBooklet" style="font-size: 0.8rem; padding: 6px 12px;">
                 <i class="fas fa-print"></i> Abrir Caderno Hoje Impresso (PDF)
               </a>
               <a href="provas/CENTRAL_DE_PROVAS.html" target="_blank" class="btn btn-secondary" style="font-size: 0.8rem; padding: 6px 12px;">
@@ -333,6 +346,219 @@
 
           <!-- Lista das Questões -->
           <div class="quiz-questions-list" id="quizQuestionsContainer"></div>
+        </div>
+
+        <!-- TAB MACETES: PORTUGUÊS PARA ACERTAR TUDO (INBRASP) -->
+        <div class="tab-pane" id="tab-macetes">
+          <div class="section-header">
+            <div>
+              <h2>🪄 Macetes de Português — Acerte Qualquer Questão (INBRASP)</h2>
+              <p>Todos os conteúdos do edital 2.1 em 18 fichas: leia na ordem, grife o mnemônico e volte aqui antes de cada bloco de questões.</p>
+            </div>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;">
+              <button class="btn btn-primary" style="font-size:0.8rem;padding:6px 12px;" onclick="selectQuizDay('reforco_port')"><i class="fas fa-bolt"></i> Fazer Reforço 40Q agora</button>
+              <a href="provas/CADERNO_REFORCO_PORTUGUES_SINTAXE_PERIODO_40Q.html" target="_blank" class="btn btn-secondary" style="font-size:0.8rem;padding:6px 12px;"><i class="fas fa-print"></i> Caderno mesclado (PDF)</a>
+            </div>
+          </div>
+
+          <div style="background:#fffbeb;border:2px solid #f59e0b;border-radius:10px;padding:18px 20px;margin-bottom:22px;">
+            <h3 style="margin:0 0 10px 0;color:#92400e;font-size:1.05rem;">🚀 Comece aqui se você sabe ZERO de Português</h3>
+            <p style="margin:0 0 10px 0;font-size:0.9rem;"><strong>Ordem de leitura (30 min):</strong> ficha 0 → ficha 3 (haver/fazer) → ficha 2 (palavra SE) → ficha 4 (crase) → ficha 8 (conjunções). Só essas 5 valem ~6 das 10 questões da prova. Depois leia o resto na ordem.</p>
+            <p style="margin:0 0 10px 0;font-size:0.9rem;"><strong>Dicionário mínimo (decora isso primeiro):</strong> sujeito = quem pratica a ação; verbo = a ação ou estado; OD/OI = o complemento do verbo; preposição = palavrinha de ligação (a, de, com, por, para); conjunção = palavra que conecta orações (mas, porque, se, embora); pronome = palavra que substitui um nome (ele, que, se); crase = o à (soma de a + a); concordância = o verbo combina com o sujeito; regência = a preposição que o verbo exige; impessoal = verbo sem sujeito, que fica sempre no singular.</p>
+            <p style="margin:0;font-size:0.9rem;"><strong>Exemplo resolvido passo a passo (ID 242):</strong> “Havia muitas divergências, mas existiam pontos de consenso.” Passo 1: ache os verbos (havia / existiam). Passo 2: “haver” com sentido de “existir” é impessoal → fica no singular → “Havia” está certo. Passo 3: “existir” TEM sujeito (“pontos”) → vai para o plural → “existiam” está certo. Frase correta. Toda questão se resolve assim: achar o verbo, aplicar a regra da ficha.</p>
+          </div>
+
+          <div class="summary-cards-section">
+            <div class="summary-cards-grid">
+
+              <div class="summary-card">
+                <div class="summary-card-header"><div class="summary-card-icon orange"><i class="fas fa-list-check"></i></div><div><h4 class="summary-card-title">0. Método de leitura (vale 2Q)</h4><span class="summary-card-subtitle">Antes de qualquer conteúdo</span></div></div>
+                <div class="summary-card-body"><ul>
+                  <li><strong>3 passagens:</strong> 1ª marque o verbo de comando (assinale a CORRETA / INCORRETA / EXCETO); 2ª leia só o núcleo; 3ª teste cada alternativa pelo erro clássico.</li>
+                  <li><strong>Palavra armadilha:</strong> “sempre, nunca, apenas, somente, obrigatoriamente” → 90% das vezes a alternativa está errada.</li>
+                  <li><strong>INBRASP ama trocar:</strong> explicativa x restritiva, apassivador x indeterminação, preposição x artigo, causa x concessão.</li>
+                </ul><div class="mnemonic-box">💡 <strong>Regra de ouro:</strong> sublinhe o verbo da questão antes das alternativas. Quem lê alternativa antes do comando cai em pegadinha.</div></div>
+              </div>
+
+              <div class="summary-card">
+                <div class="summary-card-header"><div class="summary-card-icon blue"><i class="fas fa-sitemap"></i></div><div><h4 class="summary-card-title">1. Termos da oração (Dia 11)</h4><span class="summary-card-subtitle">Essenciais • Integrantes • Acessórios</span></div></div>
+                <div class="summary-card-body"><ul>
+                  <li><strong>Essenciais:</strong> sujeito + predicado (nunca separados por vírgula).</li>
+                  <li><strong>Tipos de sujeito (IDs 361-363):</strong> simples (1 núcleo), composto (2+), <strong>oculto/desinencial</strong> (está na desinência: “Votamo<u>s</u>” = nós), <strong>indeterminado</strong> (3ª plural sem referente + VTI/VI/VL com SE: “Aprovaram o plano” sem dizer quem), <strong>inexistente</strong> (oração sem sujeito: haver/fazer/tempo).</li>
+                  <li><strong>Tipos de predicado (ID 365):</strong> <strong>verbal</strong> (núcleo é verbo: “aprovou o projeto”), <strong>nominal</strong> (núcleo é predicativo + verbo de ligação ser/estar/ficar: “A sessão foi tumultuada”), <strong>verbo-nominal</strong> (2 núcleos: verbo + predicativo: “O plenário aprovou o projeto emendado”).</li>
+                  <li><strong>Agente da passiva (ID 368):</strong> quem pratica a ação na voz passiva, sempre com POR/PELO (“foi sancionado <em>pelo Prefeito</em>”). Só existe se houver passiva.</li>
+                  <li><strong>Integrantes:</strong> OD, OI, CN, agente da passiva, predicativo — completam o sentido do verbo/nome, sem eles a frase manca.</li>
+                  <li><strong>Acessórios:</strong> adjunto adnominal/adverbial, aposto, vocativo — só enfeitam, podem sair sem quebrar a frase.</li>
+                  <li><strong>Teste do CN x Adjunto:</strong> CN completa adjetivo/advérbio/verbo TD (tenho <em>necessidade DE apoio</em>); adjunto caracteriza substantivo concreto (<em>apoio DOS vereadores</em>).</li>
+                  <li><strong>Teste adjunto x predicativo (ID 378):</strong> adjunto = característica fixa do nome (“aluno <em>atento</em>”); predicativo = estado passageiro ligado ao verbo (“o aluno chegou <em>cansado</em>” — estava cansado naquele momento).</li>
+                </ul><div class="mnemonic-box">💡 <strong>Macete:</strong> pergunte ao verbo “o quê/quem?” → OD; “a quem/para quem?” → OI; “de quê?” após adjetivo → CN.</div><div class="alert-gold-box">⚠️ <strong>Pegadinha (IDs 366-367):</strong> após substantivo abstrato (necessidade, medo, construção) o termo DE + algo é CN; após concreto é adjunto.</div></div>
+              </div>
+
+              <div class="summary-card">
+                <div class="summary-card-header"><div class="summary-card-icon purple"><i class="fas fa-shuffle"></i></div><div><h4 class="summary-card-title">2. Transitividade + SE (Dia 11)</h4><span class="summary-card-subtitle">VTD/VTI/VTDI/VI + apassivador</span></div></div>
+                <div class="summary-card-body"><ul>
+                  <li><strong>VTD</strong> pede OD sem preposição (<em>aprovou o projeto</em>); <strong>VTI</strong> pede OI com preposição (<em>assistiu AO projeto</em> = presenciou); <strong>VTDI</strong> pede os dois (<em>entregou O parecer AO presidente</em>).</li>
+                  <li><strong>SE apassivador:</strong> VTD + SE → verbo concorda com o sujeito paciente (<em>Aprovaram-SE as diretrizes</em> = foram aprovadas). Teste: dá para virar passiva com “ser”.</li>
+                  <li><strong>SE índice de indeterminação:</strong> VTI/VI/VL + SE → verbo sempre no singular (<em>Precisa-SE de servidores; Vive-SE bem aqui</em>). Não vira passiva.</li>
+                  <li><strong>OD preposicionado (ID 373):</strong> VTD com preposição NÃO exigida pela regência, por ênfase/clareza (“amar <em>a</em> Deus”, “respeitar <em>aos</em> idosos”). Teste: tire a preposição — continua VTD.</li>
+                  <li><strong>Objeto pleonástico (ID 374):</strong> repetição enfática do objeto com pronome (“<em>Aos vereadores</em>, não <em>lhes</em> restou alternativa”). O pronome retoma o termo — conta como objeto.</li>
+                </ul><div class="mnemonic-box">💡 <strong>Macete SE:</strong> troque por “foram + particípio”. Deu certo → apassivador e concorda. Não deu → índice, singular.</div><div class="alert-gold-box">⚠️ <strong>Seus erros (244, 372):</strong> “Aprovaram-se” plural porque “diretrizes” é sujeito; “Precisa-se” singular porque precisar é VTI.</div></div>
+              </div>
+
+              <div class="summary-card">
+                <div class="summary-card-header"><div class="summary-card-icon green"><i class="fas fa-check-double"></i></div><div><h4 class="summary-card-title">3. Concordância verbal (cai TODA prova)</h4><span class="summary-card-subtitle">Haver • Fazer • Existir • SE</span></div></div>
+                <div class="summary-card-body"><ul>
+                  <li><strong>HAVER = existir → impessoal, singular:</strong> <em>Havia muitas divergências</em> (divergências = OD, não sujeito). <strong>EXISTIR concorda:</strong> <em>Existiam pontos de consenso</em>.</li>
+                  <li><strong>FAZER = tempo/clima → singular:</strong> <em>Faz dez anos; Faz calor em Meruoca</em>.</li>
+                  <li><strong>Verbo + SE apassivador concorda</strong> (<em>Vendem-SE casas</em>); <strong>com índice fica singular</strong>.</li>
+                  <li><strong>Sujeito composto antes do verbo → plural</strong> (<em>Presidente e relator assinaram</em>); depois do verbo pode singularizar na ênfase.</li>
+                </ul><div class="mnemonic-box">💡 <strong>Macete HAVER:</strong> substitua por EXISTIR. Se existir for para o plural, o haver fica no singular mesmo assim.</div><div class="alert-gold-box">⚠️ <strong>Seus erros (242):</strong> “Havia muitas divergências, mas existiam pontos” — um singular, outro plural na mesma frase.</div></div>
+              </div>
+
+              <div class="summary-card">
+                <div class="summary-card-header"><div class="summary-card-icon blue"><i class="fas fa-spell-check"></i></div><div><h4 class="summary-card-title">4. Regência + Crase (cai TODA prova)</h4><span class="summary-card-subtitle">Assistir • Visar • Obedecer + à</span></div></div>
+                <div class="summary-card-body"><ul>
+                  <li><strong>ASSISTIR = presenciar → VTI (a):</strong> <em>assistiu À sessão</em>; = ajudar → VTD (<em>assistiu o enfermo</em>); = morar → VI + em.</li>
+                  <li><strong>VISAR = almejar → VTI:</strong> <em>visa AO cargo</em>; = mirar/carimbar → VTD (<em>visou o cheque</em>).</li>
+                  <li><strong>Crase = preposição A + artigo A.</strong> Teste do AO: troque por palavra masculina — deu AO → tem crase (<em>à Câmara / ao Senado</em>).</li>
+                  <li><strong>Regência nominal (cai junto):</strong> o nome também exige preposição — <em>obediente A, favorável A, necessário A/PARA, convicção DE, medo DE</em>. Se a questão perguntar a função do termo DE + oração após nome, é completiva nominal (ver ficha 7).</li>
+                  <li><strong>Proibida:</strong> antes de verbo, masculino, `a uma`, `à ele/esta`, depois de preposição repetida. <strong>Facultativa:</strong> até a/à, a/à Maria, a/à sua.</li>
+                </ul><div class="alert-gold-box">⭐ <strong>Regra de ouro:</strong> “começou A redigir” (verbo, sem crase) x “foi À sessão” (lugar feminino, com crase).</div></div>
+              </div>
+
+              <div class="summary-card">
+                <div class="summary-card-header"><div class="summary-card-icon purple"><i class="fas fa-arrow-down-up-across-line"></i></div><div><h4 class="summary-card-title">5. Colocação + Pontuação</h4><span class="summary-card-subtitle">Próclise • Mesóclise • Vírgula</span></div></div>
+                <div class="summary-card-body"><ul>
+                  <li><strong>Próclise (antes):</strong> palavra atrativa chama o pronome — não, nunca, quem, que, se, como, todos, advérbios (<em>não SE aprovou</em>).</li>
+                  <li><strong>Mesóclise (no meio):</strong> só com futuro do presente/pretérito sem atrativo (<em>aprovar-SE-á; votar-SE-ia</em>).</li>
+                  <li><strong>Vírgula NUNCA separa:</strong> sujeito-verbo, verbo-objeto, nome-complemento. <strong>SEMPRE isola:</strong> vocativo, aposto explicativo, adjunto deslocado, oração adjetiva explicativa.</li>
+                  <li><strong>Explicativa (com vírgulas) = generaliza;</strong> restritiva (sem vírgulas) = restringe. A banca troca o sentido por causa da vírgula.</li>
+                  <li><strong>Aposto, 4 tipos (IDs 370-371, 379):</strong> <strong>explicativo</strong> (entre vírgulas: “Meruoca, <em>cidade serrana</em>, …”), <strong>especificativo</strong> (SEM vírgula, especifica nome: “o Município <em>de Meruoca</em>”), <strong>resumitivo</strong> (resume tudo: “…moções de pesar, <em>NADA</em> impediu”), <strong>enumerativo</strong> (lista).</li>
+                  <li><strong>Outros sinais:</strong> dois-pontos (explicação/citação), ponto e vírgula (itens longos de lista), aspas (citação/termo técnico), travessão (fala), parênteses (intercalação que pode sair).</li>
+                </ul><div class="mnemonic-box">💡 <strong>Macete vírgula:</strong> leia sem o trecho entre vírgulas — se a frase continua perfeita, o uso está certo.</div></div>
+              </div>
+
+              <div class="summary-card">
+                <div class="summary-card-header"><div class="summary-card-icon green"><i class="fas fa-link"></i></div><div><h4 class="summary-card-title">6. Coordenação (Dia 14)</h4><span class="summary-card-subtitle">Aditiva • Adversativa • Conclusiva…</span></div></div>
+                <div class="summary-card-body"><ul>
+                  <li><strong>Aditiva:</strong> e, nem (= e não). <strong>Adversativa:</strong> mas, porém, todavia, contudo (= oposição, ideia contrária).</li>
+                  <li><strong>Explicativa:</strong> porque, porquanto e POIS antes do verbo (“Faltou, <em>pois estava</em> doente”). <strong>Conclusiva:</strong> logo, portanto, por isso (“Estava doente, <em>logo</em> faltou”). O POIS conclusivo é raro e aparece depois do verbo, entre vírgulas (“Estudou muito; será, <em>pois</em>, aprovado”).</li>
+                  <li><strong>Alternativa:</strong> ou…ou, ora…ora (alternância).</li>
+                </ul><div class="mnemonic-box">💡 <strong>Macete POIS (ID 403):</strong> olhe onde está o verbo depois do POIS. “Faltou, pois ESTAVA doente” → pois + verbo na frente = explicação. Na dúvida entre explicação e conclusão, a banca usa PORQUE para explicar e LOGO/PORTANTO para concluir — o POIS conclusivo quase não cai.</div></div>
+              </div>
+
+              <div class="summary-card">
+                <div class="summary-card-header"><div class="summary-card-icon blue"><i class="fas fa-cubes"></i></div><div><h4 class="summary-card-title">7. Substantivas + Adjetivas (Dia 14)</h4><span class="summary-card-subtitle">QUE é o quê? + explicativa x restritiva</span></div></div>
+                <div class="summary-card-body"><ul>
+                  <li><strong>Substantiva = vale por substantivo</strong> (subjetiva, OD, OI, CN, predicativa, apositiva). Teste: troque por ISSO.</li>
+                  <li><strong>QUE pronome relativo:</strong> retoma substantivo anterior e pode trocar por O QUAL (<em>o projeto QUE votei = o qual votei</em>). <strong>QUE conjunção integrante:</strong> liga verbo a oração, troca por ISSO (<em>quero QUE vote = quero ISSO</em>).</li>
+                  <li><strong>Completiva nominal x OI (ID 406):</strong> antes do QUE tem NOME (substantivo/adjetivo: “convicção DE QUE…”) → completiva nominal; tem VERBO VTI (“necessitava DE QUE…”) → OI. Pergunte: o DE pertence ao nome ou ao verbo?</li>
+                  <li><strong>SE integrante (ID 419):</strong> introduz substantiva, troca por ISSO (“não se sabe <em>se</em> haverá quórum” = não se sabe ISSO). <strong>SE condicional:</strong> introduz adverbial com ideia de condição (“<em>se</em> chover, adia”).</li>
+                  <li><strong>Adjetiva explicativa:</strong> entre vírgulas, generaliza (<em>Os vereadores, que são eleitos, fiscalizam</em> = todos). <strong>Restritiva:</strong> sem vírgula, restringe (<em>Os vereadores que faltaram serão punidos</em> = só os que faltaram).</li>
+                </ul><div class="alert-gold-box">⚠️ <strong>Pegadinha (ID 409):</strong> a banca tira/põe a vírgula e pergunta se o sentido mudou. Mudou SEMPRE.</div></div>
+              </div>
+
+              <div class="summary-card">
+                <div class="summary-card-header"><div class="summary-card-icon orange"><i class="fas fa-diagram-project"></i></div><div><h4 class="summary-card-title">8. Adverbiais — mapa completo (Dia 14)</h4><span class="summary-card-subtitle">As 9 + conectivos que a banca cobra</span></div></div>
+                <div class="summary-card-body"><ul>
+                  <li><strong>Se só decorar 4, decore estes:</strong> causa (PORQUE), condição (SE/CASO), concessão (EMBORA = mas) e conclusão (LOGO). Eles respondem metade das questões de conectivo.</li>
+                  <li><strong>Causa:</strong> porque, como (= já que, no início), porquanto. <strong>Consequência:</strong> tanto…que, tão…que.</li>
+                  <li><strong>Condição:</strong> se, caso (= se). <strong>Concessão:</strong> embora, conquanto, mesmo que (= mas). <strong>Finalidade:</strong> para que, a fim de que.</li>
+                  <li><strong>Conformativa:</strong> conforme, como (= de acordo). <strong>Proporcional:</strong> à medida que, quanto mais…mais. <strong>Temporal:</strong> quando, assim que.</li>
+                  <li><strong>COMO é polissêmico (ID 412):</strong> no início da frase = causa (<em>Como chovia, adiei</em>); no meio comparando = conformidade/comparação.</li>
+                  <li><strong>Reduzidas (ID 417):</strong> sem conectivo, verbo no infinitivo/gerúndio/particípio (“<em>Terminada</em> a leitura, o presidente abriu…” = particípio). Desdobre (“Quando terminou…”) para achar o valor: aqui, temporal.</li>
+                  <li><strong>Período misto (ID 420):</strong> tem coordenação E subordinação (“concluiu, <em>MAS</em> advertiu <em>QUE</em>…”). Ache 1º a coordenada (MAS/E), depois a subordinada (QUE).</li>
+                </ul><div class="mnemonic-box">💡 <strong>Macete CASO (prova real):</strong> “caso a Europa permaneça” = SE permanecer → condição. CONQUANTO nunca é conclusão, é concessão (= embora).</div></div>
+              </div>
+
+              <div class="summary-card">
+                <div class="summary-card-header"><div class="summary-card-icon purple"><i class="fas fa-rotate"></i></div><div><h4 class="summary-card-title">9. Verbos que derrubam (seus erros)</h4><span class="summary-card-subtitle">Ver x Vir • Vozes • Correlação</span></div></div>
+                <div class="summary-card-body"><ul>
+                  <li><strong>Futuro do subjuntivo:</strong> VER → <em>quando eu VIR</em>; VIR → <em>quando eu VIER</em>. “Se ele ver” está ERRADO.</li>
+                  <li><strong>Voz passiva sintética:</strong> VTD + SE, concorda (<em>Aprovaram-se as atas</em>). <strong>Reflexiva:</strong> sujeito faz e sofre (<em>feriu-se</em>).</li>
+                  <li><strong>Correlação:</strong> SE + imperfeito do subjuntivo → futuro do pretérito (<em>Se apresentasse, votaria</em>); SE + futuro do subjuntivo → futuro do presente (<em>Se apresentar, votará</em>).</li>
+                  <li><strong>Infinitivo flexiona</strong> com sujeito próprio diferente (<em>para os vereadores VOTAREM</em>); em locução não (<em>devem votar</em>).</li>
+                </ul><div class="alert-gold-box">⚠️ <strong>Seus erros (246,250):</strong> “se apresentasse… votaria” (não “votará”); “se vir” (não “se ver”).</div></div>
+              </div>
+
+              <div class="summary-card">
+                <div class="summary-card-header"><div class="summary-card-icon green"><i class="fas fa-font"></i></div><div><h4 class="summary-card-title">10. Acentuação + Ortografia</h4><span class="summary-card-subtitle">Proparoxítona • Hiato • Mal/Mau • Porquês</span></div></div>
+                <div class="summary-card-body"><ul>
+                  <li><strong>Proparoxítona TODA acentuada:</strong> <em>política, câmara, técnico, déficit</em> (prova real 2026).</li>
+                  <li><strong>Hiato I/U sozinho na sílaba:</strong> <em>sa-Í-da, ba-Ú</em>; com NH ou consoante junto não (<em>ra-i-nha, ju-iz</em>).</li>
+                  <li><strong>MAL (bem) x MAU (bom);</strong> PORQUE explica, POR QUE pergunta, PORQUÊ substantivo (o porquê), POR QUÊ fim de frase.</li>
+                  <li><strong>Fonologia:</strong> dígrafo 2 letras 1 som (lh, nh, ch, rr, ss); encontro consonantal mantém sons.</li>
+                </ul><div class="mnemonic-box">💡 <strong>Macete hiato:</strong> soletre cantando — se o I/U ficar sozinho no pedacinho, acentua.</div></div>
+              </div>
+
+              <div class="summary-card">
+                <div class="summary-card-header"><div class="summary-card-icon orange"><i class="fas fa-masks-theater"></i></div><div><h4 class="summary-card-title">11. Semântica + Figuras + Oficial</h4><span class="summary-card-subtitle">Sinônimos • Denotação • Ofício</span></div></div>
+                <div class="summary-card-body"><ul>
+                  <li><strong>Parônimos clássicos:</strong> ratificar (confirmar) x retificar (corrigir); comprimento x cumprimento; deferir x diferir.</li>
+                  <li><strong>Denotação</strong> = literal; <strong>conotação</strong> = figurado. Metáfora compara sem conectivo; metonímia troca (autor pela obra, parte pelo todo).</li>
+                  <li><strong>Ofício:</strong> fecho <em>Respeitosamente</em> (superior) / <em>Atenciosamente</em> (mesmo nível); pronome de tratamento sempre 3ª pessoa (<em>Vossa Excelência… vosso? NÃO — seu</em>).</li>
+                  <li><strong>Reescrita:</strong> mantenha tempo, regência e sentido; “cujo” nunca vem com artigo (<em>cujo projeto</em>, nunca <em>cujo o projeto</em>).</li>
+                </ul>                <div class="alert-gold-box">⭐ <strong>Véspera:</strong> releia só os quadros amarelos desta aba + seus erros de Português. Não abra conteúdo novo.</div></div>
+              </div>
+
+              <div class="summary-card">
+                <div class="summary-card-header"><div class="summary-card-icon blue"><i class="fas fa-eye"></i></div><div><h4 class="summary-card-title">12. Interpretação (edital: pressuposto e inferência)</h4><span class="summary-card-subtitle">O que está dito x o que se conclui</span></div></div>
+                <div class="summary-card-body"><ul>
+                  <li><strong>Pressuposto:</strong> informação dada como certa no texto (“o prefeito <em>voltou</em> a exonerar” pressupõe que já exonerou antes). <strong>Inferência:</strong> conclusão lógica autorizada pelo texto. <strong>Subentendido:</strong> insinuação (ironia, indireta).</li>
+                  <li><strong>Ambiguidade:</strong> duplo sentido estrutural (“o vereador viu o assessor <em>com o binóculo</em>” — quem estava com ele?). <strong>Ironia:</strong> diz o contrário do que pensa. <strong>Polissemia:</strong> mesma palavra, vários sentidos (“manga” fruta x peça).</li>
+                  <li><strong>Intertextualidade:</strong> diálogo entre textos — citação, epígrafe, paródia (imita debochando), paráfrase (reescreve fiel).</li>
+                  <li><strong>Linguagem não-verbal/mista:</strong> charge, cartaz, anúncio com imagem + slogan = texto multimodal (lê-se imagem E palavra).</li>
+                </ul><div class="mnemonic-box">💡 <strong>Macete de comando:</strong> “segundo o texto” = só o escrito, sem viajar; “infere-se/depreende-se” = conclusão lógica permitida; “pressupõe-se” = dado escondido como certo.</div><div class="alert-gold-box">⚠️ <strong>Pegadinha:</strong> alternativa que repete palavra do texto mas inverte o sentido está errada — confira o verbo (não, nunca, deixar de).</div></div>
+              </div>
+
+              <div class="summary-card">
+                <div class="summary-card-header"><div class="summary-card-icon purple"><i class="fas fa-book-open"></i></div><div><h4 class="summary-card-title">13. Tipos x Gêneros (edital: tipologia completa)</h4><span class="summary-card-subtitle">5 tipos • gêneros infinitos</span></div></div>
+                <div class="summary-card-body"><ul>
+                  <li><strong>Narração:</strong> fatos no tempo (personagem, narrador, espaço). <strong>Descrição:</strong> retrato estático (adjetivos). <strong>Exposição:</strong> explica neutro (“inflação é…”). <strong>Argumentação:</strong> tese + argumentos para convencer. <strong>Injunção:</strong> instrui com imperativo (receita, manual); <strong>prescrição:</strong> ordem obrigatória (lei, placa “60 km/h”).</li>
+                  <li><strong>Editorial</strong> = voz institucional do jornal, SEM assinatura. <strong>Artigo de opinião</strong> = assinado, tese do autor. <strong>Crônica</strong> = cotidiano leve/reflexivo. <strong>Ofício</strong> = comunicação oficial externa entre autoridades. <strong>Ata</strong> = registro fiel de reunião. <strong>Anúncio</strong> = multimodal persuasivo.</li>
+                </ul><div class="mnemonic-box">💡 <strong>Macete:</strong> TIPO = estrutura, são só 5. GÊNERO = uso social, são infinitos. Banca pergunta um querendo o outro.</div><div class="alert-gold-box">⚠️ <strong>Seus erros antigos (20, 24):</strong> sem assinatura + institucional = EDITORIAL; divulgação científica = traduzir ciência para o leigo.</div></div>
+              </div>
+
+              <div class="summary-card">
+                <div class="summary-card-header"><div class="summary-card-icon green"><i class="fas fa-link"></i></div><div><h4 class="summary-card-title">14. Coesão, coerência e progressão</h4><span class="summary-card-subtitle">Amarra do texto + anáfora x catáfora</span></div></div>
+                <div class="summary-card-body"><ul>
+                  <li><strong>Coesão:</strong> amarra gramatical — conectivos (ver ficha 8), pronomes relativos, sinônimos, elipse (ocultação). Sem coesão o texto “pula”.</li>
+                  <li><strong>Anáfora</strong> retoma o que veio ANTES (“isso”, “ele”); <strong>catáfora</strong> anuncia o que vem DEPOIS (“isto: …”, “o seguinte”).</li>
+                  <li><strong>Coerência + progressão temática:</strong> cada parágrafo avança a ideia (tema → rema) sem contradição nem circular. Parágrafo-modelo: tópico frasal + desenvolvimento + fecho (vale para produção textual).</li>
+                </ul><div class="mnemonic-box">💡 <strong>Macete IS_:</strong> ISso/ISto com S = perto de quem fala no texto? Não — ISso retoma (atrás), ISto anuncia (frente). Pense: “iSSo já paSSou, iSTo vem aí”.</div></div>
+              </div>
+
+              <div class="summary-card">
+                <div class="summary-card-header"><div class="summary-card-icon orange"><i class="fas fa-puzzle-piece"></i></div><div><h4 class="summary-card-title">15. Formação de palavras (Dia 07 — IDs 201-220)</h4><span class="summary-card-subtitle">Derivação • Composição • Estrutura</span></div></div>
+                <div class="summary-card-body"><ul>
+                  <li><strong>Parassintética:</strong> prefixo + sufixo JUNTOS inseparáveis (<em>a-noit-ecer</em>: sem “a” nem “ecer” a palavra morre). <strong>Regressiva/deverbal:</strong> verbo vira substantivo encurtando (<em>debater → o debate</em>). <strong>Imprópria:</strong> muda de classe sem mudar forma (<em>o SIM dos vereadores</em>).</li>
+                  <li><strong>Justaposição</strong> (mantém sons: <em>passatempo, girassol</em>) x <strong>aglutinação</strong> (funde/perde som: <em>planalto, vinagre, pernalta</em>). <strong>Hibridismo</strong> (línguas misturadas: <em>tele-visão</em>). <strong>Onomatopeia</strong> (imita som: <em>tic-tac</em>).</li>
+                  <li><strong>Estrutura:</strong> radical (parte que carrega o sentido) + vogal temática (a vogal -a-, -e- ou -i- que indica a conjugação) = TEMA (“canta-”); desinência nominal = gênero/número (“menin-a-s”); verbal = modo-temporal (“-va” em “estudava”) + número-pessoal (“-mos”).</li>
+                  <li><strong>Acrônimo</strong> lê-se como palavra (<em>Embrapa, Mercosul</em>); <strong>sigla pura</strong> soletra-se (<em>CPF, IPTU</em>).</li>
+                </ul><div class="alert-gold-box">⚠️ <strong>Seus erros (208, 214, 216, 219):</strong> radical + vogal temática = TEMA; “Lei → legalizar” (primitiva → derivada); “desalinhamento” = des- + alinh- + -a- + -mento.</div></div>
+              </div>
+
+              <div class="summary-card">
+                <div class="summary-card-header"><div class="summary-card-icon blue"><i class="fas fa-tags"></i></div><div><h4 class="summary-card-title">16. Classes + Flexão (morfologia do edital)</h4><span class="summary-card-subtitle">10 classes • variáveis x invariáveis</span></div></div>
+                <div class="summary-card-body"><ul>
+                  <li><strong>Variáveis</strong> (flexionam): substantivo, artigo, adjetivo, numeral, pronome, verbo. <strong>Invariáveis:</strong> advérbio, preposição, conjunção, interjeição.</li>
+                  <li><strong>Armadilhas campeãs:</strong> A artigo x preposição (ficha 4); QUE relativo x integrante (ficha 7); SE mapa completo (fichas 2 e 7); COMO polissêmico (ficha 8); adjetivo caracterizador x predicativo (fichas 1 e 7).</li>
+                  <li><strong>Flexão nominal:</strong> gênero (comum de dois: <em>o/a estudante</em>; sobrecomum: <em>a vítima</em>; epiceno: <em>o jacaré macho</em>), número, grau (analítico <em>muito alto</em> x sintético <em>altíssimo</em>).</li>
+                  <li><strong>Flexão verbal:</strong> 3 conjugações (-ar/-er/-ir); modos indicativo (certeza), subjuntivo (dúvida), imperativo (ordem); vozes e correlação na ficha 9.</li>
+                </ul><div class="mnemonic-box">💡 <strong>Macete classe:</strong> pergunte o PAPEL na frase, não decore lista — a banca testa a palavra no contexto (prova real: “a contribuir” preposição x “a meta” artigo).</div></div>
+              </div>
+
+              <div class="summary-card">
+                <div class="summary-card-header"><div class="summary-card-icon purple"><i class="fas fa-ear-listen"></i></div><div><h4 class="summary-card-title">17. Fonologia + Reescrita + Variação</h4><span class="summary-card-subtitle">Sons • divisão • paralelismo • formalidade</span></div></div>
+                <div class="summary-card-body"><ul>
+                  <li><strong>Fonema x letra:</strong> dígrafo = 2 letras 1 som (<em>ch, lh, nh, rr, ss, sc, gu/qu</em>); encontro consonantal mantém os sons (<em>pneu</em>). <strong>Divisão:</strong> separa rr/ss/sc (<em>car-ro, ex-ce-ção</em>), prefixo com consoante (<em>sub-linhar</em>), NÃO separa ditongo nem início com encontro (<em>pneu-má-ti-co</em>).</li>
+                  <li><strong>Reescrita (substituição/deslocamento/paralelismo):</strong> substitua por pronome/sinônimo sem mudar sentido; ao deslocar, ajuste a pontuação; <strong>paralelismo:</strong> estruturas simétricas (“não só aprova <em>como</em> fiscaliza”; infinitivo com infinitivo). “Cujo” nunca leva artigo (<em>cujo projeto</em>).</li>
+                  <li><strong>Variação e adequação:</strong> formal na prova/ofício, informal na conversa; tratamento sempre 3ª pessoa (<em>Vossa Excelência… seu</em>); gíria e jargão só no contexto certo.</li>
+                </ul><div class="alert-gold-box">⭐ <strong>Fecho:</strong> com as 18 fichas + seus erros do Caderno, qualquer questão de Português cai em uma ficha. Na dúvida, ache a palavra de comando (ficha 0) e abra a ficha do assunto.</div></div>
+              </div>
+
+            </div>
+          </div>
         </div>
 
         <!-- TAB 3: FLASHCARDS & FICHAS DE ESTUDO (DETALHADO) -->

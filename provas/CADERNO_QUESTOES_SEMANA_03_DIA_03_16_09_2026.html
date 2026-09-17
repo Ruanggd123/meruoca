@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>CADERNO OFICIAL DE QUESTÕES — SEMANA 3 / DIA 3 (16/09/2026) | INBRASP</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @page { size: A4; margin: 15mm 18mm; }
+    :root { --primary: #1e3a8a; --primary-dark: #0f172a; --accent: #dc2626; --border: #cbd5e1; --bg: #ffffff; --text: #0f172a; --text-muted: #475569; }
+    body { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif; color: var(--text); background: #f8fafc; margin: 0; padding: 24px; font-size: 10.5pt; line-height: 1.45; }
+    .container { max-width: 960px; margin: 0 auto; background: white; padding: 36px 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); }
+    .header-box { border: 2px solid var(--primary); border-radius: 8px; padding: 16px 20px; margin-bottom: 24px; display: flex; justify-content: space-between; align-items: center; background: #f8fafc; }
+    .header-titles h1 { margin: 0 0 4px 0; font-size: 1.35rem; color: var(--primary); font-weight: 800; text-transform: uppercase; }
+    .header-titles h2 { margin: 0 0 4px 0; font-size: 1rem; color: var(--text); font-weight: 700; }
+    .header-titles p { margin: 0; font-size: 0.85rem; color: var(--text-muted); }
+    .badge-banca { background: #fee2e2; color: #991b1b; font-weight: 800; padding: 6px 14px; border-radius: 6px; font-size: 0.85rem; text-transform: uppercase; border: 1px solid #fecaca; }
+    .no-print { display: flex; gap: 12px; margin-bottom: 24px; }
+    .btn-action { background: var(--primary); color: white; border: none; padding: 10px 18px; border-radius: 6px; font-weight: 700; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; font-size: 0.9rem; }
+    .btn-action:hover { background: #1d4ed8; }
+    .section-title { background: #1e3a8a; color: white; padding: 8px 14px; border-radius: 6px; font-size: 1.05rem; font-weight: 800; margin: 28px 0 16px 0; display: flex; justify-content: space-between; align-items: center; }
+    .section-title.informatica { background: #0284c7; }
+    .question-block { border: 1px solid var(--border); border-radius: 8px; padding: 16px 18px; margin-bottom: 16px; background: #ffffff; page-break-inside: avoid; }
+    .question-meta { display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 0.8rem; }
+    .q-badge { font-weight: 800; color: var(--primary); }
+    .q-topic { color: var(--text-muted); font-weight: 600; }
+    .question-text { font-weight: 700; color: var(--primary-dark); margin-bottom: 12px; line-height: 1.45; white-space: pre-line; }
+    .options-list { list-style: none; padding: 0; margin: 0; }
+    .option-item { display: flex; align-items: flex-start; gap: 10px; padding: 6px 8px; margin-bottom: 4px; border-radius: 4px; font-size: 0.92rem; }
+    .option-letter { width: 24px; height: 24px; border: 1.5px solid #94a3b8; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.8rem; color: #334155; flex-shrink: 0; }
+    .folha-respostas-box { border: 2px dashed var(--primary); border-radius: 8px; padding: 20px; margin: 30px 0; background: #f8fafc; page-break-before: always; }
+    .folha-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; font-size: 0.82rem; margin-top: 14px; }
+    .folha-row { display: flex; align-items: center; gap: 6px; padding: 4px 6px; background: white; border: 1px solid var(--border); border-radius: 4px; }
+    .folha-num { width: 28px; font-weight: 800; color: var(--primary); }
+    .folha-circle { width: 16px; height: 16px; border: 1px solid #64748b; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 0.65rem; font-weight: 700; color: #475569; }
+    .gabarito-section { page-break-before: always; margin-top: 30px; }
+    .gabarito-item { background: #f1f5f9; border-left: 4px solid var(--primary); padding: 10px 14px; margin-bottom: 10px; border-radius: 0 6px 6px 0; font-size: 0.88rem; }
+    .gabarito-letra { background: #16a34a; color: white; padding: 2px 8px; border-radius: 4px; font-weight: 800; margin-right: 6px; }
+    @media print { body { background: white; padding: 0; } .container { padding: 0; box-shadow: none; max-width: 100%; } .no-print { display: none !important; } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="no-print">
+      <button class="btn-action" onclick="window.print()"><i class="fas fa-print"></i> Imprimir Caderno (PDF)</button>
+      <a href="../index.html" class="btn-action" style="background: #e2e8f0; color: #334155;"><i class="fas fa-arrow-left"></i> Voltar ao Gerenciador de Estudos</a>
+    </div>
+    <div class="header-box">
+      <div class="header-titles">
+        <span style="font-size: 0.75rem; font-weight: 800; text-transform: uppercase; color: #dc2626;">Caderno de Treino Diário Oficial • Semana 3</span>
+        <h1>Câmara Municipal de Meruoca / CE</h1>
+        <h2>Concurso Público nº 001/2026 — Cargo: Técnico Legislativo</h2>
+        <p><strong>Semana 3 • Dia 3 (16/09/2026):</strong> Lei 14.133/2021 Licitações Parte 1 (20Q) • Informática Redes & Internet (10Q)</p>
+      </div>
+      <div style="text-align: right;">
+        <div class="badge-banca">Banca INBRASP</div>
+        <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 6px;">30 Questões (A, B, C, D)</div>
+      </div>
+    </div>
+    <div class="section-title">
+      <span><i class="fas fa-gavel"></i> PARTE 1: LEI 14.133/2021 — LICITAÇÕES (QUESTÕES 461 A 480)</span>
+      <span style="font-size: 0.8rem; font-weight: normal;">Princípios, Agentes, Planejamento, Modalidades e Critérios</span>
+    </div>
+
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 461</span>
+        <span class="q-topic">Lei 14.133/2021 • Principios da Licitacao (Art. 5º): Rol Expresso</span>
+      </div>
+      <div class="question-text">Conforme o Art. 5º da Lei nº 14.133/2021 (Nova Lei de Licitações e Contratos), na aplicação da lei serão observados, dentre outros, os princípios da:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Legalidade, impessoalidade, moralidade, publicidade, eficiência, interesse público, probidade administrativa, igualdade, planejamento, transparência e segregação de funções.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Legalidade, supremacia do interesse privado, moralidade seletiva, sigilo absoluto, eficiência presumida e concentração de funções.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Publicidade restrita, pessoalidade, informalidade, julgamento subjetivo e sigilo das propostas após a adjudicação.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Vinculação parcial ao edital, julgamento discricionário livre e dispensa de planejamento formal.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 462</span>
+        <span class="q-topic">Lei 14.133/2021 • Principio do Planejamento e Segregacao de Funcoes (Art. 5º)</span>
+      </div>
+      <div class="question-text">A Lei nº 14.133/2021 elevou ao status de princípio expresso da licitação o planejamento e a segregação de funções. Sobre esses princípios, assinale a opção correta no padrão INBRASP:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>O planejamento é mera recomendação sem força normativa, podendo o gestor licitar sem qualquer estudo prévio.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>O planejamento impõe estudo técnico preliminar e termo de referência antes de licitar; a segregação de funções veda que o mesmo agente acumule autorização, execução e fiscalização do contrato.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>A segregação de funções autoriza que o pregoeiro adjudique, homologue, fiscalize e receba o objeto sozinho para dar celeridade.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>O planejamento aplica-se apenas a obras de grande vulto acima de R$ 100 milhões, sendo dispensado nas demais contratações.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 463</span>
+        <span class="q-topic">Lei 14.133/2021 • Principios: Vinculacao ao Edital e Julgamento Objetivo</span>
+      </div>
+      <div class="question-text">Quanto aos princípios da vinculação ao edital e do julgamento objetivo na Lei nº 14.133/2021, é correto afirmar que:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>A Administração pode alterar as regras do edital durante a sessão sem divulgar, desde que beneficie a proposta mais barata.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>O julgamento objetivo permite ao pregoeiro escolher a proposta por simpatia pessoal, desde que motive oralmente.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>A Administração está estritamente vinculada às regras do edital, e o julgamento das propostas deve ocorrer por critérios objetivos previamente definidos, vedado o subjetivismo.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>A vinculação ao edital obriga apenas os licitantes, não se aplicando à Administração Pública.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 464</span>
+        <span class="q-topic">Lei 14.133/2021 • Principio da Publicidade e Transparencia vs Sigilo do Orcamento</span>
+      </div>
+      <div class="question-text">A Lei nº 14.133/2021 consagra a publicidade e a transparência, mas admite o orçamento sigiloso. Sobre o tema, assinale a alternativa correta:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Todo orçamento da licitação é obrigatoriamente sigiloso até a execução total do contrato, vedado qualquer acesso.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>A publicidade foi abolida na Nova Lei, sendo toda licitação sigilosa para garantir a competitividade.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>O orçamento sigiloso impede para sempre a divulgação dos quantitativos e do valor estimado, mesmo após a homologação.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>A regra é a publicidade dos atos; o sigilo do orçamento estimado é exceção facultativa, que deve ser justificado e será tornado público após o julgamento das propostas, sem prejuízo da divulgação do detalhamento dos quantitativos.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 465</span>
+        <span class="q-topic">Lei 14.133/2021 • Agente de Contratacao e Pregoeiro (Art. 8º)</span>
+      </div>
+      <div class="question-text">Nos termos do Art. 8º da Lei nº 14.133/2021, a condução da licitação na modalidade pregão e nas demais caberá, respectivamente, ao:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Pregoeiro (no pregão) e ao agente de contratação (nas demais modalidades), ambos designados entre servidores efetivos ou empregados públicos do quadro permanente.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Prefeito municipal em pessoa, vedada qualquer delegação a servidores.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Leiloeiro oficial contratado em todos os casos, inclusive no pregão eletrônico.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Vereador presidente da comissão de finanças, por ser autoridade política.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 466</span>
+        <span class="q-topic">Lei 14.133/2021 • Comissao de Contratacao (Art. 8º, §2º)</span>
+      </div>
+      <div class="question-text">A comissão de contratação prevista na Lei nº 14.133/2021:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>É formada por 2 vereadores e 1 prefeito, atuando em todas as dispensas de pequeno valor.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>É formada por no mínimo 3 membros, sendo a maioria servidores efetivos, e atua em substituição ao agente de contratação nas licitações de bens ou serviços especiais.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Substitui o Tribunal de Contas no julgamento das contas do Prefeito.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>É obrigatória em todo pregão eletrônico para bens comuns do dia a dia.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 467</span>
+        <span class="q-topic">Lei 14.133/2021 • Gestor e Fiscal do Contrato (Arts. 7º e 117)</span>
+      </div>
+      <div class="question-text">Sobre a gestão e fiscalização dos contratos na Lei nº 14.133/2021, assinale a opção correta:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>A fiscalização do contrato é facultativa e pode ser dispensada verbalmente pelo prefeito.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>O contratado fiscaliza a si próprio, sendo vedada a designação de fiscal pela Câmara Municipal.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>A execução do contrato deve ser acompanhada e fiscalizada por representante da Administração (fiscal), permitida a contratação de terceiros para subsidiá-lo, sem que isso exclua a responsabilidade do fiscal.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>A contratação de terceiros para auxiliar a fiscalização transfere totalmente a responsabilidade ao particular, isentando o servidor.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 468</span>
+        <span class="q-topic">Lei 14.133/2021 • Requisitos do Agente Publico: Capacitacao e Vedacao (Art. 7º)</span>
+      </div>
+      <div class="question-text">O Art. 7º da Lei nº 14.133/2021 exige para o agente público designado atuar na licitação ou contrato que ele:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Seja necessariamente bacharel em Direito com OAB ativa, independentemente do objeto licitado.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Acumule as funções de agente de contratação, fiscal e pregoeiro no mesmo certame para economizar pessoal.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Seja indicado por empresa licitante para garantir imparcialidade técnica.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Tenha atribuições relacionadas a licitações e contratos ou formação compatível, não seja cônjuge/companheiro de licitante contratado habitual e não responda a penalidade funcional que vede sua atuação.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 469</span>
+        <span class="q-topic">Lei 14.133/2021 • Fase Preparatoria: ETP e Termo de Referencia (Art. 18)</span>
+      </div>
+      <div class="question-text">Na fase preparatória do processo licitatório (Art. 18 da Lei nº 14.133/2021), o Estudo Técnico Preliminar (ETP) e o Termo de Referência (TR) destinam-se, respectivamente, a:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>O ETP a evidenciar o problema a resolver e a melhor solução (viabilidade técnica e econômica); o TR a detalhar o objeto, quantitativos, custos, prazos e critérios de seleção do fornecedor.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>O ETP a homologar o vencedor e o TR a empenhar a despesa sem previsão orçamentária.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>O ETP a substituir o edital e o TR a substituir o contrato administrativo.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>O ETP a dispensar a pesquisa de preços e o TR a vedar a definição de quantitativos.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 470</span>
+        <span class="q-topic">Lei 14.133/2021 • Pesquisa de Precos e Estimativa de Valor (Art. 23)</span>
+      </div>
+      <div class="question-text">Para a estimativa do valor da contratação (Art. 23 da Lei nº 14.133/2021), a Administração deverá realizar pesquisa de preços observando, prioritariamente, os seguintes parâmetros:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Apenas um orçamento por telefone com empresa indicada pelo prefeito, sem registro formal.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Composição de custos unitários menores ou iguais à mediana do item no PNCP e contratações similares da Administração em execução ou concluídas no último ano.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Preços de sites estrangeiros sem conversão cambial e sem data de referência.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Valor aleatório fixado pelo pregoeiro no dia da sessão conforme sua intuição.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 471</span>
+        <span class="q-topic">Lei 14.133/2021 • Inversao de Fases: Julgamento Antes da Habilitacao (Art. 17)</span>
+      </div>
+      <div class="question-text">Uma das grandes novidades da Lei nº 14.133/2021 em relação à antiga Lei nº 8.666/93 é a sequência das fases da licitação. Como regra geral (Art. 17), a ordem é:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Habilitação de todos, depois julgamento, depois edital, depois homologação antes da fase preparatória.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Homologação primeiro, depois julgamento, dispensada a habilitação em qualquer caso.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Preparatória, divulgação do edital, apresentação de propostas, julgamento, habilitação, recursal e homologação — ou seja, primeiro julgam-se as propostas e só depois se habilita o vencedor.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Apresentação de propostas após a assinatura do contrato, invertendo toda a lógica.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 472</span>
+        <span class="q-topic">Lei 14.133/2021 • Edital e PNCP: Divulgacao Obrigatoria (Arts. 54-55)</span>
+      </div>
+      <div class="question-text">Sobre a divulgação do edital na Lei nº 14.133/2021, assinale a alternativa correta:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Basta afixar o edital no mural da Câmara, vedada a divulgação eletrônica.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>O PNCP foi extinto pela Nova Lei, voltando a publicação apenas em Diário Oficial impresso.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>O prazo mínimo entre edital e propostas é sempre de 24 horas, qualquer que seja a modalidade.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>A publicidade do edital será feita mediante divulgação no Portal Nacional de Contratações Públicas (PNCP), sendo obrigatória, além disso, em jornal diário de grande circulação apenas nos casos de concorrência de grande vulto.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 473</span>
+        <span class="q-topic">Lei 14.133/2021 • Rol Taxativo das Modalidades (Art. 28)</span>
+      </div>
+      <div class="question-text">São modalidades de licitação previstas no Art. 28 da Lei nº 14.133/2021:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Pregão, concorrência, concurso, leilão e diálogo competitivo.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Pregão, concorrência, tomada de preços, convite e concurso.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Concorrência, convite, leilão, carta-convite e chamada pública genérica.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Pregão, tomada de preços, convite, RDC e credenciamento como modalidade.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 474</span>
+        <span class="q-topic">Lei 14.133/2021 • Pregao vs Concorrencia: Objeto</span>
+      </div>
+      <div class="question-text">A diferença essencial de objeto entre pregão e concorrência na Lei nº 14.133/2021 é que:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>O pregão destina-se apenas a obras bilionárias e a concorrência apenas a compras de café e papel.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>O pregão destina-se a bens e serviços COMUNS (padrões objetivos de mercado); a concorrência destina-se a bens/serviços ESPECIAIS e a obras e serviços de engenharia.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Ambos destinam-se exclusivamente a serviços técnicos intelectuais com concurso de beleza.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>O pregão foi extinto e só existe concorrência na Nova Lei.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 475</span>
+        <span class="q-topic">Lei 14.133/2021 • Concurso e Leilao: Conceitos</span>
+      </div>
+      <div class="question-text">Na Lei nº 14.133/2021, as modalidades concurso e leilão destinam-se, respectivamente, a:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Compra de bens comuns por menor preço e contratação de obras por técnica e preço.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Alienação de bens e escolha de trabalho artístico de forma invertida (leilão premia tese e concurso vende sucata).</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Escolha de trabalho técnico, científico ou artístico (com prêmio/remuneração) e alienação de bens móveis inservíveis ou imóveis (quem oferecer maior lance).</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Contratação de empréstimos internacionais e venda de ações em bolsa.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 476</span>
+        <span class="q-topic">Lei 14.133/2021 • Dialogo Competitivo: Hipoteses</span>
+      </div>
+      <div class="question-text">O diálogo competitivo, novidade da Lei nº 14.133/2021, é cabível quando:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>A Administração quer comprar papel A4 e canetas de forma mais rápida, sem edital.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>O prefeito quer conversar informalmente com um amigo empresário para dispensar a licitação.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Em toda compra de bens comuns de prateleira para simplificar o pregão.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>A Administração visa contratar objeto com inovação tecnológica ou técnica, ou quando não consegue definir com precisão as especificações, necessitando dialogar com licitantes pré-selecionados para desenvolver a solução.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 477</span>
+        <span class="q-topic">Lei 14.133/2021 • Modalidades Extintas: Tomada de Precos e Convite</span>
+      </div>
+      <div class="question-text">Sobre as antigas modalidades tomada de preços e convite (Lei nº 8.666/93) diante da Lei nº 14.133/2021, é correto afirmar que:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Foram expressamente extintas; os processos devem usar pregão, concorrência, concurso, leilão ou diálogo competitivo, observados os novos limites de dispensa por valor.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Continuam vigentes como 6ª e 7ª modalidades da Nova Lei, ao lado do diálogo competitivo.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Foram mantidas apenas para municípios com menos de 20 mil habitantes como Meruoca.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Foram fundidas em uma só chamada credenciamento-convite, ainda por valor.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 478</span>
+        <span class="q-topic">Lei 14.133/2021 • Criterios de Julgamento: Rol (Art. 33)</span>
+      </div>
+      <div class="question-text">O Art. 33 da Lei nº 14.133/2021 prevê como critérios de julgamento das propostas:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Menor preço, melhor simpatia, maior tempo de amizade e menor distância da prefeitura.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Menor preço, maior desconto, melhor técnica ou conteúdo artístico, técnica e preço, maior lance (leilão) e maior retorno econômico.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Apenas menor preço, vedado qualquer outro critério na Nova Lei.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Sorteio público como critério autônomo de julgamento.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 479</span>
+        <span class="q-topic">Lei 14.133/2021 • Maior Desconto e Maior Retorno Economico</span>
+      </div>
+      <div class="question-text">Quanto aos critérios maior desconto e maior retorno econômico na Lei nº 14.133/2021, assinale a correta:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Maior desconto é sorteio entre preços iguais e maior retorno é promessa verbal de economia.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Ambos são vedados para obras e só valem para concurso artístico.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Maior desconto toma por base preço de referência/tabela (vence quem dá maior percentual de desconto); maior retorno econômico considera a economia futura gerada à Administração, com remuneração do contratado vinculada a esse ganho.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Maior retorno econômico dispensa medição da economia real, bastando declaração do licitante.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 480</span>
+        <span class="q-topic">Lei 14.133/2021 • Tecnica e Preco: Quando Usar</span>
+      </div>
+      <div class="question-text">O critério técnica e preço (Art. 35 da Lei nº 14.133/2021) é adequado para:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Compra de bens comuns de prateleira, onde só o preço importa.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Alienação de sucatas, onde vence o maior lance.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Toda e qualquer contratação, a critério livre do pregoeiro sem previsão no edital.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Serviços técnicos especializados de natureza predominantemente intelectual (estudos, projetos, pareceres), quando a qualidade técnica é relevante além do preço, mediante ponderação objetiva no edital.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="section-title informatica">
+      <span><i class="fas fa-network-wired"></i> PARTE 2: INFORMÁTICA — REDES & INTERNET (QUESTÕES 481 A 490)</span>
+      <span style="font-size: 0.8rem; font-weight: normal;">Internet, Intranet, Navegadores, Busca e Protocolos</span>
+    </div>
+
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 481</span>
+        <span class="q-topic">Informática • Internet vs Intranet vs Extranet</span>
+      </div>
+      <div class="question-text">Quanto aos conceitos de Internet, Intranet e Extranet, cobrados no padrão INBRASP, assinale a alternativa correta:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Internet é a rede mundial pública; Intranet é a rede privada interna de uma organização (ex: Câmara de Meruoca) com acesso restrito; Extranet é a extensão controlada da Intranet para parceiros externos via login.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Internet e Intranet são sinônimos, ambas públicas e sem controle de acesso.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Intranet é mundial e pública, enquanto a Internet é restrita aos servidores da Câmara.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Extranet é a internet via satélite e Intranet é a internet discada antiga.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 482</span>
+        <span class="q-topic">Informática • Navegadores: Chrome, Edge e Firefox</span>
+      </div>
+      <div class="question-text">Sobre os navegadores Google Chrome, Microsoft Edge e Mozilla Firefox, é correto afirmar que:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>São sistemas operacionais que substituem o Windows 11 e o Ubuntu Linux.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>São aplicativos de navegação na web que permitem acessar sites, gerenciar abas, favoritos, histórico e extensões, sendo todos citados no edital de Meruoca.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>São antivírus gratuitos que removem ransomware sem atualização.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>São editores de planilhas que calculam fórmulas SE e PROCV.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 483</span>
+        <span class="q-topic">Informática • Pesquisa Avancada: Operadores de Busca</span>
+      </div>
+      <div class="question-text">Um Técnico Legislativo precisa pesquisar no Google apenas páginas do site oficial da Câmara que mencionem Lei Orgânica, excluindo notícias de 2020. A sintaxe mais eficiente é:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>www.google-Lei Orgânica +2020 +todas</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>pesquisar Lei Orgânica sem aspas e sem filtros para trazer tudo</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>site:meruoca.ce.gov.br "Lei Orgânica" -2020</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>inurl:senha + anexar CPF na busca para refinar</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 484</span>
+        <span class="q-topic">Informática • Protocolos: HTTP vs HTTPS</span>
+      </div>
+      <div class="question-text">Ao acessar o portal da Câmara para consultar um edital, o cadeado do navegador indica HTTPS. A diferença entre HTTP e HTTPS é que:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>HTTP é seguro e HTTPS é inseguro e deve ser evitado em sites públicos.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Ambos são antivírus, sem diferença prática para o usuário.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>HTTPS funciona apenas sem internet, de forma offline.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>HTTPS é o HTTP com camada de segurança (TLS/SSL) que criptografa os dados entre navegador e servidor, garantindo confidencialidade e autenticidade.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 485</span>
+        <span class="q-topic">Informática • DNS, IP e FTP</span>
+      </div>
+      <div class="question-text">Relacione: 1-DNS 2-Endereço IP 3-FTP. ( ) Traduz nomes (ex: meruoca.ce.gov.br) em números. ( ) Identifica cada dispositivo na rede. ( ) Transfere arquivos entre computadores. A sequência correta é:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>1 — 2 — 3</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>3 — 2 — 1</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>2 — 1 — 3</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>1 — 3 — 2</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 486</span>
+        <span class="q-topic">Informática • Redes LAN, WAN e Wi-Fi</span>
+      </div>
+      <div class="question-text">A rede cabeada dos gabinetes da Câmara (alcance local) e a internet que liga Meruoca a Fortaleza classificam-se, respectivamente, como:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>WAN e LAN, invertidas, sendo Wi-Fi um tipo de cabo submarino.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>LAN (Local Area Network) e WAN (Wide Area Network); o acesso sem fio nessa LAN pode ser via Wi-Fi (padrão IEEE 802.11).</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Ambas PAN, restritas a 10 cm de alcance via Bluetooth apenas.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>MAN e Bluetooth, sem relação com LAN/WAN.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 487</span>
+        <span class="q-topic">Informática • E-mail vs Mensageria: Conceitos</span>
+      </div>
+      <div class="question-text">Embora o edital cite correio eletrônico e mensageria (WhatsApp/Telegram), a diferença técnica fundamental é que:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>E-mail e WhatsApp são idênticos e usam os mesmos protocolos SMTP/IMAP.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>E-mail dispensa endereço e mensageria exige carta registrada.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>O e-mail usa endereço eletrônico com @ e protocolos SMTP (envio) / IMAP-POP (recebimento), é assíncrono e formal; a mensageria instantânea é síncrona/quase imediata via apps com conta vinculada a número/conta.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Mensageria é formal e oficial, e e-mail é sempre informal e sem validade.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 488</span>
+        <span class="q-topic">Informática • URL: Partes do Endereco Web</span>
+      </div>
+      <div class="question-text">Na URL https://www.meruoca.ce.gov.br:443/portal/editais?q=001#art1, o trecho https, www.meruoca.ce.gov.br e /portal/editais correspondem, respectivamente, a:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Domínio, protocolo e senha de acesso.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Caminho, protocolo e IP reverso.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Antivírus, firewall e backup.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Protocolo, domínio (host) e caminho/recurso no servidor.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 489</span>
+        <span class="q-topic">Informática • Redes Sociais e Grupos de Discussao: Uso Seguro</span>
+      </div>
+      <div class="question-text">O edital exige noções de redes sociais e grupos de discussão. No uso corporativo na Câmara, a conduta SEGURA é:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Verificar a fonte antes de compartilhar, não publicar dados pessoais/sigilosos de processos e desconfiar de links com promessas milagrosas (phishing).</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Compartilhar senhas da intranet nos grupos para agilizar o trabalho.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Publicar fotos de documentos internos sigilosos para provar produtividade.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Clicar em todo link recebido no grupo sem verificar o remetente.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 490</span>
+        <span class="q-topic">Informática • TCP-IP e Conexao: Pacotes e Roteador</span>
+      </div>
+      <div class="question-text">Quando um servidor da Câmara acessa um edital no site do INBRASP, os dados trafegam pela internet via TCP/IP. Nesse modelo, é correto afirmar que:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>O TCP é o cabo físico e o IP é o monitor do computador.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>O TCP divide os dados em pacotes, garante entrega ordenada e sem erro; o IP endereça e roteia cada pacote até o destino, onde são remontados.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Os dados vão inteiros sem divisão, dispensando roteadores.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>TCP/IP funciona apenas em intranet offline, nunca na internet pública.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="folha-respostas-box">
+      <div style="text-align: center; border-bottom: 1px solid #cbd5e1; padding-bottom: 8px; margin-bottom: 10px;">
+        <strong style="font-size: 1.1rem; text-transform: uppercase; color: var(--primary);">Folha de Respostas Óptica — Simulação Real (30 Questões)</strong>
+        <p style="margin: 4px 0 0 0; font-size: 0.8rem; color: #64748b;">Preencha a bolha correspondente à alternativa escolhida para treino de agilidade.</p>
+      </div>
+      <div class="folha-grid">
+
+        <div class="folha-row">
+          <span class="folha-num">461</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">462</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">463</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">464</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">465</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">466</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">467</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">468</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">469</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">470</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">471</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">472</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">473</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">474</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">475</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">476</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">477</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">478</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">479</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">480</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">481</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">482</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">483</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">484</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">485</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">486</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">487</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">488</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">489</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">490</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+      </div>
+    </div>
+    <div class="gabarito-section">
+      <div style="background: var(--primary); color: white; padding: 10px 16px; border-radius: 6px; font-weight: 800; font-size: 1.1rem; margin-bottom: 16px;">
+        <i class="fas fa-check-double"></i> GABARITO OFICIAL FUNDAMENTADO (QUESTÕES 461 A 490)
+      </div>
+
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 461 (Lei 14.133/2021 - Principios da Licitacao (Art. 5º): Rol Expresso):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 5º da Lei 14.133/21: legalidade, impessoalidade, moralidade, publicidade, eficiência, interesse público, probidade administrativa, igualdade, planejamento, transparência, eficácia, segregação de funções, motivação, vinculação ao edital, julgamento objetivo, segurança jurídica, razoabilidade, competitividade, proporcionalidade, celeridade, economicidade e desenvolvimento nacional sustentável.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">B</span>
+        <strong>Questão 462 (Lei 14.133/2021 - Principio do Planejamento e Segregacao de Funcoes (Art. 5º)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Art. 5º c/c Art. 7º, §1º e Art. 18 da Lei 14.133/21. Planejamento: fase preparatória obrigatória (ETP, TR, pesquisa de preços). Segregação de funções: princípio de controle interno que impede concentração de atribuições críticas no mesmo agente (quem autoriza não fiscaliza, quem licita não recebe).</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">C</span>
+        <strong>Questão 463 (Lei 14.133/2021 - Principios: Vinculacao ao Edital e Julgamento Objetivo):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Art. 5º da Lei 14.133/21. Vinculação ao edital: edital é a lei interna da licitação (vincula Administração e licitantes). Julgamento objetivo: critérios mensuráveis do edital (menor preço, técnica e preço etc.), vedada subjetividade. Pegadinha INBRASP: vincula AMBOS os lados, não só o particular.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">D</span>
+        <strong>Questão 464 (Lei 14.133/2021 - Principio da Publicidade e Transparencia vs Sigilo do Orcamento):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Art. 13 e Art. 24 da Lei 14.133/21. Regra: publicidade no PNCP. Exceção: orçamento sigiloso (facultativo, justificado). Mesmo com sigilo do VALOR, os QUANTITATIVOS e demais informações do edital são públicos, e o valor sigiloso é revelado após o julgamento. Pegadinha: sigilo é do valor, não do edital inteiro.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 465 (Lei 14.133/2021 - Agente de Contratacao e Pregoeiro (Art. 8º)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 8º da Lei 14.133/21: licitação conduzida por agente de contratação (regra) ou pregoeiro (quando pregão). Exigência: servidor efetivo/empregado público do quadro permanente. Podem ser auxiliados por equipe de apoio e, se necessário, por comissão de contratação (bens/serviços especiais).</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">B</span>
+        <strong>Questão 466 (Lei 14.133/2021 - Comissao de Contratacao (Art. 8º, §2º)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Art. 8º, §2º da Lei 14.133/21. Comissão de contratação: mínimo 3 membros, maioria efetivos, substitui o agente de contratação em bens/serviços ESPECIAIS (complexos, não comuns). No pregão comum, atua o pregoeiro singular + equipe de apoio.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">C</span>
+        <strong>Questão 467 (Lei 14.133/2021 - Gestor e Fiscal do Contrato (Arts. 7º e 117)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Arts. 7º e 117 da Lei 14.133/21. Todo contrato tem gestor (coordena) e fiscal (acompanha execução, anota ocorrências, determina correção). Pode contratar terceiro para subsidiar (ex: laudo técnico), mas a responsabilidade do fiscal/gestor permanece. Pegadinha: terceirizar apoio NÃO terceiriza responsabilidade.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">D</span>
+        <strong>Questão 468 (Lei 14.133/2021 - Requisitos do Agente Publico: Capacitacao e Vedacao (Art. 7º)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Art. 7º da Lei 14.133/21: agente deve ter qualificação (atribuição do cargo ou capacitação), observar segregação de funções e impedimentos (parentesco com licitante, conflito de interesses). Não exige bacharelado em Direito como regra geral.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 469 (Lei 14.133/2021 - Fase Preparatoria: ETP e Termo de Referencia (Art. 18)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 18, I e II da Lei 14.133/21. ETP = diagnóstico da necessidade + levantamento de soluções + viabilidade. TR (bens/serviços) / Projeto Básico (obras) = especificação completa para licitar: objeto, fundamentação, quantidades, estimativa de valor, modelo de execução, critérios de medição e pagamento.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">B</span>
+        <strong>Questão 470 (Lei 14.133/2021 - Pesquisa de Precos e Estimativa de Valor (Art. 23)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Art. 23, §1º da Lei 14.133/21. Prioridade: 1) mediana do PNCP; 2) contratações similares públicas (último 1 ano). Parâmetros complementares: pesquisa direta com 3 fornecedores, mídia especializada, tabelas oficiais. Tudo deve ser documentado e criticado (desconsiderar inexequíveis/inconsistentes).</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">C</span>
+        <strong>Questão 471 (Lei 14.133/2021 - Inversao de Fases: Julgamento Antes da Habilitacao (Art. 17)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Art. 17 da Lei 14.133/21. Inversão de fases como REGRA: julga propostas/lances primeiro, habilita SÓ o primeiro colocado (economia processual). Na Lei 8.666/93 a regra era inversa (habilitava todos antes). Exceção: edital pode prever habilitação antecedente em casos justificados (Art. 17, §1º).</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">D</span>
+        <strong>Questão 472 (Lei 14.133/2021 - Edital e PNCP: Divulgacao Obrigatoria (Arts. 54-55)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Arts. 54-55 da Lei 14.133/21. PNCP é o sítio oficial centralizado e obrigatório. Prazos mínimos variam por modalidade/critério (ex: 10 dias úteis para pregão menor preço bens comuns; 25 dias para concorrência técnica). Pegadinha INBRASP: não é prazo único, e PNCP é obrigatório.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 473 (Lei 14.133/2021 - Rol Taxativo das Modalidades (Art. 28)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Art. 28 da Lei 14.133/21: rol TAXATIVO de 5 modalidades: Pregão, Concorrência, Concurso, Leilão e Diálogo Competitivo. EXTINTAS: Tomada de Preços e Convite (da Lei 8.666/93). Credenciamento, pré-qualificação e SRP são PROCEDIMENTOS AUXILIARES (Art. 78), não modalidades.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">B</span>
+        <strong>Questão 474 (Lei 14.133/2021 - Pregao vs Concorrencia: Objeto):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Art. 6º, XIII/XIV e Art. 29 da Lei 14.133/21. Bem/serviço COMUM = especificação usual de mercado (pregão obrigatório para o comum). Bem/serviço ESPECIAL ou obra/engenharia = concorrência. Pegadinha: pregão NÃO é definido por valor, mas pela NATUREZA comum do objeto.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">C</span>
+        <strong>Questão 475 (Lei 14.133/2021 - Concurso e Leilao: Conceitos):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Art. 30 (Concurso) e Art. 31 (Leilão) da Lei 14.133/21. Concurso: seleção intelectual/artística com prêmio (ex: projeto arquitetônico). Leilão: venda de bens (móveis inservíveis, apreendidos, imóveis) ao maior lance. Não confundir concurso-licitação com concurso público de pessoal.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">D</span>
+        <strong>Questão 476 (Lei 14.133/2021 - Dialogo Competitivo: Hipoteses):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Art. 32 da Lei 14.133/21. Diálogo competitivo: objeto complexo/inovador (ex: solução de TI inédita, obra com tecnologia nova). Fases: pré-seleção, diálogo para definir solução, apresentação de propostas finais. Vedado para bens comuns simples.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 477 (Lei 14.133/2021 - Modalidades Extintas: Tomada de Precos e Convite):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. A Lei 14.133/21 revogou a Lei 8.666/93 e extinguiu tomada de preços e convite. O critério de valor agora define DISPENSA (Art. 75, I e II: R$ 119 mil obras/engenharia e R$ 59 mil outros — valores atualizados por decreto), não mais modalidade. Pegadinha favorita INBRASP.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">B</span>
+        <strong>Questão 478 (Lei 14.133/2021 - Criterios de Julgamento: Rol (Art. 33)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Art. 33 da Lei 14.133/21, I a VI. Maior desconto incide sobre tabela referencial. Maior lance só no leilão. Maior retorno econômico: economia gerada à Administração (ex: contrato de eficiência energética). Sorteio só como DESEMPATE, não critério.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">C</span>
+        <strong>Questão 479 (Lei 14.133/2021 - Maior Desconto e Maior Retorno Economico):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Arts. 34 e 39 da Lei 14.133/21. Maior desconto: comum em registro de preços/passagens (ex: 15% sobre tabela SINAPI). Maior retorno: contrato de eficiência (ex: empresa troca iluminação pública e recebe % da conta de luz economizada). Exige aferição objetiva da economia.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">D</span>
+        <strong>Questão 480 (Lei 14.133/2021 - Tecnica e Preco: Quando Usar):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Art. 35 da Lei 14.133/21. Técnica e preço: ponderação (ex: 60% técnica + 40% preço) definida no edital para serviços intelectuais. Para bens comuns usa-se menor preço/maior desconto. Exige critérios objetivos de pontuação técnica.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 481 (Informática - Internet vs Intranet vs Extranet):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Internet = pública mundial (TCP/IP). Intranet = privada corporativa (mesmos protocolos, acesso interno). Extranet = Intranet estendida a fornecedores/parceiros com autenticação (ex: portal do fornecedor da Câmara). Pegadinha: todas usam TCP/IP, o que muda é o alcance/controle.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">B</span>
+        <strong>Questão 482 (Informática - Navegadores: Chrome, Edge e Firefox):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Edital 2.2: aplicativos de navegação (Edge, Firefox, Chrome). Funções comuns: abas, favoritos, histórico, downloads, modo anônimo, sincronização, extensões. Não são SO nem antivírus. Edge é padrão do Windows 11 (base Chromium, mesmo motor do Chrome).</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">C</span>
+        <strong>Questão 483 (Informática - Pesquisa Avancada: Operadores de Busca):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Operadores: site: restringe ao domínio; " " busca expressão exata; - exclui termo; OR amplia. Ex: site:meruoca.ce.gov.br "Lei Orgânica" -2020. Pegadinha INBRASP: jamais digitar dados pessoais na busca; usar aspas para exatidão.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">D</span>
+        <strong>Questão 484 (Informática - Protocolos: HTTP vs HTTPS):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. HTTP (porta 80) = texto puro; HTTPS (porta 443) = HTTP + TLS/SSL com criptografia e certificado digital. Cadeado = conexão segura. Regra INBRASP: nunca digitar senha em site só-HTTP.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 485 (Informática - DNS, IP e FTP):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. DNS (Domain Name System) = agenda telefônica da internet (nome -> IP). IP = identidade numérica (ex: 192.168.0.10 ou IPv6). FTP (File Transfer Protocol, porta 21) = envio/recebimento de arquivos. SFTP/FTPS são versões seguras.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">B</span>
+        <strong>Questão 486 (Informática - Redes LAN, WAN e Wi-Fi):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. LAN = curta distância (sala/prédio, ex: rede da Câmara). MAN = cidade/região. WAN = longa distância (ex: Meruoca-Fortaleza, internet). Wi-Fi = LAN sem fio (802.11 a/b/g/n/ac/ax). Pegadinha: Wi-Fi não é internet, é a forma de acesso à rede.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">C</span>
+        <strong>Questão 487 (Informática - E-mail vs Mensageria: Conceitos):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. E-mail: endereço usuario@dominio, SMTP porta 25/587 envia, IMAP (143/993) mantém no servidor, POP3 (110/995) baixa. Mensageria (WhatsApp/Telegram/Discord): entrega instantânea, confirmação de leitura, grupos. No setor público, e-mail institucional (ex: Thunderbird/webmail) tem valor formal; WhatsApp é ágil mas exige cautela probatória.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">D</span>
+        <strong>Questão 488 (Informática - URL: Partes do Endereco Web):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. URL = protocolo://domínio:porta/caminho?consulta#fragmento. https = protocolo seguro; www.meruoca.ce.gov.br = domínio/host (br=comercial-país? na verdade .gov.br governamental + .ce estadual); :443 = porta HTTPS; /portal/editais = caminho; ?q=001 = query; #art1 = âncora/fragmento.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 489 (Informática - Redes Sociais e Grupos de Discussao: Uso Seguro):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Segurança em redes/grupos: checar fonte, não expor dados pessoais (LGPD), não compartilhar credenciais, desconfiar de phishing/boato. Grupos (WhatsApp/Telegram/Discord) e redes (Instagram/Facebook) são vetores de engenharia social mais explorados em prova INBRASP.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">B</span>
+        <strong>Questão 490 (Informática - TCP-IP e Conexao: Pacotes e Roteador):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Pilha TCP/IP: IP (camada rede) endereça/encaminha; TCP (camada transporte) fragmenta, numera, controla fluxo, retransmite perdidos e remonta em ordem. Roteador escolhe o melhor caminho por pacote. É a base da Internet/Intranet citada no edital.</p>
+      </div>
+    
+    </div>
+  </div>
+</body>
+</html>
