@@ -42,7 +42,7 @@
         <button class="nav-btn" data-tab="tab-questoes">
           <i class="fas fa-tasks"></i>
           <span>Questões & Simulado</span>
-          <span class="nav-badge highlight" id="sidebarQuizBadge">520</span>
+          <span class="nav-badge highlight" id="sidebarQuizBadge">567</span>
         </button>
         <button class="nav-btn" data-tab="tab-macetes">
           <i class="fas fa-magic" style="color: #f59e0b;"></i>
@@ -216,9 +216,17 @@
 
           <!-- Seletor de Dias do Quiz -->
           <div class="day-tabs-nav">
-            <button class="day-tab-btn active" id="btnDayTabOuro" onclick="selectQuizDay('ouro')">
+            <button class="day-tab-btn active" id="btnDayTabS3D5" onclick="selectQuizDay('w3_d5')">
               <i class="fas fa-star" style="color: var(--accent);"></i>
+              <span>Semana 3 • Dia 5 (18/09 - Hoje): 18Q</span>
+            </button>
+            <button class="day-tab-btn" id="btnDayTabOuro" onclick="selectQuizDay('ouro')">
+              <i class="fas fa-calendar-check"></i>
               <span>⭐ Essencial OURO (89Q)</span>
+            </button>
+            <button class="day-tab-btn" id="btnDayTabSimReal" onclick="selectQuizDay('simReal')">
+              <i class="fas fa-trophy" style="color: var(--accent);"></i>
+              <span>Simulado REAL Ipaporanga (29Q verídicas)</span>
             </button>
             <button class="day-tab-btn" id="btnDayTabS3D1" onclick="selectQuizDay('w3_d1')">
               <i class="fas fa-calendar-check"></i>
@@ -266,19 +274,19 @@
             </button>
             <button class="day-tab-btn" id="btnDayTabAll" onclick="selectQuizDay('all')">
               <i class="fas fa-layer-group"></i>
-              <span>Todas as Questões (520)</span>
+              <span>Todas as Questões (567)</span>
             </button>
           </div>
 
           <!-- Banner Informativo do Dia Selecionado -->
           <div class="day-info-banner" id="quizDayBanner">
             <div>
-              <h3 id="quizDayTitle">⭐ ESSENCIAL OURO — 89 Questões (dia 17 de hoje incluso)</h3>
-              <p id="quizDayDesc">Essenciais de maior incidência + dia 17 de hoje COMPLETO (contratos, sanções e concordância). Terminou este bloco = hoje zerado. Depois complete o restante no Provão (filtro Pendentes). Mesmas questões, mesmo progresso. Padrão Oficial Banca INBRASP.</p>
+              <h3 id="quizDayTitle">⭐ Semana 3 • Dia 5 — Sexta-feira (18/09/2026 - HOJE): LO Processo Legislativo & Geometria (18 Questões)</h3>
+              <p id="quizDayDesc">10 questões de Lei Orgânica (iniciativa, tramitação, sanção, veto, promulgação e fiscalização) + 8 questões de Matemática (áreas, perímetro e volume). Padrão réplica fiel Banca INBRASP.</p>
             </div>
             <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-              <button class="btn btn-secondary" style="font-size: 0.8rem; padding: 6px 12px;" onclick="filterQuizCategory('all')">Ver Todas (520)</button>
-              <a href="provas/CADERNO_ESSENCIAL_OURO_89Q.html" target="_blank" class="btn btn-primary" id="btnOpenDayBooklet" style="font-size: 0.8rem; padding: 6px 12px;">
+              <button class="btn btn-secondary" style="font-size: 0.8rem; padding: 6px 12px;" onclick="filterQuizCategory('all')">Ver Todas as 18Q</button>
+              <a href="provas/CADERNO_QUESTOES_SEMANA_03_DIA_05_18_09_2026.html" target="_blank" class="btn btn-primary" id="btnOpenDayBooklet" style="font-size: 0.8rem; padding: 6px 12px;">
                 <i class="fas fa-print"></i> Abrir Caderno Hoje Impresso (PDF)
               </a>
               <a href="provas/CENTRAL_DE_PROVAS.html" target="_blank" class="btn btn-secondary" style="font-size: 0.8rem; padding: 6px 12px;">
@@ -353,17 +361,81 @@
             </div>
           </div>
 
-          <div style="background:#fffbeb;border:2px solid #f59e0b;border-radius:10px;padding:18px 20px;margin-bottom:22px;">
-            <h3 style="margin:0 0 10px 0;color:#92400e;font-size:1.05rem;">🚀 Comece aqui se você sabe ZERO de Português</h3>
-            <p style="margin:0 0 10px 0;font-size:0.9rem;"><strong>Ordem de leitura (30 min):</strong> ficha 0 → ficha 3 (haver/fazer) → ficha 18 (partitivo, porcentagem, anexo) → ficha 19 (acentuação/hífen) → ficha 2 (palavra SE) → ficha 4 (crase) → ficha 8 (conjunções). Só essas 5 valem ~6 das 10 questões da prova. Depois leia o resto na ordem.</p>
-            <p style="margin:0 0 10px 0;font-size:0.9rem;"><strong>Dicionário mínimo (decora isso primeiro):</strong> sujeito = quem pratica a ação; verbo = a ação ou estado; OD/OI = o complemento do verbo; preposição = palavrinha de ligação (a, de, com, por, para); conjunção = palavra que conecta orações (mas, porque, se, embora); pronome = palavra que substitui um nome (ele, que, se); crase = o à (soma de a + a); concordância = o verbo combina com o sujeito; regência = a preposição que o verbo exige; impessoal = verbo sem sujeito, que fica sempre no singular.</p>
-            <p style="margin:0;font-size:0.9rem;"><strong>Exemplo resolvido passo a passo (ID 242):</strong> “Havia muitas divergências, mas existiam pontos de consenso.” Passo 1: ache os verbos (havia / existiam). Passo 2: “haver” com sentido de “existir” é impessoal → fica no singular → “Havia” está certo. Passo 3: “existir” TEM sujeito (“pontos”) → vai para o plural → “existiam” está certo. Frase correta. Toda questão se resolve assim: achar o verbo, aplicar a regra da ficha.</p>
+          <div class="zero-starter-card">
+            <div class="zero-starter-header">
+              <h3><i class="fas fa-rocket"></i> Comece Aqui: O Guia Sem Segredo (Se você sabe ZERO de Português)</h3>
+              <p>Não se desespere com termos difíceis. Siga estes 3 passos rápidos e acerte até 60% das questões da INBRASP com tranquilidade:</p>
+            </div>
+
+            <div class="zero-steps-grid">
+              <!-- PASSO 1 -->
+              <div class="zero-step-box">
+                <span class="zero-step-badge gold"><i class="fas fa-clock"></i> Passo 1: O Atalho dos 30 Minutos</span>
+                <div class="zero-step-content">
+                  <p style="margin:0 0 8px 0;font-weight:700;">Domine só estas 5 fichas primeiro:</p>
+                  <ul>
+                    <li><strong>Ficha 0:</strong> Verbo de comando (CORRETA x INCORRETA) e fugir de <em>"sempre / nunca"</em>.</li>
+                    <li><strong>Ficha 3:</strong> <em>HAVER</em> e <em>FAZER</em> ficam <u>sempre no singular</u>.</li>
+                    <li><strong>Ficha 2:</strong> A palavra <em>SE</em> (tem "DE" depois? Fica no singular).</li>
+                    <li><strong>Ficha 4:</strong> Crase rápida (trocou por masculino e virou <em>"AO"</em>? Tem crase!).</li>
+                    <li><strong>Ficha 8:</strong> Conjunções (lembre que <em>"conquanto"</em> = <em>"embora"</em>).</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- PASSO 2 -->
+              <div class="zero-step-box">
+                <span class="zero-step-badge blue"><i class="fas fa-book-open"></i> Passo 2: Tradutor de "Gramatiquês"</span>
+                <div class="zero-step-content">
+                  <p style="margin:0 0 8px 0;font-weight:700;">Para entender qualquer questão:</p>
+                  <ul>
+                    <li><strong>Sujeito:</strong> Quem pratica ou sofre a ação.</li>
+                    <li><strong>Verbo:</strong> A ação ou estado (<em>aprovar, votar, ser</em>).</li>
+                    <li><strong>Concordância:</strong> O verbo se ajustar no plural/singular ao sujeito.</li>
+                    <li><strong>Impessoal:</strong> Verbo sem sujeito; por isso fica congelado no singular (<em>Havia, Faz</em>).</li>
+                    <li><strong>Crase:</strong> Junção de A + A. Nunca use antes de verbo nem de homem!</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- PASSO 3 -->
+              <div class="zero-step-box">
+                <span class="zero-step-badge green"><i class="fas fa-check-circle"></i> Passo 3: Como Matar Questão Real</span>
+                <div class="zero-step-content">
+                  <p style="margin:0 0 8px 0;font-weight:700;">Exemplo resolvido passo a passo:</p>
+                  <div style="background:var(--bg-main);border-left:3px solid #10b981;padding:8px 12px;border-radius:4px;margin-bottom:8px;font-style:italic;font-size:0.85rem;">
+                    “Havia muitas divergências, mas existiam pontos de consenso.”
+                  </div>
+                  <ul>
+                    <li><strong>1. Ache o verbo HAVER:</strong> Tem sentido de existir? Fica no singular! (<em>"Havia"</em> está certo ✅).</li>
+                    <li><strong>2. Ache o verbo EXISTIR:</strong> Ele tem sujeito plural (pontos)? Vai pro plural! (<em>"existiam"</em> está certo ✅).</li>
+                    <li><strong>Conclusão:</strong> Frase correta em menos de 10 segundos!</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="summary-cards-section">
+          <!-- BARRA DE FILTRO E PESQUISA DOS MACETES -->
+          <div class="macetes-filter-bar">
+            <div class="macetes-filter-pills">
+              <button class="macetes-pill-btn active" id="btnFilterAll" onclick="filterMacetes('all')">
+                <i class="fas fa-layer-group"></i> Todas as 20 Fichas
+              </button>
+              <button class="macetes-pill-btn" id="btnFilterOuro" onclick="filterMacetes('ouro')">
+                <i class="fas fa-star" style="color: #f59e0b;"></i> ⭐ Essencial OURO (5 Mais Cobradas)
+              </button>
+            </div>
+            <div class="macetes-search-wrap">
+              <i class="fas fa-search"></i>
+              <input type="text" id="macetesSearchInput" class="macetes-search-input" placeholder="Filtrar por tema (ex: crase, haver, se, vírgula...)" oninput="searchMacetes(this.value)">
+            </div>
+          </div>
+
+          <div class="summary-cards-section" style="margin-top: 16px;">
             <div class="summary-cards-grid">
 
-              <div class="summary-card">
+              <div class="summary-card ouro-card">
                 <div class="summary-card-header"><div class="summary-card-icon orange"><i class="fas fa-list-check"></i></div><div><h4 class="summary-card-title">0. Método de leitura (vale 2Q)</h4><span class="summary-card-subtitle">Antes de qualquer conteúdo</span></div></div>
                 <div class="summary-card-body"><ul>
                   <li><strong>3 passagens:</strong> 1ª marque o verbo de comando (assinale a CORRETA / INCORRETA / EXCETO); 2ª leia só o núcleo; 3ª teste cada alternativa pelo erro clássico.</li>
@@ -386,7 +458,7 @@
                 </ul><div class="mnemonic-box">💡 <strong>Macete:</strong> pergunte ao verbo “o quê/quem?” → OD; “a quem/para quem?” → OI; “de quê?” após adjetivo → CN.</div><div class="alert-gold-box">⚠️ <strong>Pegadinha (IDs 366-367):</strong> após substantivo abstrato (necessidade, medo, construção) o termo DE + algo é CN; após concreto é adjunto.</div></div>
               </div>
 
-              <div class="summary-card">
+              <div class="summary-card ouro-card">
                 <div class="summary-card-header"><div class="summary-card-icon purple"><i class="fas fa-shuffle"></i></div><div><h4 class="summary-card-title">2. Transitividade + SE (Dia 11)</h4><span class="summary-card-subtitle">VTD/VTI/VTDI/VI + apassivador</span></div></div>
                 <div class="summary-card-body"><ul>
                   <li><strong>VTD</strong> pede OD sem preposição (<em>aprovou o projeto</em>); <strong>VTI</strong> pede OI com preposição (<em>assistiu AO projeto</em> = presenciou); <strong>VTDI</strong> pede os dois (<em>entregou O parecer AO presidente</em>).</li>
@@ -397,7 +469,7 @@
                 </ul><div class="mnemonic-box">💡 <strong>Macete SE:</strong> troque por “foram + particípio”. Deu certo → apassivador e concorda. Não deu → índice, singular.</div><div class="alert-gold-box">⚠️ <strong>Clássica da banca (IDs 244, 372):</strong> “Aprovaram-se” vai ao plural porque “diretrizes” é o sujeito; “Precisa-se” fica no singular porque precisar é VTI. Treine nas questões 244 e 372.</div></div>
               </div>
 
-              <div class="summary-card">
+              <div class="summary-card ouro-card">
                 <div class="summary-card-header"><div class="summary-card-icon green"><i class="fas fa-check-double"></i></div><div><h4 class="summary-card-title">3. Concordância verbal (cai TODA prova)</h4><span class="summary-card-subtitle">Haver • Fazer • Existir • SE</span></div></div>
                 <div class="summary-card-body"><ul>
                   <li><strong>HAVER = existir → impessoal, singular:</strong> <em>Havia muitas divergências</em> (divergências = OD, não sujeito). <strong>EXISTIR concorda:</strong> <em>Existiam pontos de consenso</em>.</li>
@@ -407,7 +479,7 @@
                 </ul><div class="mnemonic-box">💡 <strong>Macete HAVER:</strong> substitua por EXISTIR. Se existir for para o plural, o haver fica no singular mesmo assim.</div><div class="alert-gold-box">⚠️ <strong>Clássica da banca (ID 242):</strong> “Havia muitas divergências, mas existiam pontos” — um singular, outro plural na mesma frase. Treine na questão 242.</div></div>
               </div>
 
-              <div class="summary-card">
+              <div class="summary-card ouro-card">
                 <div class="summary-card-header"><div class="summary-card-icon blue"><i class="fas fa-spell-check"></i></div><div><h4 class="summary-card-title">4. Regência + Crase (cai TODA prova)</h4><span class="summary-card-subtitle">Assistir • Visar • Obedecer + à</span></div></div>
                 <div class="summary-card-body"><ul>
                   <li><strong>ASSISTIR = presenciar → VTI (a):</strong> <em>assistiu À sessão</em>; = ajudar → VTD (<em>assistiu o enfermo</em>); = morar → VI + em.</li>
@@ -450,7 +522,7 @@
                 </ul><div class="alert-gold-box">⚠️ <strong>Pegadinha (ID 409):</strong> a banca tira/põe a vírgula e pergunta se o sentido mudou. Mudou SEMPRE.</div></div>
               </div>
 
-              <div class="summary-card">
+              <div class="summary-card ouro-card">
                 <div class="summary-card-header"><div class="summary-card-icon orange"><i class="fas fa-diagram-project"></i></div><div><h4 class="summary-card-title">8. Adverbiais — mapa completo (Dia 14)</h4><span class="summary-card-subtitle">As 9 + conectivos que a banca cobra</span></div></div>
                 <div class="summary-card-body"><ul>
                   <li><strong>Se só decorar 4, decore estes:</strong> causa (PORQUE), condição (SE/CASO), concessão (EMBORA = mas) e conclusão (LOGO). Eles respondem metade das questões de conectivo.</li>
@@ -646,6 +718,7 @@
                 <button class="btn btn-secondary" onclick="prevFlashcard()"><i class="fas fa-arrow-left"></i> Anterior</button>
                 <button class="btn btn-secondary" onclick="nextFlashcard()">Próximo <i class="fas fa-arrow-right"></i></button>
                 <button class="btn btn-secondary" onclick="shuffleFlashcards()" title="Embaralhar"><i class="fas fa-random"></i></button>
+                <button class="btn btn-secondary" onclick="copyCurrentFlashcard()" title="Copiar pergunta e resposta do cartão"><i class="fas fa-copy"></i> Copiar</button>
               </div>
 
               <div style="display: flex; gap: 10px;">
@@ -1258,7 +1331,7 @@
     <button class="mobile-nav-btn" data-tab="tab-questoes">
       <i class="fas fa-tasks"></i>
       <span>Questões</span>
-      <span class="mobile-badge" id="mobileQuizBadge">520</span>
+      <span class="mobile-badge" id="mobileQuizBadge">567</span>
     </button>
     <button class="mobile-nav-btn" data-tab="tab-flashcards">
       <i class="fas fa-clone"></i>

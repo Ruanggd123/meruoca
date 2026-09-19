@@ -5984,7 +5984,7 @@ const QUIZ_QUESTIONS_DATA = [
     "question": "A respeito das regras de articulação dos atos normativos disciplinadas na Lei Complementar nº 95/1998 (Art. 10), a numeração ordinal e cardinal dos ARTIGOS deve obedecer à seguinte regra:",
     "options": [
       "A numeração dos artigos será ordinal do Art. 1º ao Art. 10, passando a cardinal a partir do Art. 11.",
-      "A numeração dos artigos será ordinal do Art. 1º ao Art. 9º e cardinal a partir do Art. 10 (ex.: Art. 10, Art. 11, etc.).",
+      "A numeração dos artigos será ordinal do Art. 1º ao Art. 9º e cardinal a partir do Art. 10.",
       "Todos os artigos de leis e decretos devem ser grafados compulsoriamente em algarismos romanos.",
       "A numeração dos artigos será sempre cardinal desde o início (Artigo 1, Artigo 2, etc.), vedado o uso de ordinais."
     ],
@@ -6048,8 +6048,8 @@ const QUIZ_QUESTIONS_DATA = [
     "question": "Ao elaborar um projeto de lei que pretenda incluir novos artigos entre o Art. 15 e o Art. 16 de uma lei municipal vigente, o redator legislativo deve seguir a sistemática da LC nº 95/1998 para evitar a rennumeração de toda a lei. O procedimento correto de acréscimo é:",
     "options": [
       "Renomear o Art. 16 para Art. 17 e empurrar todos os artigos seguintes para a numeração seguinte.",
-      "Identificar os novos artigos com o número do artigo imediatamente anterior seguido de letras maiúsculas em ordem alfabética (ex.: Art. 15-A, Art. 15-B).",
-      "Utilizar números fracionários ou decimais acompanhados de vírgula (ex.: Art. 15,1 e Art. 15,2).",
+      "Identificar os novos artigos com o número do artigo imediatamente anterior seguido de letras maiúsculas em ordem alfabética.",
+      "Utilizar números fracionários ou decimais acompanhados de vírgula.",
       "Inserir os novos dispositivos como anexos sem numeração ao final do texto consolidado."
     ],
     "correctAnswer": 1,
@@ -8211,7 +8211,7 @@ const QUIZ_QUESTIONS_DATA = [
   "topic": "Internet vs Intranet vs Extranet",
   "question": "Quanto aos conceitos de Internet, Intranet e Extranet, cobrados no padrão INBRASP, assinale a alternativa correta:",
   "options": [
-    "Internet é a rede mundial pública; Intranet é a rede privada interna de uma organização (ex: Câmara de Meruoca) com acesso restrito; Extranet é a extensão controlada da Intranet para parceiros externos via login.",
+      "Internet é a rede mundial pública; Intranet é a rede privada interna de uma organização com acesso restrito; Extranet é a extensão controlada da Intranet para parceiros externos via login.",
     "Internet e Intranet são sinônimos, ambas públicas e sem controle de acesso.",
     "Intranet é mundial e pública, enquanto a Internet é restrita aos servidores da Câmara.",
     "Extranet é a internet via satélite e Intranet é a internet discada antiga."
@@ -8843,6 +8843,760 @@ const QUIZ_QUESTIONS_DATA = [
   ],
   "correctAnswer": 1,
   "commentary": "Gabarito: B. Sem artigo antes do substantivo, a expressão fica INVARIÁVEL ('É proibido entrada', 'É necessário assinatura'). Com artigo, varia ('É proibida A entrada', 'São necessárias AS assinaturas'). Em B falta o artigo para variar; C e D invertem a regra. Macete: sem artigo, trava tudo no singular masculino."
+}
+,
+{
+  "id": 521,
+  "category": "legislacao",
+  "day": "w3_d5",
+  "discipline": "Lei Orgânica de Meruoca",
+  "topic": "Iniciativa Popular (CF, Art. 29, XIII)",
+  "question": "A Constituição Federal assegura a iniciativa popular de projetos de lei de interesse específico do Município. Nesse contexto, assinale a alternativa CORRETA:",
+  "options": [
+    "A iniciativa popular exige subscrição de no mínimo dez por cento dos eleitores do Município.",
+    "A iniciativa popular é vedada aos Municípios, cabendo apenas à União e aos Estados.",
+    "A iniciativa popular depende de autorização prévia do Prefeito para ser exercida.",
+    "A iniciativa popular manifesta-se por projetos subscritos por no mínimo cinco por cento do eleitorado municipal."
+  ],
+  "correctAnswer": 3,
+  "commentary": "Gabarito: D. CF/88, Art. 29, XIII: iniciativa popular mediante manifestação de pelo menos 5% do eleitorado. Distrator A troca o percentual; C nega o instituto; D cria autorização inexistente."
+},
+{
+  "id": 522,
+  "category": "legislacao",
+  "day": "w3_d5",
+  "discipline": "Lei Orgânica de Meruoca",
+  "topic": "Iniciativa Privativa do Prefeito",
+  "question": "No processo legislativo municipal, são de iniciativa privativa do Prefeito as leis que disponham sobre:",
+  "options": [
+    "Criação de cargos e funções na administração municipal e regime jurídico dos servidores.",
+    "Organização dos serviços internos da Câmara e criação de seus cargos.",
+    "Fixação dos subsídios dos Vereadores para a legislatura seguinte.",
+    "Alteração do Regimento Interno da Câmara Municipal."
+  ],
+  "correctAnswer": 0,
+  "commentary": "Gabarito: A. Simetria com CF, Art. 61, § 1º, II: cargos, funções, empregos, regime jurídico e organização administrativa do Executivo. B e D são da Mesa/Câmara; C é da Câmara (cada legislatura fixa para a subsequente)."
+},
+{
+  "id": 523,
+  "category": "legislacao",
+  "day": "w3_d5",
+  "discipline": "Lei Orgânica de Meruoca",
+  "topic": "Iniciativa da Mesa Diretora",
+  "question": "Compete privativamente à Mesa Diretora da Câmara a iniciativa de projetos de lei sobre:",
+  "options": [
+    "Aumento da remuneração dos servidores do Poder Executivo municipal.",
+    "Criação de secretarias municipais e definição de suas atribuições.",
+    "Organização dos serviços administrativos da Câmara e criação ou extinção de seus cargos.",
+    "Instituição de impostos municipais sobre serviços de qualquer natureza."
+  ],
+  "correctAnswer": 2,
+  "commentary": "Gabarito: C. A Câmara organiza seus próprios serviços (função atípica administrativa). A e B são do Prefeito; D, embora municipal, não é iniciativa privativa da Mesa."
+},
+{
+  "id": 524,
+  "category": "legislacao",
+  "day": "w3_d5",
+  "discipline": "Lei Orgânica de Meruoca",
+  "topic": "Emendas, Substitutivos e Pareceres",
+  "question": "Durante a tramitação de um projeto de lei na Câmara, é CORRETO afirmar que:",
+  "options": [
+    "A emenda supressiva acrescenta dispositivo novo ao texto da proposição.",
+    "O substitutivo altera integralmente a proposição, substituindo seu texto.",
+    "O parecer das comissões substitui a votação em plenário.",
+    "A emenda aditiva elimina parte do texto sem deliberação."
+  ],
+  "correctAnswer": 1,
+  "commentary": "Gabarito: B. Supressiva ELIMINA; aditiva ACRESCENTA; modificativa ALTERA redação; substitutivo SUBSTITUI tudo. Parecer instrui, não substitui o plenário."
+},
+{
+  "id": 525,
+  "category": "legislacao",
+  "day": "w3_d5",
+  "discipline": "Lei Orgânica de Meruoca",
+  "topic": "Sanção: Prazo e Silêncio",
+  "question": "Aprovado um projeto de lei pela Câmara de Meruoca, o Prefeito terá 15 dias úteis para sancioná-lo ou vetá-lo. Decorrido esse prazo sem manifestação, é CORRETO afirmar que:",
+  "options": [
+    "O projeto é arquivado por decurso de prazo.",
+    "O silêncio importa sanção tácita do projeto.",
+    "O projeto retorna à Câmara para nova votação obrigatória.",
+    "O veto é considerado automaticamente oposto."
+  ],
+  "correctAnswer": 1,
+  "commentary": "Gabarito: B. Simetria com CF, Art. 66, § 3º: silêncio do Executivo em 15 dias úteis = sanção tácita. Não há arquivamento nem veto presumido."
+},
+{
+  "id": 526,
+  "category": "legislacao",
+  "day": "w3_d5",
+  "discipline": "Lei Orgânica de Meruoca",
+  "topic": "Veto: Espécies e Motivos",
+  "question": "O Prefeito poderá vetar projeto de lei aprovado pela Câmara quando o julgar inconstitucional ou contrário ao interesse público. Sobre o veto, assinale a alternativa CORRETA:",
+  "options": [
+    "O veto é sempre total, não se admitindo veto parcial.",
+    "O veto parcial alcança apenas textos integrais, nunca palavras isoladas.",
+    "O veto pode ser total ou parcial, abrangendo inclusive palavra ou expressão isolada.",
+    "O veto dispensa motivação, por ser ato discricionário puro."
+  ],
+  "correctAnswer": 2,
+  "commentary": "Gabarito: C. CF, Art. 66, § 2º: veto total ou parcial (este, sobre texto integral de artigo, parágrafo, inciso ou alínea — e, na prática legislativa, palavra/expressão). Exige motivação: inconstitucionalidade ou interesse público."
+},
+{
+  "id": 527,
+  "category": "legislacao",
+  "day": "w3_d5",
+  "discipline": "Lei Orgânica de Meruoca",
+  "topic": "Apreciação do Veto pela Câmara",
+  "question": "Oposto o veto, a Câmara deverá apreciá-lo em 30 dias. É CORRETO afirmar que:",
+  "options": [
+    "O veto só pode ser rejeitado pelo voto da maioria absoluta dos membros da Câmara.",
+    "O veto é derrubado por maioria simples dos vereadores presentes.",
+    "Decorrido o prazo sem apreciação, o veto é automaticamente mantido.",
+    "A apreciação do veto dispensa quórum mínimo de presença."
+  ],
+  "correctAnswer": 0,
+  "commentary": "Gabarito: A. CF, Art. 66, § 4º (simetria municipal): rejeição por maioria absoluta em 30 dias; não apreciado, SOBRESTA as demais deliberações (tranca a pauta) — jamais é mantido automaticamente."
+},
+{
+  "id": 528,
+  "category": "legislacao",
+  "day": "w3_d5",
+  "discipline": "Lei Orgânica de Meruoca",
+  "topic": "Promulgação: Prazos e Competência",
+  "question": "Rejeitado o veto pela Câmara, o projeto será enviado ao Prefeito para promulgação em 48 horas. Se ele não o fizer, é CORRETO afirmar que:",
+  "options": [
+    "O Presidente da Câmara promulgará a lei em igual prazo de 48 horas.",
+    "A lei jamais entrará em vigor por falta de promulgação.",
+    "Qualquer vereador poderá promulgar a lei imediatamente.",
+    "O Tribunal de Contas promulgará a lei no lugar do Prefeito."
+  ],
+  "correctAnswer": 0,
+  "commentary": "Gabarito: A. CF, Art. 66, § 7º: omisso o Prefeito em 48h, promulga o Presidente da Câmara (e, se este falhar, o Vice). Sem promulgação não há executoriedade — por isso a Constituição define substitutos."
+},
+{
+  "id": 529,
+  "category": "legislacao",
+  "day": "w3_d5",
+  "discipline": "Lei Orgânica de Meruoca",
+  "topic": "Fiscalização: Convocação e Sustação",
+  "question": "No exercício da função fiscalizadora, a Câmara Municipal poderá:",
+  "options": [
+    "Convocar Secretários Municipais para prestar pessoalmente informações sobre assuntos de suas pastas.",
+    "Demitir servidores do Poder Executivo por decisão de comissão.",
+    "Anular atos do Prefeito por conveniência política, sem motivação.",
+    "Sustar contratos administrativos regulares sem apontar ilegalidade."
+  ],
+  "correctAnswer": 0,
+  "commentary": "Gabarito: A. Simetria com CF, Art. 50: convocação de auxiliares para informações (recusa injustificada = crime de responsabilidade). Sustação de atos/contratos exige ilegalidade apontada (com o TCE). Demissão e anulação imotivada extrapolam a competência do Legislativo."
+},
+{
+  "id": 530,
+  "category": "legislacao",
+  "day": "w3_d5",
+  "discipline": "Lei Orgânica de Meruoca",
+  "topic": "Julgamento das Contas: Prefeito x Mesa",
+  "question": "Quanto ao julgamento das contas no âmbito municipal, assinale a alternativa CORRETA:",
+  "options": [
+    "As contas do Prefeito são julgadas pelo Tribunal de Contas, sem qualquer participação da Câmara Municipal.",
+    "As contas da Mesa da Câmara são julgadas pela própria Câmara, com total exclusão do Tribunal de Contas.",
+    "Todas as contas municipais são julgadas pelo Prefeito, por ser o ordenador de despesas.",
+    "As contas do Prefeito são julgadas pela Câmara, com parecer prévio do Tribunal de Contas; as da Mesa são julgadas diretamente pelo Tribunal."
+  ],
+  "correctAnswer": 3,
+  "commentary": "Gabarito: D. CF, Arts. 31 e 71: Prefeito = julgado pela Câmara (controle externo político, com parecer do TCE); Mesa/Câmara enquanto unidade gestora = julgada pelo TCE. Distrator A inverte; B exclui o TCE; D concentra tudo no Prefeito."
+},
+{
+  "id": 531,
+  "category": "matematica",
+  "day": "w3_d5",
+  "discipline": "Matemática / RLM",
+  "topic": "Área do Retângulo",
+  "question": "O plenário da Câmara possui formato retangular com 12 metros de comprimento por 9 metros de largura. A área total desse plenário é de:",
+  "options": [
+    "42 m².",
+    "54 m².",
+    "108 m².",
+    "216 m²."
+  ],
+  "correctAnswer": 2,
+  "commentary": "Gabarito: C. Área = 12 × 9 = 108 m². A soma 42 é o perímetro; 216 é o dobro da área; 54 é a metade."
+},
+{
+  "id": 532,
+  "category": "matematica",
+  "day": "w3_d5",
+  "discipline": "Matemática / RLM",
+  "topic": "Perímetro do Retângulo",
+  "question": "Um terreno da Câmara mede 45 metros de comprimento por 25 metros de largura. Para cercá-lo totalmente, serão necessários:",
+  "options": [
+    "70 metros de cerca.",
+    "1.125 metros de cerca.",
+    "95 metros de cerca.",
+    "140 metros de cerca."
+  ],
+  "correctAnswer": 3,
+  "commentary": "Gabarito: D. Perímetro = 2 × (45 + 25) = 140 m. 1.125 é a área; 70 é metade do perímetro; 95 não corresponde a nenhuma operação válida."
+},
+{
+  "id": 533,
+  "category": "matematica",
+  "day": "w3_d5",
+  "discipline": "Matemática / RLM",
+  "topic": "Área do Quadrado",
+  "question": "Uma sala de arquivo quadrada possui 12 metros de lado. Sua área corresponde a:",
+  "options": [
+    "48 m².",
+    "144 m².",
+    "24 m².",
+    "72 m²."
+  ],
+  "correctAnswer": 1,
+  "commentary": "Gabarito: B. Área = 12² = 144 m². 48 é o perímetro; 24 e 72 são frações sem base no cálculo."
+},
+{
+  "id": 534,
+  "category": "matematica",
+  "day": "w3_d5",
+  "discipline": "Matemática / RLM",
+  "topic": "Área do Triângulo",
+  "question": "Um jardim triangular em frente à Câmara tem base de 10 metros e altura de 6 metros. Sua área é de:",
+  "options": [
+    "60 m².",
+    "16 m².",
+    "36 m².",
+    "30 m²."
+  ],
+  "correctAnswer": 3,
+  "commentary": "Gabarito: D. Área = (10 × 6) / 2 = 30 m². 60 esquece a divisão por 2 — erro clássico da banca; 16 soma base e altura; 36 não tem base no cálculo."
+},
+{
+  "id": 535,
+  "category": "matematica",
+  "day": "w3_d5",
+  "discipline": "Matemática / RLM",
+  "topic": "Área do Círculo",
+  "question": "Uma praça circular possui raio de 7 metros. Adotando π = 3,14, sua área é de:",
+  "options": [
+    "43,96 m².",
+    "153,86 m².",
+    "21,98 m².",
+    "307,72 m²."
+  ],
+  "correctAnswer": 1,
+  "commentary": "Gabarito: B. Área = 3,14 × 7² = 153,86 m². 43,96 é o comprimento da circunferência (2πr); 307,72 dobra o raio; 21,98 não tem base."
+},
+{
+  "id": 536,
+  "category": "matematica",
+  "day": "w3_d5",
+  "discipline": "Matemática / RLM",
+  "topic": "Volume do Paralelepípedo",
+  "question": "Um depósito da Câmara mede 5 metros de comprimento, 4 metros de largura e 2,5 metros de altura. Seu volume é de:",
+  "options": [
+    "50 m³.",
+    "45 m³.",
+    "11,5 m³.",
+    "100 m³."
+  ],
+  "correctAnswer": 0,
+  "commentary": "Gabarito: A. Volume = 5 × 4 × 2,5 = 50 m³. 11,5 soma as medidas; 100 dobra o resultado."
+},
+{
+  "id": 537,
+  "category": "matematica",
+  "day": "w3_d5",
+  "discipline": "Matemática / RLM",
+  "topic": "Área e Rendimento (Piso)",
+  "question": "Uma sala de 8 metros por 6 metros será revestida com placas que cobrem 16 m² cada. Serão necessárias:",
+  "options": [
+    "2 placas.",
+    "4 placas.",
+    "3 placas.",
+    "6 placas."
+  ],
+  "correctAnswer": 2,
+  "commentary": "Gabarito: C. Área = 48 m²; 48 / 16 = 3 placas exatas. 2 e 6 vêm de divisões erradas; 4 arredonda sem necessidade."
+},
+{
+  "id": 538,
+  "category": "matematica",
+  "day": "w3_d5",
+  "discipline": "Matemática / RLM",
+  "topic": "Volume e Consumo (Caixa d'Água)",
+  "question": "Uma caixa d'água de 2 m por 1,5 m por 1 m abastece um setor que consome 500 litros por dia. Sem reposição, a reserva dura:",
+  "options": [
+    "3 dias.",
+    "5 dias.",
+    "7 dias.",
+    "6 dias."
+  ],
+  "correctAnswer": 3,
+  "commentary": "Gabarito: D. Volume = 3 m³ = 3.000 litros; 3.000 / 500 = 6 dias. Exige a conversão m³→litros antes de dividir — pulo clássico da banca."
+}
+,
+{
+  "id": 539,
+  "category": "administrativo",
+  "day": "simReal",
+  "discipline": "Direito Administrativo",
+  "topic": "Licitações (Lei nº 14.133/2021) [INBRASP 2026 • Q4155841]",
+  "question": "[Real INBRASP 2026] A Lei n.º 14.133/2021 estabelece normas gerais de licitações e contratos administrativos, introduzindo novos procedimentos e princípios que visam modernizar e tornar mais eficiente a contratação pública. Nesse contexto, assinale a alternativa CORRETA:",
+  "options": [
+    "A modalidade de contratação integrada impede o contratado elaborar projeto básico executivo.",
+    "O critério de julgamento de maior desconto é aplicável exclusivamente concessões de serviço.",
+    "A contratação semi-integrada autoriza alterações quantitativas ilimitadas do objeto contratado sem restrições.",
+    "A inversão de fases permite julgamento das propostas antes habilitação dos licitantes."
+  ],
+  "correctAnswer": 3,
+  "commentary": "Gabarito oficial INBRASP (D): Na Lei 14.133/2021 (Art. 17), a regra geral do rito procedimental é a inversão de fases (fase de julgamento de propostas antecede a fase de habilitação)."
+},
+{
+  "id": 540,
+  "category": "administrativo",
+  "day": "simReal",
+  "discipline": "Direito Administrativo",
+  "topic": "Atos Administrativos [INBRASP 2026 • Q4155840]",
+  "question": "[Real INBRASP 2026] Em relação ao Direito Administrativo, o Ato administrativo possui requisitos e atributos específicos que condicionam sua validade e eficácia e cuja compreensão é indispensável aos agentes públicos. Acerca do tema, é CORRETO afirmar que:",
+  "options": [
+    "Competência, objeto, forma, motivo e vontade compõem os requisitos do ato administrativo.",
+    "Os atributos do ato administrativo incluem presunção de legitimidade, imperatividade e autoexecutoriedade.",
+    "O ato administrativo é irrevogável e imutável independentemente do interesse público relevante.",
+    "Um ato ilegal pode ser convalidado quando houver vício insanável de competência."
+  ],
+  "correctAnswer": 1,
+  "commentary": "Gabarito oficial INBRASP (B): Os atributos do ato administrativo são: Presunção de Legitimidade, Imperatividade, Autoexecutoriedade e Tipicidade (mnemônico PIAT)."
+},
+{
+  "id": 541,
+  "category": "constitucional",
+  "day": "simReal",
+  "discipline": "Direito Constitucional",
+  "topic": "Organização do Estado & Princípios (Art. 37 CF) [INBRASP 2026 • Q4155839]",
+  "question": "[Real INBRASP 2026] A Constituição regula a organização do Estado definindo competências e princípios administrativos que orientam o funcionamento da União, estados, Distrito Federal e municípios e estabelecem limites para a atuação do poder público. Conforme o enunciado, assinale a alternativa CORRETA:",
+  "options": [
+    "O Brasil organiza-se em departamentos, províncias, vilas e Distritos Federais federados autônomos.",
+    "Compete exclusivamente aos estados legislar sobre direitos processuais penais e civis federais.",
+    "A autonomia municipal abrange criação de leis estaduais tributos e organização administrativa nacional.",
+    "O art. 37 consagra princípios, legalidade, impessoalidade, moralidade, publicidade e eficiência administrativa."
+  ],
+  "correctAnswer": 3,
+  "commentary": "Gabarito oficial INBRASP (D): O caput do Art. 37 da Constituição Federal consagra expressamente os princípios fundamentais da Administração Pública (LIMPE: Legalidade, Impessoalidade, Moralidade, Publicidade e Eficiência)."
+},
+{
+  "id": 542,
+  "category": "constitucional",
+  "day": "simReal",
+  "discipline": "Direito Constitucional",
+  "topic": "Direitos Fundamentais (Art. 5º CF) [INBRASP 2026 • Q4155838]",
+  "question": "[Real INBRASP 2026] Os direitos e garantias fundamentais previstos na Constituição visam assegurar a proteção das liberdades individuais e de outros direitos essenciais ao cidadão, limitando o poder estatal e promovendo a dignidade da pessoa humana. Diante do exposto, assinale CORRETAMENTE:",
+  "options": [
+    "A liberdade de expressão é assegurada independentemente de censura e anonimato autorizado.",
+    "A inviolabilidade do domicílio pode ser relativizada em casos de flagrante delito.",
+    "A tortura é admitida quando necessária para investigação de crimes hediondos graves.",
+    "A liberdade de reunião não precisa obedecer a requisitos previstos na lei."
+  ],
+  "correctAnswer": 1,
+  "commentary": "Gabarito oficial INBRASP (B): Art. 5º, XI, CF/88: A casa é asilo inviolável do indivíduo, salvo em caso de flagrante delito, desastre, socorro ou, durante o dia, por determinação judicial."
+},
+{
+  "id": 543,
+  "category": "constitucional",
+  "day": "simReal",
+  "discipline": "Direito Constitucional",
+  "topic": "Princípios & Objetivos da República (Art. 3º CF) [INBRASP 2026 • Q4155837]",
+  "question": "[Real INBRASP 2026] De acordo com a Constituição Federal (CF) de 1988, os princípios fundamentais orientam a República Federativa do Brasil, estabelecendo valores e objetivos que norteiam a vida política e social do país. Nesse contexto, assinale a alternativa CORRETA:",
+  "options": [
+    "São fundamentos da República a soberania a submissão e a dignidade humana.",
+    "A república tem como fundamento o pluralismo político e a monarquia hereditária.",
+    "O artigo quarto orienta relações internacionais com base intervenção em outros povos.",
+    "São objetivos fundamentais erradicar a pobreza promover justiça social e reduzir desigualdades."
+  ],
+  "correctAnswer": 3,
+  "commentary": "Gabarito oficial INBRASP (D): Art. 3º, III, CF/88: Constitui objetivo fundamental da República Federativa do Brasil erradicar a pobreza e a marginalização e reduzir as desigualdades sociais e regionais."
+},
+{
+  "id": 544,
+  "category": "legislacao",
+  "day": "simReal",
+  "discipline": "Legislação Municipal",
+  "topic": "Lei Orgânica Municipal [INBRASP 2026 • Q4156058]",
+  "question": "[Real INBRASP 2026] A Lei Orgânica Municipal (LOM) funciona como a lei fundamental do ente federativo local. Com base no tema e à luz do Direito Administrativo e Constitucional brasileiro, a função precípua da Lei Orgânica é:",
+  "options": [
+    "Funcionar como norma soberana e autônoma, com prerrogativa para revogar dispositivos da Constituição Federal dentro do território municipal.",
+    "Atuar como lei fundamental do município, incumbida de organizar os poderes locais (Executivo e Legislativo) e estruturar a administração pública, operando em estrita harmonia e subordinação às Constituições Federal e Estadual.",
+    "Subordinar a gestão local às diretrizes emitidas exclusivamente pelo Poder Judiciário do Estado, mitigando a atuação da Câmara de Vereadores.",
+    "Regulamentar de forma restrita e exclusiva a instituição e arrecadação dos tributos municipais, sem competência sobre os poderes ou servidores locais."
+  ],
+  "correctAnswer": 1,
+  "commentary": "Gabarito oficial INBRASP (B): A Lei Orgânica é a lei fundamental municipal que estrutura e organiza os poderes locais (Executivo e Legislativo), subordinada às Constituições Federal e Estadual."
+},
+{
+  "id": 545,
+  "category": "especificos",
+  "day": "simReal",
+  "discipline": "Administração Geral",
+  "topic": "Rotinas Administrativas & Protocolo [INBRASP 2026 • Q4155830]",
+  "question": "[Real INBRASP 2026] As rotinas administrativas buscam racionalizar processos e assegurar eficiência na execução das atividades por meio de padrões e protocolos que reduzem retrabalho e evitam erros, garantindo fluidez ao serviço. Sobre o tema e, à luz dessa análise, assinale a alternativa CORRETA:",
+  "options": [
+    "A padronização de procedimentos complica fluxos e aumenta retrabalho e erros administrativos.",
+    "A ausência de rotina aumenta produtividade e garante distribuição equitativa de tarefas.",
+    "A racionalização pressupõe eliminar etapas essenciais para acelerar a execução dos serviços.",
+    "O protocolo registra movimentação documental garantindo autenticidade e rastreabilidade das informações formais."
+  ],
+  "correctAnswer": 3,
+  "commentary": "Gabarito oficial INBRASP (D): O setor de protocolo é responsável pelo registro de entrada, movimentação e saída de documentos oficiais, garantindo autenticidade e rastreabilidade formal."
+},
+{
+  "id": 546,
+  "category": "especificos",
+  "day": "simReal",
+  "discipline": "Administração Geral",
+  "topic": "Funções Administrativas (Planejar, Organizar, Dirigir, Controlar) [INBRASP 2026 • Q4155829]",
+  "question": "[Real INBRASP 2026] A administração é um processo voltado à consecução de objetivos organizacionais e envolve o exercício de funções específicas que estruturam e direcionam os esforços dos colaboradores para resultados planejados. Diante do exposto, é CORRETO afirmar que:",
+  "options": [
+    "Planejar é prever objetivos sem considerar estratégias e recursos para alcançar resultados.",
+    "Organizar significa delegar autoridade e distribuir tarefas de forma aleatória pelos chefes.",
+    "Dirigir envolve coordenar pessoas punindo-as na execução das metas previamente definidas sempre.",
+    "Controlar é acompanhar resultados corrigindo desvios e comparando com padrões estabelecidos sempre."
+  ],
+  "correctAnswer": 3,
+  "commentary": "Gabarito oficial INBRASP (D): Na Teoria Geral da Administração, a função 'Controlar' consiste em acompanhar a execução, comparar com os padrões planejados e corrigir eventuais desvios."
+},
+{
+  "id": 547,
+  "category": "especificos",
+  "day": "simReal",
+  "discipline": "Arquivologia",
+  "topic": "Gestão de Documentos & Protocolo [INBRASP 2026 • Q4155826]",
+  "question": "[Real INBRASP 2026] O recebimento e a transmissão de informações exigem procedimentos padronizados de modo a assegurar controle, rastreabilidade e segurança nos fluxos comunicacionais dentro da organização. Dessa forma, assinale CORRETAMENTE:",
+  "options": [
+    "Registrar data hora e origem é fundamental para controle e rastreabilidade documental.",
+    "Ignorar o protocolo simplifica o fluxo e evita burocracia no setor administrativo.",
+    "Transmitir informação confidencial sem verificação preserva a agilidade e eficiência total.",
+    "Deixar de arquivar documentos recebidos reduz a transparência e a responsabilidade institucional."
+  ],
+  "correctAnswer": 0,
+  "commentary": "Gabarito oficial INBRASP (A): O registro criterioso de data, hora e procedência do documento é indispensável para o controle da cadeia de custódia e rastreabilidade no protocolo."
+},
+{
+  "id": 548,
+  "category": "especificos",
+  "day": "simReal",
+  "discipline": "Arquivologia",
+  "topic": "Métodos de Arquivamento & Classificação [INBRASP 2026 • Q4155824]",
+  "question": "[Real INBRASP 2026] O controle de materiais e a organização de arquivos são fundamentais para a eficiência institucional, pois garantem o acesso rápido e a disponibilidade de recursos, além de evitar perdas e desperdícios. Nesse contexto, assinale a alternativa CORRETA:",
+  "options": [
+    "O controle de materiais utiliza a técnica primeiro a entrar primeiro a sair.",
+    "O arquivamento por ordem alfabética ignora critérios temáticos e prazos legais sempre.",
+    "O método de arrumação por cor prioriza estética e subjetividade na gestão.",
+    "A classificação por assunto facilita o acesso e preservação de documentos organizacionais."
+  ],
+  "correctAnswer": 3,
+  "commentary": "Gabarito oficial INBRASP (D): O método de arquivamento por assunto (ideográfico) organiza os documentos segundo o tema, facilitando sua recuperação célere e preservação institucional."
+},
+{
+  "id": 549,
+  "category": "especificos",
+  "day": "simReal",
+  "discipline": "Ética na Administração Pública",
+  "topic": "INBRASP 2026 [INBRASP 2026 • Q4155828]",
+  "question": "[Real INBRASP 2026] A Ética profissional e as relações interpessoais orientam os comportamentos dos servidores públicos, influenciando a confiança da sociedade e a credibilidade dos órgãos, pois valores éticos e convivência harmoniosa são essenciais ao bom serviço. Com base no enunciado, assinale CORRETAMENTE:",
+  "options": [
+    "A ética permite aceitar presentes de fornecedores como prova de gentileza empresarial.",
+    "As relações interpessoais baseiam-se em competição rivalidade e desconfiança entre pares.",
+    "É legítimo utilizar informações internas para obter vantagens pessoais no serviço público.",
+    "O cumprimento das normas éticas fortalece a imagem e credibilidade da instituição."
+  ],
+  "correctAnswer": 3,
+  "commentary": "Gabarito oficial INBRASP (D): O cumprimento rigoroso dos preceitos éticos e deontológicos pelo servidor público fortalece a credibilidade e a confiança da sociedade na instituição."
+},
+{
+  "id": 550,
+  "category": "especificos",
+  "day": "simReal",
+  "discipline": "Redação Oficial",
+  "topic": "Espécies Documentais (Ofício, Memorando) [INBRASP 2026 • Q4155822]",
+  "question": "[Real INBRASP 2026] No contexto da redação oficial, as diversas espécies documentais possuem características e finalidades distintas que determinam o seu uso apropriado na administração pública. Sobre o tema, é CORRETO afirmar que:",
+  "options": [
+    "O ofício é usado para comunicações externas com autoridades do mesmo nível ou de outros órgãos.",
+    "O memorando destina-se a expedientes enviados a autoridades de outros poderes apenas.",
+    "A carta pessoal oficial é utilizada para registrar acordos informais entre órgãos.",
+    "A comunicação interna é instrumento para registros patrimoniais de documentos e materiais."
+  ],
+  "correctAnswer": 0,
+  "commentary": "Gabarito oficial INBRASP (A): No Manual de Redação Oficial da Presidência da República, o Ofício é a comunicação formal destinada a autoridades de outros órgãos ou entidades externas."
+},
+{
+  "id": 551,
+  "category": "especificos",
+  "day": "simReal",
+  "discipline": "Atendimento ao Público",
+  "topic": "Princípios do Atendimento [INBRASP 2026 • Q4155835]",
+  "question": "[Real INBRASP 2026] A qualidade no atendimento ao público está associada a práticas que valorizam o cidadão e incluem atendimento humanizado, acessibilidade e resolução eficaz de demandas. Diante do exposto, assinale a alternativa CORRETA:",
+  "options": [
+    "Ouvir demandas com atenção, oferecer informações claras e resolver problemas com eficiência.",
+    "Desconsiderar reclamações legitima sentimentos positivos e aprimora a confiança do público sempre.",
+    "Garantir acessibilidade, promover a igualdade e respeitar a diversidade fortalecem o serviço prestado sempre.",
+    "Informar inadequadamente gera satisfação e fideliza o usuário de forma contínua total."
+  ],
+  "correctAnswer": 0,
+  "commentary": "Gabarito oficial INBRASP (A): O atendimento de excelência no serviço público fundamenta-se na escuta ativa, presteza, clareza nas orientações e resolutividade das demandas dos cidadãos."
+},
+{
+  "id": 552,
+  "category": "especificos",
+  "day": "simReal",
+  "discipline": "Gestão de Pessoas",
+  "topic": "Comunicação Organizacional & Feedback [INBRASP 2026 • Q4155833]",
+  "question": "[Real INBRASP 2026] A comunicação eficaz é essencial para o sucesso das organizações, pois melhora o entendimento, reduz conflitos e promove a colaboração entre os membros da equipe por meio de feedbacks e escuta ativa. Nesse contexto, assinale a alternativa CORRETA.",
+  "options": [
+    "Ouvir passivamente facilita compreensão reduz conflitos e fortalece relacionamentos no trabalho sempre.",
+    "Informações difusas e incompletas promovem confiança e melhoram o clima organizacional saudável.",
+    "O excesso de ruído na comunicação promove entendimento e eficiência continuamente sempre.",
+    "O feedback construtivo contribui para aprendizado contínuo e melhoria de processos organizacionais."
+  ],
+  "correctAnswer": 3,
+  "commentary": "Gabarito oficial INBRASP (D): O feedback construtivo e transparente orienta os servidores, estimula o aprimoramento contínuo das rotinas e aperfeiçoa o clima organizacional."
+},
+{
+  "id": 553,
+  "category": "informatica",
+  "day": "simReal",
+  "discipline": "Noções de Informática",
+  "topic": "Microsoft Word & Excel [INBRASP 2026 • Q4155827]",
+  "question": "[Real INBRASP 2026] Considerando que ao trabalhar com programas de edição de texto e planilhas eletrônicas, é importante dominar funções básicas que permitam formatar documentos e realizar cálculos simples ou complexos de forma precisa e eficiente, assinale a alternativa CORRETA:",
+  "options": [
+    "No Word, é possível formatar texto alterar fontes cores e inserir tabelas.",
+    "No Excel, a fórmula SOMA serve para calcular quantidades entre células selecionadas.",
+    "No Word, as planilhas são criadas para cálculos complexos com fórmulas matemáticas.",
+    "No Excel, a ferramenta de revisão aplica correção ortográfica em parágrafos escritos."
+  ],
+  "correctAnswer": 0,
+  "commentary": "Gabarito oficial INBRASP (A): O Microsoft Word permite a edição, formatação completa de fontes (tamanho, cor, família), parágrafos e inserção de tabelas e elementos gráficos."
+},
+{
+  "id": 554,
+  "category": "matematica",
+  "day": "simReal",
+  "discipline": "Matemática",
+  "topic": "Frações e Números Decimais em Ordem Crescente [INBRASP 2026 • Q4156055]",
+  "question": "[Real INBRASP 2026] Os valores foram obtidos em uma pesquisa estatística, observe: (4/5; 0,75; 1,2; 3/2; 0,8̅). Para facilitar a análise dos dados, é necessário organizá-los em ordem crescente. Assim, a ordem crescente dos números é, CORRETA e, respectivamente:",
+  "options": [
+    "0,75; 0,8̅; 4/5; 1,2; 3/2.",
+    "0,75; 4/5; 0,8̅; 1,2; 3/2.",
+    "4/5; 0,75; 0,8̅; 1,2; 3/2.",
+    "3/2; 0,8̅; 4,5; 1,2; 0,75."
+  ],
+  "correctAnswer": 1,
+  "commentary": "Gabarito oficial INBRASP (B): Convertendo para decimais: 4/5 = 0,80; 0,75 = 0,75; 1,2 = 1,20; 3/2 = 1,50; 0,8̅ = 0,888... Ordem crescente: 0,75 < 4/5 (0,80) < 0,8̅ (0,888) < 1,2 < 3/2 (1,50)."
+},
+{
+  "id": 555,
+  "category": "matematica",
+  "day": "simReal",
+  "discipline": "Matemática",
+  "topic": "Aritmética & Resto de Divisão [INBRASP 2026 • Q4156054]",
+  "question": "[Real INBRASP 2026] Sendo R o resto da divisão do número 1004505 por 6, então R é um número:",
+  "options": [
+    "Divisor de 20.",
+    "Múltiplo de 9.",
+    "Maior do que 5.",
+    "Primo."
+  ],
+  "correctAnswer": 3,
+  "commentary": "Gabarito oficial INBRASP (D): Soma dos dígitos de 1004505 = 1+0+0+4+5+0+5 = 15 (múltiplo de 3). Como é ímpar, 1004505 mod 6 = 3. O número 3 é um número Primo."
+},
+{
+  "id": 556,
+  "category": "matematica",
+  "day": "simReal",
+  "discipline": "Matemática",
+  "topic": "Sistema de Medidas de Tempo [INBRASP 2026 • Q4156053]",
+  "question": "[Real INBRASP 2026] Considerando que um relógio adianta 3 minutos a cada dia, após 4 semanas, ele estará adiantado em:",
+  "options": [
+    "1 hora e 12 minutos.",
+    "1 hora e 16 minutos.",
+    "1 hora e 20 minutos.",
+    "1 hora e 24 minutos."
+  ],
+  "correctAnswer": 3,
+  "commentary": "Gabarito oficial INBRASP (D): 4 semanas = 28 dias. 28 dias × 3 min/dia = 84 minutos. 84 minutos = 60 min + 24 min = 1 hora e 24 minutos."
+},
+{
+  "id": 557,
+  "category": "matematica",
+  "day": "simReal",
+  "discipline": "Matemática",
+  "topic": "Operações com Frações [INBRASP 2026 • Q4156052]",
+  "question": "[Real INBRASP 2026] Pedro recebeu 3/4 das figurinhas que estavam em um álbum. Do total de figurinhas recebidas, ele deu 2/5 para um amigo. Dessa forma, a fração do total de figurinhas contidas no álbum que foi recebida pelo amigo de Pedro foi:",
+  "options": [
+    "3/10.",
+    "1/20.",
+    "1/4.",
+    "1/3."
+  ],
+  "correctAnswer": 0,
+  "commentary": "Gabarito oficial INBRASP (A): Pedro recebeu 3/4 e deu 2/5 dessa parte ao amigo: (3/4) × (2/5) = 6/20 = 3/10 do álbum total."
+},
+{
+  "id": 558,
+  "category": "portugues",
+  "day": "simReal",
+  "discipline": "Português",
+  "topic": "Classes de Palavras: Adjetivo Caracterizador [INBRASP 2026 • Q4156051]",
+  "question": "[Real INBRASP 2026] Assinale a alternativa cujo termo destacado é um adjetivo caracterizador de um substantivo:",
+  "options": [
+    "As críticas mais recentes se baseiam nas exigências do Pacto Ecológico Europeu.",
+    "A potência asiática oferece algo a mais que os europeus.",
+    "Alguns interesses, por outro lado, podem se camuflar neste cenário.",
+    "É um bloco, um continente estratégico, não podemos reduzir sua importância."
+  ],
+  "correctAnswer": 3,
+  "commentary": "Gabarito oficial INBRASP (D): Em \"continente estratégico\", a palavra \"estratégico\" qualifica e caracteriza o substantivo \"continente\"."
+},
+{
+  "id": 559,
+  "category": "portugues",
+  "day": "simReal",
+  "discipline": "Português",
+  "topic": "Adjunto Adverbial de Tempo [INBRASP 2026 • Q4156050]",
+  "question": "[Real INBRASP 2026] Assinale a alternativa que apresenta CORRETAMENTE apenas expressões que indicam tempo:",
+  "options": [
+    "Historicamente, temos tido um problema de diálogo com a União Europeia. Eles decidem regras importantes do jogo não em negociação, mas por conta própria.",
+    "Vale mencionar que há uma boa dose de protecionismo por parte do agronegócio europeu que também influencia a negociação com o Mercosul.",
+    "As críticas mais recentes se baseiam nas exigências do Pacto Ecológico Europeu, o Green Deal.",
+    "Ingo Plöger, empresário que acompanha há décadas a negociação do acordo e atualmente está na vice-presidência da Abag, ressalta que a UE é um importante provedor de conceitos mundiais."
+  ],
+  "correctAnswer": 3,
+  "commentary": "Gabarito oficial INBRASP (D): As locuções adverbiais e advérbios \"há décadas\" (tempo decorrido) e \"atualmente\" (tempo presente) expressam circunstância temporal estrita."
+},
+{
+  "id": 560,
+  "category": "portugues",
+  "day": "simReal",
+  "discipline": "Português",
+  "topic": "Regras de Acentuação Gráfica [INBRASP 2026 • Q4156049]",
+  "question": "[Real INBRASP 2026] A palavra ‘política’ está acentuada graficamente pelo mesmo motivo que em:",
+  "options": [
+    "Inflexível.",
+    "Café.",
+    "Cômputo.",
+    "Fóruns."
+  ],
+  "correctAnswer": 2,
+  "commentary": "Gabarito oficial INBRASP (C): A palavra \"po-lí-ti-ca\" é proparoxítona (sílaba tônica antepenúltima). Todas as proparoxítonas são acentuadas, assim como \"Côm-pu-to\"."
+},
+{
+  "id": 561,
+  "category": "portugues",
+  "day": "simReal",
+  "discipline": "Português",
+  "topic": "Orações Subordinadas Adverbiais: Condicional [INBRASP 2026 • Q4156048]",
+  "question": "[Real INBRASP 2026] No trecho “o acordo de livre comércio entre Mercosul e União Europeia corre o risco de não ser ratificado, caso a Europa permaneça inflexível”, a palavra destacada ('caso') introduz o significado de:",
+  "options": [
+    "Condição.",
+    "Consequência.",
+    "Causa.",
+    "Oposição."
+  ],
+  "correctAnswer": 0,
+  "commentary": "Gabarito oficial INBRASP (A): A conjunção subordinativa \"caso\" expressa uma condição necessária para que a oração principal se realize."
+},
+{
+  "id": 562,
+  "category": "portugues",
+  "day": "simReal",
+  "discipline": "Português",
+  "topic": "Sintaxe do Verbo Haver Impessoal [INBRASP 2026 • Q4156047]",
+  "question": "[Real INBRASP 2026] Em “não houve nenhuma oportunidade de diálogo de demonstrar o que é viável”, é CORRETO afirmar, de acordo com os termos da oração, que:",
+  "options": [
+    "O termo ‘nenhuma oportunidade de diálogo’ exerce a função de sujeito do verbo ‘haver’.",
+    "O verbo ‘haver’ é impessoal e transitivo direto.",
+    "O termo ‘viável’ exerce a função de complemento nominal.",
+    "O verbo ‘haver’ é pessoal e concorda com o sujeito da oração."
+  ],
+  "correctAnswer": 1,
+  "commentary": "Gabarito oficial INBRASP (B): No sentido de existir/ocorrer, o verbo 'haver' é impessoal (não tem sujeito) e é transitivo direto, exigindo objeto direto (\"nenhuma oportunidade de diálogo\")."
+},
+{
+  "id": 563,
+  "category": "portugues",
+  "day": "simReal",
+  "discipline": "Português",
+  "topic": "Classes de Palavras: Preposição vs. Artigo [INBRASP 2026 • Q4156046]",
+  "question": "[Real INBRASP 2026] No trecho “os produtores reunidos na Abag estariam dispostos a contribuir com a meta de acabar com o desmatamento ilegal”, as palavras 'a' em destaque (\"a contribuir\" e \"a meta\") são classificadas, CORRETA e respectivamente, como:",
+  "options": [
+    "Conjunção e pronome.",
+    "Preposição e pronome.",
+    "Conjunção e artigo.",
+    "Preposição e artigo."
+  ],
+  "correctAnswer": 3,
+  "commentary": "Gabarito oficial INBRASP (D): Em \"a contribuir\", 'a' é preposição antes do verbo no infinitivo; em \"a meta\", 'a' é artigo definido feminino que determina o substantivo 'meta'."
+},
+{
+  "id": 564,
+  "category": "portugues",
+  "day": "simReal",
+  "discipline": "Português",
+  "topic": "Significação de Palavras (Sinônimos) [INBRASP 2026 • Q4156045]",
+  "question": "[Real INBRASP 2026] Em “o acordo de livre comércio entre Mercosul e União Europeia corre o risco de não ser ratificado”, o termo destacado ('ratificado') significa:",
+  "options": [
+    "Validado.",
+    "Cancelado.",
+    "Proposto.",
+    "Corrigido."
+  ],
+  "correctAnswer": 0,
+  "commentary": "Gabarito oficial INBRASP (A): O verbo \"ratificar\" significa confirmar, validar, comprovar juridicamente um ato ou tratado prévio."
+},
+{
+  "id": 565,
+  "category": "portugues",
+  "day": "simReal",
+  "discipline": "Português",
+  "topic": "Morfossintaxe de Conjunção Causal [INBRASP 2026 • Q4156044]",
+  "question": "[Real INBRASP 2026] Assinale a alternativa que apresenta CORRETAMENTE a classificação do termo destacado:",
+  "options": [
+    "O atual presidente brasileiro parece empenhado em reverter a situação. (Conjunção)",
+    "O Brasil foi o principal vendedor de produtos do setor para UE. (Substantivo)",
+    "Não dá pra prever todas as variáveis porque não se trata de um processo linear. (Conjunção)",
+    "Isso pode estar sendo provocado em parte às posições ambíguas de Lula. (Adjetivo)"
+  ],
+  "correctAnswer": 2,
+  "commentary": "Gabarito oficial INBRASP (C): No período \"...porque não se trata...\", a palavra \"porque\" atua como conjunção subordinativa explicativa/causal ligando as orações."
+},
+{
+  "id": 566,
+  "category": "portugues",
+  "day": "simReal",
+  "discipline": "Português",
+  "topic": "Semântica Modalizadora [INBRASP 2026 • Q4156043]",
+  "question": "[Real INBRASP 2026] No trecho “Se houver mudança do governo, o acordo tem que assegurar que ele mesmo não sirva de incentivo para quem está desmatando”, a expressão destacada ('tem que') indica:",
+  "options": [
+    "Possibilidade.",
+    "Obrigação.",
+    "Proibição.",
+    "Restrição."
+  ],
+  "correctAnswer": 1,
+  "commentary": "Gabarito oficial INBRASP (B): A locução verbal modalizadora \"tem que\" veicula valor semântico de obrigatoriedade/dever imperativo."
+},
+{
+  "id": 567,
+  "category": "portugues",
+  "day": "simReal",
+  "discipline": "Português",
+  "topic": "Vocabulário Contextual: Sinônimos [INBRASP 2026 • Q4156042]",
+  "question": "[Real INBRASP 2026] Em “é preciso ter cautela com as assimetrias do acordo e algumas previsões muito otimistas”, o termo destacado ('assimetrias') pode ser substituído CORRETAMENTE por:",
+  "options": [
+    "Tendências.",
+    "Lacunas.",
+    "Discrepâncias.",
+    "Propostas."
+  ],
+  "correctAnswer": 2,
+  "commentary": "Gabarito oficial INBRASP (C): O vocábulo \"assimetrias\" refere-se à ausência de igualdade, desníveis, descompassos ou discrepâncias entre as partes negociadoras."
 }
 ];
 
@@ -9971,7 +10725,7 @@ let appState = {
   dayQuestions: {},
   quizAnswers: {},
   bankVersion: 3,
-  quizCategoryFilter: 'ouro',
+  quizCategoryFilter: 'w3_d5',
   quizOrderMode: 'random', // 'random', 'interleaved', 'sequential'
   quizFilterStatus: 'all', // 'all', 'pending', 'wrong'
   quizShuffledOrder: {}, // armazena ordem embaralhada por chave de filtro para manter estabilidade
@@ -10007,7 +10761,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setupCountdown();
   renderWeekPills();
   renderDaysForWeek(appState.currentWeek);
-  selectQuizDay(appState.quizCategoryFilter || 'ouro');
+  selectQuizDay(appState.quizCategoryFilter || 'w3_d5');
   renderFlashcard();
   renderCadernoErros();
   renderSimulados();
@@ -10036,9 +10790,9 @@ function loadState() {
         appState.quizShuffledOrder = {};
         saveState();
       }
-      if (!appState.lastSeenDay || appState.lastSeenDay !== 'ouro') {
-        appState.quizCategoryFilter = 'ouro';
-        appState.lastSeenDay = 'ouro';
+      if (!appState.lastSeenDay || (appState.lastSeenDay !== 'w3_d5' && appState.lastSeenDay !== 'ouro')) {
+        appState.quizCategoryFilter = 'w3_d5';
+        appState.lastSeenDay = 'w3_d5';
       }
       if (!appState.currentWeek || appState.currentWeek === 1 || appState.currentWeek === 2) {
         appState.currentWeek = 3;
@@ -10245,8 +10999,29 @@ function renderFlashcard() {
 }
 
 function flipFlashcard() {
+  const selection = window.getSelection();
+  if (selection && selection.toString().trim().length > 0) return;
   const card = document.getElementById('activeFlashcard');
   if (card) card.classList.toggle('is-flipped');
+}
+
+function copyCurrentFlashcard() {
+  const cards = getFilteredFlashcards();
+  if (!cards || cards.length === 0) return;
+  const current = cards[appState.currentFlashcardIndex || 0];
+  if (!current) return;
+
+  const textToCopy = `🎴 Flashcard - ${current.tag}:\n\n❓ Pergunta: ${current.question}\n\n✅ Resposta: ${current.answer}\n\n💡 Explicação: ${current.explanation}`;
+
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(textToCopy).then(() => {
+      showToast("📋 Conteúdo do Flashcard copiado!");
+    }).catch(() => {
+      fallbackCopyText(textToCopy);
+    });
+  } else {
+    fallbackCopyText(textToCopy);
+  }
 }
 
 function nextFlashcard() {
@@ -10547,6 +11322,9 @@ function renderQuiz() {
           <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
             <span class="quiz-pos-badge">Questão ${displayIdx + 1} de ${displayQuestions.length}</span>
             <span class="quiz-id-badge">ID ${q.id}</span>
+            <button class="btn btn-secondary" style="font-size: 0.72rem; padding: 2px 7px; border-radius: var(--radius-sm); margin-left: 4px;" onclick="copyQuizQuestion(${q.id})" title="Copiar questão para a área de transferência">
+              <i class="fas fa-copy"></i> Copiar
+            </button>
           </div>
           <span class="quiz-discipline-tag">${q.discipline} • ${q.topic}</span>
         </div>
@@ -10590,20 +11368,76 @@ function renderQuiz() {
             `}
           </div>
 
-          ${isConfirmed && !ans.isCorrect ? `
-            <button class="btn btn-danger" style="font-size: 0.8rem; padding: 6px 12px;" onclick="addQuizErrorToBook(${q.id})">
-              <i class="fas fa-plus-circle"></i> Adicionar ao Caderno de Erros
-            </button>
-          ` : ''}
+          <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
+            ${isConfirmed ? `
+              <button class="btn btn-secondary" style="font-size: 0.8rem; padding: 6px 12px;" onclick="copyQuizQuestion(${q.id})" title="Copiar questão com resposta e gabarito">
+                <i class="fas fa-copy"></i> Copiar Resposta & Gabarito
+              </button>
+            ` : ''}
+
+            ${isConfirmed && !ans.isCorrect ? `
+              <button class="btn btn-danger" style="font-size: 0.8rem; padding: 6px 12px;" onclick="addQuizErrorToBook(${q.id})">
+                <i class="fas fa-plus-circle"></i> Adicionar ao Caderno de Erros
+              </button>
+            ` : ''}
+          </div>
         </div>
 
         <div class="quiz-explanation-box ${isConfirmed ? 'show' : ''} ${ans.isCorrect ? 'correct-border' : 'wrong-border'}">
-          <strong><i class="fas fa-comment-dots" style="color: var(--primary);"></i> Gabarito Oficial Comentado (${letters[q.correctAnswer]}):</strong>
-          <p style="margin-top: 6px;">${q.commentary}</p>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+            <strong><i class="fas fa-comment-dots" style="color: var(--primary);"></i> Gabarito Oficial Comentado (${letters[q.correctAnswer]}):</strong>
+            <button class="btn btn-secondary" style="font-size: 0.72rem; padding: 2px 7px;" onclick="copyQuizQuestion(${q.id})" title="Copiar comentário">
+              <i class="fas fa-copy"></i> Copiar
+            </button>
+          </div>
+          <p style="margin-top: 4px;">${q.commentary}</p>
         </div>
       </div>
     `;
   }).join('');
+}
+
+function copyQuizQuestion(qId) {
+  const q = QUIZ_QUESTIONS_DATA.find(item => item.id === qId);
+  if (!q) return;
+  const letters = ['A', 'B', 'C', 'D'];
+  const ans = appState.quizAnswers[q.id];
+  const isConfirmed = ans && ans.confirmed;
+
+  let textToCopy = `📌 Questão ${q.id} - ${q.discipline} (${q.topic}):\n${q.question}\n\n`;
+  textToCopy += q.options.map((opt, i) => `${letters[i]}) ${opt}`).join('\n');
+
+  if (isConfirmed) {
+    const correctLetter = letters[q.correctAnswer];
+    const correctText = q.options[q.correctAnswer];
+    textToCopy += `\n\n✅ Gabarito Oficial: (${correctLetter}) ${correctText}\n\n💡 Comentário: ${q.commentary}`;
+  }
+
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(textToCopy).then(() => {
+      showToast("📋 Questão e resposta copiadas com sucesso!");
+    }).catch(() => {
+      fallbackCopyText(textToCopy);
+    });
+  } else {
+    fallbackCopyText(textToCopy);
+  }
+}
+
+function fallbackCopyText(text) {
+  const ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.opacity = '0';
+  document.body.appendChild(ta);
+  ta.select();
+  try {
+    document.execCommand('copy');
+    showToast("📋 Questão e resposta copiadas!");
+  } catch (err) {
+    showToast("Erro ao copiar.");
+  }
+  document.body.removeChild(ta);
 }
 
 function selectQuizOption(qId, optIdx) {
@@ -10668,8 +11502,20 @@ function filterQuizCategory(cat) {
 }
 
 const QUIZ_DAYS_CONFIG = {
+          simReal: {
+    title: "⭐ SIMULADO REAL — Ipaporanga/CE 2026 (29 Questões verídicas INBRASP)",
+    desc: "29 questões reais transcritas com nº QConcursos: 10 Português + 4 Matemática + 1 Informática + 14 Específicas (Administrativo, Constitucional, Arquivologia e Gestão). Cronometre 2h15. Gabarito oficial da banca.",
+    bookletUrl: "provas/PROVA_REAL_INBRASP_2026_IPAPORANGA.html",
+    bookletLabel: "Abrir Prova Real Impressa (PDF)"
+  },
+          w3_d5: {
+    title: "⭐ Semana 3 • Dia 5 — Sexta-feira (18/09/2026 - HOJE): LO Processo Legislativo & Geometria (18 Questões)",
+    desc: "10 questões de Lei Orgânica (iniciativa, tramitação, sanção, veto, promulgação e fiscalização) + 8 questões de Matemática (áreas, perímetro e volume). Padrão réplica fiel Banca INBRASP.",
+    bookletUrl: "provas/CADERNO_QUESTOES_SEMANA_03_DIA_05_18_09_2026.html",
+    bookletLabel: "Abrir Caderno Hoje Impresso (PDF)"
+  },
           ouro: {
-    title: "⭐ ESSENCIAL OURO — 89 Questões (dia 17 de hoje incluso)",
+    title: "⭐ ESSENCIAL OURO — 89 Questões (caminho rápido)",
     desc: "Essenciais de maior incidência + dia 17 de hoje COMPLETO (contratos, sanções e concordância). Terminou este bloco = hoje zerado. Depois complete o restante no Provão (filtro Pendentes). Mesmas questões, mesmo progresso. Padrão Oficial Banca INBRASP.",
     bookletUrl: "provas/CADERNO_ESSENCIAL_OURO_89Q.html",
     bookletLabel: "Abrir Essencial Impresso (PDF)"
@@ -10771,7 +11617,7 @@ const QUIZ_DAYS_CONFIG = {
     bookletLabel: "Abrir Central de Provas"
   },
   all: {
-    title: "📚 Todas as Questões do Banco de Provas (520 Questões)",
+    title: "📚 Todas as Questões do Banco de Provas (567 Questões)",
     desc: "Simulado geral contendo todas as 490 questões ativas (Semanas 1 e 2 completas + Semana 3 Dias 1, 2 e 3) para treino de alta performance.",
     bookletUrl: "provas/CENTRAL_DE_PROVAS.html",
     bookletLabel: "Abrir Central de Provas & Editais"
@@ -10780,7 +11626,7 @@ const QUIZ_DAYS_CONFIG = {
 
 function selectQuizDay(dayKey) {
   if (!QUIZ_DAYS_CONFIG[dayKey]) {
-    dayKey = 'ouro';
+    dayKey = 'w3_d5';
   }
   appState.quizCategoryFilter = dayKey;
   
@@ -11725,6 +12571,50 @@ function filterEditalTopics() {
         topicsDiv.style.display = 'block';
       }
     }
+  });
+}
+
+// =========================================
+// FILTRO E BUSCA DA ABA MACETES DE PORTUGUÊS
+// =========================================
+let currentMacetesFilter = 'all';
+
+function filterMacetes(type) {
+  currentMacetesFilter = type;
+  const btnOuro = document.getElementById('btnFilterOuro');
+  const btnAll = document.getElementById('btnFilterAll');
+  if (btnOuro && btnAll) {
+    btnOuro.classList.toggle('active', type === 'ouro');
+    btnAll.classList.toggle('active', type === 'all');
+  }
+
+  const cards = document.querySelectorAll('#tab-macetes .summary-cards-grid .summary-card');
+  const searchInput = document.getElementById('macetesSearchInput');
+  const query = searchInput ? searchInput.value.toLowerCase().trim() : '';
+
+  cards.forEach(card => {
+    const isOuro = card.classList.contains('ouro-card');
+    const text = card.textContent.toLowerCase();
+
+    let matchFilter = (type === 'all') || (type === 'ouro' && isOuro);
+    let matchSearch = !query || text.includes(query);
+
+    card.style.display = (matchFilter && matchSearch) ? 'flex' : 'none';
+  });
+}
+
+function searchMacetes(val) {
+  const query = (val || '').toLowerCase().trim();
+  const cards = document.querySelectorAll('#tab-macetes .summary-cards-grid .summary-card');
+
+  cards.forEach(card => {
+    const isOuro = card.classList.contains('ouro-card');
+    const text = card.textContent.toLowerCase();
+
+    let matchFilter = (currentMacetesFilter === 'all') || (currentMacetesFilter === 'ouro' && isOuro);
+    let matchSearch = !query || text.includes(query);
+
+    card.style.display = (matchFilter && matchSearch) ? 'flex' : 'none';
   });
 }
 

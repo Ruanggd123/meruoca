@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>CADERNO OFICIAL DE QUESTÕES — SEMANA 3 / DIA 5 (18/09/2026) | INBRASP</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @page { size: A4; margin: 15mm 18mm; }
+    :root { --primary: #1e3a8a; --primary-dark: #0f172a; --accent: #dc2626; --border: #cbd5e1; --bg: #ffffff; --text: #0f172a; --text-muted: #475569; }
+    body { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif; color: var(--text); background: #f8fafc; margin: 0; padding: 24px; font-size: 10.5pt; line-height: 1.45; }
+    .container { max-width: 960px; margin: 0 auto; background: white; padding: 36px 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); }
+    .header-box { border: 2px solid var(--primary); border-radius: 8px; padding: 16px 20px; margin-bottom: 24px; display: flex; justify-content: space-between; align-items: center; background: #f8fafc; }
+    .header-titles h1 { margin: 0 0 4px 0; font-size: 1.35rem; color: var(--primary); font-weight: 800; text-transform: uppercase; }
+    .header-titles h2 { margin: 0 0 4px 0; font-size: 1rem; color: var(--text); font-weight: 700; }
+    .header-titles p { margin: 0; font-size: 0.85rem; color: var(--text-muted); }
+    .badge-banca { background: #fee2e2; color: #991b1b; font-weight: 800; padding: 6px 14px; border-radius: 6px; font-size: 0.85rem; text-transform: uppercase; border: 1px solid #fecaca; }
+    .no-print { display: flex; gap: 12px; margin-bottom: 24px; }
+    .btn-action { background: var(--primary); color: white; border: none; padding: 10px 18px; border-radius: 6px; font-weight: 700; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; font-size: 0.9rem; }
+    .btn-action:hover { background: #1d4ed8; }
+    .section-title { background: #1e3a8a; color: white; padding: 8px 14px; border-radius: 6px; font-size: 1.05rem; font-weight: 800; margin: 28px 0 16px 0; display: flex; justify-content: space-between; align-items: center; }
+    .section-title.matematica { background: #0284c7; }
+    .question-block { border: 1px solid var(--border); border-radius: 8px; padding: 16px 18px; margin-bottom: 16px; background: #ffffff; page-break-inside: avoid; }
+    .question-meta { display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 0.8rem; }
+    .q-badge { font-weight: 800; color: var(--primary); }
+    .q-topic { color: var(--text-muted); font-weight: 600; }
+    .question-text { font-weight: 700; color: var(--primary-dark); margin-bottom: 12px; line-height: 1.45; white-space: pre-line; }
+    .options-list { list-style: none; padding: 0; margin: 0; }
+    .option-item { display: flex; align-items: flex-start; gap: 10px; padding: 6px 8px; margin-bottom: 4px; border-radius: 4px; font-size: 0.92rem; }
+    .option-letter { width: 24px; height: 24px; border: 1.5px solid #94a3b8; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.8rem; color: #334155; flex-shrink: 0; }
+    .folha-respostas-box { border: 2px dashed var(--primary); border-radius: 8px; padding: 20px; margin: 30px 0; background: #f8fafc; page-break-before: always; }
+    .folha-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; font-size: 0.82rem; margin-top: 14px; }
+    .folha-row { display: flex; align-items: center; gap: 6px; padding: 4px 6px; background: white; border: 1px solid var(--border); border-radius: 4px; }
+    .folha-num { width: 28px; font-weight: 800; color: var(--primary); }
+    .folha-circle { width: 16px; height: 16px; border: 1px solid #64748b; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 0.65rem; font-weight: 700; color: #475569; }
+    .gabarito-section { page-break-before: always; margin-top: 30px; }
+    .gabarito-item { background: #f1f5f9; border-left: 4px solid var(--primary); padding: 10px 14px; margin-bottom: 10px; border-radius: 0 6px 6px 0; font-size: 0.88rem; }
+    .gabarito-letra { background: #16a34a; color: white; padding: 2px 8px; border-radius: 4px; font-weight: 800; margin-right: 6px; }
+    @media print { body { background: white; padding: 0; } .container { padding: 0; box-shadow: none; max-width: 100%; } .no-print { display: none !important; } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="no-print">
+      <button class="btn-action" onclick="window.print()"><i class="fas fa-print"></i> Imprimir Caderno (PDF)</button>
+      <a href="../index.html" class="btn-action" style="background: #e2e8f0; color: #334155;"><i class="fas fa-arrow-left"></i> Voltar ao Gerenciador de Estudos</a>
+    </div>
+    <div class="header-box">
+      <div class="header-titles">
+        <span style="font-size: 0.75rem; font-weight: 800; text-transform: uppercase; color: #dc2626;">Caderno de Treino Diário Oficial • Semana 3</span>
+        <h1>Câmara Municipal de Meruoca / CE</h1>
+        <h2>Concurso Público nº 001/2026 — Cargo: Técnico Legislativo</h2>
+        <p><strong>Semana 3 • Dia 5 (18/09/2026):</strong> Lei Orgânica — Processo Legislativo Municipal (10Q) • Matemática — Geometria Básica (8Q)</p>
+      </div>
+      <div style="text-align: right;">
+        <div class="badge-banca">Banca INBRASP</div>
+        <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 6px;">18 Questões (A, B, C, D)</div>
+      </div>
+    </div>
+    <div class="section-title">
+      <span><i class="fas fa-landmark"></i> PARTE 1: LEI ORGÂNICA — PROCESSO LEGISLATIVO (QUESTÕES 521 A 530)</span>
+      <span style="font-size: 0.8rem; font-weight: normal;">Iniciativa, Tramitação, Sanção, Veto e Fiscalização</span>
+    </div>
+
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 521</span>
+        <span class="q-topic">Lei Orgânica de Meruoca • Iniciativa Popular (CF, Art. 29, XIII)</span>
+      </div>
+      <div class="question-text">A Constituição Federal assegura a iniciativa popular de projetos de lei de interesse específico do Município. Nesse contexto, assinale a alternativa CORRETA:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>A iniciativa popular exige subscrição de no mínimo dez por cento dos eleitores do Município.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>A iniciativa popular é vedada aos Municípios, cabendo apenas à União e aos Estados.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>A iniciativa popular depende de autorização prévia do Prefeito para ser exercida.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>A iniciativa popular manifesta-se por projetos subscritos por no mínimo cinco por cento do eleitorado municipal.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 522</span>
+        <span class="q-topic">Lei Orgânica de Meruoca • Iniciativa Privativa do Prefeito</span>
+      </div>
+      <div class="question-text">No processo legislativo municipal, são de iniciativa privativa do Prefeito as leis que disponham sobre:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Criação de cargos e funções na administração municipal e regime jurídico dos servidores.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Organização dos serviços internos da Câmara e criação de seus cargos.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Fixação dos subsídios dos Vereadores para a legislatura seguinte.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Alteração do Regimento Interno da Câmara Municipal.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 523</span>
+        <span class="q-topic">Lei Orgânica de Meruoca • Iniciativa da Mesa Diretora</span>
+      </div>
+      <div class="question-text">Compete privativamente à Mesa Diretora da Câmara a iniciativa de projetos de lei sobre:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Aumento da remuneração dos servidores do Poder Executivo municipal.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Criação de secretarias municipais e definição de suas atribuições.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Organização dos serviços administrativos da Câmara e criação ou extinção de seus cargos.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Instituição de impostos municipais sobre serviços de qualquer natureza.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 524</span>
+        <span class="q-topic">Lei Orgânica de Meruoca • Emendas, Substitutivos e Pareceres</span>
+      </div>
+      <div class="question-text">Durante a tramitação de um projeto de lei na Câmara, é CORRETO afirmar que:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>A emenda supressiva acrescenta dispositivo novo ao texto da proposição.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>O substitutivo altera integralmente a proposição, substituindo seu texto.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>O parecer das comissões substitui a votação em plenário.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>A emenda aditiva elimina parte do texto sem deliberação.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 525</span>
+        <span class="q-topic">Lei Orgânica de Meruoca • Sanção: Prazo e Silêncio</span>
+      </div>
+      <div class="question-text">Aprovado um projeto de lei pela Câmara de Meruoca, o Prefeito terá 15 dias úteis para sancioná-lo ou vetá-lo. Decorrido esse prazo sem manifestação, é CORRETO afirmar que:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>O projeto é arquivado por decurso de prazo.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>O silêncio importa sanção tácita do projeto.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>O projeto retorna à Câmara para nova votação obrigatória.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>O veto é considerado automaticamente oposto.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 526</span>
+        <span class="q-topic">Lei Orgânica de Meruoca • Veto: Espécies e Motivos</span>
+      </div>
+      <div class="question-text">O Prefeito poderá vetar projeto de lei aprovado pela Câmara quando o julgar inconstitucional ou contrário ao interesse público. Sobre o veto, assinale a alternativa CORRETA:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>O veto é sempre total, não se admitindo veto parcial.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>O veto parcial alcança apenas textos integrais, nunca palavras isoladas.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>O veto pode ser total ou parcial, abrangendo inclusive palavra ou expressão isolada.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>O veto dispensa motivação, por ser ato discricionário puro.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 527</span>
+        <span class="q-topic">Lei Orgânica de Meruoca • Apreciação do Veto pela Câmara</span>
+      </div>
+      <div class="question-text">Oposto o veto, a Câmara deverá apreciá-lo em 30 dias. É CORRETO afirmar que:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>O veto só pode ser rejeitado pelo voto da maioria absoluta dos membros da Câmara.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>O veto é derrubado por maioria simples dos vereadores presentes.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Decorrido o prazo sem apreciação, o veto é automaticamente mantido.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>A apreciação do veto dispensa quórum mínimo de presença.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 528</span>
+        <span class="q-topic">Lei Orgânica de Meruoca • Promulgação: Prazos e Competência</span>
+      </div>
+      <div class="question-text">Rejeitado o veto pela Câmara, o projeto será enviado ao Prefeito para promulgação em 48 horas. Se ele não o fizer, é CORRETO afirmar que:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>O Presidente da Câmara promulgará a lei em igual prazo de 48 horas.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>A lei jamais entrará em vigor por falta de promulgação.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Qualquer vereador poderá promulgar a lei imediatamente.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>O Tribunal de Contas promulgará a lei no lugar do Prefeito.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 529</span>
+        <span class="q-topic">Lei Orgânica de Meruoca • Fiscalização: Convocação e Sustação</span>
+      </div>
+      <div class="question-text">No exercício da função fiscalizadora, a Câmara Municipal poderá:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>Convocar Secretários Municipais para prestar pessoalmente informações sobre assuntos de suas pastas.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>Demitir servidores do Poder Executivo por decisão de comissão.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Anular atos do Prefeito por conveniência política, sem motivação.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>Sustar contratos administrativos regulares sem apontar ilegalidade.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 530</span>
+        <span class="q-topic">Lei Orgânica de Meruoca • Julgamento das Contas: Prefeito x Mesa</span>
+      </div>
+      <div class="question-text">Quanto ao julgamento das contas no âmbito municipal, assinale a alternativa CORRETA:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>As contas do Prefeito são julgadas pelo Tribunal de Contas, sem qualquer participação da Câmara Municipal.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>As contas da Mesa da Câmara são julgadas pela própria Câmara, com total exclusão do Tribunal de Contas.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>Todas as contas municipais são julgadas pelo Prefeito, por ser o ordenador de despesas.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>As contas do Prefeito são julgadas pela Câmara, com parecer prévio do Tribunal de Contas; as da Mesa são julgadas diretamente pelo Tribunal.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="section-title matematica">
+      <span><i class="fas fa-shapes"></i> PARTE 2: MATEMÁTICA — GEOMETRIA BÁSICA (QUESTÕES 531 A 538)</span>
+      <span style="font-size: 0.8rem; font-weight: normal;">Áreas, Perímetro e Volume</span>
+    </div>
+
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 531</span>
+        <span class="q-topic">Matemática / RLM • Área do Retângulo</span>
+      </div>
+      <div class="question-text">O plenário da Câmara possui formato retangular com 12 metros de comprimento por 9 metros de largura. A área total desse plenário é de:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>42 m².</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>54 m².</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>108 m².</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>216 m².</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 532</span>
+        <span class="q-topic">Matemática / RLM • Perímetro do Retângulo</span>
+      </div>
+      <div class="question-text">Um terreno da Câmara mede 45 metros de comprimento por 25 metros de largura. Para cercá-lo totalmente, serão necessários:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>70 metros de cerca.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>1.125 metros de cerca.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>95 metros de cerca.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>140 metros de cerca.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 533</span>
+        <span class="q-topic">Matemática / RLM • Área do Quadrado</span>
+      </div>
+      <div class="question-text">Uma sala de arquivo quadrada possui 12 metros de lado. Sua área corresponde a:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>48 m².</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>144 m².</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>24 m².</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>72 m².</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 534</span>
+        <span class="q-topic">Matemática / RLM • Área do Triângulo</span>
+      </div>
+      <div class="question-text">Um jardim triangular em frente à Câmara tem base de 10 metros e altura de 6 metros. Sua área é de:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>60 m².</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>16 m².</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>36 m².</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>30 m².</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 535</span>
+        <span class="q-topic">Matemática / RLM • Área do Círculo</span>
+      </div>
+      <div class="question-text">Uma praça circular possui raio de 7 metros. Adotando π = 3,14, sua área é de:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>43,96 m².</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>153,86 m².</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>21,98 m².</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>307,72 m².</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 536</span>
+        <span class="q-topic">Matemática / RLM • Volume do Paralelepípedo</span>
+      </div>
+      <div class="question-text">Um depósito da Câmara mede 5 metros de comprimento, 4 metros de largura e 2,5 metros de altura. Seu volume é de:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>50 m³.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>45 m³.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>11,5 m³.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>100 m³.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 537</span>
+        <span class="q-topic">Matemática / RLM • Área e Rendimento (Piso)</span>
+      </div>
+      <div class="question-text">Uma sala de 8 metros por 6 metros será revestida com placas que cobrem 16 m² cada. Serão necessárias:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>2 placas.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>4 placas.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>3 placas.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>6 placas.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="question-block">
+      <div class="question-meta">
+        <span class="q-badge">QUESTÃO 538</span>
+        <span class="q-topic">Matemática / RLM • Volume e Consumo (Caixa d'Água)</span>
+      </div>
+      <div class="question-text">Uma caixa d'água de 2 m por 1,5 m por 1 m abastece um setor que consome 500 litros por dia. Sem reposição, a reserva dura:</div>
+      <ul class="options-list">
+    
+        <li class="option-item">
+          <span class="option-letter">A</span>
+          <span>3 dias.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">B</span>
+          <span>5 dias.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">C</span>
+          <span>7 dias.</span>
+        </li>
+        
+        <li class="option-item">
+          <span class="option-letter">D</span>
+          <span>6 dias.</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="folha-respostas-box">
+      <div style="text-align: center; border-bottom: 1px solid #cbd5e1; padding-bottom: 8px; margin-bottom: 10px;">
+        <strong style="font-size: 1.1rem; text-transform: uppercase; color: var(--primary);">Folha de Respostas Óptica — Simulação Real (18 Questões)</strong>
+        <p style="margin: 4px 0 0 0; font-size: 0.8rem; color: #64748b;">Preencha a bolha correspondente à alternativa escolhida para treino de agilidade.</p>
+      </div>
+      <div class="folha-grid">
+
+        <div class="folha-row">
+          <span class="folha-num">521</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">522</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">523</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">524</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">525</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">526</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">527</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">528</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">529</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">530</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">531</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">532</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">533</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">534</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">535</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">536</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">537</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+        <div class="folha-row">
+          <span class="folha-num">538</span>
+          <span class="folha-circle">A</span>
+          <span class="folha-circle">B</span>
+          <span class="folha-circle">C</span>
+          <span class="folha-circle">D</span>
+        </div>
+    
+      </div>
+    </div>
+    <div class="gabarito-section">
+      <div style="background: var(--primary); color: white; padding: 10px 16px; border-radius: 6px; font-weight: 800; font-size: 1.1rem; margin-bottom: 16px;">
+        <i class="fas fa-check-double"></i> GABARITO OFICIAL FUNDAMENTADO (QUESTÕES 521 A 538)
+      </div>
+
+      <div class="gabarito-item">
+        <span class="gabarito-letra">D</span>
+        <strong>Questão 521 (Lei Orgânica de Meruoca - Iniciativa Popular (CF, Art. 29, XIII)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. CF/88, Art. 29, XIII: iniciativa popular mediante manifestação de pelo menos 5% do eleitorado. Distrator A troca o percentual; C nega o instituto; D cria autorização inexistente.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 522 (Lei Orgânica de Meruoca - Iniciativa Privativa do Prefeito):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Simetria com CF, Art. 61, § 1º, II: cargos, funções, empregos, regime jurídico e organização administrativa do Executivo. B e D são da Mesa/Câmara; C é da Câmara (cada legislatura fixa para a subsequente).</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">C</span>
+        <strong>Questão 523 (Lei Orgânica de Meruoca - Iniciativa da Mesa Diretora):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. A Câmara organiza seus próprios serviços (função atípica administrativa). A e B são do Prefeito; D, embora municipal, não é iniciativa privativa da Mesa.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">B</span>
+        <strong>Questão 524 (Lei Orgânica de Meruoca - Emendas, Substitutivos e Pareceres):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Supressiva ELIMINA; aditiva ACRESCENTA; modificativa ALTERA redação; substitutivo SUBSTITUI tudo. Parecer instrui, não substitui o plenário.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">B</span>
+        <strong>Questão 525 (Lei Orgânica de Meruoca - Sanção: Prazo e Silêncio):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Simetria com CF, Art. 66, § 3º: silêncio do Executivo em 15 dias úteis = sanção tácita. Não há arquivamento nem veto presumido.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">C</span>
+        <strong>Questão 526 (Lei Orgânica de Meruoca - Veto: Espécies e Motivos):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. CF, Art. 66, § 2º: veto total ou parcial (este, sobre texto integral de artigo, parágrafo, inciso ou alínea — e, na prática legislativa, palavra/expressão). Exige motivação: inconstitucionalidade ou interesse público.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 527 (Lei Orgânica de Meruoca - Apreciação do Veto pela Câmara):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. CF, Art. 66, § 4º (simetria municipal): rejeição por maioria absoluta em 30 dias; não apreciado, SOBRESTA as demais deliberações (tranca a pauta) — jamais é mantido automaticamente.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 528 (Lei Orgânica de Meruoca - Promulgação: Prazos e Competência):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. CF, Art. 66, § 7º: omisso o Prefeito em 48h, promulga o Presidente da Câmara (e, se este falhar, o Vice). Sem promulgação não há executoriedade — por isso a Constituição define substitutos.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 529 (Lei Orgânica de Meruoca - Fiscalização: Convocação e Sustação):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Simetria com CF, Art. 50: convocação de auxiliares para informações (recusa injustificada = crime de responsabilidade). Sustação de atos/contratos exige ilegalidade apontada (com o TCE). Demissão e anulação imotivada extrapolam a competência do Legislativo.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">D</span>
+        <strong>Questão 530 (Lei Orgânica de Meruoca - Julgamento das Contas: Prefeito x Mesa):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. CF, Arts. 31 e 71: Prefeito = julgado pela Câmara (controle externo político, com parecer do TCE); Mesa/Câmara enquanto unidade gestora = julgada pelo TCE. Distrator A inverte; B exclui o TCE; D concentra tudo no Prefeito.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">C</span>
+        <strong>Questão 531 (Matemática / RLM - Área do Retângulo):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Área = 12 × 9 = 108 m². A soma 42 é o perímetro; 216 é o dobro da área; 54 é a metade.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">D</span>
+        <strong>Questão 532 (Matemática / RLM - Perímetro do Retângulo):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Perímetro = 2 × (45 + 25) = 140 m. 1.125 é a área; 70 é metade do perímetro; 95 não corresponde a nenhuma operação válida.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">B</span>
+        <strong>Questão 533 (Matemática / RLM - Área do Quadrado):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Área = 12² = 144 m². 48 é o perímetro; 24 e 72 são frações sem base no cálculo.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">D</span>
+        <strong>Questão 534 (Matemática / RLM - Área do Triângulo):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Área = (10 × 6) / 2 = 30 m². 60 esquece a divisão por 2 — erro clássico da banca; 16 soma base e altura; 36 não tem base no cálculo.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">B</span>
+        <strong>Questão 535 (Matemática / RLM - Área do Círculo):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: B. Área = 3,14 × 7² = 153,86 m². 43,96 é o comprimento da circunferência (2πr); 307,72 dobra o raio; 21,98 não tem base.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">A</span>
+        <strong>Questão 536 (Matemática / RLM - Volume do Paralelepípedo):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: A. Volume = 5 × 4 × 2,5 = 50 m³. 11,5 soma as medidas; 100 dobra o resultado.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">C</span>
+        <strong>Questão 537 (Matemática / RLM - Área e Rendimento (Piso)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: C. Área = 48 m²; 48 / 16 = 3 placas exatas. 2 e 6 vêm de divisões erradas; 4 arredonda sem necessidade.</p>
+      </div>
+    
+      <div class="gabarito-item">
+        <span class="gabarito-letra">D</span>
+        <strong>Questão 538 (Matemática / RLM - Volume e Consumo (Caixa d'Água)):</strong>
+        <p style="margin: 4px 0 0 0; color: #334155; font-size: 0.85rem;">Gabarito: D. Volume = 3 m³ = 3.000 litros; 3.000 / 500 = 6 dias. Exige a conversão m³→litros antes de dividir — pulo clássico da banca.</p>
+      </div>
+    
+    </div>
+  </div>
+</body>
+</html>
